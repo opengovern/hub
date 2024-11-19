@@ -1,27 +1,21 @@
-package db
+package models
 
 import (
 	"time"
 
 	"github.com/lib/pq"
-	"github.com/opengovern/og-util/pkg/model"
 
 )
 
 
 
 
-type ControlTagsResult struct {
-	Key          string
-	UniqueValues pq.StringArray `gorm:"type:text[]"`
-}
+
 
 type Control struct {
 	ID          string `gorm:"primaryKey"`
 	Title       string
 	Description string
-	Tags    []ControlTag        `gorm:"foreignKey:ControlID;references:ID;constraint:OnUpdate:CASCADE,OnDelete:CASCADE;"`
-	tagsMap map[string][]string `gorm:"-:all"`
 	IntegrationType    pq.StringArray `gorm:"type:text[]"`
 	DocumentURI        string
 	Enabled            bool
@@ -36,8 +30,3 @@ type Control struct {
 }
 
 
-
-type ControlTag struct {
-	model.Tag
-	ControlID string `gorm:"primaryKey"`
-}

@@ -11,6 +11,8 @@ import (
 	"github.com/opengovern/og-util/pkg/koanf"
 	"github.com/opengovern/og-util/pkg/postgres"
 	"github.com/opengovern/website/api"
+	"github.com/opengovern/website/config"
+	"github.com/opengovern/website/db"
 	"github.com/opengovern/website/service"
 	"github.com/spf13/cobra"
 	"go.uber.org/zap"
@@ -43,7 +45,7 @@ func main() {
 }
 
 func Command() *cobra.Command {
-	cnf := koanf.Provide("website", config.websiteConfig{
+	cnf := koanf.Provide("website", config.WebsiteConfig{
 		Postgres: koanf.Postgres{
 			Host:     "localhost",
 			Port:     "5432",
@@ -66,7 +68,7 @@ func Command() *cobra.Command {
 
 			cmd.SilenceUsage = true
 
-			db, err := postgres.NewClient(&postgres.Config{
+			orm, err := postgres.NewClient(&postgres.Config{
 				Host:    cnf.Postgres.Host,
 				Port:    cnf.Postgres.Port,
 				User:    cnf.Postgres.Username,
@@ -77,14 +79,12 @@ func Command() *cobra.Command {
 			if err != nil {
 				return err
 			}
-			// create citext extension if not exists
-			err = db.Exec("CREATE EXTENSION IF NOT EXISTS citext").Error
+			db := db.Database{Orm: orm}
+			err = db.Initialize()
 			if err != nil {
-				logger.Error("failed to create citext extension", zap.Error(err))
-				return err
+					return fmt.Errorf("new postgres client: %w", err)
 			}
-			// err = db.AutoMigrate(&model.CspmUsage{})
-
+			
 		
 
 			websiteService := service.NewwebsiteService(cnf, logger)

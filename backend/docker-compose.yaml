@@ -15,7 +15,7 @@ services:
         depends_on:
         - postgres
         networks:
-        - kaytu-network
+        - og-network
         restart: always
     postgres:
         image: postgres:14
@@ -27,16 +27,16 @@ services:
         - POSTGRES_PASSWORD=${PG_PASSWORD}
         - POSTGRES_DB=website
         networks:
-        - kaytu-network
+        - og-network
         restart: always
 volumes:
     pgdata:
         driver: local
         driver_opts:
           type: none
-          device: "/home/ec2-user/website-service/pgdata"
+          device: "website-service/pgdata"
           o: bind
 
 networks:
-    kaytu-network:
+    og-network:
         driver: bridge

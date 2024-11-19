@@ -24,13 +24,6 @@ func New(cfg config.WebsiteConfig, logger *zap.Logger, informationService *servi
 		logger:             logger.Named("information-api"),
 	}
 }
-
-func (s API) Register(e *echo.Echo) {
-	// g := e.Group("/api/v1/schema")
-}
-
-
-
 func bindValidate(ctx echo.Context, i any) error {
 	if err := ctx.Bind(i); err != nil {
 		return err
@@ -41,3 +34,15 @@ func bindValidate(ctx echo.Context, i any) error {
 
 	return nil
 }
+
+func (s API) Register(e *echo.Echo) {
+	g := e.Group("/api/v1/")
+	g.GET("/frameworks",s.Frameworks)
+	g.GET("/framework/:id",s.FrameWorKDetail)
+	g.GET("/framework/:id/controls",s.FrameWorkControls)
+	g.GET("control/:id",s.ControlDetail)
+
+}
+
+
+

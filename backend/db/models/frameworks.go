@@ -1,4 +1,4 @@
-package db
+package models
 
 import (
 	
@@ -8,7 +8,6 @@ import (
 
 
 	"github.com/lib/pq"
-	"github.com/opengovern/og-util/pkg/model"
 
 	"gorm.io/gorm"
 )
@@ -49,10 +48,6 @@ type Benchmark struct {
 	AutoAssign        bool
 	TracksDriftEvents bool
 	Metadata          pgtype.JSONB
-
-	Tags    []BenchmarkTag      `gorm:"foreignKey:BenchmarkID;references:ID;constraint:OnUpdate:CASCADE,OnDelete:CASCADE;"`
-	tagsMap map[string][]string `gorm:"-:all"`
-
 	Children  []Benchmark `gorm:"many2many:benchmark_children;"`
 	Controls  []Control   `gorm:"many2many:benchmark_controls;"`
 	CreatedAt time.Time
@@ -64,14 +59,7 @@ type BenchmarkChild struct {
 	ChildID     string
 }
 
-type BenchmarkTag struct {
-	model.Tag
-	BenchmarkID string `gorm:"primaryKey"`
-}
-type BenchmarkTagsResult struct {
-	Key          string
-	UniqueValues pq.StringArray `gorm:"type:text[]"`
-}
+
 
 type BenchmarkControls struct {
 	BenchmarkID string

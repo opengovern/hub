@@ -15,7 +15,7 @@ type WebsiteService struct {
 func NewwebsiteService(cfg config.WebsiteConfig, logger *zap.Logger) *WebsiteService {
 	return &WebsiteService{
 		cfg:           cfg,
-		logger:        logger.Named("information-service"),
+		logger:        logger.Named("website-service"),
 	
 	}
 }

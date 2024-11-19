@@ -6,7 +6,7 @@ import (
 
 	"github.com/opengovern/og-util/pkg/postgres"
 	db "github.com/opengovern/website/db/models"
-	db2 "github.com/opengovwebsitehema/db"
+	db2 "github.com/opengovern/website/db"
 
 	"github.com/opengovern/website/sync-job/config"
 	"go.uber.org/zap"
