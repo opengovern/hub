@@ -6,14 +6,12 @@ import (
 	"os"
 	"os/signal"
 	"syscall"
-"github.com/spf13/cobra"
-	"go.uber.org/zap"
-	config2 "github.com/opengovern/schema/sync-job/config"
+
 	"github.com/opengovern/og-util/pkg/config"
-	"github.com/opengovern/schema/sync-job/job"
-
-
-
+	config2 "github.com/opengovern/website/sync-job/config"
+	"github.com/opengovern/website/sync-job/job"
+	"github.com/spf13/cobra"
+	"go.uber.org/zap"
 )
 
 func main() {

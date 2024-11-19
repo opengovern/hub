@@ -2,21 +2,21 @@ package api
 
 import (
 	"github.com/labstack/echo/v4"
-	"github.com/opengovern/schema/config"
-	"github.com/opengovern/schema/service"
+	"github.com/opengovern/website/config"
+	"github.com/opengovern/website/service"
 	"go.opentelemetry.io/otel"
 	"go.opentelemetry.io/otel/trace"
 	"go.uber.org/zap"
 )
 
 type API struct {
-	cfg                config.SchemaConfig
+	cfg                config.WebsiteConfig
 	tracer             trace.Tracer
 	logger             *zap.Logger
-	informationService *service.SchemaService
+	informationService *service.WebsiteService
 }
 
-func New(cfg config.SchemaConfig, logger *zap.Logger, informationService *service.SchemaService) API {
+func New(cfg config.WebsiteConfig, logger *zap.Logger, informationService *service.WebsiteService) API {
 	return API{
 		cfg:                cfg,
 		informationService: informationService,

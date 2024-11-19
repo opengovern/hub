@@ -5,10 +5,10 @@ import (
 	"fmt"
 
 	"github.com/opengovern/og-util/pkg/postgres"
-	"github.com/opengovern/schema/db/models"
-	db2 "github.com/opengovern/schema/db"
+	db "github.com/opengovern/website/db/models"
+	db2 "github.com/opengovwebsitehema/db"
 
-	"github.com/opengovern/schema/sync-job/config"
+	"github.com/opengovern/website/sync-job/config"
 	"go.uber.org/zap"
 
 	"gorm.io/gorm"

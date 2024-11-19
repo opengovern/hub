@@ -6,8 +6,8 @@ import (
 	"encoding/json"
 	// "strings"
 
-	"github.com/opengovern/schema/sync-job/config"
-	git2 "github.com/opengovern/schema/sync-job/job/git"
+	"github.com/opengovern/website/sync-job/config"
+	git2 "github.com/opengovern/website/sync-job/job/git"
 	"go.uber.org/zap"
 )
 

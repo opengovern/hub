@@ -3,7 +3,7 @@ package api
 import (
 	"strings"
 
-	"github.com/opengovern/schema/db/models"
+	db "github.com/opengovern/website/db/models"
 )
 
 

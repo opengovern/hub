@@ -1,4 +1,4 @@
-module github.com/opengovern/schema
+module github.com/opengovern/website
 
 go 1.23.2
 

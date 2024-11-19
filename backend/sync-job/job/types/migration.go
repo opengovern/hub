@@ -3,7 +3,7 @@ package types
 import (
 	"context"
 
-	"github.com/opengovern/schema/sync-job/config"
+	"github.com/opengovern/website/sync-job/config"
 	"go.uber.org/zap"
 )
 

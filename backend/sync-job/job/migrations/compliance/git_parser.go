@@ -12,9 +12,9 @@ import (
 	"github.com/goccy/go-yaml"
 	"github.com/jackc/pgtype"
 	"github.com/opengovern/og-util/pkg/model"
-	"github.com/opengovern/schema/api"
-	"github.com/opengovern/schema/db/models"
-	"github.com/opengovern/schema/sync-job/job/git"
+	"github.com/opengovern/website/api"
+	db "github.com/opengovern/website/db/models"
+	"github.com/opengovern/website/sync-job/job/git"
 	"go.uber.org/zap"
 )
 

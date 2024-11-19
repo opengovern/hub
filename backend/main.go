@@ -10,9 +10,8 @@ import (
 	"github.com/opengovern/og-util/pkg/httpserver"
 	"github.com/opengovern/og-util/pkg/koanf"
 	"github.com/opengovern/og-util/pkg/postgres"
-	"github.com/opengovern/schema/api"
-	"github.com/opengovern/schema/config"
-	"github.com/opengovern/schema/service"
+	"github.com/opengovern/website/api"
+	"github.com/opengovern/website/service"
 	"github.com/spf13/cobra"
 	"go.uber.org/zap"
 )
@@ -44,7 +43,7 @@ func main() {
 }
 
 func Command() *cobra.Command {
-	cnf := koanf.Provide("schema", config.SchemaConfig{
+	cnf := koanf.Provide("website", config.websiteConfig{
 		Postgres: koanf.Postgres{
 			Host:     "localhost",
 			Port:     "5432",
@@ -63,7 +62,7 @@ func Command() *cobra.Command {
 				return err
 			}
 
-			logger = logger.Named("schema")
+			logger = logger.Named("website")
 
 			cmd.SilenceUsage = true
 
@@ -88,12 +87,12 @@ func Command() *cobra.Command {
 
 		
 
-			schemaService := service.NewschemaService(cnf, logger)
+			websiteService := service.NewwebsiteService(cnf, logger)
 			return httpserver.RegisterAndStart(
 				ctx,
 				logger,
 				cnf.Http.Address,
-				api.New(cnf, logger, schemaService),
+				api.New(cnf, logger, websiteService),
 			)
 		},
 	}

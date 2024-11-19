@@ -1,7 +1,7 @@
 package compliance
 
 import (
-	"github.com/opengovern/schema/db/models"
+	db "github.com/opengovern/website/db/models"
 )
 
 type BenchmarkControlsCache struct {

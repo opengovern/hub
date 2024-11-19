@@ -8,7 +8,7 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/opengovern/schema/sync-job/job/types"
+	"github.com/opengovern/website/sync-job/job/types"
 )
 
 

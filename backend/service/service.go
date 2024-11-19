@@ -1,19 +1,19 @@
 package service
 
 import (
-	"github.com/opengovern/schema/config"
+	"github.com/opengovern/website/config"
 
 	"go.uber.org/zap"
 )
 
-type SchemaService struct {
-	cfg    config.SchemaConfig
+type WebsiteService struct {
+	cfg    config.WebsiteConfig
 	logger *zap.Logger
 
 }
 
-func NewschemaService(cfg config.SchemaConfig, logger *zap.Logger) *SchemaService {
-	return &SchemaService{
+func NewwebsiteService(cfg config.WebsiteConfig, logger *zap.Logger) *WebsiteService {
+	return &WebsiteService{
 		cfg:           cfg,
 		logger:        logger.Named("information-service"),
 	

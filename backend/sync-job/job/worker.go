@@ -4,7 +4,7 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/opengovern/schema/sync-job/config"
+	"github.com/opengovern/website/sync-job/config"
 	"go.uber.org/zap"
 )
 

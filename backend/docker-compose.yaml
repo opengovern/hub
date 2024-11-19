@@ -1,15 +1,15 @@
 services:
-    schema-backend:
-        image: ghcr.io/opengovernance-io/schema-service:v0.0.9
-        container_name: schema-service
+    website-backend:
+        image: ghcr.io/opengovernance-io/website-service:v0.0.9
+        container_name: website-service
         ports:
         - "8080:8080"
         environment:
           - SCHEMA_HTTP__ADDRESS=0.0.0.0:8080
           - SCHEMA_POSTGRES__HOST=postgres
           - SCHEMA_POSTGRES__PORT=5432
-          - SCHEMA_POSTGRES__DB=schema
-          - SCHEMA_POSTGRES__USERNAME=schema
+          - SCHEMA_POSTGRES__DB=website
+          - SCHEMA_POSTGRES__USERNAME=website
           - SCHEMA_POSTGRES__PASSWORD=${PG_PASSWORD}
           - SCHEMA_POSTGRES_SSL_MODE=disable
         depends_on:
@@ -23,9 +23,9 @@ services:
         volumes:
           - pgdata:/var/lib/postgresql/data
         environment:
-        - POSTGRES_USER=schema
+        - POSTGRES_USER=website
         - POSTGRES_PASSWORD=${PG_PASSWORD}
-        - POSTGRES_DB=schema
+        - POSTGRES_DB=website
         networks:
         - kaytu-network
         restart: always
@@ -34,7 +34,7 @@ volumes:
         driver: local
         driver_opts:
           type: none
-          device: "/home/ec2-user/schema-service/pgdata"
+          device: "/home/ec2-user/website-service/pgdata"
           o: bind
 
 networks:
