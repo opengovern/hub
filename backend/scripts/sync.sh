@@ -1,0 +1,1 @@
+go run /sync-job/main.go
