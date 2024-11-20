@@ -137,15 +137,7 @@ func (m Migration) Run(ctx context.Context, conf config.MigratorConfig, logger *
 			if err != nil {
 				return err
 			}
-			for _, tag := range obj.Tags {
-				err = tx.Clauses(clause.OnConflict{
-					Columns:   []clause.Column{{Name: "key"}, {Name: "control_id"}}, // key columns
-					DoNothing: true,
-				}).Create(&tag).Error
-				if err != nil {
-					return fmt.Errorf("failure in control tag insert: %v", err)
-				}
-			}
+			
 		}
 
 		for _, obj := range p.benchmarks {
@@ -158,15 +150,7 @@ func (m Migration) Run(ctx context.Context, conf config.MigratorConfig, logger *
 			if err != nil {
 				return err
 			}
-			for _, tag := range obj.Tags {
-				err = tx.Clauses(clause.OnConflict{
-					Columns:   []clause.Column{{Name: "key"}, {Name: "benchmark_id"}}, // key columns
-					DoNothing: true,
-				}).Create(&tag).Error
-				if err != nil {
-					return fmt.Errorf("failure in benchmark tag insert: %v", err)
-				}
-			}
+			
 		}
 
 		for _, obj := range p.benchmarks {

@@ -11,7 +11,6 @@ import (
 
 	"github.com/goccy/go-yaml"
 	"github.com/jackc/pgtype"
-	"github.com/opengovern/og-util/pkg/model"
 	"github.com/opengovern/website/api"
 	db "github.com/opengovern/website/db/models"
 	"github.com/opengovern/website/sync-job/job/git"
@@ -49,54 +48,7 @@ func populateMdMapFromPath(path string) (map[string]string, error) {
 }
 
 func (g *GitParser) ExtractControls(complianceControlsPath string, controlEnrichmentBasePath string) error {
-	manualRemediationMap, err := populateMdMapFromPath(path.Join(controlEnrichmentBasePath, "tags", "remediation", "manual"))
-	if err != nil {
-		g.logger.Warn("failed to load manual remediation", zap.Error(err))
-	} else {
-		// g.logger.Info("loaded manual remediation", zap.Int("count", len(manualRemediationMap)))
-	}
-
-	cliRemediationMap, err := populateMdMapFromPath(path.Join(controlEnrichmentBasePath, "tags", "remediation", "cli"))
-	if err != nil {
-		g.logger.Warn("failed to load cli remediation", zap.Error(err))
-	} else {
-		// g.logger.Info("loaded cli remediation", zap.Int("count", len(cliRemediationMap)))
-	}
-
-	guardrailRemediationMap, err := populateMdMapFromPath(path.Join(controlEnrichmentBasePath, "tags", "remediation", "guardrail"))
-	if err != nil {
-		g.logger.Warn("failed to load cli remediation", zap.Error(err))
-	} else {
-		// g.logger.Info("loaded cli remediation", zap.Int("count", len(cliRemediationMap)))
-	}
-
-	programmaticRemediationMap, err := populateMdMapFromPath(path.Join(controlEnrichmentBasePath, "tags", "remediation", "programmatic"))
-	if err != nil {
-		g.logger.Warn("failed to load cli remediation", zap.Error(err))
-	} else {
-		// g.logger.Info("loaded cli remediation", zap.Int("count", len(cliRemediationMap)))
-	}
-
-	noncomplianceCostMap, err := populateMdMapFromPath(path.Join(controlEnrichmentBasePath, "tags", "noncompliance-cost"))
-	if err != nil {
-		g.logger.Warn("failed to load cli remediation", zap.Error(err))
-	} else {
-		// g.logger.Info("loaded cli remediation", zap.Int("count", len(cliRemediationMap)))
-	}
-
-	usefulnessExampleMap, err := populateMdMapFromPath(path.Join(controlEnrichmentBasePath, "tags", "usefulness-example"))
-	if err != nil {
-		g.logger.Warn("failed to load cli remediation", zap.Error(err))
-	} else {
-		// g.logger.Info("loaded cli remediation", zap.Int("count", len(cliRemediationMap)))
-	}
-
-	explanationMap, err := populateMdMapFromPath(path.Join(controlEnrichmentBasePath, "tags", "explanation"))
-	if err != nil {
-		g.logger.Warn("failed to load cli remediation", zap.Error(err))
-	} else {
-		// g.logger.Info("loaded cli remediation", zap.Int("count", len(cliRemediationMap)))
-	}
+	
 
 	// g.logger.Info("extracting controls", zap.Int("manualRemediationMap", len(manualRemediationMap)),
 	// 	zap.Int("cliRemediationMap", len(cliRemediationMap)), zap.Int("guardrailRemediationMap", len(guardrailRemediationMap)),
@@ -125,79 +77,7 @@ func (g *GitParser) ExtractControls(complianceControlsPath string, controlEnrich
 				g.logger.Error("failed to unmarshal control", zap.String("path", path), zap.Error(err))
 				return err
 			}
-			tags := make([]db.ControlTag, 0, len(control.Tags))
-			for tagKey, tagValue := range control.Tags {
-				tags = append(tags, db.ControlTag{
-					Tag: model.Tag{
-						Key:   tagKey,
-						Value: tagValue,
-					},
-					ControlID: control.ID,
-				})
-			}
-			if v, ok := manualRemediationMap[strings.ToLower(control.ID)]; ok {
-				tags = append(tags, db.ControlTag{
-					Tag: model.Tag{
-						Key:   "x-opengovernance-manual-remediation",
-						Value: []string{v},
-					},
-					ControlID: control.ID,
-				})
-			}
-			if v, ok := cliRemediationMap[strings.ToLower(control.ID)]; ok {
-				tags = append(tags, db.ControlTag{
-					Tag: model.Tag{
-						Key:   "x-opengovernance-cli-remediation",
-						Value: []string{v},
-					},
-					ControlID: control.ID,
-				})
-			}
-			if v, ok := guardrailRemediationMap[strings.ToLower(control.ID)]; ok {
-				tags = append(tags, db.ControlTag{
-					Tag: model.Tag{
-						Key:   "x-opengovernance-guardrail-remediation",
-						Value: []string{v},
-					},
-					ControlID: control.ID,
-				})
-			}
-			if v, ok := programmaticRemediationMap[strings.ToLower(control.ID)]; ok {
-				tags = append(tags, db.ControlTag{
-					Tag: model.Tag{
-						Key:   "x-opengovernance-programmatic-remediation",
-						Value: []string{v},
-					},
-					ControlID: control.ID,
-				})
-			}
-			if v, ok := noncomplianceCostMap[strings.ToLower(control.ID)]; ok {
-				tags = append(tags, db.ControlTag{
-					Tag: model.Tag{
-						Key:   "x-opengovernance-noncompliance-cost",
-						Value: []string{v},
-					},
-					ControlID: control.ID,
-				})
-			}
-			if v, ok := explanationMap[strings.ToLower(control.ID)]; ok {
-				tags = append(tags, db.ControlTag{
-					Tag: model.Tag{
-						Key:   "x-opengovernance-explanation",
-						Value: []string{v},
-					},
-					ControlID: control.ID,
-				})
-			}
-			if v, ok := usefulnessExampleMap[strings.ToLower(control.ID)]; ok {
-				tags = append(tags, db.ControlTag{
-					Tag: model.Tag{
-						Key:   "x-opengovernance-usefulness-example",
-						Value: []string{v},
-					},
-					ControlID: control.ID,
-				})
-			}
+			
 			if control.Severity == "" {
 				control.Severity = "low"
 			}
@@ -206,7 +86,6 @@ func (g *GitParser) ExtractControls(complianceControlsPath string, controlEnrich
 				ID:                 control.ID,
 				Title:              control.Title,
 				Description:        control.Description,
-				Tags:               tags,
 				IntegrationType:    control.IntegrationType,
 				Enabled:            true,
 				Benchmarks:         nil,
@@ -275,17 +154,7 @@ func (g *GitParser) ExtractBenchmarks(complianceBenchmarksPath string) error {
 
 	children := map[string][]string{}
 	for _, o := range benchmarks {
-		tags := make([]db.BenchmarkTag, 0, len(o.Tags))
-		for tagKey, tagValue := range o.Tags {
-			tags = append(tags, db.BenchmarkTag{
-				Tag: model.Tag{
-					Key:   tagKey,
-					Value: tagValue,
-				},
-				BenchmarkID: o.ID,
-			})
-		}
-
+		
 		b := db.Benchmark{
 			ID:                o.ID,
 			Title:             o.Title,
@@ -293,7 +162,6 @@ func (g *GitParser) ExtractBenchmarks(complianceBenchmarksPath string) error {
 			Description:       o.Description,
 			AutoAssign:        o.AutoAssign,
 			TracksDriftEvents: o.TracksDriftEvents,
-			Tags:              tags,
 			Children:          nil,
 			Controls:          nil,
 		}
