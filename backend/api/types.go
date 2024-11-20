@@ -44,6 +44,51 @@ func ParseComplianceResultSeverities(list []string) []db.ComplianceResultSeverit
 
 
 type BecnhmarkListResponse struct {
+	ID		  string `json:"id"`
+	Title 	  string `json:"title"`
+	IntegrationType []string `json:"integration_type"`
+	Description string `json:"description"`
+	Control_Count int `json:"control_count"`
+	NumberOfTables int `json:"number_of_tables"`
+	CreatedAt string `json:"created_at"`
+	UpdatedAt string `json:"updated_at"`
+
 	
+
+}
+type BenchmarkDetailResponse struct {
+	ID string `json:"id"`
+	Title string `json:"title"`
+	Description string `json:"description"`
+	IntegrationType []string `json:"integration_type"`
+	CreatedAt string `json:"created_at"`
+	UpdatedAt string `json:"updated_at"`
+	Enabled bool `json:"enabled"`
+	AutoAssign bool `json:"auto_assign"`
+
+}
+
+type ControlListResponse struct {
+	ID string `json:"id"`
+	Title string `json:"title"`
+	Description string `json:"description"`
+	IntegrationType []string `json:"integration_type"`
+	Enabled bool `json:"enabled"`
+	Severity db.ComplianceResultSeverity `json:"severity"`
+	ManualVerification bool `json:"manual_verification"`
+	CreatedAt string `json:"created_at"`
+	UpdatedAt string `json:"updated_at"`	
+}
+
+type ControlDetailResponse struct {
+	ID string `json:"id"`
+	Title string `json:"title"`
+	Description string `json:"description"`
+	IntegrationType []string `json:"integration_type"`
+	Enabled bool `json:"enabled"`
+	Severity db.ComplianceResultSeverity `json:"severity"`
+	ManualVerification bool `json:"manual_verification"`
+	CreatedAt string `json:"created_at"`
+	UpdatedAt string `json:"updated_at"`	
 
 }

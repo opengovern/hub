@@ -1,12 +1,12 @@
 package api
 
 import (
-	"fmt"
+	"net/http"
 
-	"github.com/go-git/go-git/v5/utils/merkletrie/internal/frame"
 	"github.com/labstack/echo/v4"
 	"github.com/opengovern/website/config"
 	"github.com/opengovern/website/db"
+	"github.com/opengovern/website/db/models"
 	"github.com/opengovern/website/service"
 	"go.opentelemetry.io/otel"
 	"go.opentelemetry.io/otel/trace"
@@ -45,7 +45,7 @@ func (s API) Register(e *echo.Echo) {
 	g := e.Group("/api/v1/")
 	g.GET("/frameworks",s.Frameworks)
 	g.GET("/framework/:id",s.FrameWorKDetail)
-	g.GET("/framework/:id/controls",s.FrameWorkControls)
+	g.GET("/framework/:frameworkId/controls",s.FrameWorkControls)
 	g.GET("control/:id",s.ControlDetail)
 
 }
@@ -56,8 +56,23 @@ func (s API) Frameworks(ctx echo.Context) error {
 	if err != nil {
 		return err
 	}
-	fmt.Print(frameworks)
-	return nil
+	var response []BecnhmarkListResponse
+	for _, framework := range frameworks {
+		var metadata models.BenchmarkMetadata
+		
+
+		response = append(response, BecnhmarkListResponse{
+			ID: framework.ID,
+			Title: framework.Title,
+			IntegrationType: framework.IntegrationType,
+			Description: framework.Description,
+			Control_Count: len(framework.Controls),
+			NumberOfTables: len(metadata.ListOfTables),
+			CreatedAt: framework.CreatedAt.String(),
+			UpdatedAt: framework.UpdatedAt.String(),
+		})
+	}
+	return ctx.JSON(http.StatusOK, response)
 
 
 
@@ -65,19 +80,79 @@ func (s API) Frameworks(ctx echo.Context) error {
 
 
 func (s API) FrameWorKDetail(ctx echo.Context) error {
-	return nil
+	id:= ctx.Param("id")
+	if id == "" {
+		return echo.NewHTTPError(http.StatusBadRequest, "id is required")
+	}
+	framework,err := s.db.BenchamrkDetail(id)
+	if err != nil {
+		return err
+	}
+	resp:= BenchmarkDetailResponse{
+		ID: framework.ID,
+		Title: framework.Title,
+		IntegrationType: framework.IntegrationType,
+		Description: framework.Description,
+		CreatedAt: framework.CreatedAt.String(),
+		UpdatedAt: framework.UpdatedAt.String(),
+		Enabled: framework.Enabled,
+		AutoAssign: framework.AutoAssign,
+	}
+	return ctx.JSON(http.StatusOK, resp)
+
 
 
 }
 
 func (s API) FrameWorkControls(ctx echo.Context) error {
-	return nil
+	frameWorkID := ctx.Param("frameworkId")
+	if frameWorkID == "" {
+		return echo.NewHTTPError(http.StatusBadRequest, "frameworkId is required")
+	}
+	controls,err := s.db.BenchmarkControls(frameWorkID)
+	if err != nil {
+		return err
+	}
+	var response []ControlListResponse
+	for _, control := range controls {
+		response = append(response, ControlListResponse{
+			ID: control.ID,
+			Title: control.Title,
+			Description: control.Description,
+			IntegrationType: control.IntegrationType,
+			Enabled: control.Enabled,
+			Severity: control.Severity,
+			ManualVerification: control.ManualVerification,
+			CreatedAt: control.CreatedAt.String(),
+			UpdatedAt: control.UpdatedAt.String(),
+		})
+	}
+	return ctx.JSON(http.StatusOK, response)
 
 
 }
 
 func (s API) ControlDetail(ctx echo.Context) error {
-	return nil
+	id:= ctx.Param("id")
+	if id == "" {
+		return echo.NewHTTPError(http.StatusBadRequest, "id is required")
+	}
+	control,err := s.db.ControlDetail(id)
+	if err != nil {
+		return err
+	}
+	resp:= ControlDetailResponse{
+		ID: control.ID,
+		Title: control.Title,
+		Description: control.Description,
+		IntegrationType: control.IntegrationType,
+		Enabled: control.Enabled,
+		Severity: control.Severity,
+		ManualVerification: control.ManualVerification,
+		CreatedAt: control.CreatedAt.String(),
+		UpdatedAt: control.UpdatedAt.String(),
+	}
+	return ctx.JSON(http.StatusOK, resp)
 
 
 }
