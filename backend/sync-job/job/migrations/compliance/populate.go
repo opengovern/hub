@@ -32,7 +32,7 @@ func (m Migration) Run(ctx context.Context, conf config.MigratorConfig, logger *
 		Port:    conf.PostgreSQL.Port,
 		User:    conf.PostgreSQL.Username,
 		Passwd:  conf.PostgreSQL.Password,
-		DB:      "compliance",
+		DB:      "website",
 		SSLMode: conf.PostgreSQL.SSLMode,
 	}, logger)
 	if err != nil {
@@ -40,19 +40,8 @@ func (m Migration) Run(ctx context.Context, conf config.MigratorConfig, logger *
 	}
 	dbm := db2.Database{Orm: orm}
 
-	ormMetadata, err := postgres.NewClient(&postgres.Config{
-		Host:    conf.PostgreSQL.Host,
-		Port:    conf.PostgreSQL.Port,
-		User:    conf.PostgreSQL.Username,
-		Passwd:  conf.PostgreSQL.Password,
-		DB:      "metadata",
-		SSLMode: conf.PostgreSQL.SSLMode,
-	}, logger)
-	if err != nil {
-		return fmt.Errorf("new postgres client: %w", err)
-	}
-	dbMetadata := db2.Database{Orm: ormMetadata}
 
+	
 	p := GitParser{
 		logger:          logger,
 		controlsQueries: make(map[string]db.Query),
@@ -101,21 +90,8 @@ func (m Migration) Run(ctx context.Context, conf config.MigratorConfig, logger *
 		return err
 	}
 
-	err = dbMetadata.Orm.WithContext(ctx).Transaction(func(tx *gorm.DB) error {
-		for _, obj := range p.queryParams {
-			err := tx.Clauses(clause.OnConflict{
-				DoNothing: true,
-			}).Create(&obj).Error
-			if err != nil {
-				return err
-			}
-		}
-		return nil
-	})
-	if err != nil {
-		logger.Error("failed to insert query params", zap.Error(err))
-		return err
-	}
+	
+	
 
 
 

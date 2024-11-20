@@ -49,7 +49,9 @@ func Command() *cobra.Command {
 		Postgres: koanf.Postgres{
 			Host:     "localhost",
 			Port:     "5432",
-			Username: "postgres",
+			Username: "website",
+			DB:      "website",
+			Password: "postgres",
 		},
 		Http: koanf.HttpServer{
 			Address: "localhost:8000",

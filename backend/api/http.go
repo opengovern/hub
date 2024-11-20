@@ -1,6 +1,7 @@
 package api
 
 import (
+	"fmt"
 	"net/http"
 
 	"github.com/labstack/echo/v4"
@@ -42,16 +43,17 @@ func bindValidate(ctx echo.Context, i any) error {
 }
 
 func (s API) Register(e *echo.Echo) {
-	g := e.Group("/api/v1/")
+	g := e.Group("/api")
 	g.GET("/frameworks",s.Frameworks)
-	g.GET("/framework/:id",s.FrameWorKDetail)
-	g.GET("/framework/:frameworkId/controls",s.FrameWorkControls)
-	g.GET("control/:id",s.ControlDetail)
+	g.GET("/frameworks/:id",s.FrameWorKDetail)
+	g.GET("/frameworks/:frameworkId/controls",s.FrameWorkControls)
+	g.GET("/controls/:id",s.ControlDetail)
 
 }
 
 
 func (s API) Frameworks(ctx echo.Context) error {
+	fmt.Println("here")
 	frameworks,err := s.db.ListBenchmark()
 	if err != nil {
 		return err

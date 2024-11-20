@@ -18,7 +18,6 @@ func (db Database) Initialize() error {
 		&models.Query{},
 		&models.QueryParameter{},
 		&models.BenchmarkAssignment{},
-		&models.BenchmarkMetadata{},
 		&models.Benchmark{},
 		&models.BenchmarkControls{},
 		&models.BenchmarkAssignmentsCount{},		
@@ -55,14 +54,18 @@ func (db Database) BenchamrkDetail(id string) (*models.Benchmark, error) {
 func (db Database) BenchmarkControls(id string) ([]models.Control, error) {
 	var benchmark_controls []models.BenchmarkControls
 	tx := db.Orm.Model(&models.BenchmarkControls{}).	
-		Where("BenchmarkID =?",id).
+		Where("benchmark_id =?",id).
 		Find(&benchmark_controls)
 	if tx.Error != nil {
 		return nil, tx.Error
 	}
+	var controlIds []string
+	for _, control := range benchmark_controls {
+		controlIds = append(controlIds, control.ControlID)
+	}
 	var controls  []models.Control
 	tx = db.Orm.Model(&models.Control{}).
-	Where("id IN ?",benchmark_controls).Find(&controls)
+	Where("id IN ?",controlIds).Find(&controls)
 
 	if tx.Error != nil {
 		return nil, tx.Error

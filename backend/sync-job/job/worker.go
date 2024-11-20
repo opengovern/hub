@@ -25,8 +25,13 @@ func InitializeJob(
 	logger *zap.Logger,
 ) (w *Job, err error) {
 	
-	
+	w = &Job{
+		conf:   conf,
+		logger: logger,
+	}
+
 	w.commitRefs, err = GitClone(conf, logger)
+	
 
 
 	if err != nil {

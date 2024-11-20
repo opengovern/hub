@@ -33,7 +33,7 @@ func GitClone(conf config.MigratorConfig, logger *zap.Logger) (string, error) {
 	}
 
 	logger.Info("finished fetching configz data")
-
+	
 	ref, err := res.Head()
 	if err != nil {
 		logger.Error("failed to get head", zap.Error(err))

@@ -8,6 +8,7 @@ import (
 	"syscall"
 
 	"github.com/opengovern/og-util/pkg/config"
+	"github.com/opengovern/og-util/pkg/koanf"
 	config2 "github.com/opengovern/website/sync-job/config"
 	"github.com/opengovern/website/sync-job/job"
 	"github.com/spf13/cobra"
@@ -41,10 +42,18 @@ func main() {
 
 
 func Command() *cobra.Command {
-	var (
-		cnf config2.MigratorConfig
-	)
-	config.ReadFromEnv(&cnf, nil)
+	
+	cnf := koanf.Provide("website", config2.MigratorConfig{
+		PostgreSQL: config.Postgres{
+			Host:     "localhost",
+			Port:     "5432",
+			Username: "website",
+			DB:      "website",
+			Password: "postgres",
+
+		},
+		AnalyticsGitURL: "https://github.com/opengovern/platform-configuration",
+	})
 	logger, err := zap.NewProduction()
 	if err != nil {
 		panic(err)
