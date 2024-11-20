@@ -41,3 +41,9 @@ func ParseComplianceResultSeverities(list []string) []db.ComplianceResultSeverit
 	}
 	return result
 }
+
+
+type BecnhmarkListResponse struct {
+	
+
+}

@@ -92,7 +92,7 @@ func Command() *cobra.Command {
 				ctx,
 				logger,
 				cnf.Http.Address,
-				api.New(cnf, logger, websiteService),
+				api.New(cnf, logger, websiteService,db),
 			)
 		},
 	}
