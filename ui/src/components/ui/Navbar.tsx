@@ -32,8 +32,8 @@ export function Navigation() {
         "fixed inset-x-3 top-4 z-50 mx-auto flex max-w-6xl transform-gpu animate-slide-down-fade justify-center overflow-hidden rounded-xl border border-transparent px-3 py-3 transition-all duration-300 ease-[cubic-bezier(0.16,1,0.3,1.03)] will-change-transform",
         open === true ? "h-52" : "h-16",
         scrolled || open === true
-          ? "backdrop-blur-nav max-w-3xl border-gray-100 bg-white/80 shadow-xl shadow-black/5 dark:border-white/15 dark:bg-black/70"
-          : "bg-white/0 dark:bg-gray-950/0",
+          ? "backdrop-blur-nav max-w-4xl border-gray-100 bg-white/80 shadow-xl shadow-black/5 dark:border-white/15 dark:bg-black/70"
+          : "bg-white/0 dark:bg-gray-950/0"
       )}
     >
       <div className="w-full md:my-auto">
@@ -62,6 +62,18 @@ export function Navigation() {
               >
                 Changelog
               </a>
+              <a
+                className="px-2 py-1 text-gray-900 dark:text-gray-50"
+                href={"/schema"}
+              >
+                Schema
+              </a>
+              <a
+                className="px-2 py-1 text-gray-900 dark:text-gray-50"
+                href={"/policies"}
+              >
+                Policies
+              </a>
             </div>
           </nav>
           <Button className="hidden h-10 font-semibold md:flex">
@@ -85,7 +97,7 @@ export function Navigation() {
         <nav
           className={cx(
             "my-6 flex text-lg ease-in-out will-change-transform md:hidden",
-            open ? "" : "hidden",
+            open ? "" : "hidden"
           )}
         >
           <ul className="space-y-4 font-medium">
@@ -98,9 +110,15 @@ export function Navigation() {
             <li onClick={() => setOpen(false)}>
               <a href={"/change"}>Changelog</a>
             </li>
+            <li onClick={() => setOpen(false)}>
+              <a href={"/Schema"}>Schema</a>
+            </li>{" "}
+            <li onClick={() => setOpen(false)}>
+              <a href={"/policies"}>Policies</a>
+            </li>
           </ul>
         </nav>
       </div>
     </header>
-  )
+  );
 }

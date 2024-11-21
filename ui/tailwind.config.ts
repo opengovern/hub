@@ -96,3 +96,6 @@ module.exports = {
   },
   plugins: [require("@headlessui/tailwindcss"), require("@tailwindcss/forms")],
 };
+
+
+// npx tailwindcss -i ./src/index.css -o ./src/style.css --watch 

@@ -35,3 +35,20 @@ export const hasErrorInput = [
   // ring color
   "ring-red-200 dark:ring-red-700/30",
 ]
+
+export const getIntegrationLogo = (name: string[]) => {
+  if(name?.length === 0 || !name) {
+    return "https://raw.githubusercontent.com/opengovern/website/main/connectors/icons/default.svg";
+  }
+  const type = name[0];
+  const base = "https://raw.githubusercontent.com/opengovern/website/main/connectors/icons/"
+  switch (type) {
+    case "azure_subscription":
+      return `${base}azure.svg`;
+    case "aws_cloud_account":
+      return `${base}aws.svg`;
+    default:
+      return `${base}default.svg`;
+  }
+ 
+}

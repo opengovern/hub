@@ -3,6 +3,10 @@ import { useEffect } from 'react'
 import Layout from '../layout'
 import NotFound from '../pages/notFound';
 import Home from '../pages/landing';
+import Pricing from '../pages/pricing';
+import Policies from '../pages/policies';
+import Controls from '../pages/controls';
+import ControlDetail from '../pages/controls/detail';
 
 
 const authRoutes = [
@@ -15,6 +19,30 @@ const authRoutes = [
     key: "*",
     path: "*",
     element: <NotFound />,
+    noAuth: true,
+  },
+  {
+    key: "pricing",
+    path: "/pricing",
+    element: <Pricing />,
+    noAuth: true,
+  },
+  {
+    key: "policies",
+    path: "/policies",
+    element: <Policies />,
+    noAuth: true,
+  },
+  {
+    key: "controls",
+    path: "/controls/:framework_id",
+    element: <Controls />,
+    noAuth: true,
+  },
+  {
+    key: "controlDetail",
+    path: "/controls/detail/:id",
+    element: <ControlDetail />,
     noAuth: true,
   },
 ];
