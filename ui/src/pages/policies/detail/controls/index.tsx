@@ -459,7 +459,7 @@ export default function Controls({
                   cell: (item) => (
                     <Link
                       href={`/controls/${item.id}`}
-                      target="__blank"
+                     
 
                       // onClick={() => {
                       //     navigateToInsightsDetails(item.id)

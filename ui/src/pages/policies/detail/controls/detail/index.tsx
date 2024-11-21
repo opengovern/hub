@@ -39,8 +39,10 @@ import {
 } from "@tremor/react";
 import axios from "axios";
 import { CopyToClipboard, KeyValuePairs } from "@cloudscape-design/components";
-import dayjs from "dayjs";
-
+import dayjs, { Dayjs } from "dayjs";
+import LocalizedFormat from "dayjs/plugin/localizedFormat";
+import timezone from "dayjs/plugin/timezone";
+import advancedFormat from "dayjs/plugin/advancedFormat";
 
  const severityBadge = (severity: any) => {
   const style = {
@@ -96,6 +98,7 @@ export const dateTimeDisplay = (
     return dayjs.unix(value).utc().format("MMM DD, YYYY kk:mm UTC");
   }
   if (date) {
+    // @ts-ignore
     return dayjs.utc(date).format("MMM DD, YYYY kk:mm UTC");
   }
   return "Not available";
@@ -147,7 +150,7 @@ export default function ControlDetail() {
        label: "Last updated",
        value: (
          // @ts-ignore
-         <>{dateTimeDisplay(control?.updated_at)}</>
+         <>{control?.updated_at}</>
        ),
      }
    );
@@ -162,7 +165,7 @@ export default function ControlDetail() {
             <>
               <section
                 aria-labelledby="pricing-title"
-                className="animate-slide-up-fade"
+                className="animate-slide-up-fade mb-2"
                 style={{
                   animationDuration: "600ms",
                   animationFillMode: "backwards",
@@ -171,22 +174,27 @@ export default function ControlDetail() {
                 <div></div>
                 <KBadge>Controls</KBadge>
 
-                <h1 className="mt-2 inline-block bg-gradient-to-br from-gray-900 to-gray-800 bg-clip-text py-2 text-4xl font-bold tracking-tighter text-transparent sm:text-6xl md:text-6xl dark:from-gray-50 dark:to-gray-300">
+                <h1 className="mt-2 inline-block bg-gradient-to-br from-gray-900 to-gray-800 bg-clip-text py-2 text-3xl font-bold tracking-tighter text-transparent sm:text-6xl md:text-4xl dark:from-gray-50 dark:to-gray-300">
                   {control?.title}
                 </h1>
-                <p className="mt-6 max-w-2xl text-lg text-gray-700 dark:text-gray-400">
+                <p className="mt-2 mb-2  text-lg text-gray-700 dark:text-gray-400">
                   {control.description} {severityBadge(control?.severity)}
                 </p>
               </section>
               <div>
-                <Grid numItems={2} className=" w-full gap-4 mb-6 mt-4">
-                  <Card className="h-fit min-h-[228px]">
-                    <KeyValuePairs className=" text-white custom-key-value " columns={2} items={GetKeyValue()} />
+                <Grid numItems={1} className=" w-full gap-4 mb-6 mt-4">
+                  <Card className="h-fit ">
+                    <KeyValuePairs
+                      className=" text-white custom-key-value "
+                      columns={2}
+                      items={GetKeyValue()}
+                    />
                   </Card>
-                  <Card className="max-h-[228px] overflow-scroll">
+                  <Card className="max-h-[350px] cursor-pointer overflow-hidden ">
                     <Editor
                       onValueChange={() => 1}
                       highlight={(text) => {}}
+                      disabled={true}
                       //  highlight(text, languages.sql, "sql")
                       value={
                         control?.query.replace(
@@ -194,37 +202,41 @@ export default function ControlDetail() {
                           "true"
                         ) || ""
                       }
-                      className="w-full bg-white dark:bg-gray-900 dark:text-gray-50 font-mono text-sm"
+                      className="w-full   dark:text-white font-mono text-sm"
                       style={{
                         minHeight: "200px",
                       }}
                       placeholder="-- write your SQL query here"
                     />
-                    <Divider />
-                    <Flex>
-                      <Flex className="gap-4">
-                        <Button
-                          variant="light"
-                          icon={""}
-                          iconPosition="left"
-                          onClick={() =>
-                            clipboardCopy(
-                              controlDetail?.control?.query?.queryToExecute?.replace(
-                                "$IS_ALL_CONNECTIONS_QUERY",
-                                "true"
-                              ) || ""
-                            ).then(() =>
-                              setNotification({
-                                text: "Query copied to clipboard",
-                                type: "info",
-                              })
-                            )
-                          }
-                        >
-                          Copy
-                        </Button>
-                      </Flex>
-                    </Flex>
+                    {/* <Divider /> */}
+                    {/* <Flex className="mt-2"> */}
+                      {/* <CopyToClipboard
+                        className="text-white mt-2"
+                        variant="inline"
+                        textToCopy={""}
+                        copySuccessText="Control ID copied to clipboard"
+                      /> */}
+                      {/* <Button
+                        variant="light"
+                        icon={""}
+                        iconPosition="left"
+                        onClick={() =>
+                          clipboardCopy(
+                            controlDetail?.control?.query?.queryToExecute?.replace(
+                              "$IS_ALL_CONNECTIONS_QUERY",
+                              "true"
+                            ) || ""
+                          ).then(() =>
+                            setNotification({
+                              text: "Query copied to clipboard",
+                              type: "info",
+                            })
+                          )
+                        }
+                      >
+                        Copy
+                      </Button> */}
+                    {/* </Flex> */}
                   </Card>
                 </Grid>
               </div>

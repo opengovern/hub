@@ -1425,6 +1425,14 @@ select {
   max-height: 228px;
 }
 
+.max-h-\[300px\] {
+  max-height: 300px;
+}
+
+.max-h-\[350px\] {
+  max-height: 350px;
+}
+
 .min-h-\[550px\] {
   min-height: 550px;
 }
@@ -5230,6 +5238,11 @@ a {
   .md\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
+  }
+
+  .md\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
   }
 }
 

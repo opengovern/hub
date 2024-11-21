@@ -59,10 +59,10 @@ export default function FrameworkDetail() {
               }}
             >
               <Badge>Frameworks</Badge>
-              <h1 className="mt-2 inline-block bg-gradient-to-br from-gray-900 to-gray-800 bg-clip-text py-2 text-4xl font-bold tracking-tighter text-transparent sm:text-6xl md:text-6xl dark:from-gray-50 dark:to-gray-300">
+              <h1 className="mt-2 inline-block bg-gradient-to-br from-gray-900 to-gray-800 bg-clip-text py-2 text-3xl font-bold tracking-tighter text-transparent sm:text-4xl md:text-4xl dark:from-gray-50 dark:to-gray-300">
                 {benchmark?.title}
               </h1>
-              <p className="mt-6 max-w-2xl text-lg text-gray-700 dark:text-gray-400">
+              <p className="mt-2 mb-2  text-lg text-gray-700 dark:text-gray-400">
                 {benchmark.description}
               </p>
             </section>
