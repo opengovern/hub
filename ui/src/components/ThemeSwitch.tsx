@@ -59,10 +59,15 @@ export { RadioGroup, RadioGroupItem }
 
 const ThemeSwitch = () => {
   const [mounted, setMounted] = useState(false)
+  const [value, setValue] = useState('dark');
+
 
   useEffect(() => {
     setMounted(true)
   }, [])
+  useEffect(() => {
+    setValue(document.getElementsByTagName("body")[0].classList[0] || "system")
+  }, [document.getElementsByTagName("body")[0].classList]);
 
   if (!mounted) {
     return null
@@ -70,9 +75,11 @@ const ThemeSwitch = () => {
 
   return (
     <RadioGroup
-      value={"dark"}
+      value={value}
       onValueChange={(value) => {
-      
+        document.getElementsByTagName("body")[0].classList.remove("light", "dark", "system")
+        document.getElementsByTagName("body")[0].classList.add(value)
+        setValue(value)
       }}
       className="flex gap-1"
     >

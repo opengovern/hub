@@ -13,7 +13,6 @@ const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
-  <div className='dark'>
   <React.StrictMode>
       <BrowserRouter>
             <I18nProvider locale="en" messages={[enMessages]}>
@@ -21,7 +20,6 @@ root.render(
             </I18nProvider>
       </BrowserRouter>
   </React.StrictMode>
-  </div>
 );
 
 
