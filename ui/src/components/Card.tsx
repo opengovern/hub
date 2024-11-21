@@ -29,8 +29,12 @@ const Card: FunctionComponent<CardProps> = ({
 
 
 }) => {
+   const truncate = (text: string | undefined, number: number) => {
+     if (text) {
+       return text.length > number ? text.substring(0, number) + "..." : text;
+     }
+   };
 
-  useEffect(() => {}, []);
 
   return (
     <>
@@ -52,9 +56,9 @@ const Card: FunctionComponent<CardProps> = ({
         <div className="flex flex-row gap-3 w-full justify-between pr-7">
           <div className="flex flex-col gap-1 w-full">
             <span className=" text-white font-bold w-full text-xl ">
-              {title}
+              {truncate(title,50)}
             </span>
-            <span className=" text-gray-300 w-full">{id}</span>
+            <span className=" text-gray-300 w-full">{truncate(description,200)}</span>
             {/* <span className=" text-white w-full">{description}</span> */}
           </div>
           <div className="flex flex-col gap-4">

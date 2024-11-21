@@ -25,10 +25,11 @@ export default function Policies() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   const navigate = useNavigate();
+  const [page,setPage] = useState(1)
   const getPolcies = () => {
     setLoading(true);
     axios
-      .get("http://localhost:8000/api/frameworks")
+      .get("http://localhost:8000/api/frameworks?per_page=15&cursor=1")
       .then((res) => {
         if (res.data) {
           setBenchmarks(res.data);
@@ -40,6 +41,7 @@ export default function Policies() {
         setLoading(false);
       });
   };
+  
     useEffect(() => {
         getPolcies();
     }, []);
@@ -79,7 +81,7 @@ export default function Policies() {
                     controlCount={benchmark.control_count}
                     numberOfTables={benchmark.number_of_tables}
                     onClick={()=>{
-                        navigate("/controls/" + benchmark.id);
+                        navigate("/frameworks/" + benchmark.id);
                     }}
                   />
                 </>

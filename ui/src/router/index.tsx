@@ -5,8 +5,8 @@ import NotFound from '../pages/notFound';
 import Home from '../pages/landing';
 import Pricing from '../pages/pricing';
 import Policies from '../pages/policies';
-import Controls from '../pages/controls';
-import ControlDetail from '../pages/controls/detail';
+import FrameworkDetail from '../pages/policies/detail';
+import ControlDetail from '../pages/policies/detail/controls/detail';
 
 
 const authRoutes = [
@@ -28,20 +28,20 @@ const authRoutes = [
     noAuth: true,
   },
   {
-    key: "policies",
-    path: "/policies",
+    key: "frameworks",
+    path: "/frameworks",
     element: <Policies />,
     noAuth: true,
   },
   {
     key: "controls",
-    path: "/controls/:framework_id",
-    element: <Controls />,
+    path: "/frameworks/:framework_id",
+    element: <FrameworkDetail />,
     noAuth: true,
   },
   {
     key: "controlDetail",
-    path: "/controls/detail/:id",
+    path: "/controls/:id",
     element: <ControlDetail />,
     noAuth: true,
   },

@@ -70,9 +70,9 @@ export function Navigation() {
               </a>
               <a
                 className="px-2 py-1 text-gray-900 dark:text-gray-50"
-                href={"/policies"}
+                href={"/frameworks"}
               >
-                Policies
+                Frameworks
               </a>
             </div>
           </nav>
@@ -114,7 +114,7 @@ export function Navigation() {
               <a href={"/Schema"}>Schema</a>
             </li>{" "}
             <li onClick={() => setOpen(false)}>
-              <a href={"/policies"}>Policies</a>
+              <a href={"/frameworks"}>Frameworks</a>
             </li>
           </ul>
         </nav>
