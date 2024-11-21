@@ -90,5 +90,6 @@ type ControlDetailResponse struct {
 	ManualVerification bool `json:"manual_verification"`
 	CreatedAt string `json:"created_at"`
 	UpdatedAt string `json:"updated_at"`	
+	Query string `json:"query"`
 
 }

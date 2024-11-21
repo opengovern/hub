@@ -3,7 +3,7 @@ package api
 import (
 	"encoding/json"
 	"net/http"
-
+	"strconv"
 	"github.com/labstack/echo/v4"
 	"github.com/labstack/echo/v4/middleware"
 	"github.com/opengovern/website/config"
@@ -32,16 +32,7 @@ func New(cfg config.WebsiteConfig, logger *zap.Logger, informationService *servi
 		db: database,
 	}
 }
-func bindValidate(ctx echo.Context, i any) error {
-	if err := ctx.Bind(i); err != nil {
-		return err
-	}
-	if err := ctx.Validate(i); err != nil {
-		return err
-	}
 
-	return nil
-}
 
 func (s API) Register(e *echo.Echo) {
 	 e.Use(middleware.CORSWithConfig(middleware.CORSConfig{
@@ -51,13 +42,33 @@ func (s API) Register(e *echo.Echo) {
 	g := e.Group("/api")
 	g.GET("/frameworks",s.Frameworks)
 	g.GET("/frameworks/:id",s.FrameWorKDetail)
+	g.GET("/frameworks/:id/tree",s.FrameWorkTree)
+
 	g.GET("/frameworks/:frameworkId/controls",s.FrameWorkControls)
 	g.GET("/controls/:id",s.ControlDetail)
+	g.GET("/query/:control_id",s.ControlQuery)
+
 
 }
 
 
 func (s API) Frameworks(ctx echo.Context) error {
+	var cursor, perPage int64
+	var err error
+	cursorStr := ctx.QueryParam("cursor")
+	if cursorStr != "" {
+		cursor, err = strconv.ParseInt(cursorStr, 10, 64)
+		if err != nil {
+			return err
+		}
+	}
+	perPageStr := ctx.QueryParam("per_page")
+	if perPageStr != "" {
+		perPage, err = strconv.ParseInt(perPageStr, 10, 64)
+		if err != nil {
+			return err
+		}
+	}
 	frameworks,err := s.db.ListBenchmark()
 	if err != nil {
 		return err
@@ -81,7 +92,8 @@ func (s API) Frameworks(ctx echo.Context) error {
 			UpdatedAt: framework.UpdatedAt.String(),
 		})
 	}
-	return ctx.JSON(http.StatusOK, response)
+
+	return ctx.JSON(http.StatusOK, 	service.Paginate(cursor, perPage, response))
 
 
 
@@ -112,9 +124,38 @@ func (s API) FrameWorKDetail(ctx echo.Context) error {
 
 
 }
+func (s API) FrameWorkTree(ctx echo.Context) error {
+	id:= ctx.Param("id")
+	if id == "" {
+		return echo.NewHTTPError(http.StatusBadRequest, "id is required")
+	}
+	nested, err := s.db.GetBenchmarkTree(id)
+	if err != nil {
+		return echo.NewHTTPError(http.StatusInternalServerError, "could not get benchmark tree")
+	}
+
+	return ctx.JSON(http.StatusOK, nested)
+
+}
 
 func (s API) FrameWorkControls(ctx echo.Context) error {
 	frameWorkID := ctx.Param("frameworkId")
+	var cursor, perPage int64
+	var err error
+	cursorStr := ctx.QueryParam("cursor")
+	if cursorStr != "" {
+		cursor, err = strconv.ParseInt(cursorStr, 10, 64)
+		if err != nil {
+			return err
+		}
+	}
+	perPageStr := ctx.QueryParam("per_page")
+	if perPageStr != "" {
+		perPage, err = strconv.ParseInt(perPageStr, 10, 64)
+		if err != nil {
+			return err
+		}
+	}
 	if frameWorkID == "" {
 		return echo.NewHTTPError(http.StatusBadRequest, "frameworkId is required")
 	}
@@ -136,7 +177,8 @@ func (s API) FrameWorkControls(ctx echo.Context) error {
 			UpdatedAt: control.UpdatedAt.String(),
 		})
 	}
-	return ctx.JSON(http.StatusOK, response)
+	
+	return ctx.JSON(http.StatusOK, service.Paginate(cursor, perPage, response))
 
 
 }
@@ -160,6 +202,34 @@ func (s API) ControlDetail(ctx echo.Context) error {
 		ManualVerification: control.ManualVerification,
 		CreatedAt: control.CreatedAt.String(),
 		UpdatedAt: control.UpdatedAt.String(),
+	}
+	return ctx.JSON(http.StatusOK, resp)
+
+
+}
+
+
+
+func (s API) ControlQuery(ctx echo.Context) error {
+	id:= ctx.Param("control_id")
+	if id == "" {
+		return echo.NewHTTPError(http.StatusBadRequest, "id is required")
+	}
+	control,err := s.db.ControlDetail(id)
+	if err != nil {
+		return err
+	}
+	resp:= ControlDetailResponse{
+		ID: control.ID,
+		Title: control.Title,
+		Description: control.Description,
+		IntegrationType: control.IntegrationType,
+		Enabled: control.Enabled,
+		Severity: control.Severity,
+		ManualVerification: control.ManualVerification,
+		CreatedAt: control.CreatedAt.String(),
+		UpdatedAt: control.UpdatedAt.String(),
+		Query: control.Query.QueryToExecute,
 	}
 	return ctx.JSON(http.StatusOK, resp)
 

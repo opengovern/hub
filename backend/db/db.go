@@ -1,10 +1,8 @@
 package db
 
 import (
-
+	"github.com/opengovern/website/db/models"
 	"gorm.io/gorm"
-	 "github.com/opengovern/website/db/models"
-
 )
 
 type Database struct {
@@ -30,10 +28,71 @@ func (db Database) Initialize() error {
 	return nil
 }
 
+func (db Database) GetBenchmarkTree(id string) (*models.NestedBenchmark, error) {
+	var b *models.Benchmark
+	var err error
+	b,err = db.BenchamrkDetail(id)
+	var children []models.NestedBenchmark
+	var s []models.BenchmarkChild
+	tx := db.Orm.Model(&models.BenchmarkChild{}).	
+		Where("benchmark_id = ?",id).
+		Find(&s)
+	if tx.Error != nil {
+		return nil, tx.Error
+	}
+	var childrenList []string
+	for _, child := range s {
+		childrenList = append(childrenList, child.ChildID)
+	}
+	
+	 childrens,new_err := db.ListBenchmarkOfIdS(childrenList)
+	 if new_err != nil {
+		return nil, new_err
+	}
+	
+	
+	for _, child := range childrens {
+		childNested, err := db.GetBenchmarkTree( child.ID)
+		if err != nil {
+			return nil, err
+		}
+		children = append(children, *childNested)
+	}
+
+	nb := models.NestedBenchmark{
+		ID:                b.ID,
+		Title:             b.Title,
+		ReferenceCode:     b.DisplayCode,
+		Description:       b.Description,
+		LogoURI:           b.LogoURI,
+		Category:          b.Category,
+		DocumentURI:       b.DocumentURI,
+		AutoAssign:        b.AutoAssign,
+		TracksDriftEvents: b.TracksDriftEvents,
+		CreatedAt:         b.CreatedAt.String(),
+		UpdatedAt:         b.UpdatedAt.String(),
+		Children:          children,
+	}
+	
+	
+	return &nb, err
+}
+func (db Database) ListBenchmarkOfIdS(ids []string) ([]models.Benchmark, error) {
+	var s []models.Benchmark
+	tx := db.Orm.Model(&models.Benchmark{}).	
+		Where("id IN ?",ids).
+		Find(&s)
+	if tx.Error != nil {
+		return nil, tx.Error
+	}
+	return s, nil
+}
+
+
 func (db Database) ListBenchmark() ([]models.Benchmark, error) {
 	var s []models.Benchmark
 	tx := db.Orm.Model(&models.Benchmark{}).	
-		Order("created_at desc").
+		Order("control_count desc").
 		Find(&s)
 	if tx.Error != nil {
 		return nil, tx.Error
@@ -99,3 +158,4 @@ func (db Database) ControlDetail(id string) (*models.Control, error) {
 	}
 	return &s, nil
 }
+
