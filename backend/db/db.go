@@ -20,6 +20,7 @@ func (db Database) Initialize() error {
 		&models.BenchmarkAssignment{},
 		&models.Benchmark{},
 		&models.BenchmarkControls{},
+		&models.BenchmarkChild{},
 		&models.BenchmarkAssignmentsCount{},		
 	)
 	if err != nil {
@@ -37,18 +38,9 @@ func (db Database) ListBenchmark() ([]models.Benchmark, error) {
 	if tx.Error != nil {
 		return nil, tx.Error
 	}
-	// obtein list of controls for each benchmark
-	for i, benchmark := range s {
-		controls, err := db.BenchmarkControls(benchmark.ID)
-		if err != nil {
-			return nil, err
-		}
-		s[i].Controls = controls
-	}
-	
-
 	return s, nil
 }
+
 func (db Database) BenchamrkDetail(id string) (*models.Benchmark, error) {
 	var s models.Benchmark
 	tx := db.Orm.Model(&models.Benchmark{}).	
@@ -82,6 +74,18 @@ func (db Database) BenchmarkControls(id string) ([]models.Control, error) {
 	}
 	
 	return controls, nil
+}
+// new function for count of benchmark controls
+func (db Database) BenchmarkControlsCount(id string) (int, error) {
+	var count int64
+	tx := db.Orm.Model(&models.BenchmarkControls{}).	
+		Where("benchmark_id =?",id).
+		Count(&count)
+	if tx.Error != nil {
+		return 0, tx.Error
+	}
+	return int(count), nil
+
 }
 
 

@@ -50,6 +50,8 @@ type Benchmark struct {
 	Metadata          pgtype.JSONB
 	Children  []Benchmark `gorm:"many2many:benchmark_children;"`
 	Controls  []Control   `gorm:"many2many:benchmark_controls;"`
+	ControlCount int
+	ChildrenCount int
 	CreatedAt time.Time
 	UpdatedAt time.Time
 }

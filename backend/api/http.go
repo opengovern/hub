@@ -75,7 +75,7 @@ func (s API) Frameworks(ctx echo.Context) error {
 			Title: framework.Title,
 			IntegrationType: framework.IntegrationType,
 			Description: framework.Description,
-			Control_Count: len(framework.Controls),
+			Control_Count: framework.ControlCount,
 			NumberOfTables: len(metadata.ListOfTables),
 			CreatedAt: framework.CreatedAt.String(),
 			UpdatedAt: framework.UpdatedAt.String(),

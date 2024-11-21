@@ -130,6 +130,9 @@ func (m Migration) Run(ctx context.Context, conf config.MigratorConfig, logger *
 		}
 
 		for _, obj := range p.benchmarks {
+			// count of controls
+			ControlCount := len(obj.Controls)
+			ChildrenCount:= len(obj.Children)
 			for _, child := range obj.Children {
 				err := tx.Clauses(clause.OnConflict{
 					DoNothing: true,
@@ -157,6 +160,14 @@ func (m Migration) Run(ctx context.Context, conf config.MigratorConfig, logger *
 					logger.Info("inserted controls and benchmarks", zap.Error(err))
 					return err
 				}
+			}
+			err = tx.Model(&db.Benchmark{}).Where("id = ?", obj.ID).Updates(map[string]interface{}{
+				"control_count": ControlCount,
+				"children_count": ChildrenCount,
+			}).Error
+			if err != nil {
+				logger.Info("inserted controls and benchmarks", zap.Error(err))
+				return err
 			}
 		}
 
