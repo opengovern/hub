@@ -37,6 +37,16 @@ func (db Database) ListBenchmark() ([]models.Benchmark, error) {
 	if tx.Error != nil {
 		return nil, tx.Error
 	}
+	// obtein list of controls for each benchmark
+	for i, benchmark := range s {
+		controls, err := db.BenchmarkControls(benchmark.ID)
+		if err != nil {
+			return nil, err
+		}
+		s[i].Controls = controls
+	}
+	
+
 	return s, nil
 }
 func (db Database) BenchamrkDetail(id string) (*models.Benchmark, error) {

@@ -1,7 +1,7 @@
 package api
 
 import (
-	"fmt"
+	"encoding/json"
 	"net/http"
 
 	"github.com/labstack/echo/v4"
@@ -58,7 +58,6 @@ func (s API) Register(e *echo.Echo) {
 
 
 func (s API) Frameworks(ctx echo.Context) error {
-	fmt.Println("here")
 	frameworks,err := s.db.ListBenchmark()
 	if err != nil {
 		return err
@@ -66,8 +65,11 @@ func (s API) Frameworks(ctx echo.Context) error {
 	var response []BecnhmarkListResponse
 	for _, framework := range frameworks {
 		var metadata models.BenchmarkMetadata
+		if err := json.Unmarshal(framework.Metadata.Bytes, &metadata); err != nil {
 		
-
+		return err
+	}
+		
 		response = append(response, BecnhmarkListResponse{
 			ID: framework.ID,
 			Title: framework.Title,
