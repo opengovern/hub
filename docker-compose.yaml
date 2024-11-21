@@ -3,9 +3,9 @@ services:
         image: ghcr.io/opengovernance-io/website-service:v0.0.9
         container_name: website-service
         ports:
-        - "8080:8080"
+        - "8000:8000"
         environment:
-          - SCHEMA_HTTP__ADDRESS=0.0.0.0:8080
+          - SCHEMA_HTTP__ADDRESS=0.0.0.0:8000
           - SCHEMA_POSTGRES__HOST=postgres
           - SCHEMA_POSTGRES__PORT=5432
           - SCHEMA_POSTGRES__DB=website
@@ -22,20 +22,17 @@ services:
         container_name: postgres
         volumes:
           - pgdata:/var/lib/postgresql/data
+        ports:
+        - "5432:5432"
         environment:
         - POSTGRES_USER=website
-        - POSTGRES_PASSWORD=${PG_PASSWORD}
+        - POSTGRES_PASSWORD=postgres
         - POSTGRES_DB=website
         networks:
         - og-network
         restart: always
 volumes:
     pgdata:
-        driver: local
-        driver_opts:
-          type: none
-          device: "website-service/pgdata"
-          o: bind
 
 networks:
     og-network:
