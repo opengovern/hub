@@ -5,6 +5,7 @@ import (
 	"net/http"
 
 	"github.com/labstack/echo/v4"
+	"github.com/labstack/echo/v4/middleware"
 	"github.com/opengovern/website/config"
 	"github.com/opengovern/website/db"
 	"github.com/opengovern/website/db/models"
@@ -43,6 +44,10 @@ func bindValidate(ctx echo.Context, i any) error {
 }
 
 func (s API) Register(e *echo.Echo) {
+	 e.Use(middleware.CORSWithConfig(middleware.CORSConfig{
+      AllowOrigins: []string{"*"},
+      AllowHeaders: []string{echo.HeaderOrigin, echo.HeaderContentType, echo.HeaderAccept},
+    }))  
 	g := e.Group("/api")
 	g.GET("/frameworks",s.Frameworks)
 	g.GET("/frameworks/:id",s.FrameWorKDetail)
