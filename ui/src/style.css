@@ -1161,6 +1161,10 @@ select {
   height: 100vh;
 }
 
+.min-h-screen {
+  min-height: 100vh;
+}
+
 .w-11 {
   width: 2.75rem;
 }
@@ -1504,6 +1508,10 @@ select {
 
 .overflow-hidden {
   overflow: hidden;
+}
+
+.scroll-auto {
+  scroll-behavior: auto;
 }
 
 .whitespace-nowrap {
@@ -2134,6 +2142,11 @@ select {
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
 }
 
+.antialiased {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 .placeholder-gray-400::placeholder {
   --tw-placeholder-opacity: 1;
   color: rgb(156 163 175 / var(--tw-placeholder-opacity, 1));
@@ -2500,6 +2513,26 @@ a {
 
 *:hover > .anchor-link {
   visibility: visible;
+}
+
+.selection\:bg-indigo-100 *::selection {
+  --tw-bg-opacity: 1;
+  background-color: rgb(224 231 255 / var(--tw-bg-opacity, 1));
+}
+
+.selection\:text-indigo-700 *::selection {
+  --tw-text-opacity: 1;
+  color: rgb(67 56 202 / var(--tw-text-opacity, 1));
+}
+
+.selection\:bg-indigo-100::selection {
+  --tw-bg-opacity: 1;
+  background-color: rgb(224 231 255 / var(--tw-bg-opacity, 1));
+}
+
+.selection\:text-indigo-700::selection {
+  --tw-text-opacity: 1;
+  color: rgb(67 56 202 / var(--tw-text-opacity, 1));
 }
 
 .file\:-my-2::file-selector-button {
