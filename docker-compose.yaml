@@ -1,8 +1,8 @@
 services:
     website-backend:
         build:
-          context: ./backend
-          dockerfile: backend/Dockerfile
+          context: .
+          dockerfile: /backend/Dockerfile
         container_name: website-service
         ports:
         - "8000:8000"
@@ -39,8 +39,8 @@ services:
      ports:
         - "3000:3000"
      build:
-       context: ./ui
-       dockerfile: ./ui/Dockerfile #The client service requires a docker file to be specified. For development, we’re going to use the Dockerfile.dev file.
+       context: .
+       dockerfile: /ui/Dockerfile #The client service requires a docker file to be specified. For development, we’re going to use the Dockerfile.dev file.
   
 volumes:
     pgdata:
