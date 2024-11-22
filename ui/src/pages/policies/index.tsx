@@ -19,6 +19,7 @@ import React, { Fragment, useEffect, useState } from "react";
 import { Benchmarks } from "./types";
 import Card from "../../components/Card";
 import { useNavigate } from "react-router-dom";
+import Pagination from "../../components/Pagination";
 
 export default function Policies() {
   const [benchmarks, setBenchmarks] = useState<Benchmarks[]>([]);
@@ -29,7 +30,7 @@ export default function Policies() {
   const getPolcies = () => {
     setLoading(true);
     axios
-      .get("http://localhost:8000/api/frameworks?per_page=15&cursor=1")
+      .get(`https://hub.opencomply.io/api/api/frameworks?per_page=15&cursor=${page}`)
       .then((res) => {
         if (res.data) {
           setBenchmarks(res.data);
@@ -84,6 +85,15 @@ export default function Policies() {
                 </>
               );
             })}
+        </div>
+        <div className="mt-5">
+          {/* <Pagination
+            page_size={15}
+            total={benchmarks[0]?.total}
+            current_page={page}
+            /> */}
+
+
         </div>
       </div>
     </div>

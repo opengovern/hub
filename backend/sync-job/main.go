@@ -45,7 +45,7 @@ func Command() *cobra.Command {
 	
 	cnf := koanf.Provide("website", config2.MigratorConfig{
 		PostgreSQL: config.Postgres{
-			Host:     "localhost",
+			Host:     "postgres",
 			Port:     "5432",
 			Username: "website",
 			DB:      "website",
