@@ -1,0 +1,9 @@
+database:
+  host: "localhost"
+  port: "5432"
+  user: "crito"
+  password: ""
+  dbname: "json_loader"
+  sslmode: "disable"
+
+workerCount: 10
