@@ -9,4 +9,4 @@ COPY . ./
 RUN ls
 RUN npm run build
 
-CMD ["serve","-s","dist","-p" ,"3000"]
+CMD ["serve","-s","build","-p" ,"3000"]
