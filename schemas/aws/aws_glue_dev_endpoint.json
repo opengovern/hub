@@ -1,0 +1,136 @@
+{
+  "table_name": "aws_glue_dev_endpoint",
+  "table_description": "AWS Glue Dev Endpoint",
+  "columns": [
+    {
+      "name": "endpoint_name",
+      "type": "text",
+      "description": "The name of the DevEndpoint."
+    },
+    {
+      "name": "arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) of the DevEndpoint."
+    },
+    {
+      "name": "status",
+      "type": "text",
+      "description": "The current status of this DevEndpoint."
+    },
+    {
+      "name": "availability_zone",
+      "type": "text",
+      "description": "The AWS Availability Zone where this DevEndpoint is located."
+    },
+    {
+      "name": "created_timestamp",
+      "type": "timestamp with time zone",
+      "description": "The point in time at which this DevEndpoint was created."
+    },
+    {
+      "name": "extra_jars_s3_path",
+      "type": "text",
+      "description": "The path to one or more Java .jar files in an S3 bucket that should be loaded in your DevEndpoint."
+    },
+    {
+      "name": "extra_python_libs_s3_path",
+      "type": "text",
+      "description": "The paths to one or more Python libraries in an Amazon S3 bucket that should be loaded in your DevEndpoint. Multiple values must be complete paths separated by a comma."
+    },
+    {
+      "name": "failure_reason",
+      "type": "text",
+      "description": "The reason for a current failure in this DevEndpoint."
+    },
+    {
+      "name": "glue_version",
+      "type": "text",
+      "description": "Glue version determines the versions of Apache Spark and Python that Glue supports."
+    },
+    {
+      "name": "last_modified_timestamp",
+      "type": "timestamp with time zone",
+      "description": "The point in time at which this DevEndpoint was last modified."
+    },
+    {
+      "name": "last_update_status",
+      "type": "text",
+      "description": "The status of the last update."
+    },
+    {
+      "name": "number_of_nodes",
+      "type": "integer",
+      "description": "The number of Glue Data Processing Units (DPUs) allocated to this DevEndpoint."
+    },
+    {
+      "name": "number_of_workers",
+      "type": "integer",
+      "description": "The number of workers of a defined workerType that are allocated to the development endpoint."
+    },
+    {
+      "name": "private_address",
+      "type": "text",
+      "description": "A private IP address to access the DevEndpoint within a VPC if the DevEndpoint is created within one."
+    },
+    {
+      "name": "public_address",
+      "type": "text",
+      "description": "The public IP address used by this DevEndpoint. The PublicAddress field is present only when you create a non-virtual private cloud (VPC) DevEndpoint."
+    },
+    {
+      "name": "public_key",
+      "type": "text",
+      "description": "The public key to be used by this DevEndpoint for authentication."
+    },
+    {
+      "name": "role_arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) of the IAM role used in this DevEndpoint."
+    },
+    {
+      "name": "security_configuration",
+      "type": "text",
+      "description": "The name of the SecurityConfiguration structure to be used with this DevEndpoint."
+    },
+    {
+      "name": "subnet_id",
+      "type": "text",
+      "description": "The subnet ID for this DevEndpoint."
+    },
+    {
+      "name": "vpc_id",
+      "type": "text",
+      "description": "The ID of the virtual private cloud (VPC) used by this DevEndpoint."
+    },
+    {
+      "name": "worker_type",
+      "type": "text",
+      "description": "The type of predefined worker that is allocated to the development endpoint. Accepts a value of Standard, G.1X, or G.2X."
+    },
+    {
+      "name": "yarn_endpoint_address",
+      "type": "text",
+      "description": "The YARN endpoint address used by this DevEndpoint."
+    },
+    {
+      "name": "zeppelin_remote_spark_interpreter_port",
+      "type": "integer",
+      "description": "The Apache Zeppelin port for the remote Apache Spark interpreter."
+    },
+    {
+      "name": "public_keys",
+      "type": "json",
+      "description": "A list of public keys to be used by the DevEndpoints for authentication."
+    },
+    {
+      "name": "security_group_ids",
+      "type": "json",
+      "description": "A list of security group identifiers used in this DevEndpoint."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    }
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "table_name": "aws_auditmanager_control",
+  "table_description": "AWS Audit Manager Control",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The name of the specified control."
+    },
+    {
+      "name": "arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) of the specified control."
+    },
+    {
+      "name": "id",
+      "type": "text",
+      "description": "An unique identifier for the specified control."
+    },
+    {
+      "name": "type",
+      "type": "text",
+      "description": "The type of control, such as custom or standard."
+    },
+    {
+      "name": "created_at",
+      "type": "timestamp with time zone",
+      "description": "Specifies when the control was created."
+    },
+    {
+      "name": "created_by",
+      "type": "text",
+      "description": "The IAM user or role that created the control."
+    },
+    {
+      "name": "action_plan_title",
+      "type": "text",
+      "description": "The title of the action plan for remediating the control."
+    },
+    {
+      "name": "action_plan_instructions",
+      "type": "text",
+      "description": "The recommended actions to carry out if the control is not fulfilled."
+    },
+    {
+      "name": "control_sources",
+      "type": "text",
+      "description": "The data source that determines from where AWS Audit Manager collects evidence for the control."
+    },
+    {
+      "name": "description",
+      "type": "text",
+      "description": "The description of the specified control."
+    },
+    {
+      "name": "last_updated_at",
+      "type": "timestamp with time zone",
+      "description": "Specifies when the control was most recently updated."
+    },
+    {
+      "name": "last_updated_by",
+      "type": "text",
+      "description": "The IAM user or role that most recently updated the control."
+    },
+    {
+      "name": "testing_information",
+      "type": "text",
+      "description": "The steps to follow to determine if the control has been satisfied."
+    },
+    {
+      "name": "control_mapping_sources",
+      "type": "json",
+      "description": "The data mapping sources for the specified control."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": ""
+    }
+  ]
+}

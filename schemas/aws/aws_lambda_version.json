@@ -1,0 +1,206 @@
+{
+  "table_name": "aws_lambda_version",
+  "table_description": "AWS Lambda Version",
+  "columns": [
+    {
+      "name": "version",
+      "type": "text",
+      "description": "The version of the Lambda function."
+    },
+    {
+      "name": "function_name",
+      "type": "text",
+      "description": "The name of the function."
+    },
+    {
+      "name": "arn",
+      "type": "text",
+      "description": "The function's Amazon Resource Name (ARN)."
+    },
+    {
+      "name": "master_arn",
+      "type": "text",
+      "description": "For Lambda@Edge functions, the ARN of the master function."
+    },
+    {
+      "name": "state",
+      "type": "text",
+      "description": "The current state of the function."
+    },
+    {
+      "name": "code_sha_256",
+      "type": "text",
+      "description": "The SHA256 hash of the function's deployment package."
+    },
+    {
+      "name": "code_size",
+      "type": "integer",
+      "description": "The size of the function's deployment package, in bytes."
+    },
+    {
+      "name": "description",
+      "type": "text",
+      "description": "The function's description."
+    },
+    {
+      "name": "handler",
+      "type": "text",
+      "description": "The function that Lambda calls to begin executing your function."
+    },
+    {
+      "name": "last_modified",
+      "type": "timestamp with time zone",
+      "description": "The date and time that the function was last updated, in ISO-8601 format."
+    },
+    {
+      "name": "last_update_status",
+      "type": "text",
+      "description": "The status of the last update that was performed on the function."
+    },
+    {
+      "name": "last_update_status_reason",
+      "type": "text",
+      "description": "The reason for the last update that was performed on the function."
+    },
+    {
+      "name": "last_update_status_reason_code",
+      "type": "text",
+      "description": "The reason code for the last update that was performed on the function."
+    },
+    {
+      "name": "memory_size",
+      "type": "integer",
+      "description": "The memory that's allocated to the function."
+    },
+    {
+      "name": "revision_id",
+      "type": "text",
+      "description": "The latest updated revision of the function or alias."
+    },
+    {
+      "name": "runtime",
+      "type": "text",
+      "description": "The runtime environment for the Lambda function."
+    },
+    {
+      "name": "timeout",
+      "type": "integer",
+      "description": "The amount of time in seconds that Lambda allows a function to run before stopping it."
+    },
+    {
+      "name": "vpc_id",
+      "type": "text",
+      "description": "The ID of the VPC."
+    },
+    {
+      "name": "kms_key_arn",
+      "type": "text",
+      "description": "The KMS key that's used to encrypt the function's environment variables."
+    },
+    {
+      "name": "role",
+      "type": "text",
+      "description": "The function's execution role."
+    },
+    {
+      "name": "signing_job_arn",
+      "type": "text",
+      "description": "The ARN of the signing job."
+    },
+    {
+      "name": "signing_profile_version_arn",
+      "type": "text",
+      "description": "The ARN of the signing profile version."
+    },
+    {
+      "name": "state_reason",
+      "type": "text",
+      "description": "The reason for the function's current state."
+    },
+    {
+      "name": "state_reason_code",
+      "type": "text",
+      "description": "The reason code for the function's current state."
+    },
+    {
+      "name": "ephemeral_storage_size",
+      "type": "integer",
+      "description": "The size of the function's /tmp directory in MB."
+    },
+    {
+      "name": "environment_variables",
+      "type": "json",
+      "description": "The environment variables that are accessible from function code during execution."
+    },
+    {
+      "name": "policy",
+      "type": "json",
+      "description": "Contains the resource-based policy."
+    },
+    {
+      "name": "policy_std",
+      "type": "json",
+      "description": "Contains the contents of the resource-based policy in a canonical form for easier searching."
+    },
+    {
+      "name": "vpc_security_group_ids",
+      "type": "json",
+      "description": "A list of VPC security groups IDs attached to Lambda function."
+    },
+    {
+      "name": "vpc_subnet_ids",
+      "type": "json",
+      "description": "A list of VPC subnet IDs attached to Lambda function."
+    },
+    {
+      "name": "architectures",
+      "type": "json",
+      "description": "The instruction set architecture that the function supports."
+    },
+    {
+      "name": "dead_letter_config",
+      "type": "json",
+      "description": "The function's dead letter queue configuration."
+    },
+    {
+      "name": "file_system_configs",
+      "type": "json",
+      "description": "Connection settings for an Amazon EFS file system."
+    },
+    {
+      "name": "image_config_response",
+      "type": "json",
+      "description": "The function's image configuration values."
+    },
+    {
+      "name": "layers",
+      "type": "json",
+      "description": "The function's layers."
+    },
+    {
+      "name": "logging_config",
+      "type": "json",
+      "description": "The function's Amazon CloudWatch Logs configuration settings."
+    },
+    {
+      "name": "runtime_version_config",
+      "type": "json",
+      "description": "The ARN of the runtime and any errors that occurred."
+    },
+    {
+      "name": "snap_start",
+      "type": "json",
+      "description": "Configuration for creating a snapshot of the initialized execution environment."
+    },
+    {
+      "name": "tracing_config",
+      "type": "json",
+      "description": "The function's X-Ray tracing configuration."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    }
+  ]
+}

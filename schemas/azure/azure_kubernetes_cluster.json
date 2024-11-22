@@ -1,0 +1,181 @@
+{
+  "table_name": "azure_kubernetes_cluster",
+  "table_description": "Azure Kubernetes Cluster",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The name of the cluster."
+    },
+    {
+      "name": "id",
+      "type": "text",
+      "description": "The ID of the cluster."
+    },
+    {
+      "name": "type",
+      "type": "text",
+      "description": "The type of the cluster."
+    },
+    {
+      "name": "location",
+      "type": "text",
+      "description": "The location where the cluster is created."
+    },
+    {
+      "name": "azure_portal_fqdn",
+      "type": "text",
+      "description": "FQDN for the master pool which used by proxy config."
+    },
+    {
+      "name": "disk_encryption_set_id",
+      "type": "text",
+      "description": "ResourceId of the disk encryption set to use for enabling encryption at rest."
+    },
+    {
+      "name": "dns_prefix",
+      "type": "text",
+      "description": "DNS prefix specified when creating the managed cluster."
+    },
+    {
+      "name": "enable_pod_security_policy",
+      "type": "boolean",
+      "description": "Whether to enable Kubernetes pod security policy (preview)."
+    },
+    {
+      "name": "enable_rbac",
+      "type": "boolean",
+      "description": "Whether to enable Kubernetes Role-Based Access Control."
+    },
+    {
+      "name": "fqdn",
+      "type": "text",
+      "description": "FQDN for the master pool."
+    },
+    {
+      "name": "fqdn_subdomain",
+      "type": "text",
+      "description": "FQDN subdomain specified when creating private cluster with custom private dns zone."
+    },
+    {
+      "name": "kubernetes_version",
+      "type": "text",
+      "description": "Version of Kubernetes specified when creating the managed cluster."
+    },
+    {
+      "name": "max_agent_pools",
+      "type": "integer",
+      "description": "The max number of agent pools for the managed cluster."
+    },
+    {
+      "name": "node_resource_group",
+      "type": "text",
+      "description": "Name of the resource group containing agent pool nodes."
+    },
+    {
+      "name": "private_fqdn",
+      "type": "text",
+      "description": "FQDN of private cluster."
+    },
+    {
+      "name": "provisioning_state",
+      "type": "text",
+      "description": "The current deployment or provisioning state."
+    },
+    {
+      "name": "aad_profile",
+      "type": "json",
+      "description": "Profile of Azure Active Directory configuration."
+    },
+    {
+      "name": "addon_profiles",
+      "type": "json",
+      "description": "Profile of managed cluster add-on."
+    },
+    {
+      "name": "agent_pool_profiles",
+      "type": "json",
+      "description": "Properties of the agent pool."
+    },
+    {
+      "name": "api_server_access_profile",
+      "type": "json",
+      "description": "Access profile for managed cluster API server."
+    },
+    {
+      "name": "auto_scaler_profile",
+      "type": "json",
+      "description": "Parameters to be applied to the cluster-autoscaler when enabled."
+    },
+    {
+      "name": "auto_upgrade_profile",
+      "type": "json",
+      "description": "Profile of auto upgrade configuration."
+    },
+    {
+      "name": "identity",
+      "type": "json",
+      "description": "The identity of the managed cluster, if configured."
+    },
+    {
+      "name": "identity_profile",
+      "type": "json",
+      "description": "Identities associated with the cluster."
+    },
+    {
+      "name": "linux_profile",
+      "type": "json",
+      "description": "Profile for Linux VMs in the container service cluster."
+    },
+    {
+      "name": "network_profile",
+      "type": "json",
+      "description": "Profile of network configuration."
+    },
+    {
+      "name": "pod_identity_profile",
+      "type": "json",
+      "description": "Profile of managed cluster pod identity."
+    },
+    {
+      "name": "power_state",
+      "type": "json",
+      "description": "Represents the Power State of the cluster."
+    },
+    {
+      "name": "service_principal_profile",
+      "type": "json",
+      "description": "Information about a service principal identity for the cluster to use for manipulating Azure APIs."
+    },
+    {
+      "name": "sku",
+      "type": "json",
+      "description": "The managed cluster SKU."
+    },
+    {
+      "name": "windows_profile",
+      "type": "json",
+      "description": "Profile for Windows VMs in the container service cluster."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": "ColumnDescriptionTitle"
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": "ColumnDescriptionTags"
+    },
+    {
+      "name": "region",
+      "type": "text",
+      "description": "ColumnDescriptionRegion"
+    },
+    {
+      "name": "resource_group",
+      "type": "text",
+      "description": "ColumnDescriptionResourceGroup"
+    }
+  ]
+}

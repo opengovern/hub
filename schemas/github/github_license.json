@@ -1,0 +1,71 @@
+{
+  "table_name": "github_license",
+  "table_description": "GitHub Licenses are common software licenses that you can associate with your repository.",
+  "columns": [
+    {
+      "name": "spdx_id",
+      "type": "text",
+      "description": "The Software Package Data Exchange (SPDX) id of the license."
+    },
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The name of the license."
+    },
+    {
+      "name": "url",
+      "type": "text",
+      "description": "The HTML URL of the license."
+    },
+    {
+      "name": "conditions",
+      "type": "json",
+      "description": "An array of license conditions (include-copyright,disclose-source, etc)."
+    },
+    {
+      "name": "description",
+      "type": "text",
+      "description": "The license description."
+    },
+    {
+      "name": "featured",
+      "type": "boolean",
+      "description": "If true, the license is 'featured' in the GitHub UI."
+    },
+    {
+      "name": "hidden",
+      "type": "boolean",
+      "description": "Whether the license should be displayed in license pickers."
+    },
+    {
+      "name": "implementation",
+      "type": "text",
+      "description": "Implementation instructions for the license."
+    },
+    {
+      "name": "key",
+      "type": "text",
+      "description": "The unique key of the license."
+    },
+    {
+      "name": "limitations",
+      "type": "json",
+      "description": "An array of limitations for the license (trademark-use, liability,warranty, etc)."
+    },
+    {
+      "name": "permissions",
+      "type": "json",
+      "description": "An array of permissions for the license (private-use, commercial-use,modifications, etc)."
+    },
+    {
+      "name": "nickname",
+      "type": "text",
+      "description": "The customary short name of the license."
+    },
+    {
+      "name": "pseudo_license",
+      "type": "boolean",
+      "description": "Indicates if the license is a pseudo-license placeholder (e.g. other, no-license)."
+    }
+  ]
+}

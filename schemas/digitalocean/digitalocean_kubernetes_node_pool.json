@@ -1,0 +1,76 @@
+{
+  "table_name": "digitalocean_kubernetes_node_pool",
+  "table_description": "DigitalOcean Kubernetes Node Pool",
+  "columns": [
+    {
+      "name": "id",
+      "type": "text",
+      "description": "The unique universal identifier of this node pool."
+    },
+    {
+      "name": "cluster_id",
+      "type": "text",
+      "description": "The unique universal identifier of the associated cluster."
+    },
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The globally unique human-readable name for the node pool."
+    },
+    {
+      "name": "auto_scale",
+      "type": "boolean",
+      "description": "A boolean value indicating whether the node pool has autoscaling enabled."
+    },
+    {
+      "name": "count",
+      "type": "integer",
+      "description": "The number of nodes in the node pool."
+    },
+    {
+      "name": "max_nodes",
+      "type": "integer",
+      "description": "The maximum number of nodes allowed in the node pool."
+    },
+    {
+      "name": "min_nodes",
+      "type": "integer",
+      "description": "The minimum number of nodes allowed in the node pool."
+    },
+    {
+      "name": "size",
+      "type": "text",
+      "description": "The size of the node pool."
+    },
+    {
+      "name": "urn",
+      "type": "text",
+      "description": "The uniform resource name (URN) for the node pool."
+    },
+    {
+      "name": "labels",
+      "type": "json",
+      "description": "The labels for the node pool."
+    },
+    {
+      "name": "nodes",
+      "type": "json",
+      "description": "The nodes available in the node pool."
+    },
+    {
+      "name": "taints",
+      "type": "json",
+      "description": "The taints of the node pool."
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": ""
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    }
+  ]
+}

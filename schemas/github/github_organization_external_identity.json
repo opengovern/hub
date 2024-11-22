@@ -1,0 +1,41 @@
+{
+  "table_name": "github_organization_external_identity",
+  "table_description": "GitHub members for a given organization. GitHub Users are user accounts in GitHub.",
+  "columns": [
+    {
+      "name": "organization",
+      "type": "text",
+      "description": "The organization the external identity is associated with."
+    },
+    {
+      "name": "guid",
+      "type": "text",
+      "description": "Guid identifier for the external identity."
+    },
+    {
+      "name": "user_login",
+      "type": "text",
+      "description": "The GitHub user login."
+    },
+    {
+      "name": "user_detail",
+      "type": "json",
+      "description": "The GitHub user details."
+    },
+    {
+      "name": "saml_identity",
+      "type": "json",
+      "description": "The external SAML identity."
+    },
+    {
+      "name": "scim_identity",
+      "type": "json",
+      "description": "The external SCIM identity."
+    },
+    {
+      "name": "organization_invitation",
+      "type": "json",
+      "description": "The invitation to the organization."
+    }
+  ]
+}

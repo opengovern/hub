@@ -1,0 +1,31 @@
+{
+  "table_name": "aws_cloudwatch_metric",
+  "table_description": "AWS CloudWatch Metric",
+  "columns": [
+    {
+      "name": "metric_name",
+      "type": "text",
+      "description": "The name of the metric."
+    },
+    {
+      "name": "namespace",
+      "type": "text",
+      "description": "The namespace for the metric."
+    },
+    {
+      "name": "dimensions_filter",
+      "type": "json",
+      "description": "The dimensions to filter against."
+    },
+    {
+      "name": "dimensions",
+      "type": "json",
+      "description": "The dimensions for the metric."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "table_name": "github_stargazer",
+  "table_description": "Stargazers are users who have starred the repository.",
+  "columns": [
+    {
+      "name": "repository_full_name",
+      "type": "text",
+      "description": "Full name of the repository that contains the stargazer."
+    },
+    {
+      "name": "starred_at",
+      "type": "timestamp with time zone",
+      "description": "Time when the stargazer was created."
+    },
+    {
+      "name": "user_login",
+      "type": "text",
+      "description": "The login name of the user who starred the repository."
+    },
+    {
+      "name": "user_detail",
+      "type": "json",
+      "description": "Details of the user who starred the repository."
+    }
+  ]
+}

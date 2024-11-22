@@ -1,0 +1,71 @@
+{
+  "table_name": "aws_redshift_event_subscription",
+  "table_description": "AWS Redshift Event Subscription",
+  "columns": [
+    {
+      "name": "cust_subscription_id",
+      "type": "text",
+      "description": "The name of the Amazon Redshift event notification subscription."
+    },
+    {
+      "name": "customer_aws_id",
+      "type": "text",
+      "description": "The AWS customer account associated with the Amazon Redshift event notification subscription."
+    },
+    {
+      "name": "enabled",
+      "type": "boolean",
+      "description": "A boolean value indicating whether the subscription is enabled or disabled"
+    },
+    {
+      "name": "severity",
+      "type": "text",
+      "description": "The event severity specified in the Amazon Redshift event notification subscription."
+    },
+    {
+      "name": "sns_topic_arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) of the Amazon SNS topic used by the event notification subscription."
+    },
+    {
+      "name": "source_type",
+      "type": "text",
+      "description": "The source type of the events returned by the Amazon Redshift event notification."
+    },
+    {
+      "name": "status",
+      "type": "text",
+      "description": "The status of the Amazon Redshift event notification subscription."
+    },
+    {
+      "name": "subscription_creation_time",
+      "type": "timestamp with time zone",
+      "description": "The date and time the Amazon Redshift event notification subscription was created."
+    },
+    {
+      "name": "event_categories_list",
+      "type": "json",
+      "description": "The list of Amazon Redshift event categories specified in the event notification subscription."
+    },
+    {
+      "name": "source_ids_list",
+      "type": "json",
+      "description": "A list of the sources that publish events to the Amazon Redshift event notification subscription."
+    },
+    {
+      "name": "tags_src",
+      "type": "json",
+      "description": "The list of tags for the event subscription."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": ""
+    }
+  ]
+}

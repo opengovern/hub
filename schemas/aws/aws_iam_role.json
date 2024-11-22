@@ -1,0 +1,106 @@
+{
+  "table_name": "aws_iam_role",
+  "table_description": "AWS IAM Role",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The friendly name that identifies the role."
+    },
+    {
+      "name": "arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) specifying the role."
+    },
+    {
+      "name": "role_id",
+      "type": "text",
+      "description": "The stable and unique string identifying the role."
+    },
+    {
+      "name": "create_date",
+      "type": "timestamp with time zone",
+      "description": "The date and time when the role was created."
+    },
+    {
+      "name": "description",
+      "type": "text",
+      "description": "A user-provided description of the role."
+    },
+    {
+      "name": "instance_profile_arns",
+      "type": "json",
+      "description": "A list of instance profiles associated with the role."
+    },
+    {
+      "name": "max_session_duration",
+      "type": "integer",
+      "description": "The maximum session duration (in seconds) for the specified role. Anyone who uses the AWS CLI, or API to assume the role can specify the duration using the optional DurationSeconds API parameter or duration-seconds CLI parameter."
+    },
+    {
+      "name": "path",
+      "type": "text",
+      "description": "The path to the role."
+    },
+    {
+      "name": "permissions_boundary_arn",
+      "type": "text",
+      "description": "The ARN of the policy used to set the permissions boundary for the role."
+    },
+    {
+      "name": "permissions_boundary_type",
+      "type": "text",
+      "description": ""
+    },
+    {
+      "name": "role_last_used_date",
+      "type": "timestamp with time zone",
+      "description": ""
+    },
+    {
+      "name": "role_last_used_region",
+      "type": "text",
+      "description": "Contains the region in which the IAM role was used."
+    },
+    {
+      "name": "tags_src",
+      "type": "json",
+      "description": "A list of tags that are attached to the role."
+    },
+    {
+      "name": "inline_policies",
+      "type": "json",
+      "description": "A list of policy documents that are embedded as inline policies for the role.."
+    },
+    {
+      "name": "inline_policies_std",
+      "type": "json",
+      "description": "Inline policies in canonical form for the role."
+    },
+    {
+      "name": "attached_policy_arns",
+      "type": "json",
+      "description": "A list of managed policies attached to the role."
+    },
+    {
+      "name": "assume_role_policy",
+      "type": "json",
+      "description": "The policy that grants an entity permission to assume the role."
+    },
+    {
+      "name": "assume_role_policy_std",
+      "type": "json",
+      "description": "Contains the assume role policy in a canonical form for easier searching."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": ""
+    }
+  ]
+}

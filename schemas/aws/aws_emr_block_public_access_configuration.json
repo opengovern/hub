@@ -1,0 +1,31 @@
+{
+  "table_name": "aws_emr_block_public_access_configuration",
+  "table_description": "AWS EMR Block Public Access Configuration",
+  "columns": [
+    {
+      "name": "block_public_security_group_rules",
+      "type": "boolean",
+      "description": "Indicates whether Amazon EMR block public access is enabled (true) or disabled (false)."
+    },
+    {
+      "name": "classification",
+      "type": "text",
+      "description": "The classification within a configuration."
+    },
+    {
+      "name": "created_by_arn",
+      "type": "text",
+      "description": "The Amazon Resource Name that created or last modified the configuration."
+    },
+    {
+      "name": "creation_date",
+      "type": "timestamp with time zone",
+      "description": "The date and time that the configuration was created."
+    },
+    {
+      "name": "permitted_public_security_group_rule_ranges",
+      "type": "json",
+      "description": "Specifies ports and port ranges that are permitted to have security group rules that allow inbound traffic from all public sources."
+    }
+  ]
+}

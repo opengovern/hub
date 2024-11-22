@@ -1,0 +1,81 @@
+{
+  "table_name": "aws_kinesis_stream",
+  "table_description": "AWS Kinesis Stream",
+  "columns": [
+    {
+      "name": "stream_name",
+      "type": "text",
+      "description": "The name of the stream being described."
+    },
+    {
+      "name": "stream_arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) for the stream being described."
+    },
+    {
+      "name": "stream_status",
+      "type": "text",
+      "description": "The current status of the stream being described."
+    },
+    {
+      "name": "stream_creation_timestamp",
+      "type": "timestamp with time zone",
+      "description": "The approximate time that the stream was created."
+    },
+    {
+      "name": "encryption_type",
+      "type": "text",
+      "description": "The server-side encryption type used on the stream."
+    },
+    {
+      "name": "key_id",
+      "type": "text",
+      "description": "The GUID for the customer-managed AWS KMS key to use for encryption."
+    },
+    {
+      "name": "retention_period_hours",
+      "type": "integer",
+      "description": "The current retention period, in hours."
+    },
+    {
+      "name": "consumer_count",
+      "type": "integer",
+      "description": "The number of enhanced fan-out consumers registered with the stream."
+    },
+    {
+      "name": "open_shard_count",
+      "type": "integer",
+      "description": "The number of open shards in the stream."
+    },
+    {
+      "name": "has_more_shards",
+      "type": "boolean",
+      "description": "If set to true, more shards in the stream are available to describe."
+    },
+    {
+      "name": "shards",
+      "type": "json",
+      "description": "The shards that comprise the stream."
+    },
+    {
+      "name": "enhanced_monitoring",
+      "type": "json",
+      "description": "Represents the current enhanced monitoring settings of the stream."
+    },
+    {
+      "name": "tags_src",
+      "type": "json",
+      "description": "A list of tags associated with the stream."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": ""
+    }
+  ]
+}

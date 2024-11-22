@@ -1,0 +1,111 @@
+{
+  "table_name": "azure_frontdoor",
+  "table_description": "Azure Front Door",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The name of the resource."
+    },
+    {
+      "name": "id",
+      "type": "text",
+      "description": "Fully qualified resource ID for the resource."
+    },
+    {
+      "name": "provisioning_state",
+      "type": "text",
+      "description": "Provisioning state of the front door."
+    },
+    {
+      "name": "type",
+      "type": "text",
+      "description": "The type of the resource."
+    },
+    {
+      "name": "cname",
+      "type": "text",
+      "description": "The host that each frontendEndpoint must CNAME to."
+    },
+    {
+      "name": "enabled_state",
+      "type": "text",
+      "description": "Operational status of the front door load balancer. Possible values include: 'Enabled', 'Disabled'."
+    },
+    {
+      "name": "friendly_name",
+      "type": "text",
+      "description": "A friendly name for the front door."
+    },
+    {
+      "name": "front_door_id",
+      "type": "text",
+      "description": "The ID of the front door."
+    },
+    {
+      "name": "resource_state",
+      "type": "text",
+      "description": "Resource status of the front door. Possible values include: 'Creating', 'Enabling', 'Enabled', 'Disabling', 'Disabled', 'Deleting'."
+    },
+    {
+      "name": "backend_pools",
+      "type": "json",
+      "description": "Backend pools available to routing rules."
+    },
+    {
+      "name": "backend_pools_settings",
+      "type": "json",
+      "description": "Settings for all backend pools"
+    },
+    {
+      "name": "diagnostic_settings",
+      "type": "json",
+      "description": "A list of active diagnostic settings for the resource."
+    },
+    {
+      "name": "frontend_endpoints",
+      "type": "json",
+      "description": "Frontend endpoints available to routing rules."
+    },
+    {
+      "name": "health_probe_settings",
+      "type": "json",
+      "description": "Health probe settings associated with this Front Door instance."
+    },
+    {
+      "name": "load_balancing_settings",
+      "type": "json",
+      "description": "Load balancing settings associated with this front door instance."
+    },
+    {
+      "name": "rules_engines",
+      "type": "json",
+      "description": "Rules engine configurations available to routing rules."
+    },
+    {
+      "name": "routing_rules",
+      "type": "json",
+      "description": "Routing rules associated with this front door."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": "ColumnDescriptionTitle"
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": "ColumnDescriptionTags"
+    },
+    {
+      "name": "region",
+      "type": "text",
+      "description": "ColumnDescriptionRegion"
+    },
+    {
+      "name": "resource_group",
+      "type": "text",
+      "description": "ColumnDescriptionResourceGroup"
+    }
+  ]
+}

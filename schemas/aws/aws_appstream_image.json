@@ -1,0 +1,101 @@
+{
+  "table_name": "aws_appstream_image",
+  "table_description": "AWS AppStream Image",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The name of the image."
+    },
+    {
+      "name": "arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) of the image."
+    },
+    {
+      "name": "appstream_agent_version",
+      "type": "text",
+      "description": "The version of the AppStream 2.0 agent to use for instances that are launched from this image."
+    },
+    {
+      "name": "base_image_arn",
+      "type": "text",
+      "description": "The ARN of the image from which this image was created."
+    },
+    {
+      "name": "created_time",
+      "type": "timestamp with time zone",
+      "description": "The time the image was created."
+    },
+    {
+      "name": "description",
+      "type": "text",
+      "description": "The description to display."
+    },
+    {
+      "name": "display_name",
+      "type": "text",
+      "description": "The image name to display."
+    },
+    {
+      "name": "image_builder_name",
+      "type": "text",
+      "description": "The name of the image builder that was used to create the private image. If the image is shared, this value is null."
+    },
+    {
+      "name": "image_builder_supported",
+      "type": "boolean",
+      "description": "Indicates whether an image builder can be launched from this image."
+    },
+    {
+      "name": "platform",
+      "type": "text",
+      "description": "The operating system platform of the image."
+    },
+    {
+      "name": "public_base_image_released_date",
+      "type": "timestamp with time zone",
+      "description": "The release date of the public base image. For private images, this date is the release date of the base image from which the image was created."
+    },
+    {
+      "name": "state",
+      "type": "text",
+      "description": "The image starts in the PENDING state. If image creation succeeds, the state is AVAILABLE. If image creation fails, the state is FAILED."
+    },
+    {
+      "name": "visibility",
+      "type": "text",
+      "description": "Indicates whether the image is public or private."
+    },
+    {
+      "name": "applications",
+      "type": "json",
+      "description": "The applications associated with the image."
+    },
+    {
+      "name": "image_errors",
+      "type": "json",
+      "description": "Describes the errors that are returned when a new image can't be created."
+    },
+    {
+      "name": "image_permissions",
+      "type": "json",
+      "description": "The permissions to provide to the destination AWS account for the specified image."
+    },
+    {
+      "name": "state_change_reason",
+      "type": "json",
+      "description": "The reason why the last state change occurred."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": ""
+    }
+  ]
+}

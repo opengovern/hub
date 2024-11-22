@@ -1,0 +1,26 @@
+{
+  "table_name": "aws_ec2_fleet",
+  "table_description": "AWS Ec2 Fleet",
+  "columns": [
+    {
+      "name": "fleet_id",
+      "type": "text",
+      "description": "The id of the fleet."
+    },
+    {
+      "name": "fleet_arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) of the fleet"
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": ""
+    }
+  ]
+}

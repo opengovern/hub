@@ -1,0 +1,141 @@
+{
+  "table_name": "azure_synapse_workspace",
+  "table_description": "Azure Synapse Workspace",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The name of the resource."
+    },
+    {
+      "name": "id",
+      "type": "text",
+      "description": "Fully qualified resource ID for the resource."
+    },
+    {
+      "name": "provisioning_state",
+      "type": "text",
+      "description": "The provisioning state of the resource."
+    },
+    {
+      "name": "type",
+      "type": "text",
+      "description": "The type of the resource."
+    },
+    {
+      "name": "adla_resource_id",
+      "type": "text",
+      "description": "The ADLA resource ID."
+    },
+    {
+      "name": "managed_resource_group_name",
+      "type": "text",
+      "description": "The managed resource group of the resource."
+    },
+    {
+      "name": "managed_virtual_network",
+      "type": "text",
+      "description": "A managed virtual network for the workspace."
+    },
+    {
+      "name": "public_network_access",
+      "type": "text",
+      "description": "Pubic network access to workspace."
+    },
+    {
+      "name": "sql_administrator_login",
+      "type": "text",
+      "description": "Login for workspace SQL active directory administrator."
+    },
+    {
+      "name": "sql_administrator_login_password",
+      "type": "text",
+      "description": "The SQL administrator login password of the resource."
+    },
+    {
+      "name": "connectivity_endpoints",
+      "type": "json",
+      "description": "Connectivity endpoints of the resource."
+    },
+    {
+      "name": "diagnostic_settings",
+      "type": "json",
+      "description": "A list of active diagnostic settings for the resource."
+    },
+    {
+      "name": "default_data_lake_storage",
+      "type": "json",
+      "description": "Workspace default data lake storage account details."
+    },
+    {
+      "name": "encryption",
+      "type": "json",
+      "description": "The encryption details of the workspace."
+    },
+    {
+      "name": "extra_properties",
+      "type": "json",
+      "description": "Workspace level configs and feature flags."
+    },
+    {
+      "name": "identity",
+      "type": "json",
+      "description": "The identity of the workspace."
+    },
+    {
+      "name": "managed_virtual_network_settings",
+      "type": "json",
+      "description": "Managed virtual network settings of the workspace."
+    },
+    {
+      "name": "private_endpoint_connections",
+      "type": "json",
+      "description": "Private endpoint connections to the workspace."
+    },
+    {
+      "name": "purview_configuration",
+      "type": "json",
+      "description": "Purview configuration of the workspace."
+    },
+    {
+      "name": "virtual_network_profile",
+      "type": "json",
+      "description": "Virtual network profile of the resource."
+    },
+    {
+      "name": "workspace_managed_sql_server_vulnerability_assessments",
+      "type": "json",
+      "description": "The vulnerability assessments details of the workspace."
+    },
+    {
+      "name": "workspace_repository_configuration",
+      "type": "json",
+      "description": "Git integration settings of the workspace."
+    },
+    {
+      "name": "workspace_uid",
+      "type": "text",
+      "description": "The unique identifier of the workspace."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": "ColumnDescriptionTitle"
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": "ColumnDescriptionTags"
+    },
+    {
+      "name": "region",
+      "type": "text",
+      "description": "ColumnDescriptionRegion"
+    },
+    {
+      "name": "resource_group",
+      "type": "text",
+      "description": "ColumnDescriptionResourceGroup"
+    }
+  ]
+}

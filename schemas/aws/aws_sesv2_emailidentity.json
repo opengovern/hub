@@ -1,0 +1,26 @@
+{
+  "table_name": "aws_sesv2_emailidentity",
+  "table_description": "AWS SESv2 EmailIdentity",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The name of the emailidentity."
+    },
+    {
+      "name": "arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) of the emailidentity"
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": ""
+    }
+  ]
+}

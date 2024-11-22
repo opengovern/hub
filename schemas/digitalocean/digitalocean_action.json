@@ -1,0 +1,46 @@
+{
+  "table_name": "digitalocean_action",
+  "table_description": "Actions are records of events that have occurred on the resources in your account. These can be things like rebooting a Action, or transferring an image to a new region.",
+  "columns": [
+    {
+      "name": "id",
+      "type": "integer",
+      "description": "A unique numeric ID that can be used to identify and reference an action."
+    },
+    {
+      "name": "resource_id",
+      "type": "integer",
+      "description": "A unique identifier for the resource that the action is associated with."
+    },
+    {
+      "name": "type",
+      "type": "text",
+      "description": "This is the type of action that the object represents.  For example, this could be \\\"transfer\\\" to represent the state of an image transfer action."
+    },
+    {
+      "name": "started_at",
+      "type": "timestamp with time zone",
+      "description": "Time when when the action was initiated."
+    },
+    {
+      "name": "completed_at",
+      "type": "timestamp with time zone",
+      "description": "Time when the action was completed."
+    },
+    {
+      "name": "region_slug",
+      "type": "text",
+      "description": "The region where the action occurred."
+    },
+    {
+      "name": "resource_type",
+      "type": "text",
+      "description": "The type of resource that the action is associated with."
+    },
+    {
+      "name": "status",
+      "type": "text",
+      "description": "The current status of the action.  This can be \\\"in-progress\\\", \\\"completed\\\", or \\\"errored\\\"."
+    }
+  ]
+}

@@ -1,0 +1,96 @@
+{
+  "table_name": "aws_macie2_classification_job",
+  "table_description": "AWS Macie2 Classification Job",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The custom name of the job."
+    },
+    {
+      "name": "job_id",
+      "type": "text",
+      "description": "The unique identifier for the job."
+    },
+    {
+      "name": "arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) of the job."
+    },
+    {
+      "name": "job_status",
+      "type": "text",
+      "description": "The status of a classification job."
+    },
+    {
+      "name": "job_type",
+      "type": "text",
+      "description": "The schedule for running a classification job."
+    },
+    {
+      "name": "client_token",
+      "type": "text",
+      "description": "The token that was provided to ensure the idempotency of the request to create the job."
+    },
+    {
+      "name": "created_at",
+      "type": "timestamp with time zone",
+      "description": "The date and time, in UTC and extended ISO 8601 format, when the job was created."
+    },
+    {
+      "name": "last_run_time",
+      "type": "timestamp with time zone",
+      "description": "This value indicates when the most recent run started."
+    },
+    {
+      "name": "sampling_percentage",
+      "type": "integer",
+      "description": "The sampling depth, as a percentage, that determines the percentage of eligible objects that the job analyzes."
+    },
+    {
+      "name": "bucket_definitions",
+      "type": "json",
+      "description": "The namespace of the AWS service that provides the resource, or a custom-resource."
+    },
+    {
+      "name": "custom_data_identifier_ids",
+      "type": "json",
+      "description": "The custom data identifiers that the job uses to analyze data."
+    },
+    {
+      "name": "last_run_error_status",
+      "type": "json",
+      "description": "Specifies whether any account- or bucket-level access errors occurred when a classification job ran."
+    },
+    {
+      "name": "s3_job_definition",
+      "type": "json",
+      "description": "Specifies which S3 buckets contain the objects that a classification job analyzes, and the scope of that analysis."
+    },
+    {
+      "name": "schedule_frequency",
+      "type": "json",
+      "description": "Specifies the recurrence pattern for running a classification job."
+    },
+    {
+      "name": "statistics",
+      "type": "json",
+      "description": "Provides processing statistics for a classification job."
+    },
+    {
+      "name": "user_paused_details",
+      "type": "json",
+      "description": "Provides information about when a classification job was paused."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": ""
+    }
+  ]
+}

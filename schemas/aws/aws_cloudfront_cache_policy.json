@@ -1,0 +1,56 @@
+{
+  "table_name": "aws_cloudfront_cache_policy",
+  "table_description": "AWS CloudFront Cache Policy",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "A unique name to identify the cache policy."
+    },
+    {
+      "name": "id",
+      "type": "text",
+      "description": "The unique identifier for the cache policy."
+    },
+    {
+      "name": "comment",
+      "type": "text",
+      "description": "A comment to describe the cache policy."
+    },
+    {
+      "name": "default_ttl",
+      "type": "integer",
+      "description": "The default amount of time, in seconds, that you want objects to stay in the CloudFront cache before CloudFront sends another request to the origin to see if the object has been updated."
+    },
+    {
+      "name": "etag",
+      "type": "text",
+      "description": "The current version of the cache policy."
+    },
+    {
+      "name": "max_ttl",
+      "type": "integer",
+      "description": "The maximum amount of time, in seconds, that you want objects to stay in the CloudFront cache before CloudFront sends another request to the origin to see if the object has been updated."
+    },
+    {
+      "name": "min_ttl",
+      "type": "integer",
+      "description": "The minimum amount of time, in seconds, that you want objects to stay in the CloudFront cache before CloudFront sends another request to the origin to see if the object has been updated."
+    },
+    {
+      "name": "last_modified_time",
+      "type": "timestamp with time zone",
+      "description": "The date and time when the cache policy was last modified."
+    },
+    {
+      "name": "parameters_in_cache_key_and_forwarded_to_origin",
+      "type": "json",
+      "description": "The HTTP headers, cookies, and URL query strings to include in the cache key. The values included in the cache key are automatically included in requests that CloudFront sends to the origin."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    }
+  ]
+}

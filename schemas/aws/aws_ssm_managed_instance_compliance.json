@@ -1,0 +1,56 @@
+{
+  "table_name": "aws_ssm_managed_instance_compliance",
+  "table_description": "AWS SSM Managed Instance Compliance",
+  "columns": [
+    {
+      "name": "id",
+      "type": "text",
+      "description": "An ID for the compliance item."
+    },
+    {
+      "name": "name",
+      "type": "text",
+      "description": "A title for the compliance item."
+    },
+    {
+      "name": "resource_id",
+      "type": "text",
+      "description": "An ID for the resource."
+    },
+    {
+      "name": "status",
+      "type": "text",
+      "description": "The status of the compliance item."
+    },
+    {
+      "name": "compliance_type",
+      "type": "text",
+      "description": "The compliance type."
+    },
+    {
+      "name": "resource_type",
+      "type": "text",
+      "description": "The type of resource."
+    },
+    {
+      "name": "severity",
+      "type": "text",
+      "description": "The severity of the compliance status."
+    },
+    {
+      "name": "details",
+      "type": "json",
+      "description": "A key-value combination details for the compliance item."
+    },
+    {
+      "name": "execution_summary",
+      "type": "json",
+      "description": "A summary for the compliance item."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    }
+  ]
+}

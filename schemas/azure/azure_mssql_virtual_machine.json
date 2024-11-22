@@ -1,0 +1,111 @@
+{
+  "table_name": "azure_mssql_virtual_machine",
+  "table_description": "Azure MS SQL Virtual Machine",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The resource name."
+    },
+    {
+      "name": "id",
+      "type": "text",
+      "description": "The resource ID."
+    },
+    {
+      "name": "provisioning_state",
+      "type": "text",
+      "description": "Provisioning state to track the async operation status."
+    },
+    {
+      "name": "type",
+      "type": "text",
+      "description": "The resource type."
+    },
+    {
+      "name": "sql_image_offer",
+      "type": "text",
+      "description": "SQL image offer for the SQL virtual machine."
+    },
+    {
+      "name": "sql_image_sku",
+      "type": "text",
+      "description": "SQL Server edition type. Possible values include: 'Developer', 'Express', 'Standard', 'Enterprise', 'Web'."
+    },
+    {
+      "name": "sql_management",
+      "type": "text",
+      "description": "SQL Server Management type. Possible values include: 'Full', 'LightWeight', 'NoAgent'."
+    },
+    {
+      "name": "sql_server_license_type",
+      "type": "text",
+      "description": "SQL server license type for the SQL virtual machine. Possible values include: 'PAYG', 'AHUB', 'DR'."
+    },
+    {
+      "name": "sql_virtual_machine_group_resource_id",
+      "type": "text",
+      "description": "ARM resource id of the SQL virtual machine group this SQL virtual machine is or will be part of."
+    },
+    {
+      "name": "virtual_machine_resource_id",
+      "type": "text",
+      "description": "ARM resource id of underlying virtual machine created from SQL marketplace image."
+    },
+    {
+      "name": "auto_backup_settings",
+      "type": "json",
+      "description": "Auto backup settings for SQL Server."
+    },
+    {
+      "name": "auto_patching_settings",
+      "type": "json",
+      "description": "Auto patching settings for applying critical security updates to SQL virtual machine."
+    },
+    {
+      "name": "identity",
+      "type": "json",
+      "description": "Azure Active Directory identity for the SQL virtual machine."
+    },
+    {
+      "name": "key_vault_credential_settings",
+      "type": "json",
+      "description": "Key vault credential settings for the SQL virtual machine."
+    },
+    {
+      "name": "server_configurations_management_settings",
+      "type": "json",
+      "description": "SQL server configuration management settings for the SQL virtual machine."
+    },
+    {
+      "name": "storage_configuration_settings",
+      "type": "json",
+      "description": "Storage configuration settings for the SQL virtual machine."
+    },
+    {
+      "name": "wsfc_domain_credentials",
+      "type": "json",
+      "description": "Domain credentials for setting up Windows Server Failover Cluster for SQL availability group."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": "ColumnDescriptionTitle"
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": "ColumnDescriptionTags"
+    },
+    {
+      "name": "region",
+      "type": "text",
+      "description": "ColumnDescriptionRegion"
+    },
+    {
+      "name": "resource_group",
+      "type": "text",
+      "description": "ColumnDescriptionResourceGroup"
+    }
+  ]
+}

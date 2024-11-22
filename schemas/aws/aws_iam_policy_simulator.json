@@ -1,0 +1,56 @@
+{
+  "table_name": "aws_iam_policy_simulator",
+  "table_description": "AWS IAM Policy Simulator",
+  "columns": [
+    {
+      "name": "principal_arn",
+      "type": "text",
+      "description": "The principal Amazon Resource Name (ARN) for this policy simulation."
+    },
+    {
+      "name": "action",
+      "type": "text",
+      "description": "The action for this policy simulation."
+    },
+    {
+      "name": "resource_arn",
+      "type": "text",
+      "description": "The resource for this policy simulation."
+    },
+    {
+      "name": "decision",
+      "type": "text",
+      "description": "The decision for this policy simulation."
+    },
+    {
+      "name": "decision_details",
+      "type": "json",
+      "description": "The decision details for this policy simulation."
+    },
+    {
+      "name": "matched_statements",
+      "type": "json",
+      "description": "The matched statements for this policy simulation."
+    },
+    {
+      "name": "missing_context_values",
+      "type": "json",
+      "description": "The missing content values for this policy simulation."
+    },
+    {
+      "name": "resource_specific_results",
+      "type": "json",
+      "description": "The resource specific results for this policy simulation."
+    },
+    {
+      "name": "organizations_decision_detail",
+      "type": "json",
+      "description": "The organizations decision detail for this policy simulation."
+    },
+    {
+      "name": "permissions_boundary_decision_detail",
+      "type": "json",
+      "description": "The permissions boundary decision detail for this policy simulation."
+    }
+  ]
+}

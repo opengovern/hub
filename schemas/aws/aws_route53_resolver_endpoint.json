@@ -1,0 +1,86 @@
+{
+  "table_name": "aws_route53_resolver_endpoint",
+  "table_description": "AWS Route53 Resolver Endpoint",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The name that you assigned to the Resolver endpoint when you submitted a CreateResolverEndpoint."
+    },
+    {
+      "name": "id",
+      "type": "text",
+      "description": "The ID of the Resolver endpoint."
+    },
+    {
+      "name": "arn",
+      "type": "text",
+      "description": "The ARN (Amazon Resource Name) for the Resolver endpoint."
+    },
+    {
+      "name": "creation_time",
+      "type": "text",
+      "description": "The date and time that the endpoint was created, in Unix time format and Coordinated Universal Time (UTC)."
+    },
+    {
+      "name": "creator_request_id",
+      "type": "text",
+      "description": "A unique string that identifies the request that created the Resolver endpoint.The CreatorRequestId allows failed requests to be retried without the risk of executing the operation twice."
+    },
+    {
+      "name": "direction",
+      "type": "text",
+      "description": "Indicates whether the Resolver endpoint allows inbound or outbound DNS queries."
+    },
+    {
+      "name": "host_vpc_id",
+      "type": "text",
+      "description": "The ID of the VPC that you want to create the Resolver endpoint in."
+    },
+    {
+      "name": "ip_address_count",
+      "type": "integer",
+      "description": "The number of IP addresses that the Resolver endpoint can use for DNS queries."
+    },
+    {
+      "name": "modification_time",
+      "type": "text",
+      "description": "The date and time that the endpoint was last modified, in Unix time format and Coordinated Universal Time (UTC)."
+    },
+    {
+      "name": "status",
+      "type": "text",
+      "description": "A code that specifies the current status of the Resolver endpoint."
+    },
+    {
+      "name": "status_message",
+      "type": "text",
+      "description": "A detailed description of the status of the Resolver endpoint."
+    },
+    {
+      "name": "ip_addresses",
+      "type": "json",
+      "description": "Information about the IP addresses in your VPC that DNS queries originate from (for outbound endpoints) or that you forward DNS queries to (for inbound endpoints)."
+    },
+    {
+      "name": "security_group_ids",
+      "type": "json",
+      "description": "The ID of one or more security groups that control access to this VPC."
+    },
+    {
+      "name": "tags_src",
+      "type": "json",
+      "description": "A list of tags assigned to the Resolver endpoint."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": ""
+    }
+  ]
+}

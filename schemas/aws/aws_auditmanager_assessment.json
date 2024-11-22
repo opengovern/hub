@@ -1,0 +1,91 @@
+{
+  "table_name": "aws_auditmanager_assessment",
+  "table_description": "AWS Audit Manager Assessment",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The name of the assessment."
+    },
+    {
+      "name": "id",
+      "type": "text",
+      "description": "An unique identifier for the assessment."
+    },
+    {
+      "name": "arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) of the assessment."
+    },
+    {
+      "name": "status",
+      "type": "text",
+      "description": "The current status of the assessment."
+    },
+    {
+      "name": "compliance_type",
+      "type": "text",
+      "description": "The name of the compliance standard related to the assessment."
+    },
+    {
+      "name": "assessment_report_destination",
+      "type": "text",
+      "description": "The destination of the assessment report."
+    },
+    {
+      "name": "assessment_report_destination_type",
+      "type": "text",
+      "description": "The destination type, such as Amazon S3."
+    },
+    {
+      "name": "creation_time",
+      "type": "timestamp with time zone",
+      "description": "Specifies when the assessment was created."
+    },
+    {
+      "name": "description",
+      "type": "text",
+      "description": "The description of the assessment."
+    },
+    {
+      "name": "last_updated",
+      "type": "timestamp with time zone",
+      "description": "The time of the most recent update."
+    },
+    {
+      "name": "aws_account",
+      "type": "json",
+      "description": "The AWS account associated with the assessment."
+    },
+    {
+      "name": "delegations",
+      "type": "json",
+      "description": "The delegations associated with the assessment."
+    },
+    {
+      "name": "framework",
+      "type": "json",
+      "description": "The framework from which the assessment was created."
+    },
+    {
+      "name": "scope",
+      "type": "json",
+      "description": "The wrapper of AWS accounts and services in scope for the assessment."
+    },
+    {
+      "name": "roles",
+      "type": "json",
+      "description": "The roles associated with the assessment."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": ""
+    }
+  ]
+}

@@ -1,0 +1,106 @@
+{
+  "table_name": "azure_hpc_cache",
+  "table_description": "Azure HPC Cache",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The name of the cache."
+    },
+    {
+      "name": "id",
+      "type": "text",
+      "description": "The resource ID of the cache."
+    },
+    {
+      "name": "provisioning_state",
+      "type": "text",
+      "description": "ARM provisioning state. Possible values include: 'Succeeded', 'Failed', 'Cancelled', 'Creating', 'Deleting', 'Updating'."
+    },
+    {
+      "name": "type",
+      "type": "text",
+      "description": "The type of the cache."
+    },
+    {
+      "name": "cache_size_gb",
+      "type": "integer",
+      "description": "The size of the cache, in GB."
+    },
+    {
+      "name": "sku_name",
+      "type": "text",
+      "description": "The SKU for the cache."
+    },
+    {
+      "name": "subnet",
+      "type": "text",
+      "description": "Subnet used for the cache."
+    },
+    {
+      "name": "directory_services_settings",
+      "type": "json",
+      "description": "Specifies directory services settings of the cache."
+    },
+    {
+      "name": "encryption_settings",
+      "type": "json",
+      "description": "Specifies encryption settings of the cache."
+    },
+    {
+      "name": "health",
+      "type": "json",
+      "description": "The health of the cache."
+    },
+    {
+      "name": "identity",
+      "type": "json",
+      "description": "The identity of the cache, if configured."
+    },
+    {
+      "name": "mount_addresses",
+      "type": "json",
+      "description": "Array of IP addresses that can be used by clients mounting the cache."
+    },
+    {
+      "name": "network_settings",
+      "type": "json",
+      "description": "Specifies network settings of the cache."
+    },
+    {
+      "name": "security_settings",
+      "type": "json",
+      "description": "Specifies security settings of the cache."
+    },
+    {
+      "name": "system_data",
+      "type": "json",
+      "description": "The system meta data relating to the resource."
+    },
+    {
+      "name": "upgrade_status",
+      "type": "json",
+      "description": "Upgrade status of the cache."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": "ColumnDescriptionTitle"
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": "ColumnDescriptionTags"
+    },
+    {
+      "name": "region",
+      "type": "text",
+      "description": "ColumnDescriptionRegion"
+    },
+    {
+      "name": "resource_group",
+      "type": "text",
+      "description": "ColumnDescriptionResourceGroup"
+    }
+  ]
+}

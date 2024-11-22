@@ -1,0 +1,46 @@
+{
+  "table_name": "digitalocean_floating_ip",
+  "table_description": "DigitalOcean Floating IPs are publicly-accessible static IP addresses that can be mapped to one of your Droplets. They can be used to create highly available setups or other configurations requiring movable addresses.",
+  "columns": [
+    {
+      "name": "ip",
+      "type": "inet",
+      "description": "The public IP address of the floating IP. It also serves as its identifier."
+    },
+    {
+      "name": "droplet",
+      "type": "json",
+      "description": "The Droplet that the floating IP has been assigned to."
+    },
+    {
+      "name": "droplet_id",
+      "type": "integer",
+      "description": "ID of the Droplet that the floating IP has been assigned to."
+    },
+    {
+      "name": "region",
+      "type": "json",
+      "description": "The region that the floating IP is reserved to."
+    },
+    {
+      "name": "region_slug",
+      "type": "text",
+      "description": "The slug of the region that the floating IP is reserved to."
+    },
+    {
+      "name": "urn",
+      "type": "text",
+      "description": "The uniform resource name (URN) for the database."
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": ""
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    }
+  ]
+}

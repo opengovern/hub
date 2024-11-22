@@ -1,0 +1,26 @@
+{
+  "table_name": "aws_ec2_ipam_pool",
+  "table_description": "AWS EC2 IpamPool",
+  "columns": [
+    {
+      "name": "ipam_pool_id",
+      "type": "text",
+      "description": "The id of the ipam pool."
+    },
+    {
+      "name": "arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) of the ipam pool"
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": ""
+    }
+  ]
+}

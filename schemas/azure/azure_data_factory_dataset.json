@@ -1,0 +1,46 @@
+{
+  "table_name": "azure_data_factory_dataset",
+  "table_description": "Azure Data Factory Dataset",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The resource name."
+    },
+    {
+      "name": "id",
+      "type": "text",
+      "description": "The resource identifier."
+    },
+    {
+      "name": "factory_name",
+      "type": "text",
+      "description": "Name of the factory the dataset belongs."
+    },
+    {
+      "name": "etag",
+      "type": "text",
+      "description": "An unique read-only string that changes whenever the resource is updated."
+    },
+    {
+      "name": "type",
+      "type": "text",
+      "description": "The resource type."
+    },
+    {
+      "name": "properties",
+      "type": "json",
+      "description": "Dataset properties."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": "ColumnDescriptionTitle"
+    },
+    {
+      "name": "resource_group",
+      "type": "text",
+      "description": "ColumnDescriptionResourceGroup"
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "table_name": "digitalocean_account",
+  "table_description": "Retrieve information about your current account.",
+  "columns": [
+    {
+      "name": "email",
+      "type": "text",
+      "description": "The email address used by the current user to register for DigitalOcean."
+    },
+    {
+      "name": "droplet_limit",
+      "type": "integer",
+      "description": "The total number of Droplets the current user or team may have at one time."
+    },
+    {
+      "name": "email_verified",
+      "type": "boolean",
+      "description": "If true, the user has verified their account via email. False otherwise."
+    },
+    {
+      "name": "floating_ip_limit",
+      "type": "integer",
+      "description": "The total number of floating IPs the current user or team may have."
+    },
+    {
+      "name": "status",
+      "type": "text",
+      "description": "This value is one of \\\"active\\\", \\\"warning\\\" or \\\"locked\\\"."
+    },
+    {
+      "name": "status_message",
+      "type": "text",
+      "description": "A human-readable message giving more details about the status of the account."
+    },
+    {
+      "name": "uuid",
+      "type": "text",
+      "description": "The unique universal identifier for the current user."
+    },
+    {
+      "name": "volume_limit",
+      "type": "integer",
+      "description": "The total number of volumes the current user or team may have."
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": ""
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    }
+  ]
+}

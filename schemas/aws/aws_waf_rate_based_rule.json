@@ -1,0 +1,51 @@
+{
+  "table_name": "aws_waf_rate_based_rule",
+  "table_description": "AWS WAF Rate Based Rule",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The name for the rule."
+    },
+    {
+      "name": "rule_id",
+      "type": "text",
+      "description": "The ID of the Rule."
+    },
+    {
+      "name": "metric_name",
+      "type": "text",
+      "description": "The name or description for the metrics for a RateBasedRule."
+    },
+    {
+      "name": "rate_key",
+      "type": "text",
+      "description": "The field that AWS WAF uses to determine if requests are likely arriving from single source and thus subject to rate monitoring."
+    },
+    {
+      "name": "rate_limit",
+      "type": "integer",
+      "description": "The maximum number of requests, which have an identical value in the field specified by the RateKey, allowed in a five-minute period."
+    },
+    {
+      "name": "predicates",
+      "type": "json",
+      "description": "The Predicates object contains one Predicate element for each ByteMatchSet, IPSet or SqlInjectionMatchSet object that you want to include in a RateBasedRule."
+    },
+    {
+      "name": "tags_src",
+      "type": "json",
+      "description": "A list of tags assigned to the Rule."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": ""
+    }
+  ]
+}

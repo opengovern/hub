@@ -1,0 +1,66 @@
+{
+  "table_name": "aws_efs_access_point",
+  "table_description": "AWS EFS Access Point",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The name of the access point. This is the value of the Name tag."
+    },
+    {
+      "name": "access_point_id",
+      "type": "text",
+      "description": "The ID of the access point, assigned by Amazon EFS."
+    },
+    {
+      "name": "access_point_arn",
+      "type": "text",
+      "description": "The unique Amazon Resource Name (ARN) associated with the access point."
+    },
+    {
+      "name": "life_cycle_state",
+      "type": "text",
+      "description": "Identifies the lifecycle phase of the access point."
+    },
+    {
+      "name": "file_system_id",
+      "type": "text",
+      "description": "The ID of the EFS file system that the access point applies to."
+    },
+    {
+      "name": "client_token",
+      "type": "text",
+      "description": "The opaque string specified in the request to ensure idempotent creation."
+    },
+    {
+      "name": "owner_id",
+      "type": "text",
+      "description": "Identified the AWS account that owns the access point resource."
+    },
+    {
+      "name": "posix_user",
+      "type": "json",
+      "description": "The full POSIX identity, including the user ID, group ID, and secondary group IDs on the access point that is used for all file operations by NFS clients using the access point."
+    },
+    {
+      "name": "root_directory",
+      "type": "json",
+      "description": "The directory on the Amazon EFS file system that the access point exposes as the root directory to NFS clients using the access point."
+    },
+    {
+      "name": "tags_src",
+      "type": "json",
+      "description": "The tags associated with the access point, presented as an array of Tag objects."
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": ""
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    }
+  ]
+}

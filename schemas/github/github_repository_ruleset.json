@@ -1,0 +1,51 @@
+{
+  "table_name": "github_repository_ruleset",
+  "table_description": "Retrieve the rulesets of a specified GitHub repository.",
+  "columns": [
+    {
+      "name": "repository_full_name",
+      "type": "text",
+      "description": "Full name of the repository that contains the ruleset."
+    },
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The name of the ruleset."
+    },
+    {
+      "name": "id",
+      "type": "text",
+      "description": "The ID of the ruleset."
+    },
+    {
+      "name": "created_at",
+      "type": "timestamp with time zone",
+      "description": "The date and time when the ruleset was created."
+    },
+    {
+      "name": "database_id",
+      "type": "integer",
+      "description": "The database ID of the ruleset."
+    },
+    {
+      "name": "enforcement",
+      "type": "text",
+      "description": "The enforcement level of the ruleset."
+    },
+    {
+      "name": "rules",
+      "type": "json",
+      "description": "The list of rules in the ruleset."
+    },
+    {
+      "name": "bypass_actors",
+      "type": "json",
+      "description": "The list of actors who can bypass the ruleset."
+    },
+    {
+      "name": "conditions",
+      "type": "json",
+      "description": "The conditions under which the ruleset applies."
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "table_name": "azure_user_effective_access",
+  "table_description": "Azure User Effective Access",
+  "columns": [
+    {
+      "name": "id",
+      "type": "text",
+      "description": "Contains ID to identify a role assignment uniquely."
+    },
+    {
+      "name": "principal_id",
+      "type": "text",
+      "description": "User ID"
+    },
+    {
+      "name": "principal_name",
+      "type": "text",
+      "description": "The friendly name that identifies the role assignment."
+    },
+    {
+      "name": "principal_type",
+      "type": "text",
+      "description": "Contains the resource type."
+    },
+    {
+      "name": "assignment_type",
+      "type": "text",
+      "description": "Assignment type (Explicit, GroupAssignment)"
+    },
+    {
+      "name": "role_definition_id",
+      "type": "text",
+      "description": "Name of the assigned role definition."
+    },
+    {
+      "name": "parent_principal_id",
+      "type": "text",
+      "description": "Parent group principal id"
+    },
+    {
+      "name": "scope",
+      "type": "text",
+      "description": "Role scope"
+    },
+    {
+      "name": "scope_type",
+      "type": "text",
+      "description": "Role scope type"
+    }
+  ]
+}

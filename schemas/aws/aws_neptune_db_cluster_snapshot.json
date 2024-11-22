@@ -1,0 +1,116 @@
+{
+  "table_name": "aws_neptune_db_cluster_snapshot",
+  "table_description": "AWS Neptune DB Cluster Snapshot",
+  "columns": [
+    {
+      "name": "db_cluster_snapshot_identifier",
+      "type": "text",
+      "description": "Specifies the identifier for a DB cluster snapshot. Must match the identifier of an existing snapshot."
+    },
+    {
+      "name": "db_cluster_snapshot_arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) for the DB cluster snapshot."
+    },
+    {
+      "name": "snapshot_type",
+      "type": "text",
+      "description": "Provides the type of the DB cluster snapshot."
+    },
+    {
+      "name": "status",
+      "type": "text",
+      "description": "Specifies the status of this DB cluster snapshot."
+    },
+    {
+      "name": "db_cluster_identifier",
+      "type": "text",
+      "description": "Specifies the DB cluster identifier of the DB cluster that this DB cluster snapshot was created from."
+    },
+    {
+      "name": "cluster_create_time",
+      "type": "timestamp with time zone",
+      "description": "Specifies the time when the DB cluster was created, in Universal Coordinated Time (UTC)."
+    },
+    {
+      "name": "allocated_storage",
+      "type": "integer",
+      "description": "Specifies the allocated storage size in gibibytes (GiB)."
+    },
+    {
+      "name": "snapshot_create_time",
+      "type": "timestamp with time zone",
+      "description": "Provides the time when the snapshot was taken, in Universal Coordinated Time (UTC)."
+    },
+    {
+      "name": "percent_progress",
+      "type": "integer",
+      "description": "Specifies the percentage of the estimated data that has been transferred."
+    },
+    {
+      "name": "source_db_cluster_snapshot_arn",
+      "type": "text",
+      "description": "If the DB cluster snapshot was copied from a source DB cluster snapshot, the Amazon Resource Name (ARN) for the source DB cluster snapshot, otherwise, a null value."
+    },
+    {
+      "name": "engine",
+      "type": "text",
+      "description": "Specifies the name of the database engine."
+    },
+    {
+      "name": "engine_version",
+      "type": "text",
+      "description": "Provides the version of the database engine for this DB cluster snapshot."
+    },
+    {
+      "name": "iam_database_authentication_enabled",
+      "type": "boolean",
+      "description": "True if mapping of Amazon Identity and Access Management (IAM) accounts to database accounts is enabled, and otherwise false."
+    },
+    {
+      "name": "kms_key_id",
+      "type": "text",
+      "description": "If StorageEncrypted is true, the Amazon KMS key identifier for the encrypted DB cluster snapshot."
+    },
+    {
+      "name": "license_model",
+      "type": "text",
+      "description": "Provides the license model information for this DB cluster snapshot."
+    },
+    {
+      "name": "master_username",
+      "type": "text",
+      "description": "Not supported by Neptune."
+    },
+    {
+      "name": "port",
+      "type": "integer",
+      "description": "Specifies the port that the DB cluster was listening on at the time of the snapshot."
+    },
+    {
+      "name": "storage_encrypted",
+      "type": "boolean",
+      "description": "Specifies whether the DB cluster snapshot is encrypted."
+    },
+    {
+      "name": "vpc_id",
+      "type": "text",
+      "description": "Provides the VPC ID associated with the DB cluster snapshot."
+    },
+    {
+      "name": "availability_zones",
+      "type": "json",
+      "description": "Provides the list of EC2 Availability Zones that instances in the DB cluster snapshot can be restored in."
+    },
+    {
+      "name": "db_cluster_snapshot_attributes",
+      "type": "json",
+      "description": "A list of DB cluster snapshot attribute names and values for a manual DB cluster snapshot."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    }
+  ]
+}

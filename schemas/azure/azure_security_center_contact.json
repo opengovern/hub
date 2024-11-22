@@ -1,0 +1,46 @@
+{
+  "table_name": "azure_security_center_contact",
+  "table_description": "Azure Security Center Contact",
+  "columns": [
+    {
+      "name": "id",
+      "type": "text",
+      "description": "The resource id."
+    },
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The resource name."
+    },
+    {
+      "name": "type",
+      "type": "text",
+      "description": "The resource type."
+    },
+    {
+      "name": "email",
+      "type": "text",
+      "description": "The email of this security contact."
+    },
+    {
+      "name": "phone",
+      "type": "text",
+      "description": "The phone number of this security contact."
+    },
+    {
+      "name": "alert_notifications",
+      "type": "text",
+      "description": "Whether to send security alerts notifications to the security contact."
+    },
+    {
+      "name": "alerts_to_admins",
+      "type": "text",
+      "description": "Whether to send security alerts notifications to subscription admins."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": "ColumnDescriptionTitle"
+    }
+  ]
+}

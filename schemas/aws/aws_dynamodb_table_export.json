@@ -1,0 +1,101 @@
+{
+  "table_name": "aws_dynamodb_table_export",
+  "table_description": "AWS DynamoDB Table Export",
+  "columns": [
+    {
+      "name": "arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) of the export."
+    },
+    {
+      "name": "export_status",
+      "type": "text",
+      "description": "Export can be in one of the following states: IN_PROGRESS, COMPLETED, or FAILED."
+    },
+    {
+      "name": "billed_size_bytes",
+      "type": "integer",
+      "description": "The billable size of the table export."
+    },
+    {
+      "name": "client_token",
+      "type": "text",
+      "description": "The client token that was provided for the export task. A client token makes calls to ExportTableToPointInTimeInput idempotent, meaning that multiple identical calls have the same effect as one single call."
+    },
+    {
+      "name": "end_time",
+      "type": "timestamp with time zone",
+      "description": "The time at which the export task completed."
+    },
+    {
+      "name": "export_format",
+      "type": "text",
+      "description": "The format of the exported data. Valid values for ExportFormat are DYNAMODB_JSON or ION."
+    },
+    {
+      "name": "export_manifest",
+      "type": "text",
+      "description": "The name of the manifest file for the export task."
+    },
+    {
+      "name": "export_time",
+      "type": "timestamp with time zone",
+      "description": "Point in time from which table data was exported."
+    },
+    {
+      "name": "failure_code",
+      "type": "text",
+      "description": "Status code for the result of the failed export."
+    },
+    {
+      "name": "failure_message",
+      "type": "text",
+      "description": "Export failure reason description."
+    },
+    {
+      "name": "item_count",
+      "type": "integer",
+      "description": "The number of items exported."
+    },
+    {
+      "name": "s3_bucket",
+      "type": "text",
+      "description": "The name of the Amazon S3 bucket containing the export."
+    },
+    {
+      "name": "s3_bucket_owner",
+      "type": "text",
+      "description": "The ID of the Amazon Web Services account that owns the bucket containing the export."
+    },
+    {
+      "name": "s3_prefix",
+      "type": "text",
+      "description": "The Amazon S3 bucket prefix used as the file name and path of the exported snapshot."
+    },
+    {
+      "name": "s3_sse_algorithm",
+      "type": "text",
+      "description": "Type of encryption used on the bucket where export data is stored."
+    },
+    {
+      "name": "s3_sse_kms_key_id",
+      "type": "text",
+      "description": "The ID of the KMS managed key used to encrypt the S3 bucket where export data is stored (if applicable)."
+    },
+    {
+      "name": "start_time",
+      "type": "timestamp with time zone",
+      "description": "The time at which the export task began."
+    },
+    {
+      "name": "table_arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) of the table that was exported."
+    },
+    {
+      "name": "table_id",
+      "type": "text",
+      "description": "Unique ID of the table that was exported."
+    }
+  ]
+}

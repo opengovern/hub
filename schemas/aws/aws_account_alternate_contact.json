@@ -1,0 +1,41 @@
+{
+  "table_name": "aws_account_alternate_contact",
+  "table_description": "AWS Account Alternate Contact",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The name associated with this alternate contact."
+    },
+    {
+      "name": "contact_type",
+      "type": "text",
+      "description": "The type of alternate contact."
+    },
+    {
+      "name": "email_address",
+      "type": "text",
+      "description": "The email address associated with this alternate contact."
+    },
+    {
+      "name": "phone_number",
+      "type": "text",
+      "description": "The phone number associated with this alternate contact."
+    },
+    {
+      "name": "contact_title",
+      "type": "text",
+      "description": "The title associated with this alternate contact."
+    },
+    {
+      "name": "linked_account_id",
+      "type": "text",
+      "description": "Account ID to get alternate contact details for."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    }
+  ]
+}

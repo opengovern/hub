@@ -1,0 +1,111 @@
+{
+  "table_name": "azure_app_service_environment",
+  "table_description": "Azure App Service Environment",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The friendly name that identifies the app service environment"
+    },
+    {
+      "name": "id",
+      "type": "text",
+      "description": "Contains ID to identify an app service environment uniquely"
+    },
+    {
+      "name": "kind",
+      "type": "text",
+      "description": "Contains the kind of the resource"
+    },
+    {
+      "name": "type",
+      "type": "text",
+      "description": "The resource type of the app service environment"
+    },
+    {
+      "name": "status",
+      "type": "text",
+      "description": "Current status of the App Service Environment"
+    },
+    {
+      "name": "provisioning_state",
+      "type": "text",
+      "description": "Provisioning state of the App Service Environment"
+    },
+    {
+      "name": "default_front_end_scale_factor",
+      "type": "integer",
+      "description": "Default Scale Factor for FrontEnds"
+    },
+    {
+      "name": "dynamic_cache_enabled",
+      "type": "boolean",
+      "description": "Indicates whether the dynamic cache is enabled or not"
+    },
+    {
+      "name": "front_end_scale_factor",
+      "type": "integer",
+      "description": "Scale factor for front-ends"
+    },
+    {
+      "name": "has_linux_workers",
+      "type": "boolean",
+      "description": "Indicates whether an ASE has linux workers or not"
+    },
+    {
+      "name": "internal_load_balancing_mode",
+      "type": "text",
+      "description": "Specifies which endpoints to serve internally in the Virtual Network for the App Service Environment"
+    },
+    {
+      "name": "is_healthy_environment",
+      "type": "boolean",
+      "description": "Indicates whether the App Service Environment is healthy"
+    },
+    {
+      "name": "suspended",
+      "type": "boolean",
+      "description": "Indicates whether the App Service Environment is suspended or not"
+    },
+    {
+      "name": "vnet_name",
+      "type": "text",
+      "description": "Name of the Virtual Network for the App Service Environment"
+    },
+    {
+      "name": "vnet_resource_group_name",
+      "type": "text",
+      "description": "Name of the resource group where the virtual network is created"
+    },
+    {
+      "name": "vnet_subnet_name",
+      "type": "text",
+      "description": "Name of the subnet of the virtual network"
+    },
+    {
+      "name": "cluster_settings",
+      "type": "json",
+      "description": "Custom settings for changing the behavior of the App Service Environment."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": "ColumnDescriptionTitle"
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": "ColumnDescriptionTags"
+    },
+    {
+      "name": "region",
+      "type": "text",
+      "description": "ColumnDescriptionRegion"
+    },
+    {
+      "name": "resource_group",
+      "type": "text",
+      "description": "ColumnDescriptionResourceGroup"
+    }
+  ]
+}

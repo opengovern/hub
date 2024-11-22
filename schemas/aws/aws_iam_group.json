@@ -1,0 +1,56 @@
+{
+  "table_name": "aws_iam_group",
+  "table_description": "AWS IAM Group",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The friendly name that identifies the group."
+    },
+    {
+      "name": "group_id",
+      "type": "text",
+      "description": "The stable and unique string identifying the group."
+    },
+    {
+      "name": "path",
+      "type": "text",
+      "description": "The path to the group."
+    },
+    {
+      "name": "arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) specifying the group."
+    },
+    {
+      "name": "create_date",
+      "type": "timestamp with time zone",
+      "description": "The date and time, when the group was created."
+    },
+    {
+      "name": "inline_policies",
+      "type": "json",
+      "description": "A list of policy documents that are embedded as inline policies for the group."
+    },
+    {
+      "name": "inline_policies_std",
+      "type": "json",
+      "description": "Inline policies in canonical form for the group."
+    },
+    {
+      "name": "attached_policy_arns",
+      "type": "json",
+      "description": "A list of managed policies attached to the group."
+    },
+    {
+      "name": "users",
+      "type": "json",
+      "description": "A list of users in the group."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    }
+  ]
+}

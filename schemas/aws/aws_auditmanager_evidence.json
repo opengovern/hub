@@ -1,0 +1,101 @@
+{
+  "table_name": "aws_auditmanager_evidence",
+  "table_description": "AWS Audit Manager Evidence",
+  "columns": [
+    {
+      "name": "id",
+      "type": "text",
+      "description": "The identifier for the evidence."
+    },
+    {
+      "name": "arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) specifying the evidence."
+    },
+    {
+      "name": "assessment_id",
+      "type": "text",
+      "description": "An unique identifier for the assessment."
+    },
+    {
+      "name": "control_set_id",
+      "type": "text",
+      "description": "The identifier for the control set."
+    },
+    {
+      "name": "evidence_folder_id",
+      "type": "text",
+      "description": "The identifier for the folder in which the evidence is stored."
+    },
+    {
+      "name": "assessment_report_selection",
+      "type": "text",
+      "description": "Specifies whether the evidence is included in the assessment report."
+    },
+    {
+      "name": "aws_account_id",
+      "type": "text",
+      "description": "The identifier for the specified AWS account."
+    },
+    {
+      "name": "aws_organization",
+      "type": "text",
+      "description": "The AWS account from which the evidence is collected, and its AWS organization path."
+    },
+    {
+      "name": "compliance_check",
+      "type": "text",
+      "description": "The evaluation status for evidence that falls under the compliance check category."
+    },
+    {
+      "name": "data_source",
+      "type": "text",
+      "description": "The data source from which the specified evidence was collected."
+    },
+    {
+      "name": "event_name",
+      "type": "text",
+      "description": "The name of the specified evidence event."
+    },
+    {
+      "name": "event_source",
+      "type": "text",
+      "description": "The AWS service from which the evidence is collected."
+    },
+    {
+      "name": "evidence_aws_account_id",
+      "type": "text",
+      "description": "The identifier for the specified AWS account."
+    },
+    {
+      "name": "evidence_by_type",
+      "type": "text",
+      "description": "The type of automated evidence."
+    },
+    {
+      "name": "iam_id",
+      "type": "text",
+      "description": "The unique identifier for the IAM user or role associated with the evidence."
+    },
+    {
+      "name": "time",
+      "type": "timestamp with time zone",
+      "description": "The timestamp that represents when the evidence was collected."
+    },
+    {
+      "name": "attributes",
+      "type": "json",
+      "description": "The names and values used by the evidence event"
+    },
+    {
+      "name": "resources_included",
+      "type": "json",
+      "description": "The list of resources assessed to generate the evidence."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    }
+  ]
+}

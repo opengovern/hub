@@ -1,0 +1,156 @@
+{
+  "table_name": "aws_rds_db_engine_version",
+  "table_description": "AWS RDS DB Engine Version",
+  "columns": [
+    {
+      "name": "engine",
+      "type": "text",
+      "description": "The name of the database engine."
+    },
+    {
+      "name": "engine_version",
+      "type": "text",
+      "description": "The version number of the database engine."
+    },
+    {
+      "name": "arn",
+      "type": "text",
+      "description": "The ARN of the custom engine version."
+    },
+    {
+      "name": "status",
+      "type": "text",
+      "description": "The status of the DB engine version, either available or deprecated."
+    },
+    {
+      "name": "create_time",
+      "type": "timestamp with time zone",
+      "description": "The creation time of the DB engine version."
+    },
+    {
+      "name": "custom_db_engine_version_manifest",
+      "type": "text",
+      "description": "JSON string that lists the installation files and parameters that RDS Custom uses to create a custom engine version (CEV)."
+    },
+    {
+      "name": "list_supported_character_sets",
+      "type": "boolean",
+      "description": "A value that indicates whether to list the supported character sets for each engine version."
+    },
+    {
+      "name": "db_engine_description",
+      "type": "text",
+      "description": "The description of the database engine."
+    },
+    {
+      "name": "db_engine_media_type",
+      "type": "text",
+      "description": "A value that indicates the source media provider of the AMI based on the usage operation. Applicable for RDS Custom for SQL Server."
+    },
+    {
+      "name": "db_engine_version_description",
+      "type": "text",
+      "description": "The description of the database engine version."
+    },
+    {
+      "name": "db_parameter_group_family",
+      "type": "text",
+      "description": "The name of the DB parameter group family for the database engine."
+    },
+    {
+      "name": "database_installation_files_s3_bucket_name",
+      "type": "text",
+      "description": "The name of the Amazon S3 bucket that contains your database installation files."
+    },
+    {
+      "name": "database_installation_files_s3_prefix",
+      "type": "text",
+      "description": "The Amazon S3 directory that contains the database installation files. If not specified, then no prefix is assumed."
+    },
+    {
+      "name": "kms_key_id",
+      "type": "text",
+      "description": "The Amazon Web Services KMS key identifier for an encrypted CEV. This parameter is required for RDS Custom, but optional for Amazon RDS."
+    },
+    {
+      "name": "major_engine_version",
+      "type": "text",
+      "description": "The major engine version of the CEV."
+    },
+    {
+      "name": "supports_babelfish",
+      "type": "boolean",
+      "description": "A value that indicates whether the engine version supports Babelfish for Aurora PostgreSQL."
+    },
+    {
+      "name": "supports_certificate_rotation_without_restart",
+      "type": "boolean",
+      "description": "A value that indicates whether the engine version supports rotating the server certificate without rebooting the DB instance."
+    },
+    {
+      "name": "supports_global_databases",
+      "type": "boolean",
+      "description": "A value that indicates whether you can use Aurora global databases with a specific DB engine version."
+    },
+    {
+      "name": "supports_log_exports_to_cloudwatch_logs",
+      "type": "boolean",
+      "description": "A value that indicates whether the engine version supports exporting the log types specified by ExportableLogTypes to CloudWatch Logs."
+    },
+    {
+      "name": "supports_parallel_query",
+      "type": "boolean",
+      "description": "A value that indicates whether you can use Aurora parallel query with a specific DB engine version."
+    },
+    {
+      "name": "supports_read_replica",
+      "type": "boolean",
+      "description": "Indicates whether the database engine version supports read replicas."
+    },
+    {
+      "name": "exportable_log_types",
+      "type": "json",
+      "description": "The types of logs that the database engine has available for export to CloudWatch Logs."
+    },
+    {
+      "name": "image",
+      "type": "json",
+      "description": "The EC2 image."
+    },
+    {
+      "name": "supported_feature_names",
+      "type": "json",
+      "description": "A list of features supported by the DB engine."
+    },
+    {
+      "name": "supported_nchar_character_sets",
+      "type": "json",
+      "description": "A list of the character sets supported by the Oracle DB engine for the NcharCharacterSetName parameter of the CreateDBInstance operation."
+    },
+    {
+      "name": "supported_timezones",
+      "type": "json",
+      "description": "A list of the time zones supported by this engine for the Timezone parameter of the CreateDBInstance action."
+    },
+    {
+      "name": "valid_upgrade_target",
+      "type": "json",
+      "description": "A list of engine versions that this database engine version can be upgraded to."
+    },
+    {
+      "name": "tag_list",
+      "type": "json",
+      "description": "A list of tags."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": ""
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "table_name": "aws_eks_identity_provider_config",
+  "table_description": "AWS EKS Identity Provider Config",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The name of the identity provider configuration."
+    },
+    {
+      "name": "type",
+      "type": "text",
+      "description": "The type of the identity provider configuration."
+    },
+    {
+      "name": "client_id",
+      "type": "text",
+      "description": "This is also known as audience. The ID of the client application that makes authentication requests to the OIDC identity provider."
+    },
+    {
+      "name": "cluster_name",
+      "type": "text",
+      "description": "The name of the cluster."
+    },
+    {
+      "name": "arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) of the configuration."
+    },
+    {
+      "name": "groups_claim",
+      "type": "text",
+      "description": "The JSON web token (JWT) claim that the provider uses to return your groups."
+    },
+    {
+      "name": "groups_prefix",
+      "type": "text",
+      "description": "The prefix that is prepended to group claims to prevent clashes with existing names (such as system: groups)."
+    },
+    {
+      "name": "issuer_url",
+      "type": "text",
+      "description": "The URL of the OIDC identity provider that allows the API server to discover public signing keys for verifying tokens."
+    },
+    {
+      "name": "username_claim",
+      "type": "text",
+      "description": "The JSON Web token (JWT) claim that is used as the username."
+    },
+    {
+      "name": "status",
+      "type": "text",
+      "description": "The status of the OIDC identity provider."
+    },
+    {
+      "name": "username_prefix",
+      "type": "text",
+      "description": "The prefix that is prepended to username claims to prevent clashes with existing names."
+    },
+    {
+      "name": "required_claims",
+      "type": "json",
+      "description": "The key-value pairs that describe required claims in the identity token."
+    },
+    {
+      "name": "tags_src",
+      "type": "json",
+      "description": "The metadata to apply to the provider configuration to assist with categorization and organization."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": ""
+    }
+  ]
+}

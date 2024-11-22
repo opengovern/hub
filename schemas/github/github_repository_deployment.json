@@ -1,0 +1,86 @@
+{
+  "table_name": "github_repository_deployment",
+  "table_description": "GitHub Deployments are releases of the app/service/etc to an environment.",
+  "columns": [
+    {
+      "name": "repository_full_name",
+      "type": "text",
+      "description": "The full name of the repository (login/repo-name)."
+    },
+    {
+      "name": "id",
+      "type": "integer",
+      "description": "The ID of the deployment."
+    },
+    {
+      "name": "node_id",
+      "type": "text",
+      "description": "The node ID of the deployment."
+    },
+    {
+      "name": "commit_sha",
+      "type": "text",
+      "description": "SHA of the commit the deployment is using."
+    },
+    {
+      "name": "created_at",
+      "type": "timestamp with time zone",
+      "description": "Timestamp when the deployment was created."
+    },
+    {
+      "name": "creator",
+      "type": "json",
+      "description": "The deployment creator."
+    },
+    {
+      "name": "description",
+      "type": "text",
+      "description": "The description of the deployment."
+    },
+    {
+      "name": "environment",
+      "type": "text",
+      "description": "The name of the environment to which the deployment was made."
+    },
+    {
+      "name": "latest_environment",
+      "type": "text",
+      "description": "The name of the latest environment to which the deployment was made."
+    },
+    {
+      "name": "latest_status",
+      "type": "json",
+      "description": "The latest status of the deployment."
+    },
+    {
+      "name": "original_environment",
+      "type": "text",
+      "description": "The original environment to which this deployment was made."
+    },
+    {
+      "name": "payload",
+      "type": "text",
+      "description": "Extra information that a deployment system might need."
+    },
+    {
+      "name": "ref",
+      "type": "json",
+      "description": "Identifies the Ref of the deployment, if the deployment was created by ref."
+    },
+    {
+      "name": "state",
+      "type": "text",
+      "description": "The current state of the deployment."
+    },
+    {
+      "name": "task",
+      "type": "text",
+      "description": "The deployment task."
+    },
+    {
+      "name": "updated_at",
+      "type": "timestamp with time zone",
+      "description": "Timestamp when the deployment was last updated."
+    }
+  ]
+}

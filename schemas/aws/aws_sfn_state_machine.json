@@ -1,0 +1,66 @@
+{
+  "table_name": "aws_sfn_state_machine",
+  "table_description": "AWS Step Functions State Machine",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The name of the state machine."
+    },
+    {
+      "name": "arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) that identifies the state machine."
+    },
+    {
+      "name": "status",
+      "type": "text",
+      "description": "The current status of the state machine."
+    },
+    {
+      "name": "type",
+      "type": "text",
+      "description": "The type of the state machine."
+    },
+    {
+      "name": "creation_date",
+      "type": "timestamp with time zone",
+      "description": "The date the state machine is created."
+    },
+    {
+      "name": "definition",
+      "type": "text",
+      "description": "The Amazon States Language definition of the state machine."
+    },
+    {
+      "name": "role_arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) of the IAM role used when creating this state machine."
+    },
+    {
+      "name": "logging_configuration",
+      "type": "json",
+      "description": "The LoggingConfiguration data type is used to set CloudWatch Logs options."
+    },
+    {
+      "name": "tags_src",
+      "type": "json",
+      "description": "The list of tags associated with the state machine."
+    },
+    {
+      "name": "tracing_configuration",
+      "type": "json",
+      "description": "Selects whether AWS X-Ray tracing is enabled."
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": ""
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    }
+  ]
+}

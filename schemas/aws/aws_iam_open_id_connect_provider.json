@@ -1,0 +1,41 @@
+{
+  "table_name": "aws_iam_open_id_connect_provider",
+  "table_description": "AWS IAM OpenID Connect Provider",
+  "columns": [
+    {
+      "name": "arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) specifying the OIDC provider resource."
+    },
+    {
+      "name": "client_id_list",
+      "type": "json",
+      "description": "A list of client IDs (also known as audiences) that are associated with the specified IAM OIDC provider resource object."
+    },
+    {
+      "name": "create_date",
+      "type": "timestamp with time zone",
+      "description": "The date and time when the IAM OIDC provider resource object was created in the Amazon Web Services account."
+    },
+    {
+      "name": "thumbprint_list",
+      "type": "json",
+      "description": "A list of certificate thumbprints that are associated with the specified IAM OIDC provider resource object."
+    },
+    {
+      "name": "url",
+      "type": "text",
+      "description": "The URL that the IAM OIDC provider resource object is associated with."
+    },
+    {
+      "name": "tags_src",
+      "type": "json",
+      "description": "A list of tags that are attached to the specified IAM OIDC provider."
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": ""
+    }
+  ]
+}

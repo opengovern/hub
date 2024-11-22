@@ -1,0 +1,81 @@
+{
+  "table_name": "aws_kinesis_firehose_delivery_stream",
+  "table_description": "AWS Kinesis Firehose Delivery Stream",
+  "columns": [
+    {
+      "name": "delivery_stream_name",
+      "type": "text",
+      "description": "The name of the delivery stream."
+    },
+    {
+      "name": "arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) of the delivery stream."
+    },
+    {
+      "name": "delivery_stream_status",
+      "type": "text",
+      "description": "The server-side encryption type used on the stream."
+    },
+    {
+      "name": "delivery_stream_type",
+      "type": "text",
+      "description": "The delivery stream type."
+    },
+    {
+      "name": "version_id",
+      "type": "text",
+      "description": "The version id of the stream. Each time the destination is updated for a delivery stream, the version ID is changed, and the current version ID is required when updating the destination"
+    },
+    {
+      "name": "create_timestamp",
+      "type": "timestamp with time zone",
+      "description": "The date and time that the delivery stream was created."
+    },
+    {
+      "name": "has_more_destinations",
+      "type": "boolean",
+      "description": "Indicates whether there are more destinations available to list."
+    },
+    {
+      "name": "last_update_timestamp",
+      "type": "timestamp with time zone",
+      "description": "The date and time that the delivery stream was last updated."
+    },
+    {
+      "name": "delivery_stream_encryption_configuration",
+      "type": "json",
+      "description": "Indicates the server-side encryption (SSE) status for the delivery stream."
+    },
+    {
+      "name": "destinations",
+      "type": "json",
+      "description": "The destinations for the stream."
+    },
+    {
+      "name": "failure_description",
+      "type": "json",
+      "description": "Provides details in case one of the following operations fails due to an error related to KMS: CreateDeliveryStream, DeleteDeliveryStream, StartDeliveryStreamEncryption,StopDeliveryStreamEncryption."
+    },
+    {
+      "name": "source",
+      "type": "json",
+      "description": "If the DeliveryStreamType parameter is KinesisStreamAsSource, a SourceDescription object describing the source Kinesis data stream."
+    },
+    {
+      "name": "tags_src",
+      "type": "json",
+      "description": "A list of tags associated with the delivery stream."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": ""
+    }
+  ]
+}

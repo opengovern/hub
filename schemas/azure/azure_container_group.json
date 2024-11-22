@@ -1,0 +1,116 @@
+{
+  "table_name": "azure_container_group",
+  "table_description": "Azure Container Group",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The name of the resource."
+    },
+    {
+      "name": "id",
+      "type": "text",
+      "description": "The resource ID."
+    },
+    {
+      "name": "type",
+      "type": "text",
+      "description": "The type of the resource."
+    },
+    {
+      "name": "provisioning_state",
+      "type": "text",
+      "description": "The provisioning state of the container group. This only appears in the response."
+    },
+    {
+      "name": "restart_policy",
+      "type": "text",
+      "description": "Restart policy for all containers within the container group. Possible values include: 'ContainerGroupRestartPolicyAlways', 'ContainerGroupRestartPolicyOnFailure', 'ContainerGroupRestartPolicyNever'."
+    },
+    {
+      "name": "sku",
+      "type": "text",
+      "description": "The SKU for a container group. Possible values include: 'ContainerGroupSkuStandard', 'ContainerGroupSkuDedicated'."
+    },
+    {
+      "name": "os_type",
+      "type": "text",
+      "description": "The operating system type required by the containers in the container group. Possible values include: 'OperatingSystemTypesWindows', 'OperatingSystemTypesLinux'."
+    },
+    {
+      "name": "encryption_properties",
+      "type": "json",
+      "description": "The encryption settings of container registry."
+    },
+    {
+      "name": "containers",
+      "type": "json",
+      "description": "The containers within the container group."
+    },
+    {
+      "name": "ip_address",
+      "type": "json",
+      "description": "The IP address type of the container group."
+    },
+    {
+      "name": "volumes",
+      "type": "json",
+      "description": "The instance view of the container group. Only valid in response."
+    },
+    {
+      "name": "instance_view",
+      "type": "json",
+      "description": "The instance view of the container group. Only valid in response."
+    },
+    {
+      "name": "diagnostics",
+      "type": "json",
+      "description": "The diagnostic information for a container group."
+    },
+    {
+      "name": "subnet_ids",
+      "type": "json",
+      "description": "The subnet resource IDs for a container group."
+    },
+    {
+      "name": "dns_config",
+      "type": "json",
+      "description": "The DNS config information for a container group."
+    },
+    {
+      "name": "init_containers",
+      "type": "json",
+      "description": "The init containers for a container group."
+    },
+    {
+      "name": "image_registry_credentials",
+      "type": "json",
+      "description": "The image registry credentials by which the container group is created from."
+    },
+    {
+      "name": "identity",
+      "type": "json",
+      "description": "The identity of the container group."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": "ColumnDescriptionTitle"
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": "ColumnDescriptionTags"
+    },
+    {
+      "name": "region",
+      "type": "text",
+      "description": "ColumnDescriptionRegion"
+    },
+    {
+      "name": "resource_group",
+      "type": "text",
+      "description": "ColumnDescriptionResourceGroup"
+    }
+  ]
+}

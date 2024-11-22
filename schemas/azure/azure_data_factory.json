@@ -1,0 +1,96 @@
+{
+  "table_name": "azure_data_factory",
+  "table_description": "Azure Data Factory",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The resource name."
+    },
+    {
+      "name": "id",
+      "type": "text",
+      "description": "The resource identifier."
+    },
+    {
+      "name": "type",
+      "type": "text",
+      "description": "The resource type."
+    },
+    {
+      "name": "version",
+      "type": "text",
+      "description": "Version of the factory."
+    },
+    {
+      "name": "create_time",
+      "type": "timestamp with time zone",
+      "description": "Specifies the time, the factory was created."
+    },
+    {
+      "name": "etag",
+      "type": "text",
+      "description": "An unique read-only string that changes whenever the resource is updated."
+    },
+    {
+      "name": "provisioning_state",
+      "type": "text",
+      "description": "Factory provisioning state, example Succeeded."
+    },
+    {
+      "name": "public_network_access",
+      "type": "text",
+      "description": "Whether or not public network access is allowed for the data factory."
+    },
+    {
+      "name": "additional_properties",
+      "type": "json",
+      "description": "Unmatched properties from the message are deserialized this collection."
+    },
+    {
+      "name": "identity",
+      "type": "json",
+      "description": "Managed service identity of the factory."
+    },
+    {
+      "name": "encryption",
+      "type": "json",
+      "description": "Properties to enable Customer Managed Key for the factory."
+    },
+    {
+      "name": "repo_configuration",
+      "type": "json",
+      "description": "Git repo information of the factory."
+    },
+    {
+      "name": "global_parameters",
+      "type": "json",
+      "description": "List of parameters for factory."
+    },
+    {
+      "name": "private_endpoint_connections",
+      "type": "json",
+      "description": "List of private endpoint connections for data factory."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": "ColumnDescriptionTitle"
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": "ColumnDescriptionTags"
+    },
+    {
+      "name": "region",
+      "type": "text",
+      "description": "ColumnDescriptionRegion"
+    },
+    {
+      "name": "resource_group",
+      "type": "text",
+      "description": "ColumnDescriptionResourceGroup"
+    }
+  ]
+}

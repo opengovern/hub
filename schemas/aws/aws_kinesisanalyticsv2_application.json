@@ -1,0 +1,76 @@
+{
+  "table_name": "aws_kinesisanalyticsv2_application",
+  "table_description": "AWS Kinesis Analytics V2 Application",
+  "columns": [
+    {
+      "name": "application_name",
+      "type": "text",
+      "description": "The name of the application."
+    },
+    {
+      "name": "application_version_id",
+      "type": "integer",
+      "description": "Provides the current application version."
+    },
+    {
+      "name": "application_arn",
+      "type": "text",
+      "description": "The ARN of the application."
+    },
+    {
+      "name": "application_status",
+      "type": "text",
+      "description": "The status of the application."
+    },
+    {
+      "name": "create_timestamp",
+      "type": "timestamp with time zone",
+      "description": "The current timestamp when the application was created."
+    },
+    {
+      "name": "application_description",
+      "type": "text",
+      "description": "The description of the application."
+    },
+    {
+      "name": "last_update_timestamp",
+      "type": "timestamp with time zone",
+      "description": "The current timestamp when the application was last updated."
+    },
+    {
+      "name": "runtime_environment",
+      "type": "text",
+      "description": "The runtime environment for the application."
+    },
+    {
+      "name": "service_execution_role",
+      "type": "text",
+      "description": "Specifies the IAM role that the application uses to access external resources."
+    },
+    {
+      "name": "application_configuration_description",
+      "type": "json",
+      "description": "Provides details about the application's Java, SQL, or Scala code and starting parameters."
+    },
+    {
+      "name": "cloud_watch_logging_option_descriptions",
+      "type": "json",
+      "description": "Describes the application Amazon CloudWatch logging options."
+    },
+    {
+      "name": "tags_src",
+      "type": "json",
+      "description": "The key-value tags assigned to the application."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": ""
+    }
+  ]
+}

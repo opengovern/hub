@@ -1,0 +1,31 @@
+{
+  "table_name": "aws_fsx_volume",
+  "table_description": "AWS FSX Volume",
+  "columns": [
+    {
+      "name": "volume_id",
+      "type": "text",
+      "description": "The id of the volume."
+    },
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The name of the volume."
+    },
+    {
+      "name": "resource_arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) of the volume"
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": ""
+    }
+  ]
+}

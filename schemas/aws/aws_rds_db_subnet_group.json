@@ -1,0 +1,51 @@
+{
+  "table_name": "aws_rds_db_subnet_group",
+  "table_description": "AWS RDS DB Subnet Group",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The friendly name to identify the DB subnet group."
+    },
+    {
+      "name": "arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) for the DB subnet group."
+    },
+    {
+      "name": "description",
+      "type": "text",
+      "description": "Provides the description of the DB subnet group."
+    },
+    {
+      "name": "status",
+      "type": "text",
+      "description": "Provides the status of the DB subnet group."
+    },
+    {
+      "name": "vpc_id",
+      "type": "text",
+      "description": "Provides the VpcId of the DB subnet group."
+    },
+    {
+      "name": "subnets",
+      "type": "json",
+      "description": "A list of Subnet elements."
+    },
+    {
+      "name": "tags_src",
+      "type": "json",
+      "description": "A list of tags attached to the DB subnet group."
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": ""
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    }
+  ]
+}

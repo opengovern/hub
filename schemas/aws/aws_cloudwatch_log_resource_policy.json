@@ -1,0 +1,31 @@
+{
+  "table_name": "aws_cloudwatch_log_resource_policy",
+  "table_description": "AWS CloudWatch Log Resource Policy",
+  "columns": [
+    {
+      "name": "policy_name",
+      "type": "text",
+      "description": "The name of the resource policy."
+    },
+    {
+      "name": "last_updated_time",
+      "type": "timestamp with time zone",
+      "description": "Timestamp showing when this policy was last updated."
+    },
+    {
+      "name": "policy",
+      "type": "json",
+      "description": "The details of the policy."
+    },
+    {
+      "name": "policy_std",
+      "type": "json",
+      "description": "Contains the policy document in a canonical form for easier searching."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    }
+  ]
+}

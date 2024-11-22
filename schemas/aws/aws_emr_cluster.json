@@ -1,0 +1,171 @@
+{
+  "table_name": "aws_emr_cluster",
+  "table_description": "AWS EMR Cluster",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The name of the cluster."
+    },
+    {
+      "name": "id",
+      "type": "text",
+      "description": "The unique identifier for the cluster."
+    },
+    {
+      "name": "cluster_arn",
+      "type": "text",
+      "description": "The Amazon Resource Name of the cluster."
+    },
+    {
+      "name": "state",
+      "type": "text",
+      "description": "The current state of the cluster."
+    },
+    {
+      "name": "status",
+      "type": "json",
+      "description": "The current status details about the cluster."
+    },
+    {
+      "name": "auto_scaling_role",
+      "type": "text",
+      "description": "An IAM role for automatic scaling policies."
+    },
+    {
+      "name": "auto_terminate",
+      "type": "boolean",
+      "description": "Specifies whether the cluster should terminate after completing all steps."
+    },
+    {
+      "name": "custom_ami_id",
+      "type": "text",
+      "description": "Available only in Amazon EMR version 5.7.0 and later. The ID of a custom Amazon EBS-backed Linux AMI if the cluster uses a custom AMI."
+    },
+    {
+      "name": "ebs_root_volume_size",
+      "type": "text",
+      "description": "The size of the Amazon EBS root device volume of the Linux AMI that is used for each EC2 instance, in GiB. Available in Amazon EMR version 4.x and later."
+    },
+    {
+      "name": "instance_collection_type",
+      "type": "text",
+      "description": "The instance group configuration of the cluster."
+    },
+    {
+      "name": "log_encryption_kms_key_id",
+      "type": "text",
+      "description": "The AWS KMS customer master key (CMK) used for encrypting log files. This attribute is only available with EMR version 5.30.0 and later, excluding EMR 6.0.0."
+    },
+    {
+      "name": "log_uri",
+      "type": "text",
+      "description": "The path to the Amazon S3 location where logs for this cluster are stored."
+    },
+    {
+      "name": "outpost_arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) of the Outpost where the cluster is launched."
+    },
+    {
+      "name": "master_public_dns_name",
+      "type": "text",
+      "description": "The DNS name of the master node."
+    },
+    {
+      "name": "normalized_instance_hours",
+      "type": "integer",
+      "description": "An approximation of the cost of the cluster, represented in m1.small/hours."
+    },
+    {
+      "name": "release_label",
+      "type": "text",
+      "description": "The Amazon EMR release label, which determines the version of open-source application packages installed on the cluster."
+    },
+    {
+      "name": "repo_upgrade_on_boot",
+      "type": "text",
+      "description": "Applies only when CustomAmiID is used. Specifies the type of updates that are applied from the Amazon Linux AMI package repositories when an instance boots using the AMI."
+    },
+    {
+      "name": "requested_ami_version",
+      "type": "text",
+      "description": "Applies only when CustomAmiID is used. Specifies the type of updates that are applied from the Amazon Linux AMI package repositories when an instance boots using the AMI."
+    },
+    {
+      "name": "running_ami_version",
+      "type": "text",
+      "description": "The AMI version running on this cluster."
+    },
+    {
+      "name": "scale_down_behavior",
+      "type": "text",
+      "description": "The way that individual Amazon EC2 instances terminate when an automatic scale-in activity occurs or an instance group is resized."
+    },
+    {
+      "name": "security_configuration",
+      "type": "text",
+      "description": "The name of the security configuration applied to the cluster."
+    },
+    {
+      "name": "service_role",
+      "type": "text",
+      "description": "The IAM role that will be assumed by the Amazon EMR service to access AWS resources on your behalf."
+    },
+    {
+      "name": "step_concurrency_level",
+      "type": "integer",
+      "description": "Specifies the number of steps that can be executed concurrently."
+    },
+    {
+      "name": "termination_protected",
+      "type": "boolean",
+      "description": "Indicates whether Amazon EMR will lock the cluster to prevent the EC2 instances from being terminated by an API call or user intervention, or in the event of a cluster error."
+    },
+    {
+      "name": "visible_to_all_users",
+      "type": "boolean",
+      "description": "Indicates whether the cluster is visible to all IAM users of the AWS account associated with the cluster."
+    },
+    {
+      "name": "applications",
+      "type": "json",
+      "description": "The applications installed on this cluster."
+    },
+    {
+      "name": "configurations",
+      "type": "json",
+      "description": "Applies only to Amazon EMR releases 4.x and later. The list of Configurations supplied to the EMR cluster."
+    },
+    {
+      "name": "ec2_instance_attributes",
+      "type": "json",
+      "description": "Provides information about the EC2 instances in a cluster grouped by category."
+    },
+    {
+      "name": "placement_groups",
+      "type": "json",
+      "description": "Placement group configured for an Amazon EMR cluster."
+    },
+    {
+      "name": "kerberos_attributes",
+      "type": "json",
+      "description": "Attributes for Kerberos configuration when Kerberos authentication is enabled using a security configuration."
+    },
+    {
+      "name": "tags_src",
+      "type": "json",
+      "description": "A list of tags associated with a cluster."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": ""
+    }
+  ]
+}

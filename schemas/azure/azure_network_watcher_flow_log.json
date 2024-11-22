@@ -1,0 +1,101 @@
+{
+  "table_name": "azure_network_watcher_flow_log",
+  "table_description": "Azure Network Watcher FlowLog",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The friendly name that identifies the flow log."
+    },
+    {
+      "name": "id",
+      "type": "text",
+      "description": "Contains ID to identify a flow log uniquely."
+    },
+    {
+      "name": "enabled",
+      "type": "boolean",
+      "description": "Indicates whether the flow log is enabled, or not."
+    },
+    {
+      "name": "network_watcher_name",
+      "type": "text",
+      "description": "The friendly name that identifies the network watcher."
+    },
+    {
+      "name": "provisioning_state",
+      "type": "text",
+      "description": "The provisioning state of the flow log."
+    },
+    {
+      "name": "type",
+      "type": "text",
+      "description": "The resource type of the flow log."
+    },
+    {
+      "name": "version",
+      "type": "integer",
+      "description": "The version (revision) of the flow log."
+    },
+    {
+      "name": "etag",
+      "type": "text",
+      "description": "An unique read-only string that changes whenever the resource is updated."
+    },
+    {
+      "name": "file_type",
+      "type": "text",
+      "description": "The file type of flow log. Possible values include: 'JSON'."
+    },
+    {
+      "name": "retention_policy_days",
+      "type": "integer",
+      "description": "Specifies the number of days to retain flow log records."
+    },
+    {
+      "name": "retention_policy_enabled",
+      "type": "boolean",
+      "description": "Indicates whether flow log retention is enabled, or not."
+    },
+    {
+      "name": "storage_id",
+      "type": "text",
+      "description": "The ID of the storage account which is used to store the flow log."
+    },
+    {
+      "name": "target_resource_id",
+      "type": "text",
+      "description": "The ID of network security group to which flow log will be applied."
+    },
+    {
+      "name": "target_resource_guid",
+      "type": "text",
+      "description": "The Guid of network security group to which flow log will be applied."
+    },
+    {
+      "name": "traffic_analytics",
+      "type": "json",
+      "description": "Defines the configuration of flow log traffic analytics."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": "ColumnDescriptionTitle"
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": "ColumnDescriptionTags"
+    },
+    {
+      "name": "region",
+      "type": "text",
+      "description": "ColumnDescriptionRegion"
+    },
+    {
+      "name": "resource_group",
+      "type": "text",
+      "description": "ColumnDescriptionResourceGroup"
+    }
+  ]
+}

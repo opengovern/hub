@@ -1,0 +1,26 @@
+{
+  "table_name": "aws_rds_global_cluster",
+  "table_description": "AWS RDS GlobalCluster",
+  "columns": [
+    {
+      "name": "global_cluster_identifier",
+      "type": "text",
+      "description": "The id of the global cluster."
+    },
+    {
+      "name": "global_cluster_arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) of the global cluster"
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": ""
+    }
+  ]
+}

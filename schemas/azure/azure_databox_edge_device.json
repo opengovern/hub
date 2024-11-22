@@ -1,0 +1,131 @@
+{
+  "table_name": "azure_databox_edge_device",
+  "table_description": "Azure Data Box Edge Device",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The resource name."
+    },
+    {
+      "name": "id",
+      "type": "text",
+      "description": "The resource identifier."
+    },
+    {
+      "name": "friendly_name",
+      "type": "text",
+      "description": "The Data Box Edge/Gateway device name."
+    },
+    {
+      "name": "type",
+      "type": "text",
+      "description": "The resource type."
+    },
+    {
+      "name": "data_box_edge_device_status",
+      "type": "text",
+      "description": "The status of the Data Box Edge/Gateway device. Possible values include: 'ReadyToSetup', 'Online', 'Offline', 'NeedsAttention', 'Disconnected', 'PartiallyDisconnected', 'Maintenance'."
+    },
+    {
+      "name": "culture",
+      "type": "text",
+      "description": "The Data Box Edge/Gateway device culture."
+    },
+    {
+      "name": "description",
+      "type": "text",
+      "description": "he Description of the Data Box Edge/Gateway device."
+    },
+    {
+      "name": "device_model",
+      "type": "text",
+      "description": "The Data Box Edge/Gateway device model."
+    },
+    {
+      "name": "device_type",
+      "type": "text",
+      "description": "The type of the Data Box Edge/Gateway device. Possible values include: 'DataBoxEdgeDevice'."
+    },
+    {
+      "name": "device_hcs_version",
+      "type": "text",
+      "description": "The device software version number of the device (eg: 1.2.18105.6)."
+    },
+    {
+      "name": "device_local_capacity",
+      "type": "integer",
+      "description": "The Data Box Edge/Gateway device local capacity in MB."
+    },
+    {
+      "name": "device_software_version",
+      "type": "text",
+      "description": "The Data Box Edge/Gateway device software version."
+    },
+    {
+      "name": "etag",
+      "type": "text",
+      "description": "The etag for the devices."
+    },
+    {
+      "name": "location",
+      "type": "text",
+      "description": "The location of the device. This is a supported and registered Azure geographical region (for example, West US, East US, or Southeast Asia). The geographical region of a device cannot be changed once it is created, but if an identical geographical region is specified on update, the request will succeed."
+    },
+    {
+      "name": "model_description",
+      "type": "text",
+      "description": "The description of the Data Box Edge/Gateway device model."
+    },
+    {
+      "name": "node_count",
+      "type": "integer",
+      "description": "The number of nodes in the cluster."
+    },
+    {
+      "name": "serial_number",
+      "type": "text",
+      "description": "The Serial Number of Data Box Edge/Gateway device."
+    },
+    {
+      "name": "sku_name",
+      "type": "text",
+      "description": "SKU name of the resource. Possible values include: 'Gateway', 'Edge'."
+    },
+    {
+      "name": "sku_tier",
+      "type": "text",
+      "description": "The SKU tier. This is based on the SKU name. Possible values include: 'Standard'."
+    },
+    {
+      "name": "time_zone",
+      "type": "text",
+      "description": "The Data Box Edge/Gateway device timezone."
+    },
+    {
+      "name": "configured_role_types",
+      "type": "json",
+      "description": "Type of compute roles configured."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": "ColumnDescriptionTitle"
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": "ColumnDescriptionTags"
+    },
+    {
+      "name": "region",
+      "type": "text",
+      "description": "ColumnDescriptionRegion"
+    },
+    {
+      "name": "resource_group",
+      "type": "text",
+      "description": "ColumnDescriptionResourceGroup"
+    }
+  ]
+}

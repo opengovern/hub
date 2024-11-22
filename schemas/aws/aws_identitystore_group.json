@@ -1,0 +1,31 @@
+{
+  "table_name": "aws_identitystore_group",
+  "table_description": "AWS Identity Store Group",
+  "columns": [
+    {
+      "name": "identity_store_id",
+      "type": "text",
+      "description": "The globally unique identifier for the identity store."
+    },
+    {
+      "name": "name",
+      "type": "text",
+      "description": "Contains the group's display name value."
+    },
+    {
+      "name": "id",
+      "type": "text",
+      "description": "The identifier for a group in the identity store."
+    },
+    {
+      "name": "external_ids",
+      "type": "json",
+      "description": "The identifier for a group in the identity store."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    }
+  ]
+}

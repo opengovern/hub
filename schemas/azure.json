@@ -1,0 +1,1046 @@
+{
+  "count_of_named_tables": 208,
+  "count_of_named_columns": 3292,
+  "tables": [
+    {
+      "table_name": "azure_alert_management",
+      "description": "Azure Alert Management Service",
+      "count_of_columns": 27
+    },
+    {
+      "table_name": "azure_analysisservices_servers",
+      "description": "Azure AnalysisServices Servers",
+      "count_of_columns": 4
+    },
+    {
+      "table_name": "azure_api_management",
+      "description": "Azure API Management Service",
+      "count_of_columns": 42
+    },
+    {
+      "table_name": "azure_api_management_backend",
+      "description": "Azure API Management Backend",
+      "count_of_columns": 15
+    },
+    {
+      "table_name": "azure_app_configuration",
+      "description": "Azure App Configuration",
+      "count_of_columns": 16
+    },
+    {
+      "table_name": "azure_app_containerapps",
+      "description": "Azure App ContainerApps",
+      "count_of_columns": 4
+    },
+    {
+      "table_name": "azure_app_managedenvironments",
+      "description": "Azure App ManagedEnvironments",
+      "count_of_columns": 4
+    },
+    {
+      "table_name": "azure_app_service_environment",
+      "description": "Azure App Service Environment",
+      "count_of_columns": 21
+    },
+    {
+      "table_name": "azure_app_service_function_app",
+      "description": "Azure App Service Function App",
+      "count_of_columns": 24
+    },
+    {
+      "table_name": "azure_app_service_plan",
+      "description": "Azure App Service Plan",
+      "count_of_columns": 23
+    },
+    {
+      "table_name": "azure_app_service_web_app",
+      "description": "Azure App Service Web App",
+      "count_of_columns": 26
+    },
+    {
+      "table_name": "azure_app_service_web_app_slot",
+      "description": "Azure App Service Web App Slot",
+      "count_of_columns": 43
+    },
+    {
+      "table_name": "azure_application_gateway",
+      "description": "Azure Application Gateway",
+      "count_of_columns": 41
+    },
+    {
+      "table_name": "azure_application_insight",
+      "description": "Azure Application Insight",
+      "count_of_columns": 29
+    },
+    {
+      "table_name": "azure_application_security_group",
+      "description": "Azure Application Security Group",
+      "count_of_columns": 10
+    },
+    {
+      "table_name": "azure_automation_account",
+      "description": "Azure Automation Account",
+      "count_of_columns": 16
+    },
+    {
+      "table_name": "azure_automation_variable",
+      "description": "Azure Automation Variable",
+      "count_of_columns": 11
+    },
+    {
+      "table_name": "azure_autoscale_setting",
+      "description": "Azure Autoscale Setting",
+      "count_of_columns": 10
+    },
+    {
+      "table_name": "azure_bastion_host",
+      "description": "Azure Bastion Host",
+      "count_of_columns": 11
+    },
+    {
+      "table_name": "azure_batch_account",
+      "description": "Azure Batch Account",
+      "count_of_columns": 23
+    },
+    {
+      "table_name": "azure_blueprint_blueprints",
+      "description": "Azure Blueprint Blueprints",
+      "count_of_columns": 3
+    },
+    {
+      "table_name": "azure_botservice_bot",
+      "description": "Azure BotService Bot",
+      "count_of_columns": 4
+    },
+    {
+      "table_name": "azure_cache_redisenterprise",
+      "description": "Azure Cache RedisEnterprise",
+      "count_of_columns": 4
+    },
+    {
+      "table_name": "azure_cdn_endpoint",
+      "description": "Azure Cdn Endpoint",
+      "count_of_columns": 4
+    },
+    {
+      "table_name": "azure_cdn_profiles",
+      "description": "Azure Cdn Profiles",
+      "count_of_columns": 14
+    },
+    {
+      "table_name": "azure_cognitive_account",
+      "description": "Azure Cognitive Account",
+      "count_of_columns": 34
+    },
+    {
+      "table_name": "azure_compute_availability_set",
+      "description": "Azure Compute Availability Set",
+      "count_of_columns": 15
+    },
+    {
+      "table_name": "azure_compute_cloudservices",
+      "description": "Azure Compute CloudServices",
+      "count_of_columns": 4
+    },
+    {
+      "table_name": "azure_compute_disk",
+      "description": "Azure Compute Disk",
+      "count_of_columns": 43
+    },
+    {
+      "table_name": "azure_compute_disk_access",
+      "description": "Azure Compute Disk Access",
+      "count_of_columns": 10
+    },
+    {
+      "table_name": "azure_compute_disk_encryption_set",
+      "description": "Azure Compute Disk Encryption Set",
+      "count_of_columns": 15
+    },
+    {
+      "table_name": "azure_compute_host",
+      "description": "Azure Compute Host",
+      "count_of_columns": 4
+    },
+    {
+      "table_name": "azure_compute_host_group",
+      "description": "Azure Compute HostGroup",
+      "count_of_columns": 4
+    },
+    {
+      "table_name": "azure_compute_image",
+      "description": "Azure Compute Image",
+      "count_of_columns": 21
+    },
+    {
+      "table_name": "azure_compute_image_gallery",
+      "description": "Azure Compute ImageGallery",
+      "count_of_columns": 4
+    },
+    {
+      "table_name": "azure_compute_resource_sku",
+      "description": "Azure Compute Resource SKU",
+      "count_of_columns": 17
+    },
+    {
+      "table_name": "azure_compute_restore_point_collection",
+      "description": "Azure Compute RestorePointCollection",
+      "count_of_columns": 4
+    },
+    {
+      "table_name": "azure_compute_snapshot",
+      "description": "Azure Compute Snapshot",
+      "count_of_columns": 34
+    },
+    {
+      "table_name": "azure_compute_ssh_key",
+      "description": "Azure Compute SSH Key",
+      "count_of_columns": 8
+    },
+    {
+      "table_name": "azure_compute_virtual_machine",
+      "description": "Azure Compute Virtual Machine",
+      "count_of_columns": 57
+    },
+    {
+      "table_name": "azure_compute_virtual_machine_scale_set",
+      "description": "Azure Compute Virtual Machine Scale Set",
+      "count_of_columns": 30
+    },
+    {
+      "table_name": "azure_compute_virtual_machine_scale_set_network_interface",
+      "description": "Azure Compute Virtual Machine Scale Set Network Interface",
+      "count_of_columns": 20
+    },
+    {
+      "table_name": "azure_compute_virtual_machine_scale_set_vm",
+      "description": "Azure Compute Virtual Machine Scale Set VM",
+      "count_of_columns": 34
+    },
+    {
+      "table_name": "azure_container_group",
+      "description": "Azure Container Group",
+      "count_of_columns": 22
+    },
+    {
+      "table_name": "azure_container_registry",
+      "description": "Azure Container Registry",
+      "count_of_columns": 31
+    },
+    {
+      "table_name": "azure_cosmosdb_account",
+      "description": "Azure Cosmos DB Account",
+      "count_of_columns": 37
+    },
+    {
+      "table_name": "azure_cosmosdb_cassandra_cluster",
+      "description": "Azure Cosmosdb CassandraCluster",
+      "count_of_columns": 4
+    },
+    {
+      "table_name": "azure_cosmosdb_mongo_collection",
+      "description": "Azure Cosmos DB Mongo Collection",
+      "count_of_columns": 19
+    },
+    {
+      "table_name": "azure_cosmosdb_mongo_database",
+      "description": "Azure Cosmos DB Mongo Database",
+      "count_of_columns": 15
+    },
+    {
+      "table_name": "azure_cosmosdb_restorable_database_account",
+      "description": "Azure Cosmos DB Restorable Database Account",
+      "count_of_columns": 11
+    },
+    {
+      "table_name": "azure_cosmosdb_sql_database",
+      "description": "Azure Cosmos DB SQL Database",
+      "count_of_columns": 16
+    },
+    {
+      "table_name": "azure_costmanagement_costbyresourcetype",
+      "description": "Azure CostManagement CostByResourceType",
+      "count_of_columns": 6
+    },
+    {
+      "table_name": "azure_costmanagement_costbysubscription",
+      "description": "Azure CostManagement CostBySubscription",
+      "count_of_columns": 2
+    },
+    {
+      "table_name": "azure_dashboard_grafana",
+      "description": "Azure Dashboard Grafana",
+      "count_of_columns": 3
+    },
+    {
+      "table_name": "azure_data_factory",
+      "description": "Azure Data Factory",
+      "count_of_columns": 18
+    },
+    {
+      "table_name": "azure_data_factory_dataset",
+      "description": "Azure Data Factory Dataset",
+      "count_of_columns": 8
+    },
+    {
+      "table_name": "azure_data_factory_pipeline",
+      "description": "Azure Data Factory Pipeline",
+      "count_of_columns": 16
+    },
+    {
+      "table_name": "azure_data_lake_analytics_account",
+      "description": "Azure Data Lake Analytics account",
+      "count_of_columns": 30
+    },
+    {
+      "table_name": "azure_data_lake_store",
+      "description": "Azure Data Lake Store",
+      "count_of_columns": 27
+    },
+    {
+      "table_name": "azure_data_protection_backup_job",
+      "description": "Azure Data Protection Backup Job",
+      "count_of_columns": 34
+    },
+    {
+      "table_name": "azure_databox_edge_device",
+      "description": "Azure Data Box Edge Device",
+      "count_of_columns": 25
+    },
+    {
+      "table_name": "azure_databricks_workspaces",
+      "description": "Azure Databricks Workspaces",
+      "count_of_columns": 20
+    },
+    {
+      "table_name": "azure_datamigration_services",
+      "description": "Azure DataMigration Services",
+      "count_of_columns": 4
+    },
+    {
+      "table_name": "azure_dataprotection_backuppolicies",
+      "description": "Azure DataProtection BackupPolicies",
+      "count_of_columns": 3
+    },
+    {
+      "table_name": "azure_dataprotection_backupvaults",
+      "description": "Azure DataProtection BackupVaults",
+      "count_of_columns": 14
+    },
+    {
+      "table_name": "azure_dbformysql_flexibleservers",
+      "description": "Azure DBforMySQL FlexibleServers",
+      "count_of_columns": 4
+    },
+    {
+      "table_name": "azure_desktop_virtualization_host_pool",
+      "description": "Azure DesktopVirtualization HostPool",
+      "count_of_columns": 4
+    },
+    {
+      "table_name": "azure_desktopvirtualization_workspace",
+      "description": "Azure DesktopVirtualization Workspace",
+      "count_of_columns": 4
+    },
+    {
+      "table_name": "azure_devtestlab_lab",
+      "description": "Azure DevTestLab Lab",
+      "count_of_columns": 4
+    },
+    {
+      "table_name": "azure_diagnostic_setting",
+      "description": "Azure Diagnostic Setting",
+      "count_of_columns": 13
+    },
+    {
+      "table_name": "azure_dns_zone",
+      "description": "Azure DNS Zone",
+      "count_of_columns": 15
+    },
+    {
+      "table_name": "azure_eventgrid_domain",
+      "description": "Azure Event Grid Domain",
+      "count_of_columns": 29
+    },
+    {
+      "table_name": "azure_eventgrid_topic",
+      "description": "Azure Event Grid Topic",
+      "count_of_columns": 27
+    },
+    {
+      "table_name": "azure_eventhub_namespace",
+      "description": "Azure Event Hub Namespace",
+      "count_of_columns": 25
+    },
+    {
+      "table_name": "azure_eventhub_namespaceeventhubs",
+      "description": "Azure Eventhub NamespaceEventhubs",
+      "count_of_columns": 4
+    },
+    {
+      "table_name": "azure_express_route_circuit",
+      "description": "Azure Express Route Circuit",
+      "count_of_columns": 22
+    },
+    {
+      "table_name": "azure_firewall",
+      "description": "Azure Firewall",
+      "count_of_columns": 24
+    },
+    {
+      "table_name": "azure_firewall_policy",
+      "description": "Azure Firewall Policy",
+      "count_of_columns": 22
+    },
+    {
+      "table_name": "azure_frontdoor",
+      "description": "Azure Front Door",
+      "count_of_columns": 21
+    },
+    {
+      "table_name": "azure_hdinsight_cluster",
+      "description": "Azure HDInsight Cluster",
+      "count_of_columns": 32
+    },
+    {
+      "table_name": "azure_healthcare_service",
+      "description": "Azure Healthcare Service",
+      "count_of_columns": 23
+    },
+    {
+      "table_name": "azure_hpc_cache",
+      "description": "Azure HPC Cache",
+      "count_of_columns": 20
+    },
+    {
+      "table_name": "azure_hybrid_compute_machine",
+      "description": "Azure Hybrid Compute Machine",
+      "count_of_columns": 28
+    },
+    {
+      "table_name": "azure_hybrid_kubernetes_connected_cluster",
+      "description": "Azure Hybrid Kubernetes Connected Cluster",
+      "count_of_columns": 28
+    },
+    {
+      "table_name": "azure_iothub",
+      "description": "Azure Iot Hub",
+      "count_of_columns": 29
+    },
+    {
+      "table_name": "azure_iothub_dps",
+      "description": "Azure Iot Hub Dps",
+      "count_of_columns": 20
+    },
+    {
+      "table_name": "azure_key_vault",
+      "description": "Azure Key Vault",
+      "count_of_columns": 23
+    },
+    {
+      "table_name": "azure_key_vault_certificate",
+      "description": "Azure Key Vault Certificate",
+      "count_of_columns": 10
+    },
+    {
+      "table_name": "azure_key_vault_deleted_vault",
+      "description": "Azure Key Vault Deleted Vault",
+      "count_of_columns": 10
+    },
+    {
+      "table_name": "azure_key_vault_key",
+      "description": "Azure Key Vault Key",
+      "count_of_columns": 21
+    },
+    {
+      "table_name": "azure_key_vault_key_version",
+      "description": "Azure Key Vault Key Version",
+      "count_of_columns": 23
+    },
+    {
+      "table_name": "azure_key_vault_managed_hardware_security_module",
+      "description": "Azure Key Vault Managed Hardware Security Module",
+      "count_of_columns": 18
+    },
+    {
+      "table_name": "azure_key_vault_secret",
+      "description": "Azure Key Vault Secret",
+      "count_of_columns": 18
+    },
+    {
+      "table_name": "azure_kubernetes_cluster",
+      "description": "Azure Kubernetes Cluster",
+      "count_of_columns": 35
+    },
+    {
+      "table_name": "azure_kubernetes_service_version",
+      "description": "Azure Kubernetes Service Version",
+      "count_of_columns": 6
+    },
+    {
+      "table_name": "azure_kusto_cluster",
+      "description": "Azure Kusto Cluster",
+      "count_of_columns": 28
+    },
+    {
+      "table_name": "azure_lb",
+      "description": "Azure Load Balancer",
+      "count_of_columns": 22
+    },
+    {
+      "table_name": "azure_lb_backend_address_pool",
+      "description": "Azure Load Balancer Backend Address Pool",
+      "count_of_columns": 14
+    },
+    {
+      "table_name": "azure_lb_nat_rule",
+      "description": "Azure Load Balancer Nat Rule",
+      "count_of_columns": 16
+    },
+    {
+      "table_name": "azure_lb_outbound_rule",
+      "description": "Azure Load Balancer Outbound Rule",
+      "count_of_columns": 14
+    },
+    {
+      "table_name": "azure_lb_probe",
+      "description": "Azure Load Balancer Probe",
+      "count_of_columns": 14
+    },
+    {
+      "table_name": "azure_lb_rule",
+      "description": "Azure Load Balancer Rule",
+      "count_of_columns": 20
+    },
+    {
+      "table_name": "azure_lighthouse_assignment",
+      "description": "Azure Lighthouse Assignment",
+      "count_of_columns": 9
+    },
+    {
+      "table_name": "azure_lighthouse_definition",
+      "description": "Azure Lighthouse Definition",
+      "count_of_columns": 15
+    },
+    {
+      "table_name": "azure_location",
+      "description": "Azure Location",
+      "count_of_columns": 6
+    },
+    {
+      "table_name": "azure_log_alert",
+      "description": "Azure Log Alert",
+      "count_of_columns": 13
+    },
+    {
+      "table_name": "azure_log_analytics_workspace",
+      "description": "Azure Log Analytics Workspace",
+      "count_of_columns": 24
+    },
+    {
+      "table_name": "azure_log_profile",
+      "description": "Azure Log Profile",
+      "count_of_columns": 13
+    },
+    {
+      "table_name": "azure_logic_app_workflow",
+      "description": "Azure Logic App Workflow",
+      "count_of_columns": 22
+    },
+    {
+      "table_name": "azure_logic_integrationaccounts",
+      "description": "Azure Logic IntegrationAccounts",
+      "count_of_columns": 4
+    },
+    {
+      "table_name": "azure_machine_learning_workspace",
+      "description": "Azure Machine Learning Workspace",
+      "count_of_columns": 25
+    },
+    {
+      "table_name": "azure_maintenance_configuration",
+      "description": "Azure Maintenance Configuration.",
+      "count_of_columns": 19
+    },
+    {
+      "table_name": "azure_management_group",
+      "description": "Azure Management Group.",
+      "count_of_columns": 11
+    },
+    {
+      "table_name": "azure_management_lock",
+      "description": "Azure Management Lock",
+      "count_of_columns": 9
+    },
+    {
+      "table_name": "azure_mariadb_databases",
+      "description": "Azure MariaDB Databases",
+      "count_of_columns": 4
+    },
+    {
+      "table_name": "azure_mariadb_server",
+      "description": "Azure MariaDB Server",
+      "count_of_columns": 27
+    },
+    {
+      "table_name": "azure_monitor_log_profile",
+      "description": "Azure Monitor Log Profile",
+      "count_of_columns": 11
+    },
+    {
+      "table_name": "azure_mssql_elasticpool",
+      "description": "Azure Microsoft SQL Elastic Pool",
+      "count_of_columns": 17
+    },
+    {
+      "table_name": "azure_mssql_managed_instance",
+      "description": "Azure Microsoft SQL Managed Instance",
+      "count_of_columns": 32
+    },
+    {
+      "table_name": "azure_mssql_virtual_machine",
+      "description": "Azure MS SQL Virtual Machine",
+      "count_of_columns": 21
+    },
+    {
+      "table_name": "azure_mysql_flexible_server",
+      "description": "Azure MySQL Flexible Server",
+      "count_of_columns": 33
+    },
+    {
+      "table_name": "azure_mysql_server",
+      "description": "Azure MySQL Server",
+      "count_of_columns": 36
+    },
+    {
+      "table_name": "azure_nat_gateway",
+      "description": "Azure NAT Gateway",
+      "count_of_columns": 16
+    },
+    {
+      "table_name": "azure_netapp_account",
+      "description": "Azure NetApp Account",
+      "count_of_columns": 4
+    },
+    {
+      "table_name": "azure_netapp_capacity_pool",
+      "description": "Azure NetApp CapacityPool",
+      "count_of_columns": 4
+    },
+    {
+      "table_name": "azure_network_connections",
+      "description": "Azure Network Connections",
+      "count_of_columns": 4
+    },
+    {
+      "table_name": "azure_network_ddos_protection_plan",
+      "description": "Azure Network DDoSProtectionPlan",
+      "count_of_columns": 4
+    },
+    {
+      "table_name": "azure_network_dnsresolver",
+      "description": "Azure Network DNSResolver",
+      "count_of_columns": 4
+    },
+    {
+      "table_name": "azure_network_firewallpolicies",
+      "description": "Azure Network FirewallPolicies",
+      "count_of_columns": 4
+    },
+    {
+      "table_name": "azure_network_interface",
+      "description": "Azure Network Interface",
+      "count_of_columns": 32
+    },
+    {
+      "table_name": "azure_network_localnetworkgateways",
+      "description": "Azure Network LocalNetworkGateways",
+      "count_of_columns": 4
+    },
+    {
+      "table_name": "azure_network_privatednszones",
+      "description": "Azure Network PrivateDNSZones",
+      "count_of_columns": 4
+    },
+    {
+      "table_name": "azure_network_privateendpoints",
+      "description": "Azure Network PrivateEndpoints",
+      "count_of_columns": 4
+    },
+    {
+      "table_name": "azure_network_privatelinkservices",
+      "description": "Azure Network PrivateLinkServices",
+      "count_of_columns": 4
+    },
+    {
+      "table_name": "azure_network_publicipprefixes",
+      "description": "Azure Network PublicIPPrefixes",
+      "count_of_columns": 4
+    },
+    {
+      "table_name": "azure_network_security_group",
+      "description": "Azure Network Security Group",
+      "count_of_columns": 16
+    },
+    {
+      "table_name": "azure_network_virtualhubs",
+      "description": "Azure Network VirtualHubs",
+      "count_of_columns": 4
+    },
+    {
+      "table_name": "azure_network_virtualwans",
+      "description": "Azure Network VirtualWans",
+      "count_of_columns": 4
+    },
+    {
+      "table_name": "azure_network_vpnconnections",
+      "description": "Azure Network VPNConnections",
+      "count_of_columns": 4
+    },
+    {
+      "table_name": "azure_network_vpngateways",
+      "description": "Azure Network VPNGateways",
+      "count_of_columns": 4
+    },
+    {
+      "table_name": "azure_network_vpnsites",
+      "description": "Azure Network VPNSites",
+      "count_of_columns": 4
+    },
+    {
+      "table_name": "azure_network_watcher",
+      "description": "Azure Network Watcher",
+      "count_of_columns": 9
+    },
+    {
+      "table_name": "azure_network_watcher_flow_log",
+      "description": "Azure Network Watcher FlowLog",
+      "count_of_columns": 19
+    },
+    {
+      "table_name": "azure_operationalinsights_workspaces",
+      "description": "Azure OperationalInsights Workspaces",
+      "count_of_columns": 24
+    },
+    {
+      "table_name": "azure_policy_assignment",
+      "description": "Azure Policy Assignment",
+      "count_of_columns": 15
+    },
+    {
+      "table_name": "azure_policy_definition",
+      "description": "Azure Policy Definition",
+      "count_of_columns": 11
+    },
+    {
+      "table_name": "azure_postgresql_flexible_server",
+      "description": "Azure PostgreSQL Flexible Server",
+      "count_of_columns": 9
+    },
+    {
+      "table_name": "azure_postgresql_server",
+      "description": "Azure PostgreSQL Server",
+      "count_of_columns": 36
+    },
+    {
+      "table_name": "azure_powerbidedicated_capacity",
+      "description": "Azure PowerBIDedicated Capacity",
+      "count_of_columns": 4
+    },
+    {
+      "table_name": "azure_private_dns_zone",
+      "description": "Azure Private DNS Zone",
+      "count_of_columns": 15
+    },
+    {
+      "table_name": "azure_private_endpoint",
+      "description": "Azure Private Endpoint",
+      "count_of_columns": 19
+    },
+    {
+      "table_name": "azure_provider",
+      "description": "Azure Provider",
+      "count_of_columns": 5
+    },
+    {
+      "table_name": "azure_public_ip",
+      "description": "Azure Public IP",
+      "count_of_columns": 25
+    },
+    {
+      "table_name": "azure_purview_account",
+      "description": "Azure Purview Account",
+      "count_of_columns": 4
+    },
+    {
+      "table_name": "azure_recovery_services_backup_item",
+      "description": "Azure Recovery Services Backup Item",
+      "count_of_columns": 7
+    },
+    {
+      "table_name": "azure_recovery_services_backup_job",
+      "description": "Azure Recovery Services Backup Job",
+      "count_of_columns": 10
+    },
+    {
+      "table_name": "azure_recovery_services_backup_policy",
+      "description": "Azure Recovery Services Backup Policy",
+      "count_of_columns": 6
+    },
+    {
+      "table_name": "azure_recovery_services_vault",
+      "description": "Azure Recovery Services Vault",
+      "count_of_columns": 16
+    },
+    {
+      "table_name": "azure_redis_cache",
+      "description": "Azure Redis Cache",
+      "count_of_columns": 29
+    },
+    {
+      "table_name": "azure_resource",
+      "description": "Azure Resource",
+      "count_of_columns": 22
+    },
+    {
+      "table_name": "azure_resource_group",
+      "description": "Azure Resource Group",
+      "count_of_columns": 8
+    },
+    {
+      "table_name": "azure_resource_link",
+      "description": "Azure Resource Link",
+      "count_of_columns": 8
+    },
+    {
+      "table_name": "azure_role_assignment",
+      "description": "Azure Role Assignment",
+      "count_of_columns": 10
+    },
+    {
+      "table_name": "azure_role_definition",
+      "description": "Azure Role Definition",
+      "count_of_columns": 9
+    },
+    {
+      "table_name": "azure_route_table",
+      "description": "Azure Route Table",
+      "count_of_columns": 12
+    },
+    {
+      "table_name": "azure_search_service",
+      "description": "Azure Search Service",
+      "count_of_columns": 20
+    },
+    {
+      "table_name": "azure_security_center_auto_provisioning",
+      "description": "Azure Security Center Auto Provisioning",
+      "count_of_columns": 5
+    },
+    {
+      "table_name": "azure_security_center_automation",
+      "description": "Azure Security Center Automation",
+      "count_of_columns": 14
+    },
+    {
+      "table_name": "azure_security_center_contact",
+      "description": "Azure Security Center Contact",
+      "count_of_columns": 8
+    },
+    {
+      "table_name": "azure_security_center_jit_network_access_policy",
+      "description": "Azure Security Center JIT Network Access Policy",
+      "count_of_columns": 7
+    },
+    {
+      "table_name": "azure_security_center_setting",
+      "description": "Azure Security Center Setting",
+      "count_of_columns": 6
+    },
+    {
+      "table_name": "azure_security_center_sub_assessment",
+      "description": "Azure Security Center Sub Assessment",
+      "count_of_columns": 18
+    },
+    {
+      "table_name": "azure_security_center_subscription_pricing",
+      "description": "Azure Security Center Subscription Pricing",
+      "count_of_columns": 6
+    },
+    {
+      "table_name": "azure_service_fabric_cluster",
+      "description": "Azure Service Fabric Cluster",
+      "count_of_columns": 31
+    },
+    {
+      "table_name": "azure_servicebus_namespace",
+      "description": "Azure ServiceBus Namespace",
+      "count_of_columns": 23
+    },
+    {
+      "table_name": "azure_signalr_service",
+      "description": "Azure SignalR Service",
+      "count_of_columns": 22
+    },
+    {
+      "table_name": "azure_spring_cloud_service",
+      "description": "Azure Spring Cloud Service",
+      "count_of_columns": 10
+    },
+    {
+      "table_name": "azure_sql_database",
+      "description": "Azure SQL Database",
+      "count_of_columns": 41
+    },
+    {
+      "table_name": "azure_sql_instance_pool",
+      "description": "Azure Sql InstancePool",
+      "count_of_columns": 4
+    },
+    {
+      "table_name": "azure_sql_managedinstancesdatabases",
+      "description": "Azure Sql ManagedInstancesDatabases",
+      "count_of_columns": 4
+    },
+    {
+      "table_name": "azure_sql_server",
+      "description": "Azure SQL Server",
+      "count_of_columns": 27
+    },
+    {
+      "table_name": "azure_sql_serversjobagents",
+      "description": "Azure Sql ServersJobAgents",
+      "count_of_columns": 4
+    },
+    {
+      "table_name": "azure_sql_virtualclusters",
+      "description": "Azure Sql VirtualClusters",
+      "count_of_columns": 4
+    },
+    {
+      "table_name": "azure_sql_virtualmachinegroups",
+      "description": "Azure Sql VirtualMachineGroups",
+      "count_of_columns": 4
+    },
+    {
+      "table_name": "azure_storage_account",
+      "description": "Azure Storage Account",
+      "count_of_columns": 70
+    },
+    {
+      "table_name": "azure_storage_blob",
+      "description": "Azure Storage Blob",
+      "count_of_columns": 46
+    },
+    {
+      "table_name": "azure_storage_blob_service",
+      "description": "Azure Storage Blob Service",
+      "count_of_columns": 17
+    },
+    {
+      "table_name": "azure_storage_container",
+      "description": "Azure Storage Container",
+      "count_of_columns": 22
+    },
+    {
+      "table_name": "azure_storage_queue",
+      "description": "Azure Storage Queue",
+      "count_of_columns": 8
+    },
+    {
+      "table_name": "azure_storage_share_file",
+      "description": "Azure Storage Share File",
+      "count_of_columns": 19
+    },
+    {
+      "table_name": "azure_storage_sync",
+      "description": "Azure Storage Sync",
+      "count_of_columns": 14
+    },
+    {
+      "table_name": "azure_storage_table",
+      "description": "Azure Storage Table",
+      "count_of_columns": 7
+    },
+    {
+      "table_name": "azure_storage_table_service",
+      "description": "Azure Storage Table Service",
+      "count_of_columns": 8
+    },
+    {
+      "table_name": "azure_stream_analytics_job",
+      "description": "Azure Stream Analytics Job",
+      "count_of_columns": 27
+    },
+    {
+      "table_name": "azure_streamanalytics_cluster",
+      "description": "Azure StreamAnalytics Cluster",
+      "count_of_columns": 4
+    },
+    {
+      "table_name": "azure_subnet",
+      "description": "Azure Subnet",
+      "count_of_columns": 18
+    },
+    {
+      "table_name": "azure_subscription",
+      "description": "Azure Subscription",
+      "count_of_columns": 10
+    },
+    {
+      "table_name": "azure_synapse_workspace",
+      "description": "Azure Synapse Workspace",
+      "count_of_columns": 27
+    },
+    {
+      "table_name": "azure_synapse_workspacesbigdatapools",
+      "description": "Azure Synapse WorkspacesBigDataPools",
+      "count_of_columns": 4
+    },
+    {
+      "table_name": "azure_synapse_workspacessqlpools",
+      "description": "Azure Synapse WorkspacesSqlPools",
+      "count_of_columns": 4
+    },
+    {
+      "table_name": "azure_tenant",
+      "description": "Azure Tenant",
+      "count_of_columns": 9
+    },
+    {
+      "table_name": "azure_timeseriesinsights_environments",
+      "description": "Azure TimeSeriesInsights Environments",
+      "count_of_columns": 4
+    },
+    {
+      "table_name": "azure_trafficmanager_profile",
+      "description": "Azure TrafficManager Profile",
+      "count_of_columns": 4
+    },
+    {
+      "table_name": "azure_user_effective_access",
+      "description": "Azure User Effective Access",
+      "count_of_columns": 9
+    },
+    {
+      "table_name": "azure_virtual_network",
+      "description": "Azure Virtual Network",
+      "count_of_columns": 15
+    },
+    {
+      "table_name": "azure_virtual_network_gateway",
+      "description": "Azure Virtual Network Gateway",
+      "count_of_columns": 27
+    },
+    {
+      "table_name": "azure_virtualmachineimages_imagetemplates",
+      "description": "Azure VirtualMachineImages ImageTemplates",
+      "count_of_columns": 4
+    },
+    {
+      "table_name": "azure_web_serverfarms",
+      "description": "Azure Web ServerFarms",
+      "count_of_columns": 4
+    }
+  ]
+}

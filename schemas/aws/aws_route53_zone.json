@@ -1,0 +1,86 @@
+{
+  "table_name": "aws_route53_zone",
+  "table_description": "AWS Route53 Zone",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The name of the domain. For public hosted zones, this is the name that is registered with your DNS registrar."
+    },
+    {
+      "name": "id",
+      "type": "text",
+      "description": "The ID that Amazon Route 53 assigned to the hosted zone when it was created."
+    },
+    {
+      "name": "caller_reference",
+      "type": "text",
+      "description": "The value that you specified for CallerReference when you created the hosted zone."
+    },
+    {
+      "name": "comment",
+      "type": "text",
+      "description": "A comment for the zone."
+    },
+    {
+      "name": "private_zone",
+      "type": "boolean",
+      "description": "If true, the zone is Private hosted Zone, otherwise it is public."
+    },
+    {
+      "name": "linked_service_principal",
+      "type": "text",
+      "description": "If the health check or hosted zone was created by another service, the service that created the resource."
+    },
+    {
+      "name": "linked_service_description",
+      "type": "text",
+      "description": "If the health check or hosted zone was created by another service, an optional description that can be provided by the other service."
+    },
+    {
+      "name": "resource_record_set_count",
+      "type": "integer",
+      "description": "The number of resource record sets in the hosted zone."
+    },
+    {
+      "name": "query_logging_configs",
+      "type": "json",
+      "description": "A list of configuration for DNS query logging that is associated with the current AWS account."
+    },
+    {
+      "name": "dnssec_key_signing_keys",
+      "type": "json",
+      "description": "The key-signing keys (KSKs) in AWS account."
+    },
+    {
+      "name": "dnssec_status",
+      "type": "json",
+      "description": "The status of DNSSEC."
+    },
+    {
+      "name": "tags_src",
+      "type": "json",
+      "description": ""
+    },
+    {
+      "name": "vpcs",
+      "type": "json",
+      "description": "The list of VPCs that are authorized to be associated with the specified hosted zone."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": ""
+    },
+    {
+      "name": "resource_record_set_limit",
+      "type": "json",
+      "description": "The maximum number of resource record sets allowed in the hosted zone."
+    }
+  ]
+}

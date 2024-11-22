@@ -1,0 +1,291 @@
+{
+  "table_name": "azure_compute_virtual_machine",
+  "table_description": "Azure Compute Virtual Machine",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The friendly name that identifies the virtual machine."
+    },
+    {
+      "name": "power_state",
+      "type": "text",
+      "description": "Specifies the power state of the vm."
+    },
+    {
+      "name": "id",
+      "type": "text",
+      "description": "The unique id identifying the resource in subscription."
+    },
+    {
+      "name": "type",
+      "type": "text",
+      "description": "The type of the resource in Azure."
+    },
+    {
+      "name": "provisioning_state",
+      "type": "text",
+      "description": "The virtual machine provisioning state."
+    },
+    {
+      "name": "vm_id",
+      "type": "text",
+      "description": "Specifies an unique ID for VM, which is a 128-bits identifier that is encoded and stored in all Azure IaaS VMs SMBIOS and can be read using platform BIOS commands."
+    },
+    {
+      "name": "size",
+      "type": "text",
+      "description": "Specifies the size of the virtual machine."
+    },
+    {
+      "name": "admin_user_name",
+      "type": "text",
+      "description": "Specifies the name of the administrator account."
+    },
+    {
+      "name": "allow_extension_operations",
+      "type": "boolean",
+      "description": "Specifies whether extension operations should be allowed on the virtual machine."
+    },
+    {
+      "name": "availability_set_id",
+      "type": "text",
+      "description": "Specifies the ID of the availability set."
+    },
+    {
+      "name": "billing_profile_max_price",
+      "type": "double precision",
+      "description": "Specifies the maximum price you are willing to pay for a Azure Spot VM/VMSS."
+    },
+    {
+      "name": "boot_diagnostics_enabled",
+      "type": "boolean",
+      "description": "Specifies whether boot diagnostics should be enabled on the Virtual Machine, or not."
+    },
+    {
+      "name": "boot_diagnostics_storage_uri",
+      "type": "text",
+      "description": "Contains the Uri of the storage account to use for placing the console output and screenshot."
+    },
+    {
+      "name": "computer_name",
+      "type": "text",
+      "description": "Specifies the host OS name of the virtual machine."
+    },
+    {
+      "name": "disable_password_authentication",
+      "type": "boolean",
+      "description": "Specifies whether password authentication should be disabled."
+    },
+    {
+      "name": "enable_automatic_updates",
+      "type": "boolean",
+      "description": "Indicates whether automatic updates is enabled for the windows virtual machine."
+    },
+    {
+      "name": "eviction_policy",
+      "type": "text",
+      "description": "Specifies the eviction policy for the Azure Spot virtual machine and Azure Spot scale set."
+    },
+    {
+      "name": "image_exact_version",
+      "type": "text",
+      "description": "Specifies in decimal numbers, the version of platform image or marketplace image used to create the virtual machine."
+    },
+    {
+      "name": "image_id",
+      "type": "text",
+      "description": "Specifies the ID of the image to use."
+    },
+    {
+      "name": "image_offer",
+      "type": "text",
+      "description": "Specifies the offer of the platform image or marketplace image used to create the virtual machine."
+    },
+    {
+      "name": "image_publisher",
+      "type": "text",
+      "description": "Specifies the publisher of the image to use."
+    },
+    {
+      "name": "image_sku",
+      "type": "text",
+      "description": "Specifies the sku of the image to use."
+    },
+    {
+      "name": "image_version",
+      "type": "text",
+      "description": "Specifies the version of the platform image or marketplace image used to create the virtual machine."
+    },
+    {
+      "name": "managed_disk_id",
+      "type": "text",
+      "description": "Specifies the ID of the managed disk used by the virtual machine."
+    },
+    {
+      "name": "os_disk_caching",
+      "type": "text",
+      "description": "Specifies the caching requirements of the operating system disk used by the virtual machine."
+    },
+    {
+      "name": "os_disk_create_option",
+      "type": "text",
+      "description": "Specifies how the virtual machine should be created."
+    },
+    {
+      "name": "os_disk_name",
+      "type": "text",
+      "description": "Specifies the name of the operating system disk used by the virtual machine."
+    },
+    {
+      "name": "os_disk_vhd_uri",
+      "type": "text",
+      "description": "Specifies the virtual hard disk's uri."
+    },
+    {
+      "name": "os_name",
+      "type": "text",
+      "description": "The Operating System running on the virtual machine."
+    },
+    {
+      "name": "os_version",
+      "type": "text",
+      "description": "The version of Operating System running on the virtual machine."
+    },
+    {
+      "name": "os_type",
+      "type": "text",
+      "description": "Specifies the type of the OS that is included in the disk if creating a VM from user-image or a specialized VHD."
+    },
+    {
+      "name": "priority",
+      "type": "text",
+      "description": "Specifies the priority for the virtual machine."
+    },
+    {
+      "name": "provision_vm_agent",
+      "type": "boolean",
+      "description": "Specifies whether virtual machine agent should be provisioned on the virtual machine for linux configuration."
+    },
+    {
+      "name": "provision_vm_agent_windows",
+      "type": "boolean",
+      "description": "Specifies whether virtual machine agent should be provisioned on the virtual machine for windows configuration."
+    },
+    {
+      "name": "require_guest_provision_signal",
+      "type": "boolean",
+      "description": "Specifies whether the guest provision signal is required to infer provision success of the virtual machine."
+    },
+    {
+      "name": "ultra_ssd_enabled",
+      "type": "boolean",
+      "description": "Specifies whether managed disks with storage account type UltraSSD_LRS can be added to a virtual machine or virtual machine scale set, or not."
+    },
+    {
+      "name": "time_zone",
+      "type": "text",
+      "description": "Specifies the time zone of the virtual machine."
+    },
+    {
+      "name": "additional_unattend_content",
+      "type": "json",
+      "description": "Specifies additional base-64 encoded XML formatted information that can be included in the Unattend.xml file, which is used by windows setup."
+    },
+    {
+      "name": "data_disks",
+      "type": "json",
+      "description": "A list of parameters that are used to add a data disk to a virtual machine."
+    },
+    {
+      "name": "linux_configuration_ssh_public_keys",
+      "type": "json",
+      "description": "A list of ssh key configuration for a Linux OS"
+    },
+    {
+      "name": "network_interfaces",
+      "type": "json",
+      "description": "A list of resource Ids for the network interfaces associated with the virtual machine."
+    },
+    {
+      "name": "patch_settings",
+      "type": "json",
+      "description": "Specifies settings related to in-guest patching (KBs)."
+    },
+    {
+      "name": "private_ips",
+      "type": "json",
+      "description": "An array of private ip addesses associated with the vm."
+    },
+    {
+      "name": "public_ips",
+      "type": "json",
+      "description": "An array of public ip addesses associated with the vm."
+    },
+    {
+      "name": "secrets",
+      "type": "json",
+      "description": "A list of certificates that should be installed onto the virtual machine."
+    },
+    {
+      "name": "statuses",
+      "type": "json",
+      "description": "Specifies the resource status information."
+    },
+    {
+      "name": "extensions",
+      "type": "json",
+      "description": "Specifies the details of VM Extensions."
+    },
+    {
+      "name": "extensions_settings",
+      "type": "json",
+      "description": "Specifies the details of VM Extensions settings map."
+    },
+    {
+      "name": "guest_configuration_assignments",
+      "type": "json",
+      "description": "Guest configuration assignments for a virtual machine."
+    },
+    {
+      "name": "identity",
+      "type": "json",
+      "description": "The identity of the virtual machine, if configured."
+    },
+    {
+      "name": "security_profile",
+      "type": "json",
+      "description": "Specifies the security related profile settings for the virtual machine."
+    },
+    {
+      "name": "win_rm",
+      "type": "json",
+      "description": "Specifies the windows remote management listeners. This enables remote windows powershell."
+    },
+    {
+      "name": "zones",
+      "type": "json",
+      "description": "A list of virtual machine zones."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": "ColumnDescriptionTitle"
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": "ColumnDescriptionTags"
+    },
+    {
+      "name": "region",
+      "type": "text",
+      "description": "ColumnDescriptionRegion"
+    },
+    {
+      "name": "resource_group",
+      "type": "text",
+      "description": "ColumnDescriptionResourceGroup"
+    }
+  ]
+}

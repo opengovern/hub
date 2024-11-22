@@ -1,0 +1,176 @@
+{
+  "table_name": "azure_compute_snapshot",
+  "table_description": "Azure Compute Snapshot",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The friendly name that identifies the snapshot"
+    },
+    {
+      "name": "id",
+      "type": "text",
+      "description": "The unique id identifying the resource in subscription"
+    },
+    {
+      "name": "type",
+      "type": "text",
+      "description": "The type of the resource in Azure"
+    },
+    {
+      "name": "provisioning_state",
+      "type": "text",
+      "description": "The disk provisioning state"
+    },
+    {
+      "name": "create_option",
+      "type": "text",
+      "description": "Specifies the possible sources of a disk's creation"
+    },
+    {
+      "name": "disk_access_id",
+      "type": "text",
+      "description": "ARM id of the DiskAccess resource for using private endpoints on disks"
+    },
+    {
+      "name": "disk_encryption_set_id",
+      "type": "text",
+      "description": "ResourceId of the disk encryption set to use for enabling encryption at rest"
+    },
+    {
+      "name": "disk_size_bytes",
+      "type": "integer",
+      "description": "The size of the disk in bytes"
+    },
+    {
+      "name": "disk_size_gb",
+      "type": "integer",
+      "description": "The size of the disk to create"
+    },
+    {
+      "name": "encryption_setting_collection_enabled",
+      "type": "boolean",
+      "description": "Specifies whether the encryption is enables, or not"
+    },
+    {
+      "name": "encryption_setting_version",
+      "type": "text",
+      "description": "Describes what type of encryption is used for the disks"
+    },
+    {
+      "name": "encryption_type",
+      "type": "text",
+      "description": "The type of the encryption"
+    },
+    {
+      "name": "gallery_image_reference_id",
+      "type": "text",
+      "description": "A relative uri containing either a Platform Image Repository or user image reference"
+    },
+    {
+      "name": "gallery_reference_lun",
+      "type": "integer",
+      "description": "Specifies the index that indicates which of the data disks in the image to use"
+    },
+    {
+      "name": "hyperv_generation",
+      "type": "text",
+      "description": "Specifies the hypervisor generation of the Virtual Machine"
+    },
+    {
+      "name": "image_reference_id",
+      "type": "text",
+      "description": "A relative uri containing either a Platform Image Repository or user image reference"
+    },
+    {
+      "name": "image_reference_lun",
+      "type": "integer",
+      "description": "Specifies the index that indicates which of the data disks in the image to use"
+    },
+    {
+      "name": "incremental",
+      "type": "boolean",
+      "description": "Specifies whether a snapshot is incremental, or not"
+    },
+    {
+      "name": "network_access_policy",
+      "type": "text",
+      "description": "Contains the type of access"
+    },
+    {
+      "name": "os_type",
+      "type": "text",
+      "description": "Contains the type of operating system"
+    },
+    {
+      "name": "sku_name",
+      "type": "text",
+      "description": "The snapshot sku name"
+    },
+    {
+      "name": "sku_tier",
+      "type": "text",
+      "description": "The sku tier"
+    },
+    {
+      "name": "source_resource_id",
+      "type": "text",
+      "description": "ARM id of the source snapshot or disk"
+    },
+    {
+      "name": "source_unique_id",
+      "type": "text",
+      "description": "An unique id identifying the source of this resource"
+    },
+    {
+      "name": "source_uri",
+      "type": "text",
+      "description": "An URI of a blob to be imported into a managed disk"
+    },
+    {
+      "name": "storage_account_id",
+      "type": "text",
+      "description": "The Azure Resource Manager identifier of the storage account containing the blob to import as a disk"
+    },
+    {
+      "name": "time_created",
+      "type": "timestamp with time zone",
+      "description": "The time when the snapshot was created"
+    },
+    {
+      "name": "unique_id",
+      "type": "text",
+      "description": "An unique Guid identifying the resource"
+    },
+    {
+      "name": "upload_size_bytes",
+      "type": "integer",
+      "description": "The size of the contents of the upload including the VHD footer"
+    },
+    {
+      "name": "encryption_settings",
+      "type": "json",
+      "description": "A list of encryption settings, one for each disk volume"
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": "ColumnDescriptionTitle"
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": "ColumnDescriptionTags"
+    },
+    {
+      "name": "region",
+      "type": "text",
+      "description": "ColumnDescriptionRegion"
+    },
+    {
+      "name": "resource_group",
+      "type": "text",
+      "description": "ColumnDescriptionResourceGroup"
+    }
+  ]
+}

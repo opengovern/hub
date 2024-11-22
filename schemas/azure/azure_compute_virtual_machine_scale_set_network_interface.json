@@ -1,0 +1,106 @@
+{
+  "table_name": "azure_compute_virtual_machine_scale_set_network_interface",
+  "table_description": "Azure Compute Virtual Machine Scale Set Network Interface",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "Name of the scale set network interface."
+    },
+    {
+      "name": "scale_set_name",
+      "type": "text",
+      "description": "Name of the scale set."
+    },
+    {
+      "name": "id",
+      "type": "text",
+      "description": "The unique ID identifying the resource in a subscription."
+    },
+    {
+      "name": "provisioning_state",
+      "type": "text",
+      "description": "The provisioning state of the network interface resource. Possible values include: 'Succeeded', 'Updating', 'Deleting', 'Failed'."
+    },
+    {
+      "name": "type",
+      "type": "text",
+      "description": "The type of the resource in Azure."
+    },
+    {
+      "name": "mac_address",
+      "type": "text",
+      "description": "The MAC address of the network interface."
+    },
+    {
+      "name": "enable_accelerated_networking",
+      "type": "boolean",
+      "description": "If the network interface has accelerated networking enabled."
+    },
+    {
+      "name": "enable_ip_forwarding",
+      "type": "boolean",
+      "description": "Indicates whether IP forwarding is enabled on this network interface."
+    },
+    {
+      "name": "primary",
+      "type": "boolean",
+      "description": "Whether this is a primary network interface on a virtual machine."
+    },
+    {
+      "name": "resource_guid",
+      "type": "text",
+      "description": "The resource GUID property of the network interface resource."
+    },
+    {
+      "name": "dns_settings",
+      "type": "json",
+      "description": "The DNS settings in network interface."
+    },
+    {
+      "name": "hosted_workloads",
+      "type": "json",
+      "description": "A list of references to linked BareMetal resources."
+    },
+    {
+      "name": "ip_configurations",
+      "type": "json",
+      "description": "A list of IP configurations of the network interface."
+    },
+    {
+      "name": "network_security_group",
+      "type": "json",
+      "description": "The reference to the NetworkSecurityGroup resource."
+    },
+    {
+      "name": "private_endpoint",
+      "type": "json",
+      "description": "A reference to the private endpoint to which the network interface is linked."
+    },
+    {
+      "name": "virtual_machine",
+      "type": "json",
+      "description": "The reference to a virtual machine."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": "ColumnDescriptionTitle"
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": "ColumnDescriptionTags"
+    },
+    {
+      "name": "region",
+      "type": "text",
+      "description": "ColumnDescriptionRegion"
+    },
+    {
+      "name": "resource_group",
+      "type": "text",
+      "description": "ColumnDescriptionResourceGroup"
+    }
+  ]
+}

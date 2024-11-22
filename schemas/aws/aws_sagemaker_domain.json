@@ -1,0 +1,111 @@
+{
+  "table_name": "aws_sagemaker_domain",
+  "table_description": "AWS Sagemaker Domain",
+  "columns": [
+    {
+      "name": "id",
+      "type": "text",
+      "description": "The domain ID."
+    },
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The domain name."
+    },
+    {
+      "name": "arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) of the domain."
+    },
+    {
+      "name": "creation_time",
+      "type": "timestamp with time zone",
+      "description": "A timestamp that indicates when the domain was created."
+    },
+    {
+      "name": "app_network_access_type",
+      "type": "text",
+      "description": "Specifies the VPC used for non-EFS traffic."
+    },
+    {
+      "name": "app_security_group_management",
+      "type": "text",
+      "description": "The entity that creates and manages the required security groups for inter-app communication in VPCOnly mode."
+    },
+    {
+      "name": "auth_mode",
+      "type": "text",
+      "description": "The domain's authentication mode."
+    },
+    {
+      "name": "failure_reason",
+      "type": "text",
+      "description": "The domain's failure reason."
+    },
+    {
+      "name": "home_efs_file_system_id",
+      "type": "text",
+      "description": "The ID of the Amazon Elastic File System (EFS) managed by this domain."
+    },
+    {
+      "name": "kms_key_id",
+      "type": "text",
+      "description": "The Amazon Web Services KMS customer managed key used to encrypt the EFS volume attached to the domain."
+    },
+    {
+      "name": "last_modified_time",
+      "type": "timestamp with time zone",
+      "description": "The domain's last modified time."
+    },
+    {
+      "name": "security_group_id_for_domain_boundary",
+      "type": "text",
+      "description": "The ID of the security group that authorizes traffic between the RSessionGateway apps and the RStudioServerPro app."
+    },
+    {
+      "name": "single_sign_on_managed_application_instance_id",
+      "type": "text",
+      "description": "The SSO managed application instance ID."
+    },
+    {
+      "name": "status",
+      "type": "text",
+      "description": "The domain's status."
+    },
+    {
+      "name": "tags_src",
+      "type": "json",
+      "description": "The list of tags for the domain."
+    },
+    {
+      "name": "url",
+      "type": "text",
+      "description": "The domain's URL."
+    },
+    {
+      "name": "default_user_settings",
+      "type": "json",
+      "description": "Settings which are applied to UserProfiles in this domain if settings are not explicitly specified in a given UserProfile."
+    },
+    {
+      "name": "domain_settings",
+      "type": "json",
+      "description": "A collection of domain settings."
+    },
+    {
+      "name": "subnet_ids",
+      "type": "json",
+      "description": "The VPC subnets that studio uses for communication."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": ""
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "table_name": "aws_eks_addon",
+  "table_description": "AWS EKS Addon",
+  "columns": [
+    {
+      "name": "addon_name",
+      "type": "text",
+      "description": "The name of the add-on."
+    },
+    {
+      "name": "arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) of the add-on."
+    },
+    {
+      "name": "cluster_name",
+      "type": "text",
+      "description": "The name of the cluster."
+    },
+    {
+      "name": "addon_version",
+      "type": "text",
+      "description": "The version of the add-on."
+    },
+    {
+      "name": "status",
+      "type": "text",
+      "description": "The status of the add-on."
+    },
+    {
+      "name": "created_at",
+      "type": "timestamp with time zone",
+      "description": "The date and time that the add-on was created."
+    },
+    {
+      "name": "modified_at",
+      "type": "timestamp with time zone",
+      "description": "The date and time that the add-on was last modified."
+    },
+    {
+      "name": "service_account_role_arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) of the IAM role that is bound to the Kubernetes service account used by the add-on."
+    },
+    {
+      "name": "health_issues",
+      "type": "json",
+      "description": "An object that represents the add-on's health issues."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": "The metadata that you apply to the cluster to assist with categorization and organization."
+    }
+  ]
+}

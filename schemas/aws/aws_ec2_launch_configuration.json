@@ -1,0 +1,121 @@
+{
+  "table_name": "aws_ec2_launch_configuration",
+  "table_description": "AWS EC2 Launch Configuration",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The name of the launch configuration."
+    },
+    {
+      "name": "launch_configuration_arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) of the launch configuration."
+    },
+    {
+      "name": "created_time",
+      "type": "timestamp with time zone",
+      "description": "The creation date and time for the launch configuration."
+    },
+    {
+      "name": "image_id",
+      "type": "text",
+      "description": "The ID of the Amazon Machine Image (AMI) to use to launch EC2 instances."
+    },
+    {
+      "name": "instance_type",
+      "type": "text",
+      "description": "The instance type for the instances."
+    },
+    {
+      "name": "associate_public_ip_address",
+      "type": "boolean",
+      "description": "For Auto Scaling groups that are running in a VPC, specifies whether to assign a public IP address to the group's instances."
+    },
+    {
+      "name": "kernel_id",
+      "type": "text",
+      "description": "The ID of the kernel associated with the AMI."
+    },
+    {
+      "name": "key_name",
+      "type": "text",
+      "description": "The name of the key pair to be associated with instances."
+    },
+    {
+      "name": "ramdisk_id",
+      "type": "text",
+      "description": "The ID of the RAM disk associated with the AMI."
+    },
+    {
+      "name": "ebs_optimized",
+      "type": "boolean",
+      "description": "Specifies whether the launch configuration is optimized for EBS I/O (true) or not (false)."
+    },
+    {
+      "name": "classic_link_vpc_id",
+      "type": "text",
+      "description": "The ID of a ClassicLink-enabled VPC to link EC2-Classic instances to."
+    },
+    {
+      "name": "spot_price",
+      "type": "text",
+      "description": "The maximum hourly price to be paid for any Spot Instance launched to fulfill the request. Spot Instances are launched when the price you specified exceeds the current Spot price."
+    },
+    {
+      "name": "user_data",
+      "type": "text",
+      "description": "The Base64-encoded user data to make available to the launched EC2 instances."
+    },
+    {
+      "name": "placement_tenancy",
+      "type": "text",
+      "description": "The tenancy of the instance, either default or dedicated. An instance with dedicated tenancy runs on isolated, single-tenant hardware and can only be launched into a VPC."
+    },
+    {
+      "name": "iam_instance_profile",
+      "type": "text",
+      "description": "The name or the Amazon Resource Name (ARN) of the instance profile associated with the IAM role for the instance."
+    },
+    {
+      "name": "instance_monitoring_enabled",
+      "type": "boolean",
+      "description": "Describes whether detailed monitoring is enabled for the Auto Scaling instances."
+    },
+    {
+      "name": "metadata_options_http_endpoint",
+      "type": "text",
+      "description": "This parameter enables or disables the HTTP metadata endpoint on instances. If the parameter is not specified, the default state is enabled."
+    },
+    {
+      "name": "metadata_options_put_response_hop_limit",
+      "type": "integer",
+      "description": "The desired HTTP PUT response hop limit for instance metadata requests. The larger the number, the further instance metadata requests can travel."
+    },
+    {
+      "name": "metadata_options_http_tokens",
+      "type": "text",
+      "description": "The state of token usage for your instance metadata requests. If the parameter is not specified in the request, the default state is optional."
+    },
+    {
+      "name": "block_device_mappings",
+      "type": "json",
+      "description": "A block device mapping, which specifies the block devices for the instance."
+    },
+    {
+      "name": "classic_link_vpc_security_groups",
+      "type": "json",
+      "description": "The IDs of one or more security groups for the VPC specified in ClassicLinkVPCId."
+    },
+    {
+      "name": "security_groups",
+      "type": "json",
+      "description": "A list that contains the security groups to assign to the instances in the Auto Scaling group."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    }
+  ]
+}

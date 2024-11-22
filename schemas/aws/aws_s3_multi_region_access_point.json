@@ -1,0 +1,41 @@
+{
+  "table_name": "aws_s3_multi_region_access_point",
+  "table_description": "AWS S3 Multi Region Access Point",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The name of the Multi-Region Access Point."
+    },
+    {
+      "name": "alias",
+      "type": "text",
+      "description": "The alias for the Multi-Region Access Point."
+    },
+    {
+      "name": "created_at",
+      "type": "timestamp with time zone",
+      "description": "When the Multi-Region Access Point create request was received."
+    },
+    {
+      "name": "status",
+      "type": "text",
+      "description": "The current status of the Multi-Region Access Point. CREATING and DELETING are temporary states that exist while the request is propagating and being completed."
+    },
+    {
+      "name": "public_access_block",
+      "type": "json",
+      "description": "The PublicAccessBlock configuration that you want to apply to this Amazon S3 account."
+    },
+    {
+      "name": "regions",
+      "type": "json",
+      "description": "A collection of the Regions and buckets associated with the Multi-Region Access Point."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    }
+  ]
+}

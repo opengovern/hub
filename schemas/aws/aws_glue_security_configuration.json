@@ -1,0 +1,36 @@
+{
+  "table_name": "aws_glue_security_configuration",
+  "table_description": "AWS Glue Security Configuration",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The name of the security configuration."
+    },
+    {
+      "name": "created_time_stamp",
+      "type": "timestamp with time zone",
+      "description": "The time at which this security configuration was created."
+    },
+    {
+      "name": "cloud_watch_encryption",
+      "type": "json",
+      "description": "The encryption configuration for Amazon CloudWatch."
+    },
+    {
+      "name": "job_bookmarks_encryption",
+      "type": "json",
+      "description": "The encryption configuration for job bookmarks."
+    },
+    {
+      "name": "s3_encryption",
+      "type": "json",
+      "description": "The encryption configuration for Amazon Simple Storage Service (Amazon S3) data."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    }
+  ]
+}

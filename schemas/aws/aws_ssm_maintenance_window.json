@@ -1,0 +1,106 @@
+{
+  "table_name": "aws_ssm_maintenance_window",
+  "table_description": "AWS SSM Maintenance Window",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The name of the Maintenance Window."
+    },
+    {
+      "name": "window_id",
+      "type": "text",
+      "description": "The ID of the Maintenance Window."
+    },
+    {
+      "name": "enabled",
+      "type": "boolean",
+      "description": "Indicates whether the Maintenance Window is enabled."
+    },
+    {
+      "name": "allow_unassociated_targets",
+      "type": "boolean",
+      "description": "Indicates whether targets must be registered with the Maintenance Window before tasks can be defined for those targets."
+    },
+    {
+      "name": "description",
+      "type": "text",
+      "description": "A description of the Maintenance Window."
+    },
+    {
+      "name": "tags_src",
+      "type": "json",
+      "description": "A list of tags assigned to the Maintenance Window"
+    },
+    {
+      "name": "duration",
+      "type": "integer",
+      "description": "The duration of the Maintenance Window in hours."
+    },
+    {
+      "name": "cutoff",
+      "type": "integer",
+      "description": "The number of hours before the end of the Maintenance Window that Systems Manager stops scheduling new tasks for execution."
+    },
+    {
+      "name": "schedule",
+      "type": "text",
+      "description": "The schedule of the Maintenance Window in the form of a cron or rate expression."
+    },
+    {
+      "name": "schedule_offset",
+      "type": "integer",
+      "description": "The number of days to wait to run a Maintenance Window after the scheduled CRON expression date and time."
+    },
+    {
+      "name": "targets",
+      "type": "json",
+      "description": "The targets of Maintenance Window."
+    },
+    {
+      "name": "tasks",
+      "type": "json",
+      "description": "The Tasks of Maintenance Window."
+    },
+    {
+      "name": "created_date",
+      "type": "timestamp with time zone",
+      "description": "The date the maintenance window was created."
+    },
+    {
+      "name": "end_date",
+      "type": "text",
+      "description": "The date and time, in ISO-8601 Extended format, for when the maintenance window is scheduled to become inactive. The maintenance window will not run after this specified time."
+    },
+    {
+      "name": "schedule_timezone",
+      "type": "text",
+      "description": "The schedule of the maintenance window in the form of a cron or rate expression."
+    },
+    {
+      "name": "start_date",
+      "type": "text",
+      "description": "The date and time, in ISO-8601 Extended format, for when the maintenance window is scheduled to become active."
+    },
+    {
+      "name": "modified_date",
+      "type": "timestamp with time zone",
+      "description": "The date the Maintenance Window was last modified."
+    },
+    {
+      "name": "next_execution_time",
+      "type": "timestamp with time zone",
+      "description": "The next time the maintenance window will actually run, taking into account any specified times for the Maintenance Window to become active or inactive."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": ""
+    }
+  ]
+}

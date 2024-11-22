@@ -1,0 +1,86 @@
+{
+  "table_name": "aws_redshiftserverless_workgroup",
+  "table_description": "AWS Redshift Serverless Workgroup",
+  "columns": [
+    {
+      "name": "workgroup_name",
+      "type": "text",
+      "description": "The name of the workgroup."
+    },
+    {
+      "name": "workgroup_id",
+      "type": "text",
+      "description": "The unique identifier of the workgroup."
+    },
+    {
+      "name": "workgroup_arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) that links to the workgroup."
+    },
+    {
+      "name": "status",
+      "type": "text",
+      "description": "The status of the workgroup."
+    },
+    {
+      "name": "base_capacity",
+      "type": "integer",
+      "description": "The base data warehouse capacity of the workgroup in Redshift Processing Units (RPUs)."
+    },
+    {
+      "name": "creation_date",
+      "type": "timestamp with time zone",
+      "description": "The creation date of the workgroup."
+    },
+    {
+      "name": "enhanced_vpc_routing",
+      "type": "boolean",
+      "description": "The value that specifies whether to enable enhanced virtual private cloud (VPC) routing, which forces Amazon Redshift Serverless to route traffic through your VPC."
+    },
+    {
+      "name": "namespace_name",
+      "type": "text",
+      "description": "The namespace the workgroup is associated with."
+    },
+    {
+      "name": "publicly_accessible",
+      "type": "boolean",
+      "description": "A value that specifies whether the workgroup can be accessible from a public network."
+    },
+    {
+      "name": "config_parameters",
+      "type": "json",
+      "description": "An array of parameters to set for finer control over a database."
+    },
+    {
+      "name": "endpoint",
+      "type": "json",
+      "description": "The endpoint that is created from the workgroup."
+    },
+    {
+      "name": "security_group_ids",
+      "type": "json",
+      "description": "An array of security group IDs to associate with the workgroup."
+    },
+    {
+      "name": "subnet_ids",
+      "type": "json",
+      "description": "An array of subnet IDs the workgroup is associated with."
+    },
+    {
+      "name": "tags_src",
+      "type": "json",
+      "description": "The list of tags for the workgroup."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": ""
+    }
+  ]
+}

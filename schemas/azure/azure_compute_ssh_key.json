@@ -1,0 +1,46 @@
+{
+  "table_name": "azure_compute_ssh_key",
+  "table_description": "Azure Compute SSH Key",
+  "columns": [
+    {
+      "name": "id",
+      "type": "text",
+      "description": "The unique ID identifying the resource in subscription."
+    },
+    {
+      "name": "name",
+      "type": "text",
+      "description": "Name of the SSH key."
+    },
+    {
+      "name": "type",
+      "type": "text",
+      "description": "The type of the resource in Azure."
+    },
+    {
+      "name": "public_key",
+      "type": "text",
+      "description": "SSH public key."
+    },
+    {
+      "name": "region",
+      "type": "text",
+      "description": "ColumnDescriptionRegion"
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": "ColumnDescriptionTags"
+    },
+    {
+      "name": "resource_group",
+      "type": "text",
+      "description": "ColumnDescriptionResourceGroup"
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": "ColumnDescriptionTitle"
+    }
+  ]
+}

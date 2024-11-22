@@ -1,0 +1,36 @@
+{
+  "table_name": "azuread_security_defaults_policy",
+  "table_description": "Represents the Azure Active Directory security defaults policy",
+  "columns": [
+    {
+      "name": "display_name",
+      "type": "text",
+      "description": "Display name for this policy."
+    },
+    {
+      "name": "id",
+      "type": "text",
+      "description": "Identifier for this policy."
+    },
+    {
+      "name": "is_enabled",
+      "type": "boolean",
+      "description": "If set to true, Azure Active Directory security defaults is enabled for the tenant."
+    },
+    {
+      "name": "description",
+      "type": "text",
+      "description": "Description for this policy."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": "ColumnDescriptionTitle"
+    },
+    {
+      "name": "tenant_id",
+      "type": "text",
+      "description": "ColumnDescriptionTenant"
+    }
+  ]
+}

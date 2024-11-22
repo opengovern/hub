@@ -1,0 +1,116 @@
+{
+  "table_name": "azure_lb",
+  "table_description": "Azure Load Balancer",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The resource name."
+    },
+    {
+      "name": "id",
+      "type": "text",
+      "description": "The resource ID."
+    },
+    {
+      "name": "provisioning_state",
+      "type": "text",
+      "description": "The provisioning state of the load balancer resource. Possible values include: 'Succeeded', 'Updating', 'Deleting', 'Failed'."
+    },
+    {
+      "name": "type",
+      "type": "text",
+      "description": "The resource type."
+    },
+    {
+      "name": "etag",
+      "type": "text",
+      "description": "A unique read-only string that changes whenever the resource is updated."
+    },
+    {
+      "name": "extended_location_name",
+      "type": "text",
+      "description": "The name of the extended location."
+    },
+    {
+      "name": "extended_location_type",
+      "type": "text",
+      "description": "The type of the extended location. Possible values include: 'ExtendedLocationTypesEdgeZone'."
+    },
+    {
+      "name": "resource_guid",
+      "type": "text",
+      "description": "The resource GUID property of the load balancer resource."
+    },
+    {
+      "name": "sku_name",
+      "type": "text",
+      "description": "Name of the load balancer SKU. Possible values include: 'Basic', 'Standard', 'Gateway'."
+    },
+    {
+      "name": "sku_tier",
+      "type": "text",
+      "description": "Tier of the load balancer SKU. Possible values include: 'Regional', 'Global'."
+    },
+    {
+      "name": "backend_address_pools",
+      "type": "json",
+      "description": "Collection of backend address pools used by the load balancer."
+    },
+    {
+      "name": "diagnostic_settings",
+      "type": "json",
+      "description": "A list of active diagnostic settings for the load balancer."
+    },
+    {
+      "name": "frontend_ip_configurations",
+      "type": "json",
+      "description": "Object representing the frontend IPs to be used for the load balancer."
+    },
+    {
+      "name": "inbound_nat_pools",
+      "type": "json",
+      "description": "Defines an external port range for inbound NAT to a single backend port on NICs associated with the load balancer. Inbound NAT rules are created automatically for each NIC associated with the Load Balancer using an external port from this range. Defining an Inbound NAT pool on the Load Balancer is mutually exclusive with defining inbound Nat rules. Inbound NAT pools are referenced from virtual machine scale sets. NICs that are associated with individual virtual machines cannot reference an inbound NAT pool. They have to reference individual inbound NAT rules."
+    },
+    {
+      "name": "inbound_nat_rules",
+      "type": "json",
+      "description": "Collection of inbound NAT Rules used by the load balancer. Defining inbound NAT rules on the load balancer is mutually exclusive with defining an inbound NAT pool. Inbound NAT pools are referenced from virtual machine scale sets. NICs that are associated with individual virtual machines cannot reference an Inbound NAT pool. They have to reference individual inbound NAT rules."
+    },
+    {
+      "name": "load_balancing_rules",
+      "type": "json",
+      "description": "Object collection representing the load balancing rules Gets the provisioning."
+    },
+    {
+      "name": "outbound_rules",
+      "type": "json",
+      "description": "The outbound rules."
+    },
+    {
+      "name": "probes",
+      "type": "json",
+      "description": "Collection of probe objects used in the load balancer."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": "ColumnDescriptionTitle"
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": "ColumnDescriptionTags"
+    },
+    {
+      "name": "region",
+      "type": "text",
+      "description": "ColumnDescriptionRegion"
+    },
+    {
+      "name": "resource_group",
+      "type": "text",
+      "description": "ColumnDescriptionResourceGroup"
+    }
+  ]
+}

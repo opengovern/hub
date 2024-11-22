@@ -1,0 +1,26 @@
+{
+  "table_name": "aws_appstream_stack",
+  "table_description": "AWS AppStream Stack",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The name of the stack."
+    },
+    {
+      "name": "arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) of the stack"
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": ""
+    }
+  ]
+}

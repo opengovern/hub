@@ -1,0 +1,46 @@
+{
+  "table_name": "aws_redshift_subnet_group",
+  "table_description": "AWS Redshift Subnet Group",
+  "columns": [
+    {
+      "name": "cluster_subnet_group_name",
+      "type": "text",
+      "description": "The name of the cluster subnet group."
+    },
+    {
+      "name": "subnet_group_status",
+      "type": "text",
+      "description": "The status of the cluster subnet group."
+    },
+    {
+      "name": "description",
+      "type": "text",
+      "description": "The description of the cluster subnet group."
+    },
+    {
+      "name": "vpc_id",
+      "type": "text",
+      "description": "The VPC ID of the cluster subnet group."
+    },
+    {
+      "name": "subnets",
+      "type": "json",
+      "description": "A list of the VPC Subnet elements."
+    },
+    {
+      "name": "tags_src",
+      "type": "json",
+      "description": "A list of tags attached to the subnet group."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": ""
+    }
+  ]
+}

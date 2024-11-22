@@ -1,0 +1,206 @@
+{
+  "table_name": "aws_ec2_autoscaling_group",
+  "table_description": "AWS EC2 Autoscaling Group",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The name of the Auto Scaling group."
+    },
+    {
+      "name": "autoscaling_group_arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) of the Auto Scaling group."
+    },
+    {
+      "name": "status",
+      "type": "text",
+      "description": "The current state of the group when the DeleteAutoScalingGroup operation is in progress."
+    },
+    {
+      "name": "created_time",
+      "type": "timestamp with time zone",
+      "description": "The date and time group was created."
+    },
+    {
+      "name": "new_instances_protected_from_scale_in",
+      "type": "boolean",
+      "description": "Indicates whether newly launched instances are protected from termination by Amazon EC2 Auto Scaling when scaling in."
+    },
+    {
+      "name": "launch_configuration_name",
+      "type": "text",
+      "description": "The name of the associated launch configuration."
+    },
+    {
+      "name": "default_cooldown",
+      "type": "integer",
+      "description": "The duration of the default cooldown period, in seconds."
+    },
+    {
+      "name": "desired_capacity",
+      "type": "integer",
+      "description": "The desired size of the group."
+    },
+    {
+      "name": "max_instance_lifetime",
+      "type": "integer",
+      "description": "The maximum amount of time, in seconds, that an instance can be in service."
+    },
+    {
+      "name": "max_size",
+      "type": "integer",
+      "description": "The maximum size of the group."
+    },
+    {
+      "name": "min_size",
+      "type": "integer",
+      "description": "The minimum size of the group."
+    },
+    {
+      "name": "health_check_grace_period",
+      "type": "integer",
+      "description": "The amount of time, in seconds, that Amazon EC2 Auto Scaling waits before checking the health status of an EC2 instance that has come into service."
+    },
+    {
+      "name": "health_check_type",
+      "type": "text",
+      "description": "The service to use for the health checks. The valid values are EC2 and ELB. If you configure an Auto Scaling group to use ELB health checks, it considers the instance unhealthy if it fails either the EC2 status checks or the load balancer health checks."
+    },
+    {
+      "name": "placement_group",
+      "type": "text",
+      "description": "The name of the placement group into which to launch your instances, if any."
+    },
+    {
+      "name": "service_linked_role_arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) of the service-linked role that the Auto Scaling group uses to call other AWS services on your behalf."
+    },
+    {
+      "name": "vpc_zone_identifier",
+      "type": "text",
+      "description": "One or more subnet IDs, if applicable, separated by commas."
+    },
+    {
+      "name": "launch_template_name",
+      "type": "text",
+      "description": "The launch template name for the group."
+    },
+    {
+      "name": "launch_template_id",
+      "type": "text",
+      "description": "The ID of the launch template."
+    },
+    {
+      "name": "launch_template_version",
+      "type": "text",
+      "description": "The version number, $Latest, or $Default."
+    },
+    {
+      "name": "on_demand_allocation_strategy",
+      "type": "text",
+      "description": "Indicates how to allocate instance types to fulfill On-Demand capacity. The only valid value is prioritized, which is also the default value. This strategy uses the order of instance types in the overrides to define the launch priority of each instance type."
+    },
+    {
+      "name": "on_demand_base_capacity",
+      "type": "integer",
+      "description": "The minimum amount of the Auto Scaling group's capacity that must be fulfilled by On-Demand Instances. This base portion is provisioned first as group scales. Defaults to 0 if not specified."
+    },
+    {
+      "name": "on_demand_percentage_above_base_capacity",
+      "type": "integer",
+      "description": "Controls the percentages of On-Demand Instances and Spot Instances for your additional capacity beyond OnDemandBaseCapacity. Expressed as a number (for example, 20 specifies 20% On-Demand Instances, 80% Spot Instances). Defaults to 100 if not specified. If set to 100, only On-Demand Instances are provisioned."
+    },
+    {
+      "name": "spot_allocation_strategy",
+      "type": "text",
+      "description": "Indicates how to allocate instances across Spot Instance pools. If the allocation strategy is lowest-price, the Auto Scaling group launches instances using the Spot pools with the lowest price, and evenly allocates your instances across the number of Spot pools that you specify. If the allocation strategy is capacity-optimized, the Auto Scaling group launches instances using Spot pools that are optimally chosen based on the available Spot capacity. Defaults to lowest-price if not specified."
+    },
+    {
+      "name": "spot_instance_pools",
+      "type": "integer",
+      "description": "The number of Spot Instance pools across which to allocate your Spot Instances."
+    },
+    {
+      "name": "spot_max_price",
+      "type": "text",
+      "description": "The maximum price per unit hour that user is willing to pay for a Spot Instance. If the value of this parameter is blank (which is the default), the maximum Spot price is set at the On-Demand price."
+    },
+    {
+      "name": "mixed_instances_policy_launch_template_name",
+      "type": "text",
+      "description": "The ID of the launch template for mixed instances policy."
+    },
+    {
+      "name": "mixed_instances_policy_launch_template_id",
+      "type": "text",
+      "description": "The name of the launch template for mixed instances policy."
+    },
+    {
+      "name": "mixed_instances_policy_launch_template_version",
+      "type": "text",
+      "description": "The version of the launch template for mixed instances policy."
+    },
+    {
+      "name": "mixed_instances_policy_launch_template_overrides",
+      "type": "json",
+      "description": "Any parameters that is specified in the list override the same parameters in the launch template."
+    },
+    {
+      "name": "availability_zones",
+      "type": "json",
+      "description": "One or more Availability Zones for the group."
+    },
+    {
+      "name": "load_balancer_names",
+      "type": "json",
+      "description": "One or more load balancers associated with the group."
+    },
+    {
+      "name": "target_group_arns",
+      "type": "json",
+      "description": "The Amazon Resource Names (ARN) of the target groups for your load balancer."
+    },
+    {
+      "name": "instances",
+      "type": "json",
+      "description": "The EC2 instances associated with the group."
+    },
+    {
+      "name": "enabled_metrics",
+      "type": "json",
+      "description": "The metrics enabled for the group."
+    },
+    {
+      "name": "policies",
+      "type": "json",
+      "description": "A set of scaling policies for the specified Auto Scaling group."
+    },
+    {
+      "name": "termination_policies",
+      "type": "json",
+      "description": "The termination policies for the group."
+    },
+    {
+      "name": "suspended_processes",
+      "type": "json",
+      "description": "The suspended processes associated with the group."
+    },
+    {
+      "name": "tags_src",
+      "type": "json",
+      "description": "A list of tags assigned to the Auto Scaling Group."
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": ""
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "table_name": "github_actions_repository_runner",
+  "table_description": "The runner is the application that runs a job from a GitHub Actions workflow",
+  "columns": [
+    {
+      "name": "repository_full_name",
+      "type": "text",
+      "description": "Full name of the repository that contains the runners."
+    },
+    {
+      "name": "id",
+      "type": "integer",
+      "description": "The unique identifier of the runner."
+    },
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The name of the runner."
+    },
+    {
+      "name": "os",
+      "type": "text",
+      "description": "The operating system of the runner."
+    },
+    {
+      "name": "status",
+      "type": "text",
+      "description": "The status of the runner."
+    },
+    {
+      "name": "busy",
+      "type": "boolean",
+      "description": "Indicates whether the runner is currently in use or not."
+    },
+    {
+      "name": "labels",
+      "type": "json",
+      "description": "Labels represents a collection of labels attached to each runner."
+    }
+  ]
+}

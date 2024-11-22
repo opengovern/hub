@@ -1,0 +1,66 @@
+{
+  "table_name": "azure_route_table",
+  "table_description": "Azure Route Table",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The friendly name that identifies the route table"
+    },
+    {
+      "name": "id",
+      "type": "text",
+      "description": "Contains ID to identify a route table uniquely"
+    },
+    {
+      "name": "etag",
+      "type": "text",
+      "description": "An unique read-only string that changes whenever the resource is updated"
+    },
+    {
+      "name": "type",
+      "type": "text",
+      "description": "Type of the resource"
+    },
+    {
+      "name": "disable_bgp_route_propagation",
+      "type": "boolean",
+      "description": "Indicates Whether to disable the routes learned by BGP on that route table. True means disable."
+    },
+    {
+      "name": "provisioning_state",
+      "type": "text",
+      "description": "The provisioning state of the route table resource"
+    },
+    {
+      "name": "routes",
+      "type": "json",
+      "description": "A list of routes contained within a route table"
+    },
+    {
+      "name": "subnets",
+      "type": "json",
+      "description": "A list of references to subnets"
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": "ColumnDescriptionTitle"
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": "ColumnDescriptionTags"
+    },
+    {
+      "name": "region",
+      "type": "text",
+      "description": "ColumnDescriptionRegion"
+    },
+    {
+      "name": "resource_group",
+      "type": "text",
+      "description": "ColumnDescriptionResourceGroup"
+    }
+  ]
+}

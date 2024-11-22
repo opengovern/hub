@@ -1,0 +1,66 @@
+{
+  "table_name": "aws_guardduty_detector",
+  "table_description": "AWS GuardDuty Detector",
+  "columns": [
+    {
+      "name": "detector_id",
+      "type": "text",
+      "description": "The ID of the detector."
+    },
+    {
+      "name": "arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) specifying the detector."
+    },
+    {
+      "name": "status",
+      "type": "text",
+      "description": "The detector status."
+    },
+    {
+      "name": "created_at",
+      "type": "timestamp with time zone",
+      "description": "The timestamp of when the detector was created."
+    },
+    {
+      "name": "finding_publishing_frequency",
+      "type": "text",
+      "description": "The publishing frequency of the finding."
+    },
+    {
+      "name": "service_role",
+      "type": "text",
+      "description": "The GuardDuty service role."
+    },
+    {
+      "name": "updated_at",
+      "type": "timestamp with time zone",
+      "description": "The last-updated timestamp for the detector."
+    },
+    {
+      "name": "data_sources",
+      "type": "json",
+      "description": "Describes which data sources are enabled for the detector."
+    },
+    {
+      "name": "features",
+      "type": "json",
+      "description": "Describes the features that have been enabled for the detector."
+    },
+    {
+      "name": "master_account",
+      "type": "json",
+      "description": "Contains information about the administrator account and invitation."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": ""
+    }
+  ]
+}

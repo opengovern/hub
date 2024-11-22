@@ -1,0 +1,26 @@
+{
+  "table_name": "aws_redshiftserverless_snapshot",
+  "table_description": "AWS RedshiftServerless Snapshot",
+  "columns": [
+    {
+      "name": "snapshot_name",
+      "type": "text",
+      "description": "The name of the snapshot."
+    },
+    {
+      "name": "snapshot_arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) of the snapshot"
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": ""
+    }
+  ]
+}

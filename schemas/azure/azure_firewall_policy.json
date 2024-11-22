@@ -1,0 +1,116 @@
+{
+  "table_name": "azure_firewall_policy",
+  "table_description": "Azure Firewall Policy",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The friendly name that identifies the firewall policy."
+    },
+    {
+      "name": "id",
+      "type": "text",
+      "description": "Contains ID to identify a firewall policy uniquely."
+    },
+    {
+      "name": "etag",
+      "type": "text",
+      "description": "A unique read-only string that changes whenever the resource is updated."
+    },
+    {
+      "name": "type",
+      "type": "text",
+      "description": "The resource type of the firewall policy."
+    },
+    {
+      "name": "provisioning_state",
+      "type": "text",
+      "description": "The provisioning state of the firewall policy resource. Possible values include: 'Succeeded', 'Updating', 'Deleting', 'Failed'."
+    },
+    {
+      "name": "intrusion_detection_mode",
+      "type": "text",
+      "description": "Intrusion detection general state. Possible values include: 'FirewallPolicyIntrusionDetectionStateTypeOff', 'FirewallPolicyIntrusionDetectionStateTypeAlert', 'FirewallPolicyIntrusionDetectionStateTypeDeny'."
+    },
+    {
+      "name": "sku_tier",
+      "type": "text",
+      "description": "Tier of Firewall Policy. Possible values include: 'FirewallPolicySkuTierStandard', 'FirewallPolicySkuTierPremium'."
+    },
+    {
+      "name": "threat_intel_mode",
+      "type": "text",
+      "description": "The operation mode for Threat Intelligence. Possible values include: 'AzureFirewallThreatIntelModeAlert', 'AzureFirewallThreatIntelModeDeny', 'AzureFirewallThreatIntelModeOff'."
+    },
+    {
+      "name": "base_policy",
+      "type": "json",
+      "description": "The parent firewall policy from which rules are inherited."
+    },
+    {
+      "name": "child_policies",
+      "type": "json",
+      "description": "List of references to Child Firewall Policies."
+    },
+    {
+      "name": "dns_settings",
+      "type": "json",
+      "description": "DNS Proxy Settings definition."
+    },
+    {
+      "name": "firewalls",
+      "type": "json",
+      "description": "List of references to Azure Firewalls that this Firewall Policy is associated with."
+    },
+    {
+      "name": "identity",
+      "type": "json",
+      "description": "The identity of the firewall policy."
+    },
+    {
+      "name": "intrusion_detection_configuration",
+      "type": "json",
+      "description": "Intrusion detection configuration properties."
+    },
+    {
+      "name": "rule_collection_groups",
+      "type": "json",
+      "description": "List of references to FirewallPolicyRuleCollectionGroups."
+    },
+    {
+      "name": "threat_intel_whitelist_ip_addresses",
+      "type": "json",
+      "description": "List of IP addresses for the ThreatIntel Whitelist."
+    },
+    {
+      "name": "threat_intel_whitelist_fqdns",
+      "type": "json",
+      "description": "List of FQDNs for the ThreatIntel Whitelist."
+    },
+    {
+      "name": "transport_security_certificate_authority",
+      "type": "json",
+      "description": "The CA used for intermediate CA generation."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": "ColumnDescriptionTitle"
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": "ColumnDescriptionTags"
+    },
+    {
+      "name": "region",
+      "type": "text",
+      "description": "ColumnDescriptionRegion"
+    },
+    {
+      "name": "resource_group",
+      "type": "text",
+      "description": "ColumnDescriptionResourceGroup"
+    }
+  ]
+}

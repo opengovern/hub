@@ -1,0 +1,51 @@
+{
+  "table_name": "azure_lighthouse_assignment",
+  "table_description": "Azure Lighthouse Assignment",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "Name of the registration assignment."
+    },
+    {
+      "name": "id",
+      "type": "text",
+      "description": "Fully qualified path of the registration assignment."
+    },
+    {
+      "name": "registration_assignment_id",
+      "type": "text",
+      "description": "The ID of the registration assignment."
+    },
+    {
+      "name": "type",
+      "type": "text",
+      "description": "Type of the resource."
+    },
+    {
+      "name": "scope",
+      "type": "text",
+      "description": "The scope of the resource."
+    },
+    {
+      "name": "registration_definition_id",
+      "type": "text",
+      "description": "ID of the associated registration definition."
+    },
+    {
+      "name": "provisioning_state",
+      "type": "text",
+      "description": "Provisioning state of the registration assignment."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": "ColumnDescriptionTitle"
+    },
+    {
+      "name": "resource_group",
+      "type": "text",
+      "description": "ColumnDescriptionResourceGroup"
+    }
+  ]
+}

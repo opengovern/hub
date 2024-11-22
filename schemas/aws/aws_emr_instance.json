@@ -1,0 +1,86 @@
+{
+  "table_name": "aws_emr_instance",
+  "table_description": "AWS EMR Instance",
+  "columns": [
+    {
+      "name": "id",
+      "type": "text",
+      "description": "The unique identifier for the instance in Amazon EMR."
+    },
+    {
+      "name": "cluster_id",
+      "type": "text",
+      "description": "The unique identifier for the cluster."
+    },
+    {
+      "name": "ec2_instance_id",
+      "type": "text",
+      "description": "The unique identifier of the instance in Amazon EC2."
+    },
+    {
+      "name": "state",
+      "type": "text",
+      "description": "The current state of the instance."
+    },
+    {
+      "name": "instance_fleet_id",
+      "type": "text",
+      "description": "The unique identifier of the instance fleet to which an EC2 instance belongs."
+    },
+    {
+      "name": "instance_group_id",
+      "type": "text",
+      "description": "The identifier of the instance group to which this instance belongs."
+    },
+    {
+      "name": "instance_type",
+      "type": "text",
+      "description": "The EC2 instance type, for example m3.xlarge."
+    },
+    {
+      "name": "market",
+      "type": "text",
+      "description": "The instance purchasing option. Valid values are ON_DEMAND or SPOT."
+    },
+    {
+      "name": "private_dns_name",
+      "type": "text",
+      "description": "The private DNS name of the instance."
+    },
+    {
+      "name": "private_ip_address",
+      "type": "inet",
+      "description": "The private IP address of the instance."
+    },
+    {
+      "name": "public_dns_name",
+      "type": "text",
+      "description": "The public DNS name of the instance."
+    },
+    {
+      "name": "public_ip_address",
+      "type": "inet",
+      "description": "The public IP address of the instance."
+    },
+    {
+      "name": "ebs_volumes",
+      "type": "json",
+      "description": "The list of Amazon EBS volumes that are attached to this instance."
+    },
+    {
+      "name": "state_change_reason",
+      "type": "json",
+      "description": "The status change reason details for the instance."
+    },
+    {
+      "name": "status_timeline",
+      "type": "json",
+      "description": "The timeline of the instance status over time."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    }
+  ]
+}

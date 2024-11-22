@@ -1,0 +1,61 @@
+{
+  "table_name": "aws_media_store_container",
+  "table_description": "AWS Media Store Container",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The name of the container."
+    },
+    {
+      "name": "arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) of the container."
+    },
+    {
+      "name": "status",
+      "type": "text",
+      "description": "The status of container creation or deletion. The status is one of the following: 'CREATING', 'ACTIVE', or 'DELETING'."
+    },
+    {
+      "name": "access_logging_enabled",
+      "type": "boolean",
+      "description": "The state of access logging on the container. This value is false by default, indicating that AWS Elemental MediaStore does not send access logs to Amazon CloudWatch Logs. When you enable access logging on the container, MediaStore changes this value to true, indicating that the service delivers access logs for objects stored in that container to CloudWatch Logs."
+    },
+    {
+      "name": "creation_time",
+      "type": "timestamp with time zone",
+      "description": "The Unix timestamp that the container was created."
+    },
+    {
+      "name": "endpoint",
+      "type": "text",
+      "description": "The DNS endpoint of the container."
+    },
+    {
+      "name": "policy",
+      "type": "json",
+      "description": "The contents of the access policy."
+    },
+    {
+      "name": "policy_std",
+      "type": "json",
+      "description": "Contains the contents of the access policy in a canonical form for easier searching."
+    },
+    {
+      "name": "tags_src",
+      "type": "json",
+      "description": "A list of tags associated with the container"
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": ""
+    }
+  ]
+}

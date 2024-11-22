@@ -1,0 +1,21 @@
+{
+  "table_name": "aws_sts_caller_identity",
+  "table_description": "AWS STS Caller Identity",
+  "columns": [
+    {
+      "name": "arn",
+      "type": "text",
+      "description": "The Amazon Web Services ARN associated with the calling entity."
+    },
+    {
+      "name": "user_id",
+      "type": "text",
+      "description": "The unique identifier of the calling entity. The exact value depends on the type of entity that is making the call."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    }
+  ]
+}

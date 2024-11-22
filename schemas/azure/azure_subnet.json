@@ -1,0 +1,96 @@
+{
+  "table_name": "azure_subnet",
+  "table_description": "Azure Subnet",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The friendly name that identifies the subnet."
+    },
+    {
+      "name": "id",
+      "type": "text",
+      "description": "Contains ID to identify a subnet uniquely."
+    },
+    {
+      "name": "virtual_network_name",
+      "type": "text",
+      "description": "The friendly name of the virtual network in which the subnet is created."
+    },
+    {
+      "name": "etag",
+      "type": "text",
+      "description": "An unique read-only string that changes whenever the resource is updated."
+    },
+    {
+      "name": "type",
+      "type": "text",
+      "description": "Type of the resource."
+    },
+    {
+      "name": "provisioning_state",
+      "type": "text",
+      "description": "The provisioning state of the subnet resource."
+    },
+    {
+      "name": "address_prefix",
+      "type": "text",
+      "description": "Contains the address prefix for the subnet."
+    },
+    {
+      "name": "nat_gateway_id",
+      "type": "text",
+      "description": "The ID of the Nat gateway associated with the subnet."
+    },
+    {
+      "name": "network_security_group_id",
+      "type": "text",
+      "description": "Network security group associated with the subnet."
+    },
+    {
+      "name": "private_endpoint_network_policies",
+      "type": "text",
+      "description": "Enable or Disable apply network policies on private end point in the subnet."
+    },
+    {
+      "name": "private_link_service_network_policies",
+      "type": "text",
+      "description": "Enable or Disable apply network policies on private link service in the subnet."
+    },
+    {
+      "name": "route_table_id",
+      "type": "text",
+      "description": "Route table associated with the subnet."
+    },
+    {
+      "name": "delegations",
+      "type": "json",
+      "description": "A list of references to the delegations on the subnet."
+    },
+    {
+      "name": "ip_configurations",
+      "type": "json",
+      "description": "IP Configuration details in a subnet."
+    },
+    {
+      "name": "service_endpoints",
+      "type": "json",
+      "description": "A list of service endpoints."
+    },
+    {
+      "name": "service_endpoint_policies",
+      "type": "json",
+      "description": "A list of service endpoint policies."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": "ColumnDescriptionTitle"
+    },
+    {
+      "name": "resource_group",
+      "type": "text",
+      "description": "ColumnDescriptionResourceGroup"
+    }
+  ]
+}

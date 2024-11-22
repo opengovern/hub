@@ -1,0 +1,136 @@
+{
+  "table_name": "azure_app_service_web_app",
+  "table_description": "Azure App Service Web App",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The friendly name that identifies the app service web app."
+    },
+    {
+      "name": "id",
+      "type": "text",
+      "description": "Contains ID to identify an app service web app uniquely."
+    },
+    {
+      "name": "kind",
+      "type": "text",
+      "description": "Contains the kind of the resource."
+    },
+    {
+      "name": "state",
+      "type": "text",
+      "description": "Current state of the app."
+    },
+    {
+      "name": "type",
+      "type": "text",
+      "description": "The resource type of the app service web app."
+    },
+    {
+      "name": "client_affinity_enabled",
+      "type": "boolean",
+      "description": "Specify whether client affinity is enabled."
+    },
+    {
+      "name": "client_cert_enabled",
+      "type": "boolean",
+      "description": "Specify whether client certificate authentication is enabled."
+    },
+    {
+      "name": "default_site_hostname",
+      "type": "text",
+      "description": "Default hostname of the app."
+    },
+    {
+      "name": "enabled",
+      "type": "boolean",
+      "description": "Specify whether the app is enabled."
+    },
+    {
+      "name": "host_name_disabled",
+      "type": "boolean",
+      "description": "Specify whether the public hostnames of the app is disabled."
+    },
+    {
+      "name": "https_only",
+      "type": "boolean",
+      "description": "Specify whether configuring a web site to accept only https requests."
+    },
+    {
+      "name": "identity",
+      "type": "json",
+      "description": "Managed service identity for the resource."
+    },
+    {
+      "name": "outbound_ip_addresses",
+      "type": "text",
+      "description": "List of IP addresses that the app uses for outbound connections (e.g. database access)."
+    },
+    {
+      "name": "possible_outbound_ip_addresses",
+      "type": "text",
+      "description": "List of possible IP addresses that the app uses for outbound connections (e.g. database access)."
+    },
+    {
+      "name": "reserved",
+      "type": "boolean",
+      "description": "Specify whether the app is reserved."
+    },
+    {
+      "name": "host_names",
+      "type": "json",
+      "description": "A list of hostnames associated with the app."
+    },
+    {
+      "name": "auth_settings",
+      "type": "json",
+      "description": "Describes the Authentication/Authorization settings of an app."
+    },
+    {
+      "name": "configuration",
+      "type": "json",
+      "description": "Describes the configuration of an app."
+    },
+    {
+      "name": "diagnostic_logs_configuration",
+      "type": "json",
+      "description": "Describes the logging configuration of an app."
+    },
+    {
+      "name": "site_config",
+      "type": "json",
+      "description": "A map of all configuration for the app."
+    },
+    {
+      "name": "storage_info_value",
+      "type": "json",
+      "description": "AzureStorageInfoValue azure Files or Blob Storage access information value for dictionary storage."
+    },
+    {
+      "name": "vnet_connection",
+      "type": "json",
+      "description": "Describes the virtual network connection for the app."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": "ColumnDescriptionTitle"
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": "ColumnDescriptionTags"
+    },
+    {
+      "name": "region",
+      "type": "text",
+      "description": "ColumnDescriptionRegion"
+    },
+    {
+      "name": "resource_group",
+      "type": "text",
+      "description": "ColumnDescriptionResourceGroup"
+    }
+  ]
+}

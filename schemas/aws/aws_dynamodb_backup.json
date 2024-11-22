@@ -1,0 +1,61 @@
+{
+  "table_name": "aws_dynamodb_backup",
+  "table_description": "AWS DynamoDB Backup",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "Name of the backup."
+    },
+    {
+      "name": "arn",
+      "type": "text",
+      "description": "Amazon Resource Name associated with the backup."
+    },
+    {
+      "name": "table_name",
+      "type": "text",
+      "description": "Unique identifier for the table to which backup belongs."
+    },
+    {
+      "name": "table_arn",
+      "type": "text",
+      "description": "Name of the table to which backup belongs."
+    },
+    {
+      "name": "table_id",
+      "type": "text",
+      "description": "ARN associated with the table to which backup belongs."
+    },
+    {
+      "name": "backup_status",
+      "type": "text",
+      "description": "Current status of the backup. Backup can be in one of the following states: CREATING, ACTIVE, DELETED."
+    },
+    {
+      "name": "backup_type",
+      "type": "text",
+      "description": "Backup type (USER | SYSTEM | AWS_BACKUP)."
+    },
+    {
+      "name": "backup_creation_datetime",
+      "type": "timestamp with time zone",
+      "description": "Time at which the backup was created."
+    },
+    {
+      "name": "backup_expiry_datetime",
+      "type": "timestamp with time zone",
+      "description": "Time at which the automatic on-demand backup created by DynamoDB will expire."
+    },
+    {
+      "name": "backup_size_bytes",
+      "type": "integer",
+      "description": "Size of the backup in bytes."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    }
+  ]
+}

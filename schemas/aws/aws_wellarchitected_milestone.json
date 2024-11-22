@@ -1,0 +1,31 @@
+{
+  "table_name": "aws_wellarchitected_milestone",
+  "table_description": "AWS Well-Architected Milestone",
+  "columns": [
+    {
+      "name": "milestone_name",
+      "type": "text",
+      "description": "The name of the milestone in a workload. Milestone names must be unique within a workload."
+    },
+    {
+      "name": "milestone_number",
+      "type": "integer",
+      "description": "The milestone number. A workload can have a maximum of 100 milestones."
+    },
+    {
+      "name": "recorded_at",
+      "type": "timestamp with time zone",
+      "description": "The date and time recorded."
+    },
+    {
+      "name": "workload_id",
+      "type": "text",
+      "description": "The ID assigned to the workload."
+    },
+    {
+      "name": "workload",
+      "type": "json",
+      "description": "A workload return object."
+    }
+  ]
+}

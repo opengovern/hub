@@ -1,0 +1,36 @@
+{
+  "table_name": "aws_inspector2_member",
+  "table_description": "AWS Inspector2 Member",
+  "columns": [
+    {
+      "name": "member_account_id",
+      "type": "text",
+      "description": "The AWS Account ID in which the resource is located."
+    },
+    {
+      "name": "delegated_admin_account_id",
+      "type": "text",
+      "description": "The Amazon Web Services account ID of the Amazon Inspector delegated administrator for this member account."
+    },
+    {
+      "name": "only_associated",
+      "type": "text",
+      "description": "Specifies whether to list only currently associated members if True or to list all members within the organization if False."
+    },
+    {
+      "name": "relationship_status",
+      "type": "text",
+      "description": "The status of the member account. Valid values are: CREATED | INVITED | DISABLED | ENABLED | REMOVED | RESIGNED | DELETED | EMAIL_VERIFICATION_IN_PROGRESS | EMAIL_VERIFICATION_FAILED | REGION_DISABLED | ACCOUNT_SUSPENDED | CANNOT_CREATE_DETECTOR_IN_ORG_MASTER."
+    },
+    {
+      "name": "updated_at",
+      "type": "timestamp with time zone",
+      "description": "A timestamp showing when the status of this member was last updated."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    }
+  ]
+}

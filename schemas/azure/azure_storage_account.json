@@ -1,0 +1,356 @@
+{
+  "table_name": "azure_storage_account",
+  "table_description": "Azure Storage Account",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The friendly name that identifies the storage account."
+    },
+    {
+      "name": "id",
+      "type": "text",
+      "description": "Contains ID to identify a storage account uniquely."
+    },
+    {
+      "name": "type",
+      "type": "text",
+      "description": "Type of the resource."
+    },
+    {
+      "name": "access_tier",
+      "type": "text",
+      "description": "The access tier used for billing."
+    },
+    {
+      "name": "kind",
+      "type": "text",
+      "description": "The kind of the resource."
+    },
+    {
+      "name": "sku_name",
+      "type": "text",
+      "description": "Contains sku name of the storage account."
+    },
+    {
+      "name": "sku_tier",
+      "type": "text",
+      "description": "Contains sku tier of the storage account."
+    },
+    {
+      "name": "creation_time",
+      "type": "timestamp with time zone",
+      "description": "Creation date and time of the storage account."
+    },
+    {
+      "name": "allow_blob_public_access",
+      "type": "boolean",
+      "description": "Specifies whether allow or disallow public access to all blobs or containers in the storage account."
+    },
+    {
+      "name": "blob_change_feed_enabled",
+      "type": "boolean",
+      "description": "Specifies whether change feed event logging is enabled for the Blob service."
+    },
+    {
+      "name": "blob_container_soft_delete_enabled",
+      "type": "boolean",
+      "description": "Specifies whether DeleteRetentionPolicy is enabled."
+    },
+    {
+      "name": "blob_container_soft_delete_retention_days",
+      "type": "integer",
+      "description": "Indicates the number of days that the deleted item should be retained."
+    },
+    {
+      "name": "blob_restore_policy_days",
+      "type": "integer",
+      "description": "Specifies how long the blob can be restored."
+    },
+    {
+      "name": "blob_restore_policy_enabled",
+      "type": "boolean",
+      "description": "Specifies whether blob restore is enabled."
+    },
+    {
+      "name": "blob_service_logging",
+      "type": "json",
+      "description": "Specifies the blob service properties for logging access."
+    },
+    {
+      "name": "blob_soft_delete_enabled",
+      "type": "boolean",
+      "description": "Specifies whether DeleteRetentionPolicy is enabled."
+    },
+    {
+      "name": "blob_soft_delete_retention_days",
+      "type": "integer",
+      "description": "Indicates the number of days that the deleted item should be retained."
+    },
+    {
+      "name": "blob_versioning_enabled",
+      "type": "boolean",
+      "description": "Specifies whether versioning is enabled."
+    },
+    {
+      "name": "enable_https_traffic_only",
+      "type": "boolean",
+      "description": "Allows https traffic only to storage service if sets to true."
+    },
+    {
+      "name": "encryption_key_source",
+      "type": "text",
+      "description": "Contains the encryption keySource (provider)."
+    },
+    {
+      "name": "encryption_key_vault_properties_key_current_version_id",
+      "type": "text",
+      "description": "The object identifier of the current versioned Key Vault Key in use."
+    },
+    {
+      "name": "encryption_key_vault_properties_key_name",
+      "type": "text",
+      "description": "The name of KeyVault key."
+    },
+    {
+      "name": "encryption_key_vault_properties_key_vault_uri",
+      "type": "text",
+      "description": "The Uri of KeyVault."
+    },
+    {
+      "name": "encryption_key_vault_properties_key_version",
+      "type": "text",
+      "description": "The version of KeyVault key."
+    },
+    {
+      "name": "encryption_key_vault_properties_last_rotation_time",
+      "type": "timestamp with time zone",
+      "description": "Timestamp of last rotation of the Key Vault Key."
+    },
+    {
+      "name": "failover_in_progress",
+      "type": "boolean",
+      "description": "Specifies whether the failover is in progress."
+    },
+    {
+      "name": "file_soft_delete_enabled",
+      "type": "boolean",
+      "description": "Specifies whether DeleteRetentionPolicy is enabled."
+    },
+    {
+      "name": "file_soft_delete_retention_days",
+      "type": "integer",
+      "description": "Indicates the number of days that the deleted item should be retained."
+    },
+    {
+      "name": "is_hns_enabled",
+      "type": "boolean",
+      "description": "Specifies whether account HierarchicalNamespace is enabled."
+    },
+    {
+      "name": "queue_logging_delete",
+      "type": "boolean",
+      "description": "Specifies whether all delete requests should be logged."
+    },
+    {
+      "name": "queue_logging_read",
+      "type": "boolean",
+      "description": "Specifies whether all read requests should be logged."
+    },
+    {
+      "name": "queue_logging_retention_days",
+      "type": "integer",
+      "description": "Indicates the number of days that metrics or logging data should be retained."
+    },
+    {
+      "name": "queue_logging_retention_enabled",
+      "type": "boolean",
+      "description": "Specifies whether a retention policy is enabled for the storage service."
+    },
+    {
+      "name": "queue_logging_version",
+      "type": "text",
+      "description": "The version of Storage Analytics to configure."
+    },
+    {
+      "name": "queue_logging_write",
+      "type": "boolean",
+      "description": "Specifies whether all write requests should be logged."
+    },
+    {
+      "name": "table_logging_read",
+      "type": "boolean",
+      "description": "Indicates whether all read requests should be logged."
+    },
+    {
+      "name": "table_logging_write",
+      "type": "boolean",
+      "description": "Indicates whether all write requests should be logged."
+    },
+    {
+      "name": "table_logging_delete",
+      "type": "boolean",
+      "description": "Indicates whether all delete requests should be logged."
+    },
+    {
+      "name": "table_logging_version",
+      "type": "text",
+      "description": "The version of Analytics to configure."
+    },
+    {
+      "name": "table_logging_retention_policy",
+      "type": "json",
+      "description": "The retention policy."
+    },
+    {
+      "name": "minimum_tls_version",
+      "type": "text",
+      "description": "Contains the minimum TLS version to be permitted on requests to storage."
+    },
+    {
+      "name": "network_rule_bypass",
+      "type": "text",
+      "description": "Specifies whether traffic is bypassed for Logging/Metrics/AzureServices."
+    },
+    {
+      "name": "network_rule_default_action",
+      "type": "text",
+      "description": "Specifies the default action of allow or deny when no other rules match."
+    },
+    {
+      "name": "primary_blob_endpoint",
+      "type": "text",
+      "description": "Contains the blob endpoint."
+    },
+    {
+      "name": "primary_dfs_endpoint",
+      "type": "text",
+      "description": "Contains the dfs endpoint."
+    },
+    {
+      "name": "primary_file_endpoint",
+      "type": "text",
+      "description": "Contains the file endpoint."
+    },
+    {
+      "name": "primary_location",
+      "type": "text",
+      "description": "Contains the location of the primary data center for the storage account."
+    },
+    {
+      "name": "primary_queue_endpoint",
+      "type": "text",
+      "description": "Contains the queue endpoint."
+    },
+    {
+      "name": "primary_table_endpoint",
+      "type": "text",
+      "description": "Contains the table endpoint."
+    },
+    {
+      "name": "primary_web_endpoint",
+      "type": "text",
+      "description": "Contains the web endpoint."
+    },
+    {
+      "name": "public_network_access",
+      "type": "text",
+      "description": "Allow or disallow public network access to Storage Account. Value is optional but if passed in, must be Enabled or Disabled."
+    },
+    {
+      "name": "status_of_primary",
+      "type": "text",
+      "description": "The status indicating whether the primary location of the storage account is available or unavailable. Possible values include: 'available', 'unavailable'."
+    },
+    {
+      "name": "provisioning_state",
+      "type": "text",
+      "description": "The provisioning state of the storage account resource."
+    },
+    {
+      "name": "require_infrastructure_encryption",
+      "type": "boolean",
+      "description": "Specifies whether or not the service applies a secondary layer of encryption with platform managed keys for data at rest."
+    },
+    {
+      "name": "secondary_location",
+      "type": "text",
+      "description": "Contains the location of the geo-replicated secondary for the storage account."
+    },
+    {
+      "name": "status_of_secondary",
+      "type": "text",
+      "description": "The status indicating whether the secondary location of the storage account is available or unavailable. Only available if the SKU name is Standard_GRS or Standard_RAGRS. Possible values include: 'available', 'unavailable'."
+    },
+    {
+      "name": "diagnostic_settings",
+      "type": "json",
+      "description": "A list of active diagnostic settings for the storage account."
+    },
+    {
+      "name": "encryption_scope",
+      "type": "json",
+      "description": "Encryption scope details for the storage account."
+    },
+    {
+      "name": "encryption_services",
+      "type": "json",
+      "description": "A list of services which support encryption."
+    },
+    {
+      "name": "lifecycle_management_policy",
+      "type": "json",
+      "description": "The managementpolicy associated with the specified storage account."
+    },
+    {
+      "name": "network_ip_rules",
+      "type": "json",
+      "description": "A list of IP ACL rules."
+    },
+    {
+      "name": "private_endpoint_connections",
+      "type": "json",
+      "description": "A list of private endpoint connection associated with the specified storage account."
+    },
+    {
+      "name": "table_properties",
+      "type": "json",
+      "description": "Azure Analytics Logging settings of tables."
+    },
+    {
+      "name": "access_keys",
+      "type": "json",
+      "description": "The list of access keys or Kerberos keys (if active directory enabled) for the specified storage account."
+    },
+    {
+      "name": "virtual_network_rules",
+      "type": "json",
+      "description": "A list of virtual network rules."
+    },
+    {
+      "name": "sas_policy",
+      "type": "json",
+      "description": "A list of virtual network rules."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": "ColumnDescriptionTitle"
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": "ColumnDescriptionTags"
+    },
+    {
+      "name": "region",
+      "type": "text",
+      "description": "ColumnDescriptionRegion"
+    },
+    {
+      "name": "resource_group",
+      "type": "text",
+      "description": "ColumnDescriptionResourceGroup"
+    }
+  ]
+}

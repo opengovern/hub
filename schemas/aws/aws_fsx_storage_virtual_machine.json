@@ -1,0 +1,31 @@
+{
+  "table_name": "aws_fsx_storage_virtual_machine",
+  "table_description": "AWS FSX StorageVirtualMachine",
+  "columns": [
+    {
+      "name": "storage_virtual_machine_id",
+      "type": "text",
+      "description": "The id of the storage virtual machine."
+    },
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The name of the storage virtual machine."
+    },
+    {
+      "name": "resource_arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) of the storage virtual machine"
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": ""
+    }
+  ]
+}

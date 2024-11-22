@@ -1,0 +1,156 @@
+{
+  "table_name": "azure_data_lake_analytics_account",
+  "table_description": "Azure Data Lake Analytics account",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The resource name."
+    },
+    {
+      "name": "id",
+      "type": "text",
+      "description": "The resource identifier."
+    },
+    {
+      "name": "state",
+      "type": "text",
+      "description": "The state of the data lake analytics account."
+    },
+    {
+      "name": "provisioning_state",
+      "type": "text",
+      "description": "The provisioning status of the data lake analytics account."
+    },
+    {
+      "name": "type",
+      "type": "text",
+      "description": "The resource type."
+    },
+    {
+      "name": "account_id",
+      "type": "text",
+      "description": "The unique identifier associated with this data lake analytics account."
+    },
+    {
+      "name": "creation_time",
+      "type": "timestamp with time zone",
+      "description": "The data lake analytics account creation time."
+    },
+    {
+      "name": "current_tier",
+      "type": "text",
+      "description": "The commitment tier in use for current month."
+    },
+    {
+      "name": "default_data_lake_store_account",
+      "type": "text",
+      "description": "The default data lake store account associated with this data lake analytics account."
+    },
+    {
+      "name": "endpoint",
+      "type": "text",
+      "description": "The full cname endpoint for this data lake analytics account."
+    },
+    {
+      "name": "firewall_state",
+      "type": "text",
+      "description": "The current state of the IP address firewall for this data lake analytics account."
+    },
+    {
+      "name": "last_modified_time",
+      "type": "timestamp with time zone",
+      "description": "The data lake analytics account last modified time."
+    },
+    {
+      "name": "max_degree_of_parallelism",
+      "type": "integer",
+      "description": "The maximum supported degree of parallelism for this data lake analytics account."
+    },
+    {
+      "name": "max_degree_of_parallelism_per_job",
+      "type": "integer",
+      "description": "The maximum supported degree of parallelism per job for this data lake analytics account."
+    },
+    {
+      "name": "max_job_count",
+      "type": "integer",
+      "description": "The maximum supported jobs running under the data lake analytics account at the same time."
+    },
+    {
+      "name": "min_priority_per_job",
+      "type": "integer",
+      "description": "The minimum supported priority per job for this data lake analytics account."
+    },
+    {
+      "name": "new_tier",
+      "type": "text",
+      "description": "The commitment tier to use for next month."
+    },
+    {
+      "name": "query_store_retention",
+      "type": "integer",
+      "description": "The number of days that job metadata is retained."
+    },
+    {
+      "name": "system_max_degree_of_parallelism",
+      "type": "integer",
+      "description": "The system defined maximum supported degree of parallelism for this account, which restricts the maximum value of parallelism the user can set for the data lake analytics account."
+    },
+    {
+      "name": "system_max_job_count",
+      "type": "integer",
+      "description": "The system defined maximum supported jobs running under the account at the same time, which restricts the maximum number of running jobs the user can set for the data lake analytics account."
+    },
+    {
+      "name": "compute_policies",
+      "type": "json",
+      "description": "The list of compute policies associated with this data lake analytics account."
+    },
+    {
+      "name": "diagnostic_settings",
+      "type": "json",
+      "description": "A list of active diagnostic settings for the data lake analytics account."
+    },
+    {
+      "name": "data_lake_store_accounts",
+      "type": "json",
+      "description": "The list of data lake store accounts associated with this data lake analytics account."
+    },
+    {
+      "name": "firewall_allow_azure_ips",
+      "type": "json",
+      "description": "The current state of allowing or disallowing IPs originating within azure through the firewall. If the firewall is disabled, this is not enforced."
+    },
+    {
+      "name": "firewall_rules",
+      "type": "json",
+      "description": "The list of firewall rules associated with this data lake analytics account."
+    },
+    {
+      "name": "storage_accounts",
+      "type": "json",
+      "description": "The list of azure blob storage accounts associated with this data lake analytics account."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": "ColumnDescriptionTitle"
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": "ColumnDescriptionTags"
+    },
+    {
+      "name": "region",
+      "type": "text",
+      "description": "ColumnDescriptionRegion"
+    },
+    {
+      "name": "resource_group",
+      "type": "text",
+      "description": "ColumnDescriptionResourceGroup"
+    }
+  ]
+}

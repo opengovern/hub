@@ -1,0 +1,26 @@
+{
+  "table_name": "aws_ec2_instance_availability",
+  "table_description": "AWS EC2 Instance Availability",
+  "columns": [
+    {
+      "name": "instance_type",
+      "type": "text",
+      "description": "The instance type. For more information, see [ Instance Types ](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/instance-types.html) in the Amazon Elastic Compute Cloud User Guide."
+    },
+    {
+      "name": "location",
+      "type": "text",
+      "description": "The identifier for the location. This depends on the location type. For example, if the location type is region, the location is the Region code (for example, us-east-2.)"
+    },
+    {
+      "name": "location_type",
+      "type": "text",
+      "description": "The type of location."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    }
+  ]
+}

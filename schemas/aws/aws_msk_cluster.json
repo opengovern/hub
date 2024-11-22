@@ -1,0 +1,71 @@
+{
+  "table_name": "aws_msk_cluster",
+  "table_description": "AWS Managed Streaming for Apache Kafka",
+  "columns": [
+    {
+      "name": "arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) that uniquely identifies the Cluster."
+    },
+    {
+      "name": "cluster_name",
+      "type": "text",
+      "description": "The name of the cluster."
+    },
+    {
+      "name": "active_operation_arn",
+      "type": "text",
+      "description": "Arn of active cluster operation."
+    },
+    {
+      "name": "cluster_type",
+      "type": "text",
+      "description": "The type of the cluster."
+    },
+    {
+      "name": "creation_time",
+      "type": "timestamp with time zone",
+      "description": "The time when the cluster was created."
+    },
+    {
+      "name": "current_version",
+      "type": "text",
+      "description": "The current version of the MSK cluster."
+    },
+    {
+      "name": "state",
+      "type": "text",
+      "description": "Settings for open monitoring using Prometheus."
+    },
+    {
+      "name": "cluster_configuration",
+      "type": "json",
+      "description": "Description of this MSK configuration."
+    },
+    {
+      "name": "cluster_operation",
+      "type": "json",
+      "description": "Description of this MSK operation."
+    },
+    {
+      "name": "provisioned",
+      "type": "json",
+      "description": "Information about the provisioned cluster."
+    },
+    {
+      "name": "state_info",
+      "type": "json",
+      "description": "State Info for the Amazon MSK cluster."
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": "A list of tags attached to the Cluster."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    }
+  ]
+}

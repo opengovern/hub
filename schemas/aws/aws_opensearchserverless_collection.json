@@ -1,0 +1,26 @@
+{
+  "table_name": "aws_opensearchserverless_collection",
+  "table_description": "AWS OpenSearchServerless Collection",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The name of the collection."
+    },
+    {
+      "name": "arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) of the collection"
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": ""
+    }
+  ]
+}

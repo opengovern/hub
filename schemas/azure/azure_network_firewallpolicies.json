@@ -1,0 +1,26 @@
+{
+  "table_name": "azure_network_firewallpolicies",
+  "table_description": "Azure Network FirewallPolicies",
+  "columns": [
+    {
+      "name": "id",
+      "type": "text",
+      "description": "The id of the firewallpolicies."
+    },
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The name of the firewallpolicies."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": "ColumnDescriptionTitle"
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": "ColumnDescriptionTags"
+    }
+  ]
+}

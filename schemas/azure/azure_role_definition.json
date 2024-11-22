@@ -1,0 +1,51 @@
+{
+  "table_name": "azure_role_definition",
+  "table_description": "Azure Role Definition",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The friendly name that identifies the role definition."
+    },
+    {
+      "name": "id",
+      "type": "text",
+      "description": "Contains ID to identify a role definition uniquely."
+    },
+    {
+      "name": "type",
+      "type": "text",
+      "description": "Contains the resource type."
+    },
+    {
+      "name": "role_name",
+      "type": "text",
+      "description": "Current state of the role definition."
+    },
+    {
+      "name": "role_type",
+      "type": "text",
+      "description": "Name of the role definition."
+    },
+    {
+      "name": "description",
+      "type": "text",
+      "description": "Description of the role definition."
+    },
+    {
+      "name": "assignable_scopes",
+      "type": "json",
+      "description": "A list of assignable scopes for which the role definition can be assigned."
+    },
+    {
+      "name": "permissions",
+      "type": "json",
+      "description": "A list of actions, which can be accessed."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": "ColumnDescriptionTitle"
+    }
+  ]
+}

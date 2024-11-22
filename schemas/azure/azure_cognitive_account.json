@@ -1,0 +1,176 @@
+{
+  "table_name": "azure_cognitive_account",
+  "table_description": "Azure Cognitive Account",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The name of the resource."
+    },
+    {
+      "name": "id",
+      "type": "text",
+      "description": "Fully qualified resource ID for the resource."
+    },
+    {
+      "name": "kind",
+      "type": "text",
+      "description": "The kind of the resource."
+    },
+    {
+      "name": "provisioning_state",
+      "type": "text",
+      "description": "The status of the cognitive services account at the time the operation was called. Possible values include: 'Accepted', 'Creating', 'Deleting', 'Moving', 'Failed', 'Succeeded', 'ResolvingDNS'."
+    },
+    {
+      "name": "type",
+      "type": "text",
+      "description": "The type of the resource. E.g. 'Microsoft.Compute/virtualMachines' or 'Microsoft.Storage/storageAccounts'."
+    },
+    {
+      "name": "custom_sub_domain_name",
+      "type": "text",
+      "description": "The subdomain name used for token-based authentication."
+    },
+    {
+      "name": "date_created",
+      "type": "text",
+      "description": "The date of cognitive services account creation."
+    },
+    {
+      "name": "disable_local_auth",
+      "type": "boolean",
+      "description": "Checks if local auth is disabled for the resource."
+    },
+    {
+      "name": "endpoint",
+      "type": "text",
+      "description": "The endpoint of the created account."
+    },
+    {
+      "name": "etag",
+      "type": "text",
+      "description": "The resource etag."
+    },
+    {
+      "name": "is_migrated",
+      "type": "boolean",
+      "description": "Checks if the resource is migrated from an existing key."
+    },
+    {
+      "name": "migration_token",
+      "type": "text",
+      "description": "The resource migration token."
+    },
+    {
+      "name": "public_network_access",
+      "type": "text",
+      "description": "Whether or not public endpoint access is allowed for this account. Value is optional but if passed in, must be 'Enabled' or 'Disabled'. Possible values include: 'Enabled', 'Disabled'."
+    },
+    {
+      "name": "restore",
+      "type": "boolean",
+      "description": "Checks if restore is enabled for the resource."
+    },
+    {
+      "name": "restrict_outbound_network_access",
+      "type": "boolean",
+      "description": "Checks if outbound network access is restricted for the resource."
+    },
+    {
+      "name": "allowed_fqdn_list",
+      "type": "json",
+      "description": "The allowed FQDN list for the resource."
+    },
+    {
+      "name": "api_properties",
+      "type": "json",
+      "description": "The api properties for special APIs."
+    },
+    {
+      "name": "call_rate_limit",
+      "type": "json",
+      "description": "The call rate limit of the resource."
+    },
+    {
+      "name": "capabilities",
+      "type": "json",
+      "description": "The capabilities of the cognitive services account. Each item indicates the capability of a specific feature. The values are read-only and for reference only."
+    },
+    {
+      "name": "diagnostic_settings",
+      "type": "json",
+      "description": "A list of active diagnostic settings for the cognitive service account."
+    },
+    {
+      "name": "encryption",
+      "type": "json",
+      "description": "The encryption properties for the resource."
+    },
+    {
+      "name": "endpoints",
+      "type": "json",
+      "description": "All endpoints of the cognitive services account."
+    },
+    {
+      "name": "identity",
+      "type": "json",
+      "description": "The identity for the resource."
+    },
+    {
+      "name": "network_acls",
+      "type": "json",
+      "description": "A collection of rules governing the accessibility from specific network locations."
+    },
+    {
+      "name": "private_endpoint_connections",
+      "type": "json",
+      "description": "The private endpoint connection associated with the cognitive services account."
+    },
+    {
+      "name": "quota_limit",
+      "type": "json",
+      "description": "The quota limit of the resource."
+    },
+    {
+      "name": "sku",
+      "type": "json",
+      "description": "The resource model definition representing SKU."
+    },
+    {
+      "name": "sku_change_info",
+      "type": "json",
+      "description": "Sku change info of the resource."
+    },
+    {
+      "name": "system_data",
+      "type": "json",
+      "description": "The metadata pertaining to creation and last modification of the resource."
+    },
+    {
+      "name": "user_owned_storage",
+      "type": "json",
+      "description": "The storage accounts for the resource."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": "ColumnDescriptionTitle"
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": "ColumnDescriptionTags"
+    },
+    {
+      "name": "region",
+      "type": "text",
+      "description": "ColumnDescriptionRegion"
+    },
+    {
+      "name": "resource_group",
+      "type": "text",
+      "description": "ColumnDescriptionResourceGroup"
+    }
+  ]
+}

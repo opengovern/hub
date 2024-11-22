@@ -1,0 +1,126 @@
+{
+  "table_name": "azure_log_analytics_workspace",
+  "table_description": "Azure Log Analytics Workspace",
+  "columns": [
+    {
+      "name": "id",
+      "type": "text",
+      "description": "The id of the workspaces."
+    },
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The name of the workspaces."
+    },
+    {
+      "name": "location",
+      "type": "text",
+      "description": "The location of the Log Analytics workspace."
+    },
+    {
+      "name": "type",
+      "type": "text",
+      "description": "The type of the Log Analytics workspace."
+    },
+    {
+      "name": "sku",
+      "type": "json",
+      "description": "The SKU (pricing level) of the Log Analytics workspace."
+    },
+    {
+      "name": "retention_in_days",
+      "type": "integer",
+      "description": "The retention period for the Log Analytics workspace data in days."
+    },
+    {
+      "name": "provisioning_state",
+      "type": "text",
+      "description": "The provisioning state of the Log Analytics workspace."
+    },
+    {
+      "name": "workspace_capping",
+      "type": "json",
+      "description": "The workspace capping properties."
+    },
+    {
+      "name": "created_date",
+      "type": "timestamp with time zone",
+      "description": "Workspace creation date."
+    },
+    {
+      "name": "modified_date",
+      "type": "timestamp with time zone",
+      "description": "Workspace modification date."
+    },
+    {
+      "name": "customer_id",
+      "type": "text",
+      "description": "Represents the ID associated with the workspace."
+    },
+    {
+      "name": "public_network_access_for_ingestion",
+      "type": "text",
+      "description": "The network access type for accessing Log Analytics ingestion."
+    },
+    {
+      "name": "public_network_access_for_query",
+      "type": "text",
+      "description": "The network access type for accessing Log Analytics query."
+    },
+    {
+      "name": "force_cmk_for_query",
+      "type": "boolean",
+      "description": "Indicates whether customer managed storage is mandatory for query management."
+    },
+    {
+      "name": "private_link_scoped_resources",
+      "type": "json",
+      "description": "List of linked private link scope resources."
+    },
+    {
+      "name": "enable_data_export",
+      "type": "boolean",
+      "description": "Flag that indicates if data should be exported."
+    },
+    {
+      "name": "immediate_purge_data_on_30_days",
+      "type": "boolean",
+      "description": "Flag that describes if we want to remove the data after 30 days."
+    },
+    {
+      "name": "enable_log_access_using_only_resource_permissions",
+      "type": "boolean",
+      "description": "Flag that indicates which permission to use - resource or workspace or both."
+    },
+    {
+      "name": "cluster_resource_id",
+      "type": "text",
+      "description": "Dedicated LA cluster resourceId that is linked to the workspaces."
+    },
+    {
+      "name": "disable_local_auth",
+      "type": "boolean",
+      "description": "Disable Non-AAD based Auth."
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": "The tags assigned to the Log Analytics workspace."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": "ColumnDescriptionTitle"
+    },
+    {
+      "name": "region",
+      "type": "text",
+      "description": "The region of the Log Analytics workspace."
+    },
+    {
+      "name": "resource_group",
+      "type": "text",
+      "description": "The resource group of the Log Analytics workspace."
+    }
+  ]
+}

@@ -1,0 +1,121 @@
+{
+  "table_name": "azure_key_vault_key_version",
+  "table_description": "Azure Key Vault Key Version",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The friendly name that identifies the key version."
+    },
+    {
+      "name": "key_name",
+      "type": "text",
+      "description": "The friendly name that identifies the key."
+    },
+    {
+      "name": "key_id",
+      "type": "text",
+      "description": "Contains ID to identify a key uniquely."
+    },
+    {
+      "name": "id",
+      "type": "text",
+      "description": "Contains ID to identify a key version uniquely."
+    },
+    {
+      "name": "vault_name",
+      "type": "text",
+      "description": "The friendly name that identifies the vault."
+    },
+    {
+      "name": "enabled",
+      "type": "boolean",
+      "description": "Indicates whether the key version is enabled, or not."
+    },
+    {
+      "name": "key_type",
+      "type": "text",
+      "description": "The type of the key. Possible values are: 'EC', 'ECHSM', 'RSA', 'RSAHSM'."
+    },
+    {
+      "name": "created_at",
+      "type": "timestamp with time zone",
+      "description": "Specifies the time when the key version is created."
+    },
+    {
+      "name": "curve_name",
+      "type": "text",
+      "description": "The elliptic curve name. Possible values are: 'P256', 'P384', 'P521', 'P256K'."
+    },
+    {
+      "name": "expires_at",
+      "type": "timestamp with time zone",
+      "description": "Specifies the time when the key version wil expire."
+    },
+    {
+      "name": "key_size",
+      "type": "integer",
+      "description": "The key size in bits."
+    },
+    {
+      "name": "key_uri",
+      "type": "text",
+      "description": "The URI to retrieve the current version of the key."
+    },
+    {
+      "name": "key_uri_with_version",
+      "type": "text",
+      "description": "The URI to retrieve the specific version of the key."
+    },
+    {
+      "name": "location",
+      "type": "text",
+      "description": "Azure location of the key vault resource."
+    },
+    {
+      "name": "not_before",
+      "type": "timestamp with time zone",
+      "description": "Specifies the time before which the key version is not usable."
+    },
+    {
+      "name": "recovery_level",
+      "type": "text",
+      "description": "The deletion recovery level currently in effect for the object. If it contains 'Purgeable', then the object can be permanently deleted by a privileged user; otherwise, only the system can purge the object at the end of the retention interval."
+    },
+    {
+      "name": "type",
+      "type": "text",
+      "description": "Type of the resource"
+    },
+    {
+      "name": "updated_at",
+      "type": "timestamp with time zone",
+      "description": "Specifies the time when the key was last updated."
+    },
+    {
+      "name": "key_ops",
+      "type": "json",
+      "description": "A list of key operations."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": "ColumnDescriptionTitle"
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": "ColumnDescriptionTags"
+    },
+    {
+      "name": "region",
+      "type": "text",
+      "description": "ColumnDescriptionRegion"
+    },
+    {
+      "name": "resource_group",
+      "type": "text",
+      "description": "ColumnDescriptionResourceGroup"
+    }
+  ]
+}

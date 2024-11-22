@@ -1,0 +1,56 @@
+{
+  "table_name": "azure_key_vault_deleted_vault",
+  "table_description": "Azure Key Vault Deleted Vault",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The friendly name that identifies the deleted vault."
+    },
+    {
+      "name": "id",
+      "type": "text",
+      "description": "Contains ID to identify a deleted vault uniquely."
+    },
+    {
+      "name": "vault_id",
+      "type": "text",
+      "description": "The resource id of the original vault."
+    },
+    {
+      "name": "type",
+      "type": "text",
+      "description": "Type of the resource."
+    },
+    {
+      "name": "deletion_date",
+      "type": "timestamp with time zone",
+      "description": "The deleted date of the vault."
+    },
+    {
+      "name": "scheduled_purge_date",
+      "type": "timestamp with time zone",
+      "description": "The scheduled purged date of the vault."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": "ColumnDescriptionTitle"
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": "ColumnDescriptionTags"
+    },
+    {
+      "name": "region",
+      "type": "text",
+      "description": "ColumnDescriptionRegion"
+    },
+    {
+      "name": "resource_group",
+      "type": "text",
+      "description": "ColumnDescriptionResourceGroup"
+    }
+  ]
+}

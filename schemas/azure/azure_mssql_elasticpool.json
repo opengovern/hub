@@ -1,0 +1,91 @@
+{
+  "table_name": "azure_mssql_elasticpool",
+  "table_description": "Azure Microsoft SQL Elastic Pool",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The friendly name that identifies the elastic pool."
+    },
+    {
+      "name": "server_name",
+      "type": "text",
+      "description": "The name of the parent server of the elastic pool."
+    },
+    {
+      "name": "id",
+      "type": "text",
+      "description": "Contains ID to identify a elastic pool uniquely."
+    },
+    {
+      "name": "type",
+      "type": "text",
+      "description": "The resource type of the elastic pool."
+    },
+    {
+      "name": "state",
+      "type": "text",
+      "description": "The state of the elastic pool."
+    },
+    {
+      "name": "creation_date",
+      "type": "timestamp with time zone",
+      "description": "The creation date of the elastic pool."
+    },
+    {
+      "name": "database_dtu_max",
+      "type": "integer",
+      "description": "The maximum DTU any one database can consume."
+    },
+    {
+      "name": "database_dtu_min",
+      "type": "integer",
+      "description": "The minimum DTU all databases are guaranteed."
+    },
+    {
+      "name": "dtu",
+      "type": "integer",
+      "description": "The total shared DTU for the database elastic pool."
+    },
+    {
+      "name": "edition",
+      "type": "text",
+      "description": "The edition of the elastic pool."
+    },
+    {
+      "name": "kind",
+      "type": "text",
+      "description": "The kind of elastic pool."
+    },
+    {
+      "name": "storage_mb",
+      "type": "integer",
+      "description": "Storage limit for the database elastic pool in MB."
+    },
+    {
+      "name": "zone_redundant",
+      "type": "boolean",
+      "description": "Whether or not this database elastic pool is zone redundant, which means the replicas of this database will be spread across multiple availability zones."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": "ColumnDescriptionTitle"
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": "ColumnDescriptionTags"
+    },
+    {
+      "name": "region",
+      "type": "text",
+      "description": "ColumnDescriptionRegion"
+    },
+    {
+      "name": "resource_group",
+      "type": "text",
+      "description": "ColumnDescriptionResourceGroup"
+    }
+  ]
+}

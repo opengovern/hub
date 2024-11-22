@@ -1,0 +1,211 @@
+{
+  "table_name": "azure_application_gateway",
+  "table_description": "Azure Application Gateway",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The resource name."
+    },
+    {
+      "name": "id",
+      "type": "text",
+      "description": "The resource ID."
+    },
+    {
+      "name": "provisioning_state",
+      "type": "text",
+      "description": "The provisioning state of the application gateway. Possible values include: 'Succeeded', 'Updating', 'Deleting', 'Failed'."
+    },
+    {
+      "name": "type",
+      "type": "text",
+      "description": "The resource type."
+    },
+    {
+      "name": "enable_fips",
+      "type": "boolean",
+      "description": "Whether FIPS is enabled on the application gateway."
+    },
+    {
+      "name": "enable_http2",
+      "type": "boolean",
+      "description": "Whether HTTP2 is enabled on the application gateway."
+    },
+    {
+      "name": "etag",
+      "type": "text",
+      "description": "A unique read-only string that changes whenever the resource is updated."
+    },
+    {
+      "name": "force_firewall_policy_association",
+      "type": "boolean",
+      "description": "If true, associates a firewall policy with an application gateway regardless whether the policy differs from the WAF configuration."
+    },
+    {
+      "name": "operational_state",
+      "type": "text",
+      "description": "Operational state of the application gateway. Possible values include: 'Stopped', 'Starting', 'Running', 'Stopping'."
+    },
+    {
+      "name": "resource_guid",
+      "type": "text",
+      "description": "The resource GUID property of the application gateway."
+    },
+    {
+      "name": "authentication_certificates",
+      "type": "json",
+      "description": "Authentication certificates of the application gateway."
+    },
+    {
+      "name": "autoscale_configuration",
+      "type": "json",
+      "description": "Autoscale Configuration of the application gateway."
+    },
+    {
+      "name": "backend_address_pools",
+      "type": "json",
+      "description": "Backend address pool of the application gateway."
+    },
+    {
+      "name": "backend_http_settings_collection",
+      "type": "json",
+      "description": "Backend http settings of the application gateway."
+    },
+    {
+      "name": "custom_error_configurations",
+      "type": "json",
+      "description": "Custom error configurations of the application gateway."
+    },
+    {
+      "name": "diagnostic_settings",
+      "type": "json",
+      "description": "A list of active diagnostic settings for the application gateway."
+    },
+    {
+      "name": "firewall_policy",
+      "type": "json",
+      "description": "Reference to the FirewallPolicy resource."
+    },
+    {
+      "name": "frontend_ip_configurations",
+      "type": "json",
+      "description": "Frontend IP addresses of the application gateway."
+    },
+    {
+      "name": "frontend_ports",
+      "type": "json",
+      "description": "Frontend ports of the application gateway."
+    },
+    {
+      "name": "gateway_ip_configurations",
+      "type": "json",
+      "description": "Subnets of the application gateway."
+    },
+    {
+      "name": "http_listeners",
+      "type": "json",
+      "description": "Http listeners of the application gateway."
+    },
+    {
+      "name": "identity",
+      "type": "json",
+      "description": "The identity of the application gateway, if configured."
+    },
+    {
+      "name": "private_endpoint_connections",
+      "type": "json",
+      "description": "Private endpoint connections on application gateway."
+    },
+    {
+      "name": "private_link_configurations",
+      "type": "json",
+      "description": "PrivateLink configurations on application gateway."
+    },
+    {
+      "name": "probes",
+      "type": "json",
+      "description": "Probes of the application gateway."
+    },
+    {
+      "name": "redirect_configurations",
+      "type": "json",
+      "description": "Redirect configurations of the application gateway."
+    },
+    {
+      "name": "request_routing_rules",
+      "type": "json",
+      "description": "Request routing rules of the application gateway."
+    },
+    {
+      "name": "rewrite_rule_sets",
+      "type": "json",
+      "description": "Rewrite rules for the application gateway."
+    },
+    {
+      "name": "sku",
+      "type": "json",
+      "description": "SKU of the application gateway."
+    },
+    {
+      "name": "ssl_certificates",
+      "type": "json",
+      "description": "SSL certificates of the application gateway."
+    },
+    {
+      "name": "ssl_policy",
+      "type": "json",
+      "description": "SSL policy of the application gateway."
+    },
+    {
+      "name": "ssl_profiles",
+      "type": "json",
+      "description": "SSL profiles of the application gateway."
+    },
+    {
+      "name": "trusted_client_certificates",
+      "type": "json",
+      "description": "Trusted client certificates of the application gateway."
+    },
+    {
+      "name": "trusted_root_certificates",
+      "type": "json",
+      "description": "Trusted root certificates of the application gateway."
+    },
+    {
+      "name": "url_path_maps",
+      "type": "json",
+      "description": "URL path map of the application gateway."
+    },
+    {
+      "name": "web_application_firewall_configuration",
+      "type": "json",
+      "description": "Web application firewall configuration of the application gateway."
+    },
+    {
+      "name": "zones",
+      "type": "json",
+      "description": "A list of availability zones denoting where the resource needs to come from."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": "ColumnDescriptionTitle"
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": "ColumnDescriptionTags"
+    },
+    {
+      "name": "region",
+      "type": "text",
+      "description": "ColumnDescriptionRegion"
+    },
+    {
+      "name": "resource_group",
+      "type": "text",
+      "description": "ColumnDescriptionResourceGroup"
+    }
+  ]
+}

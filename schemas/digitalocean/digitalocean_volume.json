@@ -1,0 +1,76 @@
+{
+  "table_name": "digitalocean_volume",
+  "table_description": "DigitalOcean Block Storage Volumes provide expanded storage capacity for your Droplets and can be moved between Droplets within a specific region. Volumes function as raw block devices, meaning they appear to the operating system as locally attached storage which can be formatted using any file system supported by the OS.",
+  "columns": [
+    {
+      "name": "id",
+      "type": "text",
+      "description": "The unique identifier for the block storage volume."
+    },
+    {
+      "name": "name",
+      "type": "text",
+      "description": "A human-readable name for the block storage volume. Must be lowercase and be composed only of numbers, letters and \\\"-\\\", up to a limit of 64 characters. The name must begin with a letter."
+    },
+    {
+      "name": "created_at",
+      "type": "timestamp with time zone",
+      "description": "Time when the block storage volume was created."
+    },
+    {
+      "name": "description",
+      "type": "text",
+      "description": "An optional free-form text field to describe a block storage volume."
+    },
+    {
+      "name": "droplet_ids",
+      "type": "json",
+      "description": "An array containing the IDs of the Droplets the volume is attached to. Note that at this time, a volume can only be attached to a single Droplet."
+    },
+    {
+      "name": "filesystem_label",
+      "type": "text",
+      "description": "The label currently applied to the filesystem."
+    },
+    {
+      "name": "filesystem_type",
+      "type": "text",
+      "description": "The type of filesystem currently in-use on the volume."
+    },
+    {
+      "name": "region_slug",
+      "type": "text",
+      "description": "The unique slug identifier for the region the volume is deployed in."
+    },
+    {
+      "name": "region_name",
+      "type": "text",
+      "description": "The name of the region the volume is deployed in."
+    },
+    {
+      "name": "size_gigabytes",
+      "type": "integer",
+      "description": "The size of the block storage volume in GiB (1024^3)."
+    },
+    {
+      "name": "tags_src",
+      "type": "json",
+      "description": "An array of tags the volume has been tagged with"
+    },
+    {
+      "name": "urn",
+      "type": "text",
+      "description": "The uniform resource name (URN) for the volume."
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": ""
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    }
+  ]
+}

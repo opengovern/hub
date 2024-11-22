@@ -1,0 +1,86 @@
+{
+  "table_name": "aws_inspector_assessment_run",
+  "table_description": "AWS Inspector Assessment Run",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The auto-generated name for the assessment run."
+    },
+    {
+      "name": "arn",
+      "type": "text",
+      "description": "The ARN of the assessment run."
+    },
+    {
+      "name": "assessment_template_arn",
+      "type": "text",
+      "description": "The ARN of the assessment template that is associated with the assessment run."
+    },
+    {
+      "name": "state",
+      "type": "text",
+      "description": "The state of the assessment run."
+    },
+    {
+      "name": "completed_at",
+      "type": "timestamp with time zone",
+      "description": "The assessment run completion time that corresponds to the rules packages evaluation completion time or failure."
+    },
+    {
+      "name": "created_at",
+      "type": "timestamp with time zone",
+      "description": "The time when StartAssessmentRun was called."
+    },
+    {
+      "name": "data_collected",
+      "type": "boolean",
+      "description": "Boolean value (true or false) that specifies whether the process of collecting data from the agents is completed."
+    },
+    {
+      "name": "duration_in_seconds",
+      "type": "integer",
+      "description": "The duration of the assessment run."
+    },
+    {
+      "name": "started_at",
+      "type": "timestamp with time zone",
+      "description": "The time when StartAssessmentRun was called."
+    },
+    {
+      "name": "state_changed_at",
+      "type": "timestamp with time zone",
+      "description": "The last time when the assessment run's state changed."
+    },
+    {
+      "name": "finding_counts",
+      "type": "json",
+      "description": "Provides a total count of generated findings per severity."
+    },
+    {
+      "name": "notifications",
+      "type": "json",
+      "description": "A list of notifications for the event subscriptions."
+    },
+    {
+      "name": "rules_package_arns",
+      "type": "json",
+      "description": "The rules packages selected for the assessment run."
+    },
+    {
+      "name": "state_changes",
+      "type": "json",
+      "description": "A list of the assessment run state changes."
+    },
+    {
+      "name": "user_attributes_for_findings",
+      "type": "json",
+      "description": "The user-defined attributes that are assigned to every generated finding."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    }
+  ]
+}

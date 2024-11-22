@@ -1,0 +1,26 @@
+{
+  "table_name": "aws_ecrpublic_registry",
+  "table_description": "AWS ECRPublic Registry}",
+  "columns": [
+    {
+      "name": "registry_id",
+      "type": "text",
+      "description": "The id of the public registry."
+    },
+    {
+      "name": "registry_arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) of the public registry"
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": ""
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "table_name": "aws_codeartifact_domain",
+  "table_description": "AWS Code Artifact Domain",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The name of the domain."
+    },
+    {
+      "name": "arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) specifying the domain."
+    },
+    {
+      "name": "asset_size_bytes",
+      "type": "integer",
+      "description": "The total size of all assets in the domain."
+    },
+    {
+      "name": "created_time",
+      "type": "timestamp with time zone",
+      "description": "A timestamp that contains the date and time the domain was created."
+    },
+    {
+      "name": "encryption_key",
+      "type": "text",
+      "description": "The key used to encrypt the domain."
+    },
+    {
+      "name": "owner",
+      "type": "text",
+      "description": "The 12-digit account number of the Amazon Web Services account that owns the domain. It does not include dashes or spaces."
+    },
+    {
+      "name": "repository_count",
+      "type": "integer",
+      "description": "The number of repositories in the domain."
+    },
+    {
+      "name": "s3_bucket_arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) of the Amazon S3 bucket that is used to store package assets in the domain."
+    },
+    {
+      "name": "status",
+      "type": "text",
+      "description": "A string that contains the status of the domain."
+    },
+    {
+      "name": "policy",
+      "type": "json",
+      "description": "An CodeArtifact resource policy that contains a resource ARN, document details, and a revision."
+    },
+    {
+      "name": "policy_std",
+      "type": "json",
+      "description": "Contains the contents of the resource-based policy in a canonical form for easier searching."
+    },
+    {
+      "name": "tags_src",
+      "type": "json",
+      "description": "A list of tags assigned to the resource."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": ""
+    }
+  ]
+}

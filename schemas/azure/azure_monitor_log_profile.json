@@ -1,0 +1,61 @@
+{
+  "table_name": "azure_monitor_log_profile",
+  "table_description": "Azure Monitor Log Profile",
+  "columns": [
+    {
+      "name": "id",
+      "type": "text",
+      "description": "Azure resource Id."
+    },
+    {
+      "name": "name",
+      "type": "text",
+      "description": "Azure resource name."
+    },
+    {
+      "name": "type",
+      "type": "text",
+      "description": "Azure resource type."
+    },
+    {
+      "name": "location",
+      "type": "text",
+      "description": "The resource location."
+    },
+    {
+      "name": "storage_account_id",
+      "type": "text",
+      "description": "The resource id of the storage account to which you would like to send the Activity Log."
+    },
+    {
+      "name": "service_bus_rule_id",
+      "type": "text",
+      "description": "The service bus rule ID of the service bus namespace in which you would like to have Event Hubs created for streaming the Activity Log."
+    },
+    {
+      "name": "locations",
+      "type": "json",
+      "description": "List of regions for which Activity Log events should be stored or streamed. It is a comma separated list of valid ARM locations including the 'global' location."
+    },
+    {
+      "name": "categories",
+      "type": "json",
+      "description": "The categories of the logs. These categories are created as is convenient to the user."
+    },
+    {
+      "name": "retention_policy",
+      "type": "json",
+      "description": "The retention policy for the events in the log."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": "ColumnDescriptionTitle"
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": "ColumnDescriptionTags"
+    }
+  ]
+}

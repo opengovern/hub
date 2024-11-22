@@ -1,0 +1,41 @@
+{
+  "table_name": "github_code_owner",
+  "table_description": "Individuals or teams that are responsible for code in a repository.",
+  "columns": [
+    {
+      "name": "repository_full_name",
+      "type": "text",
+      "description": "The full name of the repository, including the owner and repo name."
+    },
+    {
+      "name": "line",
+      "type": "integer",
+      "description": "The rule's line number in the CODEOWNERS file."
+    },
+    {
+      "name": "pattern",
+      "type": "text",
+      "description": "The pattern used to identify what code a team, or an individual is responsible for"
+    },
+    {
+      "name": "users",
+      "type": "json",
+      "description": "Users responsible for code in the repo"
+    },
+    {
+      "name": "teams",
+      "type": "json",
+      "description": "Teams responsible for code in the repo"
+    },
+    {
+      "name": "pre_comments",
+      "type": "json",
+      "description": "Specifies the comments added above a key."
+    },
+    {
+      "name": "line_comment",
+      "type": "text",
+      "description": "Specifies the comment following the node and before empty lines."
+    }
+  ]
+}

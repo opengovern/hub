@@ -1,0 +1,76 @@
+{
+  "table_name": "aws_glacier_vault",
+  "table_description": "AWS Glacier Vault",
+  "columns": [
+    {
+      "name": "vault_name",
+      "type": "text",
+      "description": "The name of the vault."
+    },
+    {
+      "name": "vault_arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) of the vault."
+    },
+    {
+      "name": "creation_date",
+      "type": "timestamp with time zone",
+      "description": "The Universal Coordinated Time (UTC) date when the vault was created."
+    },
+    {
+      "name": "last_inventory_date",
+      "type": "timestamp with time zone",
+      "description": "The Universal Coordinated Time (UTC) date when Amazon S3 Glacier completed the last vault inventory."
+    },
+    {
+      "name": "number_of_archives",
+      "type": "integer",
+      "description": "The number of archives in the vault as of the last inventory date."
+    },
+    {
+      "name": "size_in_bytes",
+      "type": "integer",
+      "description": "Total size, in bytes, of the archives in the vault as of the last inventory date."
+    },
+    {
+      "name": "policy",
+      "type": "json",
+      "description": "Contains the returned vault access policy as a JSON string."
+    },
+    {
+      "name": "policy_std",
+      "type": "json",
+      "description": "Contains the policy in a canonical form for easier searching."
+    },
+    {
+      "name": "vault_lock_policy",
+      "type": "json",
+      "description": "The vault lock policy."
+    },
+    {
+      "name": "vault_lock_policy_std",
+      "type": "json",
+      "description": "Contains the policy in a canonical form for easier searching."
+    },
+    {
+      "name": "vault_notification_config",
+      "type": "json",
+      "description": "Contains the notification configuration set on the vault."
+    },
+    {
+      "name": "tags_src",
+      "type": "json",
+      "description": "A list of tags associated with the vault."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": ""
+    }
+  ]
+}

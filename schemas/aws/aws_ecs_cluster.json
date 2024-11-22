@@ -1,0 +1,86 @@
+{
+  "table_name": "aws_ecs_cluster",
+  "table_description": "AWS ECS Cluster",
+  "columns": [
+    {
+      "name": "cluster_arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) that identifies the cluster."
+    },
+    {
+      "name": "cluster_name",
+      "type": "text",
+      "description": "A user-generated string that you use to identify your cluster."
+    },
+    {
+      "name": "active_services_count",
+      "type": "integer",
+      "description": "The number of services that are running on the cluster in an ACTIVE state."
+    },
+    {
+      "name": "pending_tasks_count",
+      "type": "integer",
+      "description": "The number of tasks in the cluster that are in the PENDING state."
+    },
+    {
+      "name": "registered_container_instances_count",
+      "type": "integer",
+      "description": "The number of container instances registered into the cluster. This includes container instances in both ACTIVE and DRAINING status."
+    },
+    {
+      "name": "running_tasks_count",
+      "type": "integer",
+      "description": "The number of tasks in the cluster that are in the RUNNING state."
+    },
+    {
+      "name": "status",
+      "type": "text",
+      "description": "The status of the cluster."
+    },
+    {
+      "name": "attachments_status",
+      "type": "text",
+      "description": "The status of the capacity providers associated with the cluster."
+    },
+    {
+      "name": "attachments",
+      "type": "json",
+      "description": "The resources attached to a cluster. When using a capacity provider with a cluster, the Auto Scaling plan that is created will be returned as a cluster attachment."
+    },
+    {
+      "name": "capacity_providers",
+      "type": "json",
+      "description": "The capacity providers associated with the cluster."
+    },
+    {
+      "name": "default_capacity_provider_strategy",
+      "type": "json",
+      "description": "The default capacity provider strategy for the cluster."
+    },
+    {
+      "name": "settings",
+      "type": "json",
+      "description": "The settings for the cluster. This parameter indicates whether CloudWatch Container Insights is enabled or disabled for a cluster."
+    },
+    {
+      "name": "statistics",
+      "type": "json",
+      "description": "Additional information about your clusters that are separated by launch type."
+    },
+    {
+      "name": "tags_src",
+      "type": "json",
+      "description": "A list of tags attached to the cluster."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": ""
+    }
+  ]
+}

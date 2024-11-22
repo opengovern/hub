@@ -1,0 +1,36 @@
+{
+  "table_name": "aws_ses_email_identity",
+  "table_description": "AWS SES Email Identity",
+  "columns": [
+    {
+      "name": "identity",
+      "type": "text",
+      "description": "The email identity."
+    },
+    {
+      "name": "arn",
+      "type": "text",
+      "description": "The ARN of the AWS SES identity."
+    },
+    {
+      "name": "verification_status",
+      "type": "text",
+      "description": "The verification status of the identity."
+    },
+    {
+      "name": "verification_token",
+      "type": "text",
+      "description": "[DEPRECATED] This column has been deprecated and will be removed in a future release. The verification token for a domain identity."
+    },
+    {
+      "name": "notification_attributes",
+      "type": "json",
+      "description": "Represents the notification attributes of an identity."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    }
+  ]
+}

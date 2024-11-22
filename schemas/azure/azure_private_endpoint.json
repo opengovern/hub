@@ -1,0 +1,101 @@
+{
+  "table_name": "azure_private_endpoint",
+  "table_description": "Azure Private Endpoint",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The name of the private endpoint."
+    },
+    {
+      "name": "id",
+      "type": "text",
+      "description": "The ID of the private endpoint."
+    },
+    {
+      "name": "etag",
+      "type": "text",
+      "description": "A unique read-only string that changes whenever the resource is updated."
+    },
+    {
+      "name": "type",
+      "type": "text",
+      "description": "The type of the private endpoint."
+    },
+    {
+      "name": "provisioning_state",
+      "type": "text",
+      "description": "The provisioning state of the private endpoint resource."
+    },
+    {
+      "name": "custom_network_interface_name",
+      "type": "text",
+      "description": "The custom name of the network interface attached to the private endpoint."
+    },
+    {
+      "name": "location",
+      "type": "text",
+      "description": "The location of the private endpoint."
+    },
+    {
+      "name": "extended_location",
+      "type": "json",
+      "description": "The extended location of the private endpoint."
+    },
+    {
+      "name": "subnet",
+      "type": "text",
+      "description": "The ID of the subnet from which the private IP will be allocated."
+    },
+    {
+      "name": "network_interfaces",
+      "type": "json",
+      "description": "An array of references to the network interfaces created for this private endpoint."
+    },
+    {
+      "name": "private_link_service_connections",
+      "type": "json",
+      "description": "A grouping of information about the connection to the remote resource."
+    },
+    {
+      "name": "manual_private_link_service_connections",
+      "type": "json",
+      "description": "A grouping of information about the connection to the remote resource. Used when the network admin does not have access to approve connections to the remote resource."
+    },
+    {
+      "name": "custom_dns_configs",
+      "type": "json",
+      "description": "An array of custom DNS configurations."
+    },
+    {
+      "name": "application_security_groups",
+      "type": "json",
+      "description": "Application security groups in which the private endpoint IP configuration is included."
+    },
+    {
+      "name": "ip_configurations",
+      "type": "json",
+      "description": "A list of IP configurations of the private endpoint."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": "Title of the resource."
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": "Tags associated with the resource."
+    },
+    {
+      "name": "region",
+      "type": "text",
+      "description": "The Azure region where the resource is located."
+    },
+    {
+      "name": "resource_group",
+      "type": "text",
+      "description": "The resource group in which the resource is located."
+    }
+  ]
+}

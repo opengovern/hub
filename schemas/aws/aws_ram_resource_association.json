@@ -1,0 +1,61 @@
+{
+  "table_name": "aws_ram_resource_association",
+  "table_description": "AWS RAM Resource Association",
+  "columns": [
+    {
+      "name": "resource_share_name",
+      "type": "text",
+      "description": "The name of the resource share."
+    },
+    {
+      "name": "resource_share_arn",
+      "type": "text",
+      "description": "The Amazon Resoure Name (ARN) of the resource share."
+    },
+    {
+      "name": "status",
+      "type": "text",
+      "description": "The current status of the association."
+    },
+    {
+      "name": "associated_entity",
+      "type": "text",
+      "description": "The Amazon Resoure Name (ARN) of the associated resource."
+    },
+    {
+      "name": "association_type",
+      "type": "text",
+      "description": "The type of entity included in this association."
+    },
+    {
+      "name": "creation_time",
+      "type": "timestamp with time zone",
+      "description": "The date and time when the association was created."
+    },
+    {
+      "name": "external",
+      "type": "boolean",
+      "description": "Indicates whether the principal belongs to the same organization in Organizations as the Amazon Web Services account that owns the resource share."
+    },
+    {
+      "name": "last_updated_time",
+      "type": "timestamp with time zone",
+      "description": "The date and time when the association was last updated.."
+    },
+    {
+      "name": "status_message",
+      "type": "text",
+      "description": "A message about the status of the association."
+    },
+    {
+      "name": "resource_share_permission",
+      "type": "json",
+      "description": "Information about an RAM permission that is associated with a resource share and any of its resources of a specified type."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    }
+  ]
+}

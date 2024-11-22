@@ -1,0 +1,16 @@
+{
+  "table_name": "azure_costmanagement_costbysubscription",
+  "table_description": "Azure CostManagement CostBySubscription",
+  "columns": [
+    {
+      "name": "id",
+      "type": "text",
+      "description": "The id of the costbysubscription."
+    },
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The name of the costbysubscription."
+    }
+  ]
+}

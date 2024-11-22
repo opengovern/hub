@@ -1,0 +1,2401 @@
+{
+  "count_of_named_tables": 479,
+  "count_of_named_columns": 6347,
+  "tables": [
+    {
+      "table_name": "aws_accessanalyzer_analyzer",
+      "description": "AWS Access Analyzer",
+      "count_of_columns": 11
+    },
+    {
+      "table_name": "aws_accessanalyzer_finding",
+      "description": "AWS Access Analyzer Finding",
+      "count_of_columns": 16
+    },
+    {
+      "table_name": "aws_account",
+      "description": "AWS Account",
+      "count_of_columns": 14
+    },
+    {
+      "table_name": "aws_account_alternate_contact",
+      "description": "AWS Account Alternate Contact",
+      "count_of_columns": 7
+    },
+    {
+      "table_name": "aws_account_contact",
+      "description": "AWS Account Contact",
+      "count_of_columns": 14
+    },
+    {
+      "table_name": "aws_acm_certificate",
+      "description": "AWS ACM Certificate",
+      "count_of_columns": 28
+    },
+    {
+      "table_name": "aws_acmpca_certificate_authority",
+      "description": "AWS ACMPCA CertificateAuthority",
+      "count_of_columns": 18
+    },
+    {
+      "table_name": "aws_amp_workspace",
+      "description": "AWS AMP Workspace",
+      "count_of_columns": 4
+    },
+    {
+      "table_name": "aws_amplify_app",
+      "description": "AWS Amplify App",
+      "count_of_columns": 25
+    },
+    {
+      "table_name": "aws_api_gateway_api_key",
+      "description": "AWS API Gateway API Key",
+      "count_of_columns": 12
+    },
+    {
+      "table_name": "aws_api_gateway_authorizer",
+      "description": "AWS API Gateway Authorizer",
+      "count_of_columns": 10
+    },
+    {
+      "table_name": "aws_api_gateway_domain_name",
+      "description": "AWS API Gateway Domain Name",
+      "count_of_columns": 18
+    },
+    {
+      "table_name": "aws_api_gateway_rest_api",
+      "description": "AWS API Gateway Rest API ",
+      "count_of_columns": 15
+    },
+    {
+      "table_name": "aws_api_gateway_stage",
+      "description": "AWS API Gateway Stage",
+      "count_of_columns": 20
+    },
+    {
+      "table_name": "aws_api_gateway_usage_plan",
+      "description": "AWS API Gateway Usage Plan",
+      "count_of_columns": 9
+    },
+    {
+      "table_name": "aws_api_gatewayv2_api",
+      "description": "AWS API Gateway Version 2 API",
+      "count_of_columns": 10
+    },
+    {
+      "table_name": "aws_api_gatewayv2_domain_name",
+      "description": "AWS API Gateway Version 2 Domain Name",
+      "count_of_columns": 6
+    },
+    {
+      "table_name": "aws_api_gatewayv2_integration",
+      "description": "AWS API Gateway Version 2 Integration",
+      "count_of_columns": 23
+    },
+    {
+      "table_name": "aws_api_gatewayv2_route",
+      "description": "AWS API Gateway Version 2 Route",
+      "count_of_columns": 15
+    },
+    {
+      "table_name": "aws_api_gatewayv2_stage",
+      "description": "AWS API Gateway Version 2 Stage",
+      "count_of_columns": 19
+    },
+    {
+      "table_name": "aws_appautoscaling_policy",
+      "description": "AWS Application Auto Scaling Policy",
+      "count_of_columns": 11
+    },
+    {
+      "table_name": "aws_appautoscaling_target",
+      "description": "AWS Application Auto Scaling Target",
+      "count_of_columns": 9
+    },
+    {
+      "table_name": "aws_appconfig_application",
+      "description": "AWS AppConfig Application",
+      "count_of_columns": 6
+    },
+    {
+      "table_name": "aws_appstream_application",
+      "description": "AWS AppStream Application",
+      "count_of_columns": 4
+    },
+    {
+      "table_name": "aws_appstream_fleet",
+      "description": "AWS AppStream Fleet",
+      "count_of_columns": 27
+    },
+    {
+      "table_name": "aws_appstream_image",
+      "description": "AWS AppStream Image",
+      "count_of_columns": 19
+    },
+    {
+      "table_name": "aws_appstream_stack",
+      "description": "AWS AppStream Stack",
+      "count_of_columns": 4
+    },
+    {
+      "table_name": "aws_athena_query_execution",
+      "description": "AWS Athena Query Execution",
+      "count_of_columns": 33
+    },
+    {
+      "table_name": "aws_athena_workgroup",
+      "description": "AWS Athena Workgroup",
+      "count_of_columns": 18
+    },
+    {
+      "table_name": "aws_auditmanager_assessment",
+      "description": "AWS Audit Manager Assessment",
+      "count_of_columns": 17
+    },
+    {
+      "table_name": "aws_auditmanager_control",
+      "description": "AWS Audit Manager Control",
+      "count_of_columns": 16
+    },
+    {
+      "table_name": "aws_auditmanager_evidence",
+      "description": "AWS Audit Manager Evidence",
+      "count_of_columns": 19
+    },
+    {
+      "table_name": "aws_auditmanager_evidence_folder",
+      "description": "AWS Audit Manager Evidence Folder",
+      "count_of_columns": 20
+    },
+    {
+      "table_name": "aws_auditmanager_framework",
+      "description": "AWS Audit Manager Framework",
+      "count_of_columns": 17
+    },
+    {
+      "table_name": "aws_availability_zone",
+      "description": "AWS Availability Zone",
+      "count_of_columns": 10
+    },
+    {
+      "table_name": "aws_backup_framework",
+      "description": "AWS Backup Framework",
+      "count_of_columns": 10
+    },
+    {
+      "table_name": "aws_backup_legal_hold",
+      "description": "AWS Backup Legal Hold",
+      "count_of_columns": 9
+    },
+    {
+      "table_name": "aws_backup_plan",
+      "description": "AWS Backup Plan",
+      "count_of_columns": 12
+    },
+    {
+      "table_name": "aws_backup_protected_resource",
+      "description": "AWS Backup Protected Resource",
+      "count_of_columns": 3
+    },
+    {
+      "table_name": "aws_backup_recovery_point",
+      "description": "AWS Backup Recovery Point",
+      "count_of_columns": 20
+    },
+    {
+      "table_name": "aws_backup_region_settings",
+      "description": "AWS Backup Region Settings",
+      "count_of_columns": 3
+    },
+    {
+      "table_name": "aws_backup_report_plan",
+      "description": "AWS Backup Report Plan",
+      "count_of_columns": 10
+    },
+    {
+      "table_name": "aws_backup_selection",
+      "description": "AWS Backup Selection",
+      "count_of_columns": 10
+    },
+    {
+      "table_name": "aws_backup_vault",
+      "description": "AWS Backup Vault",
+      "count_of_columns": 12
+    },
+    {
+      "table_name": "aws_batch_compute_environment",
+      "description": "AWS Batch ComputeEnvironment",
+      "count_of_columns": 5
+    },
+    {
+      "table_name": "aws_batch_job",
+      "description": "AWS Batch Job",
+      "count_of_columns": 4
+    },
+    {
+      "table_name": "aws_batchjob_queue",
+      "description": "AWS BatchJob Queue",
+      "count_of_columns": 5
+    },
+    {
+      "table_name": "aws_cloudformation_stack",
+      "description": "AWS CloudFormation Stack",
+      "count_of_columns": 23
+    },
+    {
+      "table_name": "aws_cloudformation_stack_resource",
+      "description": "AWS CloudFormation Stack Resource",
+      "count_of_columns": 12
+    },
+    {
+      "table_name": "aws_cloudformation_stack_set",
+      "description": "AWS CloudFormation StackSet",
+      "count_of_columns": 20
+    },
+    {
+      "table_name": "aws_cloudfront_cache_policy",
+      "description": "AWS CloudFront Cache Policy",
+      "count_of_columns": 10
+    },
+    {
+      "table_name": "aws_cloudfront_distribution",
+      "description": "AWS CloudFront Distribution",
+      "count_of_columns": 30
+    },
+    {
+      "table_name": "aws_cloudfront_function",
+      "description": "AWS CloudFront Function",
+      "count_of_columns": 7
+    },
+    {
+      "table_name": "aws_cloudfront_origin_access_control",
+      "description": "AWS CloudFront OriginAccessControl",
+      "count_of_columns": 5
+    },
+    {
+      "table_name": "aws_cloudfront_origin_access_identity",
+      "description": "AWS CloudFront Origin Access Identity",
+      "count_of_columns": 7
+    },
+    {
+      "table_name": "aws_cloudfront_origin_request_policy",
+      "description": "AWS CloudFront Origin Request Policy",
+      "count_of_columns": 9
+    },
+    {
+      "table_name": "aws_cloudfront_response_headers_policy",
+      "description": "AWS Cloudfront Response Headers Policy",
+      "count_of_columns": 8
+    },
+    {
+      "table_name": "aws_cloudfront_streamingdistribution",
+      "description": "AWS CloudFront StreamingDistribution",
+      "count_of_columns": 5
+    },
+    {
+      "table_name": "aws_cloudsearch_domain",
+      "description": "AWS CloudSearch Domain",
+      "count_of_columns": 14
+    },
+    {
+      "table_name": "aws_cloudtrail_channel",
+      "description": "AWS CloudTrail Channel",
+      "count_of_columns": 8
+    },
+    {
+      "table_name": "aws_cloudtrail_event_data_store",
+      "description": "AWS CloudTrail Event Data Store",
+      "count_of_columns": 11
+    },
+    {
+      "table_name": "aws_cloudtrail_import",
+      "description": "AWS CloudTrail Import",
+      "count_of_columns": 10
+    },
+    {
+      "table_name": "aws_cloudtrail_query",
+      "description": "AWS CloudTrail Query",
+      "count_of_columns": 13
+    },
+    {
+      "table_name": "aws_cloudtrail_trail",
+      "description": "AWS CloudTrail Trail",
+      "count_of_columns": 32
+    },
+    {
+      "table_name": "aws_cloudtrail_trail_event",
+      "description": "CloudTrail events from cloudwatch service.",
+      "count_of_columns": 33
+    },
+    {
+      "table_name": "aws_cloudwatch_alarm",
+      "description": "AWS CloudWatch Alarm",
+      "count_of_columns": 30
+    },
+    {
+      "table_name": "aws_cloudwatch_log_event",
+      "description": "AWS CloudWatch Log Event",
+      "count_of_columns": 8
+    },
+    {
+      "table_name": "aws_cloudwatch_log_group",
+      "description": "AWS CloudWatch Log Group",
+      "count_of_columns": 11
+    },
+    {
+      "table_name": "aws_cloudwatch_log_metric_filter",
+      "description": "AWS CloudWatch Log Metric Filter",
+      "count_of_columns": 8
+    },
+    {
+      "table_name": "aws_cloudwatch_log_resource_policy",
+      "description": "AWS CloudWatch Log Resource Policy",
+      "count_of_columns": 5
+    },
+    {
+      "table_name": "aws_cloudwatch_log_stream",
+      "description": "AWS CloudWatch Log Stream",
+      "count_of_columns": 9
+    },
+    {
+      "table_name": "aws_cloudwatch_log_subscription_filter",
+      "description": "AWS CloudWatch Log Subscription Filter",
+      "count_of_columns": 8
+    },
+    {
+      "table_name": "aws_cloudwatch_metric",
+      "description": "AWS CloudWatch Metric",
+      "count_of_columns": 5
+    },
+    {
+      "table_name": "aws_codeartifact_domain",
+      "description": "AWS Code Artifact Domain",
+      "count_of_columns": 14
+    },
+    {
+      "table_name": "aws_codeartifact_repository",
+      "description": "AWS CodeArtifact Repository",
+      "count_of_columns": 14
+    },
+    {
+      "table_name": "aws_codebuild_build",
+      "description": "AWS CodeBuild Build",
+      "count_of_columns": 32
+    },
+    {
+      "table_name": "aws_codebuild_project",
+      "description": "AWS CodeBuild Project",
+      "count_of_columns": 28
+    },
+    {
+      "table_name": "aws_codebuild_source_credential",
+      "description": "AWS CodeBuild Source Credential",
+      "count_of_columns": 4
+    },
+    {
+      "table_name": "aws_codecommit_repository",
+      "description": "AWS CodeCommit Repository",
+      "count_of_columns": 11
+    },
+    {
+      "table_name": "aws_codedeploy_app",
+      "description": "AWS CodeDeploy Application",
+      "count_of_columns": 10
+    },
+    {
+      "table_name": "aws_codedeploy_deployment_config",
+      "description": "AWS CodeDeploy Deployment Config",
+      "count_of_columns": 8
+    },
+    {
+      "table_name": "aws_codedeploy_deployment_group",
+      "description": "AWS CodeDeploy DeploymentGroup",
+      "count_of_columns": 26
+    },
+    {
+      "table_name": "aws_codepipeline_pipeline",
+      "description": "AWS Codepipeline Pipeline",
+      "count_of_columns": 12
+    },
+    {
+      "table_name": "aws_codestar_project",
+      "description": "AWS CodeStar Project",
+      "count_of_columns": 5
+    },
+    {
+      "table_name": "aws_config_aggregate_authorization",
+      "description": "AWS Config Aggregate Authorization",
+      "count_of_columns": 7
+    },
+    {
+      "table_name": "aws_config_configuration_recorder",
+      "description": "AWS Config Configuration Recorder",
+      "count_of_columns": 7
+    },
+    {
+      "table_name": "aws_config_conformance_pack",
+      "description": "AWS Config Conformance Pack",
+      "count_of_columns": 9
+    },
+    {
+      "table_name": "aws_config_retention_configuration",
+      "description": "AWS Config Retention Configuration",
+      "count_of_columns": 3
+    },
+    {
+      "table_name": "aws_config_rule",
+      "description": "AWS Config Rule",
+      "count_of_columns": 15
+    },
+    {
+      "table_name": "aws_cost_by_account_daily",
+      "description": "AWS Cost Explorer - Cost by Linked Account (Daily)",
+      "count_of_columns": 1
+    },
+    {
+      "table_name": "aws_cost_by_account_monthly",
+      "description": "AWS Cost Explorer - Cost by Linked Account (Monthly)",
+      "count_of_columns": 1
+    },
+    {
+      "table_name": "aws_cost_by_record_type_daily",
+      "description": "AWS Cost Explorer - Cost by Record Type (Daily)",
+      "count_of_columns": 2
+    },
+    {
+      "table_name": "aws_cost_by_record_type_monthly",
+      "description": "AWS Cost Explorer - Cost by Record Type (Monthly)",
+      "count_of_columns": 2
+    },
+    {
+      "table_name": "aws_cost_by_service_daily",
+      "description": "AWS Cost Explorer - Cost by Service (Daily)",
+      "count_of_columns": 2
+    },
+    {
+      "table_name": "aws_cost_by_service_monthly",
+      "description": "AWS Cost Explorer - Cost by Service (Monthly)",
+      "count_of_columns": 1
+    },
+    {
+      "table_name": "aws_cost_by_service_usage_type_daily",
+      "description": "AWS Cost Explorer - Cost by Service and Usage Type (Daily)",
+      "count_of_columns": 2
+    },
+    {
+      "table_name": "aws_cost_by_service_usage_type_monthly",
+      "description": "AWS Cost Explorer - Cost by Service and Usage Type (Monthly)",
+      "count_of_columns": 2
+    },
+    {
+      "table_name": "aws_cost_by_tag",
+      "description": "AWS Cost Explorer - Cost By Tags",
+      "count_of_columns": 5
+    },
+    {
+      "table_name": "aws_cost_forecast_daily",
+      "description": "AWS Cost Explorer - Cost Forecast (Daily)",
+      "count_of_columns": 3
+    },
+    {
+      "table_name": "aws_cost_forecast_monthly",
+      "description": "AWS Cost Explorer - Cost Forecast (Monthly)",
+      "count_of_columns": 3
+    },
+    {
+      "table_name": "aws_cost_usage",
+      "description": "AWS Cost Explorer - Cost and Usage",
+      "count_of_columns": 7
+    },
+    {
+      "table_name": "aws_dax_cluster",
+      "description": "AWS DAX Cluster",
+      "count_of_columns": 20
+    },
+    {
+      "table_name": "aws_dax_parameter",
+      "description": "AWS DAX Parameter",
+      "count_of_columns": 11
+    },
+    {
+      "table_name": "aws_dax_parameter_group",
+      "description": "AWS DAX Parameter Group",
+      "count_of_columns": 3
+    },
+    {
+      "table_name": "aws_dax_subnet_group",
+      "description": "AWS DAX Subnet Group",
+      "count_of_columns": 5
+    },
+    {
+      "table_name": "aws_directconnect_connection",
+      "description": "AWS DirectConnect Connection",
+      "count_of_columns": 5
+    },
+    {
+      "table_name": "aws_directconnect_gateway",
+      "description": "AWS DirectConnect Gateway",
+      "count_of_columns": 5
+    },
+    {
+      "table_name": "aws_directory_service_certificate",
+      "description": "AWS Directory Service Certificate",
+      "count_of_columns": 10
+    },
+    {
+      "table_name": "aws_directory_service_directory",
+      "description": "AWS Directory Service Directory",
+      "count_of_columns": 32
+    },
+    {
+      "table_name": "aws_directory_service_log_subscription",
+      "description": "AWS Directory Service Log Subscription",
+      "count_of_columns": 4
+    },
+    {
+      "table_name": "aws_dlm_lifecycle_policy",
+      "description": "AWS DLM Lifecycle Policy",
+      "count_of_columns": 12
+    },
+    {
+      "table_name": "aws_dms_endpoint",
+      "description": "AWS DMS Endpoint",
+      "count_of_columns": 38
+    },
+    {
+      "table_name": "aws_dms_replication_instance",
+      "description": "AWS DMS Replication Instance",
+      "count_of_columns": 26
+    },
+    {
+      "table_name": "aws_dms_replication_task",
+      "description": "AWS DMS Replication Task",
+      "count_of_columns": 22
+    },
+    {
+      "table_name": "aws_docdb_cluster",
+      "description": "AWS DocumentDB Cluster",
+      "count_of_columns": 35
+    },
+    {
+      "table_name": "aws_docdb_cluster_instance",
+      "description": "AWS DocumentDB Cluster Instance",
+      "count_of_columns": 36
+    },
+    {
+      "table_name": "aws_docdb_cluster_snapshot",
+      "description": "AWS DocumentDB Cluster Snapshot",
+      "count_of_columns": 21
+    },
+    {
+      "table_name": "aws_drs_job",
+      "description": "AWS DRS Job",
+      "count_of_columns": 10
+    },
+    {
+      "table_name": "aws_drs_recovery_instance",
+      "description": "AWS DRS RecoveryInstance",
+      "count_of_columns": 14
+    },
+    {
+      "table_name": "aws_drs_recovery_snapshot",
+      "description": "AWS DRS Recovery Snapshot",
+      "count_of_columns": 6
+    },
+    {
+      "table_name": "aws_drs_source_server",
+      "description": "AWS DRS SourceServer",
+      "count_of_columns": 16
+    },
+    {
+      "table_name": "aws_dynamodb_backup",
+      "description": "AWS DynamoDB Backup",
+      "count_of_columns": 11
+    },
+    {
+      "table_name": "aws_dynamodb_global_secondary_index",
+      "description": "AWS DynamoDb GlobalSecondaryIndex",
+      "count_of_columns": 3
+    },
+    {
+      "table_name": "aws_dynamodb_global_table",
+      "description": "AWS DynamoDB Global Table",
+      "count_of_columns": 6
+    },
+    {
+      "table_name": "aws_dynamodb_local_secondary_index",
+      "description": "AWS DynamoDb LocalSecondaryIndex",
+      "count_of_columns": 3
+    },
+    {
+      "table_name": "aws_dynamodb_table",
+      "description": "AWS DynamoDB Table",
+      "count_of_columns": 25
+    },
+    {
+      "table_name": "aws_dynamodb_table_export",
+      "description": "AWS DynamoDB Table Export",
+      "count_of_columns": 19
+    },
+    {
+      "table_name": "aws_dynamodbstreams_stream",
+      "description": "AWS DynamoDb Stream",
+      "count_of_columns": 3
+    },
+    {
+      "table_name": "aws_ebs_snapshot",
+      "description": "AWS EBS Snapshot",
+      "count_of_columns": 18
+    },
+    {
+      "table_name": "aws_ebs_volume",
+      "description": "AWS EBS Volume",
+      "count_of_columns": 20
+    },
+    {
+      "table_name": "aws_ec2_ami",
+      "description": "AWS EC2 AMI",
+      "count_of_columns": 30
+    },
+    {
+      "table_name": "aws_ec2_ami_shared",
+      "description": "AWS EC2 AMI - All public, private, and shared AMIs",
+      "count_of_columns": 28
+    },
+    {
+      "table_name": "aws_ec2_application_load_balancer",
+      "description": "AWS EC2 Application Load Balancer",
+      "count_of_columns": 18
+    },
+    {
+      "table_name": "aws_ec2_application_load_balancer_metric_request_count",
+      "description": "AWS EC2 Application Load Balancer Metrics - Request Count",
+      "count_of_columns": 1
+    },
+    {
+      "table_name": "aws_ec2_application_load_balancer_metric_request_count_daily",
+      "description": "AWS EC2 Application Load Balancer Metrics - Request Count (Daily)",
+      "count_of_columns": 1
+    },
+    {
+      "table_name": "aws_ec2_autoscaling_group",
+      "description": "AWS EC2 Autoscaling Group",
+      "count_of_columns": 40
+    },
+    {
+      "table_name": "aws_ec2_capacity_reservation",
+      "description": "AWS EC2 Capacity Reservation",
+      "count_of_columns": 22
+    },
+    {
+      "table_name": "aws_ec2_capacity_reservation_fleet",
+      "description": "AWS Ec2 CapacityReservationFleet",
+      "count_of_columns": 4
+    },
+    {
+      "table_name": "aws_ec2_classic_load_balancer",
+      "description": "AWS EC2 Classic Load Balancer",
+      "count_of_columns": 36
+    },
+    {
+      "table_name": "aws_ec2_client_vpn_endpoint",
+      "description": "AWS EC2 Client VPN Endpoint",
+      "count_of_columns": 24
+    },
+    {
+      "table_name": "aws_ec2_elasticip",
+      "description": "AWS EC2 ElasticIP",
+      "count_of_columns": 2
+    },
+    {
+      "table_name": "aws_ec2_fleet",
+      "description": "AWS Ec2 Fleet",
+      "count_of_columns": 4
+    },
+    {
+      "table_name": "aws_ec2_gateway_load_balancer",
+      "description": "AWS EC2 Gateway Load Balancer",
+      "count_of_columns": 17
+    },
+    {
+      "table_name": "aws_ec2_host",
+      "description": "AWS Ec2 Host",
+      "count_of_columns": 4
+    },
+    {
+      "table_name": "aws_ec2_instance",
+      "description": "AWS EC2 Instance",
+      "count_of_columns": 73
+    },
+    {
+      "table_name": "aws_ec2_instance_availability",
+      "description": "AWS EC2 Instance Availability",
+      "count_of_columns": 4
+    },
+    {
+      "table_name": "aws_ec2_instance_type",
+      "description": "AWS EC2 Instance Type",
+      "count_of_columns": 21
+    },
+    {
+      "table_name": "aws_ec2_ipam",
+      "description": "AWS EC2 Ipam",
+      "count_of_columns": 4
+    },
+    {
+      "table_name": "aws_ec2_ipam_pool",
+      "description": "AWS EC2 IpamPool",
+      "count_of_columns": 4
+    },
+    {
+      "table_name": "aws_ec2_key_pair",
+      "description": "AWS EC2 Key Pair",
+      "count_of_columns": 7
+    },
+    {
+      "table_name": "aws_ec2_launch_configuration",
+      "description": "AWS EC2 Launch Configuration",
+      "count_of_columns": 23
+    },
+    {
+      "table_name": "aws_ec2_launch_template",
+      "description": "AWS EC2 LaunchTemplate",
+      "count_of_columns": 11
+    },
+    {
+      "table_name": "aws_ec2_launch_template_version",
+      "description": "AWS EC2 Launch Template Version",
+      "count_of_columns": 20
+    },
+    {
+      "table_name": "aws_ec2_load_balancer_listener",
+      "description": "AWS EC2 Load Balancer Listener",
+      "count_of_columns": 9
+    },
+    {
+      "table_name": "aws_ec2_load_balancer_listener_rule",
+      "description": "AWS ElasticLoadBalancingV2 Rule",
+      "count_of_columns": 2
+    },
+    {
+      "table_name": "aws_ec2_localgateway",
+      "description": "AWS EC2 LocalGateway",
+      "count_of_columns": 3
+    },
+    {
+      "table_name": "aws_ec2_managed_prefix_list",
+      "description": "AWS EC2 Managed Prefix List",
+      "count_of_columns": 12
+    },
+    {
+      "table_name": "aws_ec2_managed_prefix_list_entry",
+      "description": "AWS EC2 Managed Prefix List Entry",
+      "count_of_columns": 4
+    },
+    {
+      "table_name": "aws_ec2_network_interface",
+      "description": "AWS EC2 Network Interface",
+      "count_of_columns": 35
+    },
+    {
+      "table_name": "aws_ec2_network_load_balancer",
+      "description": "AWS EC2 Network Load Balancer",
+      "count_of_columns": 18
+    },
+    {
+      "table_name": "aws_ec2_network_load_balancer_metric_net_flow_count",
+      "description": "AWS EC2 Network Load Balancer Metrics - Net Flow Count",
+      "count_of_columns": 1
+    },
+    {
+      "table_name": "aws_ec2_network_load_balancer_metric_net_flow_count_daily",
+      "description": "AWS EC2 Network Load Balancer Metrics - Net Flow Count (Daily)",
+      "count_of_columns": 1
+    },
+    {
+      "table_name": "aws_ec2_placement_group",
+      "description": "AWS Ec2 Placement Group",
+      "count_of_columns": 5
+    },
+    {
+      "table_name": "aws_ec2_regional_settings",
+      "description": "AWS EC2 Regional Settings",
+      "count_of_columns": 4
+    },
+    {
+      "table_name": "aws_ec2_reserved_instance",
+      "description": "AWS EC2 Reserved Instance",
+      "count_of_columns": 21
+    },
+    {
+      "table_name": "aws_ec2_spot_price",
+      "description": "AWS EC2 Spot Price History",
+      "count_of_columns": 7
+    },
+    {
+      "table_name": "aws_ec2_ssl_policy",
+      "description": "AWS EC2 SSL Policy",
+      "count_of_columns": 4
+    },
+    {
+      "table_name": "aws_ec2_target_group",
+      "description": "AWS EC2 Target Group",
+      "count_of_columns": 21
+    },
+    {
+      "table_name": "aws_ec2_transit_gateway",
+      "description": "AWS EC2 Transit Gateway",
+      "count_of_columns": 19
+    },
+    {
+      "table_name": "aws_ec2_transit_gateway_route",
+      "description": "AWS EC2 Transit Gateway Route",
+      "count_of_columns": 7
+    },
+    {
+      "table_name": "aws_ec2_transit_gateway_route_table",
+      "description": "AWS EC2 Transit Gateway Route Table",
+      "count_of_columns": 9
+    },
+    {
+      "table_name": "aws_ec2_transit_gateway_vpc_attachment",
+      "description": "",
+      "count_of_columns": 13
+    },
+    {
+      "table_name": "aws_ecr_image",
+      "description": "AWS ECR Image",
+      "count_of_columns": 12
+    },
+    {
+      "table_name": "aws_ecr_image_scan_finding",
+      "description": "AWS ECR Image Scan Finding",
+      "count_of_columns": 13
+    },
+    {
+      "table_name": "aws_ecr_registry",
+      "description": "AWS ECR Registry",
+      "count_of_columns": 3
+    },
+    {
+      "table_name": "aws_ecr_registry_scanning_configuration",
+      "description": "AWS ECR Registry Scanning Configuration",
+      "count_of_columns": 3
+    },
+    {
+      "table_name": "aws_ecr_repository",
+      "description": "AWS ECR Repository",
+      "count_of_columns": 19
+    },
+    {
+      "table_name": "aws_ecrpublic_registry",
+      "description": "AWS ECRPublic Registry}",
+      "count_of_columns": 4
+    },
+    {
+      "table_name": "aws_ecrpublic_repository",
+      "description": "AWS ECR Public Repository",
+      "count_of_columns": 11
+    },
+    {
+      "table_name": "aws_ecs_cluster",
+      "description": "AWS ECS Cluster",
+      "count_of_columns": 16
+    },
+    {
+      "table_name": "aws_ecs_container_instance",
+      "description": "AWS ECS Container Instance",
+      "count_of_columns": 19
+    },
+    {
+      "table_name": "aws_ecs_service",
+      "description": "AWS ECS Service",
+      "count_of_columns": 33
+    },
+    {
+      "table_name": "aws_ecs_task",
+      "description": "AWS ECS Task",
+      "count_of_columns": 39
+    },
+    {
+      "table_name": "aws_ecs_task_definition",
+      "description": "AWS ECS Task Definition",
+      "count_of_columns": 24
+    },
+    {
+      "table_name": "aws_ecs_task_set",
+      "description": "AWS ECS TaskSet",
+      "count_of_columns": 4
+    },
+    {
+      "table_name": "aws_efs_access_point",
+      "description": "AWS EFS Access Point",
+      "count_of_columns": 12
+    },
+    {
+      "table_name": "aws_efs_file_system",
+      "description": "AWS Elastic File System",
+      "count_of_columns": 20
+    },
+    {
+      "table_name": "aws_efs_mount_target",
+      "description": "AWS EFS Mount Target",
+      "count_of_columns": 12
+    },
+    {
+      "table_name": "aws_eks_addon",
+      "description": "AWS EKS Addon",
+      "count_of_columns": 11
+    },
+    {
+      "table_name": "aws_eks_addon_version",
+      "description": "AWS EKS Addon Version",
+      "count_of_columns": 7
+    },
+    {
+      "table_name": "aws_eks_cluster",
+      "description": "AWS Elastic Kubernetes Service Cluster",
+      "count_of_columns": 16
+    },
+    {
+      "table_name": "aws_eks_fargate_profile",
+      "description": "AWS Elastic Kubernetes Service Fargate Profile",
+      "count_of_columns": 10
+    },
+    {
+      "table_name": "aws_eks_identity_provider_config",
+      "description": "AWS EKS Identity Provider Config",
+      "count_of_columns": 15
+    },
+    {
+      "table_name": "aws_eks_node_group",
+      "description": "AWS EKS Node Group",
+      "count_of_columns": 24
+    },
+    {
+      "table_name": "aws_elastic_beanstalk_application",
+      "description": "AWS Elastic Beanstalk Application",
+      "count_of_columns": 11
+    },
+    {
+      "table_name": "aws_elastic_beanstalk_application_version",
+      "description": "AWS Elastic Beanstalk Application Version",
+      "count_of_columns": 13
+    },
+    {
+      "table_name": "aws_elastic_beanstalk_environment",
+      "description": "AWS ElasticBeanstalk Environment",
+      "count_of_columns": 26
+    },
+    {
+      "table_name": "aws_elastic_beanstalk_platform",
+      "description": "AWS ElasticBeanstalk Platform",
+      "count_of_columns": 3
+    },
+    {
+      "table_name": "aws_elasticache_cluster",
+      "description": "AWS ElastiCache Cluster",
+      "count_of_columns": 36
+    },
+    {
+      "table_name": "aws_elasticache_parameter_group",
+      "description": "AWS ElastiCache Parameter Group",
+      "count_of_columns": 6
+    },
+    {
+      "table_name": "aws_elasticache_redis_metric_cache_hits_hourly",
+      "description": "AWS Elasticache Redis CacheHits metric (Hourly)",
+      "count_of_columns": 1
+    },
+    {
+      "table_name": "aws_elasticache_replication_group",
+      "description": "AWS ElastiCache Replication Group",
+      "count_of_columns": 24
+    },
+    {
+      "table_name": "aws_elasticache_reserved_cache_node",
+      "description": "AWS ElastiCache Reserved Cache Node",
+      "count_of_columns": 14
+    },
+    {
+      "table_name": "aws_elasticache_subnet_group",
+      "description": "AWS ElastiCache Subnet Group",
+      "count_of_columns": 6
+    },
+    {
+      "table_name": "aws_elasticsearch_domain",
+      "description": "AWS Elasticsearch Domain",
+      "count_of_columns": 29
+    },
+    {
+      "table_name": "aws_emr_block_public_access_configuration",
+      "description": "AWS EMR Block Public Access Configuration",
+      "count_of_columns": 5
+    },
+    {
+      "table_name": "aws_emr_cluster",
+      "description": "AWS EMR Cluster",
+      "count_of_columns": 33
+    },
+    {
+      "table_name": "aws_emr_cluster_metric_is_idle",
+      "description": "AWS EMR Cluster Cloudwatch Metrics - IsIdle",
+      "count_of_columns": 1
+    },
+    {
+      "table_name": "aws_emr_instance",
+      "description": "AWS EMR Instance",
+      "count_of_columns": 16
+    },
+    {
+      "table_name": "aws_emr_instance_fleet",
+      "description": "AWS EMR Instance Fleet",
+      "count_of_columns": 15
+    },
+    {
+      "table_name": "aws_emr_instance_group",
+      "description": "AWS EMR Instance Group",
+      "count_of_columns": 22
+    },
+    {
+      "table_name": "aws_eventbridge_bus",
+      "description": "AWS EventBridge Bus",
+      "count_of_columns": 7
+    },
+    {
+      "table_name": "aws_eventbridge_rule",
+      "description": "AWS EventBridge Rule",
+      "count_of_columns": 13
+    },
+    {
+      "table_name": "aws_fms_policy",
+      "description": "AWS FMS Policy",
+      "count_of_columns": 5
+    },
+    {
+      "table_name": "aws_fsx_file_system",
+      "description": "AWS FSx File System",
+      "count_of_columns": 23
+    },
+    {
+      "table_name": "aws_fsx_snapshot",
+      "description": "AWS FSX Snapshot",
+      "count_of_columns": 5
+    },
+    {
+      "table_name": "aws_fsx_storage_virtual_machine",
+      "description": "AWS FSX StorageVirtualMachine",
+      "count_of_columns": 5
+    },
+    {
+      "table_name": "aws_fsx_task",
+      "description": "AWS FSX Task",
+      "count_of_columns": 4
+    },
+    {
+      "table_name": "aws_fsx_volume",
+      "description": "AWS FSX Volume",
+      "count_of_columns": 5
+    },
+    {
+      "table_name": "aws_glacier_vault",
+      "description": "AWS Glacier Vault",
+      "count_of_columns": 14
+    },
+    {
+      "table_name": "aws_globalaccelerator_accelerator",
+      "description": "AWS Global Accelerator Accelerator",
+      "count_of_columns": 13
+    },
+    {
+      "table_name": "aws_globalaccelerator_endpoint_group",
+      "description": "AWS Global Accelerator Endpoint Group",
+      "count_of_columns": 12
+    },
+    {
+      "table_name": "aws_globalaccelerator_listener",
+      "description": "AWS Global Accelerator Listener",
+      "count_of_columns": 6
+    },
+    {
+      "table_name": "aws_glue_catalog_database",
+      "description": "AWS Glue Catalog Database",
+      "count_of_columns": 9
+    },
+    {
+      "table_name": "aws_glue_catalog_table",
+      "description": "AWS Glue Catalog Table",
+      "count_of_columns": 21
+    },
+    {
+      "table_name": "aws_glue_connection",
+      "description": "AWS Glue Connection",
+      "count_of_columns": 11
+    },
+    {
+      "table_name": "aws_glue_crawler",
+      "description": "AWS Glue Crawler",
+      "count_of_columns": 21
+    },
+    {
+      "table_name": "aws_glue_data_catalog_encryption_settings",
+      "description": "AWS Glue Data Catalog Encryption Settings",
+      "count_of_columns": 2
+    },
+    {
+      "table_name": "aws_glue_data_quality_ruleset",
+      "description": "AWS Glue Data Quality Ruleset",
+      "count_of_columns": 11
+    },
+    {
+      "table_name": "aws_glue_dev_endpoint",
+      "description": "AWS Glue Dev Endpoint",
+      "count_of_columns": 26
+    },
+    {
+      "table_name": "aws_glue_job",
+      "description": "AWS Glue Job",
+      "count_of_columns": 23
+    },
+    {
+      "table_name": "aws_glue_security_configuration",
+      "description": "AWS Glue Security Configuration",
+      "count_of_columns": 6
+    },
+    {
+      "table_name": "aws_grafana_workspace",
+      "description": "AWS Grafana Workspace",
+      "count_of_columns": 5
+    },
+    {
+      "table_name": "aws_guardduty_detector",
+      "description": "AWS GuardDuty Detector",
+      "count_of_columns": 12
+    },
+    {
+      "table_name": "aws_guardduty_filter",
+      "description": "AWS GuardDuty Filter",
+      "count_of_columns": 8
+    },
+    {
+      "table_name": "aws_guardduty_finding",
+      "description": "AWS GuardDuty Finding",
+      "count_of_columns": 14
+    },
+    {
+      "table_name": "aws_guardduty_ipset",
+      "description": "AWS GuardDuty IPSet",
+      "count_of_columns": 8
+    },
+    {
+      "table_name": "aws_guardduty_member",
+      "description": "AWS GuardDuty Member",
+      "count_of_columns": 8
+    },
+    {
+      "table_name": "aws_guardduty_publishing_destination",
+      "description": "AWS GuardDuty Publishing Destination",
+      "count_of_columns": 9
+    },
+    {
+      "table_name": "aws_guardduty_threat_intel_set",
+      "description": "AWS GuardDuty ThreatIntelSet",
+      "count_of_columns": 8
+    },
+    {
+      "table_name": "aws_health_affected_entity",
+      "description": "AWS Health Affected Entity",
+      "count_of_columns": 7
+    },
+    {
+      "table_name": "aws_health_event",
+      "description": "AWS Health Event",
+      "count_of_columns": 10
+    },
+    {
+      "table_name": "aws_iam_access_advisor",
+      "description": "AWS IAM Access Advisor",
+      "count_of_columns": 8
+    },
+    {
+      "table_name": "aws_iam_access_key",
+      "description": "AWS IAM User Access Key",
+      "count_of_columns": 8
+    },
+    {
+      "table_name": "aws_iam_account_password_policy",
+      "description": "AWS IAM Account Password Policy",
+      "count_of_columns": 10
+    },
+    {
+      "table_name": "aws_iam_account_summary",
+      "description": "AWS IAM Account Summary",
+      "count_of_columns": 33
+    },
+    {
+      "table_name": "aws_iam_action",
+      "description": "AWS IAM Action",
+      "count_of_columns": 5
+    },
+    {
+      "table_name": "aws_iam_credential_report",
+      "description": "AWS IAM Credential Report",
+      "count_of_columns": 24
+    },
+    {
+      "table_name": "aws_iam_group",
+      "description": "AWS IAM Group",
+      "count_of_columns": 10
+    },
+    {
+      "table_name": "aws_iam_open_id_connect_provider",
+      "description": "AWS IAM OpenID Connect Provider",
+      "count_of_columns": 7
+    },
+    {
+      "table_name": "aws_iam_policy",
+      "description": "AWS IAM Policy",
+      "count_of_columns": 17
+    },
+    {
+      "table_name": "aws_iam_policy_attachment",
+      "description": "AWS IAM Policy Attachment",
+      "count_of_columns": 5
+    },
+    {
+      "table_name": "aws_iam_policy_simulator",
+      "description": "AWS IAM Policy Simulator",
+      "count_of_columns": 10
+    },
+    {
+      "table_name": "aws_iam_role",
+      "description": "AWS IAM Role",
+      "count_of_columns": 20
+    },
+    {
+      "table_name": "aws_iam_saml_provider",
+      "description": "AWS IAM Saml Provider",
+      "count_of_columns": 6
+    },
+    {
+      "table_name": "aws_iam_server_certificate",
+      "description": "AWS IAM Server Certificate",
+      "count_of_columns": 12
+    },
+    {
+      "table_name": "aws_iam_service_specific_credential",
+      "description": "AWS IAM User Service Specific Credential",
+      "count_of_columns": 7
+    },
+    {
+      "table_name": "aws_iam_ssh_public_key",
+      "description": "AWS IAM User Access Key",
+      "count_of_columns": 5
+    },
+    {
+      "table_name": "aws_iam_user",
+      "description": "AWS IAM User",
+      "count_of_columns": 18
+    },
+    {
+      "table_name": "aws_iam_virtual_mfa_device",
+      "description": "AWS IAM Virtual MFA device",
+      "count_of_columns": 9
+    },
+    {
+      "table_name": "aws_identitystore_group",
+      "description": "AWS Identity Store Group",
+      "count_of_columns": 5
+    },
+    {
+      "table_name": "aws_identitystore_group_membership",
+      "description": "AWS Identity Store Group Membership",
+      "count_of_columns": 5
+    },
+    {
+      "table_name": "aws_identitystore_user",
+      "description": "AWS Identity Store User",
+      "count_of_columns": 7
+    },
+    {
+      "table_name": "aws_imagebuilder_image",
+      "description": "AWS ImageBuilder Image",
+      "count_of_columns": 4
+    },
+    {
+      "table_name": "aws_inspector2_coverage",
+      "description": "AWS Inspector2 Coverage",
+      "count_of_columns": 18
+    },
+    {
+      "table_name": "aws_inspector2_coverage_statistics",
+      "description": "AWS Inspector2 Coverage Statistics",
+      "count_of_columns": 2
+    },
+    {
+      "table_name": "aws_inspector2_finding",
+      "description": "AWS Inspector2 Finding",
+      "count_of_columns": 52
+    },
+    {
+      "table_name": "aws_inspector2_member",
+      "description": "AWS Inspector2 Member",
+      "count_of_columns": 6
+    },
+    {
+      "table_name": "aws_inspector_assessment_run",
+      "description": "AWS Inspector Assessment Run",
+      "count_of_columns": 16
+    },
+    {
+      "table_name": "aws_inspector_assessment_target",
+      "description": "AWS Inspector Assessment Target",
+      "count_of_columns": 6
+    },
+    {
+      "table_name": "aws_inspector_assessment_template",
+      "description": "AWS Inspector Assessment Template",
+      "count_of_columns": 13
+    },
+    {
+      "table_name": "aws_inspector_exclusion",
+      "description": "AWS Inspector Exclusion",
+      "count_of_columns": 7
+    },
+    {
+      "table_name": "aws_inspector_finding",
+      "description": "AWS Inspector Finding",
+      "count_of_columns": 21
+    },
+    {
+      "table_name": "aws_kafka_cluster",
+      "description": "AWS Kafka Cluster",
+      "count_of_columns": 4
+    },
+    {
+      "table_name": "aws_keyspaces_keyspace",
+      "description": "AWS Keyspaces Keyspace",
+      "count_of_columns": 4
+    },
+    {
+      "table_name": "aws_keyspaces_table",
+      "description": "AWS Keyspaces Table",
+      "count_of_columns": 4
+    },
+    {
+      "table_name": "aws_kinesis_consumer",
+      "description": "AWS Kinesis Consumer",
+      "count_of_columns": 6
+    },
+    {
+      "table_name": "aws_kinesis_firehose_delivery_stream",
+      "description": "AWS Kinesis Firehose Delivery Stream",
+      "count_of_columns": 15
+    },
+    {
+      "table_name": "aws_kinesis_stream",
+      "description": "AWS Kinesis Stream",
+      "count_of_columns": 15
+    },
+    {
+      "table_name": "aws_kinesis_video_stream",
+      "description": "AWS Kinesis Video Stream",
+      "count_of_columns": 11
+    },
+    {
+      "table_name": "aws_kinesisanalyticsv2_application",
+      "description": "AWS Kinesis Analytics V2 Application",
+      "count_of_columns": 14
+    },
+    {
+      "table_name": "aws_kms_alias",
+      "description": "AWS KMS Alias",
+      "count_of_columns": 6
+    },
+    {
+      "table_name": "aws_kms_key",
+      "description": "AWS KMS Key",
+      "count_of_columns": 20
+    },
+    {
+      "table_name": "aws_kms_key_rotation",
+      "description": "AWS KMS Key Rotation",
+      "count_of_columns": 5
+    },
+    {
+      "table_name": "aws_lambda_alias",
+      "description": "AWS Lambda Alias",
+      "count_of_columns": 10
+    },
+    {
+      "table_name": "aws_lambda_function",
+      "description": "AWS Lambda Function",
+      "count_of_columns": 39
+    },
+    {
+      "table_name": "aws_lambda_layer",
+      "description": "AWS Lambda Layer",
+      "count_of_columns": 10
+    },
+    {
+      "table_name": "aws_lambda_layer_version",
+      "description": "AWS Lambda Layer Version",
+      "count_of_columns": 14
+    },
+    {
+      "table_name": "aws_lambda_version",
+      "description": "AWS Lambda Version",
+      "count_of_columns": 40
+    },
+    {
+      "table_name": "aws_lightsail_instance",
+      "description": "AWS Lightsail Instance",
+      "count_of_columns": 24
+    },
+    {
+      "table_name": "aws_macie2_classification_job",
+      "description": "AWS Macie2 Classification Job",
+      "count_of_columns": 18
+    },
+    {
+      "table_name": "aws_media_store_container",
+      "description": "AWS Media Store Container",
+      "count_of_columns": 11
+    },
+    {
+      "table_name": "aws_memorydb_cluster",
+      "description": "AWS MemoryDb Cluster",
+      "count_of_columns": 4
+    },
+    {
+      "table_name": "aws_mgn_application",
+      "description": "AWS MGN Application",
+      "count_of_columns": 11
+    },
+    {
+      "table_name": "aws_mq_broker",
+      "description": "AWS MQ Broker",
+      "count_of_columns": 34
+    },
+    {
+      "table_name": "aws_msk_cluster",
+      "description": "AWS Managed Streaming for Apache Kafka",
+      "count_of_columns": 13
+    },
+    {
+      "table_name": "aws_msk_serverless_cluster",
+      "description": "AWS Serverless Managed Streaming for Apache Kafka",
+      "count_of_columns": 12
+    },
+    {
+      "table_name": "aws_mwaa_environment",
+      "description": "AWS MWAA Environment",
+      "count_of_columns": 4
+    },
+    {
+      "table_name": "aws_neptune_database",
+      "description": "AWS Neptune Database",
+      "count_of_columns": 5
+    },
+    {
+      "table_name": "aws_neptune_db_cluster",
+      "description": "AWS Neptune DB Cluster",
+      "count_of_columns": 39
+    },
+    {
+      "table_name": "aws_neptune_db_cluster_snapshot",
+      "description": "AWS Neptune DB Cluster Snapshot",
+      "count_of_columns": 22
+    },
+    {
+      "table_name": "aws_networkfirewall_firewall",
+      "description": "AWS Network Firewall Firewall",
+      "count_of_columns": 16
+    },
+    {
+      "table_name": "aws_networkfirewall_firewall_policy",
+      "description": "AWS Network Firewall Policy",
+      "count_of_columns": 14
+    },
+    {
+      "table_name": "aws_networkfirewall_rule_group",
+      "description": "AWS Network Firewall Rule Group",
+      "count_of_columns": 15
+    },
+    {
+      "table_name": "aws_oam_link",
+      "description": "AWS OAM Link",
+      "count_of_columns": 8
+    },
+    {
+      "table_name": "aws_oam_sink",
+      "description": "AWS OAM Sink",
+      "count_of_columns": 5
+    },
+    {
+      "table_name": "aws_opensearch_domain",
+      "description": "AWS OpenSearch Domain",
+      "count_of_columns": 28
+    },
+    {
+      "table_name": "aws_opensearchserverless_collection",
+      "description": "AWS OpenSearchServerless Collection",
+      "count_of_columns": 4
+    },
+    {
+      "table_name": "aws_opsworkscm_server",
+      "description": "AWS OpsWorksCM Server",
+      "count_of_columns": 4
+    },
+    {
+      "table_name": "aws_organizations_account",
+      "description": "AWS Organizations Account",
+      "count_of_columns": 11
+    },
+    {
+      "table_name": "aws_organizations_organization",
+      "description": "AWS Organizations Organization",
+      "count_of_columns": 3
+    },
+    {
+      "table_name": "aws_organizations_organizational_unit",
+      "description": "AWS Organizations Organizational Unit",
+      "count_of_columns": 7
+    },
+    {
+      "table_name": "aws_organizations_policy",
+      "description": "AWS Organizations Policy",
+      "count_of_columns": 8
+    },
+    {
+      "table_name": "aws_organizations_policy_target",
+      "description": "AWS Organizations Policy Target",
+      "count_of_columns": 9
+    },
+    {
+      "table_name": "aws_organizations_root",
+      "description": "AWS Organizations Root",
+      "count_of_columns": 5
+    },
+    {
+      "table_name": "aws_pinpoint_app",
+      "description": "AWS Pinpoint App",
+      "count_of_columns": 9
+    },
+    {
+      "table_name": "aws_pipes_pipe",
+      "description": "AWS Pipes Pipe",
+      "count_of_columns": 18
+    },
+    {
+      "table_name": "aws_pricing_product",
+      "description": "AWS Pricing Product",
+      "count_of_columns": 16
+    },
+    {
+      "table_name": "aws_pricing_service_attribute",
+      "description": "AWS Pricing Service Attribute",
+      "count_of_columns": 3
+    },
+    {
+      "table_name": "aws_ram_principal_association",
+      "description": "AWS RAM Principal Association",
+      "count_of_columns": 11
+    },
+    {
+      "table_name": "aws_ram_resource_association",
+      "description": "AWS RAM Resource Association",
+      "count_of_columns": 11
+    },
+    {
+      "table_name": "aws_rds_db_cluster",
+      "description": "AWS RDS DB Cluster",
+      "count_of_columns": 57
+    },
+    {
+      "table_name": "aws_rds_db_cluster_parameter_group",
+      "description": "AWS RDS DB Cluster Parameter Group",
+      "count_of_columns": 8
+    },
+    {
+      "table_name": "aws_rds_db_cluster_snapshot",
+      "description": "AWS RDS DB Cluster Snapshot",
+      "count_of_columns": 24
+    },
+    {
+      "table_name": "aws_rds_db_engine_version",
+      "description": "AWS RDS DB Engine Version",
+      "count_of_columns": 30
+    },
+    {
+      "table_name": "aws_rds_db_event_subscription",
+      "description": "AWS RDS DB Event Subscription",
+      "count_of_columns": 11
+    },
+    {
+      "table_name": "aws_rds_db_instance",
+      "description": "AWS RDS DB Instance",
+      "count_of_columns": 72
+    },
+    {
+      "table_name": "aws_rds_db_instance_automated_backup",
+      "description": "AWS RDS DB Instance Automated Backup",
+      "count_of_columns": 28
+    },
+    {
+      "table_name": "aws_rds_db_option_group",
+      "description": "AWS RDS DB Option Group",
+      "count_of_columns": 11
+    },
+    {
+      "table_name": "aws_rds_db_parameter_group",
+      "description": "AWS RDS DB Parameter Group",
+      "count_of_columns": 8
+    },
+    {
+      "table_name": "aws_rds_db_proxy",
+      "description": "AWS RDS DB Proxy",
+      "count_of_columns": 17
+    },
+    {
+      "table_name": "aws_rds_db_recommendation",
+      "description": "AWS RDS DB Recommendation",
+      "count_of_columns": 21
+    },
+    {
+      "table_name": "aws_rds_db_snapshot",
+      "description": "AWS RDS DB Snapshot",
+      "count_of_columns": 32
+    },
+    {
+      "table_name": "aws_rds_db_subnet_group",
+      "description": "AWS RDS DB Subnet Group",
+      "count_of_columns": 9
+    },
+    {
+      "table_name": "aws_rds_global_cluster",
+      "description": "AWS RDS GlobalCluster",
+      "count_of_columns": 4
+    },
+    {
+      "table_name": "aws_rds_reserved_db_instance",
+      "description": "AWS RDS Reserved DB Instance",
+      "count_of_columns": 17
+    },
+    {
+      "table_name": "aws_redshift_cluster",
+      "description": "AWS Redshift Cluster",
+      "count_of_columns": 53
+    },
+    {
+      "table_name": "aws_redshift_event_subscription",
+      "description": "AWS Redshift Event Subscription",
+      "count_of_columns": 13
+    },
+    {
+      "table_name": "aws_redshift_parameter_group",
+      "description": "AWS Redshift Parameter Group",
+      "count_of_columns": 7
+    },
+    {
+      "table_name": "aws_redshift_snapshot",
+      "description": "AWS Redshift Snapshot",
+      "count_of_columns": 36
+    },
+    {
+      "table_name": "aws_redshift_subnet_group",
+      "description": "AWS Redshift Subnet Group",
+      "count_of_columns": 8
+    },
+    {
+      "table_name": "aws_redshiftserverless_namespace",
+      "description": "AWS Redshift Serverless Namespace",
+      "count_of_columns": 14
+    },
+    {
+      "table_name": "aws_redshiftserverless_snapshot",
+      "description": "AWS RedshiftServerless Snapshot",
+      "count_of_columns": 4
+    },
+    {
+      "table_name": "aws_redshiftserverless_workgroup",
+      "description": "AWS Redshift Serverless Workgroup",
+      "count_of_columns": 16
+    },
+    {
+      "table_name": "aws_region",
+      "description": "AWS Region",
+      "count_of_columns": 5
+    },
+    {
+      "table_name": "aws_resource_explorer_index",
+      "description": "AWS Resource Explorer Index",
+      "count_of_columns": 3
+    },
+    {
+      "table_name": "aws_resource_explorer_search",
+      "description": "AWS Resource Explorer Search",
+      "count_of_columns": 9
+    },
+    {
+      "table_name": "aws_resource_explorer_supported_resource_type",
+      "description": "AWS Resource Explorer Supported Resource Type",
+      "count_of_columns": 2
+    },
+    {
+      "table_name": "aws_resourcegroups_group",
+      "description": "AWS ResourceGroups Group",
+      "count_of_columns": 4
+    },
+    {
+      "table_name": "aws_route53_domain",
+      "description": "AWS Route53 Domain",
+      "count_of_columns": 25
+    },
+    {
+      "table_name": "aws_route53_health_check",
+      "description": "AWS Route53 Health Check",
+      "count_of_columns": 11
+    },
+    {
+      "table_name": "aws_route53_query_log",
+      "description": "AWS Route53 Query Logging Configuration",
+      "count_of_columns": 4
+    },
+    {
+      "table_name": "aws_route53_record",
+      "description": "AWS Route53 Record",
+      "count_of_columns": 15
+    },
+    {
+      "table_name": "aws_route53_resolver_endpoint",
+      "description": "AWS Route53 Resolver Endpoint",
+      "count_of_columns": 16
+    },
+    {
+      "table_name": "aws_route53_resolver_query_log_config",
+      "description": "AWS Route53 Resolver Query Logging Configuration",
+      "count_of_columns": 12
+    },
+    {
+      "table_name": "aws_route53_resolver_rule",
+      "description": "AWS Route53 Resolver Rule",
+      "count_of_columns": 18
+    },
+    {
+      "table_name": "aws_route53_traffic_policy",
+      "description": "AWS Route53 Traffic Policy",
+      "count_of_columns": 7
+    },
+    {
+      "table_name": "aws_route53_traffic_policy_instance",
+      "description": "AWS Route53 Traffic Policy Instance",
+      "count_of_columns": 10
+    },
+    {
+      "table_name": "aws_route53_zone",
+      "description": "AWS Route53 Zone",
+      "count_of_columns": 16
+    },
+    {
+      "table_name": "aws_s3_access_point",
+      "description": "AWS S3 Access Point",
+      "count_of_columns": 14
+    },
+    {
+      "table_name": "aws_s3_account_settings",
+      "description": "AWS S3 Account Block Public Access Settings",
+      "count_of_columns": 5
+    },
+    {
+      "table_name": "aws_s3_bucket",
+      "description": "AWS S3 Bucket",
+      "count_of_columns": 25
+    },
+    {
+      "table_name": "aws_s3_bucket_intelligent_tiering_configuration",
+      "description": "AWS S3 Bucket Intelligent Tiering Configuration",
+      "count_of_columns": 6
+    },
+    {
+      "table_name": "aws_s3_multi_region_access_point",
+      "description": "AWS S3 Multi Region Access Point",
+      "count_of_columns": 7
+    },
+    {
+      "table_name": "aws_s3_object",
+      "description": "List AWS S3 Objects in S3 buckets by bucket name.",
+      "count_of_columns": 48
+    },
+    {
+      "table_name": "aws_sagemaker_app",
+      "description": "AWS Sagemaker App",
+      "count_of_columns": 12
+    },
+    {
+      "table_name": "aws_sagemaker_domain",
+      "description": "AWS Sagemaker Domain",
+      "count_of_columns": 21
+    },
+    {
+      "table_name": "aws_sagemaker_endpoint_configuration",
+      "description": "AWS Sagemaker Endpoint Configuration",
+      "count_of_columns": 9
+    },
+    {
+      "table_name": "aws_sagemaker_model",
+      "description": "AWS Sagemaker Model",
+      "count_of_columns": 12
+    },
+    {
+      "table_name": "aws_sagemaker_notebook_instance",
+      "description": "AWS Sagemaker Notebook Instance",
+      "count_of_columns": 23
+    },
+    {
+      "table_name": "aws_sagemaker_training_job",
+      "description": "AWS SageMaker Training Job",
+      "count_of_columns": 42
+    },
+    {
+      "table_name": "aws_secretsmanager_secret",
+      "description": "AWS Secrets Manager Secret",
+      "count_of_columns": 21
+    },
+    {
+      "table_name": "aws_securityhub_action_target",
+      "description": "AWS Security Hub Action Target",
+      "count_of_columns": 4
+    },
+    {
+      "table_name": "aws_securityhub_finding",
+      "description": "AWS Security Hub Finding",
+      "count_of_columns": 40
+    },
+    {
+      "table_name": "aws_securityhub_finding_aggregator",
+      "description": "AWS Security Hub Finding Aggregator",
+      "count_of_columns": 4
+    },
+    {
+      "table_name": "aws_securityhub_hub",
+      "description": "AWS Security Hub",
+      "count_of_columns": 6
+    },
+    {
+      "table_name": "aws_securityhub_insight",
+      "description": "AWS Securityhub Insight",
+      "count_of_columns": 5
+    },
+    {
+      "table_name": "aws_securityhub_member",
+      "description": "AWS Securityhub Member",
+      "count_of_columns": 8
+    },
+    {
+      "table_name": "aws_securityhub_product",
+      "description": "AWS Securityhub Product",
+      "count_of_columns": 10
+    },
+    {
+      "table_name": "aws_securityhub_standards_control",
+      "description": "AWS Security Hub Standards Control",
+      "count_of_columns": 10
+    },
+    {
+      "table_name": "aws_securityhub_standards_subscription",
+      "description": "AWS Security Hub Standards Subscription",
+      "count_of_columns": 10
+    },
+    {
+      "table_name": "aws_securitylake_data_lake",
+      "description": "AWS Security Lake Data Lake",
+      "count_of_columns": 8
+    },
+    {
+      "table_name": "aws_securitylake_subscriber",
+      "description": "AWS Security Lake Subscriber",
+      "count_of_columns": 15
+    },
+    {
+      "table_name": "aws_serverlessapplicationrepository_application",
+      "description": "AWS Serverless Application Repository Application",
+      "count_of_columns": 15
+    },
+    {
+      "table_name": "aws_service_discovery_instance",
+      "description": "AWS Service Discovery Instance",
+      "count_of_columns": 11
+    },
+    {
+      "table_name": "aws_service_discovery_namespace",
+      "description": "AWS Service Discovery Namespace",
+      "count_of_columns": 12
+    },
+    {
+      "table_name": "aws_service_discovery_service",
+      "description": "AWS Service Discovery Service",
+      "count_of_columns": 15
+    },
+    {
+      "table_name": "aws_servicecatalog_portfolio",
+      "description": "AWS Service Catalog Portfolio",
+      "count_of_columns": 11
+    },
+    {
+      "table_name": "aws_servicecatalog_product",
+      "description": "AWS Service Catalog Product",
+      "count_of_columns": 18
+    },
+    {
+      "table_name": "aws_servicequotas_default_service_quota",
+      "description": "AWS ServiceQuotas Default Service Quota",
+      "count_of_columns": 13
+    },
+    {
+      "table_name": "aws_servicequotas_service",
+      "description": "AWS Service Quotas Service",
+      "count_of_columns": 3
+    },
+    {
+      "table_name": "aws_servicequotas_service_quota",
+      "description": "AWS ServiceQuotas Service Quota",
+      "count_of_columns": 15
+    },
+    {
+      "table_name": "aws_servicequotas_service_quota_change_request",
+      "description": "AWS ServiceQuotas Service Quota Change Request",
+      "count_of_columns": 17
+    },
+    {
+      "table_name": "aws_ses_configuration_set",
+      "description": "AWS SES ConfigurationSet",
+      "count_of_columns": 3
+    },
+    {
+      "table_name": "aws_ses_domain_identity",
+      "description": "AWS SES Domain Identity",
+      "count_of_columns": 8
+    },
+    {
+      "table_name": "aws_ses_email_identity",
+      "description": "AWS SES Email Identity",
+      "count_of_columns": 6
+    },
+    {
+      "table_name": "aws_ses_identity",
+      "description": "AWS SES Identity",
+      "count_of_columns": 4
+    },
+    {
+      "table_name": "aws_sesv2_emailidentity",
+      "description": "AWS SESv2 EmailIdentity",
+      "count_of_columns": 4
+    },
+    {
+      "table_name": "aws_sfn_state_machine",
+      "description": "AWS Step Functions State Machine",
+      "count_of_columns": 12
+    },
+    {
+      "table_name": "aws_sfn_state_machine_execution",
+      "description": "AWS Step Functions State Machine Execution",
+      "count_of_columns": 12
+    },
+    {
+      "table_name": "aws_sfn_state_machine_execution_history",
+      "description": "AWS Step Functions State Machine Execution History",
+      "count_of_columns": 38
+    },
+    {
+      "table_name": "aws_shield_protection_group",
+      "description": "AWS Shield ProtectionGroup",
+      "count_of_columns": 4
+    },
+    {
+      "table_name": "aws_simspaceweaver_simulation",
+      "description": "AWS SimSpace Weaver Simulation",
+      "count_of_columns": 14
+    },
+    {
+      "table_name": "aws_sns_topic",
+      "description": "AWS SNS Topic",
+      "count_of_columns": 29
+    },
+    {
+      "table_name": "aws_sns_topic_subscription",
+      "description": "AWS SNS Topic Subscription",
+      "count_of_columns": 13
+    },
+    {
+      "table_name": "aws_sqs_queue",
+      "description": "AWS SQS Queue",
+      "count_of_columns": 18
+    },
+    {
+      "table_name": "aws_ssm_association",
+      "description": "AWS SSM Association",
+      "count_of_columns": 25
+    },
+    {
+      "table_name": "aws_ssm_document",
+      "description": "AWS SSM Document",
+      "count_of_columns": 33
+    },
+    {
+      "table_name": "aws_ssm_document_permission",
+      "description": "AWS SSM Document Permission",
+      "count_of_columns": 5
+    },
+    {
+      "table_name": "aws_ssm_inventory",
+      "description": "AWS SSM Inventory",
+      "count_of_columns": 7
+    },
+    {
+      "table_name": "aws_ssm_inventory_entry",
+      "description": "AWS SSM Inventory Entry",
+      "count_of_columns": 6
+    },
+    {
+      "table_name": "aws_ssm_maintenance_window",
+      "description": "AWS SSM Maintenance Window",
+      "count_of_columns": 20
+    },
+    {
+      "table_name": "aws_ssm_managed_instance",
+      "description": "AWS SSM Managed Instance",
+      "count_of_columns": 20
+    },
+    {
+      "table_name": "aws_ssm_managed_instance_compliance",
+      "description": "AWS SSM Managed Instance Compliance",
+      "count_of_columns": 10
+    },
+    {
+      "table_name": "aws_ssm_managed_instance_patch_state",
+      "description": "AWS SSM Managed Instance Patch State",
+      "count_of_columns": 22
+    },
+    {
+      "table_name": "aws_ssm_parameter",
+      "description": "AWS SSM Parameter",
+      "count_of_columns": 16
+    },
+    {
+      "table_name": "aws_ssm_patch_baseline",
+      "description": "AWS SSM Patch Baseline",
+      "count_of_columns": 18
+    },
+    {
+      "table_name": "aws_ssoadmin_account_assignment",
+      "description": "AWS SSO Account Assignment",
+      "count_of_columns": 5
+    },
+    {
+      "table_name": "aws_ssoadmin_instance",
+      "description": "AWS SSO Instance",
+      "count_of_columns": 3
+    },
+    {
+      "table_name": "aws_ssoadmin_managed_policy_attachment",
+      "description": "AWS SSO Managed Policy Attachment",
+      "count_of_columns": 5
+    },
+    {
+      "table_name": "aws_ssoadmin_permission_set",
+      "description": "AWS SSO Permission Set",
+      "count_of_columns": 10
+    },
+    {
+      "table_name": "aws_storagegateway_storage_gateway",
+      "description": "AWS StorageGateway StorageGateway",
+      "count_of_columns": 5
+    },
+    {
+      "table_name": "aws_sts_caller_identity",
+      "description": "AWS STS Caller Identity",
+      "count_of_columns": 3
+    },
+    {
+      "table_name": "aws_tagging_resource",
+      "description": "AWS Tagging Resource",
+      "count_of_columns": 8
+    },
+    {
+      "table_name": "aws_timestream_database",
+      "description": "AWS Timestream Database",
+      "count_of_columns": 4
+    },
+    {
+      "table_name": "aws_user_effective_access",
+      "description": "AWS User Effective Access",
+      "count_of_columns": 6
+    },
+    {
+      "table_name": "aws_vpc",
+      "description": "AWS VPC",
+      "count_of_columns": 13
+    },
+    {
+      "table_name": "aws_vpc_customer_gateway",
+      "description": "AWS VPC Customer Gateway",
+      "count_of_columns": 10
+    },
+    {
+      "table_name": "aws_vpc_dhcp_options",
+      "description": "AWS VPC DHCP Options",
+      "count_of_columns": 10
+    },
+    {
+      "table_name": "aws_vpc_egress_only_internet_gateway",
+      "description": "AWS VPC Egress Only Internet Gateway",
+      "count_of_columns": 5
+    },
+    {
+      "table_name": "aws_vpc_eip",
+      "description": "AWS VPC Elastic IP",
+      "count_of_columns": 17
+    },
+    {
+      "table_name": "aws_vpc_eip_address_transfer",
+      "description": "AWS VPC Elastic IP Address Transfer",
+      "count_of_columns": 7
+    },
+    {
+      "table_name": "aws_vpc_endpoint",
+      "description": "AWS VPC Endpoint",
+      "count_of_columns": 19
+    },
+    {
+      "table_name": "aws_vpc_endpoint_service",
+      "description": "AWS VPC Endpoint Service",
+      "count_of_columns": 16
+    },
+    {
+      "table_name": "aws_vpc_flow_log",
+      "description": "AWS VPC Flowlog",
+      "count_of_columns": 17
+    },
+    {
+      "table_name": "aws_vpc_flow_log_event",
+      "description": "AWS VPC Flow Log events from CloudWatch Logs",
+      "count_of_columns": 20
+    },
+    {
+      "table_name": "aws_vpc_internet_gateway",
+      "description": "AWS VPC Internet Gateway",
+      "count_of_columns": 6
+    },
+    {
+      "table_name": "aws_vpc_nat_gateway",
+      "description": "AWS VPC Network Address Translation Gateway",
+      "count_of_columns": 14
+    },
+    {
+      "table_name": "aws_vpc_nat_gateway_metric_bytes_out_to_destination",
+      "description": "AWS VPC Nat Gateway Cloudwatch Metrics - BytesOutToDestination",
+      "count_of_columns": 1
+    },
+    {
+      "table_name": "aws_vpc_network_acl",
+      "description": "AWS VPC Network ACL",
+      "count_of_columns": 10
+    },
+    {
+      "table_name": "aws_vpc_peering_connection",
+      "description": "AWS VPC Peering Connection",
+      "count_of_columns": 21
+    },
+    {
+      "table_name": "aws_vpc_route",
+      "description": "AWS VPC Route",
+      "count_of_columns": 17
+    },
+    {
+      "table_name": "aws_vpc_route_table",
+      "description": "AWS VPC Route table",
+      "count_of_columns": 9
+    },
+    {
+      "table_name": "aws_vpc_security_group",
+      "description": "AWS VPC Security Group",
+      "count_of_columns": 11
+    },
+    {
+      "table_name": "aws_vpc_security_group_rule",
+      "description": "AWS VPC Security Group Rule",
+      "count_of_columns": 28
+    },
+    {
+      "table_name": "aws_vpc_subnet",
+      "description": "AWS VPC Subnet",
+      "count_of_columns": 19
+    },
+    {
+      "table_name": "aws_vpc_verified_access_endpoint",
+      "description": "AWS VPC verified access Endpoint",
+      "count_of_columns": 20
+    },
+    {
+      "table_name": "aws_vpc_verified_access_group",
+      "description": "AWS VPC Verified Access Group",
+      "count_of_columns": 11
+    },
+    {
+      "table_name": "aws_vpc_verified_access_instance",
+      "description": "AWS VPC Verified Access Instance",
+      "count_of_columns": 8
+    },
+    {
+      "table_name": "aws_vpc_verified_access_trust_provider",
+      "description": "AWS VPC Verified Access Trust Provider",
+      "count_of_columns": 12
+    },
+    {
+      "table_name": "aws_vpc_vpn_connection",
+      "description": "AWS VPC VPN Connection",
+      "count_of_columns": 15
+    },
+    {
+      "table_name": "aws_vpc_vpn_gateway",
+      "description": "AWS VPC VPN Gateway",
+      "count_of_columns": 9
+    },
+    {
+      "table_name": "aws_waf_rate_based_rule",
+      "description": "AWS WAF Rate Based Rule",
+      "count_of_columns": 9
+    },
+    {
+      "table_name": "aws_waf_rule",
+      "description": "AWS WAF Rule",
+      "count_of_columns": 7
+    },
+    {
+      "table_name": "aws_waf_rule_group",
+      "description": "AWS WAF Rule Group",
+      "count_of_columns": 8
+    },
+    {
+      "table_name": "aws_waf_web_acl",
+      "description": "AWS WAF Web ACL",
+      "count_of_columns": 10
+    },
+    {
+      "table_name": "aws_wafregional_rule",
+      "description": "AWS WAF Regional Rule",
+      "count_of_columns": 7
+    },
+    {
+      "table_name": "aws_wafregional_rule_group",
+      "description": "AWS WAF Regional Rule Group",
+      "count_of_columns": 8
+    },
+    {
+      "table_name": "aws_wafregional_web_acl",
+      "description": "AWS WAF Regional Web ACL",
+      "count_of_columns": 11
+    },
+    {
+      "table_name": "aws_wafv2_ip_set",
+      "description": "AWS WAFv2 IP Set",
+      "count_of_columns": 14
+    },
+    {
+      "table_name": "aws_wafv2_regex_pattern_set",
+      "description": "AWS WAFv2 Regex Pattern Set",
+      "count_of_columns": 13
+    },
+    {
+      "table_name": "aws_wafv2_rule_group",
+      "description": "AWS WAFv2 Rule Group",
+      "count_of_columns": 15
+    },
+    {
+      "table_name": "aws_wafv2_web_acl",
+      "description": "AWS WAFv2 Web ACL",
+      "count_of_columns": 19
+    },
+    {
+      "table_name": "aws_wellarchitected_answer",
+      "description": "AWS Well-Architected Answer",
+      "count_of_columns": 19
+    },
+    {
+      "table_name": "aws_wellarchitected_check_detail",
+      "description": "AWS Well-Architected Check Detail",
+      "count_of_columns": 15
+    },
+    {
+      "table_name": "aws_wellarchitected_check_summary",
+      "description": "AWS Well-Architected Check Summary",
+      "count_of_columns": 13
+    },
+    {
+      "table_name": "aws_wellarchitected_consolidated_report",
+      "description": "AWS Well-Architected Consolidated Report",
+      "count_of_columns": 10
+    },
+    {
+      "table_name": "aws_wellarchitected_lens",
+      "description": "AWS Well-Architected Lens",
+      "count_of_columns": 13
+    },
+    {
+      "table_name": "aws_wellarchitected_lens_review",
+      "description": "AWS Well-Architected Lens Review",
+      "count_of_columns": 12
+    },
+    {
+      "table_name": "aws_wellarchitected_lens_review_improvement",
+      "description": "AWS Well-Architected Lens Review Improvement",
+      "count_of_columns": 11
+    },
+    {
+      "table_name": "aws_wellarchitected_lens_review_report",
+      "description": "AWS Well-Architected Lens Review Report",
+      "count_of_columns": 5
+    },
+    {
+      "table_name": "aws_wellarchitected_lens_share",
+      "description": "AWS Well-Architected Lens Share",
+      "count_of_columns": 8
+    },
+    {
+      "table_name": "aws_wellarchitected_milestone",
+      "description": "AWS Well-Architected Milestone",
+      "count_of_columns": 5
+    },
+    {
+      "table_name": "aws_wellarchitected_notification",
+      "description": "AWS Well-Architected Notification",
+      "count_of_columns": 7
+    },
+    {
+      "table_name": "aws_wellarchitected_share_invitation",
+      "description": "AWS Well-Architected Share Invitation",
+      "count_of_columns": 10
+    },
+    {
+      "table_name": "aws_wellarchitected_workload",
+      "description": "AWS Well-Architected Workload",
+      "count_of_columns": 24
+    },
+    {
+      "table_name": "aws_wellarchitected_workload_share",
+      "description": "AWS Well-Architected Workload Share",
+      "count_of_columns": 7
+    },
+    {
+      "table_name": "aws_workspaces_bundle",
+      "description": "AWS Workspaces Bundle",
+      "count_of_columns": 5
+    },
+    {
+      "table_name": "aws_workspaces_workspace",
+      "description": "AWS Workspaces",
+      "count_of_columns": 19
+    }
+  ]
+}

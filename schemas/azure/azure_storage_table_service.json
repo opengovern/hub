@@ -1,0 +1,46 @@
+{
+  "table_name": "azure_storage_table_service",
+  "table_description": "Azure Storage Table Service",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The friendly name that identifies the table service"
+    },
+    {
+      "name": "id",
+      "type": "text",
+      "description": "Contains ID to identify a table service uniquely"
+    },
+    {
+      "name": "storage_account_name",
+      "type": "text",
+      "description": "An unique read-only string that changes whenever the resource is updated"
+    },
+    {
+      "name": "type",
+      "type": "text",
+      "description": "Type of the resource"
+    },
+    {
+      "name": "cors_rules",
+      "type": "json",
+      "description": "A list of CORS rules"
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": "ColumnDescriptionTitle"
+    },
+    {
+      "name": "region",
+      "type": "text",
+      "description": "ColumnDescriptionRegion"
+    },
+    {
+      "name": "resource_group",
+      "type": "text",
+      "description": "ColumnDescriptionResourceGroup"
+    }
+  ]
+}

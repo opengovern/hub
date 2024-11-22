@@ -1,0 +1,71 @@
+{
+  "table_name": "aws_wellarchitected_check_summary",
+  "table_description": "AWS Well-Architected Check Summary",
+  "columns": [
+    {
+      "name": "id",
+      "type": "text",
+      "description": "Trusted Advisor check ID."
+    },
+    {
+      "name": "choice_id",
+      "type": "text",
+      "description": "The ID of a choice."
+    },
+    {
+      "name": "description",
+      "type": "text",
+      "description": "Trusted Advisor check description."
+    },
+    {
+      "name": "lens_arn",
+      "type": "text",
+      "description": "Well-Architected Lens ARN associated to the check."
+    },
+    {
+      "name": "name",
+      "type": "text",
+      "description": "Trusted Advisor check name."
+    },
+    {
+      "name": "pillar_id",
+      "type": "text",
+      "description": "The ID used to identify a pillar, for example, security. A pillar is identified by its PillarReviewSummary$PillarId."
+    },
+    {
+      "name": "provider",
+      "type": "text",
+      "description": "Provider of the check related to the best practice."
+    },
+    {
+      "name": "question_id",
+      "type": "text",
+      "description": "The ID of the question."
+    },
+    {
+      "name": "status",
+      "type": "text",
+      "description": "Status associated to the check."
+    },
+    {
+      "name": "updated_at",
+      "type": "timestamp with time zone",
+      "description": "The date and time recorded."
+    },
+    {
+      "name": "workload_id",
+      "type": "text",
+      "description": "The ID of the workload."
+    },
+    {
+      "name": "account_summary",
+      "type": "json",
+      "description": "Account summary associated to the check."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    }
+  ]
+}

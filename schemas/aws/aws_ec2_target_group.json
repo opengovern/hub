@@ -1,0 +1,111 @@
+{
+  "table_name": "aws_ec2_target_group",
+  "table_description": "AWS EC2 Target Group",
+  "columns": [
+    {
+      "name": "target_group_name",
+      "type": "text",
+      "description": "The name of the target group."
+    },
+    {
+      "name": "target_group_arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) of the target group."
+    },
+    {
+      "name": "target_type",
+      "type": "text",
+      "description": "The type of target that is specified when registering targets with this target group. The possible values are instance (register targets by instance ID), ip (register targets by IP address), or lambda (register a single Lambda function as a target)."
+    },
+    {
+      "name": "load_balancer_arns",
+      "type": "json",
+      "description": "The Amazon Resource Names (ARN) of the load balancers that route traffic to this target group."
+    },
+    {
+      "name": "port",
+      "type": "integer",
+      "description": "The port on which the targets are listening. Not used if the target is a Lambda function."
+    },
+    {
+      "name": "vpc_id",
+      "type": "text",
+      "description": "The ID of the VPC for the target."
+    },
+    {
+      "name": "protocol",
+      "type": "text",
+      "description": "The protocol to use for routing traffic to the target."
+    },
+    {
+      "name": "matcher_http_code",
+      "type": "text",
+      "description": "The HTTP codes to use when checking for a successful response from a target."
+    },
+    {
+      "name": "matcher_grpc_code",
+      "type": "text",
+      "description": "The gRPC codes to use when checking for a successful response from a target."
+    },
+    {
+      "name": "healthy_threshold_count",
+      "type": "integer",
+      "description": "The number of consecutive health checks successes required before considering an unhealthy target healthy."
+    },
+    {
+      "name": "unhealthy_threshold_count",
+      "type": "integer",
+      "description": "The number of consecutive health checks successes required before considering an unhealthy target healthy."
+    },
+    {
+      "name": "health_check_enabled",
+      "type": "boolean",
+      "description": "Indicates whether health checks are enabled."
+    },
+    {
+      "name": "health_check_interval_seconds",
+      "type": "integer",
+      "description": "The approximate amount of time, in seconds, between health checks of an individual target."
+    },
+    {
+      "name": "health_check_path",
+      "type": "text",
+      "description": "The destination for health checks on the target."
+    },
+    {
+      "name": "health_check_port",
+      "type": "text",
+      "description": "The port to use to connect with the target."
+    },
+    {
+      "name": "health_check_protocol",
+      "type": "text",
+      "description": "The protocol to use to connect with the target. The GENEVE, TLS, UDP, and TCP_UDP protocols are not supported for health checks."
+    },
+    {
+      "name": "health_check_timeout_seconds",
+      "type": "integer",
+      "description": "The amount of time, in seconds, during which no response means a failed health check."
+    },
+    {
+      "name": "target_health_descriptions",
+      "type": "json",
+      "description": "Contains information about the health of the target."
+    },
+    {
+      "name": "tags_src",
+      "type": "json",
+      "description": "A list of tags associated with target group."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": ""
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "table_name": "aws_kafka_cluster",
+  "table_description": "AWS Kafka Cluster",
+  "columns": [
+    {
+      "name": "cluster_name",
+      "type": "text",
+      "description": "The name of the cluster."
+    },
+    {
+      "name": "arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) of the cluster"
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": ""
+    }
+  ]
+}

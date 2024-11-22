@@ -1,0 +1,51 @@
+{
+  "table_name": "github_repository_sbom",
+  "table_description": "Get the software bill of materials (SBOM) for a repository.",
+  "columns": [
+    {
+      "name": "repository_full_name",
+      "type": "text",
+      "description": "The full name of the repository (login/repo-name)."
+    },
+    {
+      "name": "spdx_id",
+      "type": "text",
+      "description": "The SPDX identifier for the SPDX document."
+    },
+    {
+      "name": "spdx_version",
+      "type": "text",
+      "description": "The version of the SPDX specification that this document conforms to."
+    },
+    {
+      "name": "creation_info",
+      "type": "json",
+      "description": "It represents when the SBOM was created and who created it."
+    },
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The name of the SPDX document."
+    },
+    {
+      "name": "data_license",
+      "type": "text",
+      "description": "The license under which the SPDX document is licensed."
+    },
+    {
+      "name": "document_describes",
+      "type": "json",
+      "description": "The name of the repository that the SPDX document describes."
+    },
+    {
+      "name": "document_namespace",
+      "type": "text",
+      "description": "The namespace for the SPDX document."
+    },
+    {
+      "name": "packages",
+      "type": "json",
+      "description": "Array of packages in SPDX format."
+    }
+  ]
+}

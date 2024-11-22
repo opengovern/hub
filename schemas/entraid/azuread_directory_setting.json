@@ -1,0 +1,41 @@
+{
+  "table_name": "azuread_directory_setting",
+  "table_description": "Represents the configurations that can be used to customize the tenant-wide and object-specific restrictions and allowed behavior",
+  "columns": [
+    {
+      "name": "display_name",
+      "type": "text",
+      "description": "Display name of this group of settings, which comes from the associated template."
+    },
+    {
+      "name": "id",
+      "type": "text",
+      "description": "Unique identifier for these settings."
+    },
+    {
+      "name": "template_id",
+      "type": "text",
+      "description": "Unique identifier for the template used to create this group of settings."
+    },
+    {
+      "name": "name",
+      "type": "text",
+      "description": "Name of the setting."
+    },
+    {
+      "name": "value",
+      "type": "text",
+      "description": "Value of the setting."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": "ColumnDescriptionTitle"
+    },
+    {
+      "name": "tenant_id",
+      "type": "text",
+      "description": "ColumnDescriptionTenant"
+    }
+  ]
+}

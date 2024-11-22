@@ -1,0 +1,61 @@
+{
+  "table_name": "aws_vpc_verified_access_group",
+  "table_description": "AWS VPC Verified Access Group",
+  "columns": [
+    {
+      "name": "verified_access_group_id",
+      "type": "text",
+      "description": "The ID of the verified access group."
+    },
+    {
+      "name": "arn",
+      "type": "text",
+      "description": "The ARN of the verified access group."
+    },
+    {
+      "name": "verified_access_instance_id",
+      "type": "text",
+      "description": "The ID of the AWS Verified Access instance."
+    },
+    {
+      "name": "creation_time",
+      "type": "timestamp with time zone",
+      "description": "The creation time."
+    },
+    {
+      "name": "deletion_time",
+      "type": "timestamp with time zone",
+      "description": "The deleteion time."
+    },
+    {
+      "name": "description",
+      "type": "text",
+      "description": "A description for the AWS verified access group."
+    },
+    {
+      "name": "last_updated_time",
+      "type": "timestamp with time zone",
+      "description": "The last updated time."
+    },
+    {
+      "name": "owner",
+      "type": "text",
+      "description": "The AWS account number that owns the group."
+    },
+    {
+      "name": "tags_src",
+      "type": "json",
+      "description": ""
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": ""
+    }
+  ]
+}

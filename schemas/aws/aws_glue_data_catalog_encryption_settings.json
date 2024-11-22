@@ -1,0 +1,16 @@
+{
+  "table_name": "aws_glue_data_catalog_encryption_settings",
+  "table_description": "AWS Glue Data Catalog Encryption Settings",
+  "columns": [
+    {
+      "name": "encryption_at_rest",
+      "type": "json",
+      "description": "A list of public keys to be used by the DataCatalogEncryptionSettingss for authentication."
+    },
+    {
+      "name": "connection_password_encryption",
+      "type": "json",
+      "description": "A list of security group identifiers used in this DataCatalogEncryptionSettings."
+    }
+  ]
+}

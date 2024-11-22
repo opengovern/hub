@@ -1,0 +1,51 @@
+{
+  "table_name": "aws_iam_virtual_mfa_device",
+  "table_description": "AWS IAM Virtual MFA device",
+  "columns": [
+    {
+      "name": "serial_number",
+      "type": "text",
+      "description": "The serial number associated with VirtualMFADevice."
+    },
+    {
+      "name": "enable_date",
+      "type": "timestamp with time zone",
+      "description": "The date and time on which the virtual MFA device was enabled."
+    },
+    {
+      "name": "assignment_status",
+      "type": "text",
+      "description": "The status (Unassigned or Assigned) of the device."
+    },
+    {
+      "name": "user_id",
+      "type": "text",
+      "description": "The user id of the user associated with this virtual MFA device."
+    },
+    {
+      "name": "user_name",
+      "type": "text",
+      "description": "The friendly name of the user associated with this virtual MFA device."
+    },
+    {
+      "name": "user",
+      "type": "json",
+      "description": "Details of the IAM user associated with this virtual MFA device."
+    },
+    {
+      "name": "tags_src",
+      "type": "json",
+      "description": "A list of tags attached with the MFA device."
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": ""
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    }
+  ]
+}

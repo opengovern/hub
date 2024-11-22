@@ -1,0 +1,26 @@
+{
+  "table_name": "github_repository_collaborator",
+  "table_description": "Collaborators are users that have contributed to the repository.",
+  "columns": [
+    {
+      "name": "repository_full_name",
+      "type": "text",
+      "description": "The full name of the repository, including the owner and repo name."
+    },
+    {
+      "name": "affiliation",
+      "type": "text",
+      "description": "Affiliation filter - valid values 'ALL' (default), 'OUTSIDE', 'DIRECT'."
+    },
+    {
+      "name": "permission",
+      "type": "text",
+      "description": "The permission the collaborator has on the repository."
+    },
+    {
+      "name": "user_login",
+      "type": "text",
+      "description": "The login of the collaborator"
+    }
+  ]
+}

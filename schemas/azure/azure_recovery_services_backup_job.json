@@ -1,0 +1,56 @@
+{
+  "table_name": "azure_recovery_services_backup_job",
+  "table_description": "Azure Recovery Services Backup Job",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "Resource name associated with the resource."
+    },
+    {
+      "name": "vault_name",
+      "type": "text",
+      "description": "The recovery vault name."
+    },
+    {
+      "name": "id",
+      "type": "text",
+      "description": "Resource ID represents the complete path to the resource."
+    },
+    {
+      "name": "type",
+      "type": "text",
+      "description": "Resource type represents the complete path of the form Namespace/ResourceType/ResourceType/..."
+    },
+    {
+      "name": "etag",
+      "type": "text",
+      "description": "Optional ETag."
+    },
+    {
+      "name": "properties",
+      "type": "json",
+      "description": "JobResource properties."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": "ColumnDescriptionTitle"
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": "ColumnDescriptionTags"
+    },
+    {
+      "name": "region",
+      "type": "text",
+      "description": "ColumnDescriptionRegion"
+    },
+    {
+      "name": "resource_group",
+      "type": "text",
+      "description": "ColumnDescriptionResourceGroup"
+    }
+  ]
+}

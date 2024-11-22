@@ -1,0 +1,66 @@
+{
+  "table_name": "aws_service_discovery_namespace",
+  "table_description": "AWS Service Discovery Namespace",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The name of the namespace."
+    },
+    {
+      "name": "id",
+      "type": "text",
+      "description": "The ID of the namespace."
+    },
+    {
+      "name": "arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) that Cloud Map assigns to the namespace when you create it."
+    },
+    {
+      "name": "create_date",
+      "type": "timestamp with time zone",
+      "description": "The date and time that the namespace was created."
+    },
+    {
+      "name": "description",
+      "type": "text",
+      "description": "A description for the namespace."
+    },
+    {
+      "name": "service_count",
+      "type": "integer",
+      "description": "The number of services that were created using the namespace."
+    },
+    {
+      "name": "type",
+      "type": "text",
+      "description": "The type of the namespace, either public or private."
+    },
+    {
+      "name": "dns_properties",
+      "type": "json",
+      "description": "A complex type that contains the ID for the Route 53 hosted zone that Cloud Map creates when you create a namespace."
+    },
+    {
+      "name": "http_properties",
+      "type": "json",
+      "description": "A complex type that contains the name of an HTTP namespace."
+    },
+    {
+      "name": "tags_src",
+      "type": "json",
+      "description": "Information about the tags associated with the namespace."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": ""
+    }
+  ]
+}

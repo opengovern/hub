@@ -1,0 +1,156 @@
+{
+  "table_name": "aws_cloudwatch_alarm",
+  "table_description": "AWS CloudWatch Alarm",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The name of the alarm."
+    },
+    {
+      "name": "arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) of the alarm."
+    },
+    {
+      "name": "state_value",
+      "type": "text",
+      "description": "The state value for the alarm."
+    },
+    {
+      "name": "actions_enabled",
+      "type": "boolean",
+      "description": "Indicates whether actions should be executed during any changes to the alarm state."
+    },
+    {
+      "name": "alarm_configuration_updated_timestamp",
+      "type": "timestamp with time zone",
+      "description": "The time stamp of the last update to the alarm configuration."
+    },
+    {
+      "name": "alarm_description",
+      "type": "text",
+      "description": "The description of the alarm."
+    },
+    {
+      "name": "comparison_operator",
+      "type": "text",
+      "description": "The arithmetic operation to use when comparing the specified statistic and threshold. The specified statistic value is used as the first operand."
+    },
+    {
+      "name": "datapoints_to_alarm",
+      "type": "integer",
+      "description": "The number of data points that must be breaching to trigger the alarm."
+    },
+    {
+      "name": "evaluate_low_sample_count_percentile",
+      "type": "text",
+      "description": "Used only for alarms based on percentiles."
+    },
+    {
+      "name": "evaluation_periods",
+      "type": "integer",
+      "description": "The number of periods over which data is compared to the specified threshold."
+    },
+    {
+      "name": "extended_statistic",
+      "type": "text",
+      "description": "The percentile statistic for the metric associated with the alarm. Specify a value between p0.0 and p100."
+    },
+    {
+      "name": "metric_name",
+      "type": "text",
+      "description": "The name of the metric associated with the alarm, if this is an alarm based on a single metric."
+    },
+    {
+      "name": "namespace",
+      "type": "text",
+      "description": "The namespace of the metric associated with the alarm."
+    },
+    {
+      "name": "period",
+      "type": "integer",
+      "description": "The period, in seconds, over which the statistic is applied."
+    },
+    {
+      "name": "state_reason",
+      "type": "text",
+      "description": "An explanation for the alarm state, in text format."
+    },
+    {
+      "name": "state_reason_data",
+      "type": "text",
+      "description": "An explanation for the alarm state, in JSON format."
+    },
+    {
+      "name": "state_updated_timestamp",
+      "type": "timestamp with time zone",
+      "description": "The time stamp of the last update to the alarm state."
+    },
+    {
+      "name": "statistic",
+      "type": "text",
+      "description": "The statistic for the metric associated with the alarm, other than percentile."
+    },
+    {
+      "name": "threshold",
+      "type": "double precision",
+      "description": "The value to compare with the specified statistic."
+    },
+    {
+      "name": "threshold_metric_id",
+      "type": "text",
+      "description": "In an alarm based on an anomaly detection model, this is the ID of the ANOMALY_DETECTION_BAND function used as the threshold for the alarm."
+    },
+    {
+      "name": "treat_missing_data",
+      "type": "text",
+      "description": "Sets how this alarm is to handle missing data points. If this parameter is omitted, the default behavior of missing is used."
+    },
+    {
+      "name": "unit",
+      "type": "text",
+      "description": "The unit of the metric associated with the alarm."
+    },
+    {
+      "name": "alarm_actions",
+      "type": "json",
+      "description": "The actions to execute when this alarm transitions to the ALARM state from any other state. Each action is specified as an Amazon Resource Name (ARN)."
+    },
+    {
+      "name": "dimensions",
+      "type": "json",
+      "description": "The dimensions for the metric associated with the alarm."
+    },
+    {
+      "name": "insufficient_data_actions",
+      "type": "json",
+      "description": "The actions to execute when this alarm transitions to the INSUFFICIENT_DATA state from any other state. Each action is specified as an Amazon Resource Name (ARN)."
+    },
+    {
+      "name": "metrics",
+      "type": "json",
+      "description": "An array of MetricDataQuery structures, used in an alarm based on a metric math expression."
+    },
+    {
+      "name": "ok_actions",
+      "type": "json",
+      "description": "The actions to execute when this alarm transitions to the OK state from any other state. Each action is specified as an Amazon Resource Name (ARN)."
+    },
+    {
+      "name": "tags_src",
+      "type": "json",
+      "description": "The list of tag keys and values associated with alarm."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": ""
+    }
+  ]
+}

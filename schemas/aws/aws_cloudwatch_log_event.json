@@ -1,0 +1,46 @@
+{
+  "table_name": "aws_cloudwatch_log_event",
+  "table_description": "AWS CloudWatch Log Event",
+  "columns": [
+    {
+      "name": "log_group_name",
+      "type": "text",
+      "description": "The name of the log group to which this event belongs."
+    },
+    {
+      "name": "log_stream_name",
+      "type": "text",
+      "description": "The name of the log stream to which this event belongs."
+    },
+    {
+      "name": "event_id",
+      "type": "text",
+      "description": "The ID of the event."
+    },
+    {
+      "name": "timestamp",
+      "type": "timestamp with time zone",
+      "description": "The time when the event occurred."
+    },
+    {
+      "name": "ingestion_time",
+      "type": "timestamp with time zone",
+      "description": "The time when the event was ingested."
+    },
+    {
+      "name": "filter",
+      "type": "text",
+      "description": "Filter pattern for the search."
+    },
+    {
+      "name": "message",
+      "type": "text",
+      "description": "The data contained in the log event."
+    },
+    {
+      "name": "message_json",
+      "type": "json",
+      "description": "The data contained in the log event in json format. Only if data is valid json string."
+    }
+  ]
+}

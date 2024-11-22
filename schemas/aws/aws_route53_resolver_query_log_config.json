@@ -1,0 +1,66 @@
+{
+  "table_name": "aws_route53_resolver_query_log_config",
+  "table_description": "AWS Route53 Resolver Query Logging Configuration",
+  "columns": [
+    {
+      "name": "id",
+      "type": "text",
+      "description": "The ID for the query logging configuration."
+    },
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The name of the query logging configuration."
+    },
+    {
+      "name": "arn",
+      "type": "text",
+      "description": "The ARN (Amazon Resource Name) for the query logging configuration."
+    },
+    {
+      "name": "creation_time",
+      "type": "timestamp with time zone",
+      "description": "The date and time that the query logging configuration was created, in Unix time format and Coordinated Universal Time (UTC)."
+    },
+    {
+      "name": "status",
+      "type": "text",
+      "description": "The status of the specified query logging configuration. Valid values include CREATING|CREATED|DELETING|FAILED."
+    },
+    {
+      "name": "association_count",
+      "type": "integer",
+      "description": "The number of VPCs that are associated with the query logging configuration."
+    },
+    {
+      "name": "ip_address_count",
+      "type": "integer",
+      "description": "The number of IP addresses that you have associated with the Resolver endpoint."
+    },
+    {
+      "name": "creator_request_id",
+      "type": "text",
+      "description": "A unique string that identifies the request that created the query logging configuration."
+    },
+    {
+      "name": "destination_arn",
+      "type": "text",
+      "description": "The ARN of the resource that you want Resolver to send query logs: an Amazon S3 bucket, a CloudWatch Logs log group, or a Kinesis Data Firehose delivery stream."
+    },
+    {
+      "name": "owner_id",
+      "type": "text",
+      "description": "The Amazon Web Services account ID for the account that created the query logging configuration."
+    },
+    {
+      "name": "share_status",
+      "type": "text",
+      "description": "An indication of whether the query logging configuration is shared with other Amazon Web Services accounts, or was shared with the current account by another Amazon Web Services account. Sharing is configured through Resource Access Manager (RAM)."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    }
+  ]
+}

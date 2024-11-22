@@ -1,0 +1,41 @@
+{
+  "table_name": "aws_wellarchitected_workload_share",
+  "table_description": "AWS Well-Architected Workload Share",
+  "columns": [
+    {
+      "name": "workload_id",
+      "type": "text",
+      "description": "The ID assigned to the workload."
+    },
+    {
+      "name": "permission_type",
+      "type": "text",
+      "description": "Permission granted on a workload share."
+    },
+    {
+      "name": "share_id",
+      "type": "text",
+      "description": "The ID associated with the workload share."
+    },
+    {
+      "name": "shared_with",
+      "type": "text",
+      "description": "The Amazon Web Services account ID, IAM role, organization ID, or organizational unit (OU) ID with which the workload is shared."
+    },
+    {
+      "name": "status",
+      "type": "text",
+      "description": "The status of a workload share."
+    },
+    {
+      "name": "status_message",
+      "type": "text",
+      "description": "Optional message to compliment the Status field."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    }
+  ]
+}

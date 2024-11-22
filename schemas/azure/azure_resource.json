@@ -1,0 +1,116 @@
+{
+  "table_name": "azure_resource",
+  "table_description": "Azure Resource",
+  "columns": [
+    {
+      "name": "id",
+      "type": "text",
+      "description": "Resource ID."
+    },
+    {
+      "name": "name",
+      "type": "text",
+      "description": "Resource name."
+    },
+    {
+      "name": "type",
+      "type": "text",
+      "description": "Resource type."
+    },
+    {
+      "name": "created_time",
+      "type": "timestamp with time zone",
+      "description": "The created time of the resource."
+    },
+    {
+      "name": "changed_time",
+      "type": "timestamp with time zone",
+      "description": "The changed time of the resource."
+    },
+    {
+      "name": "identity_principal_id",
+      "type": "text",
+      "description": "The principal ID of resource identity."
+    },
+    {
+      "name": "provisioning_state",
+      "type": "text",
+      "description": "The provisioning state of the resource."
+    },
+    {
+      "name": "plan_publisher",
+      "type": "text",
+      "description": "The plan publisher ID."
+    },
+    {
+      "name": "plan_name",
+      "type": "text",
+      "description": "The plan ID."
+    },
+    {
+      "name": "plan_product",
+      "type": "text",
+      "description": "The plan offer ID."
+    },
+    {
+      "name": "plan_promotion_code",
+      "type": "text",
+      "description": "The plan promotion code."
+    },
+    {
+      "name": "plan_version",
+      "type": "text",
+      "description": "The plan's version."
+    },
+    {
+      "name": "kind",
+      "type": "text",
+      "description": "The kind of the resource."
+    },
+    {
+      "name": "managed_by",
+      "type": "text",
+      "description": "ID of the resource that manages this resource."
+    },
+    {
+      "name": "sku",
+      "type": "json",
+      "description": "The SKU of the resource."
+    },
+    {
+      "name": "identity",
+      "type": "json",
+      "description": "The identity of the resource."
+    },
+    {
+      "name": "extended_location",
+      "type": "json",
+      "description": "Resource extended location."
+    },
+    {
+      "name": "properties",
+      "type": "json",
+      "description": "The resource properties."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": "ColumnDescriptionTitle"
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": "ColumnDescriptionTags"
+    },
+    {
+      "name": "region",
+      "type": "text",
+      "description": "ColumnDescriptionRegion"
+    },
+    {
+      "name": "resource_group",
+      "type": "text",
+      "description": "ColumnDescriptionResourceGroup"
+    }
+  ]
+}

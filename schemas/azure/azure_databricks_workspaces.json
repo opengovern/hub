@@ -1,0 +1,106 @@
+{
+  "table_name": "azure_databricks_workspaces",
+  "table_description": "Azure Databricks Workspaces",
+  "columns": [
+    {
+      "name": "id",
+      "type": "text",
+      "description": "The id of the workspaces."
+    },
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The name of the workspaces."
+    },
+    {
+      "name": "sku",
+      "type": "json",
+      "description": "The SKU of the resource."
+    },
+    {
+      "name": "type",
+      "type": "text",
+      "description": "The type of the resource."
+    },
+    {
+      "name": "location",
+      "type": "text",
+      "description": "The geo-location where the resource lives."
+    },
+    {
+      "name": "managed_resource_group_id",
+      "type": "text",
+      "description": "The managed resource group ID."
+    },
+    {
+      "name": "parameters",
+      "type": "json",
+      "description": "The workspace's custom parameters."
+    },
+    {
+      "name": "provisioning_state",
+      "type": "text",
+      "description": "The workspace provisioning state."
+    },
+    {
+      "name": "ui_definition_uri",
+      "type": "text",
+      "description": "The blob URI where the UI definition file is located."
+    },
+    {
+      "name": "authorizations",
+      "type": "json",
+      "description": "The workspace provider authorizations."
+    },
+    {
+      "name": "created_by",
+      "type": "json",
+      "description": "Indicates the Object ID, PUID and Application ID of entity that created the workspace."
+    },
+    {
+      "name": "updated_by",
+      "type": "json",
+      "description": "Indicates the Object ID, PUID and Application ID of entity that last updated the workspace."
+    },
+    {
+      "name": "created_date_time",
+      "type": "timestamp with time zone",
+      "description": "Specifies the date and time when the workspace is created."
+    },
+    {
+      "name": "workspace_id",
+      "type": "text",
+      "description": "The unique identifier of the databricks workspace in databricks control plane."
+    },
+    {
+      "name": "workspace_url",
+      "type": "text",
+      "description": "The workspace URL which is of the format 'adb-{workspaceId}.{random}.azuredatabricks.net'."
+    },
+    {
+      "name": "storage_account_identity",
+      "type": "json",
+      "description": "The details of Managed Identity of Storage Account"
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": "ColumnDescriptionTitle"
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": "ColumnDescriptionTags"
+    },
+    {
+      "name": "region",
+      "type": "text",
+      "description": "ColumnDescriptionRegion"
+    },
+    {
+      "name": "resource_group",
+      "type": "text",
+      "description": "ColumnDescriptionResourceGroup"
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "table_name": "aws_health_affected_entity",
+  "table_description": "AWS Health Affected Entity",
+  "columns": [
+    {
+      "name": "arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) of the health entity."
+    },
+    {
+      "name": "entity_url",
+      "type": "text",
+      "description": "The URL of the affected entity."
+    },
+    {
+      "name": "entity_value",
+      "type": "text",
+      "description": "The ID of the affected entity."
+    },
+    {
+      "name": "event_arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) of the health event."
+    },
+    {
+      "name": "last_updated_time",
+      "type": "timestamp with time zone",
+      "description": "The most recent time that the entity was updated."
+    },
+    {
+      "name": "status_code",
+      "type": "text",
+      "description": "The most recent status of the entity affected by the event. The possible values are IMPAIRED, UNIMPAIRED, and UNKNOWN."
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": ""
+    }
+  ]
+}

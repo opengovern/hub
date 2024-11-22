@@ -1,0 +1,56 @@
+{
+  "table_name": "aws_drs_job",
+  "table_description": "AWS DRS Job",
+  "columns": [
+    {
+      "name": "job_id",
+      "type": "text",
+      "description": "The ID of the job."
+    },
+    {
+      "name": "arn",
+      "type": "text",
+      "description": "The ARN of a Job."
+    },
+    {
+      "name": "initiated_by",
+      "type": "text",
+      "description": "A string representing who initiated the Job."
+    },
+    {
+      "name": "status",
+      "type": "text",
+      "description": "The status of the Job."
+    },
+    {
+      "name": "type",
+      "type": "text",
+      "description": "The type of the Job."
+    },
+    {
+      "name": "creation_date_time",
+      "type": "timestamp with time zone",
+      "description": "The date and time of when the Job was created."
+    },
+    {
+      "name": "end_date_time",
+      "type": "timestamp with time zone",
+      "description": "The date and time of when the Job ended."
+    },
+    {
+      "name": "participating_servers",
+      "type": "json",
+      "description": "A list of servers that the Job is acting upon."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": ""
+    }
+  ]
+}

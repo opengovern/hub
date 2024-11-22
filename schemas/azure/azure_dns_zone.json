@@ -1,0 +1,81 @@
+{
+  "table_name": "azure_dns_zone",
+  "table_description": "Azure DNS Zone",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The friendly name that identifies the DNS zone."
+    },
+    {
+      "name": "id",
+      "type": "text",
+      "description": "Contains ID to identify a DNS zone uniquely."
+    },
+    {
+      "name": "etag",
+      "type": "text",
+      "description": "An unique read-only string that changes whenever the resource is updated."
+    },
+    {
+      "name": "type",
+      "type": "text",
+      "description": "The resource type of the DNS zone."
+    },
+    {
+      "name": "max_number_of_record_sets",
+      "type": "integer",
+      "description": "The maximum number of record sets that can be created in this DNS zone."
+    },
+    {
+      "name": "max_number_of_records_per_record_set",
+      "type": "integer",
+      "description": "The maximum number of records per record set that can be created in this DNS zone."
+    },
+    {
+      "name": "number_of_record_sets",
+      "type": "integer",
+      "description": "The current number of record sets in this DNS zone."
+    },
+    {
+      "name": "name_servers",
+      "type": "json",
+      "description": "The name servers for this DNS zone."
+    },
+    {
+      "name": "zone_type",
+      "type": "text",
+      "description": "The type of this DNS zone (always `Public`, see `azure_private_dns_zone` table for private DNS zones)."
+    },
+    {
+      "name": "registration_virtual_networks",
+      "type": "json",
+      "description": "A list of references to virtual networks that register hostnames in this DNS zone."
+    },
+    {
+      "name": "resolution_virtual_networks",
+      "type": "json",
+      "description": "A list of references to virtual networks that resolve records in this DNS zone."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": "ColumnDescriptionTitle"
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": "ColumnDescriptionTags"
+    },
+    {
+      "name": "region",
+      "type": "text",
+      "description": "ColumnDescriptionRegion"
+    },
+    {
+      "name": "resource_group",
+      "type": "text",
+      "description": "ColumnDescriptionResourceGroup"
+    }
+  ]
+}

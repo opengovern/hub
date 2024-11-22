@@ -1,0 +1,151 @@
+{
+  "table_name": "azure_application_insight",
+  "table_description": "Azure Application Insight",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The friendly name that identifies the application insight."
+    },
+    {
+      "name": "id",
+      "type": "text",
+      "description": "Contains id to identify the application insight uniquely."
+    },
+    {
+      "name": "app_id",
+      "type": "text",
+      "description": "Application insights unique id for your Application."
+    },
+    {
+      "name": "connection_string",
+      "type": "text",
+      "description": "Application Insights component connection string."
+    },
+    {
+      "name": "creation_date",
+      "type": "timestamp with time zone",
+      "description": "Creation date for the Application Insights component."
+    },
+    {
+      "name": "disable_ip_masking",
+      "type": "boolean",
+      "description": "Disable IP masking."
+    },
+    {
+      "name": "disable_local_auth",
+      "type": "boolean",
+      "description": "Disable Non-AAD based Auth."
+    },
+    {
+      "name": "etag",
+      "type": "text",
+      "description": "A unique read-only string that changes whenever the resource is updated."
+    },
+    {
+      "name": "force_customer_storage_for_profiler",
+      "type": "boolean",
+      "description": "Force users to create their own storage account for profiler and debugger."
+    },
+    {
+      "name": "immediate_purge_data_on_30_days",
+      "type": "boolean",
+      "description": "Purge data immediately after 30 days."
+    },
+    {
+      "name": "instrumentation_key",
+      "type": "text",
+      "description": "Application Insights Instrumentation key."
+    },
+    {
+      "name": "kind",
+      "type": "text",
+      "description": "The kind of application that this component refers to, used to customize UI."
+    },
+    {
+      "name": "provisioning_state",
+      "type": "text",
+      "description": "Current state of this component."
+    },
+    {
+      "name": "request_source",
+      "type": "text",
+      "description": "Describes what tool created this Application Insights component."
+    },
+    {
+      "name": "retention_in_days",
+      "type": "integer",
+      "description": "Retention period in days."
+    },
+    {
+      "name": "sampling_percentage",
+      "type": "double precision",
+      "description": "Percentage of the data produced by the application being monitored that is being sampled for Application Insights telemetry."
+    },
+    {
+      "name": "tenant_id",
+      "type": "text",
+      "description": "Azure Tenant ID."
+    },
+    {
+      "name": "type",
+      "type": "text",
+      "description": "The resource type of the application insight."
+    },
+    {
+      "name": "workspace_resource_id",
+      "type": "text",
+      "description": "Resource Id of the log analytics workspace to which the data will be ingested."
+    },
+    {
+      "name": "application_type",
+      "type": "json",
+      "description": "Type of application being monitored."
+    },
+    {
+      "name": "flow_type",
+      "type": "json",
+      "description": "Determines what kind of flow this component was created by."
+    },
+    {
+      "name": "ingestion_mode",
+      "type": "json",
+      "description": "Indicates the flow of the ingestion."
+    },
+    {
+      "name": "private_link_scoped_resources",
+      "type": "json",
+      "description": "List of linked private link scope resources."
+    },
+    {
+      "name": "public_network_access_for_ingestion",
+      "type": "json",
+      "description": "The network access type for accessing Application Insights ingestion."
+    },
+    {
+      "name": "public_network_access_for_query",
+      "type": "json",
+      "description": "The network access type for accessing Application Insights query."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": "ColumnDescriptionTitle"
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": "ColumnDescriptionTags"
+    },
+    {
+      "name": "region",
+      "type": "text",
+      "description": "ColumnDescriptionRegion"
+    },
+    {
+      "name": "resource_group",
+      "type": "text",
+      "description": "ColumnDescriptionResourceGroup"
+    }
+  ]
+}

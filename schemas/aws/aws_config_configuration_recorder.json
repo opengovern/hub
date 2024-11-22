@@ -1,0 +1,41 @@
+{
+  "table_name": "aws_config_configuration_recorder",
+  "table_description": "AWS Config Configuration Recorder",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The name of the recorder. By default, AWS Config automatically assigns the name default when creating the configuration recorder."
+    },
+    {
+      "name": "arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) of the configuration recorder."
+    },
+    {
+      "name": "recording_group",
+      "type": "json",
+      "description": "Specifies the types of AWS resources for which AWS Config records configuration changes."
+    },
+    {
+      "name": "role_arn",
+      "type": "text",
+      "description": "Amazon Resource Name (ARN) of the IAM role used to describe the AWS resources associated with the account."
+    },
+    {
+      "name": "status_recording",
+      "type": "boolean",
+      "description": "Specifies whether or not the recorder is currently recording."
+    },
+    {
+      "name": "status",
+      "type": "json",
+      "description": "The current status of the configuration recorder."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    }
+  ]
+}

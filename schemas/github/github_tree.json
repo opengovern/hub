@@ -1,0 +1,56 @@
+{
+  "table_name": "github_tree",
+  "table_description": "Lists directories and files in the given repository's git tree.",
+  "columns": [
+    {
+      "name": "repository_full_name",
+      "type": "text",
+      "description": "Full name of the repository that contains the tree."
+    },
+    {
+      "name": "tree_sha",
+      "type": "text",
+      "description": "SHA1 of the tree."
+    },
+    {
+      "name": "recursive",
+      "type": "boolean",
+      "description": "If set to true, return objects or subtrees referenced by the tree. Defaults to false."
+    },
+    {
+      "name": "truncated",
+      "type": "boolean",
+      "description": "True if the entires were truncated because the number of items in the tree exceeded Github's maximum limit."
+    },
+    {
+      "name": "mode",
+      "type": "text",
+      "description": "File mode. Valid values are 100644 (blob file), 100755 (blob executable), 040000 (tree subdirectory), 160000 (commit submodule), 120000 (blob that specifies path of a symlink)."
+    },
+    {
+      "name": "path",
+      "type": "text",
+      "description": "The file referenced in the tree."
+    },
+    {
+      "name": "sha",
+      "type": "text",
+      "description": "SHA1 checksum ID of the object in the tree."
+    },
+    {
+      "name": "size",
+      "type": "text",
+      "description": "Size of the blob."
+    },
+    {
+      "name": "type",
+      "type": "text",
+      "description": "Either blob, tree, or commit."
+    },
+    {
+      "name": "url",
+      "type": "text",
+      "description": "URL to the file referenced in the tree."
+    }
+  ]
+}

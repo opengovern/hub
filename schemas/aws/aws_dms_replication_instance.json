@@ -1,0 +1,136 @@
+{
+  "table_name": "aws_dms_replication_instance",
+  "table_description": "AWS DMS Replication Instance",
+  "columns": [
+    {
+      "name": "replication_instance_identifier",
+      "type": "text",
+      "description": "The identifier of the replication instance."
+    },
+    {
+      "name": "arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) of the replication instance."
+    },
+    {
+      "name": "replication_instance_class",
+      "type": "text",
+      "description": "The compute and memory capacity of the replication instance as defined for the specified replication instance class."
+    },
+    {
+      "name": "engine_version",
+      "type": "text",
+      "description": "The engine version number of the replication instance."
+    },
+    {
+      "name": "publicly_accessible",
+      "type": "boolean",
+      "description": "Specifies the accessibility options for the replication instance."
+    },
+    {
+      "name": "allocated_storage",
+      "type": "integer",
+      "description": "The amount of storage (in gigabytes) that is allocated for the replication instance."
+    },
+    {
+      "name": "auto_minor_version_upgrade",
+      "type": "boolean",
+      "description": "Boolean value indicating if minor version upgrades will be automatically applied to the instance."
+    },
+    {
+      "name": "availability_zone",
+      "type": "text",
+      "description": "The Availability Zone for the instance."
+    },
+    {
+      "name": "dns_name_servers",
+      "type": "text",
+      "description": "The DNS name servers supported for the replication instance to access your on-premise source or target database."
+    },
+    {
+      "name": "free_until",
+      "type": "timestamp with time zone",
+      "description": "The expiration date of the free replication instance that is part of the Free DMS program."
+    },
+    {
+      "name": "instance_create_time",
+      "type": "timestamp with time zone",
+      "description": "The time the replication instance was created."
+    },
+    {
+      "name": "kms_key_id",
+      "type": "text",
+      "description": "An AWS KMS key identifier that is used to encrypt the data on the replication instance."
+    },
+    {
+      "name": "multi_az",
+      "type": "boolean",
+      "description": "Specifies whether the replication instance is a Multi-AZ deployment."
+    },
+    {
+      "name": "preferred_maintenance_window",
+      "type": "text",
+      "description": "The maintenance window times for the replication instance."
+    },
+    {
+      "name": "replication_instance_private_ip_address",
+      "type": "text",
+      "description": "The private IP address of the replication instance."
+    },
+    {
+      "name": "replication_instance_public_ip_address",
+      "type": "text",
+      "description": "The public IP address of the replication instance."
+    },
+    {
+      "name": "replication_instance_status",
+      "type": "text",
+      "description": "The status of the replication instance."
+    },
+    {
+      "name": "secondary_availability_zone",
+      "type": "text",
+      "description": "The Availability Zone of the standby replication instance in a Multi-AZ deployment."
+    },
+    {
+      "name": "pending_modified_values",
+      "type": "json",
+      "description": "The pending modification values."
+    },
+    {
+      "name": "replication_instance_private_ip_addresses",
+      "type": "json",
+      "description": "One or more private IP addresses for the replication instance."
+    },
+    {
+      "name": "replication_instance_public_ip_addresses",
+      "type": "json",
+      "description": "One or more public IP addresses for the replication instance."
+    },
+    {
+      "name": "replication_subnet_group",
+      "type": "json",
+      "description": "The subnet group for the replication instance."
+    },
+    {
+      "name": "vpc_security_groups",
+      "type": "json",
+      "description": "The VPC security group for the instance."
+    },
+    {
+      "name": "tags_src",
+      "type": "json",
+      "description": "A list of tags currently associated with the replication instance."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": ""
+    }
+  ]
+}

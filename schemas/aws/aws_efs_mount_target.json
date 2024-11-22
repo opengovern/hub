@@ -1,0 +1,66 @@
+{
+  "table_name": "aws_efs_mount_target",
+  "table_description": "AWS EFS Mount Target",
+  "columns": [
+    {
+      "name": "mount_target_id",
+      "type": "text",
+      "description": "The ID of the mount target."
+    },
+    {
+      "name": "file_system_id",
+      "type": "text",
+      "description": "The ID of the file system for which the mount target is intended."
+    },
+    {
+      "name": "life_cycle_state",
+      "type": "text",
+      "description": "Lifecycle state of the mount target."
+    },
+    {
+      "name": "availability_zone_id",
+      "type": "text",
+      "description": "The unique and consistent identifier of the Availability Zone that the mount target resides in."
+    },
+    {
+      "name": "availability_zone_name",
+      "type": "text",
+      "description": "The name of the Availability Zone in which the mount target is located."
+    },
+    {
+      "name": "ip_address",
+      "type": "inet",
+      "description": "Address at which the file system can be mounted by using the mount target."
+    },
+    {
+      "name": "network_interface_id",
+      "type": "text",
+      "description": "The ID of the network interface that Amazon EFS created when it created the mount target."
+    },
+    {
+      "name": "owner_id",
+      "type": "text",
+      "description": "AWS account ID that owns the resource."
+    },
+    {
+      "name": "subnet_id",
+      "type": "text",
+      "description": "The ID of the mount target's subnet."
+    },
+    {
+      "name": "vpc_id",
+      "type": "text",
+      "description": "The virtual private cloud (VPC) ID that the mount target is configured in."
+    },
+    {
+      "name": "security_groups",
+      "type": "json",
+      "description": "Specifies the security groups currently in effect for a mount target."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    }
+  ]
+}

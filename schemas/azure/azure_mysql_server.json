@@ -1,0 +1,186 @@
+{
+  "table_name": "azure_mysql_server",
+  "table_description": "Azure MySQL Server",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The friendly name that identifies the server."
+    },
+    {
+      "name": "id",
+      "type": "text",
+      "description": "Contains ID to identify a server uniquely."
+    },
+    {
+      "name": "type",
+      "type": "text",
+      "description": "The resource type of the server."
+    },
+    {
+      "name": "state",
+      "type": "text",
+      "description": "The state of the server."
+    },
+    {
+      "name": "version",
+      "type": "text",
+      "description": "Specifies the version of the server."
+    },
+    {
+      "name": "user_visible_state",
+      "type": "text",
+      "description": "A state of a server that is visible to user. Possible values include: 'Ready', 'Dropping', 'Disabled', 'Inaccessible'."
+    },
+    {
+      "name": "location",
+      "type": "text",
+      "description": "The resource location."
+    },
+    {
+      "name": "administrator_login",
+      "type": "text",
+      "description": "Specifies the username of the administrator for this server."
+    },
+    {
+      "name": "backup_retention_days",
+      "type": "integer",
+      "description": "Backup retention days for the server."
+    },
+    {
+      "name": "byok_enforcement",
+      "type": "text",
+      "description": "Status showing whether the server data encryption is enabled with customer-managed keys."
+    },
+    {
+      "name": "earliest_restore_date",
+      "type": "timestamp with time zone",
+      "description": "Specifies the earliest restore point creation time."
+    },
+    {
+      "name": "fully_qualified_domain_name",
+      "type": "text",
+      "description": "The fully qualified domain name of the server."
+    },
+    {
+      "name": "geo_redundant_backup",
+      "type": "text",
+      "description": "Indicates whether Geo-redundant is enabled, or not for server backup."
+    },
+    {
+      "name": "infrastructure_encryption",
+      "type": "text",
+      "description": "Status showing whether the server enabled infrastructure encryption. Possible values include: 'Enabled', 'Disabled'."
+    },
+    {
+      "name": "master_server_id",
+      "type": "text",
+      "description": "The master server id of a replica server."
+    },
+    {
+      "name": "minimal_tls_version",
+      "type": "text",
+      "description": "Enforce a minimal Tls version for the server. Possible values include: 'TLS10', 'TLS11', 'TLS12', 'TLSEnforcementDisabled'."
+    },
+    {
+      "name": "public_network_access",
+      "type": "text",
+      "description": "Indicates whether or not public network access is allowed for this server. Value is optional but if passed in, must be 'Enabled' or 'Disabled'. Possible values include: 'Enabled', 'Disabled'."
+    },
+    {
+      "name": "replica_capacity",
+      "type": "integer",
+      "description": "The maximum number of replicas that a master server can have."
+    },
+    {
+      "name": "replication_role",
+      "type": "text",
+      "description": "The replication role of the server."
+    },
+    {
+      "name": "sku_capacity",
+      "type": "integer",
+      "description": "The scale up/out capacity, representing server's compute units."
+    },
+    {
+      "name": "sku_family",
+      "type": "text",
+      "description": "The family of hardware."
+    },
+    {
+      "name": "sku_name",
+      "type": "text",
+      "description": "The name of the sku. For example: 'B_Gen4_1', 'GP_Gen5_8'."
+    },
+    {
+      "name": "sku_size",
+      "type": "text",
+      "description": "The size code, to be interpreted by resource as appropriate."
+    },
+    {
+      "name": "sku_tier",
+      "type": "text",
+      "description": "The tier of the particular SKU. Possible values include: 'Basic', 'GeneralPurpose', 'MemoryOptimized'."
+    },
+    {
+      "name": "ssl_enforcement",
+      "type": "text",
+      "description": "Enable ssl enforcement or not when connect to server. Possible values include: 'Enabled', 'Disabled'."
+    },
+    {
+      "name": "storage_auto_grow",
+      "type": "text",
+      "description": "Indicates whether storage auto grow is enabled, or not."
+    },
+    {
+      "name": "storage_mb",
+      "type": "integer",
+      "description": "Indicates max storage allowed for a server."
+    },
+    {
+      "name": "private_endpoint_connections",
+      "type": "json",
+      "description": "A list of private endpoint connections on a server."
+    },
+    {
+      "name": "server_configurations",
+      "type": "json",
+      "description": "The server configurations(parameters) details of the server."
+    },
+    {
+      "name": "server_keys",
+      "type": "json",
+      "description": "The server keys of the server."
+    },
+    {
+      "name": "server_security_alert_policy",
+      "type": "json",
+      "description": "Security alert policy associated with the MySQL Server."
+    },
+    {
+      "name": "vnet_rules",
+      "type": "json",
+      "description": "Rules represented by VNET."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": "ColumnDescriptionTitle"
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": "ColumnDescriptionTags"
+    },
+    {
+      "name": "region",
+      "type": "text",
+      "description": "ColumnDescriptionRegion"
+    },
+    {
+      "name": "resource_group",
+      "type": "text",
+      "description": "ColumnDescriptionResourceGroup"
+    }
+  ]
+}

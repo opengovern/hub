@@ -1,0 +1,86 @@
+{
+  "table_name": "aws_drs_source_server",
+  "table_description": "AWS DRS SourceServer",
+  "columns": [
+    {
+      "name": "source_server_id",
+      "type": "text",
+      "description": "The id of the source server."
+    },
+    {
+      "name": "arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) of the source server"
+    },
+    {
+      "name": "recovery_instance_id",
+      "type": "text",
+      "description": "The ID of the Recovery Instance associated with this Source Server."
+    },
+    {
+      "name": "source_properties",
+      "type": "",
+      "description": "The source properties of the Source Server."
+    },
+    {
+      "name": "data_replication_info",
+      "type": "json",
+      "description": "The Data Replication Info of the Source Server."
+    },
+    {
+      "name": "last_launch_result",
+      "type": "text",
+      "description": "The status of the last recovery launch of this Source Server."
+    },
+    {
+      "name": "life_cycle",
+      "type": "json",
+      "description": "The lifecycle information of this Source Server."
+    },
+    {
+      "name": "replication_direction",
+      "type": "text",
+      "description": "Replication direction of the Source Server."
+    },
+    {
+      "name": "reversed_direction_source_server_arn",
+      "type": "text",
+      "description": "For EC2-originated Source Servers which have been failed over and then failed back, this value will mean the ARN of the Source Server on the opposite replication direction."
+    },
+    {
+      "name": "source_cloud_properties",
+      "type": "json",
+      "description": "Source cloud properties of the Source Server."
+    },
+    {
+      "name": "staging_area",
+      "type": "json",
+      "description": "The staging area of the source server."
+    },
+    {
+      "name": "staging_account_id",
+      "type": "text",
+      "description": "The staging account ID that extended source servers belong to."
+    },
+    {
+      "name": "launch_configuration",
+      "type": "json",
+      "description": "The launch configuration settings of the source server."
+    },
+    {
+      "name": "hardware_id",
+      "type": "text",
+      "description": "An ID that describes the hardware of the Source Server. This is either an EC2 instance id, a VMware uuid or a mac address."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": ""
+    }
+  ]
+}

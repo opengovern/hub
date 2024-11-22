@@ -1,0 +1,31 @@
+{
+  "table_name": "aws_ssm_document_permission",
+  "table_description": "AWS SSM Document Permission",
+  "columns": [
+    {
+      "name": "document_name",
+      "type": "text",
+      "description": "The name of the Systems Manager document."
+    },
+    {
+      "name": "shared_account_id",
+      "type": "text",
+      "description": "The Amazon Web Services account ID where the current document is shared."
+    },
+    {
+      "name": "shared_document_version",
+      "type": "text",
+      "description": "The version of the current document shared with the account."
+    },
+    {
+      "name": "account_ids",
+      "type": "json",
+      "description": "The account IDs that have permission to use this document. The ID can be either an AWS account or All."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "table_name": "aws_glue_connection",
+  "table_description": "AWS Glue Connection",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The name of the connection definition."
+    },
+    {
+      "name": "arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) of the connection."
+    },
+    {
+      "name": "connection_type",
+      "type": "text",
+      "description": "The type of the connection. Currently, SFTP is not supported."
+    },
+    {
+      "name": "creation_time",
+      "type": "timestamp with time zone",
+      "description": "The time that this connection definition was created."
+    },
+    {
+      "name": "description",
+      "type": "text",
+      "description": "The description of the connection."
+    },
+    {
+      "name": "last_updated_by",
+      "type": "text",
+      "description": "The user, group, or role that last updated this connection definition."
+    },
+    {
+      "name": "last_updated_time",
+      "type": "timestamp with time zone",
+      "description": "The last time that this connection definition was updated."
+    },
+    {
+      "name": "connection_properties",
+      "type": "json",
+      "description": "These key-value pairs define parameters for the connection."
+    },
+    {
+      "name": "match_criteria",
+      "type": "json",
+      "description": "A list of criteria that can be used in selecting this connection."
+    },
+    {
+      "name": "physical_connection_requirements",
+      "type": "json",
+      "description": "A map of physical connection requirements, such as virtual private cloud (VPC) and SecurityGroup, that are needed to make this connection successfully."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    }
+  ]
+}

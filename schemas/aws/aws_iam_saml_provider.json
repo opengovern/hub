@@ -1,0 +1,36 @@
+{
+  "table_name": "aws_iam_saml_provider",
+  "table_description": "AWS IAM Saml Provider",
+  "columns": [
+    {
+      "name": "arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) specifying the IAM policy."
+    },
+    {
+      "name": "create_date",
+      "type": "timestamp with time zone",
+      "description": "The date and time when the SAML provider was created."
+    },
+    {
+      "name": "valid_until",
+      "type": "timestamp with time zone",
+      "description": "The expiration date and time for the SAML provider."
+    },
+    {
+      "name": "saml_metadata_document",
+      "type": "text",
+      "description": "The XML metadata document that includes information about an identity provider."
+    },
+    {
+      "name": "tags_src",
+      "type": "json",
+      "description": "A list of tags that are attached to the specified IAM SAML provider."
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": ""
+    }
+  ]
+}

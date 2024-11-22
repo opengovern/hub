@@ -1,0 +1,96 @@
+{
+  "table_name": "azure_security_center_sub_assessment",
+  "table_description": "Azure Security Center Sub Assessment",
+  "columns": [
+    {
+      "name": "id",
+      "type": "text",
+      "description": "The resource id."
+    },
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The resource name."
+    },
+    {
+      "name": "type",
+      "type": "text",
+      "description": "The resource type."
+    },
+    {
+      "name": "assessment_name",
+      "type": "text",
+      "description": "The assessment name."
+    },
+    {
+      "name": "category",
+      "type": "text",
+      "description": "Category of the sub-assessment."
+    },
+    {
+      "name": "description",
+      "type": "text",
+      "description": "Human readable description of the assessment status."
+    },
+    {
+      "name": "display_name",
+      "type": "text",
+      "description": "User friendly display name of the sub-assessment."
+    },
+    {
+      "name": "impact",
+      "type": "text",
+      "description": "Description of the impact of this sub-assessment."
+    },
+    {
+      "name": "remediation",
+      "type": "text",
+      "description": "Information on how to remediate this sub-assessment."
+    },
+    {
+      "name": "time_generated",
+      "type": "text",
+      "description": "The date and time the sub-assessment was generated."
+    },
+    {
+      "name": "assessed_resource_type",
+      "type": "text",
+      "description": "Details of the sub-assessment."
+    },
+    {
+      "name": "container_registry_vulnerability_properties",
+      "type": "json",
+      "description": "ContainerRegistryVulnerabilityProperties details of the resource that was assessed."
+    },
+    {
+      "name": "resource_details",
+      "type": "json",
+      "description": "Details of the resource that was assessed."
+    },
+    {
+      "name": "status",
+      "type": "json",
+      "description": "The status of the sub-assessment."
+    },
+    {
+      "name": "server_vulnerability_properties",
+      "type": "json",
+      "description": "ServerVulnerabilityProperties details of the resource that was assessed."
+    },
+    {
+      "name": "sql_server_vulnerability_properties",
+      "type": "json",
+      "description": "SQLServerVulnerabilityProperties details of the resource that was assessed."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": "ColumnDescriptionTitle"
+    },
+    {
+      "name": "resource_group",
+      "type": "text",
+      "description": "ColumnDescriptionResourceGroup"
+    }
+  ]
+}

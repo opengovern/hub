@@ -1,0 +1,171 @@
+{
+  "table_name": "aws_athena_query_execution",
+  "table_description": "AWS Athena Query Execution",
+  "columns": [
+    {
+      "name": "id",
+      "type": "text",
+      "description": "The unique identifier for each query execution."
+    },
+    {
+      "name": "workgroup",
+      "type": "text",
+      "description": "The name of the workgroup in which the query ran."
+    },
+    {
+      "name": "catalog",
+      "type": "text",
+      "description": "The name of the data catalog used in the query execution."
+    },
+    {
+      "name": "database",
+      "type": "text",
+      "description": "The name of the data database used in the query execution."
+    },
+    {
+      "name": "query",
+      "type": "text",
+      "description": "The SQL query statements which the query execution ran."
+    },
+    {
+      "name": "effective_engine_version",
+      "type": "text",
+      "description": "The engine version on which the query runs."
+    },
+    {
+      "name": "selected_engine_version",
+      "type": "text",
+      "description": "The engine version requested by the users."
+    },
+    {
+      "name": "execution_parameters",
+      "type": "json",
+      "description": "A list of values for the parameters in a query."
+    },
+    {
+      "name": "statement_type",
+      "type": "text",
+      "description": "The type of query statement that was run."
+    },
+    {
+      "name": "substatement_type",
+      "type": "text",
+      "description": "The kind of query statement that was run."
+    },
+    {
+      "name": "state",
+      "type": "text",
+      "description": "The state of query execution."
+    },
+    {
+      "name": "state_change_reason",
+      "type": "text",
+      "description": "Further detail about the status of the query."
+    },
+    {
+      "name": "submission_date_time",
+      "type": "timestamp with time zone",
+      "description": "The date and time that the query was submitted."
+    },
+    {
+      "name": "completion_date_time",
+      "type": "timestamp with time zone",
+      "description": "The date and time that the query completed."
+    },
+    {
+      "name": "error_message",
+      "type": "text",
+      "description": "Contains a short description of the error that occurred."
+    },
+    {
+      "name": "error_type",
+      "type": "integer",
+      "description": "An integer value that provides specific information about an Athena query error."
+    },
+    {
+      "name": "error_category",
+      "type": "integer",
+      "description": "An integer value that specifies the category of a query failure error."
+    },
+    {
+      "name": "retryable",
+      "type": "boolean",
+      "description": "True if the query might succeed if resubmitted."
+    },
+    {
+      "name": "data_manifest_location",
+      "type": "text",
+      "description": "The location and file name of a data manifest file."
+    },
+    {
+      "name": "data_scanned_in_bytes",
+      "type": "integer",
+      "description": "The number of bytes in the data that was queried."
+    },
+    {
+      "name": "engine_execution_time_in_millis",
+      "type": "integer",
+      "description": "The number of milliseconds that the query took to execute."
+    },
+    {
+      "name": "query_planning_time_in_millis",
+      "type": "integer",
+      "description": "The number of milliseconds that Athena took to plan the query processing flow."
+    },
+    {
+      "name": "query_queue_time_in_millis",
+      "type": "integer",
+      "description": "The number of milliseconds that the query was in your query queue waiting for resources."
+    },
+    {
+      "name": "service_processing_time_in_millis",
+      "type": "integer",
+      "description": "The number of milliseconds that Athena took to finalize and publish the query results after the query engine finished running the query."
+    },
+    {
+      "name": "total_execution_time_in_millis",
+      "type": "integer",
+      "description": "The number of milliseconds that Athena took to run the query."
+    },
+    {
+      "name": "reused_previous_result",
+      "type": "boolean",
+      "description": "True if a previous query result was reused; false if the result was generated."
+    },
+    {
+      "name": "s3_acl_option",
+      "type": "text",
+      "description": "The Amazon S3 canned ACL that Athena should specify when storing query results."
+    },
+    {
+      "name": "encryption_option",
+      "type": "text",
+      "description": "Indicates whether Amazon S3 server-side encryption with Amazon S3-managed keys (SSE_S3), server-side encryption with KMS-managed keys (SSE_KMS), or client-side encryption with KMS-managed keys (CSE_KMS) is used."
+    },
+    {
+      "name": "kms_key",
+      "type": "text",
+      "description": "For SSE_KMS and CSE_KMS, this is the KMS key ARN or ID."
+    },
+    {
+      "name": "expected_bucket_owner",
+      "type": "text",
+      "description": "The Amazon Web Services account ID that you expect to be the owner of the Amazon S3 bucket specified by ResultConfiguration$OutputLocation."
+    },
+    {
+      "name": "output_location",
+      "type": "text",
+      "description": "The location in Amazon S3 where your query results are stored."
+    },
+    {
+      "name": "result_reuse_by_age_enabled",
+      "type": "boolean",
+      "description": "True if previous query results can be reused when the query is run."
+    },
+    {
+      "name": "result_reuse_by_age_mag_age_in_minutes",
+      "type": "integer",
+      "description": "Specifies, in minutes, the maximum age of a previous query result that Athena should consider for reuse. The default is 60."
+    }
+  ]
+}

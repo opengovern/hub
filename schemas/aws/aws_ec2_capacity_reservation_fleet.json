@@ -1,0 +1,26 @@
+{
+  "table_name": "aws_ec2_capacity_reservation_fleet",
+  "table_description": "AWS Ec2 CapacityReservationFleet",
+  "columns": [
+    {
+      "name": "capacity_reservation_fleet_id",
+      "type": "text",
+      "description": "The id of the capacity reservation fleet."
+    },
+    {
+      "name": "capacity_reservation_fleet_arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) of the capacity reservation fleet"
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": ""
+    }
+  ]
+}

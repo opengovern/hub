@@ -1,0 +1,21 @@
+{
+  "table_name": "aws_ecr_registry",
+  "table_description": "AWS ECR Registry",
+  "columns": [
+    {
+      "name": "registry_id",
+      "type": "text",
+      "description": "The Registry ID."
+    },
+    {
+      "name": "rules",
+      "type": "json",
+      "description": "The Registry Rules."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    }
+  ]
+}

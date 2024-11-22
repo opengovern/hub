@@ -1,0 +1,106 @@
+{
+  "table_name": "azure_iothub_dps",
+  "table_description": "Azure Iot Hub Dps",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The resource name."
+    },
+    {
+      "name": "id",
+      "type": "text",
+      "description": "The resource identifier."
+    },
+    {
+      "name": "state",
+      "type": "text",
+      "description": "Current state of the provisioning service."
+    },
+    {
+      "name": "provisioning_state",
+      "type": "text",
+      "description": "The ARM provisioning state of the provisioning service."
+    },
+    {
+      "name": "type",
+      "type": "text",
+      "description": "The resource type."
+    },
+    {
+      "name": "allocation_policy",
+      "type": "text",
+      "description": "Allocation policy to be used by this provisioning service."
+    },
+    {
+      "name": "device_provisioning_host_name",
+      "type": "text",
+      "description": "Device endpoint for this provisioning service."
+    },
+    {
+      "name": "etag",
+      "type": "text",
+      "description": "An unique read-only string that changes whenever the resource is updated."
+    },
+    {
+      "name": "id_scope",
+      "type": "text",
+      "description": "Unique identifier of this provisioning service.."
+    },
+    {
+      "name": "service_operations_host_name",
+      "type": "text",
+      "description": "Service endpoint for provisioning service."
+    },
+    {
+      "name": "sku_capacity",
+      "type": "text",
+      "description": "Iot dps SKU capacity."
+    },
+    {
+      "name": "sku_name",
+      "type": "text",
+      "description": "Iot dps SKU name."
+    },
+    {
+      "name": "sku_tier",
+      "type": "text",
+      "description": "Iot dps SKU tier."
+    },
+    {
+      "name": "authorization_policies",
+      "type": "json",
+      "description": "List of authorization keys for a provisioning service."
+    },
+    {
+      "name": "diagnostic_settings",
+      "type": "json",
+      "description": "A list of active diagnostic settings for the iot dps."
+    },
+    {
+      "name": "iot_hubs",
+      "type": "json",
+      "description": "List of IoT hubs associated with this provisioning service."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": "ColumnDescriptionTitle"
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": "ColumnDescriptionTags"
+    },
+    {
+      "name": "region",
+      "type": "text",
+      "description": "ColumnDescriptionRegion"
+    },
+    {
+      "name": "resource_group",
+      "type": "text",
+      "description": "ColumnDescriptionResourceGroup"
+    }
+  ]
+}

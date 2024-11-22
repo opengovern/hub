@@ -1,0 +1,121 @@
+{
+  "table_name": "aws_sagemaker_notebook_instance",
+  "table_description": "AWS Sagemaker Notebook Instance",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The name of the notebook instance."
+    },
+    {
+      "name": "arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) of the notebook instance."
+    },
+    {
+      "name": "creation_time",
+      "type": "timestamp with time zone",
+      "description": "A timestamp that shows when the notebook instance was created."
+    },
+    {
+      "name": "default_code_repository",
+      "type": "text",
+      "description": "The Git repository associated with the notebook instance as its default code repository."
+    },
+    {
+      "name": "direct_internet_access",
+      "type": "text",
+      "description": "Describes whether Amazon SageMaker provides internet access to the notebook instance."
+    },
+    {
+      "name": "failure_reason",
+      "type": "text",
+      "description": "If status is Failed, the reason it failed."
+    },
+    {
+      "name": "instance_type",
+      "type": "text",
+      "description": "The type of ML compute instance that the notebook instance is running on."
+    },
+    {
+      "name": "kms_key_id",
+      "type": "text",
+      "description": "The AWS KMS key ID Amazon SageMaker uses to encrypt data when storing it on the ML storage volume attached to the instance."
+    },
+    {
+      "name": "last_modified_time",
+      "type": "timestamp with time zone",
+      "description": "A timestamp that shows when the notebook instance was last modified."
+    },
+    {
+      "name": "network_interface_id",
+      "type": "text",
+      "description": "The network interface IDs that Amazon SageMaker created at the time of creating the instance."
+    },
+    {
+      "name": "notebook_instance_lifecycle_config_name",
+      "type": "text",
+      "description": "The name of a notebook instance lifecycle configuration associated with this notebook instance."
+    },
+    {
+      "name": "notebook_instance_status",
+      "type": "text",
+      "description": "The status of the notebook instance."
+    },
+    {
+      "name": "role_arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) of the IAM role associated with the instance."
+    },
+    {
+      "name": "root_access",
+      "type": "text",
+      "description": "Whether root access is enabled or disabled for users of the notebook instance.Lifecycle configurations need root access to be able to set up a notebook instance"
+    },
+    {
+      "name": "subnet_id",
+      "type": "text",
+      "description": "The ID of the VPC subnet."
+    },
+    {
+      "name": "url",
+      "type": "text",
+      "description": "The URL that you use to connect to the Jupyter notebook that is running in your notebook instance."
+    },
+    {
+      "name": "volume_size_in_gb",
+      "type": "integer",
+      "description": "The size, in GB, of the ML storage volume attached to the notebook instance."
+    },
+    {
+      "name": "accelerator_types",
+      "type": "json",
+      "description": "The list of the Elastic Inference (EI) instance types associated with this notebook instance."
+    },
+    {
+      "name": "additional_code_repositories",
+      "type": "json",
+      "description": "An array of up to three Git repositories associated with the notebook instance."
+    },
+    {
+      "name": "security_groups",
+      "type": "json",
+      "description": "The IDs of the VPC security groups."
+    },
+    {
+      "name": "tags_src",
+      "type": "json",
+      "description": "The list of tags for the notebook instance."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": ""
+    }
+  ]
+}

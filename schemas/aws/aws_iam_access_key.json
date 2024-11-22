@@ -1,0 +1,46 @@
+{
+  "table_name": "aws_iam_access_key",
+  "table_description": "AWS IAM User Access Key",
+  "columns": [
+    {
+      "name": "access_key_id",
+      "type": "text",
+      "description": "The ID for this access key."
+    },
+    {
+      "name": "user_name",
+      "type": "text",
+      "description": "The name of the IAM user that the key is associated with."
+    },
+    {
+      "name": "status",
+      "type": "text",
+      "description": "The status of the access key. Active means that the key is valid for API calls; Inactive means it is not."
+    },
+    {
+      "name": "create_date",
+      "type": "timestamp with time zone",
+      "description": "The date when the access key was created."
+    },
+    {
+      "name": "access_key_last_used_date",
+      "type": "timestamp with time zone",
+      "description": "The date when the access key was last used."
+    },
+    {
+      "name": "access_key_last_used_service",
+      "type": "text",
+      "description": "The service last used by the access key."
+    },
+    {
+      "name": "access_key_last_used_region",
+      "type": "text",
+      "description": "The region in which the access key was last used."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    }
+  ]
+}

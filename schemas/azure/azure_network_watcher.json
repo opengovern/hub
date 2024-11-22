@@ -1,0 +1,51 @@
+{
+  "table_name": "azure_network_watcher",
+  "table_description": "Azure Network Watcher",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The friendly name that identifies the network watcher"
+    },
+    {
+      "name": "id",
+      "type": "text",
+      "description": "Contains ID to identify a network watcher uniquely"
+    },
+    {
+      "name": "etag",
+      "type": "text",
+      "description": "An unique read-only string that changes whenever the resource is updated"
+    },
+    {
+      "name": "type",
+      "type": "text",
+      "description": "The resource type of the network watcher"
+    },
+    {
+      "name": "provisioning_state",
+      "type": "text",
+      "description": "The provisioning state of the network watcher resource"
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": "ColumnDescriptionTitle"
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": "ColumnDescriptionTags"
+    },
+    {
+      "name": "region",
+      "type": "text",
+      "description": "ColumnDescriptionRegion"
+    },
+    {
+      "name": "resource_group",
+      "type": "text",
+      "description": "ColumnDescriptionResourceGroup"
+    }
+  ]
+}

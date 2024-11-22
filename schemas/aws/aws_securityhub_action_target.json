@@ -1,0 +1,26 @@
+{
+  "table_name": "aws_securityhub_action_target",
+  "table_description": "AWS Security Hub Action Target",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The name of the action target."
+    },
+    {
+      "name": "arn",
+      "type": "text",
+      "description": "The ARN for the target action."
+    },
+    {
+      "name": "description",
+      "type": "text",
+      "description": "The description of the target action."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    }
+  ]
+}

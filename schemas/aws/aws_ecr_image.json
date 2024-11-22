@@ -1,0 +1,66 @@
+{
+  "table_name": "aws_ecr_image",
+  "table_description": "AWS ECR Image",
+  "columns": [
+    {
+      "name": "repository_name",
+      "type": "text",
+      "description": "The name of the repository."
+    },
+    {
+      "name": "artifact_media_type",
+      "type": "text",
+      "description": "The artifact media type of the image."
+    },
+    {
+      "name": "image_digest",
+      "type": "text",
+      "description": "The sha256 digest of the image manifest."
+    },
+    {
+      "name": "image_uri",
+      "type": "text",
+      "description": "The URI for the image."
+    },
+    {
+      "name": "image_manifest_media_type",
+      "type": "text",
+      "description": "The media type of the image manifest."
+    },
+    {
+      "name": "image_pushed_at",
+      "type": "timestamp with time zone",
+      "description": "The date and time, expressed in standard JavaScript date format, at which the current image was pushed to the repository."
+    },
+    {
+      "name": "image_size_in_bytes",
+      "type": "integer",
+      "description": "The size, in bytes, of the image in the repository."
+    },
+    {
+      "name": "last_recorded_pull_time",
+      "type": "timestamp with time zone",
+      "description": "The date and time, expressed in standard JavaScript date format, when Amazon ECR recorded the last image pull."
+    },
+    {
+      "name": "registry_id",
+      "type": "text",
+      "description": "The Amazon Web Services account ID associated with the registry to which this image belongs."
+    },
+    {
+      "name": "image_scan_findings_summary",
+      "type": "json",
+      "description": "A summary of the last completed image scan."
+    },
+    {
+      "name": "image_scan_status",
+      "type": "json",
+      "description": "The current state of the scan."
+    },
+    {
+      "name": "image_tags",
+      "type": "json",
+      "description": "The list of tags associated with this image."
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "table_name": "aws_vpc_nat_gateway_metric_bytes_out_to_destination",
+  "table_description": "AWS VPC Nat Gateway Cloudwatch Metrics - BytesOutToDestination",
+  "columns": [
+    {
+      "name": "nat_gateway_id",
+      "type": "text",
+      "description": "The ID of the NAT gateway."
+    }
+  ]
+}

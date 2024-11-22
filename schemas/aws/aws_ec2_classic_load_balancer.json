@@ -1,0 +1,186 @@
+{
+  "table_name": "aws_ec2_classic_load_balancer",
+  "table_description": "AWS EC2 Classic Load Balancer",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The friendly name of the Load Balancer."
+    },
+    {
+      "name": "arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) specifying the classic load balancer."
+    },
+    {
+      "name": "scheme",
+      "type": "text",
+      "description": "The load balancing scheme of load balancer."
+    },
+    {
+      "name": "created_time",
+      "type": "timestamp with time zone",
+      "description": "The date and time the load balancer was created."
+    },
+    {
+      "name": "vpc_id",
+      "type": "text",
+      "description": "The ID of the VPC for the load balancer."
+    },
+    {
+      "name": "access_log_emit_interval",
+      "type": "integer",
+      "description": "The interval for publishing the access logs."
+    },
+    {
+      "name": "access_log_enabled",
+      "type": "boolean",
+      "description": "Specifies whether access logs are enabled for the load balancer."
+    },
+    {
+      "name": "access_log_s3_bucket_name",
+      "type": "text",
+      "description": "The name of the Amazon S3 bucket where the access logs are stored."
+    },
+    {
+      "name": "access_log_s3_bucket_prefix",
+      "type": "text",
+      "description": "The logical hierarchy you created for your Amazon S3 bucket."
+    },
+    {
+      "name": "canonical_hosted_zone_name",
+      "type": "text",
+      "description": "The name of the Amazon Route 53 hosted zone for the load balancer."
+    },
+    {
+      "name": "canonical_hosted_zone_name_id",
+      "type": "text",
+      "description": "The ID of the Amazon Route 53 hosted zone for the load balancer."
+    },
+    {
+      "name": "connection_draining_enabled",
+      "type": "boolean",
+      "description": "Specifies whether connection draining is enabled for the load balancer."
+    },
+    {
+      "name": "connection_draining_timeout",
+      "type": "integer",
+      "description": "The maximum time, in seconds, to keep the existing connections open before deregistering the instances."
+    },
+    {
+      "name": "connection_settings_idle_timeout",
+      "type": "integer",
+      "description": "The time, in seconds, that the connection is allowed to be idle (no data has been sent over the connection) before it is closed by the load balancer."
+    },
+    {
+      "name": "cross_zone_load_balancing_enabled",
+      "type": "boolean",
+      "description": "Specifies whether cross-zone load balancing is enabled for the load balancer."
+    },
+    {
+      "name": "dns_name",
+      "type": "text",
+      "description": "The DNS name of the load balancer."
+    },
+    {
+      "name": "health_check_interval",
+      "type": "integer",
+      "description": "The approximate interval, in seconds, between health checks of an individual instance."
+    },
+    {
+      "name": "health_check_timeout",
+      "type": "integer",
+      "description": "The amount of time, in seconds, during which no response means a failed health check."
+    },
+    {
+      "name": "healthy_threshold",
+      "type": "integer",
+      "description": "The number of consecutive health checks successes required before moving the instance to the Healthy state."
+    },
+    {
+      "name": "health_check_target",
+      "type": "text",
+      "description": "The instance being checked. The protocol is either TCP, HTTP, HTTPS, or SSL. The range of valid ports is one (1) through 65535."
+    },
+    {
+      "name": "source_security_group_name",
+      "type": "text",
+      "description": "The name of the security group."
+    },
+    {
+      "name": "source_security_group_owner_alias",
+      "type": "text",
+      "description": "The owner of the security group."
+    },
+    {
+      "name": "unhealthy_threshold",
+      "type": "integer",
+      "description": "The number of consecutive health check failures required before moving the instance to the Unhealthy state."
+    },
+    {
+      "name": "additional_attributes",
+      "type": "json",
+      "description": "A list of additional attributes."
+    },
+    {
+      "name": "app_cookie_stickiness_policies",
+      "type": "json",
+      "description": "A list of the stickiness policies created using CreateAppCookieStickinessPolicy."
+    },
+    {
+      "name": "availability_zones",
+      "type": "json",
+      "description": "A list of the Availability Zones for the load balancer."
+    },
+    {
+      "name": "backend_server_descriptions",
+      "type": "json",
+      "description": "A list of information about your EC2 instances."
+    },
+    {
+      "name": "instances",
+      "type": "json",
+      "description": "A list of the IDs of the instances for the load balancer."
+    },
+    {
+      "name": "lb_cookie_stickiness_policies",
+      "type": "json",
+      "description": "A list of the stickiness policies created using CreateLBCookieStickinessPolicy."
+    },
+    {
+      "name": "listener_descriptions",
+      "type": "json",
+      "description": "A list of the listeners for the load balancer"
+    },
+    {
+      "name": "other_policies",
+      "type": "json",
+      "description": "A list of policies other than the stickiness policies."
+    },
+    {
+      "name": "security_groups",
+      "type": "json",
+      "description": "A list of the security groups for the load balancer."
+    },
+    {
+      "name": "subnets",
+      "type": "json",
+      "description": "A list of the IDs of the subnets for the load balancer."
+    },
+    {
+      "name": "tags_src",
+      "type": "json",
+      "description": "A list of tags attached to the load balancer."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": ""
+    }
+  ]
+}

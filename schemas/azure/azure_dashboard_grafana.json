@@ -1,0 +1,21 @@
+{
+  "table_name": "azure_dashboard_grafana",
+  "table_description": "Azure Dashboard Grafana",
+  "columns": [
+    {
+      "name": "id",
+      "type": "text",
+      "description": "The id of the grafana."
+    },
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The name of the grafana."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": "ColumnDescriptionTitle"
+    }
+  ]
+}

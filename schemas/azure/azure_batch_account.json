@@ -1,0 +1,121 @@
+{
+  "table_name": "azure_batch_account",
+  "table_description": "Azure Batch Account",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The resource name."
+    },
+    {
+      "name": "id",
+      "type": "text",
+      "description": "The resource identifier."
+    },
+    {
+      "name": "type",
+      "type": "text",
+      "description": "The resource type."
+    },
+    {
+      "name": "provisioning_state",
+      "type": "text",
+      "description": "The provisioned state of the batch account."
+    },
+    {
+      "name": "account_endpoint",
+      "type": "text",
+      "description": "The account endpoint used to interact with the batch service."
+    },
+    {
+      "name": "active_job_and_job_schedule_quota",
+      "type": "text",
+      "description": "Active job and job schedule quota of the batch account."
+    },
+    {
+      "name": "dedicated_core_quota",
+      "type": "integer",
+      "description": "The dedicated core quota of the batch account."
+    },
+    {
+      "name": "dedicated_core_quota_per_vm_family_enforced",
+      "type": "boolean",
+      "description": "Batch is transitioning its core quota system for dedicated cores to be enforced per Virtual Machine family. During this transitional phase, the dedicated core quota per Virtual Machine family may not yet be enforced."
+    },
+    {
+      "name": "low_priority_core_quota",
+      "type": "integer",
+      "description": "The low priority core quota of the batch account."
+    },
+    {
+      "name": "pool_allocation_mode",
+      "type": "text",
+      "description": "The pool allocation mode of the batch account."
+    },
+    {
+      "name": "pool_quota",
+      "type": "integer",
+      "description": "The pool quota of the batch account."
+    },
+    {
+      "name": "public_network_access",
+      "type": "text",
+      "description": "Indicates whether or not public network access is allowed for the batch account."
+    },
+    {
+      "name": "auto_storage",
+      "type": "json",
+      "description": "The auto storage properties of the batch account."
+    },
+    {
+      "name": "dedicated_core_quota_per_vm_family",
+      "type": "json",
+      "description": "A list of the dedicated core quota per virtual machine family for the batch account."
+    },
+    {
+      "name": "diagnostic_settings",
+      "type": "json",
+      "description": "A list of active diagnostic settings for the batch account."
+    },
+    {
+      "name": "encryption",
+      "type": "json",
+      "description": "Properties to enable customer managed key for the batch account."
+    },
+    {
+      "name": "identity",
+      "type": "json",
+      "description": "The identity of the batch account."
+    },
+    {
+      "name": "key_vault_reference",
+      "type": "json",
+      "description": "Key vault reference of the batch account."
+    },
+    {
+      "name": "private_endpoint_connections",
+      "type": "json",
+      "description": "The properties associated with the private endpoint connection."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": "ColumnDescriptionTitle"
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": "ColumnDescriptionTags"
+    },
+    {
+      "name": "region",
+      "type": "text",
+      "description": "ColumnDescriptionRegion"
+    },
+    {
+      "name": "resource_group",
+      "type": "text",
+      "description": "ColumnDescriptionResourceGroup"
+    }
+  ]
+}

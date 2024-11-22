@@ -1,0 +1,26 @@
+{
+  "table_name": "azure_sql_virtualclusters",
+  "table_description": "Azure Sql VirtualClusters",
+  "columns": [
+    {
+      "name": "id",
+      "type": "text",
+      "description": "The id of the virtualclusters."
+    },
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The name of the virtualclusters."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": "ColumnDescriptionTitle"
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": "ColumnDescriptionTags"
+    }
+  ]
+}

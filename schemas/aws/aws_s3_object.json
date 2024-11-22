@@ -1,0 +1,246 @@
+{
+  "table_name": "aws_s3_object",
+  "table_description": "List AWS S3 Objects in S3 buckets by bucket name.",
+  "columns": [
+    {
+      "name": "key",
+      "type": "text",
+      "description": "The name that you assign to an object. You use the object key to retrieve the object."
+    },
+    {
+      "name": "arn",
+      "type": "text",
+      "description": "The ARN of the AWS S3 Object."
+    },
+    {
+      "name": "bucket_name",
+      "type": "text",
+      "description": "The name of the container bucket of this object."
+    },
+    {
+      "name": "last_modified",
+      "type": "timestamp with time zone",
+      "description": "Last modified time of the object."
+    },
+    {
+      "name": "storage_class",
+      "type": "text",
+      "description": "The class of storage used to store the object."
+    },
+    {
+      "name": "version_id",
+      "type": "text",
+      "description": "The version ID of the object."
+    },
+    {
+      "name": "accept_ranges",
+      "type": "text",
+      "description": "Indicates that a range of bytes was specified."
+    },
+    {
+      "name": "body",
+      "type": "text",
+      "description": "The raw bytes of the object data as a string. If the bytes entirely consists of valid UTF8 runes, an UTF8 is sent otherwise the bas64 encoding of the bytes is sent."
+    },
+    {
+      "name": "bucket_key_enabled",
+      "type": "boolean",
+      "description": "Indicates whether the object uses an S3 Bucket Key for server-side encryption with Amazon Web Services KMS (SSE-KMS)"
+    },
+    {
+      "name": "cache_control",
+      "type": "text",
+      "description": "Specifies caching behavior along the request/reply chain."
+    },
+    {
+      "name": "checksum_crc32",
+      "type": "text",
+      "description": "The base64-encoded, 32-bit CRC32 checksum of the object. This will only be present if it was uploaded with the object. With multipart uploads, this may not be a checksum value of the object."
+    },
+    {
+      "name": "checksum_crc32c",
+      "type": "text",
+      "description": "The base64-encoded, 32-bit CRC32C checksum of the object. This will only be present if it was uploaded with the object. With multipart uploads, this may not be a checksum value of the object."
+    },
+    {
+      "name": "checksum_sha1",
+      "type": "text",
+      "description": "The base64-encoded, 160-bit SHA-1 digest of the object. This will only be present if it was uploaded with the object. With multipart uploads, this may not be a checksum value of the object."
+    },
+    {
+      "name": "checksum_sha256",
+      "type": "text",
+      "description": "The base64-encoded, 256-bit SHA-256 digest of the object. This will only be present if it was uploaded with the object. With multipart uploads, this may not be a checksum value of the object."
+    },
+    {
+      "name": "content_disposition",
+      "type": "text",
+      "description": "Specifies presentational information for the object."
+    },
+    {
+      "name": "content_encoding",
+      "type": "text",
+      "description": "Specifies what content encodings have been applied to the object."
+    },
+    {
+      "name": "content_language",
+      "type": "text",
+      "description": "The language the content is in."
+    },
+    {
+      "name": "content_length",
+      "type": "text",
+      "description": "Size of the body in bytes."
+    },
+    {
+      "name": "content_range",
+      "type": "text",
+      "description": "The portion of the object returned in the response."
+    },
+    {
+      "name": "content_type",
+      "type": "text",
+      "description": "A standard MIME type describing the format of the object data."
+    },
+    {
+      "name": "delete_marker",
+      "type": "boolean",
+      "description": "Specifies whether the object retrieved was (true) or was not (false) a delete marker."
+    },
+    {
+      "name": "expiration",
+      "type": "text",
+      "description": "If the object expiration is configured (see PUT Bucket lifecycle), the response includes this header. It includes the expiry-date and rule-id key-value pairs providing object expiration information. The value of the rule-id is URL-encoded."
+    },
+    {
+      "name": "expires",
+      "type": "timestamp with time zone",
+      "description": "The date and time at which the object is no longer cacheable."
+    },
+    {
+      "name": "etag",
+      "type": "text",
+      "description": "The entity tag of the object."
+    },
+    {
+      "name": "object_lock_legal_hold_status",
+      "type": "text",
+      "description": "Like a retention period, a legal hold prevents an object version from being overwritten or deleted. A legal hold remains in effect until removed."
+    },
+    {
+      "name": "object_lock_mode",
+      "type": "text",
+      "description": "The Object Lock mode currently in place for this object."
+    },
+    {
+      "name": "object_lock_retain_until_date",
+      "type": "timestamp with time zone",
+      "description": "The date and time when this object's Object Lock will expire."
+    },
+    {
+      "name": "parts_count",
+      "type": "integer",
+      "description": "The count of parts this object has. This value is only returned if you specify partNumber in your request and the object was uploaded as a multipart upload."
+    },
+    {
+      "name": "prefix",
+      "type": "text",
+      "description": "The prefix of the key of the object."
+    },
+    {
+      "name": "replication_status",
+      "type": "text",
+      "description": "Amazon S3 can return this if your request involves a bucket that is either a source or destination in a replication rule."
+    },
+    {
+      "name": "request_charged",
+      "type": "text",
+      "description": "If present, indicates that the requester was successfully charged for the request."
+    },
+    {
+      "name": "restore",
+      "type": "text",
+      "description": "Provides information about object restoration action and expiration time of the restored object copy."
+    },
+    {
+      "name": "server_side_encryption",
+      "type": "text",
+      "description": "The server-side encryption algorithm used when storing this object in Amazon S3."
+    },
+    {
+      "name": "size",
+      "type": "integer",
+      "description": "Size in bytes of the object."
+    },
+    {
+      "name": "sse_customer_algorithm",
+      "type": "text",
+      "description": "If server-side encryption with a customer-provided encryption key was requested, the response will include this header confirming the encryption algorithm used."
+    },
+    {
+      "name": "sse_customer_key_md5",
+      "type": "text",
+      "description": "If server-side encryption with a customer-provided encryption key was requested, the response will include this header to provide round-trip message integrity verification of the customer-provided encryption key."
+    },
+    {
+      "name": "sse_kms_key_id",
+      "type": "text",
+      "description": "If present, specifies the ID of the Amazon Web Services Key Management Service(Amazon Web Services KMS) symmetric customer managed key that was used for the object."
+    },
+    {
+      "name": "tag_count",
+      "type": "text",
+      "description": "The number of tags, if any, on the object."
+    },
+    {
+      "name": "website_redirection_location",
+      "type": "text",
+      "description": "If the bucket is configured as a website, redirects requests for this object  to another object in the same bucket or to an external URL."
+    },
+    {
+      "name": "acl",
+      "type": "json",
+      "description": "ACLs define which AWS accounts or groups are granted access along with the type of access."
+    },
+    {
+      "name": "checksum",
+      "type": "json",
+      "description": "The checksum or digest of the object."
+    },
+    {
+      "name": "metadata",
+      "type": "json",
+      "description": "A map of metadata to store with the object in S3."
+    },
+    {
+      "name": "object_parts",
+      "type": "json",
+      "description": "A collection of parts associated with a multipart upload."
+    },
+    {
+      "name": "owner",
+      "type": "json",
+      "description": "The owner of the object."
+    },
+    {
+      "name": "tags_src",
+      "type": "json",
+      "description": "A list of tags assigned to the object."
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": ""
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    },
+    {
+      "name": "region",
+      "type": "text",
+      "description": "The AWS Region in which the object is located."
+    }
+  ]
+}

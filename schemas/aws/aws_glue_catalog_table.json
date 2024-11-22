@@ -1,0 +1,111 @@
+{
+  "table_name": "aws_glue_catalog_table",
+  "table_description": "AWS Glue Catalog Table",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The table name."
+    },
+    {
+      "name": "catalog_id",
+      "type": "text",
+      "description": "The ID of the Data Catalog in which the table resides."
+    },
+    {
+      "name": "create_time",
+      "type": "timestamp with time zone",
+      "description": "The time when the table definition was created in the data catalog."
+    },
+    {
+      "name": "description",
+      "type": "text",
+      "description": "A description of the table."
+    },
+    {
+      "name": "created_by",
+      "type": "text",
+      "description": "The person or entity who created the table."
+    },
+    {
+      "name": "database_name",
+      "type": "text",
+      "description": "The name of the database where the table metadata resides."
+    },
+    {
+      "name": "is_registered_with_lake_formation",
+      "type": "boolean",
+      "description": "Indicates whether the table has been registered with lake formation."
+    },
+    {
+      "name": "last_access_time",
+      "type": "timestamp with time zone",
+      "description": "The last time that the table was accessed. This is usually taken from HDFS, and might not be reliable."
+    },
+    {
+      "name": "last_analyzed_time",
+      "type": "timestamp with time zone",
+      "description": "The last time that column statistics were computed for this table."
+    },
+    {
+      "name": "owner",
+      "type": "text",
+      "description": "The owner of the table."
+    },
+    {
+      "name": "retention",
+      "type": "integer",
+      "description": "The retention time for this table."
+    },
+    {
+      "name": "table_type",
+      "type": "text",
+      "description": "The type of this table (EXTERNAL_TABLE, VIRTUAL_VIEW, etc.)."
+    },
+    {
+      "name": "update_time",
+      "type": "timestamp with time zone",
+      "description": "The last time that the table was updated."
+    },
+    {
+      "name": "view_expanded_text",
+      "type": "text",
+      "description": "If the table is a view, the expanded text of the view otherwise null."
+    },
+    {
+      "name": "view_original_text",
+      "type": "text",
+      "description": "If the table is a view, the original text of the view otherwise null."
+    },
+    {
+      "name": "parameters",
+      "type": "json",
+      "description": "These key-value pairs define properties associated with the table."
+    },
+    {
+      "name": "partition_keys",
+      "type": "json",
+      "description": "A list of columns by which the table is partitioned."
+    },
+    {
+      "name": "storage_descriptor",
+      "type": "json",
+      "description": "A storage descriptor containing information about the physical storage of this table."
+    },
+    {
+      "name": "target_table",
+      "type": "json",
+      "description": "A TableIdentifier structure that describes a target table for resource linking."
+    },
+    {
+      "name": "lf_tags",
+      "type": "json",
+      "description": "LF-Tags assigned to the table by AWS Lake Formation."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    }
+  ]
+}

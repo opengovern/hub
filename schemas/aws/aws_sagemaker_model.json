@@ -1,0 +1,66 @@
+{
+  "table_name": "aws_sagemaker_model",
+  "table_description": "AWS Sagemaker Model",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The name of the model."
+    },
+    {
+      "name": "arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) of the model."
+    },
+    {
+      "name": "creation_time",
+      "type": "timestamp with time zone",
+      "description": "A timestamp that indicates when the model was created."
+    },
+    {
+      "name": "enable_network_isolation",
+      "type": "boolean",
+      "description": "If True, no inbound or outbound network calls can be made to or from the model container."
+    },
+    {
+      "name": "execution_role_arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) of the IAM role that you specified for the model."
+    },
+    {
+      "name": "containers",
+      "type": "json",
+      "description": "The containers in the inference pipeline."
+    },
+    {
+      "name": "inference_execution_config",
+      "type": "json",
+      "description": "Specifies details of how containers in a multi-container endpoint are called."
+    },
+    {
+      "name": "primary_container",
+      "type": "json",
+      "description": "The location of the primary inference code, associated artifacts, and custom environment map that the inference code uses when it is deployed in production."
+    },
+    {
+      "name": "vpc_config",
+      "type": "json",
+      "description": "A VpcConfig object that specifies the VPC that this model has access to."
+    },
+    {
+      "name": "tags_src",
+      "type": "json",
+      "description": "The list of tags for the model."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": ""
+    }
+  ]
+}

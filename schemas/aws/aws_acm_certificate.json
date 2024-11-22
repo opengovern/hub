@@ -1,0 +1,146 @@
+{
+  "table_name": "aws_acm_certificate",
+  "table_description": "AWS ACM Certificate",
+  "columns": [
+    {
+      "name": "certificate_arn",
+      "type": "text",
+      "description": "Amazon Resource Name (ARN) of the certificate. This is of the form: arn:aws:acm:region:123456789012:certificate/12345678-1234-1234-1234-123456789012"
+    },
+    {
+      "name": "certificate",
+      "type": "text",
+      "description": "The ACM-issued certificate corresponding to the ARN specified as input"
+    },
+    {
+      "name": "certificate_chain",
+      "type": "text",
+      "description": "The ACM-issued certificate corresponding to the ARN specified as input"
+    },
+    {
+      "name": "domain_name",
+      "type": "text",
+      "description": "Fully qualified domain name (FQDN), such as www.example.com or example.com, for the certificate"
+    },
+    {
+      "name": "certificate_transparency_logging_preference",
+      "type": "text",
+      "description": "Indicates whether to opt in to or out of certificate transparency logging. Certificates that are not logged typically generate a browser error. Transparency makes it possible for you to detect SSL/TLS certificates that have been mistakenly or maliciously issued for your domain."
+    },
+    {
+      "name": "created_at",
+      "type": "timestamp with time zone",
+      "description": "The time at which the certificate was requested. This value exists only when the certificate type is AMAZON_ISSUED"
+    },
+    {
+      "name": "subject",
+      "type": "text",
+      "description": "The name of the entity that is associated with the public key contained in the certificate"
+    },
+    {
+      "name": "imported_at",
+      "type": "timestamp with time zone",
+      "description": "The name of the certificate authority that issued and signed the certificate"
+    },
+    {
+      "name": "issuer",
+      "type": "text",
+      "description": "The name of the certificate authority that issued and signed the certificate"
+    },
+    {
+      "name": "signature_algorithm",
+      "type": "text",
+      "description": "The algorithm that was used to sign the certificate"
+    },
+    {
+      "name": "extended_key_usages",
+      "type": "json",
+      "description": "Specify one or more ExtendedKeyUsage extension values."
+    },
+    {
+      "name": "failure_reason",
+      "type": "text",
+      "description": "The reason the certificate request failed. This value exists only when the certificate status is FAILED"
+    },
+    {
+      "name": "issued_at",
+      "type": "timestamp with time zone",
+      "description": "A list of ARNs for the AWS resources that are using the certificate. A certificate can be used by multiple AWS resources"
+    },
+    {
+      "name": "status",
+      "type": "text",
+      "description": "The status of the certificate"
+    },
+    {
+      "name": "key_algorithm",
+      "type": "text",
+      "description": "The algorithm that was used to generate the public-private key pair"
+    },
+    {
+      "name": "not_after",
+      "type": "timestamp with time zone",
+      "description": "The time after which the certificate is not valid"
+    },
+    {
+      "name": "not_before",
+      "type": "timestamp with time zone",
+      "description": "The time before which the certificate is not valid"
+    },
+    {
+      "name": "renewal_eligibility",
+      "type": "text",
+      "description": "Specifies whether the certificate is eligible for renewal."
+    },
+    {
+      "name": "revocation_reason",
+      "type": "text",
+      "description": "The reason the certificate was revoked. This value exists only when the certificate status is REVOKED"
+    },
+    {
+      "name": "revoked_at",
+      "type": "timestamp with time zone",
+      "description": "The time at which the certificate was revoked. This value exists only when the certificate status is REVOKED"
+    },
+    {
+      "name": "serial",
+      "type": "text",
+      "description": "The serial number of the certificate"
+    },
+    {
+      "name": "type",
+      "type": "text",
+      "description": "The source of the certificate. For certificates provided by ACM, this value is AMAZON_ISSUED."
+    },
+    {
+      "name": "domain_validation_options",
+      "type": "json",
+      "description": "Contains information about the initial validation of each domain name that occurs as a result of the RequestCertificate request. This field exists only when the certificate type is AMAZON_ISSUED"
+    },
+    {
+      "name": "in_use_by",
+      "type": "json",
+      "description": "A list of ARNs for the AWS resources that are using the certificate"
+    },
+    {
+      "name": "subject_alternative_names",
+      "type": "json",
+      "description": "One or more domain names (subject alternative names) included in the certificate. This list contains the domain names that are bound to the public key that is contained in the certificate. The subject alternative names include the canonical domain name (CN) of the certificate and additional domain names that can be used to connect to the website"
+    },
+    {
+      "name": "tags_src",
+      "type": "json",
+      "description": "A list of tags associated with certificate"
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": ""
+    }
+  ]
+}

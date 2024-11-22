@@ -1,0 +1,51 @@
+{
+  "table_name": "aws_api_gateway_usage_plan",
+  "table_description": "AWS API Gateway Usage Plan",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The name of a usage plan"
+    },
+    {
+      "name": "id",
+      "type": "text",
+      "description": "The identifier of a UsagePlan resource"
+    },
+    {
+      "name": "product_code",
+      "type": "text",
+      "description": "The AWS Markeplace product identifier to associate with the usage plan as a SaaS product on AWS Marketplace"
+    },
+    {
+      "name": "description",
+      "type": "text",
+      "description": "The description of a usage plan"
+    },
+    {
+      "name": "quota",
+      "type": "json",
+      "description": "The maximum number of permitted requests per a given unit time interval"
+    },
+    {
+      "name": "throttle",
+      "type": "json",
+      "description": "The request throttle limits of a usage plan"
+    },
+    {
+      "name": "api_stages",
+      "type": "json",
+      "description": "The associated API stages of a usage plan"
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": ""
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    }
+  ]
+}

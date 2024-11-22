@@ -1,0 +1,11 @@
+{
+  "table_name": "aws_ec2_application_load_balancer_metric_request_count",
+  "table_description": "AWS EC2 Application Load Balancer Metrics - Request Count",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The friendly name of the Load Balancer that was provided during resource creation."
+    }
+  ]
+}

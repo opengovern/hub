@@ -1,0 +1,51 @@
+{
+  "table_name": "azure_management_lock",
+  "table_description": "Azure Management Lock",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The friendly name that identifies management lock."
+    },
+    {
+      "name": "id",
+      "type": "text",
+      "description": "Contains ID to identify a lock uniquely."
+    },
+    {
+      "name": "type",
+      "type": "text",
+      "description": "The resource type of the lock."
+    },
+    {
+      "name": "lock_level",
+      "type": "text",
+      "description": "The level of the lock."
+    },
+    {
+      "name": "scope",
+      "type": "text",
+      "description": "Contains the scope of the lock."
+    },
+    {
+      "name": "notes",
+      "type": "text",
+      "description": "Contains the notes about the lock."
+    },
+    {
+      "name": "owners",
+      "type": "json",
+      "description": "A list of owners of the lock."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": "ColumnDescriptionTitle"
+    },
+    {
+      "name": "resource_group",
+      "type": "text",
+      "description": "ColumnDescriptionResourceGroup"
+    }
+  ]
+}

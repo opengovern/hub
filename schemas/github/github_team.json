@@ -1,0 +1,151 @@
+{
+  "table_name": "github_team",
+  "table_description": "GitHub Teams in a given organization. GitHub Teams are groups of organization members that reflect your company or group's structure with cascading access permissions and mentions.",
+  "columns": [
+    {
+      "name": "organization",
+      "type": "text",
+      "description": "The organization the team is associated with."
+    },
+    {
+      "name": "slug",
+      "type": "text",
+      "description": "The team slug name."
+    },
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The name of the team."
+    },
+    {
+      "name": "id",
+      "type": "integer",
+      "description": "The ID of the team."
+    },
+    {
+      "name": "node_id",
+      "type": "text",
+      "description": "The node id of the team."
+    },
+    {
+      "name": "description",
+      "type": "text",
+      "description": "The description of the team."
+    },
+    {
+      "name": "created_at",
+      "type": "timestamp with time zone",
+      "description": "Timestamp when team was created."
+    },
+    {
+      "name": "updated_at",
+      "type": "timestamp with time zone",
+      "description": "Timestamp when team was last updated."
+    },
+    {
+      "name": "combined_slug",
+      "type": "text",
+      "description": "The slug corresponding to the organization and the team."
+    },
+    {
+      "name": "parent_team",
+      "type": "json",
+      "description": "The teams parent team."
+    },
+    {
+      "name": "privacy",
+      "type": "text",
+      "description": "The privacy setting of the team (VISIBLE or SECRET)."
+    },
+    {
+      "name": "ancestors_total_count",
+      "type": "integer",
+      "description": "Count of ancestors this team has."
+    },
+    {
+      "name": "child_teams_total_count",
+      "type": "integer",
+      "description": "Count of children teams this team has."
+    },
+    {
+      "name": "discussions_total_count",
+      "type": "integer",
+      "description": "Count of team discussions."
+    },
+    {
+      "name": "invitations_total_count",
+      "type": "integer",
+      "description": "Count of outstanding team member invitations for the team."
+    },
+    {
+      "name": "members_total_count",
+      "type": "integer",
+      "description": "Count of team members."
+    },
+    {
+      "name": "projects_v2_total_count",
+      "type": "integer",
+      "description": "Count of the teams v2 projects."
+    },
+    {
+      "name": "repositories_total_count",
+      "type": "integer",
+      "description": "Count of repositories the team has."
+    },
+    {
+      "name": "url",
+      "type": "text",
+      "description": "URL for the team page in GitHub."
+    },
+    {
+      "name": "avatar_url",
+      "type": "text",
+      "description": "URL for teams avatar."
+    },
+    {
+      "name": "discussions_url",
+      "type": "text",
+      "description": "URL for team discussions."
+    },
+    {
+      "name": "edit_team_url",
+      "type": "text",
+      "description": "URL for editing this team."
+    },
+    {
+      "name": "members_url",
+      "type": "text",
+      "description": "URL for team members."
+    },
+    {
+      "name": "new_team_url",
+      "type": "text",
+      "description": "The HTTP URL creating a new team."
+    },
+    {
+      "name": "repositories_url",
+      "type": "text",
+      "description": "URL for team repositories."
+    },
+    {
+      "name": "teams_url",
+      "type": "text",
+      "description": "URL for this team's teams."
+    },
+    {
+      "name": "can_administer",
+      "type": "boolean",
+      "description": "If true, current user can administer the team."
+    },
+    {
+      "name": "can_subscribe",
+      "type": "boolean",
+      "description": "If true, current user can subscribe to the team."
+    },
+    {
+      "name": "subscription",
+      "type": "text",
+      "description": "Subscription status of the current user to the team."
+    }
+  ]
+}

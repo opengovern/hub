@@ -1,0 +1,56 @@
+{
+  "table_name": "azure_key_vault_certificate",
+  "table_description": "Azure Key Vault Certificate",
+  "columns": [
+    {
+      "name": "id",
+      "type": "text",
+      "description": "Contains ID to identify a key uniquely."
+    },
+    {
+      "name": "vault_name",
+      "type": "text",
+      "description": "The friendly name that identifies the vault."
+    },
+    {
+      "name": "attributes",
+      "type": "json",
+      "description": "Certificate attributes."
+    },
+    {
+      "name": "issuer_parameters",
+      "type": "json",
+      "description": "Issuer parameters."
+    },
+    {
+      "name": "key_properties",
+      "type": "json",
+      "description": "Key properties."
+    },
+    {
+      "name": "lifetime_actions",
+      "type": "json",
+      "description": "Lifetime actions."
+    },
+    {
+      "name": "secret_properties",
+      "type": "json",
+      "description": "Secret properties."
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": "ColumnDescriptionTags"
+    },
+    {
+      "name": "region",
+      "type": "text",
+      "description": "ColumnDescriptionRegion"
+    },
+    {
+      "name": "resource_group",
+      "type": "text",
+      "description": "ColumnDescriptionResourceGroup"
+    }
+  ]
+}

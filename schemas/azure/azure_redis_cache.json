@@ -1,0 +1,151 @@
+{
+  "table_name": "azure_redis_cache",
+  "table_description": "Azure Redis Cache",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The name of the resource."
+    },
+    {
+      "name": "id",
+      "type": "text",
+      "description": "The unique id identifying the resource in subscription."
+    },
+    {
+      "name": "type",
+      "type": "text",
+      "description": "The type of the resource."
+    },
+    {
+      "name": "provisioning_state",
+      "type": "text",
+      "description": "The provisioning state of the redis instance at the time the operation was called. Valid values are: 'Creating', 'Deleting', 'Disabled', 'Failed', 'Linking', 'Provisioning', 'RecoveringScaleFailure', 'Scaling', 'Succeeded', 'Unlinking', 'Unprovisioning', and 'Updating'."
+    },
+    {
+      "name": "redis_version",
+      "type": "text",
+      "description": "Specifies the version."
+    },
+    {
+      "name": "enable_non_ssl_port",
+      "type": "boolean",
+      "description": "Specifies whether the non-ssl Redis server port (6379) is enabled."
+    },
+    {
+      "name": "host_name",
+      "type": "text",
+      "description": "Specifies the name of the redis host."
+    },
+    {
+      "name": "minimum_tls_version",
+      "type": "text",
+      "description": "Specifies the TLS version requires to connect."
+    },
+    {
+      "name": "port",
+      "type": "integer",
+      "description": "Specifies the redis non-SSL port."
+    },
+    {
+      "name": "public_network_access",
+      "type": "text",
+      "description": "Indicates whether or not public endpoint access is allowed for this cache. Valid values are: 'Enabled', 'Disabled'."
+    },
+    {
+      "name": "sku_capacity",
+      "type": "integer",
+      "description": "The size of the Redis cache to deploy."
+    },
+    {
+      "name": "sku_family",
+      "type": "text",
+      "description": "The SKU family to use."
+    },
+    {
+      "name": "sku_name",
+      "type": "text",
+      "description": "The type of Redis cache to deploy."
+    },
+    {
+      "name": "ssl_port",
+      "type": "integer",
+      "description": "Specifies the redis SSL port."
+    },
+    {
+      "name": "subnet_id",
+      "type": "text",
+      "description": "The full resource ID of a subnet in a virtual network to deploy the Redis cache in."
+    },
+    {
+      "name": "static_ip",
+      "type": "inet",
+      "description": "Specifies the statis IP address. Required when deploying a Redis cache inside an existing Azure Virtual Network."
+    },
+    {
+      "name": "replicas_per_master",
+      "type": "integer",
+      "description": "The number of replicas to be created per master."
+    },
+    {
+      "name": "shard_count",
+      "type": "integer",
+      "description": "The number of shards to be created on a premium cluster cache."
+    },
+    {
+      "name": "access_keys",
+      "type": "json",
+      "description": "The keys of the Redis cache."
+    },
+    {
+      "name": "linked_servers",
+      "type": "json",
+      "description": "A list of the linked servers associated with the cache."
+    },
+    {
+      "name": "instances",
+      "type": "json",
+      "description": "A list of the Redis instances associated with the cache."
+    },
+    {
+      "name": "private_endpoint_connections",
+      "type": "json",
+      "description": "A list of private endpoint connection associated with the specified redis cache."
+    },
+    {
+      "name": "redis_configuration",
+      "type": "json",
+      "description": "Describes the redis cache configuration."
+    },
+    {
+      "name": "tenant_settings",
+      "type": "json",
+      "description": "A dictionary of tenant settings."
+    },
+    {
+      "name": "zones",
+      "type": "json",
+      "description": "A list of availability zones denoting where the resource needs to come from."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": "ColumnDescriptionTitle"
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": "ColumnDescriptionTags"
+    },
+    {
+      "name": "region",
+      "type": "text",
+      "description": "ColumnDescriptionRegion"
+    },
+    {
+      "name": "resource_group",
+      "type": "text",
+      "description": "ColumnDescriptionResourceGroup"
+    }
+  ]
+}

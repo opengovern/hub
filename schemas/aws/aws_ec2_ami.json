@@ -1,0 +1,156 @@
+{
+  "table_name": "aws_ec2_ami",
+  "table_description": "AWS EC2 AMI",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The name of the AMI that was provided during image creation."
+    },
+    {
+      "name": "image_id",
+      "type": "text",
+      "description": "The ID of the AMI."
+    },
+    {
+      "name": "state",
+      "type": "text",
+      "description": "The current state of the AMI. If the state is available, the image is successfully registered and can be used to launch an instance."
+    },
+    {
+      "name": "image_type",
+      "type": "text",
+      "description": "The type of image."
+    },
+    {
+      "name": "image_location",
+      "type": "text",
+      "description": "The location of the AMI."
+    },
+    {
+      "name": "creation_date",
+      "type": "timestamp with time zone",
+      "description": "The date and time when the image was created."
+    },
+    {
+      "name": "architecture",
+      "type": "text",
+      "description": "The architecture of the image."
+    },
+    {
+      "name": "description",
+      "type": "text",
+      "description": "The description of the AMI that was provided during image creation."
+    },
+    {
+      "name": "ena_support",
+      "type": "boolean",
+      "description": "Specifies whether enhanced networking with ENA is enabled."
+    },
+    {
+      "name": "hypervisor",
+      "type": "text",
+      "description": "The hypervisor type of the image."
+    },
+    {
+      "name": "image_owner_alias",
+      "type": "text",
+      "description": "The AWS account alias (for example, amazon, self) or the AWS account ID of the AMI owner."
+    },
+    {
+      "name": "imds_support",
+      "type": "text",
+      "description": "If v2.0, it indicates that IMDSv2 is specified in the AMI."
+    },
+    {
+      "name": "kernel_id",
+      "type": "text",
+      "description": "The kernel associated with the image, if any. Only applicable for machine images."
+    },
+    {
+      "name": "owner_id",
+      "type": "text",
+      "description": "The AWS account ID of the image owner."
+    },
+    {
+      "name": "platform",
+      "type": "text",
+      "description": "This value is set to windows for Windows AMIs; otherwise, it is blank."
+    },
+    {
+      "name": "platform_details",
+      "type": "text",
+      "description": "The platform details associated with the billing code of the AMI. For more information, see Obtaining Billing Information (https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ami-billing-info.html) in the Amazon Elastic Compute Cloud User Guide."
+    },
+    {
+      "name": "public",
+      "type": "boolean",
+      "description": "Indicates whether the image has public launch permissions. The value is true if this image has public launch permissions or false if it has only implicit and explicit launch permissions."
+    },
+    {
+      "name": "ramdisk_id",
+      "type": "text",
+      "description": "The RAM disk associated with the image, if any. Only applicable for machine images."
+    },
+    {
+      "name": "root_device_name",
+      "type": "text",
+      "description": "The device name of the root device volume (for example, /dev/sda1)."
+    },
+    {
+      "name": "root_device_type",
+      "type": "text",
+      "description": "The type of root device used by the AMI. The AMI can use an EBS volume or an instance store volume."
+    },
+    {
+      "name": "sriov_net_support",
+      "type": "text",
+      "description": "Specifies whether enhanced networking with the Intel 82599 Virtual Function interface is enabled."
+    },
+    {
+      "name": "usage_operation",
+      "type": "text",
+      "description": "The operation of the Amazon EC2 instance and the billing code that is associated with the AMI. For the list of UsageOperation codes, see Platform Details and [Usage Operation Billing Codes](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ami-billing-info.html#billing-info) in the Amazon Elastic Compute Cloud User Guide."
+    },
+    {
+      "name": "virtualization_type",
+      "type": "text",
+      "description": "The type of virtualization of the AMI."
+    },
+    {
+      "name": "block_device_mappings",
+      "type": "json",
+      "description": "Any block device mapping entries."
+    },
+    {
+      "name": "product_codes",
+      "type": "json",
+      "description": "Any product codes associated with the AMI."
+    },
+    {
+      "name": "launch_permissions",
+      "type": "json",
+      "description": "The users and groups that have the permissions for creating instances from the AMI."
+    },
+    {
+      "name": "tags_src",
+      "type": "json",
+      "description": "A list of tags attached to the AMI."
+    },
+    {
+      "name": "is_aws_backup_managed",
+      "type": "boolean",
+      "description": "Is backup managed by AWS"
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": ""
+    }
+  ]
+}

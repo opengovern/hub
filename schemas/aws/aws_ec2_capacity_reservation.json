@@ -1,0 +1,116 @@
+{
+  "table_name": "aws_ec2_capacity_reservation",
+  "table_description": "AWS EC2 Capacity Reservation",
+  "columns": [
+    {
+      "name": "capacity_reservation_id",
+      "type": "text",
+      "description": "The ID of the capacity reservation."
+    },
+    {
+      "name": "capacity_reservation_arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) of the capacity reservation."
+    },
+    {
+      "name": "instance_type",
+      "type": "text",
+      "description": "The type of instance for which the capacity reservation reserves capacity."
+    },
+    {
+      "name": "state",
+      "type": "text",
+      "description": "The current state of the capacity reservation. A capacity reservation can be in one of the following states: 'active', 'expired', 'cancelled', 'pending', 'failed'."
+    },
+    {
+      "name": "availability_zone",
+      "type": "text",
+      "description": "The availability zone in which the capacity is reserved."
+    },
+    {
+      "name": "availability_zone_id",
+      "type": "text",
+      "description": "The availability zone ID of the capacity reservation."
+    },
+    {
+      "name": "available_instance_count",
+      "type": "integer",
+      "description": "The remaining capacity. Indicates the number of instances that can be launched in the capacity reservation."
+    },
+    {
+      "name": "create_date",
+      "type": "timestamp with time zone",
+      "description": "The date and time at which the capacity reservation was created."
+    },
+    {
+      "name": "ebs_optimized",
+      "type": "boolean",
+      "description": "Indicates whether the capacity reservation supports EBS-optimized instances."
+    },
+    {
+      "name": "end_date",
+      "type": "timestamp with time zone",
+      "description": "The date and time at which the capacity reservation expires."
+    },
+    {
+      "name": "end_date_type",
+      "type": "text",
+      "description": "Indicates the way in which the capacity reservation ends. A capacity reservation can have one of the following end types: 'unlimited', 'limited'."
+    },
+    {
+      "name": "ephemeral_storage",
+      "type": "boolean",
+      "description": "Indicates whether the capacity reservation supports instances with temporary, block-level storage."
+    },
+    {
+      "name": "instance_match_criteria",
+      "type": "text",
+      "description": "Indicates the type of instance launches that the capacity reservation accepts. The options include: 'open', 'targeted'."
+    },
+    {
+      "name": "instance_platform",
+      "type": "text",
+      "description": "The type of operating system for which the capacity reservation reserves capacity."
+    },
+    {
+      "name": "owner_id",
+      "type": "text",
+      "description": "The ID of the AWS account that owns the capacity reservation."
+    },
+    {
+      "name": "start_date",
+      "type": "timestamp with time zone",
+      "description": "The date and time at which the capacity reservation was started."
+    },
+    {
+      "name": "tenancy",
+      "type": "text",
+      "description": "Indicates the tenancy of the capacity reservation. A capacity reservation can have one of the following tenancy settings: 'default', 'dedicated'."
+    },
+    {
+      "name": "total_instance_count",
+      "type": "integer",
+      "description": "The total number of instances for which the capacity reservation reserves capacity."
+    },
+    {
+      "name": "capacity_allocations",
+      "type": "json",
+      "description": "Information about instance capacity usage."
+    },
+    {
+      "name": "tag_src",
+      "type": "json",
+      "description": "Any tags assigned to the capacity reservation."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": ""
+    }
+  ]
+}

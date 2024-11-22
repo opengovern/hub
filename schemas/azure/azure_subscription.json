@@ -1,0 +1,56 @@
+{
+  "table_name": "azure_subscription",
+  "table_description": "Azure Subscription",
+  "columns": [
+    {
+      "name": "id",
+      "type": "text",
+      "description": "The fully qualified ID for the subscription. For example, /subscriptions/00000000-0000-0000-0000-000000000000."
+    },
+    {
+      "name": "subscription_id",
+      "type": "text",
+      "description": "The subscription ID."
+    },
+    {
+      "name": "display_name",
+      "type": "text",
+      "description": "A friendly name that identifies a subscription."
+    },
+    {
+      "name": "tenant_id",
+      "type": "text",
+      "description": "The subscription tenant ID."
+    },
+    {
+      "name": "state",
+      "type": "text",
+      "description": "The subscription state. Possible values are Enabled, Warned, PastDue, Disabled, and Deleted. Possible values include: 'StateEnabled', 'StateWarned', 'StatePastDue', 'StateDisabled', 'StateDeleted'"
+    },
+    {
+      "name": "authorization_source",
+      "type": "text",
+      "description": "The authorization source of the request. Valid values are one or more combinations of Legacy, RoleBased, Bypassed, Direct and Management. For example, 'Legacy, RoleBased'."
+    },
+    {
+      "name": "managed_by_tenants",
+      "type": "json",
+      "description": "An array containing the tenants managing the subscription."
+    },
+    {
+      "name": "subscription_policies",
+      "type": "json",
+      "description": "The subscription policies."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": "ColumnDescriptionTitle"
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": "ColumnDescriptionTags"
+    }
+  ]
+}

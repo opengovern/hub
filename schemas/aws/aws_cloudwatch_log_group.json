@@ -1,0 +1,61 @@
+{
+  "table_name": "aws_cloudwatch_log_group",
+  "table_description": "AWS CloudWatch Log Group",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The name of the log group."
+    },
+    {
+      "name": "arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) of the log group."
+    },
+    {
+      "name": "creation_time",
+      "type": "timestamp with time zone",
+      "description": "The creation time of the log group."
+    },
+    {
+      "name": "kms_key_id",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) of the CMK to use when encrypting log data."
+    },
+    {
+      "name": "metric_filter_count",
+      "type": "integer",
+      "description": "The number of metric filters."
+    },
+    {
+      "name": "retention_in_days",
+      "type": "integer",
+      "description": "The number of days to retain the log events in the specified log group. Possible values are: 1, 3, 5, 7, 14, 30, 60, 90, 120, 150, 180, 365, 400, 545, 731, 1827, and 3653."
+    },
+    {
+      "name": "stored_bytes",
+      "type": "integer",
+      "description": "The number of bytes stored."
+    },
+    {
+      "name": "data_protection",
+      "type": "json",
+      "description": "Log group data protection policy information."
+    },
+    {
+      "name": "data_protection_policy",
+      "type": "json",
+      "description": "The data protection policy document for a log group."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": ""
+    }
+  ]
+}

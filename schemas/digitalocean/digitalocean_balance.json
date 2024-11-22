@@ -1,0 +1,26 @@
+{
+  "table_name": "digitalocean_balance",
+  "table_description": "Balance information for the current account.",
+  "columns": [
+    {
+      "name": "account_balance",
+      "type": "double precision",
+      "description": "Current balance of the customer's most recent billing activity. Does not reflect month_to_date_usage."
+    },
+    {
+      "name": "generated_at",
+      "type": "timestamp with time zone",
+      "description": "The time at which balances were most recently generated."
+    },
+    {
+      "name": "month_to_date_balance",
+      "type": "double precision",
+      "description": "Balance as of the generated_at time. This value includes the account_balance and month_to_date_usage."
+    },
+    {
+      "name": "month_to_date_usage",
+      "type": "double precision",
+      "description": "Amount used in the current billing period as of the generated_at time."
+    }
+  ]
+}

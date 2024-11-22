@@ -1,0 +1,31 @@
+{
+  "table_name": "aws_batch_compute_environment",
+  "table_description": "AWS Batch ComputeEnvironment",
+  "columns": [
+    {
+      "name": "id",
+      "type": "text",
+      "description": "The id of the compute environment."
+    },
+    {
+      "name": "compute_environment_name",
+      "type": "text",
+      "description": "The name of the compute environment."
+    },
+    {
+      "name": "arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) of the compute environment"
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": ""
+    }
+  ]
+}

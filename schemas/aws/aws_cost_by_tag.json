@@ -1,0 +1,31 @@
+{
+  "table_name": "aws_cost_by_tag",
+  "table_description": "AWS Cost Explorer - Cost By Tags",
+  "columns": [
+    {
+      "name": "granularity",
+      "type": "text",
+      "description": "The granularity for cost and usage metric data. Possible values are: DAILY|MONTHLY."
+    },
+    {
+      "name": "tag_key_1",
+      "type": "text",
+      "description": "The tag key to group by."
+    },
+    {
+      "name": "tag_value_1",
+      "type": "text",
+      "description": "The primary tag value grouped by."
+    },
+    {
+      "name": "tag_key_2",
+      "type": "text",
+      "description": "A secondary tag key to group by."
+    },
+    {
+      "name": "tag_value_2",
+      "type": "text",
+      "description": "A secondary tag value grouped by."
+    }
+  ]
+}

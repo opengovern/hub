@@ -1,0 +1,96 @@
+{
+  "table_name": "aws_sqs_queue",
+  "table_description": "AWS SQS Queue",
+  "columns": [
+    {
+      "name": "queue_url",
+      "type": "text",
+      "description": "The URL of the Amazon SQS queue."
+    },
+    {
+      "name": "queue_arn",
+      "type": "text",
+      "description": "The Amazon resource name (ARN) of the queue."
+    },
+    {
+      "name": "fifo_queue",
+      "type": "boolean",
+      "description": "Returns true if the queue is FIFO."
+    },
+    {
+      "name": "fifo_throughput_limit",
+      "type": "text",
+      "description": "Specifies whether the FIFO queue throughput quota applies to the entire queue or per message group."
+    },
+    {
+      "name": "delay_seconds",
+      "type": "text",
+      "description": "The default delay on the queue in seconds."
+    },
+    {
+      "name": "max_message_size",
+      "type": "text",
+      "description": "The limit of how many bytes a message can contain before Amazon SQS rejects it."
+    },
+    {
+      "name": "message_retention_seconds",
+      "type": "text",
+      "description": "The length of time, in seconds, for which Amazon SQS retains a message."
+    },
+    {
+      "name": "receive_wait_time_seconds",
+      "type": "text",
+      "description": "The length of time, in seconds, for which the ReceiveMessage action waits for a message to arrive."
+    },
+    {
+      "name": "sqs_managed_sse_enabled",
+      "type": "boolean",
+      "description": "Returns true if the queue is using SSE-SQS encryption with SQS-owned encryption keys."
+    },
+    {
+      "name": "visibility_timeout_seconds",
+      "type": "text",
+      "description": "The visibility timeout for the queue in seconds."
+    },
+    {
+      "name": "policy",
+      "type": "json",
+      "description": "The resource IAM policy of the queue."
+    },
+    {
+      "name": "policy_std",
+      "type": "json",
+      "description": "Contains the policy in a canonical form for easier searching."
+    },
+    {
+      "name": "redrive_policy",
+      "type": "json",
+      "description": "The string that includes the parameters for the dead-letter queue functionality of the source queue as a JSON object."
+    },
+    {
+      "name": "content_based_deduplication",
+      "type": "text",
+      "description": "Mentions whether content-based deduplication is enabled for the queue."
+    },
+    {
+      "name": "deduplication_scope",
+      "type": "text",
+      "description": "Specifies whether message deduplication occurs at the message group or queue level."
+    },
+    {
+      "name": "kms_master_key_id",
+      "type": "text",
+      "description": "the ID of an AWS-managed customer master key (CMK) for Amazon SQS or a custom CMK."
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": ""
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    }
+  ]
+}

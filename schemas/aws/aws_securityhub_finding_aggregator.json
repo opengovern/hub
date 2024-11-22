@@ -1,0 +1,26 @@
+{
+  "table_name": "aws_securityhub_finding_aggregator",
+  "table_description": "AWS Security Hub Finding Aggregator",
+  "columns": [
+    {
+      "name": "arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) of the finding aggregator."
+    },
+    {
+      "name": "finding_aggregation_region",
+      "type": "text",
+      "description": "The aggregation Region."
+    },
+    {
+      "name": "region_linking_mode",
+      "type": "text",
+      "description": "Indicates whether to link all Regions, all Regions except for a list of excluded Regions, or a list of included Regions."
+    },
+    {
+      "name": "regions",
+      "type": "json",
+      "description": "The list of excluded Regions or included Regions."
+    }
+  ]
+}

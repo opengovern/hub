@@ -1,0 +1,76 @@
+{
+  "table_name": "aws_vpc_nat_gateway",
+  "table_description": "AWS VPC Network Address Translation Gateway",
+  "columns": [
+    {
+      "name": "nat_gateway_id",
+      "type": "text",
+      "description": "The ID of the NAT gateway."
+    },
+    {
+      "name": "arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) specifying the NAT gateway."
+    },
+    {
+      "name": "nat_gateway_addresses",
+      "type": "json",
+      "description": "Information about the IP addresses and network interface associated with the NAT gateway."
+    },
+    {
+      "name": "state",
+      "type": "text",
+      "description": "The current state of the NAT gateway (pending | failed | available | deleting | deleted)."
+    },
+    {
+      "name": "create_time",
+      "type": "timestamp with time zone",
+      "description": "The date and time the NAT gateway was created."
+    },
+    {
+      "name": "vpc_id",
+      "type": "text",
+      "description": "The ID of the VPC in which the NAT gateway is located."
+    },
+    {
+      "name": "subnet_id",
+      "type": "text",
+      "description": "The ID of the subnet in which the NAT gateway is located."
+    },
+    {
+      "name": "delete_time",
+      "type": "timestamp with time zone",
+      "description": "The date and time the NAT gateway was deleted, if applicable."
+    },
+    {
+      "name": "failure_code",
+      "type": "text",
+      "description": "If the NAT gateway could not be created, specifies the error code for the failure. (InsufficientFreeAddressesInSubnet | Gateway.NotAttached | InvalidAllocationID.NotFound | Resource.AlreadyAssociated | InternalError | InvalidSubnetID.NotFound)."
+    },
+    {
+      "name": "failure_message",
+      "type": "text",
+      "description": "If the NAT gateway could not be created, specifies the error message for the failure."
+    },
+    {
+      "name": "provisioned_bandwidth",
+      "type": "json",
+      "description": "Reserved. If you need to sustain traffic greater than the documented limits (https://docs.aws.amazon.com/vpc/latest/userguide/vpc-nat-gateway.html)."
+    },
+    {
+      "name": "tags_src",
+      "type": "json",
+      "description": "A list of tags that are attached to NAT gateway."
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": ""
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    }
+  ]
+}

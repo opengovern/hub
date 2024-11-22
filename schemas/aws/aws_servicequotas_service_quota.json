@@ -1,0 +1,81 @@
+{
+  "table_name": "aws_servicequotas_service_quota",
+  "table_description": "AWS ServiceQuotas Service Quota",
+  "columns": [
+    {
+      "name": "quota_name",
+      "type": "text",
+      "description": "The quota name."
+    },
+    {
+      "name": "quota_code",
+      "type": "text",
+      "description": "The quota code."
+    },
+    {
+      "name": "quota_arn",
+      "type": "text",
+      "description": "The arn of the service quota."
+    },
+    {
+      "name": "global_quota",
+      "type": "boolean",
+      "description": "Indicates whether the quota is global."
+    },
+    {
+      "name": "service_name",
+      "type": "text",
+      "description": "The service name."
+    },
+    {
+      "name": "service_code",
+      "type": "text",
+      "description": "The service identifier."
+    },
+    {
+      "name": "adjustable",
+      "type": "boolean",
+      "description": "Indicates whether the quota value can be increased."
+    },
+    {
+      "name": "unit",
+      "type": "text",
+      "description": "The unit of measurement."
+    },
+    {
+      "name": "value",
+      "type": "integer",
+      "description": "The quota value."
+    },
+    {
+      "name": "error_reason",
+      "type": "json",
+      "description": "The error code and error reason."
+    },
+    {
+      "name": "period",
+      "type": "json",
+      "description": "The period of time for the quota."
+    },
+    {
+      "name": "tags_src",
+      "type": "json",
+      "description": "The list of tags associated with the service quota."
+    },
+    {
+      "name": "usage_metric",
+      "type": "json",
+      "description": "Information about the measurement."
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": ""
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    }
+  ]
+}

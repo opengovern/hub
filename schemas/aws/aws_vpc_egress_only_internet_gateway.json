@@ -1,0 +1,31 @@
+{
+  "table_name": "aws_vpc_egress_only_internet_gateway",
+  "table_description": "AWS VPC Egress Only Internet Gateway",
+  "columns": [
+    {
+      "name": "id",
+      "type": "text",
+      "description": "The ID of the egress-only internet gateway."
+    },
+    {
+      "name": "attachments",
+      "type": "json",
+      "description": "Information about the attachment of the egress-only internet gateway."
+    },
+    {
+      "name": "tags_src",
+      "type": "json",
+      "description": "A list of tags that are attached to egress only internet gateway."
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": ""
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    }
+  ]
+}

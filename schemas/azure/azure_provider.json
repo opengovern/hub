@@ -1,0 +1,31 @@
+{
+  "table_name": "azure_provider",
+  "table_description": "Azure Provider",
+  "columns": [
+    {
+      "name": "namespace",
+      "type": "text",
+      "description": "The friendly name that identifies the resource provider."
+    },
+    {
+      "name": "id",
+      "type": "text",
+      "description": "Contains ID to identify a resource provider uniquely."
+    },
+    {
+      "name": "registration_state",
+      "type": "text",
+      "description": "Contains the current registration state of the resource provider."
+    },
+    {
+      "name": "resource_types",
+      "type": "json",
+      "description": "A list of provider resource types."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": "ColumnDescriptionTitle"
+    }
+  ]
+}

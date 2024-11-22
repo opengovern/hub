@@ -1,0 +1,56 @@
+{
+  "table_name": "aws_vpc_network_acl",
+  "table_description": "AWS VPC Network ACL",
+  "columns": [
+    {
+      "name": "network_acl_id",
+      "type": "text",
+      "description": "The ID of the network ACL."
+    },
+    {
+      "name": "arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) specifying the network ACL."
+    },
+    {
+      "name": "is_default",
+      "type": "boolean",
+      "description": "Indicates whether this is the default network ACL for the VPC."
+    },
+    {
+      "name": "vpc_id",
+      "type": "text",
+      "description": "The ID of the VPC for the network ACL."
+    },
+    {
+      "name": "owner_id",
+      "type": "text",
+      "description": "The ID of the AWS account that owns the network ACL."
+    },
+    {
+      "name": "associations",
+      "type": "json",
+      "description": "Any associations between the network ACL and one or more subnets."
+    },
+    {
+      "name": "entries",
+      "type": "json",
+      "description": "One or more entries (rules) in the network ACL."
+    },
+    {
+      "name": "tags_src",
+      "type": "json",
+      "description": "A list of tags that are attached to Network ACL."
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": ""
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    }
+  ]
+}

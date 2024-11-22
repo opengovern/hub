@@ -1,0 +1,61 @@
+{
+  "table_name": "aws_rds_db_option_group",
+  "table_description": "AWS RDS DB Option Group",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The friendly name to identify the option group."
+    },
+    {
+      "name": "arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) for the option group."
+    },
+    {
+      "name": "description",
+      "type": "text",
+      "description": "Provides a description of the option group."
+    },
+    {
+      "name": "allows_vpc_and_non_vpc_instance_memberships",
+      "type": "boolean",
+      "description": "Specifies whether this option group can be applied to both VPC and non-VPC instances."
+    },
+    {
+      "name": "engine_name",
+      "type": "text",
+      "description": "Indicates the name of the engine that this option group can be applied to."
+    },
+    {
+      "name": "major_engine_version",
+      "type": "text",
+      "description": "Indicates the major engine version associated with this option group."
+    },
+    {
+      "name": "vpc_id",
+      "type": "text",
+      "description": "Indicates the ID of the VPC, option group can be applied."
+    },
+    {
+      "name": "options",
+      "type": "json",
+      "description": "Indicates what options are available in the option group."
+    },
+    {
+      "name": "tags_src",
+      "type": "json",
+      "description": "A list of tags attached to the option group."
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": ""
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    }
+  ]
+}

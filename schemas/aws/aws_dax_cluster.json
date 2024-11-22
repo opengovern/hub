@@ -1,0 +1,106 @@
+{
+  "table_name": "aws_dax_cluster",
+  "table_description": "AWS DAX Cluster",
+  "columns": [
+    {
+      "name": "cluster_name",
+      "type": "text",
+      "description": "The name of the DAX cluster."
+    },
+    {
+      "name": "arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) that uniquely identifies the cluster."
+    },
+    {
+      "name": "description",
+      "type": "text",
+      "description": "The description of the cluster."
+    },
+    {
+      "name": "active_nodes",
+      "type": "integer",
+      "description": "The number of nodes in the cluster that are active."
+    },
+    {
+      "name": "iam_role_arn",
+      "type": "text",
+      "description": "A valid Amazon Resource Name (ARN) that identifies an IAM role."
+    },
+    {
+      "name": "node_type",
+      "type": "text",
+      "description": "The node type for the nodes in the cluster."
+    },
+    {
+      "name": "preferred_maintenance_window",
+      "type": "text",
+      "description": "A range of time when maintenance of DAX cluster software will be performed."
+    },
+    {
+      "name": "status",
+      "type": "text",
+      "description": "The current status of the cluster."
+    },
+    {
+      "name": "subnet_group",
+      "type": "text",
+      "description": "The subnet group where the DAX cluster is running."
+    },
+    {
+      "name": "total_nodes",
+      "type": "text",
+      "description": "The total number of nodes in the cluster."
+    },
+    {
+      "name": "cluster_discovery_endpoint",
+      "type": "json",
+      "description": "The configuration endpoint for this DAX cluster, consisting of a DNS name and a port number."
+    },
+    {
+      "name": "node_ids_to_remove",
+      "type": "json",
+      "description": "A list of nodes to be removed from the cluster."
+    },
+    {
+      "name": "nodes",
+      "type": "json",
+      "description": "A list of nodes that are currently in the cluster."
+    },
+    {
+      "name": "notification_configuration",
+      "type": "json",
+      "description": "Describes a notification topic and its status."
+    },
+    {
+      "name": "parameter_group",
+      "type": "json",
+      "description": "The parameter group being used by nodes in the cluster."
+    },
+    {
+      "name": "sse_description",
+      "type": "json",
+      "description": "The description of the server-side encryption status on the specified DAX cluster."
+    },
+    {
+      "name": "security_groups",
+      "type": "json",
+      "description": "A list of security groups, and the status of each, for the nodes in the cluster."
+    },
+    {
+      "name": "tags_src",
+      "type": "json",
+      "description": "A list of tags currently associated with the DAX cluster."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": ""
+    }
+  ]
+}

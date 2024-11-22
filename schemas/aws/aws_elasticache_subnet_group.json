@@ -1,0 +1,36 @@
+{
+  "table_name": "aws_elasticache_subnet_group",
+  "table_description": "AWS ElastiCache Subnet Group",
+  "columns": [
+    {
+      "name": "cache_subnet_group_name",
+      "type": "text",
+      "description": "The name of the cache subnet group."
+    },
+    {
+      "name": "arn",
+      "type": "text",
+      "description": "The ARN (Amazon Resource Name) of the cache subnet group."
+    },
+    {
+      "name": "cache_subnet_group_description",
+      "type": "text",
+      "description": "The description of the cache subnet group."
+    },
+    {
+      "name": "vpc_id",
+      "type": "text",
+      "description": "The Amazon Virtual Private Cloud identifier (VPC ID) of the cache subnet group."
+    },
+    {
+      "name": "subnets",
+      "type": "json",
+      "description": "A list of subnets associated with the cache subnet group."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    }
+  ]
+}

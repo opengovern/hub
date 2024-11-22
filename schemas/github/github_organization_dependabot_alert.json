@@ -1,0 +1,136 @@
+{
+  "table_name": "github_organization_dependabot_alert",
+  "table_description": "Dependabot alerts from an organization.",
+  "columns": [
+    {
+      "name": "alert_number",
+      "type": "integer",
+      "description": "The security alert number."
+    },
+    {
+      "name": "state",
+      "type": "text",
+      "description": "The state of the Dependabot alert."
+    },
+    {
+      "name": "dependency_package_ecosystem",
+      "type": "text",
+      "description": "The package's language or package management ecosystem."
+    },
+    {
+      "name": "dependency_package_name",
+      "type": "text",
+      "description": "The unique package name within its ecosystem."
+    },
+    {
+      "name": "dependency_manifest_path",
+      "type": "text",
+      "description": "The unique manifestation path within the ecosystem."
+    },
+    {
+      "name": "dependency_scope",
+      "type": "text",
+      "description": "The execution scope of the vulnerable dependency."
+    },
+    {
+      "name": "security_advisory_ghsa_id",
+      "type": "text",
+      "description": "The unique GitHub Security Advisory ID assigned to the advisory."
+    },
+    {
+      "name": "security_advisory_cve_id",
+      "type": "text",
+      "description": "The unique CVE ID assigned to the advisory."
+    },
+    {
+      "name": "security_advisory_summary",
+      "type": "text",
+      "description": "A short, plain text summary of the advisory."
+    },
+    {
+      "name": "security_advisory_description",
+      "type": "text",
+      "description": "A long-form Markdown-supported description of the advisory."
+    },
+    {
+      "name": "security_advisory_severity",
+      "type": "text",
+      "description": "The severity of the advisory."
+    },
+    {
+      "name": "security_advisory_cvss_score",
+      "type": "double precision",
+      "description": "The overall CVSS score of the advisory."
+    },
+    {
+      "name": "security_advisory_cvss_vector_string",
+      "type": "text",
+      "description": "The full CVSS vector string for the advisory."
+    },
+    {
+      "name": "security_advisory_cwes",
+      "type": "json",
+      "description": "The associated CWEs"
+    },
+    {
+      "name": "security_advisory_published_at",
+      "type": "timestamp with time zone",
+      "description": "The time that the advisory was published."
+    },
+    {
+      "name": "security_advisory_updated_at",
+      "type": "timestamp with time zone",
+      "description": "The time that the advisory was last modified."
+    },
+    {
+      "name": "security_advisory_withdrawn_at",
+      "type": "timestamp with time zone",
+      "description": "The time that the advisory was withdrawn."
+    },
+    {
+      "name": "url",
+      "type": "text",
+      "description": "The REST API URL of the alert resource."
+    },
+    {
+      "name": "html_url",
+      "type": "text",
+      "description": "The GitHub URL of the alert resource."
+    },
+    {
+      "name": "created_at",
+      "type": "timestamp with time zone",
+      "description": "The time that the alert was created."
+    },
+    {
+      "name": "updated_at",
+      "type": "timestamp with time zone",
+      "description": "The time that the alert was last updated."
+    },
+    {
+      "name": "dismissed_at",
+      "type": "timestamp with time zone",
+      "description": "The time that the alert was dismissed."
+    },
+    {
+      "name": "dismissed_reason",
+      "type": "text",
+      "description": "The reason that the alert was dismissed."
+    },
+    {
+      "name": "dismissed_comment",
+      "type": "text",
+      "description": "An optional comment associated with the alert's dismissal."
+    },
+    {
+      "name": "fixed_at",
+      "type": "timestamp with time zone",
+      "description": "The time that the alert was no longer detected and was considered fixed."
+    },
+    {
+      "name": "organization",
+      "type": "text",
+      "description": "The login name of the organization."
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "table_name": "aws_account_contact",
+  "table_description": "AWS Account Contact",
+  "columns": [
+    {
+      "name": "full_name",
+      "type": "text",
+      "description": "The full name of the primary contact address."
+    },
+    {
+      "name": "address_line_1",
+      "type": "text",
+      "description": "The first line of the primary contact address"
+    },
+    {
+      "name": "address_line_2",
+      "type": "text",
+      "description": "The second line of the primary contact address, if any."
+    },
+    {
+      "name": "address_line_3",
+      "type": "text",
+      "description": "The third line of the primary contact address, if any."
+    },
+    {
+      "name": "company_name",
+      "type": "text",
+      "description": "The name of the company associated with the primary contact information, if any."
+    },
+    {
+      "name": "city",
+      "type": "text",
+      "description": "The city of the primary contact address."
+    },
+    {
+      "name": "country_code",
+      "type": "text",
+      "description": "The ISO-3166 two-letter country code for the primary contact address."
+    },
+    {
+      "name": "district_or_county",
+      "type": "text",
+      "description": "The district or county of the primary contact address, if any."
+    },
+    {
+      "name": "phone_number",
+      "type": "text",
+      "description": "The phone number of the primary contact information. The number will be validated and, in some countries, checked for activation."
+    },
+    {
+      "name": "postal_code",
+      "type": "text",
+      "description": "The postal code of the primary contact address."
+    },
+    {
+      "name": "state_or_region",
+      "type": "text",
+      "description": "The state or region of the primary contact address. This field is required in selected countries."
+    },
+    {
+      "name": "website_url",
+      "type": "text",
+      "description": "The URL of the website associated with the primary contact information, if any."
+    },
+    {
+      "name": "linked_account_id",
+      "type": "text",
+      "description": "Account ID to get contact details for."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    }
+  ]
+}

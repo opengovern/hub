@@ -1,0 +1,81 @@
+{
+  "table_name": "aws_service_discovery_service",
+  "table_description": "AWS Service Discovery Service",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The name of the service."
+    },
+    {
+      "name": "id",
+      "type": "text",
+      "description": "The ID that Cloud Map assigned to the service when you created it."
+    },
+    {
+      "name": "arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) that Cloud Map assigns to the service when you create it."
+    },
+    {
+      "name": "create_date",
+      "type": "timestamp with time zone",
+      "description": "The date and time that the service was created."
+    },
+    {
+      "name": "description",
+      "type": "text",
+      "description": "A description for the service."
+    },
+    {
+      "name": "namespace_id",
+      "type": "text",
+      "description": "The ID of the namespace."
+    },
+    {
+      "name": "instance_count",
+      "type": "integer",
+      "description": "The number of instances that are currently associated with the service."
+    },
+    {
+      "name": "type",
+      "type": "text",
+      "description": "Describes the systems that can be used to discover the service instances. DNS_HTTP The service instances can be discovered using either DNS queries or the DiscoverInstances API operation. HTTP The service instances can only be discovered using the DiscoverInstances API operation. DNS Reserved."
+    },
+    {
+      "name": "routing_policy",
+      "type": "text",
+      "description": "The routing policy that you want to apply to all Route 53 DNS records that Cloud Map creates when you register an instance and specify this service."
+    },
+    {
+      "name": "dns_records",
+      "type": "json",
+      "description": "An array that contains one DnsRecord object for each Route 53 DNS record that you want Cloud Map to create when you register an instance."
+    },
+    {
+      "name": "health_check_config",
+      "type": "json",
+      "description": "Public DNS and HTTP namespaces only. Settings for an optional health check. If you specify settings for a health check, Cloud Map associates the health check with the records that you specify in DnsConfig."
+    },
+    {
+      "name": "health_check_custom_config",
+      "type": "json",
+      "description": "Information about an optional custom health check."
+    },
+    {
+      "name": "tags_src",
+      "type": "json",
+      "description": "Information about the tags associated with the namespace."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": ""
+    }
+  ]
+}

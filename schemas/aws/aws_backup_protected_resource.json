@@ -1,0 +1,21 @@
+{
+  "table_name": "aws_backup_protected_resource",
+  "table_description": "AWS Backup Protected Resource",
+  "columns": [
+    {
+      "name": "resource_arn",
+      "type": "text",
+      "description": "An Amazon Resource Name (ARN) that uniquely identifies a resource."
+    },
+    {
+      "name": "resource_type",
+      "type": "text",
+      "description": "The type of Amazon Web Services resource."
+    },
+    {
+      "name": "last_backup_time",
+      "type": "timestamp with time zone",
+      "description": "The date and time a resource was last backed up."
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "table_name": "aws_elasticache_reserved_cache_node",
+  "table_description": "AWS ElastiCache Reserved Cache Node",
+  "columns": [
+    {
+      "name": "reserved_cache_node_id",
+      "type": "text",
+      "description": "The unique identifier for the reservation."
+    },
+    {
+      "name": "arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) of the reserved cache node."
+    },
+    {
+      "name": "reserved_cache_nodes_offering_id",
+      "type": "text",
+      "description": "The offering identifier."
+    },
+    {
+      "name": "state",
+      "type": "text",
+      "description": "The state of the reserved cache node."
+    },
+    {
+      "name": "cache_node_type",
+      "type": "text",
+      "description": "The cache node type for the reserved cache nodes."
+    },
+    {
+      "name": "cache_node_count",
+      "type": "integer",
+      "description": "The number of cache nodes that have been reserved."
+    },
+    {
+      "name": "duration",
+      "type": "integer",
+      "description": "The duration of the reservation in seconds."
+    },
+    {
+      "name": "fixed_price",
+      "type": "double precision",
+      "description": "The fixed price charged for this reserved cache node."
+    },
+    {
+      "name": "offering_type",
+      "type": "text",
+      "description": "The offering type of this reserved cache node."
+    },
+    {
+      "name": "product_description",
+      "type": "text",
+      "description": "The description of the reserved cache node."
+    },
+    {
+      "name": "start_time",
+      "type": "timestamp with time zone",
+      "description": "The time the reservation started."
+    },
+    {
+      "name": "usage_price",
+      "type": "double precision",
+      "description": "The hourly price charged for this reserved cache node."
+    },
+    {
+      "name": "recurring_charges",
+      "type": "json",
+      "description": "The recurring price charged to run this reserved cache node."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    }
+  ]
+}

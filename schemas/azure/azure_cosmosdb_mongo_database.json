@@ -1,0 +1,81 @@
+{
+  "table_name": "azure_cosmosdb_mongo_database",
+  "table_description": "Azure Cosmos DB Mongo Database",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The friendly name that identifies the Mongo DB database."
+    },
+    {
+      "name": "account_name",
+      "type": "text",
+      "description": "The friendly name that identifies the database account in which the database is created."
+    },
+    {
+      "name": "id",
+      "type": "text",
+      "description": "Contains ID to identify a Mongo DB database uniquely."
+    },
+    {
+      "name": "type",
+      "type": "text",
+      "description": "Type of the resource."
+    },
+    {
+      "name": "autoscale_settings_max_throughput",
+      "type": "integer",
+      "description": "Contains maximum throughput, the resource can scale up to."
+    },
+    {
+      "name": "database_etag",
+      "type": "text",
+      "description": "A system generated property representing the resource etag required for optimistic concurrency control."
+    },
+    {
+      "name": "database_id",
+      "type": "text",
+      "description": "Name of the Cosmos DB MongoDB database."
+    },
+    {
+      "name": "database_rid",
+      "type": "text",
+      "description": "A system generated unique identifier for database."
+    },
+    {
+      "name": "database_ts",
+      "type": "integer",
+      "description": "A system generated property that denotes the last updated timestamp of the resource."
+    },
+    {
+      "name": "throughput",
+      "type": "integer",
+      "description": "Contains the value of the Cosmos DB resource throughput or autoscaleSettings."
+    },
+    {
+      "name": "throughput_settings",
+      "type": "json",
+      "description": "Contains the value of the Cosmos DB resource throughput or autoscaleSettings."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": "ColumnDescriptionTitle"
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": "ColumnDescriptionTags"
+    },
+    {
+      "name": "region",
+      "type": "text",
+      "description": "ColumnDescriptionRegion"
+    },
+    {
+      "name": "resource_group",
+      "type": "text",
+      "description": "ColumnDescriptionResourceGroup"
+    }
+  ]
+}

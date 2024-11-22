@@ -1,0 +1,46 @@
+{
+  "table_name": "aws_securityhub_member",
+  "table_description": "AWS Securityhub Member",
+  "columns": [
+    {
+      "name": "member_account_id",
+      "type": "text",
+      "description": "The Amazon Web Services account ID of the member account."
+    },
+    {
+      "name": "administrator_id",
+      "type": "text",
+      "description": "The Amazon Web Services account ID of the Security Hub administrator account associated with this member account."
+    },
+    {
+      "name": "email",
+      "type": "text",
+      "description": "The email address of the member account."
+    },
+    {
+      "name": "invited_at",
+      "type": "timestamp with time zone",
+      "description": "A timestamp for the date and time when the invitation was sent to the member account."
+    },
+    {
+      "name": "master_id",
+      "type": "text",
+      "description": "The Amazon Web Services account ID of the Security Hub administrator account associated with this member account."
+    },
+    {
+      "name": "member_status",
+      "type": "text",
+      "description": "The status of the relationship between the member account and its administrator account."
+    },
+    {
+      "name": "updated_at",
+      "type": "timestamp with time zone",
+      "description": "The timestamp for the date and time when the member account was updated."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    }
+  ]
+}

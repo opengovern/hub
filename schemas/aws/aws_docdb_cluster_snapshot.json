@@ -1,0 +1,111 @@
+{
+  "table_name": "aws_docdb_cluster_snapshot",
+  "table_description": "AWS DocumentDB Cluster Snapshot",
+  "columns": [
+    {
+      "name": "db_cluster_snapshot_identifier",
+      "type": "text",
+      "description": "The friendly name to identify the cluster snapshot."
+    },
+    {
+      "name": "arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) for the cluster snapshot."
+    },
+    {
+      "name": "snapshot_type",
+      "type": "text",
+      "description": "The type of the cluster snapshot."
+    },
+    {
+      "name": "status",
+      "type": "text",
+      "description": "Specifies the status of this cluster snapshot."
+    },
+    {
+      "name": "db_cluster_identifier",
+      "type": "text",
+      "description": "The friendly name to identify the cluster, that the snapshot snapshot was created from."
+    },
+    {
+      "name": "snapshot_create_time",
+      "type": "timestamp with time zone",
+      "description": "The time when the snapshot was taken."
+    },
+    {
+      "name": "cluster_create_time",
+      "type": "timestamp with time zone",
+      "description": "Specifies the time when the cluster was created."
+    },
+    {
+      "name": "engine",
+      "type": "text",
+      "description": "Specifies the name of the database engine."
+    },
+    {
+      "name": "engine_version",
+      "type": "text",
+      "description": "Specifies the version of the database engine for this cluster snapshot."
+    },
+    {
+      "name": "kms_key_id",
+      "type": "text",
+      "description": "The AWS KMS key identifier for the AWS KMS customer master key (CMK)."
+    },
+    {
+      "name": "master_user_name",
+      "type": "text",
+      "description": "Provides the master username for the cluster snapshot."
+    },
+    {
+      "name": "percent_progress",
+      "type": "integer",
+      "description": "Specifies the percentage of the estimated data that has been transferred."
+    },
+    {
+      "name": "port",
+      "type": "integer",
+      "description": "Specifies the port that the cluster was listening on at the time of the snapshot."
+    },
+    {
+      "name": "source_db_cluster_snapshot_arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) for the source cluster snapshot, if the cluster snapshot was copied from a source cluster snapshot."
+    },
+    {
+      "name": "storage_encrypted",
+      "type": "boolean",
+      "description": "Specifies whether the cluster snapshot is encrypted, or not."
+    },
+    {
+      "name": "vpc_id",
+      "type": "text",
+      "description": "Provides the VPC ID associated with the cluster snapshot."
+    },
+    {
+      "name": "availability_zones",
+      "type": "json",
+      "description": "A list of Availability Zones (AZs) where instances in the cluster snapshot can be restored."
+    },
+    {
+      "name": "db_cluster_snapshot_attributes",
+      "type": "json",
+      "description": "A list of DB cluster snapshot attribute names and values for a manual cluster snapshot."
+    },
+    {
+      "name": "tags_src",
+      "type": "json",
+      "description": "A list of tags attached to the cluster snapshot."
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": ""
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    }
+  ]
+}

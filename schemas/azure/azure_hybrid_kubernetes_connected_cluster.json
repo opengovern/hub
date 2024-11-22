@@ -1,0 +1,146 @@
+{
+  "table_name": "azure_hybrid_kubernetes_connected_cluster",
+  "table_description": "Azure Hybrid Kubernetes Connected Cluster",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The name of the resource."
+    },
+    {
+      "name": "id",
+      "type": "text",
+      "description": "The resource ID."
+    },
+    {
+      "name": "connectivity_status",
+      "type": "text",
+      "description": "Represents the connectivity status of the connected cluster."
+    },
+    {
+      "name": "provisioning_state",
+      "type": "text",
+      "description": "The provisioning state of the connected cluster resource."
+    },
+    {
+      "name": "type",
+      "type": "text",
+      "description": "The type of the resource."
+    },
+    {
+      "name": "agent_public_key_certificate",
+      "type": "text",
+      "description": "Base64 encoded public certificate used by the agent to do the initial handshake to the backend services in Azure."
+    },
+    {
+      "name": "agent_version",
+      "type": "text",
+      "description": "Version of the agent running on the connected cluster resource."
+    },
+    {
+      "name": "created_at",
+      "type": "timestamp with time zone",
+      "description": "The timestamp of resource creation (UTC)."
+    },
+    {
+      "name": "created_by",
+      "type": "text",
+      "description": "The identity that created the resource."
+    },
+    {
+      "name": "created_by_type",
+      "type": "text",
+      "description": "The type of identity that created the resource."
+    },
+    {
+      "name": "distribution",
+      "type": "text",
+      "description": "The Kubernetes distribution running on this connected cluster."
+    },
+    {
+      "name": "infrastructure",
+      "type": "text",
+      "description": "The infrastructure on which the Kubernetes cluster represented by this connected cluster is running on."
+    },
+    {
+      "name": "kubernetes_version",
+      "type": "text",
+      "description": "The Kubernetes version of the connected cluster resource."
+    },
+    {
+      "name": "last_connectivity_time",
+      "type": "timestamp with time zone",
+      "description": "Time representing the last instance when heart beat was received from the cluster."
+    },
+    {
+      "name": "last_modified_at",
+      "type": "timestamp with time zone",
+      "description": "The timestamp of resource last modification (UTC)."
+    },
+    {
+      "name": "last_modified_by",
+      "type": "text",
+      "description": "The identity that last modified the resource."
+    },
+    {
+      "name": "last_modified_by_type",
+      "type": "text",
+      "description": "The type of identity that last modified the resource."
+    },
+    {
+      "name": "location",
+      "type": "text",
+      "description": "Location of the resource."
+    },
+    {
+      "name": "managed_identity_certificate_expiration_time",
+      "type": "timestamp with time zone",
+      "description": "Expiration time of the managed identity certificate."
+    },
+    {
+      "name": "offering",
+      "type": "text",
+      "description": "Connected cluster offering."
+    },
+    {
+      "name": "total_core_count",
+      "type": "integer",
+      "description": "Number of CPU cores present in the connected cluster resource."
+    },
+    {
+      "name": "total_node_count",
+      "type": "integer",
+      "description": "Number of nodes present in the connected cluster resource."
+    },
+    {
+      "name": "extensions",
+      "type": "json",
+      "description": "The extensions of the connected cluster."
+    },
+    {
+      "name": "identity",
+      "type": "json",
+      "description": "The identity of the connected cluster."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": "ColumnDescriptionTitle"
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": "ColumnDescriptionTags"
+    },
+    {
+      "name": "region",
+      "type": "text",
+      "description": "ColumnDescriptionRegion"
+    },
+    {
+      "name": "resource_group",
+      "type": "text",
+      "description": "ColumnDescriptionResourceGroup"
+    }
+  ]
+}

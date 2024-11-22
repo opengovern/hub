@@ -1,0 +1,126 @@
+{
+  "table_name": "aws_ec2_client_vpn_endpoint",
+  "table_description": "AWS EC2 Client VPN Endpoint",
+  "columns": [
+    {
+      "name": "client_vpn_endpoint_id",
+      "type": "text",
+      "description": "The ID of the client VPN endpoint."
+    },
+    {
+      "name": "transport_protocol",
+      "type": "text",
+      "description": "The transport protocol."
+    },
+    {
+      "name": "client_cidr_block",
+      "type": "cidr",
+      "description": "The IPv4 address range, in CIDR notation, from which client IP addresses are assigned."
+    },
+    {
+      "name": "creation_time",
+      "type": "timestamp with time zone",
+      "description": "The date and time when the Client VPN endpoint was created."
+    },
+    {
+      "name": "deletion_time",
+      "type": "timestamp with time zone",
+      "description": "The date and time when the Client VPN endpoint was deleted."
+    },
+    {
+      "name": "description",
+      "type": "text",
+      "description": "A brief description of the endpoint."
+    },
+    {
+      "name": "dns_name",
+      "type": "text",
+      "description": "The DNS name to be used by clients when connecting to the Client VPN endpoint."
+    },
+    {
+      "name": "self_service_portal_url",
+      "type": "text",
+      "description": "The URL of the self-service portal."
+    },
+    {
+      "name": "server_certificate_arn",
+      "type": "text",
+      "description": "The ARN of the server certificate."
+    },
+    {
+      "name": "session_timeout_hours",
+      "type": "integer",
+      "description": "The maximum VPN session duration time in hours. Valid values: 8, 10, 12, 24. Defaults to 24."
+    },
+    {
+      "name": "split_tunnel",
+      "type": "boolean",
+      "description": "Indicates whether split-tunnel is enabled in the Client VPN endpoint."
+    },
+    {
+      "name": "vpc_id",
+      "type": "text",
+      "description": "The ID of the VPC."
+    },
+    {
+      "name": "vpn_port",
+      "type": "integer",
+      "description": "The port number for the Client VPN endpoint."
+    },
+    {
+      "name": "authentication_options",
+      "type": "json",
+      "description": "Information about the authentication method used by the Client VPN endpoint."
+    },
+    {
+      "name": "client_connect_options",
+      "type": "json",
+      "description": "The options for managing connection authorization for new client connections."
+    },
+    {
+      "name": "connection_log_options",
+      "type": "json",
+      "description": "Information about the client connection logging options for the Client VPN endpoint."
+    },
+    {
+      "name": "client_login_banner_options",
+      "type": "json",
+      "description": "Options for enabling a customizable text banner that will be displayed on Amazon Web Services provided clients when a VPN session is established."
+    },
+    {
+      "name": "dns_servers",
+      "type": "json",
+      "description": "Information about the DNS servers to be used for DNS resolution."
+    },
+    {
+      "name": "security_group_ids",
+      "type": "json",
+      "description": "The IDs of the security groups for the target network."
+    },
+    {
+      "name": "status",
+      "type": "json",
+      "description": "The current state of the Client VPN endpoint."
+    },
+    {
+      "name": "tags_src",
+      "type": "json",
+      "description": "Any tags assigned to the Client VPN endpoint."
+    },
+    {
+      "name": "vpn_protocol",
+      "type": "json",
+      "description": "The protocol used by the VPN session."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": ""
+    }
+  ]
+}

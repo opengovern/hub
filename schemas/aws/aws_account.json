@@ -1,0 +1,76 @@
+{
+  "table_name": "aws_account",
+  "table_description": "AWS Account",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "Account Name"
+    },
+    {
+      "name": "arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) specifying the account."
+    },
+    {
+      "name": "account_id",
+      "type": "text",
+      "description": ""
+    },
+    {
+      "name": "organization_id",
+      "type": "text",
+      "description": "The unique identifier (ID) of an organization, if applicable."
+    },
+    {
+      "name": "organization_arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) of an organization."
+    },
+    {
+      "name": "organization_feature_set",
+      "type": "text",
+      "description": "Specifies the functionality that currently is available to the organization. If set to \\\"ALL\\\", then all features are enabled and policies can be applied to accounts in the organization. If set to \\\"CONSOLIDATED_BILLING\\\", then only consolidated billing functionality is available."
+    },
+    {
+      "name": "organization_master_account_arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) of the account that is designated as the management account for the organization"
+    },
+    {
+      "name": "organization_master_account_email",
+      "type": "text",
+      "description": "The email address that is associated with the AWS account that is designated as the management account for the organization"
+    },
+    {
+      "name": "organization_master_account_id",
+      "type": "text",
+      "description": "The unique identifier (ID) of the management account of an organization"
+    },
+    {
+      "name": "organization_available_policy_types",
+      "type": "json",
+      "description": "The Region opt-in status. The possible values are opt-in-not-required, opted-in, and not-opted-in"
+    },
+    {
+      "name": "account_email",
+      "type": "text",
+      "description": "Account email"
+    },
+    {
+      "name": "account_status",
+      "type": "text",
+      "description": "Account statue"
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    },
+    {
+      "name": "account_aliases",
+      "type": "json",
+      "description": "A list of aliases associated with the account, if applicable."
+    }
+  ]
+}

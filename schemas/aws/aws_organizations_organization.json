@@ -1,0 +1,21 @@
+{
+  "table_name": "aws_organizations_organization",
+  "table_description": "AWS Organizations Organization",
+  "columns": [
+    {
+      "name": "id",
+      "type": "text",
+      "description": "The id of the organization."
+    },
+    {
+      "name": "arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) of the organization"
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    }
+  ]
+}

@@ -1,0 +1,191 @@
+{
+  "table_name": "azure_cosmosdb_account",
+  "table_description": "Azure Cosmos DB Account",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The friendly name that identifies the database account."
+    },
+    {
+      "name": "id",
+      "type": "text",
+      "description": "Contains ID to identify a database account uniquely."
+    },
+    {
+      "name": "kind",
+      "type": "text",
+      "description": "Indicates the type of database account."
+    },
+    {
+      "name": "type",
+      "type": "text",
+      "description": "Type of the resource."
+    },
+    {
+      "name": "connector_offer",
+      "type": "text",
+      "description": "The cassandra connector offer type for the Cosmos DB database C* account."
+    },
+    {
+      "name": "consistency_policy_max_interval",
+      "type": "integer",
+      "description": "The time amount of staleness (in seconds) tolerated, when used with the Bounded Staleness consistency level."
+    },
+    {
+      "name": "consistency_policy_max_staleness_prefix",
+      "type": "integer",
+      "description": "The number of stale requests tolerated, when used with the Bounded Staleness consistency level."
+    },
+    {
+      "name": "database_account_offer_type",
+      "type": "text",
+      "description": "The offer type for the Cosmos DB database account."
+    },
+    {
+      "name": "default_consistency_level",
+      "type": "text",
+      "description": "The default consistency level and configuration settings of the Cosmos DB account."
+    },
+    {
+      "name": "disable_key_based_metadata_write_access",
+      "type": "boolean",
+      "description": "Disable write operations on metadata resources (databases, containers, throughput) via account keys."
+    },
+    {
+      "name": "document_endpoint",
+      "type": "text",
+      "description": "The connection endpoint for the Cosmos DB database account."
+    },
+    {
+      "name": "enable_analytical_storage",
+      "type": "boolean",
+      "description": "Specifies whether to enable storage analytics, or not."
+    },
+    {
+      "name": "enable_automatic_failover",
+      "type": "boolean",
+      "description": "Enables automatic failover of the write region in the rare event that the region is unavailable due to an outage."
+    },
+    {
+      "name": "enable_cassandra_connector",
+      "type": "boolean",
+      "description": "Enables the cassandra connector on the Cosmos DB C* account."
+    },
+    {
+      "name": "enable_free_tier",
+      "type": "boolean",
+      "description": "Specifies whether free Tier is enabled for Cosmos DB database account, or not."
+    },
+    {
+      "name": "enable_multiple_write_locations",
+      "type": "boolean",
+      "description": "Enables the account to write in multiple locations."
+    },
+    {
+      "name": "is_virtual_network_filter_enabled",
+      "type": "boolean",
+      "description": "Specifies whether to enable/disable Virtual Network ACL rules."
+    },
+    {
+      "name": "disable_local_auth",
+      "type": "boolean",
+      "description": "Disable local authentication and ensure only MSI and AAD can be used exclusively for authentication. Defaults to false."
+    },
+    {
+      "name": "key_vault_key_uri",
+      "type": "text",
+      "description": "The URI of the key vault, used to encrypt the Cosmos DB database account."
+    },
+    {
+      "name": "provisioning_state",
+      "type": "text",
+      "description": "The provisioning state of the database account resource."
+    },
+    {
+      "name": "public_network_access",
+      "type": "text",
+      "description": "Indicates whether requests from Public Network are allowed."
+    },
+    {
+      "name": "server_version",
+      "type": "text",
+      "description": "Describes the ServerVersion of an a MongoDB account."
+    },
+    {
+      "name": "backup_policy",
+      "type": "json",
+      "description": "The object representing the policy for taking backups on an account."
+    },
+    {
+      "name": "capabilities",
+      "type": "json",
+      "description": "A list of Cosmos DB capabilities for the account."
+    },
+    {
+      "name": "cors",
+      "type": "json",
+      "description": "A list of CORS policy for the Cosmos DB database account."
+    },
+    {
+      "name": "failover_policies",
+      "type": "json",
+      "description": "A list of regions ordered by their failover priorities."
+    },
+    {
+      "name": "ip_rules",
+      "type": "json",
+      "description": "A list of IP rules."
+    },
+    {
+      "name": "locations",
+      "type": "json",
+      "description": "A list of all locations that are enabled for the Cosmos DB account."
+    },
+    {
+      "name": "private_endpoint_connections",
+      "type": "json",
+      "description": "A list of Private Endpoint Connections configured for the Cosmos DB account."
+    },
+    {
+      "name": "read_locations",
+      "type": "json",
+      "description": "A list of read locations enabled for the Cosmos DB account."
+    },
+    {
+      "name": "restore_parameters",
+      "type": "json",
+      "description": "Parameters to indicate the information about the restore."
+    },
+    {
+      "name": "virtual_network_rules",
+      "type": "json",
+      "description": "A list of Virtual Network ACL rules configured for the Cosmos DB account."
+    },
+    {
+      "name": "write_locations",
+      "type": "json",
+      "description": "A list of write locations enabled for the Cosmos DB account."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": "ColumnDescriptionTitle"
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": "ColumnDescriptionTags"
+    },
+    {
+      "name": "region",
+      "type": "text",
+      "description": "ColumnDescriptionRegion"
+    },
+    {
+      "name": "resource_group",
+      "type": "text",
+      "description": "ColumnDescriptionResourceGroup"
+    }
+  ]
+}

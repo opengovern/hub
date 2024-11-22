@@ -1,0 +1,166 @@
+{
+  "table_name": "aws_cloudtrail_trail",
+  "table_description": "AWS CloudTrail Trail",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The name of the trail."
+    },
+    {
+      "name": "arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) of the trail."
+    },
+    {
+      "name": "home_region",
+      "type": "text",
+      "description": "The region in which the trail was created."
+    },
+    {
+      "name": "is_multi_region_trail",
+      "type": "boolean",
+      "description": "Specifies whether the trail exists only in one region or exists in all regions."
+    },
+    {
+      "name": "log_file_validation_enabled",
+      "type": "boolean",
+      "description": "Specifies whether log file validation is enabled, or not."
+    },
+    {
+      "name": "is_logging",
+      "type": "boolean",
+      "description": "Specifies whether the CloudTrail is currently logging AWS API calls, or not."
+    },
+    {
+      "name": "log_group_arn",
+      "type": "text",
+      "description": "Specifies an Amazon Resource Name (ARN), a unique identifier that represents the log group to which CloudTrail logs will be delivered."
+    },
+    {
+      "name": "cloudwatch_logs_role_arn",
+      "type": "text",
+      "description": "Specifies the role for the CloudWatch Logs endpoint to assume to write to a user's log group."
+    },
+    {
+      "name": "has_custom_event_selectors",
+      "type": "boolean",
+      "description": "Specifies whether the trail has custom event selectors, or not."
+    },
+    {
+      "name": "has_insight_selectors",
+      "type": "boolean",
+      "description": "Specifies whether a trail has insight types specified in an InsightSelector list, or not."
+    },
+    {
+      "name": "include_global_service_events",
+      "type": "boolean",
+      "description": "Specifies whether to include AWS API calls from AWS global services, or not."
+    },
+    {
+      "name": "is_organization_trail",
+      "type": "boolean",
+      "description": "Specifies whether the trail is an organization trail, or not."
+    },
+    {
+      "name": "kms_key_id",
+      "type": "text",
+      "description": "Specifies the KMS key ID that encrypts the logs delivered by CloudTrail."
+    },
+    {
+      "name": "s3_bucket_name",
+      "type": "text",
+      "description": "Name of the Amazon S3 bucket into which CloudTrail delivers your trail files."
+    },
+    {
+      "name": "s3_key_prefix",
+      "type": "text",
+      "description": "Specifies the Amazon S3 key prefix that comes after the name of the bucket you have designated for log file delivery."
+    },
+    {
+      "name": "sns_topic_arn",
+      "type": "text",
+      "description": "Specifies the ARN of the Amazon SNS topic that CloudTrail uses to send notifications when log files are delivered."
+    },
+    {
+      "name": "latest_cloudwatch_logs_delivery_error",
+      "type": "text",
+      "description": "Displays any CloudWatch Logs error that CloudTrail encountered when attempting to deliver logs to CloudWatch Logs."
+    },
+    {
+      "name": "latest_cloudwatch_logs_delivery_time",
+      "type": "timestamp with time zone",
+      "description": "Displays the most recent date and time when CloudTrail delivered logs to CloudWatch Logs."
+    },
+    {
+      "name": "latest_delivery_error",
+      "type": "text",
+      "description": "Displays any Amazon S3 error that CloudTrail encountered when attempting to deliver log files to the designated bucket."
+    },
+    {
+      "name": "latest_delivery_time",
+      "type": "timestamp with time zone",
+      "description": "Specifies the date and time that CloudTrail last delivered log files to an account's Amazon S3 bucket."
+    },
+    {
+      "name": "latest_digest_delivery_error",
+      "type": "text",
+      "description": "Displays any Amazon S3 error that CloudTrail encountered when attempting to deliver a digest file to the designated bucket."
+    },
+    {
+      "name": "latest_digest_delivery_time",
+      "type": "timestamp with time zone",
+      "description": "Specifies the date and time that CloudTrail last delivered a digest file to an account's Amazon S3 bucket."
+    },
+    {
+      "name": "latest_notification_error",
+      "type": "text",
+      "description": "Displays any Amazon SNS error that CloudTrail encountered when attempting to send a notification."
+    },
+    {
+      "name": "latest_notification_time",
+      "type": "timestamp with time zone",
+      "description": "Specifies the date and time of the most recent Amazon SNS notification that CloudTrail has written a new log file to an account's Amazon S3 bucket."
+    },
+    {
+      "name": "start_logging_time",
+      "type": "timestamp with time zone",
+      "description": "Specifies the most recent date and time when CloudTrail started recording API calls for an AWS account."
+    },
+    {
+      "name": "stop_logging_time",
+      "type": "timestamp with time zone",
+      "description": "Specifies the most recent date and time when CloudTrail stopped recording API calls for an AWS account."
+    },
+    {
+      "name": "advanced_event_selectors",
+      "type": "json",
+      "description": "Describes the advanced event selectors that are configured for the trail."
+    },
+    {
+      "name": "event_selectors",
+      "type": "json",
+      "description": "Describes the event selectors that are configured for the trail."
+    },
+    {
+      "name": "insight_selectors",
+      "type": "json",
+      "description": "A JSON string that contains the insight types you want to log on a trail."
+    },
+    {
+      "name": "tags_src",
+      "type": "json",
+      "description": "A list of tags assigned to the trail."
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": ""
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "table_name": "aws_config_aggregate_authorization",
+  "table_description": "AWS Config Aggregate Authorization",
+  "columns": [
+    {
+      "name": "arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) of the aggregation object."
+    },
+    {
+      "name": "authorized_account_id",
+      "type": "text",
+      "description": "The 12-digit account ID of the account authorized to aggregate data."
+    },
+    {
+      "name": "authorized_aws_region",
+      "type": "text",
+      "description": "The region authorized to collect aggregated data."
+    },
+    {
+      "name": "creation_time",
+      "type": "timestamp with time zone",
+      "description": "The time stamp when the aggregation authorization was created."
+    },
+    {
+      "name": "tags_src",
+      "type": "json",
+      "description": "A list of tags attached to the Cluster."
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": ""
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    }
+  ]
+}

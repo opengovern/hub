@@ -1,0 +1,146 @@
+{
+  "table_name": "aws_opensearch_domain",
+  "table_description": "AWS OpenSearch Domain",
+  "columns": [
+    {
+      "name": "domain_id",
+      "type": "text",
+      "description": "The id of the domain."
+    },
+    {
+      "name": "domain_name",
+      "type": "text",
+      "description": "The name of the domain."
+    },
+    {
+      "name": "engine_type",
+      "type": "text",
+      "description": "Specifies the EngineType of the domain."
+    },
+    {
+      "name": "arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) of the domain"
+    },
+    {
+      "name": "access_policies",
+      "type": "text",
+      "description": "The IAM access policies of the domain."
+    },
+    {
+      "name": "created",
+      "type": "boolean",
+      "description": "The domain creation status."
+    },
+    {
+      "name": "deleted",
+      "type": "boolean",
+      "description": "The domain deletion status."
+    },
+    {
+      "name": "endpoint",
+      "type": "text",
+      "description": "The domain endpoint that is used to submit index and search requests."
+    },
+    {
+      "name": "engine_version",
+      "type": "text",
+      "description": "The domain's OpenSearch version."
+    },
+    {
+      "name": "processing",
+      "type": "boolean",
+      "description": "The status of the domain configuration."
+    },
+    {
+      "name": "upgrade_processing",
+      "type": "boolean",
+      "description": "The status of the domain version upgrade."
+    },
+    {
+      "name": "node_to_node_encryption_options_enabled",
+      "type": "boolean",
+      "description": "Specifies the status of the node to node encryption status."
+    },
+    {
+      "name": "advanced_options",
+      "type": "json",
+      "description": "Specifies the status of the advanced options."
+    },
+    {
+      "name": "advanced_security_options",
+      "type": "json",
+      "description": "Specifies The current status of the OpenSearch domain's advanced security options."
+    },
+    {
+      "name": "auto_tune_options",
+      "type": "json",
+      "description": "The current status of the domain's auto-tune options."
+    },
+    {
+      "name": "cluster_config",
+      "type": "json",
+      "description": "The type and number of instances in the domain."
+    },
+    {
+      "name": "cognito_options",
+      "type": "json",
+      "description": "The cognito options for the specified domain."
+    },
+    {
+      "name": "domain_endpoint_options",
+      "type": "json",
+      "description": "The current status of the domain's endpoint options."
+    },
+    {
+      "name": "ebs_options",
+      "type": "json",
+      "description": "The EBSOptions for the specified domain."
+    },
+    {
+      "name": "encryption_at_rest_options",
+      "type": "json",
+      "description": "The status of the encryption at rest options."
+    },
+    {
+      "name": "endpoints",
+      "type": "json",
+      "description": "Map containing the domain endpoints used to submit index and search requests."
+    },
+    {
+      "name": "log_publishing_options",
+      "type": "json",
+      "description": "Log publishing options for the given domain."
+    },
+    {
+      "name": "service_software_options",
+      "type": "json",
+      "description": "The current status of the domain's service software."
+    },
+    {
+      "name": "snapshot_options",
+      "type": "json",
+      "description": "Specifies the status of the snapshot options."
+    },
+    {
+      "name": "vpc_options",
+      "type": "json",
+      "description": "The vpc options for the specified domain."
+    },
+    {
+      "name": "tags_src",
+      "type": "json",
+      "description": "A list of tags assigned to the domain."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": ""
+    }
+  ]
+}

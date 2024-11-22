@@ -1,0 +1,116 @@
+{
+  "table_name": "azure_logic_app_workflow",
+  "table_description": "Azure Logic App Workflow",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The resource name."
+    },
+    {
+      "name": "id",
+      "type": "text",
+      "description": "The resource identifier."
+    },
+    {
+      "name": "state",
+      "type": "text",
+      "description": "The state of the workflow."
+    },
+    {
+      "name": "provisioning_state",
+      "type": "text",
+      "description": "The provisioning state of the workflow."
+    },
+    {
+      "name": "type",
+      "type": "text",
+      "description": "The resource type."
+    },
+    {
+      "name": "access_endpoint",
+      "type": "text",
+      "description": "The access endpoint of the workflow."
+    },
+    {
+      "name": "created_time",
+      "type": "timestamp with time zone",
+      "description": "The time when workflow was created."
+    },
+    {
+      "name": "changed_time",
+      "type": "timestamp with time zone",
+      "description": "Specifies the time, the workflow was updated."
+    },
+    {
+      "name": "sku_name",
+      "type": "text",
+      "description": "The sku name."
+    },
+    {
+      "name": "version",
+      "type": "text",
+      "description": "Version of the workflow."
+    },
+    {
+      "name": "access_control",
+      "type": "json",
+      "description": "The access control configuration."
+    },
+    {
+      "name": "definition",
+      "type": "json",
+      "description": "The workflow defination."
+    },
+    {
+      "name": "diagnostic_settings",
+      "type": "json",
+      "description": "A list of active diagnostic settings for the workflow."
+    },
+    {
+      "name": "endpoints_configuration",
+      "type": "json",
+      "description": "The endpoints configuration."
+    },
+    {
+      "name": "integration_account",
+      "type": "json",
+      "description": "The integration account of the workflow."
+    },
+    {
+      "name": "integration_service_environment",
+      "type": "json",
+      "description": "The integration service environment of the workflow."
+    },
+    {
+      "name": "parameters",
+      "type": "json",
+      "description": "The workflow parameters."
+    },
+    {
+      "name": "sku_plan",
+      "type": "json",
+      "description": "The sku Plan."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": "ColumnDescriptionTitle"
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": "ColumnDescriptionTags"
+    },
+    {
+      "name": "region",
+      "type": "text",
+      "description": "ColumnDescriptionRegion"
+    },
+    {
+      "name": "resource_group",
+      "type": "text",
+      "description": "ColumnDescriptionResourceGroup"
+    }
+  ]
+}

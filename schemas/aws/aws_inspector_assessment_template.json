@@ -1,0 +1,71 @@
+{
+  "table_name": "aws_inspector_assessment_template",
+  "table_description": "AWS Inspector Assessment Template",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The name of the assessment template."
+    },
+    {
+      "name": "arn",
+      "type": "text",
+      "description": "The ARN of the assessment template."
+    },
+    {
+      "name": "assessment_run_count",
+      "type": "integer",
+      "description": "The number of existing assessment runs associated with this assessment template."
+    },
+    {
+      "name": "assessment_target_arn",
+      "type": "text",
+      "description": "The ARN of the assessment target that corresponds to this assessment template."
+    },
+    {
+      "name": "created_at",
+      "type": "timestamp with time zone",
+      "description": "The time at which the assessment template is created."
+    },
+    {
+      "name": "duration_in_seconds",
+      "type": "integer",
+      "description": "The duration in seconds specified for this assessment template."
+    },
+    {
+      "name": "last_assessment_run_arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) of the most recent assessment run associated with this assessment template."
+    },
+    {
+      "name": "rules_package_arns",
+      "type": "json",
+      "description": "The rules packages that are specified for this assessment template."
+    },
+    {
+      "name": "user_attributes_for_findings",
+      "type": "json",
+      "description": "The user-defined attributes that are assigned to every generated finding from the assessment run that uses this assessment template."
+    },
+    {
+      "name": "tags_src",
+      "type": "json",
+      "description": "A list of tags associated with the Assessment Template."
+    },
+    {
+      "name": "event_subscriptions",
+      "type": "json",
+      "description": "A list of event subscriptions associated with the Assessment Template."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": ""
+    }
+  ]
+}

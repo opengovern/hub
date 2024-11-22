@@ -1,0 +1,106 @@
+{
+  "table_name": "aws_ec2_launch_template_version",
+  "table_description": "AWS EC2 Launch Template Version",
+  "columns": [
+    {
+      "name": "launch_template_name",
+      "type": "text",
+      "description": "The name of the launch template."
+    },
+    {
+      "name": "launch_template_id",
+      "type": "text",
+      "description": "The ID of the launch template."
+    },
+    {
+      "name": "create_time",
+      "type": "timestamp with time zone",
+      "description": "The time the version was created."
+    },
+    {
+      "name": "created_by",
+      "type": "text",
+      "description": "The principal that created the version."
+    },
+    {
+      "name": "default_version",
+      "type": "boolean",
+      "description": "Indicates whether the version is the default version."
+    },
+    {
+      "name": "disable_api_stop",
+      "type": "boolean",
+      "description": "Indicates whether the instance is enabled for stop protection."
+    },
+    {
+      "name": "disable_api_termination",
+      "type": "boolean",
+      "description": "If set to true, indicates that the instance cannot be terminated using the Amazon EC2 console, command line tool, or API."
+    },
+    {
+      "name": "ebs_optimized",
+      "type": "boolean",
+      "description": "Indicates whether the instance is optimized for Amazon EBS I/O."
+    },
+    {
+      "name": "image_id",
+      "type": "text",
+      "description": "The ID of the AMI or a Systems Manager parameter."
+    },
+    {
+      "name": "instance_type",
+      "type": "text",
+      "description": "The instance type."
+    },
+    {
+      "name": "kernel_id",
+      "type": "text",
+      "description": "The ID of the kernel, if applicable."
+    },
+    {
+      "name": "key_name",
+      "type": "text",
+      "description": "The name of the key pair."
+    },
+    {
+      "name": "ram_disk_id",
+      "type": "text",
+      "description": "The ID of the RAM disk, if applicable."
+    },
+    {
+      "name": "security_groups",
+      "type": "text",
+      "description": "The security group names."
+    },
+    {
+      "name": "security_group_ids",
+      "type": "text",
+      "description": "The security group IDs."
+    },
+    {
+      "name": "version_description",
+      "type": "text",
+      "description": "The description for the version."
+    },
+    {
+      "name": "version_number",
+      "type": "integer",
+      "description": "The version number."
+    },
+    {
+      "name": "user_data",
+      "type": "text",
+      "description": "The user data of the launch template."
+    },
+    {
+      "name": "launch_template_data",
+      "type": "json",
+      "description": "Information about the launch template."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    }
+  ]
+}

@@ -1,0 +1,216 @@
+{
+  "table_name": "azure_api_management",
+  "table_description": "Azure API Management Service",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "A friendly name that identifies an API management service."
+    },
+    {
+      "name": "id",
+      "type": "text",
+      "description": "Contains ID to identify an API management service uniquely."
+    },
+    {
+      "name": "provisioning_state",
+      "type": "text",
+      "description": "The current provisioning state of the API management service. Possible values include: 'Created', 'Activating', 'Succeeded', 'Updating', 'Failed', 'Stopped', 'Terminating', 'TerminationFailed', 'Deleted'."
+    },
+    {
+      "name": "type",
+      "type": "text",
+      "description": "Type of the resource."
+    },
+    {
+      "name": "created_at_utc",
+      "type": "timestamp with time zone",
+      "description": "Creation UTC date of the API management service."
+    },
+    {
+      "name": "developer_portal_url",
+      "type": "text",
+      "description": "Developer Portal endpoint URL of the API management service."
+    },
+    {
+      "name": "disable_gateway",
+      "type": "boolean",
+      "description": "Property only valid for an API management service deployed in multiple locations. This can be used to disable the gateway in master region."
+    },
+    {
+      "name": "enable_client_certificate",
+      "type": "boolean",
+      "description": "Property only meant to be used for Consumption SKU Service. This enforces a client certificate to be presented on each request to the gateway. This also enables the ability to authenticate the certificate in the policy on the gateway."
+    },
+    {
+      "name": "etag",
+      "type": "text",
+      "description": "An unique read-only string that changes whenever the resource is updated."
+    },
+    {
+      "name": "gateway_regional_url",
+      "type": "text",
+      "description": "Gateway URL of the API management service in the default region."
+    },
+    {
+      "name": "gateway_url",
+      "type": "text",
+      "description": "Gateway URL of the API management service."
+    },
+    {
+      "name": "identity_principal_id",
+      "type": "text",
+      "description": "The principal id of the identity."
+    },
+    {
+      "name": "identity_tenant_id",
+      "type": "text",
+      "description": "The client tenant id of the identity."
+    },
+    {
+      "name": "identity_type",
+      "type": "text",
+      "description": "The type of identity used for the resource."
+    },
+    {
+      "name": "management_api_url",
+      "type": "text",
+      "description": "Management API endpoint URL of the API management service."
+    },
+    {
+      "name": "notification_sender_email",
+      "type": "text",
+      "description": "Email address from which the notification will be sent."
+    },
+    {
+      "name": "portal_url",
+      "type": "text",
+      "description": "Publisher portal endpoint URL of the API management service."
+    },
+    {
+      "name": "publisher_email",
+      "type": "text",
+      "description": "Publisher email of the API management service."
+    },
+    {
+      "name": "publisher_name",
+      "type": "text",
+      "description": "Publisher name of the API management service."
+    },
+    {
+      "name": "restore",
+      "type": "boolean",
+      "description": "Undelete API management service if it was previously soft-deleted."
+    },
+    {
+      "name": "scm_url",
+      "type": "text",
+      "description": "SCM endpoint URL of the API management service."
+    },
+    {
+      "name": "sku_capacity",
+      "type": "integer",
+      "description": "Capacity of the SKU (number of deployed units of the SKU)"
+    },
+    {
+      "name": "sku_name",
+      "type": "text",
+      "description": "Name of the Sku"
+    },
+    {
+      "name": "target_provisioning_state",
+      "type": "text",
+      "description": "The provisioning state of the API management service, which is targeted by the long running operation started on the service."
+    },
+    {
+      "name": "virtual_network_configuration_subnet_name",
+      "type": "text",
+      "description": "The name of the subnet."
+    },
+    {
+      "name": "virtual_network_configuration_subnet_resource_id",
+      "type": "text",
+      "description": "The full resource ID of a subnet in a virtual network to deploy the API Management service in."
+    },
+    {
+      "name": "virtual_network_configuration_id",
+      "type": "text",
+      "description": "The virtual network ID."
+    },
+    {
+      "name": "virtual_network_type",
+      "type": "text",
+      "description": "The type of VPN in which API management service needs to be configured in. None (Default Value) means the API management service is not part of any Virtual Network, External means the API management deployment is set up inside a Virtual Network having an Internet Facing Endpoint, and Internal means that API management deployment is setup inside a Virtual Network having an Intranet Facing Endpoint only. Possible values include: 'None', 'External', 'Internal'"
+    },
+    {
+      "name": "additional_locations",
+      "type": "json",
+      "description": "Additional datacenter locations of the API management service."
+    },
+    {
+      "name": "api_version_constraint",
+      "type": "json",
+      "description": "Control plane APIs version constraint for the API management service."
+    },
+    {
+      "name": "certificates",
+      "type": "json",
+      "description": "List of certificates that need to be installed in the API management service."
+    },
+    {
+      "name": "custom_properties",
+      "type": "json",
+      "description": "Custom properties of the API management service."
+    },
+    {
+      "name": "diagnostic_settings",
+      "type": "json",
+      "description": "A list of active diagnostic settings for the API management service."
+    },
+    {
+      "name": "host_name_configurations",
+      "type": "json",
+      "description": "Custom hostname configuration of the API management service."
+    },
+    {
+      "name": "identity_user_assigned_identities",
+      "type": "json",
+      "description": "The list of user identities associated with the resource."
+    },
+    {
+      "name": "private_ip_addresses",
+      "type": "json",
+      "description": "Private static load balanced IP addresses of the API management service in primary region which is deployed in an internal virtual network. Available only for 'Basic', 'Standard', 'Premium' and 'Isolated' SKU."
+    },
+    {
+      "name": "public_ip_addresses",
+      "type": "json",
+      "description": "Public static load balanced IP addresses of the API management service in primary region. Available only for 'Basic', 'Standard', 'Premium' and 'Isolated' SKU."
+    },
+    {
+      "name": "zones",
+      "type": "json",
+      "description": "A list of availability zones denoting where the resource needs to come from."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": "ColumnDescriptionTitle"
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": "ColumnDescriptionTags"
+    },
+    {
+      "name": "region",
+      "type": "text",
+      "description": "ColumnDescriptionRegion"
+    },
+    {
+      "name": "resource_group",
+      "type": "text",
+      "description": "ColumnDescriptionResourceGroup"
+    }
+  ]
+}

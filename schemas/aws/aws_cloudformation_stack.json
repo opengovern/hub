@@ -1,0 +1,121 @@
+{
+  "table_name": "aws_cloudformation_stack",
+  "table_description": "AWS CloudFormation Stack",
+  "columns": [
+    {
+      "name": "id",
+      "type": "text",
+      "description": "Unique identifier of the stack."
+    },
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The name associated with the stack."
+    },
+    {
+      "name": "status",
+      "type": "text",
+      "description": "Current status of the stack."
+    },
+    {
+      "name": "creation_time",
+      "type": "timestamp with time zone",
+      "description": "The time at which the stack was created."
+    },
+    {
+      "name": "disable_rollback",
+      "type": "boolean",
+      "description": "Boolean to enable or disable rollback on stack creation failures."
+    },
+    {
+      "name": "enable_termination_protection",
+      "type": "boolean",
+      "description": "Specifies whether termination protection is enabled for the stack."
+    },
+    {
+      "name": "last_updated_time",
+      "type": "timestamp with time zone",
+      "description": "The time the stack was last updated. This field will only be returned if the stack has been updated at least once."
+    },
+    {
+      "name": "parent_id",
+      "type": "text",
+      "description": "ID of the direct parent of this stack."
+    },
+    {
+      "name": "role_arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) of an AWS Identity and Access Management (IAM) role that is associated with the stack."
+    },
+    {
+      "name": "root_id",
+      "type": "text",
+      "description": "ID of the top-level stack to which the nested stack ultimately belongs."
+    },
+    {
+      "name": "description",
+      "type": "text",
+      "description": "A user-defined description associated with the stack."
+    },
+    {
+      "name": "notification_arns",
+      "type": "json",
+      "description": "SNS topic ARNs to which stack related events are published."
+    },
+    {
+      "name": "outputs",
+      "type": "json",
+      "description": "A list of output structures."
+    },
+    {
+      "name": "rollback_configuration",
+      "type": "json",
+      "description": "The rollback triggers for AWS CloudFormation to monitor during stack creation and updating operations, and for the specified monitoring period afterwards."
+    },
+    {
+      "name": "capabilities",
+      "type": "json",
+      "description": "The capabilities allowed in the stack."
+    },
+    {
+      "name": "stack_drift_status",
+      "type": "text",
+      "description": "Status of the stack's actual configuration compared to its expected template configuration."
+    },
+    {
+      "name": "parameters",
+      "type": "json",
+      "description": "A list of Parameter structures."
+    },
+    {
+      "name": "template_body",
+      "type": "text",
+      "description": "Structure containing the template body."
+    },
+    {
+      "name": "template_body_json",
+      "type": "json",
+      "description": "Structure containing the template body. Parsed into json object for better readability."
+    },
+    {
+      "name": "resources",
+      "type": "json",
+      "description": "A list of Stack resource structures."
+    },
+    {
+      "name": "tags_src",
+      "type": "json",
+      "description": "A list of tags associated with stack."
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": ""
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    }
+  ]
+}

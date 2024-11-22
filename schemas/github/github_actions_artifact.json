@@ -1,0 +1,51 @@
+{
+  "table_name": "github_actions_artifact",
+  "table_description": "Artifacts allow you to share data between jobs in a workflow and store data once that workflow has completed.",
+  "columns": [
+    {
+      "name": "repository_full_name",
+      "type": "text",
+      "description": "Full name of the repository that contains the artifact."
+    },
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The name of the artifact."
+    },
+    {
+      "name": "id",
+      "type": "integer",
+      "description": "Unique ID of the artifact."
+    },
+    {
+      "name": "size_in_bytes",
+      "type": "integer",
+      "description": "Size of the artifact in bytes."
+    },
+    {
+      "name": "archive_download_url",
+      "type": "text",
+      "description": "Archive download URL for the artifact."
+    },
+    {
+      "name": "created_at",
+      "type": "timestamp with time zone",
+      "description": "Time when the artifact was created."
+    },
+    {
+      "name": "expired",
+      "type": "boolean",
+      "description": "It defines whether the artifact is expires or not."
+    },
+    {
+      "name": "expires_at",
+      "type": "timestamp with time zone",
+      "description": "Time when the artifact expires."
+    },
+    {
+      "name": "node_id",
+      "type": "text",
+      "description": "Node where GitHub stores this data internally."
+    }
+  ]
+}

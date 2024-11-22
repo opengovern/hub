@@ -1,0 +1,21 @@
+{
+  "table_name": "aws_ecr_registry_scanning_configuration",
+  "table_description": "AWS ECR Registry Scanning Configuration",
+  "columns": [
+    {
+      "name": "registry_id",
+      "type": "text",
+      "description": "The ID of the registry."
+    },
+    {
+      "name": "scanning_configuration",
+      "type": "json",
+      "description": "The scanning configuration for the registry."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    }
+  ]
+}

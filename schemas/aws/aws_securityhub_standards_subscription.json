@@ -1,0 +1,56 @@
+{
+  "table_name": "aws_securityhub_standards_subscription",
+  "table_description": "AWS Security Hub Standards Subscription",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The name of the standard."
+    },
+    {
+      "name": "standards_arn",
+      "type": "text",
+      "description": "The ARN of a standard."
+    },
+    {
+      "name": "description",
+      "type": "text",
+      "description": "The description of the standard."
+    },
+    {
+      "name": "enabled_by_default",
+      "type": "boolean",
+      "description": "Indicates whether the standard is enabled by default."
+    },
+    {
+      "name": "standards_status",
+      "type": "text",
+      "description": "The status of the standard subscription."
+    },
+    {
+      "name": "standards_status_reason_code",
+      "type": "text",
+      "description": "The reason code that represents the reason for the current status of a standard subscription."
+    },
+    {
+      "name": "standards_subscription_arn",
+      "type": "text",
+      "description": "The ARN of a resource that represents your subscription to a supported standard."
+    },
+    {
+      "name": "standards_input",
+      "type": "json",
+      "description": "A key-value pair of input for the standard."
+    },
+    {
+      "name": "standards_managed_by",
+      "type": "json",
+      "description": "Provides details about the management of a security standard."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    }
+  ]
+}

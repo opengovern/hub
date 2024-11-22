@@ -1,0 +1,81 @@
+{
+  "table_name": "azure_virtual_network",
+  "table_description": "Azure Virtual Network",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The friendly name that identifies the virtual network"
+    },
+    {
+      "name": "id",
+      "type": "text",
+      "description": "Contains ID to identify a virtual network uniquely"
+    },
+    {
+      "name": "etag",
+      "type": "text",
+      "description": "An unique read-only string that changes whenever the resource is updated"
+    },
+    {
+      "name": "type",
+      "type": "text",
+      "description": "Type of the resource"
+    },
+    {
+      "name": "enable_ddos_protection",
+      "type": "boolean",
+      "description": "Indicates if DDoS protection is enabled for all the protected resources in the virtual network"
+    },
+    {
+      "name": "enable_vm_protection",
+      "type": "boolean",
+      "description": "Indicates if VM protection is enabled for all the subnets in the virtual network"
+    },
+    {
+      "name": "provisioning_state",
+      "type": "text",
+      "description": "The provisioning state of the virtual network resource"
+    },
+    {
+      "name": "resource_guid",
+      "type": "text",
+      "description": "The resourceGuid property of the Virtual Network resource"
+    },
+    {
+      "name": "address_prefixes",
+      "type": "json",
+      "description": "A list of address blocks reserved for this virtual network in CIDR notation"
+    },
+    {
+      "name": "network_peerings",
+      "type": "json",
+      "description": "A list of peerings in a Virtual Network"
+    },
+    {
+      "name": "subnets",
+      "type": "json",
+      "description": "A list of subnets in a Virtual Network"
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": "ColumnDescriptionTitle"
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": "ColumnDescriptionTags"
+    },
+    {
+      "name": "region",
+      "type": "text",
+      "description": "ColumnDescriptionRegion"
+    },
+    {
+      "name": "resource_group",
+      "type": "text",
+      "description": "ColumnDescriptionResourceGroup"
+    }
+  ]
+}

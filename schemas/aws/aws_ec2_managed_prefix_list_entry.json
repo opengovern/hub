@@ -1,0 +1,26 @@
+{
+  "table_name": "aws_ec2_managed_prefix_list_entry",
+  "table_description": "AWS EC2 Managed Prefix List Entry",
+  "columns": [
+    {
+      "name": "prefix_list_id",
+      "type": "text",
+      "description": "The ID of the prefix list."
+    },
+    {
+      "name": "cidr",
+      "type": "text",
+      "description": "The CIDR block."
+    },
+    {
+      "name": "description",
+      "type": "text",
+      "description": "The description of the entry."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    }
+  ]
+}

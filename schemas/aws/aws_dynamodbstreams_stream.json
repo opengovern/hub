@@ -1,0 +1,21 @@
+{
+  "table_name": "aws_dynamodbstreams_stream",
+  "table_description": "AWS DynamoDb Stream",
+  "columns": [
+    {
+      "name": "stream_label",
+      "type": "text",
+      "description": "The label of the stream."
+    },
+    {
+      "name": "stream_arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) of the stream"
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    }
+  ]
+}

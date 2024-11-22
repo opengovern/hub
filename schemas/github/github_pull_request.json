@@ -1,0 +1,216 @@
+{
+  "table_name": "github_pull_request",
+  "table_description": "GitHub Pull requests let you tell others about changes you've pushed to a branch in a repository on GitHub. Once a pull request is opened, you can discuss and review the potential changes with collaborators and add follow-up commits before your changes are merged into the base branch.",
+  "columns": [
+    {
+      "name": "repository_full_name",
+      "type": "text",
+      "description": "The full name of the repository the pull request belongs to."
+    },
+    {
+      "name": "number",
+      "type": "integer",
+      "description": "The number of the pull request."
+    },
+    {
+      "name": "id",
+      "type": "integer",
+      "description": "The ID of the pull request."
+    },
+    {
+      "name": "node_id",
+      "type": "text",
+      "description": "The node ID of the pull request."
+    },
+    {
+      "name": "active_lock_reason",
+      "type": "text",
+      "description": "Reason that the conversation was locked."
+    },
+    {
+      "name": "additions",
+      "type": "integer",
+      "description": "The number of additions in this pull request."
+    },
+    {
+      "name": "author",
+      "type": "json",
+      "description": "The author of the pull request."
+    },
+    {
+      "name": "author_association",
+      "type": "text",
+      "description": "Author's association with the pull request."
+    },
+    {
+      "name": "base_ref_name",
+      "type": "text",
+      "description": "Identifies the name of the base Ref associated with the pull request, even if the ref has been deleted."
+    },
+    {
+      "name": "body",
+      "type": "text",
+      "description": "The body as Markdown."
+    },
+    {
+      "name": "changed_files",
+      "type": "integer",
+      "description": "The number of files changed in this pull request."
+    },
+    {
+      "name": "checks_url",
+      "type": "text",
+      "description": "URL for the checks of this pull request."
+    },
+    {
+      "name": "closed",
+      "type": "boolean",
+      "description": "If true, pull request is closed."
+    },
+    {
+      "name": "closed_at",
+      "type": "timestamp with time zone",
+      "description": "Timestamp when the pull request was closed."
+    },
+    {
+      "name": "created_at",
+      "type": "timestamp with time zone",
+      "description": "Timestamp when the pull request was created."
+    },
+    {
+      "name": "created_via_email",
+      "type": "boolean",
+      "description": "If true, pull request comment was created via email."
+    },
+    {
+      "name": "deletions",
+      "type": "integer",
+      "description": "The number of deletions in this pull request."
+    },
+    {
+      "name": "editor",
+      "type": "json",
+      "description": "The actor who edited the pull request's body."
+    },
+    {
+      "name": "head_ref_name",
+      "type": "text",
+      "description": "Identifies the name of the head Ref associated with the pull request, even if the ref has been deleted."
+    },
+    {
+      "name": "head_ref_oid",
+      "type": "text",
+      "description": "Identifies the oid/sha of the head ref associated with the pull request, even if the ref has been deleted."
+    },
+    {
+      "name": "includes_created_edit",
+      "type": "boolean",
+      "description": "If true, this pull request was edited and includes an edit with the creation data."
+    },
+    {
+      "name": "is_cross_repository",
+      "type": "boolean",
+      "description": "If true, head and base repositories are different."
+    },
+    {
+      "name": "is_draft",
+      "type": "boolean",
+      "description": "If true, the pull request is a draft."
+    },
+    {
+      "name": "is_read_by_user",
+      "type": "boolean",
+      "description": "If true, this pull request was read by the current user."
+    },
+    {
+      "name": "last_edited_at",
+      "type": "timestamp with time zone",
+      "description": "Timestamp the editor made the last edit."
+    },
+    {
+      "name": "locked",
+      "type": "boolean",
+      "description": "If true, the pull request is locked."
+    },
+    {
+      "name": "maintainer_can_modify",
+      "type": "boolean",
+      "description": "If true, maintainers can modify the pull request."
+    },
+    {
+      "name": "mergeable",
+      "type": "text",
+      "description": "Whether or not the pull request can be merged based on the existence of merge conflicts."
+    },
+    {
+      "name": "merged",
+      "type": "boolean",
+      "description": "If true, the pull request was merged."
+    },
+    {
+      "name": "merged_at",
+      "type": "timestamp with time zone",
+      "description": "Timestamp when pull request was merged."
+    },
+    {
+      "name": "merged_by",
+      "type": "json",
+      "description": "The actor who merged the pull request."
+    },
+    {
+      "name": "milestone",
+      "type": "json",
+      "description": "The milestone associated with the pull request."
+    },
+    {
+      "name": "permalink",
+      "type": "text",
+      "description": "Permanent URL for the pull request."
+    },
+    {
+      "name": "published_at",
+      "type": "timestamp with time zone",
+      "description": "Timestamp the pull request was published."
+    },
+    {
+      "name": "revert_url",
+      "type": "text",
+      "description": "URL to revert the pull request."
+    },
+    {
+      "name": "review_decision",
+      "type": "text",
+      "description": "The current status of this pull request with respect to code review."
+    },
+    {
+      "name": "state",
+      "type": "text",
+      "description": "The current state of the pull request."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": "The title of the pull request."
+    },
+    {
+      "name": "total_comments_count",
+      "type": "integer",
+      "description": "The number of comments on the pull request."
+    },
+    {
+      "name": "updated_at",
+      "type": "timestamp with time zone",
+      "description": "Timestamp when the pull request was last updated."
+    },
+    {
+      "name": "url",
+      "type": "text",
+      "description": "URL of the pull request."
+    },
+    {
+      "name": "assignees",
+      "type": "json",
+      "description": "A list of Users assigned to the pull request."
+    }
+  ]
+}

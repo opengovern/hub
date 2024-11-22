@@ -1,0 +1,76 @@
+{
+  "table_name": "aws_networkfirewall_firewall_policy",
+  "table_description": "AWS Network Firewall Policy",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The descriptive name of the rule group."
+    },
+    {
+      "name": "arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) of the rule group."
+    },
+    {
+      "name": "firewall_policy_id",
+      "type": "text",
+      "description": "The unique identifier for the firewall policy."
+    },
+    {
+      "name": "consumed_stateful_rule_capacity",
+      "type": "integer",
+      "description": "The number of capacity units currently consumed by the policy's stateful rules."
+    },
+    {
+      "name": "consumed_stateless_rule_capacity",
+      "type": "integer",
+      "description": "The number of capacity units currently consumed by the policy's stateless rules."
+    },
+    {
+      "name": "description",
+      "type": "text",
+      "description": "A description of the firewall policy."
+    },
+    {
+      "name": "firewall_policy_status",
+      "type": "text",
+      "description": "The current status of the firewall policy."
+    },
+    {
+      "name": "last_modified_time",
+      "type": "timestamp with time zone",
+      "description": "The last time that the firewall policy was changed."
+    },
+    {
+      "name": "number_of_associations",
+      "type": "integer",
+      "description": "The number of firewall policies that use this rule group."
+    },
+    {
+      "name": "encryption_configuration",
+      "type": "json",
+      "description": "A complex type that contains the Amazon Web Services KMS encryption configuration settings for your firewall policy."
+    },
+    {
+      "name": "firewall_policy",
+      "type": "json",
+      "description": "The policy for the specified firewall policy."
+    },
+    {
+      "name": "tags_src",
+      "type": "json",
+      "description": "A list of tags assigned to the resource."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": ""
+    }
+  ]
+}

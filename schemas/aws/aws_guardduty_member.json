@@ -1,0 +1,46 @@
+{
+  "table_name": "aws_guardduty_member",
+  "table_description": "AWS GuardDuty Member",
+  "columns": [
+    {
+      "name": "member_account_id",
+      "type": "text",
+      "description": "The ID of the member account."
+    },
+    {
+      "name": "detector_id",
+      "type": "text",
+      "description": "The detector ID of the member account."
+    },
+    {
+      "name": "master_id",
+      "type": "text",
+      "description": "The administrator account ID."
+    },
+    {
+      "name": "email",
+      "type": "text",
+      "description": "The email address of the member account."
+    },
+    {
+      "name": "invited_at",
+      "type": "timestamp with time zone",
+      "description": "The timestamp when the invitation was sent."
+    },
+    {
+      "name": "relationship_status",
+      "type": "text",
+      "description": "The status of the relationship between the member and the administrator."
+    },
+    {
+      "name": "updated_at",
+      "type": "timestamp with time zone",
+      "description": "The last-updated timestamp of the member."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    }
+  ]
+}

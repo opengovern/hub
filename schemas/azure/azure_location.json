@@ -1,0 +1,36 @@
+{
+  "table_name": "azure_location",
+  "table_description": "Azure Location",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The location name"
+    },
+    {
+      "name": "display_name",
+      "type": "text",
+      "description": "The display name of the location."
+    },
+    {
+      "name": "id",
+      "type": "text",
+      "description": "The fully qualified ID of the location."
+    },
+    {
+      "name": "latitude",
+      "type": "text",
+      "description": "The latitude of the location."
+    },
+    {
+      "name": "longitude",
+      "type": "json",
+      "description": "The longitude of the location"
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": "ColumnDescriptionTitle"
+    }
+  ]
+}

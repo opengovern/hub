@@ -1,0 +1,116 @@
+{
+  "table_name": "aws_dms_replication_task",
+  "table_description": "AWS DMS Replication Task",
+  "columns": [
+    {
+      "name": "replication_task_identifier",
+      "type": "text",
+      "description": "The user-assigned replication task identifier or name."
+    },
+    {
+      "name": "arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) of the replication task."
+    },
+    {
+      "name": "cdc_start_position",
+      "type": "text",
+      "description": "Indicates when you want a change data capture (CDC) operation to start."
+    },
+    {
+      "name": "cdc_stop_position",
+      "type": "text",
+      "description": "Indicates when you want a change data capture (CDC) operation to stop."
+    },
+    {
+      "name": "last_failure_message",
+      "type": "text",
+      "description": "The last error (failure) message generated for the replication task."
+    },
+    {
+      "name": "migration_type",
+      "type": "text",
+      "description": "The type of migration."
+    },
+    {
+      "name": "recovery_checkpoint",
+      "type": "text",
+      "description": "Indicates the last checkpoint that occurred during a change data capture (CDC) operation."
+    },
+    {
+      "name": "replication_instance_arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) of the replication instance."
+    },
+    {
+      "name": "replication_task_creation_date",
+      "type": "timestamp with time zone",
+      "description": "The date the replication task was created."
+    },
+    {
+      "name": "replication_task_start_date",
+      "type": "timestamp with time zone",
+      "description": "The date the replication task is scheduled to start."
+    },
+    {
+      "name": "source_endpoint_arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) that uniquely identifies the endpoint."
+    },
+    {
+      "name": "status",
+      "type": "text",
+      "description": "The status of the replication task."
+    },
+    {
+      "name": "stop_reason",
+      "type": "text",
+      "description": "The reason the replication task was stopped."
+    },
+    {
+      "name": "table_mappings",
+      "type": "text",
+      "description": "Table mappings specified in the task."
+    },
+    {
+      "name": "target_endpoint_arn",
+      "type": "text",
+      "description": "The ARN that uniquely identifies the endpoint."
+    },
+    {
+      "name": "target_replication_instance_arn",
+      "type": "text",
+      "description": "The ARN of the replication instance to which this task is moved in response to running the MoveReplicationTask operation."
+    },
+    {
+      "name": "task_data",
+      "type": "text",
+      "description": "Supplemental information that the task requires to migrate the data for certain source and target endpoints."
+    },
+    {
+      "name": "replication_task_settings",
+      "type": "json",
+      "description": "The settings for the replication task."
+    },
+    {
+      "name": "replication_task_stats",
+      "type": "json",
+      "description": "The statistics for the task, including elapsed time, tables loaded, and table errors."
+    },
+    {
+      "name": "tags_src",
+      "type": "json",
+      "description": "A list of tags currently associated with the replication instance."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": ""
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "table_name": "azure_log_alert",
+  "table_description": "Azure Log Alert",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The name of the resource."
+    },
+    {
+      "name": "id",
+      "type": "text",
+      "description": "The resource Id."
+    },
+    {
+      "name": "type",
+      "type": "text",
+      "description": "Type of the resource"
+    },
+    {
+      "name": "enabled",
+      "type": "boolean",
+      "description": "Indicates whether this activity log alert is enabled."
+    },
+    {
+      "name": "description",
+      "type": "text",
+      "description": "A description of this activity log alert."
+    },
+    {
+      "name": "location",
+      "type": "text",
+      "description": "The location of the resource. Since Azure Activity Log Alerts is a global service, the location of the rules should always be 'global'."
+    },
+    {
+      "name": "scopes",
+      "type": "json",
+      "description": "A list of resourceIds that will be used as prefixes."
+    },
+    {
+      "name": "condition",
+      "type": "json",
+      "description": "The condition that will cause this alert to activate."
+    },
+    {
+      "name": "actions",
+      "type": "text",
+      "description": "The actions that will activate when the condition is met."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": "ColumnDescriptionTitle"
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": "ColumnDescriptionTags"
+    },
+    {
+      "name": "region",
+      "type": "text",
+      "description": "ColumnDescriptionRegion"
+    },
+    {
+      "name": "resource_group",
+      "type": "text",
+      "description": "ColumnDescriptionResourceGroup"
+    }
+  ]
+}

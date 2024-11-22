@@ -1,0 +1,186 @@
+{
+  "table_name": "aws_elasticache_cluster",
+  "table_description": "AWS ElastiCache Cluster",
+  "columns": [
+    {
+      "name": "cache_cluster_id",
+      "type": "text",
+      "description": "An unique identifier for ElastiCache cluster."
+    },
+    {
+      "name": "arn",
+      "type": "text",
+      "description": "The ARN (Amazon Resource Name) of the cache cluster."
+    },
+    {
+      "name": "cache_node_type",
+      "type": "text",
+      "description": "The name of the compute and memory capacity node type for the cluster."
+    },
+    {
+      "name": "cache_cluster_status",
+      "type": "text",
+      "description": "The current state of this cluster, one of the following values: available, creating, deleted, deleting, incompatible-network, modifying, rebooting cluster nodes, restore-failed, or snapshotting."
+    },
+    {
+      "name": "at_rest_encryption_enabled",
+      "type": "boolean",
+      "description": "A flag that enables encryption at-rest when set to true."
+    },
+    {
+      "name": "auth_token_enabled",
+      "type": "boolean",
+      "description": "A flag that enables using an AuthToken (password) when issuing Redis commands."
+    },
+    {
+      "name": "auto_minor_version_upgrade",
+      "type": "boolean",
+      "description": "This parameter is currently disabled."
+    },
+    {
+      "name": "cache_cluster_create_time",
+      "type": "timestamp with time zone",
+      "description": "The date and time when the cluster was created."
+    },
+    {
+      "name": "cache_subnet_group_name",
+      "type": "text",
+      "description": "The name of the cache subnet group associated with the cluster."
+    },
+    {
+      "name": "client_download_landing_page",
+      "type": "text",
+      "description": "The URL of the web page where you can download the latest ElastiCache client library."
+    },
+    {
+      "name": "configuration_endpoint",
+      "type": "json",
+      "description": "Represents a Memcached cluster endpoint which can be used by an application to connect to any node in the cluster."
+    },
+    {
+      "name": "engine",
+      "type": "text",
+      "description": "The name of the cache engine (memcached or redis) to be used for this cluster."
+    },
+    {
+      "name": "engine_version",
+      "type": "text",
+      "description": "The version of the cache engine that is used in this cluster."
+    },
+    {
+      "name": "num_cache_nodes",
+      "type": "integer",
+      "description": "The number of cache nodes in the cluster."
+    },
+    {
+      "name": "preferred_availability_zone",
+      "type": "text",
+      "description": "The name of the Availability Zone in which the cluster is located or 'Multiple' if the cache nodes are located in different Availability Zones."
+    },
+    {
+      "name": "preferred_maintenance_window",
+      "type": "text",
+      "description": "Specifies the weekly time range during which maintenance on the cluster is performed."
+    },
+    {
+      "name": "replication_group_id",
+      "type": "text",
+      "description": "The replication group to which this cluster belongs."
+    },
+    {
+      "name": "snapshot_retention_limit",
+      "type": "integer",
+      "description": "The number of days for which ElastiCache retains automatic cluster snapshots before deleting them."
+    },
+    {
+      "name": "snapshot_window",
+      "type": "text",
+      "description": "The daily time range (in UTC) during which ElastiCache begins taking a daily snapshot of your cluster."
+    },
+    {
+      "name": "transit_encryption_enabled",
+      "type": "boolean",
+      "description": "A flag that enables in-transit encryption when set to true."
+    },
+    {
+      "name": "auth_token_last_modified_date",
+      "type": "timestamp with time zone",
+      "description": "The date the auth token was last modified."
+    },
+    {
+      "name": "ip_discovery",
+      "type": "text",
+      "description": "The network type associated with the cluster, either ipv4 or ipv6."
+    },
+    {
+      "name": "network_type",
+      "type": "text",
+      "description": "Must be either ipv4, ipv6, or dual_stack."
+    },
+    {
+      "name": "preferred_outpost_arn",
+      "type": "text",
+      "description": "The outpost ARN in which the cache cluster is created."
+    },
+    {
+      "name": "replication_group_log_delivery_enabled",
+      "type": "boolean",
+      "description": "A boolean value indicating whether log delivery is enabled for the replication group."
+    },
+    {
+      "name": "transit_encryption_mode",
+      "type": "text",
+      "description": "A setting that allows you to migrate your clients to use in-transit encryption, with no downtime."
+    },
+    {
+      "name": "cache_parameter_group",
+      "type": "json",
+      "description": "Status of the cache parameter group."
+    },
+    {
+      "name": "notification_configuration",
+      "type": "json",
+      "description": "Describes a notification topic and its status."
+    },
+    {
+      "name": "pending_modified_values",
+      "type": "json",
+      "description": "A group of settings that are applied to the cluster in the future, or that are currently being applied."
+    },
+    {
+      "name": "security_groups",
+      "type": "json",
+      "description": "A list of VPC Security Groups associated with the cluster."
+    },
+    {
+      "name": "cache_nodes",
+      "type": "json",
+      "description": "A list of cache nodes that are members of the cluster."
+    },
+    {
+      "name": "cache_security_groups",
+      "type": "json",
+      "description": "A list of cache security group elements, composed of name and status sub-elements."
+    },
+    {
+      "name": "log_delivery_configurations",
+      "type": "json",
+      "description": "Returns the destination, format, and type of the logs."
+    },
+    {
+      "name": "tags_src",
+      "type": "json",
+      "description": "A list of tags associated with the cluster."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": ""
+    }
+  ]
+}

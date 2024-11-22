@@ -1,0 +1,11 @@
+{
+  "table_name": "aws_cost_by_account_monthly",
+  "table_description": "AWS Cost Explorer - Cost by Linked Account (Monthly)",
+  "columns": [
+    {
+      "name": "linked_account_id",
+      "type": "text",
+      "description": "The AWS Account ID."
+    }
+  ]
+}

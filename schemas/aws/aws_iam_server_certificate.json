@@ -1,0 +1,66 @@
+{
+  "table_name": "aws_iam_server_certificate",
+  "table_description": "AWS IAM Server Certificate",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The name that identifies the server certificate."
+    },
+    {
+      "name": "arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) specifying the server certificate."
+    },
+    {
+      "name": "server_certificate_id",
+      "type": "text",
+      "description": "The stable and unique string identifying the server certificate."
+    },
+    {
+      "name": "expiration",
+      "type": "timestamp with time zone",
+      "description": "The date on which the certificate is set to expire."
+    },
+    {
+      "name": "certificate_body",
+      "type": "text",
+      "description": "The contents of the public key certificate."
+    },
+    {
+      "name": "certificate_body_length",
+      "type": "integer",
+      "description": "The contents of the public key certificate."
+    },
+    {
+      "name": "certificate_chain",
+      "type": "text",
+      "description": "The contents of the public key certificate chain."
+    },
+    {
+      "name": "path",
+      "type": "text",
+      "description": "The path to the server certificate."
+    },
+    {
+      "name": "upload_date",
+      "type": "timestamp with time zone",
+      "description": "The Amazon Resource Name (ARN) of the account that is designated as the management account for the organization"
+    },
+    {
+      "name": "tags_src",
+      "type": "json",
+      "description": "A list of tags attached with the resource."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": ""
+    }
+  ]
+}

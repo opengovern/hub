@@ -1,0 +1,61 @@
+{
+  "table_name": "aws_codecommit_repository",
+  "table_description": "AWS CodeCommit Repository",
+  "columns": [
+    {
+      "name": "repository_name",
+      "type": "text",
+      "description": "The repository's name."
+    },
+    {
+      "name": "repository_id",
+      "type": "text",
+      "description": "The ID of the repository."
+    },
+    {
+      "name": "arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) of the repository."
+    },
+    {
+      "name": "description",
+      "type": "text",
+      "description": "A comment or description about the repository."
+    },
+    {
+      "name": "creation_date",
+      "type": "timestamp with time zone",
+      "description": "The date and time the repository was created."
+    },
+    {
+      "name": "clone_url_http",
+      "type": "text",
+      "description": "The URL to use for cloning the repository over HTTPS."
+    },
+    {
+      "name": "clone_url_ssh",
+      "type": "text",
+      "description": "The URL to use for cloning the repository over SSH."
+    },
+    {
+      "name": "default_branch",
+      "type": "text",
+      "description": "The repository's default branch name."
+    },
+    {
+      "name": "last_modified_date",
+      "type": "timestamp with time zone",
+      "description": "The date and time the repository was last modified."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": ""
+    }
+  ]
+}

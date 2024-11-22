@@ -1,0 +1,46 @@
+{
+  "table_name": "aws_oam_link",
+  "table_description": "AWS OAM Link",
+  "columns": [
+    {
+      "name": "id",
+      "type": "text",
+      "description": "The random ID string that Amazon Web Service generates as part of the link ARN."
+    },
+    {
+      "name": "arn",
+      "type": "text",
+      "description": "The ARN of the link."
+    },
+    {
+      "name": "sink_arn",
+      "type": "text",
+      "description": "The ARN of the sink that this link is attached to."
+    },
+    {
+      "name": "label",
+      "type": "text",
+      "description": "The label that was assigned to this link at creation, with the variables resolved to their actual values."
+    },
+    {
+      "name": "label_template",
+      "type": "text",
+      "description": "The exact label template that was specified when the link was created, with the template variables not resolved."
+    },
+    {
+      "name": "resource_types",
+      "type": "json",
+      "description": "The resource types supported by this link."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": ""
+    }
+  ]
+}

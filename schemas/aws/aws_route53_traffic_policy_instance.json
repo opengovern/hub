@@ -1,0 +1,56 @@
+{
+  "table_name": "aws_route53_traffic_policy_instance",
+  "table_description": "AWS Route53 Traffic Policy Instance",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The DNS name for which Amazon Route 53 responds to queries."
+    },
+    {
+      "name": "id",
+      "type": "text",
+      "description": "The id that Amazon Route 53 assigned to the new traffic policy instance."
+    },
+    {
+      "name": "hosted_zone_id",
+      "type": "text",
+      "description": "The id of the hosted zone that Amazon Route 53 created resource record sets in."
+    },
+    {
+      "name": "message",
+      "type": "text",
+      "description": "If State is Failed, an explanation of the reason for the failure."
+    },
+    {
+      "name": "state",
+      "type": "text",
+      "description": "Current state of the instance."
+    },
+    {
+      "name": "traffic_policy_id",
+      "type": "text",
+      "description": "The ID of the traffic policy that Amazon Route 53 used to create resource record sets in the specified hosted zone."
+    },
+    {
+      "name": "traffic_policy_type",
+      "type": "text",
+      "description": "The DNS type that Amazon Route 53 assigned to all of the resource record sets that it created for this traffic policy instance."
+    },
+    {
+      "name": "traffic_policy_version",
+      "type": "integer",
+      "description": "The version of the traffic policy that Amazon Route 53 used to create resource record sets in the specified hosted zone."
+    },
+    {
+      "name": "ttl",
+      "type": "integer",
+      "description": "The TTL that Amazon Route 53 assigned to all of the resource record sets that it created in the specified hosted zone."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    }
+  ]
+}

@@ -1,0 +1,156 @@
+{
+  "table_name": "azure_compute_virtual_machine_scale_set",
+  "table_description": "Azure Compute Virtual Machine Scale Set",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "Name of the scale set."
+    },
+    {
+      "name": "id",
+      "type": "text",
+      "description": "The unique id identifying the resource in subscription."
+    },
+    {
+      "name": "provisioning_state",
+      "type": "text",
+      "description": "The provisioning state."
+    },
+    {
+      "name": "type",
+      "type": "text",
+      "description": "The type of the resource in Azure."
+    },
+    {
+      "name": "location",
+      "type": "text",
+      "description": "The location of the resource."
+    },
+    {
+      "name": "do_not_run_extensions_on_overprovisioned_vms",
+      "type": "boolean",
+      "description": "When Overprovision is enabled, extensions are launched only on the requested number of VMs which are finally kept."
+    },
+    {
+      "name": "overprovision",
+      "type": "boolean",
+      "description": "Specifies whether the Virtual Machine Scale Set should be overprovisioned."
+    },
+    {
+      "name": "platform_fault_domain_count",
+      "type": "integer",
+      "description": "Fault Domain count for each placement group."
+    },
+    {
+      "name": "single_placement_group",
+      "type": "boolean",
+      "description": "When true this limits the scale set to a single placement group, of max size 100 virtual machines."
+    },
+    {
+      "name": "sku_name",
+      "type": "text",
+      "description": "The sku name."
+    },
+    {
+      "name": "sku_capacity",
+      "type": "integer",
+      "description": "Specifies the tier of virtual machines in a scale set."
+    },
+    {
+      "name": "sku_tier",
+      "type": "text",
+      "description": "Specifies the tier of virtual machines in a scale set."
+    },
+    {
+      "name": "unique_id",
+      "type": "text",
+      "description": "Specifies the ID which uniquely identifies a Virtual Machine Scale Set."
+    },
+    {
+      "name": "extensions",
+      "type": "json",
+      "description": "Specifies the details of VM Scale Set Extensions."
+    },
+    {
+      "name": "identity",
+      "type": "json",
+      "description": "The identity of the virtual machine scale set, if configured."
+    },
+    {
+      "name": "plan",
+      "type": "json",
+      "description": "Specifies information about the marketplace image used to create the virtual machine."
+    },
+    {
+      "name": "scale_in_policy",
+      "type": "json",
+      "description": "Specifies the scale-in policy that decides which virtual machines are chosen for removal when a Virtual Machine Scale Set is scaled-in."
+    },
+    {
+      "name": "tags_src",
+      "type": "json",
+      "description": "Resource tags."
+    },
+    {
+      "name": "upgrade_policy",
+      "type": "json",
+      "description": "The upgrade policy for the scale set."
+    },
+    {
+      "name": "virtual_machine_diagnostics_profile",
+      "type": "json",
+      "description": "Specifies the boot diagnostic settings state."
+    },
+    {
+      "name": "virtual_machine_extension_profile",
+      "type": "json",
+      "description": "Specifies a collection of settings for extensions installed on virtual machines in the scale set."
+    },
+    {
+      "name": "virtual_machine_network_profile",
+      "type": "json",
+      "description": "Specifies properties of the network interfaces of the virtual machines in the scale set."
+    },
+    {
+      "name": "virtual_machine_os_profile",
+      "type": "json",
+      "description": "Specifies the operating system settings for the virtual machines in the scale set."
+    },
+    {
+      "name": "virtual_machine_storage_profile",
+      "type": "json",
+      "description": "Specifies the storage settings for the virtual machine disks."
+    },
+    {
+      "name": "virtual_machine_security_profile",
+      "type": "json",
+      "description": "Specifies the Security related profile settings for the virtual machines in the scale set."
+    },
+    {
+      "name": "zones",
+      "type": "json",
+      "description": "The Logical zone list for scale set."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": "ColumnDescriptionTitle"
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": "ColumnDescriptionTags"
+    },
+    {
+      "name": "region",
+      "type": "text",
+      "description": "ColumnDescriptionRegion"
+    },
+    {
+      "name": "resource_group",
+      "type": "text",
+      "description": "ColumnDescriptionResourceGroup"
+    }
+  ]
+}

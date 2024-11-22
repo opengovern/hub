@@ -1,0 +1,46 @@
+{
+  "table_name": "aws_wellarchitected_lens_share",
+  "table_description": "AWS Well-Architected Lens Share",
+  "columns": [
+    {
+      "name": "lens_alias",
+      "type": "text",
+      "description": "The alias of the lens."
+    },
+    {
+      "name": "lens_name",
+      "type": "text",
+      "description": "The full name of the lens."
+    },
+    {
+      "name": "lens_arn",
+      "type": "text",
+      "description": "The ARN of the lens."
+    },
+    {
+      "name": "share_id",
+      "type": "text",
+      "description": "The ID associated with the workload share."
+    },
+    {
+      "name": "shared_with",
+      "type": "text",
+      "description": "The Amazon Web Services account ID, IAM role, organization ID, or organizational unit (OU) ID with which the workload is shared."
+    },
+    {
+      "name": "status",
+      "type": "text",
+      "description": "The status of a workload share."
+    },
+    {
+      "name": "status_message",
+      "type": "text",
+      "description": "Optional message to compliment the Status field."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    }
+  ]
+}

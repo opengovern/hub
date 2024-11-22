@@ -1,0 +1,41 @@
+{
+  "table_name": "aws_waf_rule",
+  "table_description": "AWS WAF Rule",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The name for the rule."
+    },
+    {
+      "name": "rule_id",
+      "type": "text",
+      "description": "The ID of the Rule."
+    },
+    {
+      "name": "metric_name",
+      "type": "text",
+      "description": "The name of the metric for the Rule."
+    },
+    {
+      "name": "predicates",
+      "type": "json",
+      "description": "The Predicates object contains one Predicate element for each ByteMatchSet,IPSet, or SqlInjectionMatchSet object that you want to include in a Rule."
+    },
+    {
+      "name": "tags_src",
+      "type": "json",
+      "description": "A list of tags assigned to the Rule."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": ""
+    }
+  ]
+}

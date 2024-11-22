@@ -1,0 +1,106 @@
+{
+  "table_name": "aws_api_gateway_stage",
+  "table_description": "AWS API Gateway Stage",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The name of the stage."
+    },
+    {
+      "name": "arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) of the  stage."
+    },
+    {
+      "name": "rest_api_id",
+      "type": "text",
+      "description": "The id of the rest api which contains this stage."
+    },
+    {
+      "name": "deployment_id",
+      "type": "text",
+      "description": "The identifier of the Deployment that the stage points to."
+    },
+    {
+      "name": "created_date",
+      "type": "timestamp with time zone",
+      "description": "The timestamp when the stage was created."
+    },
+    {
+      "name": "cache_cluster_enabled",
+      "type": "boolean",
+      "description": "Specifies whether a cache cluster is enabled for the stage."
+    },
+    {
+      "name": "tracing_enabled",
+      "type": "boolean",
+      "description": "Specifies whether active tracing with X-ray is enabled for the Stage."
+    },
+    {
+      "name": "access_log_settings",
+      "type": "json",
+      "description": "Settings for logging access in this stage."
+    },
+    {
+      "name": "cache_cluster_size",
+      "type": "text",
+      "description": "The size of the cache cluster for the stage, if enabled."
+    },
+    {
+      "name": "cache_cluster_status",
+      "type": "text",
+      "description": "The status of the cache cluster for the stage, if enabled."
+    },
+    {
+      "name": "client_certificate_id",
+      "type": "text",
+      "description": "The identifier of a client certificate for an API stage."
+    },
+    {
+      "name": "description",
+      "type": "text",
+      "description": "The stage's description."
+    },
+    {
+      "name": "documentation_version",
+      "type": "text",
+      "description": "The version of the associated API documentation."
+    },
+    {
+      "name": "last_updated_date",
+      "type": "timestamp with time zone",
+      "description": "The timestamp when the stage last updated."
+    },
+    {
+      "name": "canary_settings",
+      "type": "json",
+      "description": "A map of settings for the canary deployment in this stage."
+    },
+    {
+      "name": "method_settings",
+      "type": "json",
+      "description": "A map that defines the method settings for a Stage resource."
+    },
+    {
+      "name": "variables",
+      "type": "json",
+      "description": "A map that defines the stage variables for a Stage resource."
+    },
+    {
+      "name": "web_acl_arn",
+      "type": "text",
+      "description": "The ARN of the WebAcl associated with the Stage."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": ""
+    }
+  ]
+}

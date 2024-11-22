@@ -1,0 +1,81 @@
+{
+  "table_name": "github_repository_content",
+  "table_description": "List the content in a repository (list directory, or get file content",
+  "columns": [
+    {
+      "name": "repository_full_name",
+      "type": "text",
+      "description": "The full name of the repository (login/repo-name)."
+    },
+    {
+      "name": "type",
+      "type": "text",
+      "description": "The file type (directory or file)."
+    },
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The file name."
+    },
+    {
+      "name": "oid",
+      "type": "text",
+      "description": "The Git object ID."
+    },
+    {
+      "name": "abbreviated_oid",
+      "type": "text",
+      "description": "An abbreviated version of the Git object ID."
+    },
+    {
+      "name": "repository_content_path",
+      "type": "text",
+      "description": "The requested path in repository search."
+    },
+    {
+      "name": "path",
+      "type": "text",
+      "description": "The path of the file."
+    },
+    {
+      "name": "path_raw",
+      "type": "text",
+      "description": "A Base64-encoded representation of the file's path."
+    },
+    {
+      "name": "mode",
+      "type": "integer",
+      "description": "The mode of the file."
+    },
+    {
+      "name": "size",
+      "type": "integer",
+      "description": "The size of the file (in KB)."
+    },
+    {
+      "name": "line_count",
+      "type": "integer",
+      "description": "The number of lines available in the file."
+    },
+    {
+      "name": "content",
+      "type": "text",
+      "description": "The decoded file content (if the element is a file)."
+    },
+    {
+      "name": "is_generated",
+      "type": "boolean",
+      "description": "Whether or not this tree entry is generated."
+    },
+    {
+      "name": "is_binary",
+      "type": "boolean",
+      "description": "Indicates whether the Blob is binary or text."
+    },
+    {
+      "name": "commit_url",
+      "type": "text",
+      "description": "Git URL (with SHA) of the file."
+    }
+  ]
+}

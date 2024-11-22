@@ -1,0 +1,96 @@
+{
+  "table_name": "aws_ec2_application_load_balancer",
+  "table_description": "AWS EC2 Application Load Balancer",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The friendly name of the Load Balancer that was provided during resource creation."
+    },
+    {
+      "name": "arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) of the load balancer."
+    },
+    {
+      "name": "type",
+      "type": "text",
+      "description": "The type of load balancer."
+    },
+    {
+      "name": "scheme",
+      "type": "text",
+      "description": "The load balancing scheme of load balancer."
+    },
+    {
+      "name": "canonical_hosted_zone_id",
+      "type": "text",
+      "description": "The ID of the Amazon Route 53 hosted zone associated with the load balancer."
+    },
+    {
+      "name": "vpc_id",
+      "type": "text",
+      "description": "The ID of the VPC for the load balancer."
+    },
+    {
+      "name": "created_time",
+      "type": "timestamp with time zone",
+      "description": "The date and time the load balancer was created."
+    },
+    {
+      "name": "customer_owned_ipv4_pool",
+      "type": "text",
+      "description": "The ID of the customer-owned address pool."
+    },
+    {
+      "name": "dns_name",
+      "type": "text",
+      "description": "The public DNS name of the load balancer."
+    },
+    {
+      "name": "ip_address_type",
+      "type": "text",
+      "description": "The type of IP addresses used by the subnets for your load balancer."
+    },
+    {
+      "name": "state_code",
+      "type": "text",
+      "description": "Current state of the load balancer."
+    },
+    {
+      "name": "state_reason",
+      "type": "text",
+      "description": "A description of the state."
+    },
+    {
+      "name": "availability_zones",
+      "type": "json",
+      "description": "The subnets for the load balancer."
+    },
+    {
+      "name": "security_groups",
+      "type": "json",
+      "description": "The IDs of the security groups for the load balancer."
+    },
+    {
+      "name": "load_balancer_attributes",
+      "type": "json",
+      "description": "The AWS account ID of the image owner."
+    },
+    {
+      "name": "tags_src",
+      "type": "json",
+      "description": "A list of tags attached to the load balancer."
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": ""
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "table_name": "aws_redshiftserverless_namespace",
+  "table_description": "AWS Redshift Serverless Namespace",
+  "columns": [
+    {
+      "name": "namespace_id",
+      "type": "text",
+      "description": "The id of the namespace."
+    },
+    {
+      "name": "namespace_name",
+      "type": "text",
+      "description": "The name of the namespace."
+    },
+    {
+      "name": "namespace_arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) of the namespace"
+    },
+    {
+      "name": "status",
+      "type": "text",
+      "description": "The status of the namespace."
+    },
+    {
+      "name": "admin_username",
+      "type": "text",
+      "description": "The username of the administrator for the first database created in the namespace."
+    },
+    {
+      "name": "creation_date",
+      "type": "timestamp with time zone",
+      "description": "The creation date of the namespace."
+    },
+    {
+      "name": "db_name",
+      "type": "text",
+      "description": "The name of the first database created in the namespace."
+    },
+    {
+      "name": "default_iam_role_arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) of the IAM role to set as a default in the namespace."
+    },
+    {
+      "name": "kms_key_id",
+      "type": "text",
+      "description": "The ID of the Amazon Web Services Key Management Service key used to encrypt your data."
+    },
+    {
+      "name": "iam_roles",
+      "type": "json",
+      "description": "A list of IAM roles to associate with the namespace."
+    },
+    {
+      "name": "log_exports",
+      "type": "json",
+      "description": "The types of logs the namespace can export. Available export types are User log, Connection log, and User activity log."
+    },
+    {
+      "name": "tags_src",
+      "type": "json",
+      "description": "The list of tags for the namespace."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": ""
+    }
+  ]
+}

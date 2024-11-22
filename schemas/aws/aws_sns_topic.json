@@ -1,0 +1,151 @@
+{
+  "table_name": "aws_sns_topic",
+  "table_description": "AWS SNS Topic",
+  "columns": [
+    {
+      "name": "topic_arn",
+      "type": "text",
+      "description": "Amazon Resource Name (ARN) of the Topic."
+    },
+    {
+      "name": "display_name",
+      "type": "text",
+      "description": "The human-readable name used in the From field for notifications to email and email-json endpoints."
+    },
+    {
+      "name": "application_failure_feedback_role_arn",
+      "type": "text",
+      "description": "IAM role for failed deliveries of notification messages sent to topics with platform application endpoint."
+    },
+    {
+      "name": "application_success_feedback_role_arn",
+      "type": "text",
+      "description": "IAM role for successful deliveries of notification messages sent to topics with platform application endpoint."
+    },
+    {
+      "name": "application_success_feedback_sample_rate",
+      "type": "text",
+      "description": "Sample rate for successful deliveries of notification messages sent to topics with platform application endpoint."
+    },
+    {
+      "name": "firehose_failure_feedback_role_arn",
+      "type": "text",
+      "description": "IAM role for failed deliveries of notification messages sent to topics with kinesis data firehose endpoint."
+    },
+    {
+      "name": "firehose_success_feedback_role_arn",
+      "type": "text",
+      "description": "IAM role for successful deliveries of notification messages sent to topics with kinesis data firehose endpoint."
+    },
+    {
+      "name": "firehose_success_feedback_sample_rate",
+      "type": "text",
+      "description": "Sample rate for successful deliveries of notification messages sent to topics with firehose endpoint."
+    },
+    {
+      "name": "http_failure_feedback_role_arn",
+      "type": "text",
+      "description": "IAM role for failed deliveries of notification messages sent to topics with http endpoint."
+    },
+    {
+      "name": "http_success_feedback_role_arn",
+      "type": "text",
+      "description": "IAM role for successful deliveries of notification messages sent to topics with http endpoint."
+    },
+    {
+      "name": "http_success_feedback_sample_rate",
+      "type": "text",
+      "description": "Sample rate for successful deliveries of notification messages sent to topics with http endpoint."
+    },
+    {
+      "name": "lambda_failure_feedback_role_arn",
+      "type": "text",
+      "description": "IAM role for failed deliveries of notification messages sent to topics with lambda endpoint."
+    },
+    {
+      "name": "lambda_success_feedback_role_arn",
+      "type": "text",
+      "description": "IAM role for successful deliveries of notification messages sent to topics with lambda endpoint."
+    },
+    {
+      "name": "lambda_success_feedback_sample_rate",
+      "type": "text",
+      "description": "Sample rate for successful deliveries of notification messages sent to topics with lambda endpoint."
+    },
+    {
+      "name": "owner",
+      "type": "text",
+      "description": "The AWS account ID of the topic's owner."
+    },
+    {
+      "name": "sqs_failure_feedback_role_arn",
+      "type": "text",
+      "description": "IAM role for failed deliveries of notification messages sent to topics with sqs endpoint."
+    },
+    {
+      "name": "sqs_success_feedback_role_arn",
+      "type": "text",
+      "description": "IAM role for successful deliveries of notification messages sent to topics with sqs endpoint."
+    },
+    {
+      "name": "sqs_success_feedback_sample_rate",
+      "type": "text",
+      "description": "Sample rate for successful deliveries of notification messages sent to topics with sqs endpoint."
+    },
+    {
+      "name": "subscriptions_confirmed",
+      "type": "integer",
+      "description": "The number of confirmed subscriptions for the topic."
+    },
+    {
+      "name": "subscriptions_deleted",
+      "type": "integer",
+      "description": "The number of deleted subscriptions for the topic."
+    },
+    {
+      "name": "subscriptions_pending",
+      "type": "integer",
+      "description": "The number of subscriptions pending confirmation for the topic."
+    },
+    {
+      "name": "kms_master_key_id",
+      "type": "text",
+      "description": "The ID of an AWS-managed customer master key (CMK) for Amazon SNS or a custom CMK."
+    },
+    {
+      "name": "tags_src",
+      "type": "json",
+      "description": "The list of tags associated with the topic."
+    },
+    {
+      "name": "policy",
+      "type": "json",
+      "description": "The topic's access control policy (i.e. Resource IAM Policy)."
+    },
+    {
+      "name": "policy_std",
+      "type": "json",
+      "description": "Contains the policy in a canonical form for easier searching."
+    },
+    {
+      "name": "delivery_policy",
+      "type": "json",
+      "description": "The JSON object of the topic's delivery policy."
+    },
+    {
+      "name": "effective_delivery_policy",
+      "type": "json",
+      "description": "The effective delivery policy, taking system defaults into account."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": ""
+    }
+  ]
+}

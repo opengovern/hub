@@ -1,0 +1,111 @@
+{
+  "table_name": "aws_vpc_peering_connection",
+  "table_description": "AWS VPC Peering Connection",
+  "columns": [
+    {
+      "name": "id",
+      "type": "text",
+      "description": "The ID of the VPC peering connection."
+    },
+    {
+      "name": "status_code",
+      "type": "text",
+      "description": "The status of the VPC peering connection. Possible values include: 'pending-acceptance', 'failed', 'expired', 'provisioning', 'active', 'deleting', 'deleted' or 'rejected'."
+    },
+    {
+      "name": "accepter_cidr_block",
+      "type": "cidr",
+      "description": "The IPv4 CIDR block for the accepter VPC."
+    },
+    {
+      "name": "accepter_owner_id",
+      "type": "text",
+      "description": "The ID of the Amazon Web Services account that owns the accepter VPC."
+    },
+    {
+      "name": "accepter_region",
+      "type": "text",
+      "description": "The Region in which the accepter VPC is located."
+    },
+    {
+      "name": "accepter_vpc_id",
+      "type": "text",
+      "description": "The ID of the accepter VPC."
+    },
+    {
+      "name": "expiration_time",
+      "type": "timestamp with time zone",
+      "description": "The time that an unaccepted VPC peering connection will expire."
+    },
+    {
+      "name": "requester_cidr_block",
+      "type": "cidr",
+      "description": "The IPv4 CIDR block for the requester VPC."
+    },
+    {
+      "name": "requester_owner_id",
+      "type": "text",
+      "description": "The ID of the Amazon Web Services account that owns the requester VPC."
+    },
+    {
+      "name": "requester_region",
+      "type": "text",
+      "description": "The Region in which the requester VPC is located."
+    },
+    {
+      "name": "requester_vpc_id",
+      "type": "text",
+      "description": "The ID of the requester VPC."
+    },
+    {
+      "name": "status_message",
+      "type": "text",
+      "description": "A message that provides more information about the status, if applicable."
+    },
+    {
+      "name": "accepter_cidr_block_set",
+      "type": "json",
+      "description": "Information about the IPv4 CIDR blocks for the accepter VPC."
+    },
+    {
+      "name": "accepter_ipv6_cidr_block_set",
+      "type": "json",
+      "description": "The IPv6 CIDR block for the accepter VPC."
+    },
+    {
+      "name": "accepter_peering_options",
+      "type": "json",
+      "description": "Information about the VPC peering connection options for the accepter VPC."
+    },
+    {
+      "name": "requester_cidr_block_set",
+      "type": "json",
+      "description": "Information about the IPv4 CIDR blocks for the requester VPC."
+    },
+    {
+      "name": "requester_ipv6_cidr_block_set",
+      "type": "json",
+      "description": "The IPv6 CIDR block for the requester VPC."
+    },
+    {
+      "name": "requester_peering_options",
+      "type": "json",
+      "description": "Information about the VPC peering connection options for the requester VPC."
+    },
+    {
+      "name": "tags_src",
+      "type": "json",
+      "description": "The tags assigned to the resource."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": ""
+    }
+  ]
+}

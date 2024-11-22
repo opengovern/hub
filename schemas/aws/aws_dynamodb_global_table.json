@@ -1,0 +1,36 @@
+{
+  "table_name": "aws_dynamodb_global_table",
+  "table_description": "AWS DynamoDB Global Table",
+  "columns": [
+    {
+      "name": "global_table_name",
+      "type": "text",
+      "description": "The global table name."
+    },
+    {
+      "name": "global_table_arn",
+      "type": "text",
+      "description": "The unique identifier of the global table."
+    },
+    {
+      "name": "global_table_status",
+      "type": "text",
+      "description": "The current state of the global table."
+    },
+    {
+      "name": "creation_date_time",
+      "type": "timestamp with time zone",
+      "description": "The creation time of the global table."
+    },
+    {
+      "name": "replication_group",
+      "type": "json",
+      "description": "The Regions where the global table has replicas."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    }
+  ]
+}

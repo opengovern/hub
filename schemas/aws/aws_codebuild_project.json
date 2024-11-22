@@ -1,0 +1,146 @@
+{
+  "table_name": "aws_codebuild_project",
+  "table_description": "AWS CodeBuild Project",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The name of the build project."
+    },
+    {
+      "name": "arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) of the build project."
+    },
+    {
+      "name": "description",
+      "type": "text",
+      "description": "A description that makes the build project easy to identify."
+    },
+    {
+      "name": "concurrent_build_limit",
+      "type": "integer",
+      "description": "The maximum number of concurrent builds that are allowed for this project."
+    },
+    {
+      "name": "created",
+      "type": "timestamp with time zone",
+      "description": "When the build project was created, expressed in Unix time format."
+    },
+    {
+      "name": "last_modified",
+      "type": "timestamp with time zone",
+      "description": "When the build project's settings were last modified, expressed in Unix time format."
+    },
+    {
+      "name": "encryption_key",
+      "type": "text",
+      "description": "The AWS Key Management Service (AWS KMS) customer master key (CMK) to be."
+    },
+    {
+      "name": "queued_timeout_in_minutes",
+      "type": "integer",
+      "description": "The number of minutes a build is allowed to be queued before it times out."
+    },
+    {
+      "name": "service_role",
+      "type": "text",
+      "description": "The ARN of the AWS Identity and Access Management (IAM) role that enables AWS CodeBuild to interact with dependent AWS services on behalf of the AWS account."
+    },
+    {
+      "name": "source_version",
+      "type": "text",
+      "description": "A version of the build input to be built for this project."
+    },
+    {
+      "name": "timeout_in_minutes",
+      "type": "integer",
+      "description": "How long, in minutes, from 5 to 480 (8 hours), for AWS CodeBuild to wait before timing out any related build that did not get marked as completed."
+    },
+    {
+      "name": "artifacts",
+      "type": "json",
+      "description": "Information about the build output artifacts for the build project."
+    },
+    {
+      "name": "badge",
+      "type": "json",
+      "description": "Information about the build badge for the build project."
+    },
+    {
+      "name": "build_batch_config",
+      "type": "json",
+      "description": "A ProjectBuildBatchConfig object that defines the batch build options for the project."
+    },
+    {
+      "name": "cache",
+      "type": "json",
+      "description": "Information about the cache for the build project."
+    },
+    {
+      "name": "environment",
+      "type": "json",
+      "description": "Information about the build environment for this build project."
+    },
+    {
+      "name": "file_system_locations",
+      "type": "json",
+      "description": "An array of ProjectFileSystemLocation objects for a CodeBuild build project."
+    },
+    {
+      "name": "logs_config",
+      "type": "json",
+      "description": "Information about logs for the build project. A project can create logs in Amazon CloudWatch Logs, an S3 bucket or both."
+    },
+    {
+      "name": "project_visibility",
+      "type": "text",
+      "description": "Visibility of the build project."
+    },
+    {
+      "name": "secondary_artifacts",
+      "type": "json",
+      "description": "An array of ProjectArtifacts objects."
+    },
+    {
+      "name": "secondary_source_versions",
+      "type": "json",
+      "description": "An array of ProjectSource objects."
+    },
+    {
+      "name": "secondary_sources",
+      "type": "json",
+      "description": "An array of ProjectSource objects."
+    },
+    {
+      "name": "source",
+      "type": "json",
+      "description": "Information about the build input source code for this build project."
+    },
+    {
+      "name": "vpc_config",
+      "type": "json",
+      "description": "Information about the VPC configuration that AWS CodeBuild accesses."
+    },
+    {
+      "name": "webhook",
+      "type": "json",
+      "description": " Information about a webhook that connects repository events to a build project in AWS CodeBuild."
+    },
+    {
+      "name": "tags_src",
+      "type": "json",
+      "description": "A list of tag key and value pairs associated with this build project."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": ""
+    }
+  ]
+}

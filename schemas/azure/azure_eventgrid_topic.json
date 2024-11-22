@@ -1,0 +1,141 @@
+{
+  "table_name": "azure_eventgrid_topic",
+  "table_description": "Azure Event Grid Topic",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The name of the resource."
+    },
+    {
+      "name": "id",
+      "type": "text",
+      "description": "Fully qualified identifier of the resource."
+    },
+    {
+      "name": "type",
+      "type": "text",
+      "description": "The resource type."
+    },
+    {
+      "name": "provisioning_state",
+      "type": "text",
+      "description": "Provisioning state of the event grid topic resource. Possible values include: 'Creating', 'Updating', 'Deleting', 'Succeeded', 'Canceled', 'Failed'."
+    },
+    {
+      "name": "created_at",
+      "type": "timestamp with time zone",
+      "description": "The timestamp of resource creation (UTC)."
+    },
+    {
+      "name": "created_by",
+      "type": "text",
+      "description": "The identity that created the resource."
+    },
+    {
+      "name": "created_by_type",
+      "type": "text",
+      "description": "The type of identity that created the resource."
+    },
+    {
+      "name": "disable_local_auth",
+      "type": "boolean",
+      "description": "This boolean is used to enable or disable local auth. Default value is false. When the property is set to true, only AAD token will be used to authenticate if user is allowed to publish to the topic."
+    },
+    {
+      "name": "endpoint",
+      "type": "text",
+      "description": "Endpoint for the event grid topic resource which is used for publishing the events."
+    },
+    {
+      "name": "input_schema",
+      "type": "text",
+      "description": "This determines the format that event grid should expect for incoming events published to the event grid topic resource. Possible values include: 'EventGridSchema', 'CustomEventSchema', 'CloudEventSchemaV10'."
+    },
+    {
+      "name": "kind",
+      "type": "text",
+      "description": "Kind of the resource."
+    },
+    {
+      "name": "last_modified_at",
+      "type": "timestamp with time zone",
+      "description": "The timestamp of resource last modification (UTC)."
+    },
+    {
+      "name": "last_modified_by",
+      "type": "text",
+      "description": "The identity that last modified the resource."
+    },
+    {
+      "name": "last_modified_by_type",
+      "type": "text",
+      "description": "The type of identity that last modified the resource."
+    },
+    {
+      "name": "location",
+      "type": "text",
+      "description": "Location of the resource."
+    },
+    {
+      "name": "public_network_access",
+      "type": "text",
+      "description": "This determines if traffic is allowed over public network. By default it is enabled."
+    },
+    {
+      "name": "sku_name",
+      "type": "text",
+      "description": "Name of this SKU. Possible values include: 'Basic', 'Standard'."
+    },
+    {
+      "name": "diagnostic_settings",
+      "type": "json",
+      "description": "A list of active diagnostic settings for the eventgrid topic."
+    },
+    {
+      "name": "extended_location",
+      "type": "text",
+      "description": "Extended location of the resource."
+    },
+    {
+      "name": "identity",
+      "type": "json",
+      "description": "Identity information for the resource."
+    },
+    {
+      "name": "inbound_ip_rules",
+      "type": "json",
+      "description": "This can be used to restrict traffic from specific IPs instead of all IPs. Note: These are considered only if PublicNetworkAccess is enabled."
+    },
+    {
+      "name": "input_schema_mapping",
+      "type": "json",
+      "description": "Information about the InputSchemaMapping which specified the info about mapping event payload."
+    },
+    {
+      "name": "private_endpoint_connections",
+      "type": "json",
+      "description": "List of private endpoint connections for the event grid topic."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": "ColumnDescriptionTitle"
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": "ColumnDescriptionTags"
+    },
+    {
+      "name": "region",
+      "type": "text",
+      "description": "ColumnDescriptionRegion"
+    },
+    {
+      "name": "resource_group",
+      "type": "text",
+      "description": "ColumnDescriptionResourceGroup"
+    }
+  ]
+}

@@ -1,0 +1,266 @@
+{
+  "table_name": "aws_inspector2_finding",
+  "table_description": "AWS Inspector2 Finding",
+  "columns": [
+    {
+      "name": "finding_account_id",
+      "type": "text",
+      "description": "The Amazon Web Services account ID associated with the finding."
+    },
+    {
+      "name": "description",
+      "type": "text",
+      "description": "The description of the finding."
+    },
+    {
+      "name": "exploit_available",
+      "type": "text",
+      "description": "If a finding discovered in your environment has an exploit available. Valid values are: YES | NO."
+    },
+    {
+      "name": "arn",
+      "type": "text",
+      "description": "The Amazon Resource Number (ARN) of the finding."
+    },
+    {
+      "name": "status",
+      "type": "text",
+      "description": "The status of the finding. Valid values are: ACTIVE | SUPPRESSED | CLOSED."
+    },
+    {
+      "name": "type",
+      "type": "text",
+      "description": "The type of the finding. Valid values are: NETWORK_REACHABILITY | PACKAGE_VULNERABILITY."
+    },
+    {
+      "name": "first_observed_at",
+      "type": "timestamp with time zone",
+      "description": "The date and time that the finding was first observed."
+    },
+    {
+      "name": "fix_available",
+      "type": "text",
+      "description": "Details on whether a fix is available through a version update. Valid values are: YES | NO | PARTIAL."
+    },
+    {
+      "name": "inspector_score",
+      "type": "double precision",
+      "description": "The Amazon Inspector score given to the finding."
+    },
+    {
+      "name": "resource_id",
+      "type": "text",
+      "description": "The ID of the resource."
+    },
+    {
+      "name": "resource_type",
+      "type": "text",
+      "description": "The resource type supported by AWS."
+    },
+    {
+      "name": "component_type",
+      "type": "text",
+      "description": "The component type."
+    },
+    {
+      "name": "component_id",
+      "type": "text",
+      "description": "The component ID of the resource."
+    },
+    {
+      "name": "ec2_instance_image_id",
+      "type": "text",
+      "description": "The Amazon EC2 instance image ID."
+    },
+    {
+      "name": "ec2_instance_subnet_id",
+      "type": "text",
+      "description": "The Amazon EC2 instance subnet ID."
+    },
+    {
+      "name": "ec2_instance_vpc_id",
+      "type": "text",
+      "description": "The Amazon EC2 instance VPC ID."
+    },
+    {
+      "name": "ecr_image_architecture",
+      "type": "text",
+      "description": "The Amazon ECR image architecture."
+    },
+    {
+      "name": "ecr_image_hash",
+      "type": "text",
+      "description": "The Amazon ECR image hash."
+    },
+    {
+      "name": "ecr_image_pushed_at",
+      "type": "timestamp with time zone",
+      "description": "The Amazon ECR image push date and time."
+    },
+    {
+      "name": "ecr_image_registry",
+      "type": "text",
+      "description": "The Amazon ECR registry."
+    },
+    {
+      "name": "ecr_image_repository_name",
+      "type": "text",
+      "description": "The name of the Amazon ECR repository."
+    },
+    {
+      "name": "ecr_image_tags",
+      "type": "text",
+      "description": "The tags attached to the Amazon ECR container image."
+    },
+    {
+      "name": "lambda_function_execution_role_arn",
+      "type": "text",
+      "description": "The AWS Lambda function execution role ARN."
+    },
+    {
+      "name": "lambda_function_last_modified_at",
+      "type": "timestamp with time zone",
+      "description": "The AWS Lambda functions the date and time that a user last updated the configuration."
+    },
+    {
+      "name": "lambda_function_layers",
+      "type": "text",
+      "description": "The AWS Lambda function layer."
+    },
+    {
+      "name": "lambda_function_name",
+      "type": "text",
+      "description": "The AWS Lambda function name."
+    },
+    {
+      "name": "lambda_function_runtime",
+      "type": "text",
+      "description": "The AWS Lambda function runtime environment."
+    },
+    {
+      "name": "network_protocol",
+      "type": "text",
+      "description": "The ingress source addresse."
+    },
+    {
+      "name": "related_vulnerabilitie",
+      "type": "text",
+      "description": "The related vulnerabilitie."
+    },
+    {
+      "name": "last_observed_at",
+      "type": "timestamp with time zone",
+      "description": "The date and time that the finding was last observed."
+    },
+    {
+      "name": "remediation_recommendation_text",
+      "type": "text",
+      "description": "The recommended course of action to remediate the finding."
+    },
+    {
+      "name": "remediation_recommendation_url",
+      "type": "text",
+      "description": "The URL address to the CVE remediation recommendations."
+    },
+    {
+      "name": "severity",
+      "type": "text",
+      "description": "The severity of the finding. Valid values are: INFORMATIONAL | LOW | MEDIUM | HIGH | CRITICAL | UNTRIAGED."
+    },
+    {
+      "name": "updated_at",
+      "type": "timestamp with time zone",
+      "description": "The date and time the finding was last updated at."
+    },
+    {
+      "name": "source",
+      "type": "text",
+      "description": "The source of the vulnerability information."
+    },
+    {
+      "name": "source_url",
+      "type": "text",
+      "description": "A URL to the source of the vulnerability information."
+    },
+    {
+      "name": "vendor_created_at",
+      "type": "timestamp with time zone",
+      "description": "The date and time that this vulnerability was first added to the vendor’s database."
+    },
+    {
+      "name": "vendor_severity",
+      "type": "text",
+      "description": "The severity the vendor has given to this vulnerability type."
+    },
+    {
+      "name": "vendor_updated_at",
+      "type": "timestamp with time zone",
+      "description": "The date and time the vendor last updated this vulnerability in their database."
+    },
+    {
+      "name": "vulnerability_id",
+      "type": "text",
+      "description": "The ID given to this vulnerability."
+    },
+    {
+      "name": "exploitability_details",
+      "type": "json",
+      "description": "The details of an exploit available for a finding discovered in your environment."
+    },
+    {
+      "name": "inspector_score_details",
+      "type": "json",
+      "description": "An object that contains details of the Amazon Inspector score."
+    },
+    {
+      "name": "network_reachability_details",
+      "type": "json",
+      "description": "An object that contains the details of a network reachability finding."
+    },
+    {
+      "name": "package_vulnerability_details",
+      "type": "json",
+      "description": "An object that contains the details of a package vulnerability finding."
+    },
+    {
+      "name": "cvss",
+      "type": "json",
+      "description": "An object that contains details about the CVSS score of a finding."
+    },
+    {
+      "name": "reference_urls",
+      "type": "json",
+      "description": "One or more URLs that contain details about this vulnerability type."
+    },
+    {
+      "name": "related_vulnerabilities",
+      "type": "json",
+      "description": "One or more vulnerabilities related to the one identified in this finding."
+    },
+    {
+      "name": "vulnerable_package",
+      "type": "json",
+      "description": "The package impacted by this vulnerability."
+    },
+    {
+      "name": "vulnerable_packages",
+      "type": "json",
+      "description": "The packages impacted by this vulnerability."
+    },
+    {
+      "name": "resources",
+      "type": "json",
+      "description": "Contains information on the resources involved in a finding."
+    },
+    {
+      "name": "resource_tags",
+      "type": "json",
+      "description": "Details on the resource tags used to filter findings."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": "The title of the finding."
+    }
+  ]
+}

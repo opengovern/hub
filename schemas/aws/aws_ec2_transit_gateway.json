@@ -1,0 +1,101 @@
+{
+  "table_name": "aws_ec2_transit_gateway",
+  "table_description": "AWS EC2 Transit Gateway",
+  "columns": [
+    {
+      "name": "transit_gateway_id",
+      "type": "text",
+      "description": "The ID of the transit gateway."
+    },
+    {
+      "name": "transit_gateway_arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) of the transit gateway."
+    },
+    {
+      "name": "state",
+      "type": "text",
+      "description": "The state of the transit gateway."
+    },
+    {
+      "name": "owner_id",
+      "type": "text",
+      "description": "The ID of the AWS account ID that owns the transit gateway."
+    },
+    {
+      "name": "description",
+      "type": "text",
+      "description": "The description of the transit gateway."
+    },
+    {
+      "name": "creation_time",
+      "type": "timestamp with time zone",
+      "description": "The date and time when transit gateway was created."
+    },
+    {
+      "name": "amazon_side_asn",
+      "type": "integer",
+      "description": "A private Autonomous System Number (ASN) for the Amazon side of a BGP session. The range is 64512 to 65534 for 16-bit ASNs and 4200000000 to 4294967294 for 32-bit ASNs."
+    },
+    {
+      "name": "association_default_route_table_id",
+      "type": "text",
+      "description": "The ID of the default association route table."
+    },
+    {
+      "name": "auto_accept_shared_attachments",
+      "type": "text",
+      "description": "Indicates whether attachment requests are automatically accepted."
+    },
+    {
+      "name": "default_route_table_association",
+      "type": "text",
+      "description": "Indicates whether resource attachments are automatically associated with the default association route table."
+    },
+    {
+      "name": "default_route_table_propagation",
+      "type": "text",
+      "description": "Indicates whether resource attachments are automatically associated with the default association route table."
+    },
+    {
+      "name": "dns_support",
+      "type": "text",
+      "description": "Indicates whether DNS support is enabled."
+    },
+    {
+      "name": "multicast_support",
+      "type": "text",
+      "description": "Indicates whether multicast is enabled on the transit gateway."
+    },
+    {
+      "name": "propagation_default_route_table_id",
+      "type": "text",
+      "description": "The ID of the default propagation route table."
+    },
+    {
+      "name": "vpn_ecmp_support",
+      "type": "text",
+      "description": "Indicates whether Equal Cost Multipath Protocol support is enabled."
+    },
+    {
+      "name": "cidr_blocks",
+      "type": "json",
+      "description": "A list of transit gateway CIDR blocks."
+    },
+    {
+      "name": "tags_src",
+      "type": "json",
+      "description": "A list of tags that are assigned to the transit gateway."
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": ""
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    }
+  ]
+}

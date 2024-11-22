@@ -1,0 +1,196 @@
+{
+  "table_name": "aws_sfn_state_machine_execution_history",
+  "table_description": "AWS Step Functions State Machine Execution History",
+  "columns": [
+    {
+      "name": "id",
+      "type": "text",
+      "description": "The id of the event."
+    },
+    {
+      "name": "execution_arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) that identifies the execution."
+    },
+    {
+      "name": "previous_event_id",
+      "type": "text",
+      "description": "The id of the previous event."
+    },
+    {
+      "name": "timestamp",
+      "type": "timestamp with time zone",
+      "description": "The date and time the event occurred."
+    },
+    {
+      "name": "type",
+      "type": "text",
+      "description": "The type of the event."
+    },
+    {
+      "name": "activity_failed_event_details",
+      "type": "json",
+      "description": "Contains details about an activity that failed during an execution."
+    },
+    {
+      "name": "activity_schedule_failed_event_details",
+      "type": "json",
+      "description": "Contains details about an activity schedule event that failed during an execution."
+    },
+    {
+      "name": "activity_scheduled_event_details",
+      "type": "json",
+      "description": "Contains details about an activity scheduled during an execution."
+    },
+    {
+      "name": "activity_started_event_details",
+      "type": "json",
+      "description": "Contains details about the start of an activity during an execution."
+    },
+    {
+      "name": "activity_succeeded_event_details",
+      "type": "json",
+      "description": "Contains details about an activity that successfully terminated during an execution."
+    },
+    {
+      "name": "activity_timed_out_event_details",
+      "type": "json",
+      "description": "Contains details about an activity timeout that occurred during an execution."
+    },
+    {
+      "name": "execution_aborted_event_details",
+      "type": "json",
+      "description": "Contains details about an abort of an execution."
+    },
+    {
+      "name": "execution_failed_event_details",
+      "type": "json",
+      "description": "Contains details about an execution failure event."
+    },
+    {
+      "name": "execution_started_event_details",
+      "type": "json",
+      "description": "Contains details about the start of the execution."
+    },
+    {
+      "name": "execution_succeeded_event_details",
+      "type": "json",
+      "description": "Contains details about the successful termination of the execution."
+    },
+    {
+      "name": "execution_timed_out_event_details",
+      "type": "json",
+      "description": "Contains details about the execution timeout that occurred during the execution."
+    },
+    {
+      "name": "lambda_function_failed_event_details",
+      "type": "json",
+      "description": "Contains details about a lambda function that failed during an execution."
+    },
+    {
+      "name": "lambda_function_schedule_failed_event_details",
+      "type": "json",
+      "description": "Contains details about a failed lambda function schedule event that occurred during an execution."
+    },
+    {
+      "name": "lambda_function_scheduled_event_details",
+      "type": "json",
+      "description": "Contains details about a lambda function scheduled during an execution."
+    },
+    {
+      "name": "lambda_function_start_failed_event_details",
+      "type": "json",
+      "description": "Contains details about a lambda function that failed to start during an execution."
+    },
+    {
+      "name": "lambda_function_succeeded_event_details",
+      "type": "json",
+      "description": "Contains details about a lambda function that terminated successfully during an execution."
+    },
+    {
+      "name": "lambda_function_timed_out_event_details",
+      "type": "json",
+      "description": "Contains details about a lambda function timeout that occurred during an execution."
+    },
+    {
+      "name": "map_iteration_aborted_event_details",
+      "type": "json",
+      "description": "Contains details about an iteration of a Map state that was aborted."
+    },
+    {
+      "name": "map_iteration_failed_event_details",
+      "type": "json",
+      "description": "Contains details about an iteration of a Map state that failed."
+    },
+    {
+      "name": "map_iteration_started_event_details",
+      "type": "json",
+      "description": "Contains details about an iteration of a Map state that was started."
+    },
+    {
+      "name": "map_iteration_succeeded_event_details",
+      "type": "json",
+      "description": "Contains details about an iteration of a Map state that succeeded."
+    },
+    {
+      "name": "map_state_started_event_details",
+      "type": "json",
+      "description": "Contains details about Map state that was started."
+    },
+    {
+      "name": "state_entered_event_details",
+      "type": "json",
+      "description": "Contains details about a state entered during an execution."
+    },
+    {
+      "name": "state_exited_event_details",
+      "type": "json",
+      "description": "Contains details about an exit from a state during an execution."
+    },
+    {
+      "name": "task_failed_event_details",
+      "type": "json",
+      "description": "Contains details about the failure of a task."
+    },
+    {
+      "name": "task_scheduled_event_details",
+      "type": "json",
+      "description": "Contains details about a task that was scheduled."
+    },
+    {
+      "name": "task_start_failed_event_details",
+      "type": "json",
+      "description": "Contains details about a task that failed to start."
+    },
+    {
+      "name": "task_started_event_details",
+      "type": "json",
+      "description": "Contains details about a task that was started."
+    },
+    {
+      "name": "task_submit_failed_event_details",
+      "type": "json",
+      "description": "Contains details about a task that where the submit failed."
+    },
+    {
+      "name": "task_submitted_event_details",
+      "type": "json",
+      "description": "Contains details about a submitted task."
+    },
+    {
+      "name": "task_succeeded_event_details",
+      "type": "json",
+      "description": "Contains details about a task that succeeded."
+    },
+    {
+      "name": "task_timed_out_event_details",
+      "type": "json",
+      "description": "Contains details about a task that timed out."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    }
+  ]
+}

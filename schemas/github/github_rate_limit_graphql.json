@@ -1,0 +1,36 @@
+{
+  "table_name": "github_rate_limit_graphql",
+  "table_description": "Rate limit information for GitHub GraphQL API endpoint.",
+  "columns": [
+    {
+      "name": "cost",
+      "type": "integer",
+      "description": "Number of points used to return this query."
+    },
+    {
+      "name": "used",
+      "type": "integer",
+      "description": "Number of points used from current allocation."
+    },
+    {
+      "name": "remaining",
+      "type": "integer",
+      "description": "Number of points remaining in current allocation."
+    },
+    {
+      "name": "limit",
+      "type": "integer",
+      "description": "Maximum number of points used that can be used in current allocation."
+    },
+    {
+      "name": "reset_at",
+      "type": "timestamp with time zone",
+      "description": "Timestamp when the allocation resets."
+    },
+    {
+      "name": "node_count",
+      "type": "integer",
+      "description": "Number of nodes returned by this query."
+    }
+  ]
+}

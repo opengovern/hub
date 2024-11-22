@@ -1,0 +1,101 @@
+{
+  "table_name": "aws_vpc_subnet",
+  "table_description": "AWS VPC Subnet",
+  "columns": [
+    {
+      "name": "subnet_id",
+      "type": "text",
+      "description": "Contains the unique ID to specify a subnet."
+    },
+    {
+      "name": "subnet_arn",
+      "type": "text",
+      "description": "Contains the Amazon Resource Name (ARN) of the subnet."
+    },
+    {
+      "name": "vpc_id",
+      "type": "text",
+      "description": "ID of the VPC, the subnet is in."
+    },
+    {
+      "name": "cidr_block",
+      "type": "cidr",
+      "description": "Contains the IPv4 CIDR block assigned to the subnet."
+    },
+    {
+      "name": "state",
+      "type": "text",
+      "description": "Current state of the subnet."
+    },
+    {
+      "name": "owner_id",
+      "type": "text",
+      "description": "Contains the AWS account that own the subnet."
+    },
+    {
+      "name": "assign_ipv6_address_on_creation",
+      "type": "boolean",
+      "description": "Indicates whether a network interface created in this subnet (including a network interface created by RunInstances) receives an IPv6 address."
+    },
+    {
+      "name": "available_ip_address_count",
+      "type": "integer",
+      "description": "The number of unused private IPv4 addresses in the subnet. The IPv4 addresses for any stopped instances are considered unavailable."
+    },
+    {
+      "name": "availability_zone",
+      "type": "text",
+      "description": "The Availability Zone of the subnet."
+    },
+    {
+      "name": "availability_zone_id",
+      "type": "text",
+      "description": "The AZ ID of the subnet."
+    },
+    {
+      "name": "customer_owned_ipv4_pool",
+      "type": "text",
+      "description": "The customer-owned IPv4 address pool associated with the subnet."
+    },
+    {
+      "name": "default_for_az",
+      "type": "boolean",
+      "description": "Indicates whether this is the default subnet for the Availability Zone."
+    },
+    {
+      "name": "map_customer_owned_ip_on_launch",
+      "type": "boolean",
+      "description": "Indicates whether a network interface created in this subnet (including a network interface created by RunInstances) receives a customer-owned IPv4 address."
+    },
+    {
+      "name": "map_public_ip_on_launch",
+      "type": "boolean",
+      "description": "Indicates whether instances launched in this subnet receive a public IPv4 address."
+    },
+    {
+      "name": "outpost_arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) of the Outpost. Available only if subnet is on an outpost."
+    },
+    {
+      "name": "ipv6_cidr_block_association_set",
+      "type": "json",
+      "description": "A list of IPv6 CIDR blocks associated with the subnet."
+    },
+    {
+      "name": "tags_src",
+      "type": "json",
+      "description": "A list of tags that are attached to the subnet."
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": ""
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    }
+  ]
+}

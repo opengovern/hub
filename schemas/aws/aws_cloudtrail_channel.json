@@ -1,0 +1,46 @@
+{
+  "table_name": "aws_cloudtrail_channel",
+  "table_description": "AWS CloudTrail Channel",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The name of the cloudtrail channel."
+    },
+    {
+      "name": "arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) of a channel."
+    },
+    {
+      "name": "apply_to_all_regions",
+      "type": "boolean",
+      "description": "Specifies whether the channel applies to a single region or to all regions."
+    },
+    {
+      "name": "source",
+      "type": "text",
+      "description": "The event source for the cloudtrail channel."
+    },
+    {
+      "name": "advanced_event_selectors",
+      "type": "json",
+      "description": "The advanced event selectors that are configured for the channel."
+    },
+    {
+      "name": "destinations",
+      "type": "json",
+      "description": "The Amazon Web Services service that created the service-linked channel."
+    },
+    {
+      "name": "source_config",
+      "type": "json",
+      "description": "Configuration information about the channel."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    }
+  ]
+}

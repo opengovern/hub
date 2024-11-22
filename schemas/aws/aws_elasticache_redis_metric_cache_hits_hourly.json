@@ -1,0 +1,11 @@
+{
+  "table_name": "aws_elasticache_redis_metric_cache_hits_hourly",
+  "table_description": "AWS Elasticache Redis CacheHits metric (Hourly)",
+  "columns": [
+    {
+      "name": "cache_cluster_id",
+      "type": "text",
+      "description": "The cache cluster id."
+    }
+  ]
+}

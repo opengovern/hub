@@ -1,0 +1,56 @@
+{
+  "table_name": "azure_compute_disk_access",
+  "table_description": "Azure Compute Disk Access",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The resource name."
+    },
+    {
+      "name": "id",
+      "type": "text",
+      "description": "The resource identifier."
+    },
+    {
+      "name": "type",
+      "type": "text",
+      "description": "The resource type."
+    },
+    {
+      "name": "provisioning_state",
+      "type": "text",
+      "description": "The disk access resource provisioning state."
+    },
+    {
+      "name": "time_created",
+      "type": "timestamp with time zone",
+      "description": "The time when the disk access was created."
+    },
+    {
+      "name": "private_endpoint_connections",
+      "type": "json",
+      "description": "The private endpoint connections details."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": "ColumnDescriptionTitle"
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": "ColumnDescriptionTags"
+    },
+    {
+      "name": "region",
+      "type": "text",
+      "description": "ColumnDescriptionRegion"
+    },
+    {
+      "name": "resource_group",
+      "type": "text",
+      "description": "ColumnDescriptionResourceGroup"
+    }
+  ]
+}

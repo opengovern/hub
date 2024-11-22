@@ -1,0 +1,141 @@
+{
+  "table_name": "azure_virtual_network_gateway",
+  "table_description": "Azure Virtual Network Gateway",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The friendly name that identifies the virtual network gateway."
+    },
+    {
+      "name": "id",
+      "type": "text",
+      "description": "Contains ID to identify a virtual network gateway uniquely."
+    },
+    {
+      "name": "type",
+      "type": "text",
+      "description": "Type of the resource."
+    },
+    {
+      "name": "gateway_type",
+      "type": "text",
+      "description": "The type of this virtual network gateway. Possible values include: 'Vpn', 'ExpressRoute'."
+    },
+    {
+      "name": "vpn_type",
+      "type": "text",
+      "description": "The type of this virtual network gateway. Valid values are: 'PolicyBased', 'RouteBased'."
+    },
+    {
+      "name": "vpn_gateway_generation",
+      "type": "text",
+      "description": "The generation for this virtual network gateway. Must be None if gatewayType is not VPN. Valid values are: 'None', 'Generation1', 'Generation2'."
+    },
+    {
+      "name": "provisioning_state",
+      "type": "text",
+      "description": "The provisioning state of the virtual network gateway resource."
+    },
+    {
+      "name": "active_active",
+      "type": "boolean",
+      "description": "Indicates whether virtual network gateway configured with active-active mode, or not. If true, each Azure gateway instance will have a unique public IP address, and each will establish an IPsec/IKE S2S VPN tunnel to your on-premises VPN device specified in your local network gateway and connection."
+    },
+    {
+      "name": "enable_bgp",
+      "type": "boolean",
+      "description": "Indicates whether BGP is enabled for this virtual network gateway, or not."
+    },
+    {
+      "name": "enable_dns_forwarding",
+      "type": "boolean",
+      "description": "Indicates whether DNS forwarding is enabled, or not."
+    },
+    {
+      "name": "enable_private_ip_address",
+      "type": "boolean",
+      "description": "Indicates whether private IP needs to be enabled on this gateway for connections or not."
+    },
+    {
+      "name": "etag",
+      "type": "text",
+      "description": "An unique read-only string that changes whenever the resource is updated."
+    },
+    {
+      "name": "gateway_default_site",
+      "type": "text",
+      "description": "The reference to the LocalNetworkGateway resource, which represents local network site having default routes. Assign Null value in case of removing existing default site setting."
+    },
+    {
+      "name": "inbound_dns_forwarding_endpoint",
+      "type": "text",
+      "description": "The IP address allocated by the gateway to which dns requests can be sent."
+    },
+    {
+      "name": "resource_guid",
+      "type": "text",
+      "description": "The resource GUID property of the virtual network gateway resource."
+    },
+    {
+      "name": "sku_name",
+      "type": "text",
+      "description": "Gateway SKU name."
+    },
+    {
+      "name": "sku_tier",
+      "type": "text",
+      "description": "Gateway SKU tier."
+    },
+    {
+      "name": "sku_capacity",
+      "type": "integer",
+      "description": "Gateway SKU capacity."
+    },
+    {
+      "name": "bgp_settings",
+      "type": "json",
+      "description": "Virtual network gateway's BGP speaker settings."
+    },
+    {
+      "name": "custom_routes_address_prefixes",
+      "type": "json",
+      "description": "A list of address blocks reserved for this virtual network in CIDR notation."
+    },
+    {
+      "name": "gateway_connections",
+      "type": "json",
+      "description": "A list of virtual network gateway connection resources that exists in a resource group."
+    },
+    {
+      "name": "ip_configurations",
+      "type": "json",
+      "description": "IP configurations for virtual network gateway."
+    },
+    {
+      "name": "vpn_client_configuration",
+      "type": "json",
+      "description": "The reference to the VpnClientConfiguration resource which represents the P2S VpnClient configurations."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": "ColumnDescriptionTitle"
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": "ColumnDescriptionTags"
+    },
+    {
+      "name": "region",
+      "type": "text",
+      "description": "ColumnDescriptionRegion"
+    },
+    {
+      "name": "resource_group",
+      "type": "text",
+      "description": "ColumnDescriptionResourceGroup"
+    }
+  ]
+}

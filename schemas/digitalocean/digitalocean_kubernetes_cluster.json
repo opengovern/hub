@@ -1,0 +1,106 @@
+{
+  "table_name": "digitalocean_kubernetes_cluster",
+  "table_description": "DigitalOcean Kubernetes (DOKS) is a managed Kubernetes service that lets you deploy Kubernetes clusters without the complexities of handling the control plane and containerized infrastructure. Clusters are compatible with standard Kubernetes toolchains and integrate natively with DigitalOcean Load Balancers and block storage volumes.",
+  "columns": [
+    {
+      "name": "id",
+      "type": "text",
+      "description": "The unique universal identifier of this cluster."
+    },
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The globally unique human-readable name for the cluster."
+    },
+    {
+      "name": "status",
+      "type": "text",
+      "description": "A string indicating the current status of the cluster. Potential values include running, provisioning, and errored."
+    },
+    {
+      "name": "created_at",
+      "type": "timestamp with time zone",
+      "description": "The date and time when the Kubernetes cluster was created."
+    },
+    {
+      "name": "auto_upgrade",
+      "type": "boolean",
+      "description": "A boolean value indicating whether the cluster will be automatically upgraded to new patch releases during its maintenance window."
+    },
+    {
+      "name": "cluster_subnet",
+      "type": "text",
+      "description": "The range of IP addresses in the overlay network of the Kubernetes cluster."
+    },
+    {
+      "name": "endpoint",
+      "type": "text",
+      "description": "The base URL of the API server on the Kubernetes master node."
+    },
+    {
+      "name": "ipv4",
+      "type": "text",
+      "description": "The public IPv4 address of the Kubernetes master node."
+    },
+    {
+      "name": "region_slug",
+      "type": "text",
+      "description": "The slug identifier for the region where the Kubernetes cluster will be created."
+    },
+    {
+      "name": "registry_enabled",
+      "type": "boolean",
+      "description": "A boolean value indicating whether cluster integrated with container registry."
+    },
+    {
+      "name": "service_subnet",
+      "type": "text",
+      "description": "The range of assignable IP addresses for services running in the Kubernetes cluster."
+    },
+    {
+      "name": "surge_upgrade",
+      "type": "boolean",
+      "description": "Enable/disable surge upgrades for a cluster."
+    },
+    {
+      "name": "updated_at",
+      "type": "timestamp with time zone",
+      "description": "The date and time when the Kubernetes cluster was last updated."
+    },
+    {
+      "name": "urn",
+      "type": "text",
+      "description": "The uniform resource name (URN) for the cluster."
+    },
+    {
+      "name": "version_slug",
+      "type": "text",
+      "description": "The slug identifier for the version of Kubernetes used for the cluster."
+    },
+    {
+      "name": "vpc_uuid",
+      "type": "text",
+      "description": "The ID of the VPC where the Kubernetes cluster will be located."
+    },
+    {
+      "name": "maintenance_policy",
+      "type": "json",
+      "description": "A block representing the cluster's maintenance window."
+    },
+    {
+      "name": "node_pools",
+      "type": "json",
+      "description": "The cluster's default node pool."
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": ""
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    }
+  ]
+}

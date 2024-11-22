@@ -1,0 +1,36 @@
+{
+  "table_name": "aws_drs_recovery_snapshot",
+  "table_description": "AWS DRS Recovery Snapshot",
+  "columns": [
+    {
+      "name": "snapshot_id",
+      "type": "text",
+      "description": "The ID of the snapshot."
+    },
+    {
+      "name": "source_server_id",
+      "type": "text",
+      "description": "The ID of the source server that the snapshot was taken for."
+    },
+    {
+      "name": "expected_timestamp",
+      "type": "timestamp with time zone",
+      "description": "The timestamp of when we expect the snapshot to be taken."
+    },
+    {
+      "name": "timestamp",
+      "type": "timestamp with time zone",
+      "description": "The actual timestamp when the snapshot was taken."
+    },
+    {
+      "name": "ebs_snapshots",
+      "type": "json",
+      "description": "A list of EBS snapshots."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    }
+  ]
+}

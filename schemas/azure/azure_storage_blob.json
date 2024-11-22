@@ -1,0 +1,236 @@
+{
+  "table_name": "azure_storage_blob",
+  "table_description": "Azure Storage Blob",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The friendly name that identifies the blob."
+    },
+    {
+      "name": "storage_account_name",
+      "type": "text",
+      "description": "The friendly name that identifies the storage account, in which the blob is located."
+    },
+    {
+      "name": "container_name",
+      "type": "text",
+      "description": "The friendly name that identifies the container, in which the blob has been uploaded."
+    },
+    {
+      "name": "type",
+      "type": "text",
+      "description": "Specifies the type of the blob."
+    },
+    {
+      "name": "is_snapshot",
+      "type": "boolean",
+      "description": "Specifies whether the resource is snapshot of a blob, or not."
+    },
+    {
+      "name": "access_tier",
+      "type": "text",
+      "description": "The tier of the blob."
+    },
+    {
+      "name": "creation_time",
+      "type": "timestamp with time zone",
+      "description": "Indicates the time, when the blob was uploaded."
+    },
+    {
+      "name": "deleted",
+      "type": "boolean",
+      "description": "Specifies whether the blob was deleted, or not."
+    },
+    {
+      "name": "deleted_time",
+      "type": "timestamp with time zone",
+      "description": "Specifies the deletion time of blob container."
+    },
+    {
+      "name": "etag",
+      "type": "text",
+      "description": "An unique read-only string that changes whenever the resource is updated."
+    },
+    {
+      "name": "last_modified",
+      "type": "timestamp with time zone",
+      "description": "Specifies the date and time the container was last modified."
+    },
+    {
+      "name": "snapshot",
+      "type": "text",
+      "description": "Specifies the time, when the snapshot is taken."
+    },
+    {
+      "name": "version_id",
+      "type": "text",
+      "description": "Specifies the version id."
+    },
+    {
+      "name": "server_encrypted",
+      "type": "boolean",
+      "description": "Indicates whether the blob is encrypted on the server, or not."
+    },
+    {
+      "name": "encryption_scope",
+      "type": "text",
+      "description": "The name of the encryption scope under which the blob is encrypted."
+    },
+    {
+      "name": "encryption_key_sha256",
+      "type": "text",
+      "description": "The SHA-256 hash of the provided encryption key."
+    },
+    {
+      "name": "is_current_version",
+      "type": "boolean",
+      "description": "Specifies whether the blob container was deleted, or not."
+    },
+    {
+      "name": "access_tier_change_time",
+      "type": "timestamp with time zone",
+      "description": "Species the time, when the access tier has been updated."
+    },
+    {
+      "name": "access_tier_inferred",
+      "type": "boolean",
+      "description": "Indicates whether the access tier was inferred by the service."
+    },
+    {
+      "name": "blob_sequence_number",
+      "type": "integer",
+      "description": "Specifies the sequence number for page blob used for coordinating concurrent writes."
+    },
+    {
+      "name": "content_length",
+      "type": "integer",
+      "description": "Specifies the size of the content returned."
+    },
+    {
+      "name": "cache_control",
+      "type": "text",
+      "description": "Indicates the cache control specified for the blob."
+    },
+    {
+      "name": "content_disposition",
+      "type": "text",
+      "description": "Specifies additional information about how to process the response payload, and also can be used to attach additional metadata."
+    },
+    {
+      "name": "content_encoding",
+      "type": "text",
+      "description": "Indicates content encoding specified for the blob."
+    },
+    {
+      "name": "content_language",
+      "type": "text",
+      "description": "Indicates content language specified for the blob."
+    },
+    {
+      "name": "content_md5",
+      "type": "json",
+      "description": "If the content_md5 has been set for the blob, this response header is stored so that the client can check for message content integrity."
+    },
+    {
+      "name": "content_type",
+      "type": "text",
+      "description": "Specifies the content type specified for the blob. If no content type was specified, the default content type is application/octet-stream."
+    },
+    {
+      "name": "copy_completion_time",
+      "type": "timestamp with time zone",
+      "description": "Conclusion time of the last attempted Copy Blob operation where this blob was the destination blob."
+    },
+    {
+      "name": "copy_id",
+      "type": "text",
+      "description": "A String identifier for the last attempted Copy Blob operation where this blob was the destination blob."
+    },
+    {
+      "name": "copy_progress",
+      "type": "text",
+      "description": "Contains the number of bytes copied and the total bytes in the source in the last attempted Copy Blob operation where this blob was the destination blob."
+    },
+    {
+      "name": "copy_source",
+      "type": "text",
+      "description": "An URL up to 2 KB in length that specifies the source blob used in the last attempted Copy Blob operation where this blob was the destination blob."
+    },
+    {
+      "name": "copy_status",
+      "type": "text",
+      "description": "Specifies the state of the copy operation identified by Copy ID."
+    },
+    {
+      "name": "copy_status_description",
+      "type": "text",
+      "description": "Describes cause of fatal or non-fatal copy operation failure."
+    },
+    {
+      "name": "destination_snapshot",
+      "type": "text",
+      "description": "Included if the blob is incremental copy blob or incremental copy snapshot, if x-ms-copy-status is success. Snapshot time of the last successful incremental copy snapshot for this blob."
+    },
+    {
+      "name": "lease_duration",
+      "type": "text",
+      "description": "Specifies whether the lease is of infinite or fixed duration, when a blob is leased."
+    },
+    {
+      "name": "lease_state",
+      "type": "text",
+      "description": "Specifies lease state of the blob."
+    },
+    {
+      "name": "lease_status",
+      "type": "text",
+      "description": "Specifies the lease status of the blob."
+    },
+    {
+      "name": "incremental_copy",
+      "type": "boolean",
+      "description": "Copies the snapshot of the source page blob to a destination page blob. The snapshot is copied such that only the differential changes between the previously copied snapshot are transferred to the destination."
+    },
+    {
+      "name": "is_sealed",
+      "type": "boolean",
+      "description": "Indicate if the append blob is sealed or not."
+    },
+    {
+      "name": "remaining_retention_days",
+      "type": "integer",
+      "description": "The number of days that the blob will be retained before being permanently deleted by the service."
+    },
+    {
+      "name": "archive_status",
+      "type": "text",
+      "description": "Specifies the archive status of the blob."
+    },
+    {
+      "name": "blob_tag_set",
+      "type": "json",
+      "description": "A list of blob tags."
+    },
+    {
+      "name": "metadata",
+      "type": "json",
+      "description": "A name-value pair to associate with the container as metadata."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": "ColumnDescriptionTitle"
+    },
+    {
+      "name": "region",
+      "type": "text",
+      "description": "ColumnDescriptionRegion"
+    },
+    {
+      "name": "resource_group",
+      "type": "text",
+      "description": "ColumnDescriptionResourceGroup"
+    }
+  ]
+}

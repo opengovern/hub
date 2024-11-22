@@ -1,0 +1,61 @@
+{
+  "table_name": "aws_wafregional_web_acl",
+  "table_description": "AWS WAF Regional Web ACL",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The name of the Web ACL. You cannot change the name of a Web ACL after you create it."
+    },
+    {
+      "name": "arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) of the entity."
+    },
+    {
+      "name": "web_acl_id",
+      "type": "text",
+      "description": "The unique identifier for the Web ACL."
+    },
+    {
+      "name": "default_action",
+      "type": "text",
+      "description": "The action to perform if none of the Rules contained in the WebACL match."
+    },
+    {
+      "name": "metric_name",
+      "type": "text",
+      "description": "A friendly name or description for the metrics for this WebACL."
+    },
+    {
+      "name": "logging_configuration",
+      "type": "json",
+      "description": "The logging configuration for the web ACL."
+    },
+    {
+      "name": "resources",
+      "type": "json",
+      "description": "An array of ARNs (Amazon Resource Names) of the resources associated with the web ACL."
+    },
+    {
+      "name": "rules",
+      "type": "json",
+      "description": "The Rule statements used to identify the web requests that you want to allow, block, or count."
+    },
+    {
+      "name": "tags_src",
+      "type": "json",
+      "description": "A list of tags associated with the resource."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": ""
+    }
+  ]
+}

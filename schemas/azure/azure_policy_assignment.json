@@ -1,0 +1,81 @@
+{
+  "table_name": "azure_policy_assignment",
+  "table_description": "Azure Policy Assignment",
+  "columns": [
+    {
+      "name": "id",
+      "type": "text",
+      "description": "The ID of the policy assignment."
+    },
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The name of the policy assignment."
+    },
+    {
+      "name": "display_name",
+      "type": "text",
+      "description": "The display name of the policy assignment."
+    },
+    {
+      "name": "policy_definition_id",
+      "type": "text",
+      "description": "The ID of the policy definition or policy set definition being assigned."
+    },
+    {
+      "name": "description",
+      "type": "text",
+      "description": "This message will be part of response in case of policy violation."
+    },
+    {
+      "name": "enforcement_mode",
+      "type": "text",
+      "description": "The policy assignment enforcement mode. Possible values are Default and DoNotEnforce."
+    },
+    {
+      "name": "scope",
+      "type": "text",
+      "description": "The scope for the policy assignment."
+    },
+    {
+      "name": "sku_name",
+      "type": "text",
+      "description": "The name of the policy sku."
+    },
+    {
+      "name": "sku_tier",
+      "type": "text",
+      "description": "The policy sku tier."
+    },
+    {
+      "name": "type",
+      "type": "text",
+      "description": "The type of the policy assignment."
+    },
+    {
+      "name": "identity",
+      "type": "json",
+      "description": "The managed identity associated with the policy assignment."
+    },
+    {
+      "name": "metadata",
+      "type": "json",
+      "description": "The policy assignment metadata."
+    },
+    {
+      "name": "not_scopes",
+      "type": "json",
+      "description": "The policy's excluded scopes."
+    },
+    {
+      "name": "parameters",
+      "type": "json",
+      "description": "The parameter values for the assigned policy rule."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": "ColumnDescriptionTitle"
+    }
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "table_name": "aws_pricing_product",
+  "table_description": "AWS Pricing Product",
+  "columns": [
+    {
+      "name": "rate_code",
+      "type": "text",
+      "description": "A unique code for a product/ offer/ pricing-tier combination."
+    },
+    {
+      "name": "service_code",
+      "type": "text",
+      "description": "This identifies the specific AWS service to the customer as a unique short abbreviation."
+    },
+    {
+      "name": "term",
+      "type": "text",
+      "description": "Whether your AWS usage is Reserved or On-Demand."
+    },
+    {
+      "name": "purchase_option",
+      "type": "text",
+      "description": "How you chose to pay for this line item (All Upfront, Partial Upfront, No Upfront)."
+    },
+    {
+      "name": "lease_contract_length",
+      "type": "text",
+      "description": "The length of time that your RI is reserved for."
+    },
+    {
+      "name": "description",
+      "type": "text",
+      "description": "Description for a product / offer / pricing-tier combination."
+    },
+    {
+      "name": "begin_range",
+      "type": "text",
+      "description": "Start of billing range, by unit"
+    },
+    {
+      "name": "end_range",
+      "type": "text",
+      "description": "Enf of billing range, by unit"
+    },
+    {
+      "name": "unit",
+      "type": "text",
+      "description": "The pricing unit that AWS used for calculating your usage cost (ex: hours)"
+    },
+    {
+      "name": "price_per_unit",
+      "type": "text",
+      "description": "Price by unit"
+    },
+    {
+      "name": "currency",
+      "type": "text",
+      "description": "Currency used for the price"
+    },
+    {
+      "name": "publication_date",
+      "type": "timestamp with time zone",
+      "description": "The publication date of the offer."
+    },
+    {
+      "name": "effective_date",
+      "type": "timestamp with time zone",
+      "description": "The effective date of the pricing details."
+    },
+    {
+      "name": "version",
+      "type": "text",
+      "description": "The publication version of the offer."
+    },
+    {
+      "name": "attributes",
+      "type": "json",
+      "description": "Product attributes."
+    },
+    {
+      "name": "filters",
+      "type": "json",
+      "description": "Product filtering by attribute."
+    }
+  ]
+}

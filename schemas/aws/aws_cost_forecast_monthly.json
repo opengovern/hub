@@ -1,0 +1,21 @@
+{
+  "table_name": "aws_cost_forecast_monthly",
+  "table_description": "AWS Cost Explorer - Cost Forecast (Monthly)",
+  "columns": [
+    {
+      "name": "period_start",
+      "type": "timestamp with time zone",
+      "description": "Start timestamp for this cost metric"
+    },
+    {
+      "name": "period_end",
+      "type": "timestamp with time zone",
+      "description": "End timestamp for this cost metric"
+    },
+    {
+      "name": "mean_value",
+      "type": "double precision",
+      "description": "Average forecasted value"
+    }
+  ]
+}

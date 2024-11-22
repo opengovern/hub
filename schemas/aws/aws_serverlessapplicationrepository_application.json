@@ -1,0 +1,81 @@
+{
+  "table_name": "aws_serverlessapplicationrepository_application",
+  "table_description": "AWS Serverless Application Repository Application",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The name of the application."
+    },
+    {
+      "name": "arn",
+      "type": "text",
+      "description": "The application Amazon Resource Name (ARN)."
+    },
+    {
+      "name": "author",
+      "type": "text",
+      "description": "The name of the author publishing the app."
+    },
+    {
+      "name": "creation_time",
+      "type": "timestamp with time zone",
+      "description": "The date and time this resource was created."
+    },
+    {
+      "name": "description",
+      "type": "text",
+      "description": "The description of the application."
+    },
+    {
+      "name": "home_page_url",
+      "type": "text",
+      "description": "A URL with more information about the application."
+    },
+    {
+      "name": "is_verified_author",
+      "type": "boolean",
+      "description": "Whether the author is verified."
+    },
+    {
+      "name": "license_url",
+      "type": "text",
+      "description": "The URL of the license."
+    },
+    {
+      "name": "readme_url",
+      "type": "text",
+      "description": "The URL of the Readme."
+    },
+    {
+      "name": "spdx_license_id",
+      "type": "text",
+      "description": "A valid identifier from https://spdx.org/licenses/."
+    },
+    {
+      "name": "verified_author_url",
+      "type": "text",
+      "description": "The URL of the verified author."
+    },
+    {
+      "name": "labels",
+      "type": "json",
+      "description": "Labels to improve discovery of apps in search results."
+    },
+    {
+      "name": "statements",
+      "type": "json",
+      "description": "The contents of the access policy."
+    },
+    {
+      "name": "version",
+      "type": "json",
+      "description": "The policy statement of the application."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    }
+  ]
+}

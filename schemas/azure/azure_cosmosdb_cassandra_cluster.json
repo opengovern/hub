@@ -1,0 +1,26 @@
+{
+  "table_name": "azure_cosmosdb_cassandra_cluster",
+  "table_description": "Azure Cosmosdb CassandraCluster",
+  "columns": [
+    {
+      "name": "id",
+      "type": "text",
+      "description": "The id of the cassandracluster."
+    },
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The name of the cassandracluster."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": "ColumnDescriptionTitle"
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": "ColumnDescriptionTags"
+    }
+  ]
+}

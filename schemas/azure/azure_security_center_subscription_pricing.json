@@ -1,0 +1,36 @@
+{
+  "table_name": "azure_security_center_subscription_pricing",
+  "table_description": "Azure Security Center Subscription Pricing",
+  "columns": [
+    {
+      "name": "id",
+      "type": "text",
+      "description": "The pricing id."
+    },
+    {
+      "name": "name",
+      "type": "text",
+      "description": "Name of the pricing."
+    },
+    {
+      "name": "pricing_tier",
+      "type": "text",
+      "description": "The pricing tier value. Azure Security Center is provided in two pricing tiers: free and standard, with the standard tier available with a trial period. The standard tier offers advanced security capabilities, while the free tier offers basic security features."
+    },
+    {
+      "name": "free_trial_remaining_time",
+      "type": "text",
+      "description": "The duration left for the subscriptions free trial period."
+    },
+    {
+      "name": "type",
+      "type": "text",
+      "description": "Type of the pricing."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": "ColumnDescriptionTitle"
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "table_name": "aws_eventbridge_bus",
+  "table_description": "AWS EventBridge Bus",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The name of the event bus."
+    },
+    {
+      "name": "arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) of the account permitted to write events to the current account."
+    },
+    {
+      "name": "policy",
+      "type": "json",
+      "description": "The policy that enables the external account to send events to your account."
+    },
+    {
+      "name": "policy_std",
+      "type": "json",
+      "description": "Contains the policy that enables the external account to send events to your account in a canonical form for easier searching."
+    },
+    {
+      "name": "tags_src",
+      "type": "json",
+      "description": "A list of tags assigned to the bus."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": ""
+    }
+  ]
+}

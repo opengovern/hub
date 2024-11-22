@@ -1,0 +1,51 @@
+{
+  "table_name": "aws_config_conformance_pack",
+  "table_description": "AWS Config Conformance Pack",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "Name of the conformance pack."
+    },
+    {
+      "name": "arn",
+      "type": "text",
+      "description": "Amazon Resource Name (ARN) of the conformance pack."
+    },
+    {
+      "name": "conformance_pack_id",
+      "type": "text",
+      "description": "ID of the conformance pack."
+    },
+    {
+      "name": "created_by",
+      "type": "text",
+      "description": "AWS service that created the conformance pack."
+    },
+    {
+      "name": "delivery_s3_bucket",
+      "type": "text",
+      "description": "Amazon S3 bucket where AWS Config stores conformance pack templates."
+    },
+    {
+      "name": "delivery_s3_key_prefix",
+      "type": "text",
+      "description": "The prefix for the Amazon S3 delivery bucket."
+    },
+    {
+      "name": "last_update_requested_time",
+      "type": "timestamp with time zone",
+      "description": "Last update to the conformance pack."
+    },
+    {
+      "name": "input_parameters",
+      "type": "json",
+      "description": "A list of ConformancePackInputParameter objects."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    }
+  ]
+}

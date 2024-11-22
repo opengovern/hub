@@ -1,0 +1,31 @@
+{
+  "table_name": "aws_organizations_root",
+  "table_description": "AWS Organizations Root",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The friendly name of the root."
+    },
+    {
+      "name": "id",
+      "type": "text",
+      "description": "The unique identifier (ID) for the root."
+    },
+    {
+      "name": "arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) of the root."
+    },
+    {
+      "name": "policy_types",
+      "type": "json",
+      "description": "The types of policies that are currently enabled for the root and therefore can be attached to the root or to its OUs or accounts."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    }
+  ]
+}

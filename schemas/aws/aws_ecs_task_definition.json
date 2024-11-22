@@ -1,0 +1,126 @@
+{
+  "table_name": "aws_ecs_task_definition",
+  "table_description": "AWS ECS Task Definition",
+  "columns": [
+    {
+      "name": "task_definition_arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) that identifies the task definition."
+    },
+    {
+      "name": "cpu",
+      "type": "integer",
+      "description": "The number of cpu units used by the task."
+    },
+    {
+      "name": "status",
+      "type": "text",
+      "description": "The status of the task definition."
+    },
+    {
+      "name": "execution_role_arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) of the task execution role that grants the Amazon ECS container agent permission to make AWS API calls on your behalf."
+    },
+    {
+      "name": "family",
+      "type": "text",
+      "description": "The name of a family that this task definition is registered to."
+    },
+    {
+      "name": "ipc_mode",
+      "type": "text",
+      "description": "The IPC resource namespace to use for the containers in the task."
+    },
+    {
+      "name": "memory",
+      "type": "integer",
+      "description": "The amount (in MiB) of memory used by the task."
+    },
+    {
+      "name": "network_mode",
+      "type": "text",
+      "description": "The Docker networking mode to use for the containers in the task."
+    },
+    {
+      "name": "pid_mode",
+      "type": "text",
+      "description": "The process namespace to use for the containers in the task."
+    },
+    {
+      "name": "revision",
+      "type": "integer",
+      "description": "The revision of the task in a particular family."
+    },
+    {
+      "name": "task_role_arn",
+      "type": "text",
+      "description": "The short name or full Amazon Resource Name (ARN) of the AWS Identity and Access Management (IAM) role that grants containers in the task permission to call AWS APIs on your behalf."
+    },
+    {
+      "name": "registered_at",
+      "type": "text",
+      "description": "The Unix timestamp for when the task definition was registered."
+    },
+    {
+      "name": "registered_by",
+      "type": "text",
+      "description": "The principal that registered the task definition."
+    },
+    {
+      "name": "container_definitions",
+      "type": "json",
+      "description": "A list of container definitions in JSON format that describe the different containers that make up your task."
+    },
+    {
+      "name": "compatibilities",
+      "type": "json",
+      "description": "The launch type to use with your task."
+    },
+    {
+      "name": "inference_accelerators",
+      "type": "json",
+      "description": "The Elastic Inference accelerator associated with the task."
+    },
+    {
+      "name": "placement_constraints",
+      "type": "json",
+      "description": "An array of placement constraint objects to use for tasks."
+    },
+    {
+      "name": "proxy_configuration",
+      "type": "json",
+      "description": "The configuration details for the App Mesh proxy."
+    },
+    {
+      "name": "requires_attributes",
+      "type": "json",
+      "description": "The container instance attributes required by your task."
+    },
+    {
+      "name": "requires_compatibilities",
+      "type": "json",
+      "description": "The launch type the task requires. If no value is specified, it will default to EC2. Valid values include EC2 and FARGATE."
+    },
+    {
+      "name": "volumes",
+      "type": "json",
+      "description": "The list of volume definitions for the task."
+    },
+    {
+      "name": "tags_src",
+      "type": "json",
+      "description": "A list of tags associated with task."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": ""
+    }
+  ]
+}

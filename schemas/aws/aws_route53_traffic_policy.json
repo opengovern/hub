@@ -1,0 +1,41 @@
+{
+  "table_name": "aws_route53_traffic_policy",
+  "table_description": "AWS Route53 Traffic Policy",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The name that you specified when traffic policy was created."
+    },
+    {
+      "name": "id",
+      "type": "text",
+      "description": "The ID that Amazon Route 53 assigned to a traffic policy when it was created."
+    },
+    {
+      "name": "type",
+      "type": "text",
+      "description": "The DNS type of the resource record sets that Amazon Route 53 creates when you use a traffic policy to create a traffic policy instance."
+    },
+    {
+      "name": "version",
+      "type": "integer",
+      "description": "The version number that Amazon Route 53 assigns to a traffic policy."
+    },
+    {
+      "name": "comment",
+      "type": "text",
+      "description": "The comment that you specified when traffic policy was created."
+    },
+    {
+      "name": "document",
+      "type": "json",
+      "description": "The definition of a traffic policy in JSON format."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    }
+  ]
+}

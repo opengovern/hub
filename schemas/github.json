@@ -1,0 +1,196 @@
+{
+  "count_of_named_tables": 38,
+  "count_of_named_columns": 642,
+  "tables": [
+    {
+      "table_name": "github_actions_artifact",
+      "description": "Artifacts allow you to share data between jobs in a workflow and store data once that workflow has completed.",
+      "count_of_columns": 9
+    },
+    {
+      "table_name": "github_actions_repository_runner",
+      "description": "The runner is the application that runs a job from a GitHub Actions workflow",
+      "count_of_columns": 7
+    },
+    {
+      "table_name": "github_actions_repository_secret",
+      "description": "Secrets are encrypted environment variables that you create in a repository",
+      "count_of_columns": 6
+    },
+    {
+      "table_name": "github_actions_repository_workflow_run",
+      "description": "WorkflowRun represents a repository action workflow run",
+      "count_of_columns": 30
+    },
+    {
+      "table_name": "github_blob",
+      "description": "Gets a blob from a repository.",
+      "count_of_columns": 7
+    },
+    {
+      "table_name": "github_branch",
+      "description": "Branches in the given repository.",
+      "count_of_columns": 5
+    },
+    {
+      "table_name": "github_branch_protection",
+      "description": "Branch protection defines rules for pushing to and managing a branch.",
+      "count_of_columns": 36
+    },
+    {
+      "table_name": "github_code_owner",
+      "description": "Individuals or teams that are responsible for code in a repository.",
+      "count_of_columns": 7
+    },
+    {
+      "table_name": "github_commit",
+      "description": "GitHub Commits bundle project files for download by users.",
+      "count_of_columns": 26
+    },
+    {
+      "table_name": "github_community_profile",
+      "description": "Community profile information for the given repository.",
+      "count_of_columns": 8
+    },
+    {
+      "table_name": "github_gitignore",
+      "description": "GitHub defined .gitignore templates that you can associate with your repository.",
+      "count_of_columns": 2
+    },
+    {
+      "table_name": "github_issue",
+      "description": "GitHub Issues are used to track ideas, enhancements, tasks, or bugs for work on GitHub.",
+      "count_of_columns": 41
+    },
+    {
+      "table_name": "github_issue_comment",
+      "description": "GitHub Issue Comments are the responses/comments on GitHub Issues.",
+      "count_of_columns": 26
+    },
+    {
+      "table_name": "github_license",
+      "description": "GitHub Licenses are common software licenses that you can associate with your repository.",
+      "count_of_columns": 13
+    },
+    {
+      "table_name": "github_organization",
+      "description": "GitHub Organizations are shared accounts where businesses and open-source projects can collaborate across many projects at once.",
+      "count_of_columns": 74
+    },
+    {
+      "table_name": "github_organization_dependabot_alert",
+      "description": "Dependabot alerts from an organization.",
+      "count_of_columns": 26
+    },
+    {
+      "table_name": "github_organization_external_identity",
+      "description": "GitHub members for a given organization. GitHub Users are user accounts in GitHub.",
+      "count_of_columns": 7
+    },
+    {
+      "table_name": "github_pull_request",
+      "description": "GitHub Pull requests let you tell others about changes you've pushed to a branch in a repository on GitHub. Once a pull request is opened, you can discuss and review the potential changes with collaborators and add follow-up commits before your changes are merged into the base branch.",
+      "count_of_columns": 42
+    },
+    {
+      "table_name": "github_pull_request_review",
+      "description": "Pull Request Reviews are groups of pull request review comments on a pull request.",
+      "count_of_columns": 12
+    },
+    {
+      "table_name": "github_rate_limit",
+      "description": "Rate limit of github.",
+      "count_of_columns": 6
+    },
+    {
+      "table_name": "github_rate_limit_graphql",
+      "description": "Rate limit information for GitHub GraphQL API endpoint.",
+      "count_of_columns": 6
+    },
+    {
+      "table_name": "github_release",
+      "description": "GitHub Releases bundle project files for download by users.",
+      "count_of_columns": 19
+    },
+    {
+      "table_name": "github_repository",
+      "description": "GitHub Repositories contain all of your project's files and each file's revision history.",
+      "count_of_columns": 78
+    },
+    {
+      "table_name": "github_repository_collaborator",
+      "description": "Collaborators are users that have contributed to the repository.",
+      "count_of_columns": 4
+    },
+    {
+      "table_name": "github_repository_content",
+      "description": "List the content in a repository (list directory, or get file content",
+      "count_of_columns": 15
+    },
+    {
+      "table_name": "github_repository_dependabot_alert",
+      "description": "Dependabot alerts from a repository.",
+      "count_of_columns": 1
+    },
+    {
+      "table_name": "github_repository_deployment",
+      "description": "GitHub Deployments are releases of the app/service/etc to an environment.",
+      "count_of_columns": 16
+    },
+    {
+      "table_name": "github_repository_environment",
+      "description": "GitHub Environments are named deployment targets, usually isolated for usage such as test, prod, staging, etc.",
+      "count_of_columns": 4
+    },
+    {
+      "table_name": "github_repository_ruleset",
+      "description": "Retrieve the rulesets of a specified GitHub repository.",
+      "count_of_columns": 9
+    },
+    {
+      "table_name": "github_repository_sbom",
+      "description": "Get the software bill of materials (SBOM) for a repository.",
+      "count_of_columns": 9
+    },
+    {
+      "table_name": "github_repository_vulnerability_alert",
+      "description": "Vulnerability Alerts from a repository.",
+      "count_of_columns": 19
+    },
+    {
+      "table_name": "github_stargazer",
+      "description": "Stargazers are users who have starred the repository.",
+      "count_of_columns": 4
+    },
+    {
+      "table_name": "github_tag",
+      "description": "Tags for commits in the given repository.",
+      "count_of_columns": 7
+    },
+    {
+      "table_name": "github_team",
+      "description": "GitHub Teams in a given organization. GitHub Teams are groups of organization members that reflect your company or group's structure with cascading access permissions and mentions.",
+      "count_of_columns": 29
+    },
+    {
+      "table_name": "github_traffic_view_daily",
+      "description": "Daily traffic view over the last 14 days for the given repository.",
+      "count_of_columns": 4
+    },
+    {
+      "table_name": "github_traffic_view_weekly",
+      "description": "Weekly traffic view over the last 14 days for the given repository.",
+      "count_of_columns": 4
+    },
+    {
+      "table_name": "github_tree",
+      "description": "Lists directories and files in the given repository's git tree.",
+      "count_of_columns": 10
+    },
+    {
+      "table_name": "github_workflow",
+      "description": "GitHub Workflows bundle project files for download by users.",
+      "count_of_columns": 14
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "table_name": "azure_storage_sync",
+  "table_description": "Azure Storage Sync",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The name of the resource."
+    },
+    {
+      "name": "id",
+      "type": "text",
+      "description": "Fully qualified resource id for the resource."
+    },
+    {
+      "name": "provisioning_state",
+      "type": "text",
+      "description": "The provisioning state of the storage sync service."
+    },
+    {
+      "name": "type",
+      "type": "text",
+      "description": "The type of the resource."
+    },
+    {
+      "name": "incoming_traffic_policy",
+      "type": "text",
+      "description": "The incoming traffic policy of the storage sync service. Possible values include: 'AllowAllTraffic', 'AllowVirtualNetworksOnly'."
+    },
+    {
+      "name": "last_operation_name",
+      "type": "text",
+      "description": "The last operation name of the storage sync service."
+    },
+    {
+      "name": "last_workflow_id",
+      "type": "text",
+      "description": "The last workflow id of the storage sync service."
+    },
+    {
+      "name": "storage_sync_service_status",
+      "type": "integer",
+      "description": "The status of the storage sync service."
+    },
+    {
+      "name": "storage_sync_service_uid",
+      "type": "text",
+      "description": "The uid of the storage sync service."
+    },
+    {
+      "name": "private_endpoint_connections",
+      "type": "json",
+      "description": "List of private endpoint connection associated with the specified storage sync service."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": "ColumnDescriptionTitle"
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": "ColumnDescriptionTags"
+    },
+    {
+      "name": "region",
+      "type": "text",
+      "description": "ColumnDescriptionRegion"
+    },
+    {
+      "name": "resource_group",
+      "type": "text",
+      "description": "ColumnDescriptionResourceGroup"
+    }
+  ]
+}

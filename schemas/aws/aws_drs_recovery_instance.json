@@ -1,0 +1,76 @@
+{
+  "table_name": "aws_drs_recovery_instance",
+  "table_description": "AWS DRS RecoveryInstance",
+  "columns": [
+    {
+      "name": "recovery_instance_id",
+      "type": "text",
+      "description": "The id of the recovery instance."
+    },
+    {
+      "name": "arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) of the recovery instance"
+    },
+    {
+      "name": "source_server_id",
+      "type": "text",
+      "description": "The source server ID that this recovery instance is associated with."
+    },
+    {
+      "name": "ec2_instance_id",
+      "type": "text",
+      "description": "The EC2 instance ID of the recovery instance."
+    },
+    {
+      "name": "ec2_instance_state",
+      "type": "text",
+      "description": "The state of the EC2 instance for this recovery instance."
+    },
+    {
+      "name": "is_drill",
+      "type": "boolean",
+      "description": "Whether this recovery instance was created for a drill or for an actual recovery event."
+    },
+    {
+      "name": "job_id",
+      "type": "text",
+      "description": "The ID of the Job that created the recovery instance."
+    },
+    {
+      "name": "origin_environment",
+      "type": "text",
+      "description": "Environment (On Premises/AWS) of the instance that the recovery instance originated from."
+    },
+    {
+      "name": "point_in_time_snapshot_date_time",
+      "type": "text",
+      "description": "The date and time of the Point in Time (PIT) snapshot that this recovery instance was launched from."
+    },
+    {
+      "name": "data_replication_info",
+      "type": "json",
+      "description": "The Data Replication Info of the recovery instance."
+    },
+    {
+      "name": "failback",
+      "type": "json",
+      "description": "An object representing failback related information of the recovery instance."
+    },
+    {
+      "name": "recovery_instance_properties",
+      "type": "json",
+      "description": "Properties of the recovery instance machine."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": ""
+    }
+  ]
+}

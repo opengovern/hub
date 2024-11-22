@@ -1,0 +1,106 @@
+{
+  "table_name": "aws_auditmanager_evidence_folder",
+  "table_description": "AWS Audit Manager Evidence Folder",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The name of the specified evidence folder."
+    },
+    {
+      "name": "id",
+      "type": "text",
+      "description": "The identifier for the folder in which evidence is stored."
+    },
+    {
+      "name": "arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) specifying the evidence folder."
+    },
+    {
+      "name": "assessment_id",
+      "type": "text",
+      "description": "The identifier for the specified assessment."
+    },
+    {
+      "name": "control_set_id",
+      "type": "text",
+      "description": "The identifier for the control set."
+    },
+    {
+      "name": "assessment_report_selection_count",
+      "type": "integer",
+      "description": "The total count of evidence included in the assessment report."
+    },
+    {
+      "name": "author",
+      "type": "text",
+      "description": "The name of the user who created the evidence folder."
+    },
+    {
+      "name": "control_id",
+      "type": "text",
+      "description": "The unique identifier for the specified control."
+    },
+    {
+      "name": "control_name",
+      "type": "text",
+      "description": "The name of the control."
+    },
+    {
+      "name": "data_source",
+      "type": "text",
+      "description": "The AWS service from which the evidence was collected."
+    },
+    {
+      "name": "date",
+      "type": "timestamp with time zone",
+      "description": "The date when the first evidence was added to the evidence folder."
+    },
+    {
+      "name": "evidence_aws_service_source_count",
+      "type": "integer",
+      "description": "The total number of AWS resources assessed to generate the evidence."
+    },
+    {
+      "name": "evidence_by_type_compliance_check_count",
+      "type": "integer",
+      "description": "The number of evidence that falls under the compliance check category."
+    },
+    {
+      "name": "evidence_by_type_compliance_check_issues_count",
+      "type": "integer",
+      "description": "The total number of issues that were reported directly from AWS Security Hub, AWS Config, or both."
+    },
+    {
+      "name": "evidence_by_type_configuration_data_count",
+      "type": "integer",
+      "description": "The number of evidence that falls under the configuration data category."
+    },
+    {
+      "name": "evidence_by_type_manual_count",
+      "type": "integer",
+      "description": "The number of evidence that falls under the manual category."
+    },
+    {
+      "name": "evidence_by_type_user_activity_count",
+      "type": "integer",
+      "description": "The number of evidence that falls under the user activity category."
+    },
+    {
+      "name": "evidence_resources_included_count",
+      "type": "integer",
+      "description": "The amount of evidence included in the evidence folder."
+    },
+    {
+      "name": "total_evidence",
+      "type": "integer",
+      "description": "The total amount of evidence in the evidence folder."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "table_name": "github_repository_dependabot_alert",
+  "table_description": "Dependabot alerts from a repository.",
+  "columns": [
+    {
+      "name": "repository_full_name",
+      "type": "text",
+      "description": "The full name of the repository (login/repo-name)."
+    }
+  ]
+}

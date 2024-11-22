@@ -1,0 +1,81 @@
+{
+  "table_name": "aws_api_gateway_rest_api",
+  "table_description": "AWS API Gateway Rest API ",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The API's name"
+    },
+    {
+      "name": "api_id",
+      "type": "text",
+      "description": "The API's identifier. This identifier is unique across all of APIs in API Gateway"
+    },
+    {
+      "name": "version",
+      "type": "text",
+      "description": "A version identifier for the API"
+    },
+    {
+      "name": "api_key_source",
+      "type": "text",
+      "description": "The source of the API key for metering requests according to a usage plan"
+    },
+    {
+      "name": "created_date",
+      "type": "timestamp with time zone",
+      "description": "The timestamp when the API was created"
+    },
+    {
+      "name": "description",
+      "type": "text",
+      "description": "The API's description"
+    },
+    {
+      "name": "minimum_compression_size",
+      "type": "integer",
+      "description": "A nullable integer that is used to enable compression (with non-negative between 0 and 10485760 (10M) bytes, inclusive) or disable compression (with a null value) on an API. When compression is enabled, compression or decompression is not applied on the payload if the payload size is smaller than this value"
+    },
+    {
+      "name": "policy",
+      "type": "json",
+      "description": "A stringified JSON policy document that applies to this RestApi regardless of the caller and Method configuration"
+    },
+    {
+      "name": "policy_std",
+      "type": "json",
+      "description": "Contains the policy in a canonical form for easier searching."
+    },
+    {
+      "name": "binary_media_types",
+      "type": "json",
+      "description": "The list of binary media types supported by the RestApi. By default, the RestApi supports only UTF-8-encoded text payloads"
+    },
+    {
+      "name": "endpoint_configuration_types",
+      "type": "json",
+      "description": "The endpoint configuration of this RestApi showing the endpoint types of the API"
+    },
+    {
+      "name": "endpoint_configuration_vpc_endpoint_ids",
+      "type": "json",
+      "description": "The endpoint configuration of this RestApi showing the endpoint types of the API"
+    },
+    {
+      "name": "warnings",
+      "type": "json",
+      "description": "The warning messages reported when failonwarnings is turned on during API import"
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": ""
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    }
+  ]
+}

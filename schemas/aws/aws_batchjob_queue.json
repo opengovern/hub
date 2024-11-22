@@ -1,0 +1,31 @@
+{
+  "table_name": "aws_batchjob_queue",
+  "table_description": "AWS BatchJob Queue",
+  "columns": [
+    {
+      "name": "id",
+      "type": "text",
+      "description": "The id of the queue."
+    },
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The name of the queue."
+    },
+    {
+      "name": "arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) of the queue"
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": ""
+    }
+  ]
+}

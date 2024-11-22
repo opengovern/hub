@@ -1,0 +1,26 @@
+{
+  "table_name": "aws_keyspaces_table",
+  "table_description": "AWS Keyspaces Table",
+  "columns": [
+    {
+      "name": "table_name",
+      "type": "text",
+      "description": "The name of the table."
+    },
+    {
+      "name": "resource_arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) of the table"
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": ""
+    }
+  ]
+}

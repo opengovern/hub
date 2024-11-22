@@ -1,0 +1,51 @@
+{
+  "table_name": "aws_vpc_vpn_gateway",
+  "table_description": "AWS VPC VPN Gateway",
+  "columns": [
+    {
+      "name": "vpn_gateway_id",
+      "type": "text",
+      "description": "The ID of the virtual private gateway."
+    },
+    {
+      "name": "state",
+      "type": "text",
+      "description": "The current state of the virtual private gateway."
+    },
+    {
+      "name": "type",
+      "type": "text",
+      "description": "The type of VPN connection the virtual private gateway supports."
+    },
+    {
+      "name": "amazon_side_asn",
+      "type": "integer",
+      "description": "The private Autonomous System Number (ASN) for the Amazon side of a BGP session."
+    },
+    {
+      "name": "availability_zone",
+      "type": "text",
+      "description": "The Availability Zone where the virtual private gateway was created, if applicable. This field may be empty or not returned."
+    },
+    {
+      "name": "vpc_attachments",
+      "type": "json",
+      "description": "Any VPCs attached to the virtual private gateway."
+    },
+    {
+      "name": "tags_src",
+      "type": "json",
+      "description": "A list of tags that are attached to VPN gateway."
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": ""
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    }
+  ]
+}

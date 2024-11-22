@@ -1,0 +1,171 @@
+{
+  "table_name": "azure_mysql_flexible_server",
+  "table_description": "Azure MySQL Flexible Server",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The friendly name that identifies the server."
+    },
+    {
+      "name": "id",
+      "type": "text",
+      "description": "Contains ID to identify a server uniquely."
+    },
+    {
+      "name": "type",
+      "type": "text",
+      "description": "The resource type of the server."
+    },
+    {
+      "name": "state",
+      "type": "text",
+      "description": "The state of the server."
+    },
+    {
+      "name": "version",
+      "type": "text",
+      "description": "Specifies the version of the server."
+    },
+    {
+      "name": "administrator_login",
+      "type": "text",
+      "description": "The administrator's login name of a server."
+    },
+    {
+      "name": "availability_zone",
+      "type": "text",
+      "description": "Availability Zone information of the server."
+    },
+    {
+      "name": "backup_retention_days",
+      "type": "integer",
+      "description": "Backup retention days for the server."
+    },
+    {
+      "name": "create_mode",
+      "type": "text",
+      "description": "The mode to create a new server."
+    },
+    {
+      "name": "earliest_restore_date",
+      "type": "timestamp with time zone",
+      "description": "Specifies the earliest restore point creation time."
+    },
+    {
+      "name": "fully_qualified_domain_name",
+      "type": "text",
+      "description": "The fully qualified domain name of the server."
+    },
+    {
+      "name": "geo_redundant_backup",
+      "type": "text",
+      "description": "Indicates whether Geo-redundant is enabled, or not for server backup."
+    },
+    {
+      "name": "location",
+      "type": "text",
+      "description": "The server location."
+    },
+    {
+      "name": "public_network_access",
+      "type": "text",
+      "description": "Whether or not public network access is allowed for this server."
+    },
+    {
+      "name": "replica_capacity",
+      "type": "integer",
+      "description": "The maximum number of replicas that a primary server can have."
+    },
+    {
+      "name": "replication_role",
+      "type": "text",
+      "description": "The replication role of the server."
+    },
+    {
+      "name": "restore_point_in_time",
+      "type": "timestamp with time zone",
+      "description": "Restore point creation time (ISO8601 format), specifying the time to restore from."
+    },
+    {
+      "name": "sku_name",
+      "type": "text",
+      "description": "The name of the sku."
+    },
+    {
+      "name": "sku_tier",
+      "type": "text",
+      "description": "The tier of the particular SKU."
+    },
+    {
+      "name": "source_server_resource_id",
+      "type": "text",
+      "description": "The source MySQL server id."
+    },
+    {
+      "name": "storage_auto_grow",
+      "type": "text",
+      "description": "Indicates whether storage auto grow is enabled, or not."
+    },
+    {
+      "name": "storage_iops",
+      "type": "integer",
+      "description": "Storage IOPS for a server."
+    },
+    {
+      "name": "storage_size_gb",
+      "type": "integer",
+      "description": "Indicates max storage allowed for a server."
+    },
+    {
+      "name": "storage_sku",
+      "type": "text",
+      "description": "The sku name of the server storage."
+    },
+    {
+      "name": "flexible_server_configurations",
+      "type": "json",
+      "description": "The server configurations(parameters) details of the server."
+    },
+    {
+      "name": "high_availability",
+      "type": "json",
+      "description": "High availability related properties of a server."
+    },
+    {
+      "name": "network",
+      "type": "json",
+      "description": "Network related properties of a server."
+    },
+    {
+      "name": "maintenance_window",
+      "type": "json",
+      "description": "Maintenance window of a server."
+    },
+    {
+      "name": "system_data",
+      "type": "json",
+      "description": "The system metadata relating to this server."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": "ColumnDescriptionTitle"
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": "ColumnDescriptionTags"
+    },
+    {
+      "name": "region",
+      "type": "text",
+      "description": "ColumnDescriptionRegion"
+    },
+    {
+      "name": "resource_group",
+      "type": "text",
+      "description": "ColumnDescriptionResourceGroup"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "table_name": "azure_network_localnetworkgateways",
+  "table_description": "Azure Network LocalNetworkGateways",
+  "columns": [
+    {
+      "name": "id",
+      "type": "text",
+      "description": "The id of the localnetworkgateways."
+    },
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The name of the localnetworkgateways."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": "ColumnDescriptionTitle"
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": "ColumnDescriptionTags"
+    }
+  ]
+}

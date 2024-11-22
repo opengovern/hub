@@ -1,0 +1,81 @@
+{
+  "table_name": "azure_private_dns_zone",
+  "table_description": "Azure Private DNS Zone",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The friendly name that identifies the Private DNS zone."
+    },
+    {
+      "name": "id",
+      "type": "text",
+      "description": "Contains ID to identify a Private DNS zone uniquely."
+    },
+    {
+      "name": "etag",
+      "type": "text",
+      "description": "An unique read-only string that changes whenever the resource is updated."
+    },
+    {
+      "name": "type",
+      "type": "text",
+      "description": "The resource type of the Private DNS zone."
+    },
+    {
+      "name": "max_number_of_record_sets",
+      "type": "integer",
+      "description": "The maximum number of record sets that can be created in this Private DNS zone."
+    },
+    {
+      "name": "number_of_record_sets",
+      "type": "integer",
+      "description": "The current number of record sets in this Private DNS zone."
+    },
+    {
+      "name": "max_number_of_virtual_network_links",
+      "type": "integer",
+      "description": "The maximum number of virtual networks that can be linked to this Private DNS zone."
+    },
+    {
+      "name": "number_of_virtual_network_links",
+      "type": "integer",
+      "description": "The current number of virtual networks that are linked to this Private DNS zone."
+    },
+    {
+      "name": "max_number_of_virtual_network_links_with_registration",
+      "type": "integer",
+      "description": "The maximum number of virtual networks that can be linked to this Private DNS zone with registration enabled."
+    },
+    {
+      "name": "number_of_virtual_network_links_with_registration",
+      "type": "integer",
+      "description": "The current number of virtual networks that are linked to this Private DNS zone with registration enabled."
+    },
+    {
+      "name": "provisioning_state",
+      "type": "text",
+      "description": "The provisioning state of the resource. Possible values include: `Creating`, `Updating`, `Deleting`, `Succeeded`, `Failed`, `Canceled`."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": "ColumnDescriptionTitle"
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": "ColumnDescriptionTags"
+    },
+    {
+      "name": "region",
+      "type": "text",
+      "description": "ColumnDescriptionRegion"
+    },
+    {
+      "name": "resource_group",
+      "type": "text",
+      "description": "ColumnDescriptionResourceGroup"
+    }
+  ]
+}

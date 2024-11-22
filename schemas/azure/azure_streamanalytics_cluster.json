@@ -1,0 +1,26 @@
+{
+  "table_name": "azure_streamanalytics_cluster",
+  "table_description": "Azure StreamAnalytics Cluster",
+  "columns": [
+    {
+      "name": "id",
+      "type": "text",
+      "description": "The id of the cluster."
+    },
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The name of the cluster."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": "ColumnDescriptionTitle"
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": "ColumnDescriptionTags"
+    }
+  ]
+}

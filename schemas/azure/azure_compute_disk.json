@@ -1,0 +1,221 @@
+{
+  "table_name": "azure_compute_disk",
+  "table_description": "Azure Compute Disk",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "Name of the disk"
+    },
+    {
+      "name": "id",
+      "type": "text",
+      "description": "The unique id identifying the resource in subscription"
+    },
+    {
+      "name": "type",
+      "type": "text",
+      "description": "The type of the resource in Azure"
+    },
+    {
+      "name": "provisioning_state",
+      "type": "text",
+      "description": "The disk provisioning state"
+    },
+    {
+      "name": "managed_by",
+      "type": "text",
+      "description": "A relative URI containing the ID of the VM that has the disk attached"
+    },
+    {
+      "name": "sku_name",
+      "type": "text",
+      "description": "The disks sku name. Can be Standard_LRS, Premium_LRS, StandardSSD_LRS, or UltraSSD_LRS"
+    },
+    {
+      "name": "sku_tier",
+      "type": "text",
+      "description": "The sku tier"
+    },
+    {
+      "name": "time_created",
+      "type": "timestamp with time zone",
+      "description": "The time when the disk was created"
+    },
+    {
+      "name": "unique_id",
+      "type": "text",
+      "description": "Unique Guid identifying the resource"
+    },
+    {
+      "name": "disk_access_id",
+      "type": "text",
+      "description": "ARM id of the DiskAccess resource for using private endpoints on disks"
+    },
+    {
+      "name": "disk_size_bytes",
+      "type": "double precision",
+      "description": "The size of the disk in bytes"
+    },
+    {
+      "name": "disk_size_gb",
+      "type": "integer",
+      "description": "If this field is present for updates or creation with other options, it indicates a resize. Resizes are only allowed if the disk is not attached to a running VM, and can only increase the disk's size"
+    },
+    {
+      "name": "disk_state",
+      "type": "text",
+      "description": "This enumerates the possible state of the disk"
+    },
+    {
+      "name": "hyper_v_generation",
+      "type": "text",
+      "description": "The hypervisor generation of the Virtual Machine. Applicable to OS disks only"
+    },
+    {
+      "name": "disk_iops_read_only",
+      "type": "double precision",
+      "description": "The total number of IOPS that will be allowed across all VMs mounting the shared disk as ReadOnly. One operation can transfer between 4k and 256k bytes"
+    },
+    {
+      "name": "disk_iops_read_write",
+      "type": "double precision",
+      "description": "The number of IOPS allowed for this disk; only settable for UltraSSD disks. One operation can transfer between 4k and 256k bytes"
+    },
+    {
+      "name": "disk_iops_mbps_read_only",
+      "type": "integer",
+      "description": "The total throughput (MBps) that will be allowed across all VMs mounting the shared disk as ReadOnly. MBps means millions of bytes per second - MB here uses the ISO notation, of powers of 10"
+    },
+    {
+      "name": "disk_iops_mbps_read_write",
+      "type": "integer",
+      "description": "The bandwidth allowed for this disk; only settable for UltraSSD disks. MBps means millions of bytes per second - MB here uses the ISO notation, of powers of 10"
+    },
+    {
+      "name": "max_shares",
+      "type": "integer",
+      "description": "The maximum number of VMs that can attach to the disk at the same time. Value greater than one indicates a disk that can be mounted on multiple VMs at the same time"
+    },
+    {
+      "name": "os_type",
+      "type": "text",
+      "description": "The Operating System type"
+    },
+    {
+      "name": "encryption_settings_collection_enabled",
+      "type": "boolean",
+      "description": "Shows the status of the encryption settings for the disk"
+    },
+    {
+      "name": "encryption_settings_collection_version",
+      "type": "text",
+      "description": "Describes the type of encryption is used for the disks. '1.0' corresponds to Azure Disk Encryption with AAD app. '1.1' corresponds to Azure Disk Encryption"
+    },
+    {
+      "name": "encryption_disk_encryption_set_id",
+      "type": "text",
+      "description": "ResourceId of the disk encryption set to use for enabling encryption at rest"
+    },
+    {
+      "name": "encryption_type",
+      "type": "text",
+      "description": "The type of key used to encrypt the data of the disk"
+    },
+    {
+      "name": "network_access_policy",
+      "type": "text",
+      "description": "Policy for accessing the disk via network"
+    },
+    {
+      "name": "creation_data_option",
+      "type": "text",
+      "description": "This enumerates the possible sources of a disk's creation"
+    },
+    {
+      "name": "creation_data_storage_account_id",
+      "type": "text",
+      "description": "The Azure Resource Manager identifier of the storage account containing the blob to import as a disk"
+    },
+    {
+      "name": "creation_data_source_uri",
+      "type": "text",
+      "description": "The URI of a blob to be imported into a managed disk"
+    },
+    {
+      "name": "creation_data_source_resource_id",
+      "type": "text",
+      "description": "The ARM id of the source snapshot or disk"
+    },
+    {
+      "name": "creation_data_source_unique_id",
+      "type": "text",
+      "description": "An unique id identifying the source of this resource"
+    },
+    {
+      "name": "creation_data_upload_size_bytes",
+      "type": "integer",
+      "description": "This is the size of the contents of the upload including the VHD footer. This value should be between 20972032 (20 MiB + 512 bytes for the VHD footer) and 35183298347520 bytes (32 TiB + 512 bytes for the VHD footer)"
+    },
+    {
+      "name": "creation_data_image_reference_id",
+      "type": "text",
+      "description": "A relative uri containing either a Platform Image Repository or user image reference"
+    },
+    {
+      "name": "creation_data_image_reference_lun",
+      "type": "integer",
+      "description": "If the disk is created from an image's data disk, this is an index that indicates which of the data disks in the image to use. For OS disks, this field is null"
+    },
+    {
+      "name": "creation_data_gallery_image_reference_id",
+      "type": "text",
+      "description": "The ARM id of the shared galley image version from which disk was created"
+    },
+    {
+      "name": "creation_data_gallery_image_reference_lun",
+      "type": "integer",
+      "description": "An index that indicates which of the data disks in the image to use, if the disk is created from an image's data disk"
+    },
+    {
+      "name": "encryption_settings_collection_settings",
+      "type": "json",
+      "description": "A collection of encryption settings, one for each disk volume"
+    },
+    {
+      "name": "share_info",
+      "type": "json",
+      "description": "Details of the list of all VMs that have the disk attached"
+    },
+    {
+      "name": "zones",
+      "type": "json",
+      "description": "The Logical zone list for Disk"
+    },
+    {
+      "name": "managed_by_extended",
+      "type": "json",
+      "description": "List of relative URIs containing the IDs of the VMs that have the disk attached"
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": "ColumnDescriptionTitle"
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": "ColumnDescriptionTags"
+    },
+    {
+      "name": "region",
+      "type": "text",
+      "description": "ColumnDescriptionRegion"
+    },
+    {
+      "name": "resource_group",
+      "type": "text",
+      "description": "ColumnDescriptionResourceGroup"
+    }
+  ]
+}

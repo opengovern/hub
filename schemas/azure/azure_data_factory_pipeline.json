@@ -1,0 +1,86 @@
+{
+  "table_name": "azure_data_factory_pipeline",
+  "table_description": "Azure Data Factory Pipeline",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The resource name."
+    },
+    {
+      "name": "id",
+      "type": "text",
+      "description": "The resource identifier."
+    },
+    {
+      "name": "factory_name",
+      "type": "text",
+      "description": "Name of the factory the pipeline belongs."
+    },
+    {
+      "name": "description",
+      "type": "text",
+      "description": "The description of the pipeline."
+    },
+    {
+      "name": "etag",
+      "type": "text",
+      "description": "An unique read-only string that changes whenever the resource is updated."
+    },
+    {
+      "name": "type",
+      "type": "text",
+      "description": "The resource type."
+    },
+    {
+      "name": "concurrency",
+      "type": "integer",
+      "description": "The max number of concurrent runs for the pipeline."
+    },
+    {
+      "name": "pipeline_folder",
+      "type": "text",
+      "description": "The folder that this Pipeline is in. If not specified, Pipeline will appear at the root level."
+    },
+    {
+      "name": "activities",
+      "type": "json",
+      "description": "A list of activities in pipeline."
+    },
+    {
+      "name": "annotations",
+      "type": "json",
+      "description": "A list of tags that can be used for describing the Pipeline."
+    },
+    {
+      "name": "parameters",
+      "type": "json",
+      "description": "A list of parameters for pipeline."
+    },
+    {
+      "name": "pipeline_policy",
+      "type": "json",
+      "description": "Pipeline ElapsedTime Metric Policy."
+    },
+    {
+      "name": "variables",
+      "type": "json",
+      "description": "A list of variables for pipeline."
+    },
+    {
+      "name": "run_dimensions",
+      "type": "json",
+      "description": "Dimensions emitted by Pipeline."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": "ColumnDescriptionTitle"
+    },
+    {
+      "name": "resource_group",
+      "type": "text",
+      "description": "ColumnDescriptionResourceGroup"
+    }
+  ]
+}

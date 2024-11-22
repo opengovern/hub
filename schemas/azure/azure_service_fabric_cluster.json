@@ -1,0 +1,161 @@
+{
+  "table_name": "azure_service_fabric_cluster",
+  "table_description": "Azure Service Fabric Cluster",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "Azure resource name."
+    },
+    {
+      "name": "id",
+      "type": "text",
+      "description": "Azure resource identifier."
+    },
+    {
+      "name": "provisioning_state",
+      "type": "text",
+      "description": "The provisioning state of the cluster resource. Possible values include: 'Updating', 'Succeeded', 'Failed', 'Canceled'."
+    },
+    {
+      "name": "type",
+      "type": "text",
+      "description": "Azure resource type."
+    },
+    {
+      "name": "cluster_code_version",
+      "type": "text",
+      "description": "The service fabric runtime version of the cluster. This property can only by set the user when **upgradeMode** is set to 'Manual'."
+    },
+    {
+      "name": "cluster_endpoint",
+      "type": "text",
+      "description": "The azure resource provider endpoint. A system service in the cluster connects to this  endpoint."
+    },
+    {
+      "name": "cluster_id",
+      "type": "text",
+      "description": "A service generated unique identifier for the cluster resource."
+    },
+    {
+      "name": "cluster_state",
+      "type": "text",
+      "description": "The current state of the cluster. Possible values include: 'WaitingForNodes', 'Deploying', 'BaselineUpgrade', 'UpdatingUserConfiguration', 'UpdatingUserCertificate', 'UpdatingInfrastructure', 'EnforcingClusterVersion', 'UpgradeServiceUnreachable', 'AutoScale', 'Ready'."
+    },
+    {
+      "name": "event_store_service_enabled",
+      "type": "boolean",
+      "description": "Indicates if the event store service is enabled."
+    },
+    {
+      "name": "etag",
+      "type": "text",
+      "description": "Azure resource etag."
+    },
+    {
+      "name": "management_endpoint",
+      "type": "text",
+      "description": "The http management endpoint of the cluster."
+    },
+    {
+      "name": "reliability_level",
+      "type": "text",
+      "description": "The reliability level sets the replica set size of system services. Possible values include: 'None', 'Bronze', 'Silver', 'Gold', 'Platinum'."
+    },
+    {
+      "name": "upgrade_mode",
+      "type": "text",
+      "description": "The upgrade mode of the cluster when new service fabric runtime version is available. Possible values include: 'Automatic', 'Manual'."
+    },
+    {
+      "name": "vm_image",
+      "type": "text",
+      "description": "The VM image VMSS has been configured with. Generic names such as Windows or Linux can be used."
+    },
+    {
+      "name": "add_on_features",
+      "type": "json",
+      "description": "The list of add-on features to enable in the cluster."
+    },
+    {
+      "name": "available_cluster_versions",
+      "type": "json",
+      "description": "The service fabric runtime versions available for this cluster."
+    },
+    {
+      "name": "azure_active_directory",
+      "type": "json",
+      "description": "The azure active directory authentication settings of the cluster."
+    },
+    {
+      "name": "certificate",
+      "type": "json",
+      "description": "The certificate to use for securing the cluster. The certificate provided will be used for node to node security within the cluster, SSL certificate for cluster management endpoint and default admin client."
+    },
+    {
+      "name": "certificate_common_names",
+      "type": "json",
+      "description": "Describes a list of server certificates referenced by common name that are used to secure the cluster."
+    },
+    {
+      "name": "client_certificate_common_names",
+      "type": "json",
+      "description": "The list of client certificates referenced by common name that are allowed to manage the cluster."
+    },
+    {
+      "name": "client_certificate_thumbprints",
+      "type": "json",
+      "description": "The list of client certificates referenced by thumbprint that are allowed to manage the cluster."
+    },
+    {
+      "name": "diagnostics_storage_account_config",
+      "type": "json",
+      "description": "The storage account information for storing service fabric diagnostic logs."
+    },
+    {
+      "name": "fabric_settings",
+      "type": "json",
+      "description": "The list of custom fabric settings to configure the cluster."
+    },
+    {
+      "name": "node_types",
+      "type": "json",
+      "description": "The list of node types in the cluster."
+    },
+    {
+      "name": "reverse_proxy_certificate",
+      "type": "json",
+      "description": "The server certificate used by reverse proxy."
+    },
+    {
+      "name": "reverse_proxy_certificate_common_names",
+      "type": "json",
+      "description": "Describes a list of server certificates referenced by common name that are used to secure the cluster."
+    },
+    {
+      "name": "upgrade_description",
+      "type": "json",
+      "description": "The policy to use when upgrading the cluster."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": "ColumnDescriptionTitle"
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": "ColumnDescriptionTags"
+    },
+    {
+      "name": "region",
+      "type": "text",
+      "description": "ColumnDescriptionRegion"
+    },
+    {
+      "name": "resource_group",
+      "type": "text",
+      "description": "ColumnDescriptionResourceGroup"
+    }
+  ]
+}

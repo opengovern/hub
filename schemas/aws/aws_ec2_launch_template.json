@@ -1,0 +1,61 @@
+{
+  "table_name": "aws_ec2_launch_template",
+  "table_description": "AWS EC2 LaunchTemplate",
+  "columns": [
+    {
+      "name": "id",
+      "type": "text",
+      "description": "The id of the launchtemplate."
+    },
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The name of the launchtemplate."
+    },
+    {
+      "name": "launch_template_name",
+      "type": "text",
+      "description": "The name of the launch template."
+    },
+    {
+      "name": "launch_template_id",
+      "type": "text",
+      "description": "The ID of the launch template."
+    },
+    {
+      "name": "create_time",
+      "type": "timestamp with time zone",
+      "description": "The time launch template was created."
+    },
+    {
+      "name": "created_by",
+      "type": "text",
+      "description": "The principal that created the launch template."
+    },
+    {
+      "name": "default_version_number",
+      "type": "integer",
+      "description": "The version number of the default version of the launch template."
+    },
+    {
+      "name": "latest_version_number",
+      "type": "integer",
+      "description": "The name of the Application-Layer Protocol Negotiation (ALPN) policy."
+    },
+    {
+      "name": "tags_src",
+      "type": "json",
+      "description": "The tags for the launch template."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": ""
+    }
+  ]
+}

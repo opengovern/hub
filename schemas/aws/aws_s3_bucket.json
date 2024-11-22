@@ -1,0 +1,131 @@
+{
+  "table_name": "aws_s3_bucket",
+  "table_description": "AWS S3 Bucket",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The user friendly name of the bucket."
+    },
+    {
+      "name": "arn",
+      "type": "text",
+      "description": "The ARN of the AWS S3 Bucket."
+    },
+    {
+      "name": "creation_date",
+      "type": "timestamp with time zone",
+      "description": "The date and tiem when bucket was created."
+    },
+    {
+      "name": "bucket_policy_is_public",
+      "type": "boolean",
+      "description": "The policy status for an Amazon S3 bucket, indicating whether the bucket is public."
+    },
+    {
+      "name": "versioning_enabled",
+      "type": "boolean",
+      "description": "The versioning state of a bucket."
+    },
+    {
+      "name": "versioning_mfa_delete",
+      "type": "boolean",
+      "description": "The MFA Delete status of the versioning state."
+    },
+    {
+      "name": "block_public_acls",
+      "type": "boolean",
+      "description": "Specifies whether Amazon S3 should block public access control lists (ACLs) for this bucket and objects in this bucket."
+    },
+    {
+      "name": "block_public_policy",
+      "type": "boolean",
+      "description": "Specifies whether Amazon S3 should block public bucket policies for this bucket. If TRUE it causes Amazon S3 to reject calls to PUT Bucket policy if the specified bucket policy allows public access."
+    },
+    {
+      "name": "ignore_public_acls",
+      "type": "boolean",
+      "description": "Specifies whether Amazon S3 should ignore public ACLs for this bucket and objects in this bucket. Setting this element to TRUE causes Amazon S3 to ignore all public ACLs on this bucket and objects in this bucket."
+    },
+    {
+      "name": "restrict_public_buckets",
+      "type": "boolean",
+      "description": "Specifies whether Amazon S3 should restrict public bucket policies for this bucket. Setting this element to TRUE restricts access to this bucket to only AWS service principals and authorized users within this account if the bucket has a public policy."
+    },
+    {
+      "name": "event_notification_configuration",
+      "type": "json",
+      "description": "A container for specifying the notification configuration of the bucket. If this element is empty, notifications are turned off for the bucket."
+    },
+    {
+      "name": "server_side_encryption_configuration",
+      "type": "json",
+      "description": "The default encryption configuration for an Amazon S3 bucket."
+    },
+    {
+      "name": "acl",
+      "type": "json",
+      "description": "The access control list (ACL) of a bucket."
+    },
+    {
+      "name": "lifecycle_rules",
+      "type": "json",
+      "description": "The lifecycle configuration information of the bucket."
+    },
+    {
+      "name": "logging",
+      "type": "json",
+      "description": "The logging status of a bucket and the permissions users have to view and modify that status."
+    },
+    {
+      "name": "object_lock_configuration",
+      "type": "json",
+      "description": "The specified bucket's object lock configuration."
+    },
+    {
+      "name": "object_ownership_controls",
+      "type": "json",
+      "description": "The Ownership Controls for an Amazon S3 bucket."
+    },
+    {
+      "name": "policy",
+      "type": "json",
+      "description": "The resource IAM access document for the bucket."
+    },
+    {
+      "name": "policy_std",
+      "type": "json",
+      "description": "Contains the policy in a canonical form for easier searching."
+    },
+    {
+      "name": "replication",
+      "type": "json",
+      "description": "The replication configuration of a bucket."
+    },
+    {
+      "name": "website_configuration",
+      "type": "json",
+      "description": "The website configuration information of the bucket."
+    },
+    {
+      "name": "tags_src",
+      "type": "json",
+      "description": "A list of tags assigned to bucket."
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": ""
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    },
+    {
+      "name": "region",
+      "type": "text",
+      "description": "The AWS Region in which the resource is located."
+    }
+  ]
+}

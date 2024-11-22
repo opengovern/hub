@@ -1,0 +1,41 @@
+{
+  "table_name": "aws_ec2_spot_price",
+  "table_description": "AWS EC2 Spot Price History",
+  "columns": [
+    {
+      "name": "availability_zone",
+      "type": "text",
+      "description": "The Availability Zone."
+    },
+    {
+      "name": "instance_type",
+      "type": "text",
+      "description": "The instance type."
+    },
+    {
+      "name": "product_description",
+      "type": "text",
+      "description": "A general description of the AMI."
+    },
+    {
+      "name": "spot_price",
+      "type": "text",
+      "description": "The maximum price per unit hour that you are willing to pay for a Spot Instance."
+    },
+    {
+      "name": "create_timestamp",
+      "type": "timestamp with time zone",
+      "description": "The time stamp of the Spot price history."
+    },
+    {
+      "name": "start_time",
+      "type": "timestamp with time zone",
+      "description": "The date and time, up to the past 90 days, from which to start retrieving the price history data."
+    },
+    {
+      "name": "end_time",
+      "type": "timestamp with time zone",
+      "description": "The date and time, up to the current date, from which to stop retrieving the price history data."
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "table_name": "azure_network_virtualhubs",
+  "table_description": "Azure Network VirtualHubs",
+  "columns": [
+    {
+      "name": "id",
+      "type": "text",
+      "description": "The id of the virtualhubs."
+    },
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The name of the virtualhubs."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": "ColumnDescriptionTitle"
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": "ColumnDescriptionTags"
+    }
+  ]
+}

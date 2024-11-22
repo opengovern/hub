@@ -1,0 +1,81 @@
+{
+  "table_name": "aws_config_rule",
+  "table_description": "AWS Config Rule",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The name that you assign to the AWS Config rule."
+    },
+    {
+      "name": "rule_id",
+      "type": "text",
+      "description": "The ID of the AWS Config rule."
+    },
+    {
+      "name": "arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) of the AWS Config rule."
+    },
+    {
+      "name": "rule_state",
+      "type": "text",
+      "description": "It indicate the evaluation status for the AWS Config rule."
+    },
+    {
+      "name": "created_by",
+      "type": "text",
+      "description": "Service principal name of the service that created the rule."
+    },
+    {
+      "name": "description",
+      "type": "text",
+      "description": "The description that you provide for the AWS Config rule."
+    },
+    {
+      "name": "maximum_execution_frequency",
+      "type": "text",
+      "description": "The maximum frequency with which AWS Config runs evaluations for a rule."
+    },
+    {
+      "name": "compliance_by_config_rule",
+      "type": "json",
+      "description": "The compliance information of the config rule."
+    },
+    {
+      "name": "evaluation_modes",
+      "type": "json",
+      "description": "The modes the Config rule can be evaluated in. The valid values are distinct objects. By default, the value is Detective evaluation mode only."
+    },
+    {
+      "name": "input_parameters",
+      "type": "json",
+      "description": "A string, in JSON format, that is passed to the AWS Config rule Lambda function."
+    },
+    {
+      "name": "scope",
+      "type": "json",
+      "description": "Defines which resources can trigger an evaluation for the rule. The scope can include one or more resource types, a combination of one resource type and one resource ID, or a combination of a tag key and value. Specify a scope to constrain the resources that can trigger an evaluation for the rule. If you do not specify a scope, evaluations are triggered when any resource in the recording group changes."
+    },
+    {
+      "name": "source",
+      "type": "json",
+      "description": "Provides the rule owner (AWS or customer), the rule identifier, and the notifications that cause the function to evaluate your AWS resources."
+    },
+    {
+      "name": "tags_src",
+      "type": "json",
+      "description": "A list of tags assigned to the rule."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": ""
+    }
+  ]
+}

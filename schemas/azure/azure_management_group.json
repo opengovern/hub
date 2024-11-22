@@ -1,0 +1,61 @@
+{
+  "table_name": "azure_management_group",
+  "table_description": "Azure Management Group.",
+  "columns": [
+    {
+      "name": "id",
+      "type": "text",
+      "description": "The fully qualified ID for the management group."
+    },
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The name of the management group."
+    },
+    {
+      "name": "type",
+      "type": "text",
+      "description": "The type of the management group."
+    },
+    {
+      "name": "display_name",
+      "type": "text",
+      "description": "The friendly name of the management group."
+    },
+    {
+      "name": "tenant_id",
+      "type": "text",
+      "description": "The AAD Tenant ID associated with the management group."
+    },
+    {
+      "name": "parent",
+      "type": "json",
+      "description": "The associated parent management group."
+    },
+    {
+      "name": "children",
+      "type": "json",
+      "description": "The list of children of the management group."
+    },
+    {
+      "name": "updated_by",
+      "type": "text",
+      "description": "The identity of the principal or process that updated the management group."
+    },
+    {
+      "name": "updated_time",
+      "type": "timestamp with time zone",
+      "description": "The date and time when this management group was last updated."
+    },
+    {
+      "name": "version",
+      "type": "double precision",
+      "description": "The version number of the management group."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": "ColumnDescriptionTitle"
+    }
+  ]
+}

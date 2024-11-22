@@ -1,0 +1,41 @@
+{
+  "table_name": "digitalocean_region",
+  "table_description": "A region in DigitalOcean represents a datacenter where Droplets can be deployed and images can be transferred. Each region represents a specific datacenter in a geographic location. Some geographical locations may have multiple \\\"regions\\\" available. This means that there are multiple datacenters available within that area.",
+  "columns": [
+    {
+      "name": "slug",
+      "type": "text",
+      "description": "A human-readable string that is used as a unique identifier for each region."
+    },
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The display name of the region. This will be a full name that is used in the control panel and other interfaces."
+    },
+    {
+      "name": "available",
+      "type": "boolean",
+      "description": "This is a boolean value that represents whether new Droplets can be created in this region."
+    },
+    {
+      "name": "features",
+      "type": "json",
+      "description": "This attribute is set to an array which contains features available in this region."
+    },
+    {
+      "name": "sizes",
+      "type": "json",
+      "description": "This attribute is set to an array which contains the identifying slugs for the sizes available in this region."
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": ""
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    }
+  ]
+}

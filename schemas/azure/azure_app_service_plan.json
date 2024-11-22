@@ -1,0 +1,121 @@
+{
+  "table_name": "azure_app_service_plan",
+  "table_description": "Azure App Service Plan",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The friendly name that identifies the app service plan"
+    },
+    {
+      "name": "id",
+      "type": "text",
+      "description": "Contains ID to identify an app service plan uniquely"
+    },
+    {
+      "name": "kind",
+      "type": "text",
+      "description": "Contains the kind of the resource"
+    },
+    {
+      "name": "type",
+      "type": "text",
+      "description": "The resource type of the app service plan"
+    },
+    {
+      "name": "hyper_v",
+      "type": "boolean",
+      "description": "Specify whether resource is Hyper-V container app service plan"
+    },
+    {
+      "name": "is_spot",
+      "type": "boolean",
+      "description": "Specify whether this App Service Plan owns spot instances, or not"
+    },
+    {
+      "name": "is_xenon",
+      "type": "boolean",
+      "description": "Specify whether resource is Hyper-V container app service plan"
+    },
+    {
+      "name": "maximum_elastic_worker_count",
+      "type": "integer",
+      "description": "Maximum number of total workers allowed for this ElasticScaleEnabled App Service Plan"
+    },
+    {
+      "name": "maximum_number_of_workers",
+      "type": "integer",
+      "description": "Maximum number of instances that can be assigned to this App Service plan"
+    },
+    {
+      "name": "per_site_scaling",
+      "type": "boolean",
+      "description": "Specify whether apps assigned to this App Service plan can be scaled independently"
+    },
+    {
+      "name": "provisioning_state",
+      "type": "text",
+      "description": "Provisioning state of the App Service Environment"
+    },
+    {
+      "name": "reserved",
+      "type": "boolean",
+      "description": "Specify whether the resource is Linux app service plan, or not"
+    },
+    {
+      "name": "sku_capacity",
+      "type": "integer",
+      "description": "Current number of instances assigned to the resource."
+    },
+    {
+      "name": "sku_family",
+      "type": "text",
+      "description": "Family code of the resource SKU"
+    },
+    {
+      "name": "sku_name",
+      "type": "text",
+      "description": "Name of the resource SKU"
+    },
+    {
+      "name": "sku_size",
+      "type": "text",
+      "description": "Size specifier of the resource SKU"
+    },
+    {
+      "name": "sku_tier",
+      "type": "text",
+      "description": "Service tier of the resource SKU"
+    },
+    {
+      "name": "status",
+      "type": "text",
+      "description": "App Service plan status"
+    },
+    {
+      "name": "apps",
+      "type": "json",
+      "description": "Site a web app, a mobile app backend, or an API app."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": "ColumnDescriptionTitle"
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": "ColumnDescriptionTags"
+    },
+    {
+      "name": "region",
+      "type": "text",
+      "description": "ColumnDescriptionRegion"
+    },
+    {
+      "name": "resource_group",
+      "type": "text",
+      "description": "ColumnDescriptionResourceGroup"
+    }
+  ]
+}

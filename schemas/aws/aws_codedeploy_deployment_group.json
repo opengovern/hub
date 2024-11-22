@@ -1,0 +1,136 @@
+{
+  "table_name": "aws_codedeploy_deployment_group",
+  "table_description": "AWS CodeDeploy DeploymentGroup",
+  "columns": [
+    {
+      "name": "arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) of the deployment group"
+    },
+    {
+      "name": "application_name",
+      "type": "text",
+      "description": "The application name."
+    },
+    {
+      "name": "deployment_config_name",
+      "type": "text",
+      "description": "The deployment configuration name."
+    },
+    {
+      "name": "deployment_group_id",
+      "type": "text",
+      "description": "The deployment group ID."
+    },
+    {
+      "name": "deployment_group_name",
+      "type": "text",
+      "description": "The name of the deployment group."
+    },
+    {
+      "name": "service_role_arn",
+      "type": "text",
+      "description": "A service role Amazon Resource Name (ARN) that grants CodeDeploy permission to make calls to Amazon Web Services services on your behalf."
+    },
+    {
+      "name": "alarm_configuration",
+      "type": "json",
+      "description": "A list of alarms associated with the deployment group."
+    },
+    {
+      "name": "auto_rollback_configuration",
+      "type": "json",
+      "description": "Information about the automatic rollback configuration associated with the deployment group."
+    },
+    {
+      "name": "auto_scaling_groups",
+      "type": "json",
+      "description": "A list of associated Auto Scaling groups."
+    },
+    {
+      "name": "blue_green_deployment_configuration",
+      "type": "json",
+      "description": "Information about blue/green deployment options for a deployment group."
+    },
+    {
+      "name": "compute_platform",
+      "type": "json",
+      "description": "The destination platform type for the deployment (Lambda, Server, or ECS)."
+    },
+    {
+      "name": "deployment_style",
+      "type": "json",
+      "description": "Information about the type of deployment, either in-place or blue/green, you want to run and whether to route deployment traffic behind a load balancer."
+    },
+    {
+      "name": "ec2_tag_filters",
+      "type": "json",
+      "description": "The Amazon EC2 tags on which to filter. The deployment group includes EC2 instances with any of the specified tags."
+    },
+    {
+      "name": "ec2_tag_set",
+      "type": "json",
+      "description": "Information about groups of tags applied to an Amazon EC2 instance."
+    },
+    {
+      "name": "ecs_services",
+      "type": "json",
+      "description": "The target Amazon ECS services in the deployment group."
+    },
+    {
+      "name": "last_attempted_deployment",
+      "type": "json",
+      "description": "Information about the most recent attempted deployment to the deployment group."
+    },
+    {
+      "name": "last_successful_deployment",
+      "type": "json",
+      "description": "Information about the most recent successful deployment to the deployment group."
+    },
+    {
+      "name": "load_balancer_info",
+      "type": "json",
+      "description": "Information about the load balancer to use in a deployment."
+    },
+    {
+      "name": "on_premises_instance_tag_filters",
+      "type": "json",
+      "description": "The on-premises instance tags on which to filter."
+    },
+    {
+      "name": "on_premises_tag_set",
+      "type": "json",
+      "description": "Information about groups of tags applied to an on-premises instance."
+    },
+    {
+      "name": "outdated_instances_strategy",
+      "type": "json",
+      "description": "Indicates what happens when new Amazon EC2 instances are launched mid-deployment and do not receive the deployed application revision."
+    },
+    {
+      "name": "tags_src",
+      "type": "json",
+      "description": "A list of tags associated with deployment group."
+    },
+    {
+      "name": "target_revision",
+      "type": "json",
+      "description": "Information about the deployment group's target revision, including type and location."
+    },
+    {
+      "name": "trigger_configurations",
+      "type": "json",
+      "description": "Information about triggers associated with the deployment group."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": ""
+    }
+  ]
+}

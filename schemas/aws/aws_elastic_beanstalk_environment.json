@@ -1,0 +1,136 @@
+{
+  "table_name": "aws_elastic_beanstalk_environment",
+  "table_description": "AWS ElasticBeanstalk Environment",
+  "columns": [
+    {
+      "name": "environment_name",
+      "type": "text",
+      "description": "The name of this environment."
+    },
+    {
+      "name": "environment_id",
+      "type": "text",
+      "description": "The ID of this environment."
+    },
+    {
+      "name": "arn",
+      "type": "text",
+      "description": "The environment's Amazon Resource Name (ARN)."
+    },
+    {
+      "name": "description",
+      "type": "text",
+      "description": "Describes this environment."
+    },
+    {
+      "name": "date_created",
+      "type": "timestamp with time zone",
+      "description": "The creation date for this environment."
+    },
+    {
+      "name": "abortable_operation_in_progress",
+      "type": "boolean",
+      "description": "Indicates if there is an in-progress environment configuration update or application version deployment that you can cancel."
+    },
+    {
+      "name": "application_name",
+      "type": "text",
+      "description": "The name of the application associated with this environment."
+    },
+    {
+      "name": "cname",
+      "type": "text",
+      "description": "The URL to the CNAME for this environment."
+    },
+    {
+      "name": "date_updated",
+      "type": "timestamp with time zone",
+      "description": "The last modified date for this environment."
+    },
+    {
+      "name": "endpoint_url",
+      "type": "text",
+      "description": "The URL to the LoadBalancer."
+    },
+    {
+      "name": "health",
+      "type": "text",
+      "description": "The health status of the environment."
+    },
+    {
+      "name": "health_status",
+      "type": "text",
+      "description": "Returns the health status of the application running in your environment."
+    },
+    {
+      "name": "operations_role",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) of the environment's operations role."
+    },
+    {
+      "name": "platform_arn",
+      "type": "text",
+      "description": "The ARN of the platform version."
+    },
+    {
+      "name": "solution_stack_name",
+      "type": "text",
+      "description": "The name of the SolutionStack deployed with this environment."
+    },
+    {
+      "name": "status",
+      "type": "text",
+      "description": "The current operational status of the environment."
+    },
+    {
+      "name": "template_name",
+      "type": "text",
+      "description": "The name of the configuration template used to originally launch this environment."
+    },
+    {
+      "name": "version_label",
+      "type": "text",
+      "description": "The application version deployed in this environment."
+    },
+    {
+      "name": "configuration_settings",
+      "type": "json",
+      "description": "Returns a description of the settings for the specified configuration set, that is, either a configuration template or the configuration set associated with a running environment."
+    },
+    {
+      "name": "environment_links",
+      "type": "json",
+      "description": "A list of links to other environments in the same group."
+    },
+    {
+      "name": "managed_actions",
+      "type": "json",
+      "description": "A list of upcoming and in-progress managed actions."
+    },
+    {
+      "name": "resources",
+      "type": "json",
+      "description": "The description of the AWS resources used by this environment."
+    },
+    {
+      "name": "tier",
+      "type": "json",
+      "description": "Describes the current tier of this environment."
+    },
+    {
+      "name": "tags_src",
+      "type": "json",
+      "description": "A list of tags assigned to the Repository"
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": ""
+    }
+  ]
+}

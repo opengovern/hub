@@ -1,0 +1,56 @@
+{
+  "table_name": "azure_role_assignment",
+  "table_description": "Azure Role Assignment",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The friendly name that identifies the role assignment."
+    },
+    {
+      "name": "id",
+      "type": "text",
+      "description": "Contains ID to identify a role assignment uniquely."
+    },
+    {
+      "name": "scope",
+      "type": "text",
+      "description": "Current state of the role assignment."
+    },
+    {
+      "name": "type",
+      "type": "text",
+      "description": "Contains the resource type."
+    },
+    {
+      "name": "principal_id",
+      "type": "text",
+      "description": "Contains the principal id."
+    },
+    {
+      "name": "principal_type",
+      "type": "text",
+      "description": "Principal type of the assigned principal ID."
+    },
+    {
+      "name": "created_on",
+      "type": "timestamp with time zone",
+      "description": "Time it was created."
+    },
+    {
+      "name": "updated_on",
+      "type": "timestamp with time zone",
+      "description": "Time it was updated."
+    },
+    {
+      "name": "role_definition_id",
+      "type": "text",
+      "description": "Name of the assigned role definition."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": "ColumnDescriptionTitle"
+    }
+  ]
+}

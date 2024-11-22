@@ -1,0 +1,66 @@
+{
+  "table_name": "aws_dlm_lifecycle_policy",
+  "table_description": "AWS DLM Lifecycle Policy",
+  "columns": [
+    {
+      "name": "policy_id",
+      "type": "text",
+      "description": "The identifier of the lifecycle policy."
+    },
+    {
+      "name": "arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) of the policy."
+    },
+    {
+      "name": "description",
+      "type": "text",
+      "description": "The description of the lifecycle policy."
+    },
+    {
+      "name": "date_created",
+      "type": "timestamp with time zone",
+      "description": "The local date and time when the lifecycle policy was created."
+    },
+    {
+      "name": "date_modified",
+      "type": "timestamp with time zone",
+      "description": "The local date and time when the lifecycle policy was last modified."
+    },
+    {
+      "name": "execution_role_arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) of the IAM role used to run the operations specified by the lifecycle policy."
+    },
+    {
+      "name": "policy_type",
+      "type": "text",
+      "description": "The type of policy."
+    },
+    {
+      "name": "state",
+      "type": "text",
+      "description": "The activation state of the lifecycle policy."
+    },
+    {
+      "name": "status_message",
+      "type": "text",
+      "description": "The description of the status."
+    },
+    {
+      "name": "policy_details",
+      "type": "json",
+      "description": "The configuration of the lifecycle policy."
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": ""
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    }
+  ]
+}

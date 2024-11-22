@@ -1,0 +1,171 @@
+{
+  "table_name": "aws_ecs_service",
+  "table_description": "AWS ECS Service",
+  "columns": [
+    {
+      "name": "service_name",
+      "type": "text",
+      "description": "The name of the service."
+    },
+    {
+      "name": "arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) specifying the service."
+    },
+    {
+      "name": "status",
+      "type": "text",
+      "description": "The status of the service. Valid values are: ACTIVE, DRAINING, or INACTIVE."
+    },
+    {
+      "name": "cluster_arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) of the cluster that hosts the service."
+    },
+    {
+      "name": "task_definition",
+      "type": "text",
+      "description": "The task definition to use for tasks in the service."
+    },
+    {
+      "name": "created_at",
+      "type": "timestamp with time zone",
+      "description": "The date and time when the service was created."
+    },
+    {
+      "name": "created_by",
+      "type": "text",
+      "description": "The principal that created the service."
+    },
+    {
+      "name": "deployment_controller_type",
+      "type": "text",
+      "description": "The deployment controller type to use. Possible values are: ECS, CODE_DEPLOY, and EXTERNAL."
+    },
+    {
+      "name": "desired_count",
+      "type": "integer",
+      "description": "The desired number of instantiations of the task definition to keep running on the service."
+    },
+    {
+      "name": "enable_ecs_managed_tags",
+      "type": "boolean",
+      "description": "Specifies whether to enable Amazon ECS managed tags for the tasks in the service."
+    },
+    {
+      "name": "enable_execute_command",
+      "type": "boolean",
+      "description": "Indicates whether or not the execute command functionality is enabled for the service."
+    },
+    {
+      "name": "health_check_grace_period_seconds",
+      "type": "integer",
+      "description": "The period of time, in seconds, that the Amazon ECS service scheduler ignores unhealthy Elastic Load Balancing target health checks after a task has first started."
+    },
+    {
+      "name": "launch_type",
+      "type": "text",
+      "description": "The launch type on which your service is running. If no value is specified, it will default to EC2."
+    },
+    {
+      "name": "pending_count",
+      "type": "integer",
+      "description": "The number of tasks in the cluster that are in the PENDING state."
+    },
+    {
+      "name": "platform_family",
+      "type": "text",
+      "description": "The operating system that your tasks in the service run on."
+    },
+    {
+      "name": "platform_version",
+      "type": "text",
+      "description": "The platform version on which to run your service."
+    },
+    {
+      "name": "propagate_tags",
+      "type": "text",
+      "description": "Specifies whether to propagate the tags from the task definition or the service to the task. If no value is specified, the tags are not propagated."
+    },
+    {
+      "name": "role_arn",
+      "type": "text",
+      "description": "The ARN of the IAM role associated with the service that allows the Amazon ECS container agent to register container instances with an Elastic Load Balancing load balancer."
+    },
+    {
+      "name": "running_count",
+      "type": "integer",
+      "description": "The number of tasks in the cluster that are in the RUNNING state."
+    },
+    {
+      "name": "scheduling_strategy",
+      "type": "text",
+      "description": "The scheduling strategy to use for the service."
+    },
+    {
+      "name": "capacity_provider_strategy",
+      "type": "json",
+      "description": "The capacity provider strategy associated with the service."
+    },
+    {
+      "name": "deployment_configuration",
+      "type": "json",
+      "description": "Optional deployment parameters that control how many tasks run during the deployment and the ordering of stopping and starting tasks."
+    },
+    {
+      "name": "deployments",
+      "type": "json",
+      "description": "The current state of deployments for the service."
+    },
+    {
+      "name": "events",
+      "type": "json",
+      "description": "The event stream for your service. A maximum of 100 of the latest events are displayed."
+    },
+    {
+      "name": "load_balancers",
+      "type": "json",
+      "description": "A list of Elastic Load Balancing load balancer objects, containing the load balancer name, the container name (as it appears in a container definition), and the container port to access from the load balancer."
+    },
+    {
+      "name": "network_configuration",
+      "type": "json",
+      "description": "The VPC subnet and security group configuration for tasks that receive their own elastic network interface by using the awsvpc networking mode."
+    },
+    {
+      "name": "placement_constraints",
+      "type": "json",
+      "description": "The placement constraints for the tasks in the service."
+    },
+    {
+      "name": "placement_strategy",
+      "type": "json",
+      "description": "The placement strategy that determines how tasks for the service are placed."
+    },
+    {
+      "name": "service_registries",
+      "type": "json",
+      "description": "The details of the service discovery registries to assign to this service."
+    },
+    {
+      "name": "task_sets",
+      "type": "json",
+      "description": "Information about a set of Amazon ECS tasks in either an AWS CodeDeploy or an EXTERNAL deployment."
+    },
+    {
+      "name": "tags_src",
+      "type": "json",
+      "description": "The metadata that you apply to the service to help you categorize and organize them."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": ""
+    }
+  ]
+}

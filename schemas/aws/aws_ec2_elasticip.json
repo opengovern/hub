@@ -1,0 +1,16 @@
+{
+  "table_name": "aws_ec2_elasticip",
+  "table_description": "AWS EC2 ElasticIP",
+  "columns": [
+    {
+      "name": "id",
+      "type": "text",
+      "description": "The id of the elasticip."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    }
+  ]
+}

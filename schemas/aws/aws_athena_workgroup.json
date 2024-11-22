@@ -1,0 +1,96 @@
+{
+  "table_name": "aws_athena_workgroup",
+  "table_description": "AWS Athena Workgroup",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The workgroup name."
+    },
+    {
+      "name": "description",
+      "type": "text",
+      "description": "The workgroup description."
+    },
+    {
+      "name": "creation_time",
+      "type": "timestamp with time zone",
+      "description": "The date and time the workgroup was created."
+    },
+    {
+      "name": "state",
+      "type": "text",
+      "description": "The state of the workgroup."
+    },
+    {
+      "name": "additional_configuration",
+      "type": "json",
+      "description": "Specifies a user defined JSON string that is passed to the notebook engine."
+    },
+    {
+      "name": "bytes_scanned_cutoff_per_query",
+      "type": "integer",
+      "description": "The upper data usage limit (cutoff) for the amount of bytes a single query in a workgroup is allowed to scan."
+    },
+    {
+      "name": "customer_content_kms_key",
+      "type": "text",
+      "description": "Specifies the KMS key that is used to encrypt the user's data stores in Athena."
+    },
+    {
+      "name": "enforce_workgroup_configuration",
+      "type": "boolean",
+      "description": "If set to \\\"true\\\", the settings for the workgroup override client-side settings."
+    },
+    {
+      "name": "effective_engine_version",
+      "type": "text",
+      "description": "The engine version on which the query runs."
+    },
+    {
+      "name": "selected_engine_version",
+      "type": "text",
+      "description": "The engine version requested by the user."
+    },
+    {
+      "name": "execution_role",
+      "type": "text",
+      "description": "Role used in a notebook session for accessing the user's resources."
+    },
+    {
+      "name": "publish_cloudwatch_metrics_enabled",
+      "type": "boolean",
+      "description": "Indicates that the Amazon CloudWatch metrics are enabled for the workgroup."
+    },
+    {
+      "name": "requester_pays_enabled",
+      "type": "boolean",
+      "description": "If set to true, allows members assigned to a workgroup to reference Amazon S3 Requester Pays buckets in queries."
+    },
+    {
+      "name": "s3_acl_option",
+      "type": "text",
+      "description": "The Amazon S3 canned ACL that Athena should specify when storing query results."
+    },
+    {
+      "name": "encryption_option",
+      "type": "text",
+      "description": "Indicates whether Amazon S3 server-side encryption with Amazon S3-managed keys (SSE_S3), server-side encryption with KMS-managed keys (SSE_KMS), or client-side encryption with KMS-managed keys (CSE_KMS) is used."
+    },
+    {
+      "name": "result_configuration_kms_key",
+      "type": "text",
+      "description": "For SSE_KMS and CSE_KMS, this is the KMS key ARN or ID."
+    },
+    {
+      "name": "expected_bucket_owner",
+      "type": "text",
+      "description": "The Amazon Web Services account ID that you expect to be the owner of the Amazon S3 bucket specified by ResultConfiguration$OutputLocation."
+    },
+    {
+      "name": "output_location",
+      "type": "text",
+      "description": "The location in Amazon S3 where your query results are stored."
+    }
+  ]
+}

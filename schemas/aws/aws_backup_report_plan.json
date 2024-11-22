@@ -1,0 +1,56 @@
+{
+  "table_name": "aws_backup_report_plan",
+  "table_description": "AWS Backup Report Plan",
+  "columns": [
+    {
+      "name": "arn",
+      "type": "text",
+      "description": "An Amazon Resource Name (ARN) that uniquely identifies a resource."
+    },
+    {
+      "name": "report_plan_name",
+      "type": "text",
+      "description": "The unique name of the report plan."
+    },
+    {
+      "name": "description",
+      "type": "text",
+      "description": "An optional description of the report plan with a maximum 1,024 characters."
+    },
+    {
+      "name": "creation_time",
+      "type": "timestamp with time zone",
+      "description": "The date and time that a report plan is created, in Unix format and Coordinated Universal Time (UTC)."
+    },
+    {
+      "name": "deployment_status",
+      "type": "text",
+      "description": "The deployment status of a report plan. The statuses are CREATE_IN_PROGRESS, UPDATE_IN_PROGRESS, DELETE_IN_PROGRESS, and COMPLETED."
+    },
+    {
+      "name": "last_attempted_execution_time",
+      "type": "timestamp with time zone",
+      "description": "The date and time that a report job associated with this report plan last attempted to run, in Unix format and Coordinated Universal Time (UTC)."
+    },
+    {
+      "name": "last_successful_execution_time",
+      "type": "timestamp with time zone",
+      "description": "The date and time that a report job associated with this report plan last successfully ran, in Unix format and Coordinated Universal Time (UTC)."
+    },
+    {
+      "name": "report_delivery_channel",
+      "type": "json",
+      "description": "Contains information about where and how to deliver your reports, specifically your Amazon S3 bucket name, S3 key prefix, and the formats of your reports."
+    },
+    {
+      "name": "report_setting",
+      "type": "json",
+      "description": "Identifies the report template for the report. Reports are built using a report template."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    }
+  ]
+}

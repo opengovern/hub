@@ -1,0 +1,131 @@
+{
+  "table_name": "aws_amplify_app",
+  "table_description": "AWS Amplify App",
+  "columns": [
+    {
+      "name": "app_id",
+      "type": "text",
+      "description": "The unique ID of the Amplify app."
+    },
+    {
+      "name": "arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) of the Amplify app."
+    },
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The name for the Amplify app."
+    },
+    {
+      "name": "description",
+      "type": "text",
+      "description": "The description for the Amplify app."
+    },
+    {
+      "name": "create_time",
+      "type": "timestamp with time zone",
+      "description": "Creates a date and time for the Amplify app."
+    },
+    {
+      "name": "update_time",
+      "type": "timestamp with time zone",
+      "description": "Updates the date and time for the Amplify app."
+    },
+    {
+      "name": "basic_auth_credentials",
+      "type": "text",
+      "description": "The basic authorization credentials for branches for the Amplify app. You must base64-encode the authorization credentials and provide them in the format user:password."
+    },
+    {
+      "name": "custom_headers",
+      "type": "text",
+      "description": "Describes the custom HTTP headers for the Amplify app."
+    },
+    {
+      "name": "default_domain",
+      "type": "text",
+      "description": "The default domain for the Amplify app."
+    },
+    {
+      "name": "enable_auto_branch_creation",
+      "type": "boolean",
+      "description": "Enables automated branch creation for the Amplify app."
+    },
+    {
+      "name": "enable_basic_auth",
+      "type": "boolean",
+      "description": "Enables basic authorization for the Amplify app's branches."
+    },
+    {
+      "name": "enable_branch_auto_build",
+      "type": "boolean",
+      "description": "Enables the auto-building of branches for the Amplify app."
+    },
+    {
+      "name": "enable_branch_auto_deletion",
+      "type": "boolean",
+      "description": "Automatically disconnect a branch in the Amplify Console when you delete a branch from your Git repository."
+    },
+    {
+      "name": "iam_service_role_arn",
+      "type": "text",
+      "description": "The AWS Identity and Access Management (IAM) service role for the Amazon Resource Name (ARN) of the Amplify app."
+    },
+    {
+      "name": "platform",
+      "type": "text",
+      "description": "The platform for the Amplify app."
+    },
+    {
+      "name": "repository",
+      "type": "text",
+      "description": "The Git repository for the Amplify app."
+    },
+    {
+      "name": "repository_clone_method",
+      "type": "text",
+      "description": "The Amplify service uses this parameter to specify the authentication protocol to use to access the Git repository for an Amplify app. Amplify specifies TOKEN for a GitHub repository, SIGV4 for an AWS CodeCommit repository, and SSH for GitLab and Bitbucket repositories."
+    },
+    {
+      "name": "auto_branch_creation_config",
+      "type": "json",
+      "description": "Describes the automated branch creation configuration for the Amplify app."
+    },
+    {
+      "name": "auto_branch_creation_patterns",
+      "type": "json",
+      "description": "Describes the automated branch creation glob patterns for the Amplify app."
+    },
+    {
+      "name": "build_spec",
+      "type": "json",
+      "description": "Describes the content of the build specification (build spec) for the Amplify app."
+    },
+    {
+      "name": "custom_rules",
+      "type": "json",
+      "description": "Describes the custom redirect and rewrite rules for the Amplify app."
+    },
+    {
+      "name": "environment_variables",
+      "type": "json",
+      "description": "The environment variables for the Amplify app."
+    },
+    {
+      "name": "production_branch",
+      "type": "json",
+      "description": "Describes the information about a production branch of the Amplify app."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": ""
+    }
+  ]
+}

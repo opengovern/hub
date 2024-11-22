@@ -1,0 +1,66 @@
+{
+  "table_name": "aws_globalaccelerator_endpoint_group",
+  "table_description": "AWS Global Accelerator Endpoint Group",
+  "columns": [
+    {
+      "name": "arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) of the endpoint group."
+    },
+    {
+      "name": "listener_arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) of parent listener."
+    },
+    {
+      "name": "endpoint_descriptions",
+      "type": "json",
+      "description": "The list of endpoint objects."
+    },
+    {
+      "name": "endpoint_group_region",
+      "type": "text",
+      "description": "The AWS Region where the endpoint group is located."
+    },
+    {
+      "name": "health_check_interval_seconds",
+      "type": "integer",
+      "description": "The time—10 seconds or 30 seconds—between health checks for each endpoint."
+    },
+    {
+      "name": "health_check_path",
+      "type": "text",
+      "description": "If the protocol is HTTP/S, then this value provides the ping path that Global Accelerator uses for the destination on the endpoints for health checks."
+    },
+    {
+      "name": "health_check_port",
+      "type": "integer",
+      "description": "The port that Global Accelerator uses to perform health checks on endpoints that are part of this endpoint group."
+    },
+    {
+      "name": "health_check_protocol",
+      "type": "text",
+      "description": "The protocol that Global Accelerator uses to perform health checks on endpoints that are part of this endpoint group."
+    },
+    {
+      "name": "port_overrides",
+      "type": "json",
+      "description": "Overrides for destination ports used to route traffic to an endpoint."
+    },
+    {
+      "name": "threshold_count",
+      "type": "integer",
+      "description": "The number of consecutive health checks required to set the state of a healthy endpoint to unhealthy, or to set an unhealthy endpoint to healthy."
+    },
+    {
+      "name": "traffic_dial_percentage",
+      "type": "double precision",
+      "description": "The percentage of traffic to send to an AWS Region."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "table_name": "aws_codedeploy_deployment_config",
+  "table_description": "AWS CodeDeploy Deployment Config",
+  "columns": [
+    {
+      "name": "arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) specifying the application."
+    },
+    {
+      "name": "create_time",
+      "type": "timestamp with time zone",
+      "description": "The time at which the deployment configuration was created."
+    },
+    {
+      "name": "deployment_config_id",
+      "type": "text",
+      "description": "The deployment configuration ID."
+    },
+    {
+      "name": "deployment_config_name",
+      "type": "text",
+      "description": "The deployment configuration name."
+    },
+    {
+      "name": "compute_platform",
+      "type": "json",
+      "description": "The destination platform type for the deployment (Lambda, Server, or ECS)."
+    },
+    {
+      "name": "minimum_healthy_hosts",
+      "type": "json",
+      "description": "Information about the number or percentage of minimum healthy instances."
+    },
+    {
+      "name": "traffic_routing_config",
+      "type": "json",
+      "description": "The configuration that specifies how the deployment traffic is routed. Used for deployments with a Lambda or Amazon ECS compute platform only."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    }
+  ]
+}

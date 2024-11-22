@@ -1,0 +1,96 @@
+{
+  "table_name": "aws_api_gateway_domain_name",
+  "table_description": "AWS API Gateway Domain Name",
+  "columns": [
+    {
+      "name": "domain_name",
+      "type": "text",
+      "description": "The custom domain name as an API host name."
+    },
+    {
+      "name": "certificate_arn",
+      "type": "text",
+      "description": "The reference to an AWS-managed certificate that will be used by edge-optimized endpoint for this domain name."
+    },
+    {
+      "name": "certificate_name",
+      "type": "text",
+      "description": "The name of the certificate that will be used by edge-optimized endpoint for this domain name."
+    },
+    {
+      "name": "certificate_upload_date",
+      "type": "timestamp with time zone",
+      "description": "The timestamp when the certificate that was used by edge-optimized endpoint for this domain name was uploaded."
+    },
+    {
+      "name": "distribution_domain_name",
+      "type": "text",
+      "description": "The domain name of the Amazon CloudFront distribution associated with this custom domain name for an edge-optimized endpoint."
+    },
+    {
+      "name": "distribution_hosted_zone_id",
+      "type": "text",
+      "description": "The region-agnostic Amazon Route 53 Hosted Zone ID of the edge-optimized endpoint. The valid value is Z2FDTNDATAQYW2 for all the regions."
+    },
+    {
+      "name": "domain_name_status",
+      "type": "text",
+      "description": "The status of the DomainName migration. The valid values are AVAILABLE and UPDATING. If the status is UPDATING, the domain cannot be modified further until the existing operation is complete."
+    },
+    {
+      "name": "domain_name_status_message",
+      "type": "text",
+      "description": "An optional text message containing detailed information about status of the DomainName migration."
+    },
+    {
+      "name": "ownership_verification_certificate_arn",
+      "type": "text",
+      "description": "The ARN of the public certificate issued by ACM to validate ownership of your custom domain. Only required when configuring mutual TLS and using an ACM imported or private CA certificate ARN as the regionalCertificateArn."
+    },
+    {
+      "name": "regional_certificate_arn",
+      "type": "text",
+      "description": "The reference to an AWS-managed certificate that will be used for validating the regional domain name. AWS Certificate Manager is the only supported source."
+    },
+    {
+      "name": "regional_certificate_name",
+      "type": "text",
+      "description": "The name of the certificate that will be used for validating the regional domain name."
+    },
+    {
+      "name": "regional_domain_name",
+      "type": "text",
+      "description": "The domain name associated with the regional endpoint for this custom domain name. You set up this association by adding a DNS record that points the custom domain name to this regional domain name. The regional domain name is returned by API Gateway when you create a regional endpoint."
+    },
+    {
+      "name": "regional_hosted_zone_id",
+      "type": "text",
+      "description": "The region-specific Amazon Route 53 Hosted Zone ID of the regional endpoint. For more information, see Set up a Regional Custom Domain Name and AWS Regions and Endpoints for API Gateway."
+    },
+    {
+      "name": "security_policy",
+      "type": "text",
+      "description": "The Transport Layer Security (TLS) version + cipher suite for this DomainName. The valid values are TLS_1_0 and TLS_1_2."
+    },
+    {
+      "name": "endpoint_configuration",
+      "type": "json",
+      "description": "The endpoint configuration of this DomainName showing the endpoint types of the domain name."
+    },
+    {
+      "name": "mutual_tls_authentication",
+      "type": "json",
+      "description": "The mutual TLS authentication configuration for a custom domain name. If specified, API Gateway performs two-way authentication between the client and the server. Clients must present a trusted certificate to access your API."
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": ""
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "table_name": "aws_lambda_layer",
+  "table_description": "AWS Lambda Layer",
+  "columns": [
+    {
+      "name": "layer_name",
+      "type": "text",
+      "description": "The name of the layer."
+    },
+    {
+      "name": "layer_arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) of the function layer."
+    },
+    {
+      "name": "created_date",
+      "type": "timestamp with time zone",
+      "description": "The date that the version was created, in ISO 8601 format."
+    },
+    {
+      "name": "description",
+      "type": "text",
+      "description": "The description of the version."
+    },
+    {
+      "name": "layer_version_arn",
+      "type": "text",
+      "description": "The ARN of the layer version."
+    },
+    {
+      "name": "license_info",
+      "type": "text",
+      "description": "The layer's open-source license."
+    },
+    {
+      "name": "version",
+      "type": "integer",
+      "description": "The version number."
+    },
+    {
+      "name": "compatible_architectures",
+      "type": "json",
+      "description": "A list of compatible instruction set architectures."
+    },
+    {
+      "name": "compatible_runtimes",
+      "type": "json",
+      "description": "The layer's compatible runtimes."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    }
+  ]
+}

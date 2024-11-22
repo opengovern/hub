@@ -1,0 +1,46 @@
+{
+  "table_name": "aws_iam_access_advisor",
+  "table_description": "AWS IAM Access Advisor",
+  "columns": [
+    {
+      "name": "principal_arn",
+      "type": "text",
+      "description": "The ARN of the IAM resource (user, group, role, or managed policy) used to generate information about when the resource was last used in an attempt to access an AWS service."
+    },
+    {
+      "name": "service_name",
+      "type": "text",
+      "description": "The name of the service in which access was attempted."
+    },
+    {
+      "name": "service_namespace",
+      "type": "text",
+      "description": "The namespace of the service in which access was attempted."
+    },
+    {
+      "name": "last_authenticated",
+      "type": "timestamp with time zone",
+      "description": "The date and time when an authenticated entity most recently attempted to access the service. AWS does not report unauthenticated requests."
+    },
+    {
+      "name": "last_authenticated_entity",
+      "type": "text",
+      "description": "The ARN of the authenticated entity (user or role) that last attempted to access the service. AWS does not report unauthenticated requests."
+    },
+    {
+      "name": "last_authenticated_region",
+      "type": "text",
+      "description": "The Region from which the authenticated entity (user or role) last attempted to access the service. AWS does not report unauthenticated requests."
+    },
+    {
+      "name": "total_authenticated_entities",
+      "type": "integer",
+      "description": "The total number of authenticated principals (root user, IAM users, or IAM roles) that have attempted to access the service."
+    },
+    {
+      "name": "tracked_actions_last_accessed",
+      "type": "json",
+      "description": "An array of objects that contains details about the most recent attempt to access a tracked action within the service.  Currently, only S3 supports action level tracking."
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "table_name": "aws_wellarchitected_share_invitation",
+  "table_description": "AWS Well-Architected Share Invitation",
+  "columns": [
+    {
+      "name": "lens_arn",
+      "type": "text",
+      "description": "The ARN for the lens."
+    },
+    {
+      "name": "lens_name",
+      "type": "text",
+      "description": "The full name of the lens."
+    },
+    {
+      "name": "permission_type",
+      "type": "text",
+      "description": "Permission granted on a workload share."
+    },
+    {
+      "name": "share_invitation_id",
+      "type": "text",
+      "description": "The ID assigned to the share invitation."
+    },
+    {
+      "name": "share_resource_type",
+      "type": "text",
+      "description": "The resource type of the share invitation."
+    },
+    {
+      "name": "shared_by",
+      "type": "text",
+      "description": "An Amazon Web Services account ID."
+    },
+    {
+      "name": "shared_with",
+      "type": "text",
+      "description": "The Amazon Web Services account ID, IAM role, organization ID, or organizational unit (OU) ID with which the workload is shared."
+    },
+    {
+      "name": "workload_name",
+      "type": "text",
+      "description": "The name of the workload."
+    },
+    {
+      "name": "workload_id",
+      "type": "text",
+      "description": "The ID assigned to the workload."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    }
+  ]
+}

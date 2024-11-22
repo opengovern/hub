@@ -1,0 +1,41 @@
+{
+  "table_name": "aws_cost_usage",
+  "table_description": "AWS Cost Explorer - Cost and Usage",
+  "columns": [
+    {
+      "name": "dimension_1",
+      "type": "text",
+      "description": "Valid values are AZ, INSTANCE_TYPE, LINKED_ACCOUNT, OPERATION, PURCHASE_TYPE, SERVICE, USAGE_TYPE, PLATFORM, TENANCY, RECORD_TYPE, LEGAL_ENTITY_NAME, DEPLOYMENT_OPTION, DATABASE_ENGINE, CACHE_ENGINE, INSTANCE_TYPE_FAMILY, REGION, BILLING_ENTITY, RESERVATION_ID, SAVINGS_PLANS_TYPE, SAVINGS_PLAN_ARN, OPERATING_SYSTEM"
+    },
+    {
+      "name": "dimension_2",
+      "type": "text",
+      "description": "Valid values are AZ, INSTANCE_TYPE, LINKED_ACCOUNT, OPERATION, PURCHASE_TYPE, SERVICE, USAGE_TYPE, PLATFORM, TENANCY, RECORD_TYPE, LEGAL_ENTITY_NAME, DEPLOYMENT_OPTION, DATABASE_ENGINE, CACHE_ENGINE, INSTANCE_TYPE_FAMILY, REGION, BILLING_ENTITY, RESERVATION_ID, SAVINGS_PLANS_TYPE, SAVINGS_PLAN_ARN, OPERATING_SYSTEM"
+    },
+    {
+      "name": "granularity",
+      "type": "text",
+      "description": ""
+    },
+    {
+      "name": "search_start_time",
+      "type": "timestamp with time zone",
+      "description": ""
+    },
+    {
+      "name": "search_end_time",
+      "type": "timestamp with time zone",
+      "description": ""
+    },
+    {
+      "name": "dimension_type_1",
+      "type": "text",
+      "description": ""
+    },
+    {
+      "name": "dimension_type_2",
+      "type": "text",
+      "description": ""
+    }
+  ]
+}

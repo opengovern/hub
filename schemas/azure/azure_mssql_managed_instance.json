@@ -1,0 +1,166 @@
+{
+  "table_name": "azure_mssql_managed_instance",
+  "table_description": "Azure Microsoft SQL Managed Instance",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The friendly name that identifies the managed instance."
+    },
+    {
+      "name": "id",
+      "type": "text",
+      "description": "Contains ID to identify a managed instance uniquely."
+    },
+    {
+      "name": "type",
+      "type": "text",
+      "description": "The resource type of the managed instance."
+    },
+    {
+      "name": "state",
+      "type": "text",
+      "description": "The state of the managed instance."
+    },
+    {
+      "name": "administrator_login",
+      "type": "text",
+      "description": "Administrator username for the managed instance."
+    },
+    {
+      "name": "administrator_login_password",
+      "type": "text",
+      "description": "Administrator password for the managed instance."
+    },
+    {
+      "name": "collation",
+      "type": "text",
+      "description": "Collation of the managed instance."
+    },
+    {
+      "name": "dns_zone",
+      "type": "text",
+      "description": "The Dns zone that the managed instance is in."
+    },
+    {
+      "name": "dns_zone_partner",
+      "type": "text",
+      "description": "The resource id of another managed instance whose DNS zone this managed instance will share after creation."
+    },
+    {
+      "name": "fully_qualified_domain_name",
+      "type": "text",
+      "description": "The fully qualified domain name of the managed instance."
+    },
+    {
+      "name": "instance_pool_id",
+      "type": "text",
+      "description": "The Id of the instance pool this managed server belongs to."
+    },
+    {
+      "name": "license_type",
+      "type": "text",
+      "description": "The license type of the managed instance."
+    },
+    {
+      "name": "maintenance_configuration_id",
+      "type": "text",
+      "description": "Specifies maintenance configuration id to apply to this managed instance."
+    },
+    {
+      "name": "managed_instance_create_mode",
+      "type": "text",
+      "description": "Specifies the mode of database creation."
+    },
+    {
+      "name": "minimal_tls_version",
+      "type": "text",
+      "description": "Minimal TLS version of the managed instance."
+    },
+    {
+      "name": "proxy_override",
+      "type": "text",
+      "description": "Connection type used for connecting to the instance."
+    },
+    {
+      "name": "public_data_endpoint_enabled",
+      "type": "boolean",
+      "description": "Whether or not the public data endpoint is enabled."
+    },
+    {
+      "name": "restore_point_in_time",
+      "type": "timestamp with time zone",
+      "description": "Specifies the point in time of the source database that will be restored to create the new database."
+    },
+    {
+      "name": "source_managed_instance_id",
+      "type": "text",
+      "description": "The resource identifier of the source managed instance associated with create operation of this instance."
+    },
+    {
+      "name": "storage_size_in_gb",
+      "type": "integer",
+      "description": "The managed instance storage size in GB."
+    },
+    {
+      "name": "subnet_id",
+      "type": "text",
+      "description": "Subnet resource ID for the managed instance."
+    },
+    {
+      "name": "timezone_id",
+      "type": "text",
+      "description": "Id of the timezone."
+    },
+    {
+      "name": "v_cores",
+      "type": "integer",
+      "description": "The number of vcores of the managed instance."
+    },
+    {
+      "name": "encryption_protectors",
+      "type": "json",
+      "description": "The managed instance encryption protectors."
+    },
+    {
+      "name": "identity",
+      "type": "json",
+      "description": "The azure active directory identity of the managed instance."
+    },
+    {
+      "name": "security_alert_policies",
+      "type": "json",
+      "description": "The security alert policies of the managed instance."
+    },
+    {
+      "name": "sku",
+      "type": "json",
+      "description": "Managed instance SKU."
+    },
+    {
+      "name": "vulnerability_assessments",
+      "type": "json",
+      "description": "The managed instance vulnerability assessments."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": "ColumnDescriptionTitle"
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": "ColumnDescriptionTags"
+    },
+    {
+      "name": "region",
+      "type": "text",
+      "description": "ColumnDescriptionRegion"
+    },
+    {
+      "name": "resource_group",
+      "type": "text",
+      "description": "ColumnDescriptionResourceGroup"
+    }
+  ]
+}

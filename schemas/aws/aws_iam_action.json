@@ -1,0 +1,31 @@
+{
+  "table_name": "aws_iam_action",
+  "table_description": "AWS IAM Action",
+  "columns": [
+    {
+      "name": "action",
+      "type": "text",
+      "description": "The action for this permission."
+    },
+    {
+      "name": "prefix",
+      "type": "text",
+      "description": "The prefix for this action."
+    },
+    {
+      "name": "privilege",
+      "type": "text",
+      "description": "The privilege for this action."
+    },
+    {
+      "name": "access_level",
+      "type": "text",
+      "description": "The access level for this action."
+    },
+    {
+      "name": "description",
+      "type": "text",
+      "description": "The description for this action."
+    }
+  ]
+}

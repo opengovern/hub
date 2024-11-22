@@ -1,0 +1,36 @@
+{
+  "table_name": "digitalocean_bill",
+  "table_description": "Billing history is a record of billing events for your account. For example, entries may include events like payments made, invoices issued, or credits granted.",
+  "columns": [
+    {
+      "name": "date",
+      "type": "timestamp with time zone",
+      "description": "Time the billing history entry occured."
+    },
+    {
+      "name": "amount",
+      "type": "text",
+      "description": "Amount of the billing history entry."
+    },
+    {
+      "name": "description",
+      "type": "text",
+      "description": "Description of the billing history entry."
+    },
+    {
+      "name": "invoice_id",
+      "type": "text",
+      "description": "ID of the invoice associated with the billing history entry, if applicable."
+    },
+    {
+      "name": "invoice_uuid",
+      "type": "text",
+      "description": "UUID of the invoice associated with the billing history entry, if applicable."
+    },
+    {
+      "name": "type",
+      "type": "text",
+      "description": "Type of billing history entry."
+    }
+  ]
+}

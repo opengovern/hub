@@ -1,0 +1,96 @@
+{
+  "table_name": "aws_acmpca_certificate_authority",
+  "table_description": "AWS ACMPCA CertificateAuthority",
+  "columns": [
+    {
+      "name": "arn",
+      "type": "text",
+      "description": "Amazon Resource Name (ARN) for your private certificate authority (CA). The format is 12345678-1234-1234-1234-123456789012."
+    },
+    {
+      "name": "created_at",
+      "type": "timestamp with time zone",
+      "description": "Date and time at which your private CA was created."
+    },
+    {
+      "name": "failure_reason",
+      "type": "text",
+      "description": "Reason the request to create your private CA failed."
+    },
+    {
+      "name": "key_storage_security_standard",
+      "type": "text",
+      "description": "Defines a cryptographic key management compliance standard used for handling CA keys. Default: FIPS_140_2_LEVEL_3_OR_HIGHER Note: Amazon Web Services Region ap-northeast-3 supports only FIPS_140_2_LEVEL_2_OR_HIGHER. You must explicitly specify this parameter and value when creating a CA in that Region. Specifying a different value (or no value) results in an InvalidArgsException with the message 'A certificate authority cannot be created in this region with the specified security standard.'"
+    },
+    {
+      "name": "last_state_change_at",
+      "type": "timestamp with time zone",
+      "description": "Date and time at which your private CA was last updated."
+    },
+    {
+      "name": "not_after",
+      "type": "timestamp with time zone",
+      "description": "Date and time after which your private CA certificate is not valid."
+    },
+    {
+      "name": "not_before",
+      "type": "timestamp with time zone",
+      "description": "Date and time before which your private CA certificate is not valid."
+    },
+    {
+      "name": "owner_account",
+      "type": "text",
+      "description": "The Amazon Web Services account ID that owns the certificate authority."
+    },
+    {
+      "name": "restorable_until",
+      "type": "timestamp with time zone",
+      "description": "The period during which a deleted CA can be restored. For more information, see the PermanentDeletionTimeInDays parameter of the DeleteCertificateAuthorityRequest action."
+    },
+    {
+      "name": "serial",
+      "type": "text",
+      "description": "Serial number of your private CA."
+    },
+    {
+      "name": "status",
+      "type": "text",
+      "description": "Status of your private CA."
+    },
+    {
+      "name": "type",
+      "type": "text",
+      "description": "Type of your private CA."
+    },
+    {
+      "name": "usage_mode",
+      "type": "text",
+      "description": "Specifies whether the CA issues general-purpose certificates that typically require a revocation mechanism, or short-lived certificates that may optionally omit revocation because they expire quickly. Short-lived certificate validity is limited to seven days. The default value is GENERAL_PURPOSE."
+    },
+    {
+      "name": "certificate_authority_configuration",
+      "type": "json",
+      "description": "Your private CA configuration."
+    },
+    {
+      "name": "revocation_configuration",
+      "type": "json",
+      "description": "Information about the Online Certificate Status Protocol (OCSP) configuration or certificate revocation list (CRL) created and maintained by your private CA."
+    },
+    {
+      "name": "tags_src",
+      "type": "json",
+      "description": "A list of tags associated with private certificate authority (CA)."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": ""
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "table_name": "aws_ec2_transit_gateway_route",
+  "table_description": "AWS EC2 Transit Gateway Route",
+  "columns": [
+    {
+      "name": "transit_gateway_route_table_id",
+      "type": "text",
+      "description": "The ID of the transit gateway route table."
+    },
+    {
+      "name": "destination_cidr_block",
+      "type": "cidr",
+      "description": "The CIDR block used for destination matches."
+    },
+    {
+      "name": "prefix_list_id",
+      "type": "text",
+      "description": "The ID of the prefix list used for destination matches."
+    },
+    {
+      "name": "state",
+      "type": "text",
+      "description": "The state of the route."
+    },
+    {
+      "name": "type",
+      "type": "text",
+      "description": "The route type."
+    },
+    {
+      "name": "transit_gateway_attachments",
+      "type": "json",
+      "description": "The attachments."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    }
+  ]
+}

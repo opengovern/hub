@@ -1,0 +1,46 @@
+{
+  "table_name": "aws_guardduty_ipset",
+  "table_description": "AWS GuardDuty IPSet",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The name for the IPSet."
+    },
+    {
+      "name": "detector_id",
+      "type": "text",
+      "description": "The ID of the detector."
+    },
+    {
+      "name": "ipset_id",
+      "type": "text",
+      "description": "The ID of the IPSet."
+    },
+    {
+      "name": "format",
+      "type": "text",
+      "description": "The format of the file that contains the IPSet."
+    },
+    {
+      "name": "status",
+      "type": "text",
+      "description": "The status of IPSet."
+    },
+    {
+      "name": "location",
+      "type": "text",
+      "description": "The URI of the file that contains the IPSet."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": ""
+    }
+  ]
+}

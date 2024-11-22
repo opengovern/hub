@@ -1,0 +1,101 @@
+{
+  "table_name": "aws_ecs_container_instance",
+  "table_description": "AWS ECS Container Instance",
+  "columns": [
+    {
+      "name": "arn",
+      "type": "text",
+      "description": "The namespace Amazon Resource Name (ARN) of the container instance."
+    },
+    {
+      "name": "ec2_instance_id",
+      "type": "text",
+      "description": "The EC2 instance ID of the container instance."
+    },
+    {
+      "name": "cluster_arn",
+      "type": "text",
+      "description": "The ARN of the cluster."
+    },
+    {
+      "name": "agent_connected",
+      "type": "boolean",
+      "description": "True if the agent is connected to Amazon ECS."
+    },
+    {
+      "name": "agent_update_status",
+      "type": "text",
+      "description": "The status of the most recent agent update."
+    },
+    {
+      "name": "attachments",
+      "type": "json",
+      "description": "The resources attached to a container instance, such as elastic network interfaces."
+    },
+    {
+      "name": "attributes",
+      "type": "json",
+      "description": "The attributes set for the container instance."
+    },
+    {
+      "name": "capacity_provider_name",
+      "type": "text",
+      "description": "The capacity provider associated with the container instance."
+    },
+    {
+      "name": "pending_tasks_count",
+      "type": "integer",
+      "description": "The number of tasks on the container instance that are in the PENDING status."
+    },
+    {
+      "name": "registered_at",
+      "type": "timestamp with time zone",
+      "description": "The Unix timestamp for when the container instance was registered."
+    },
+    {
+      "name": "registered_resources",
+      "type": "json",
+      "description": "CPU and memory that can be allocated on this container instance to tasks."
+    },
+    {
+      "name": "remaining_resources",
+      "type": "json",
+      "description": "CPU and memory that is available for new tasks."
+    },
+    {
+      "name": "running_tasks_count",
+      "type": "integer",
+      "description": "CPU and memory that is available for new tasks."
+    },
+    {
+      "name": "status",
+      "type": "text",
+      "description": "The status of the container instance."
+    },
+    {
+      "name": "status_reason",
+      "type": "text",
+      "description": "The reason that the container instance reached its current status."
+    },
+    {
+      "name": "version",
+      "type": "integer",
+      "description": "The reason that the container instance reached its current status."
+    },
+    {
+      "name": "version_info",
+      "type": "json",
+      "description": "Version information for the Amazon ECS container agent and Docker daemon running on the container instance."
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": ""
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    }
+  ]
+}

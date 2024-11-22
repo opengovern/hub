@@ -1,0 +1,126 @@
+{
+  "table_name": "aws_eks_node_group",
+  "table_description": "AWS EKS Node Group",
+  "columns": [
+    {
+      "name": "nodegroup_name",
+      "type": "text",
+      "description": "The name associated with an Amazon EKS managed node group."
+    },
+    {
+      "name": "arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) associated with the managed node group."
+    },
+    {
+      "name": "cluster_name",
+      "type": "text",
+      "description": "The name of the cluster that the managed node group resides in."
+    },
+    {
+      "name": "created_at",
+      "type": "timestamp with time zone",
+      "description": "The Unix epoch timestamp in seconds for when the managed node group was created."
+    },
+    {
+      "name": "status",
+      "type": "text",
+      "description": "The current status of the managed node group."
+    },
+    {
+      "name": "ami_type",
+      "type": "text",
+      "description": "The AMI type that was specified in the node group configuration."
+    },
+    {
+      "name": "capacity_type",
+      "type": "text",
+      "description": "The capacity type of your managed node group."
+    },
+    {
+      "name": "disk_size",
+      "type": "integer",
+      "description": "The disk size in the node group configuration."
+    },
+    {
+      "name": "modified_at",
+      "type": "timestamp with time zone",
+      "description": "The Unix epoch timestamp in seconds for when the managed node group was last modified."
+    },
+    {
+      "name": "node_role",
+      "type": "text",
+      "description": "The IAM role associated with your node group."
+    },
+    {
+      "name": "release_version",
+      "type": "text",
+      "description": "If the node group was deployed using a launch template with a custom AMI, then this is the AMI ID that was specified in the launch template. For node groups that weren't deployed using a launch template, this is the version of the Amazon EKS optimized AMI that the node group was deployed with."
+    },
+    {
+      "name": "version",
+      "type": "text",
+      "description": "The Kubernetes version of the managed node group."
+    },
+    {
+      "name": "health",
+      "type": "json",
+      "description": "The health status of the node group."
+    },
+    {
+      "name": "instance_types",
+      "type": "json",
+      "description": "The instance type that is associated with the node group. If the node group was deployed with a launch template, then this is null."
+    },
+    {
+      "name": "labels",
+      "type": "json",
+      "description": "The Kubernetes labels applied to the nodes in the node group."
+    },
+    {
+      "name": "launch_template",
+      "type": "json",
+      "description": "If a launch template was used to create the node group, then this is the launch template that was used."
+    },
+    {
+      "name": "remote_access",
+      "type": "json",
+      "description": "The remote access configuration that is associated with the node group. If the node group was deployed with a launch template, then this is null."
+    },
+    {
+      "name": "resources",
+      "type": "json",
+      "description": "The resources associated with the node group, such as Auto Scaling groups and security groups for remote access."
+    },
+    {
+      "name": "scaling_config",
+      "type": "json",
+      "description": "The scaling configuration details for the Auto Scaling group that is associated with your node group."
+    },
+    {
+      "name": "subnets",
+      "type": "json",
+      "description": "The subnets that were specified for the Auto Scaling group that is associated with your node group."
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": ""
+    },
+    {
+      "name": "taints",
+      "type": "json",
+      "description": "The Kubernetes taints to be applied to the nodes in the node group when they are created."
+    },
+    {
+      "name": "update_config",
+      "type": "json",
+      "description": "The node group update configuration."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    }
+  ]
+}

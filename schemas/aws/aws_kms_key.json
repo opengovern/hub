@@ -1,0 +1,106 @@
+{
+  "table_name": "aws_kms_key",
+  "table_description": "AWS KMS Key",
+  "columns": [
+    {
+      "name": "id",
+      "type": "text",
+      "description": "Unique identifier of the key."
+    },
+    {
+      "name": "arn",
+      "type": "text",
+      "description": "ARN of the key."
+    },
+    {
+      "name": "key_manager",
+      "type": "text",
+      "description": "The manager of the CMK. CMKs in your AWS account are either customer managed or AWS managed."
+    },
+    {
+      "name": "creation_date",
+      "type": "timestamp with time zone",
+      "description": "The date and time when the CMK was created."
+    },
+    {
+      "name": "aws_account_id",
+      "type": "text",
+      "description": "The twelve-digit account ID of the AWS account that owns the CMK."
+    },
+    {
+      "name": "enabled",
+      "type": "boolean",
+      "description": "Specifies whether the CMK is enabled. When KeyState is Enabled this value is true, otherwise it is false."
+    },
+    {
+      "name": "customer_master_key_spec",
+      "type": "text",
+      "description": "Describes the type of key material in the CMK."
+    },
+    {
+      "name": "description",
+      "type": "text",
+      "description": "The description of the CMK."
+    },
+    {
+      "name": "deletion_date",
+      "type": "timestamp with time zone",
+      "description": "The date and time after which AWS KMS deletes the CMK."
+    },
+    {
+      "name": "key_state",
+      "type": "text",
+      "description": "The current status of the CMK. For more information about how key state affects the use of a CMK, see [Key state: Effect on your CMK](https://docs.aws.amazon.com/kms/latest/developerguide/key-state.html)."
+    },
+    {
+      "name": "key_usage",
+      "type": "text",
+      "description": "The [cryptographic operations](https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html#cryptographic-operations) for which you can use the CMK."
+    },
+    {
+      "name": "origin",
+      "type": "text",
+      "description": "The source of the CMK's key material. When this value is AWS_KMS, AWS KMS created the key material. When this value is EXTERNAL, the key material was imported from your existing key management infrastructure or the CMK lacks key material. When this value is AWS_CLOUDHSM, the key material was created in the AWS CloudHSM cluster associated with a custom key store."
+    },
+    {
+      "name": "valid_to",
+      "type": "timestamp with time zone",
+      "description": "The time at which the imported key material expires."
+    },
+    {
+      "name": "aliases",
+      "type": "json",
+      "description": "A list of aliases for the key."
+    },
+    {
+      "name": "key_rotation_enabled",
+      "type": "boolean",
+      "description": "A Boolean value that specifies whether key rotation is enabled."
+    },
+    {
+      "name": "policy",
+      "type": "json",
+      "description": "A key policy document in JSON format."
+    },
+    {
+      "name": "policy_std",
+      "type": "json",
+      "description": "Contains the policy in a canonical form for easier searching."
+    },
+    {
+      "name": "tags_src",
+      "type": "json",
+      "description": "A list of tags attached to key."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": ""
+    }
+  ]
+}

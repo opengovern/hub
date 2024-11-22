@@ -1,0 +1,36 @@
+{
+  "table_name": "aws_appconfig_application",
+  "table_description": "AWS AppConfig Application",
+  "columns": [
+    {
+      "name": "id",
+      "type": "text",
+      "description": "The application ID."
+    },
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The application name."
+    },
+    {
+      "name": "arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) that identifies the application."
+    },
+    {
+      "name": "description",
+      "type": "text",
+      "description": "The description of the application."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": ""
+    }
+  ]
+}

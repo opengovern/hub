@@ -1,0 +1,36 @@
+{
+  "table_name": "digitalocean_key",
+  "table_description": "DigitalOcean allows you to add SSH public keys to the interface so that you can embed your public key into a Droplet at the time of creation. Only the public key is required to take advantage of this functionality.",
+  "columns": [
+    {
+      "name": "id",
+      "type": "integer",
+      "description": "This is a unique identification number for the key."
+    },
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The human-readable display name for the given SSH key."
+    },
+    {
+      "name": "fingerprint",
+      "type": "text",
+      "description": "The fingerprint value that is generated from the public key."
+    },
+    {
+      "name": "public_key",
+      "type": "text",
+      "description": "The entire public key string that was uploaded.  This is what is embedded into the root user's authorized_keys file if you choose to include this SSH key during Droplet creation."
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": ""
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    }
+  ]
+}

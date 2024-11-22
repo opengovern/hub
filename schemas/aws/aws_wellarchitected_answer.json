@@ -1,0 +1,101 @@
+{
+  "table_name": "aws_wellarchitected_answer",
+  "table_description": "AWS Well-Architected Answer",
+  "columns": [
+    {
+      "name": "question_id",
+      "type": "text",
+      "description": "The ID of the question."
+    },
+    {
+      "name": "lens_alias",
+      "type": "text",
+      "description": "The alias of the lens."
+    },
+    {
+      "name": "workload_id",
+      "type": "text",
+      "description": "The ID assigned to the workload."
+    },
+    {
+      "name": "helpful_resource_display_text",
+      "type": "text",
+      "description": "The helpful resource text to be displayed."
+    },
+    {
+      "name": "helpful_resource_url",
+      "type": "text",
+      "description": "The helpful resource URL for a question."
+    },
+    {
+      "name": "improvement_plan_url",
+      "type": "text",
+      "description": "The improvement plan URL for a question. This value is only available if the question has been answered."
+    },
+    {
+      "name": "is_applicable",
+      "type": "boolean",
+      "description": "Defines whether this question is applicable to a lens review."
+    },
+    {
+      "name": "lens_arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) of the lens."
+    },
+    {
+      "name": "milestone_number",
+      "type": "integer",
+      "description": "The milestone number."
+    },
+    {
+      "name": "notes",
+      "type": "text",
+      "description": "The notes associated with the workload."
+    },
+    {
+      "name": "pillar_id",
+      "type": "text",
+      "description": "The ID used to identify a pillar, for example, security. A pillar is identified by its PillarReviewSummary$PillarId."
+    },
+    {
+      "name": "question_description",
+      "type": "text",
+      "description": "The description of the question."
+    },
+    {
+      "name": "question_title",
+      "type": "text",
+      "description": "The title of the question."
+    },
+    {
+      "name": "reason",
+      "type": "text",
+      "description": "The reason why the question is not applicable to your workload."
+    },
+    {
+      "name": "risk",
+      "type": "text",
+      "description": "The risk for a given workload, lens review, pillar, or question."
+    },
+    {
+      "name": "choice_answers",
+      "type": "json",
+      "description": "A list of selected choices to a question in your workload."
+    },
+    {
+      "name": "choices",
+      "type": "json",
+      "description": "List of choices available for a question."
+    },
+    {
+      "name": "selected_choices",
+      "type": "json",
+      "description": "List of selected choice IDs in a question answer. The values entered replace the previously selected choices."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    }
+  ]
+}

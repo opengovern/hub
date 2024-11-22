@@ -1,0 +1,26 @@
+{
+  "table_name": "azure_dbformysql_flexibleservers",
+  "table_description": "Azure DBforMySQL FlexibleServers",
+  "columns": [
+    {
+      "name": "id",
+      "type": "text",
+      "description": "The id of the flexibleservers."
+    },
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The name of the flexibleservers."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": "ColumnDescriptionTitle"
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": "ColumnDescriptionTags"
+    }
+  ]
+}

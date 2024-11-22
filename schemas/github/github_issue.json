@@ -1,0 +1,211 @@
+{
+  "table_name": "github_issue",
+  "table_description": "GitHub Issues are used to track ideas, enhancements, tasks, or bugs for work on GitHub.",
+  "columns": [
+    {
+      "name": "number",
+      "type": "integer",
+      "description": "The issue number."
+    },
+    {
+      "name": "id",
+      "type": "integer",
+      "description": "The ID of the issue."
+    },
+    {
+      "name": "node_id",
+      "type": "text",
+      "description": "The node ID of the issue."
+    },
+    {
+      "name": "active_lock_reason",
+      "type": "text",
+      "description": "Reason that the conversation was locked."
+    },
+    {
+      "name": "author",
+      "type": "json",
+      "description": "The actor who authored the issue."
+    },
+    {
+      "name": "author_login",
+      "type": "text",
+      "description": "The login of the issue author."
+    },
+    {
+      "name": "author_association",
+      "type": "text",
+      "description": "Author's association with the subject of the issue."
+    },
+    {
+      "name": "body",
+      "type": "text",
+      "description": "Identifies the body of the issue."
+    },
+    {
+      "name": "body_url",
+      "type": "text",
+      "description": "URL for this issue body."
+    },
+    {
+      "name": "closed",
+      "type": "boolean",
+      "description": "If true, issue is closed."
+    },
+    {
+      "name": "closed_at",
+      "type": "timestamp with time zone",
+      "description": "Timestamp when issue was closed."
+    },
+    {
+      "name": "created_at",
+      "type": "timestamp with time zone",
+      "description": "Timestamp when issue was created."
+    },
+    {
+      "name": "created_via_email",
+      "type": "boolean",
+      "description": "If true, issue was created via email."
+    },
+    {
+      "name": "editor",
+      "type": "json",
+      "description": "The actor who edited the issue."
+    },
+    {
+      "name": "full_database_id",
+      "type": "integer",
+      "description": "Identifies the primary key from the database as a BigInt."
+    },
+    {
+      "name": "includes_created_edit",
+      "type": "boolean",
+      "description": "If true, issue was edited and includes an edit with the creation data."
+    },
+    {
+      "name": "is_pinned",
+      "type": "boolean",
+      "description": "if true, this issue is currently pinned to the repository issues list."
+    },
+    {
+      "name": "is_read_by_user",
+      "type": "boolean",
+      "description": "if true, this issue has been read by the user."
+    },
+    {
+      "name": "last_edited_at",
+      "type": "timestamp with time zone",
+      "description": "Timestamp when issue was last edited."
+    },
+    {
+      "name": "locked",
+      "type": "boolean",
+      "description": "If true, issue is locked."
+    },
+    {
+      "name": "milestone",
+      "type": "json",
+      "description": "The milestone associated with the issue."
+    },
+    {
+      "name": "published_at",
+      "type": "timestamp with time zone",
+      "description": "Timestamp when issue was published."
+    },
+    {
+      "name": "state",
+      "type": "text",
+      "description": "The state of the issue."
+    },
+    {
+      "name": "state_reason",
+      "type": "text",
+      "description": "The reason for the issue state."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": "The title of the issue."
+    },
+    {
+      "name": "updated_at",
+      "type": "timestamp with time zone",
+      "description": "Timestamp when issue was last updated."
+    },
+    {
+      "name": "url",
+      "type": "text",
+      "description": "URL for the issue."
+    },
+    {
+      "name": "assignees_total_count",
+      "type": "integer",
+      "description": "Count of assignees on the issue."
+    },
+    {
+      "name": "comments_total_count",
+      "type": "integer",
+      "description": "Count of comments on the issue."
+    },
+    {
+      "name": "labels_total_count",
+      "type": "integer",
+      "description": "Count of labels on the issue."
+    },
+    {
+      "name": "labels_src",
+      "type": "json",
+      "description": "The first 100 labels associated to the issue."
+    },
+    {
+      "name": "labels",
+      "type": "json",
+      "description": "A map of labels for the issue."
+    },
+    {
+      "name": "user_can_close",
+      "type": "boolean",
+      "description": "If true, user can close the issue."
+    },
+    {
+      "name": "user_can_react",
+      "type": "boolean",
+      "description": "If true, user can react on the issue."
+    },
+    {
+      "name": "user_can_reopen",
+      "type": "boolean",
+      "description": "If true, user can reopen the issue."
+    },
+    {
+      "name": "user_can_subscribe",
+      "type": "boolean",
+      "description": "If true, user can subscribe to the issue."
+    },
+    {
+      "name": "user_can_update",
+      "type": "boolean",
+      "description": "If true, user can update the issue,"
+    },
+    {
+      "name": "user_cannot_update_reasons",
+      "type": "json",
+      "description": "A list of reason why user cannot update the issue."
+    },
+    {
+      "name": "user_did_author",
+      "type": "boolean",
+      "description": "If true, user authored the issue."
+    },
+    {
+      "name": "user_subscription",
+      "type": "text",
+      "description": "Subscription state of the user to the issue."
+    },
+    {
+      "name": "assignees",
+      "type": "json",
+      "description": "A list of Users assigned to the issue."
+    }
+  ]
+}

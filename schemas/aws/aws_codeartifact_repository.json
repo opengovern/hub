@@ -1,0 +1,76 @@
+{
+  "table_name": "aws_codeartifact_repository",
+  "table_description": "AWS CodeArtifact Repository",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The name of the repository."
+    },
+    {
+      "name": "arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) of the repository"
+    },
+    {
+      "name": "domain_name",
+      "type": "text",
+      "description": "The name of the domain that contains the repository."
+    },
+    {
+      "name": "administrator_account",
+      "type": "text",
+      "description": "The Amazon Web Services account ID that manages the repository."
+    },
+    {
+      "name": "description",
+      "type": "text",
+      "description": "The description of the repository."
+    },
+    {
+      "name": "domain_owner",
+      "type": "text",
+      "description": "The 12-digit account number of the Amazon Web Services account that owns the repository. It does not include dashes or spaces."
+    },
+    {
+      "name": "external_connections",
+      "type": "json",
+      "description": "An array of external connections associated with the repository."
+    },
+    {
+      "name": "policy",
+      "type": "json",
+      "description": "An CodeArtifact resource policy that contains a resource ARN, document details, and a revision."
+    },
+    {
+      "name": "policy_std",
+      "type": "json",
+      "description": "Contains the contents of the resource-based policy in a canonical form for easier searching."
+    },
+    {
+      "name": "repository_endpoint",
+      "type": "json",
+      "description": "A string that specifies the URL of the returned endpoint."
+    },
+    {
+      "name": "upstreams",
+      "type": "json",
+      "description": "A list of upstream repositories to associate with the repository."
+    },
+    {
+      "name": "tags_src",
+      "type": "json",
+      "description": "A list of tags assigned to the resource."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": ""
+    }
+  ]
+}

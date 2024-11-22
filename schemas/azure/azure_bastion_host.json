@@ -1,0 +1,61 @@
+{
+  "table_name": "azure_bastion_host",
+  "table_description": "Azure Bastion Host",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The friendly name that identifies the bastion host."
+    },
+    {
+      "name": "id",
+      "type": "text",
+      "description": "Contains ID to identify a bastion host uniquely."
+    },
+    {
+      "name": "dns_name",
+      "type": "text",
+      "description": "FQDN for the endpoint on which bastion host is accessible."
+    },
+    {
+      "name": "etag",
+      "type": "text",
+      "description": "A unique read-only string that changes whenever the resource is updated."
+    },
+    {
+      "name": "provisioning_state",
+      "type": "text",
+      "description": "The provisioning state of the bastion host resource."
+    },
+    {
+      "name": "type",
+      "type": "text",
+      "description": "The resource type of the bastion host."
+    },
+    {
+      "name": "ip_configurations",
+      "type": "json",
+      "description": "IP configuration of the bastion host resource."
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": "ColumnDescriptionTags"
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": "ColumnDescriptionTitle"
+    },
+    {
+      "name": "region",
+      "type": "text",
+      "description": "ColumnDescriptionRegion"
+    },
+    {
+      "name": "resource_group",
+      "type": "text",
+      "description": "ColumnDescriptionResourceGroup"
+    }
+  ]
+}

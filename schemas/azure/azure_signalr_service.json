@@ -1,0 +1,116 @@
+{
+  "table_name": "azure_signalr_service",
+  "table_description": "Azure SignalR Service",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The name of the resource."
+    },
+    {
+      "name": "id",
+      "type": "text",
+      "description": "Fully qualified resource ID for the resource."
+    },
+    {
+      "name": "provisioning_state",
+      "type": "text",
+      "description": "Provisioning state of the resource. Possible values include: 'Unknown', 'Succeeded', 'Failed', 'Canceled', 'Running', 'Creating', 'Updating', 'Deleting', 'Moving'."
+    },
+    {
+      "name": "type",
+      "type": "text",
+      "description": "The type of the resource."
+    },
+    {
+      "name": "external_ip",
+      "type": "text",
+      "description": "The publicly accessible IP of the SignalR service."
+    },
+    {
+      "name": "host_name",
+      "type": "text",
+      "description": "FQDN of the SignalR service instance."
+    },
+    {
+      "name": "host_name_prefix",
+      "type": "text",
+      "description": "Prefix for the host name of the SignalR service."
+    },
+    {
+      "name": "kind",
+      "type": "text",
+      "description": "The kind of the service. Possible values include: 'SignalR', 'RawWebSockets'."
+    },
+    {
+      "name": "public_port",
+      "type": "integer",
+      "description": "The publicly accessible port of the SignalR service which is designed for browser/client side usage."
+    },
+    {
+      "name": "server_port",
+      "type": "integer",
+      "description": "The publicly accessible port of the SignalR service which is designed for customer server side usage."
+    },
+    {
+      "name": "version",
+      "type": "text",
+      "description": "Version of the SignalR resource."
+    },
+    {
+      "name": "cors",
+      "type": "json",
+      "description": "Cross-Origin Resource Sharing (CORS) settings of the resource."
+    },
+    {
+      "name": "diagnostic_settings",
+      "type": "json",
+      "description": "A list of active diagnostic settings for the SignalR service."
+    },
+    {
+      "name": "features",
+      "type": "json",
+      "description": "List of SignalR feature flags."
+    },
+    {
+      "name": "network_acls",
+      "type": "json",
+      "description": "Network ACLs of the resource."
+    },
+    {
+      "name": "private_endpoint_connections",
+      "type": "json",
+      "description": "Private endpoint connections to the SignalR resource."
+    },
+    {
+      "name": "sku",
+      "type": "json",
+      "description": "The billing information of the resource."
+    },
+    {
+      "name": "upstream",
+      "type": "json",
+      "description": "Upstream settings when the Azure SignalR is in server-less mode."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": "ColumnDescriptionTitle"
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": "ColumnDescriptionTags"
+    },
+    {
+      "name": "region",
+      "type": "text",
+      "description": "ColumnDescriptionRegion"
+    },
+    {
+      "name": "resource_group",
+      "type": "text",
+      "description": "ColumnDescriptionResourceGroup"
+    }
+  ]
+}

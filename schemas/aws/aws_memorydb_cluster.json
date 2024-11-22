@@ -1,0 +1,26 @@
+{
+  "table_name": "aws_memorydb_cluster",
+  "table_description": "AWS MemoryDb Cluster",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The name of the cluster."
+    },
+    {
+      "name": "arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) of the cluster"
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": ""
+    }
+  ]
+}

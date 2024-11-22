@@ -1,0 +1,61 @@
+{
+  "table_name": "aws_rds_db_event_subscription",
+  "table_description": "AWS RDS DB Event Subscription",
+  "columns": [
+    {
+      "name": "cust_subscription_id",
+      "type": "text",
+      "description": "The RDS event notification subscription Id."
+    },
+    {
+      "name": "customer_aws_id",
+      "type": "text",
+      "description": "The AWS customer account associated with the RDS event notification subscription."
+    },
+    {
+      "name": "arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) for the event subscription."
+    },
+    {
+      "name": "status",
+      "type": "text",
+      "description": "The status of the RDS event notification subscription, it can be one of the following: creating | modifying | deleting | active | no-permission | topic-not-exist."
+    },
+    {
+      "name": "enabled",
+      "type": "boolean",
+      "description": "A Boolean value indicating if the subscription is enabled. True indicates the subscription is enabled."
+    },
+    {
+      "name": "sns_topic_arn",
+      "type": "text",
+      "description": "The topic ARN of the RDS event notification subscription."
+    },
+    {
+      "name": "source_type",
+      "type": "text",
+      "description": "The source type for the RDS event notification subscription."
+    },
+    {
+      "name": "subscription_creation_time",
+      "type": "timestamp with time zone",
+      "description": "The time the RDS event notification subscription was created."
+    },
+    {
+      "name": "event_categories_list",
+      "type": "json",
+      "description": "A list of event categories for the RDS event notification subscription."
+    },
+    {
+      "name": "source_ids_list",
+      "type": "json",
+      "description": "A list of source IDs for the RDS event notification subscription."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    }
+  ]
+}

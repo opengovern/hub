@@ -1,0 +1,96 @@
+{
+  "table_name": "aws_ebs_snapshot",
+  "table_description": "AWS EBS Snapshot",
+  "columns": [
+    {
+      "name": "snapshot_id",
+      "type": "text",
+      "description": "The ID of the snapshot. Each snapshot receives a unique identifier when it is created."
+    },
+    {
+      "name": "arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) specifying the snapshot."
+    },
+    {
+      "name": "state",
+      "type": "text",
+      "description": "The snapshot state."
+    },
+    {
+      "name": "volume_size",
+      "type": "integer",
+      "description": "The size of the volume, in GiB."
+    },
+    {
+      "name": "volume_id",
+      "type": "text",
+      "description": "The ID of the volume that was used to create the snapshot. Snapshots created by the CopySnapshot action have an arbitrary volume ID that should not be used for any purpose."
+    },
+    {
+      "name": "encrypted",
+      "type": "boolean",
+      "description": "Indicates whether the snapshot is encrypted."
+    },
+    {
+      "name": "start_time",
+      "type": "timestamp with time zone",
+      "description": "The time stamp when the snapshot was initiated."
+    },
+    {
+      "name": "description",
+      "type": "text",
+      "description": "The description for the snapshot."
+    },
+    {
+      "name": "kms_key_id",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) of the AWS Key Management Service (AWS KMS) customer master key (CMK) that was used to protect the volume encryption key for the parent volume."
+    },
+    {
+      "name": "data_encryption_key_id",
+      "type": "text",
+      "description": "The data encryption key identifier for the snapshot. This value is a unique identifier that corresponds to the data encryption key that was used to encrypt the original volume or snapshot copy. Because data encryption keys are inherited by volumes created from snapshots, and vice versa, if snapshots share the same data encryption key identifier, then they belong to the same volume/snapshot lineage."
+    },
+    {
+      "name": "progress",
+      "type": "text",
+      "description": "The progress of the snapshot, as a percentage."
+    },
+    {
+      "name": "state_message",
+      "type": "text",
+      "description": "Encrypted Amazon EBS snapshots are copied asynchronously. If a snapshot copy operation fails this field displays error state details to help you diagnose why the error occurred."
+    },
+    {
+      "name": "owner_alias",
+      "type": "text",
+      "description": "The AWS owner alias, from an Amazon-maintained list (amazon). This is not the user-configured AWS account alias set using the IAM console."
+    },
+    {
+      "name": "owner_id",
+      "type": "text",
+      "description": "The AWS account ID of the EBS snapshot owner."
+    },
+    {
+      "name": "create_volume_permissions",
+      "type": "json",
+      "description": "The users and groups that have the permissions for creating volumes from the snapshot."
+    },
+    {
+      "name": "tags_src",
+      "type": "json",
+      "description": "A list of tags assigned to the snapshot."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": ""
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "table_name": "aws_cloudtrail_import",
+  "table_description": "AWS CloudTrail Import",
+  "columns": [
+    {
+      "name": "import_id",
+      "type": "text",
+      "description": "The ID of the import."
+    },
+    {
+      "name": "created_timestamp",
+      "type": "timestamp with time zone",
+      "description": "The timestamp of the import's creation."
+    },
+    {
+      "name": "import_status",
+      "type": "text",
+      "description": "The status of the import."
+    },
+    {
+      "name": "end_event_time",
+      "type": "timestamp with time zone",
+      "description": "Used with EndEventTime to bound a StartImport request, and limit imported trail events to only those events logged within a specified time period."
+    },
+    {
+      "name": "start_event_time",
+      "type": "timestamp with time zone",
+      "description": "Used with StartEventTime to bound a StartImport request, and limit imported trail events to only those events logged within a specified time period."
+    },
+    {
+      "name": "updated_timestamp",
+      "type": "timestamp with time zone",
+      "description": "The timestamp of the import's last update."
+    },
+    {
+      "name": "destinations",
+      "type": "json",
+      "description": "The ARN of the destination event data store."
+    },
+    {
+      "name": "import_source",
+      "type": "json",
+      "description": "The source S3 bucket."
+    },
+    {
+      "name": "import_statistics",
+      "type": "json",
+      "description": "Provides statistics for the import."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    }
+  ]
+}

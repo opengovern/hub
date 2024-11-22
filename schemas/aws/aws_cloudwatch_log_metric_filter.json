@@ -1,0 +1,46 @@
+{
+  "table_name": "aws_cloudwatch_log_metric_filter",
+  "table_description": "AWS CloudWatch Log Metric Filter",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The name of the metric filter"
+    },
+    {
+      "name": "log_group_name",
+      "type": "text",
+      "description": "The name of the log group"
+    },
+    {
+      "name": "creation_time",
+      "type": "timestamp with time zone",
+      "description": "The creation time of the metric filter"
+    },
+    {
+      "name": "filter_pattern",
+      "type": "text",
+      "description": "A symbolic description of how CloudWatch Logs should interpret the data in each log event"
+    },
+    {
+      "name": "metric_transformation_name",
+      "type": "text",
+      "description": "The name of the CloudWatch metric"
+    },
+    {
+      "name": "metric_transformation_namespace",
+      "type": "text",
+      "description": "A custom namespace to contain metric in CloudWatch. Namespaces are used to group together metrics that are similar"
+    },
+    {
+      "name": "metric_transformation_value",
+      "type": "text",
+      "description": "The value to publish to the CloudWatch metric when a filter pattern matches a log event"
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    }
+  ]
+}

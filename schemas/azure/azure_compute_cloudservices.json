@@ -1,0 +1,26 @@
+{
+  "table_name": "azure_compute_cloudservices",
+  "table_description": "Azure Compute CloudServices",
+  "columns": [
+    {
+      "name": "id",
+      "type": "text",
+      "description": "The id of the cloudservices."
+    },
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The name of the cloudservices."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": "ColumnDescriptionTitle"
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": "ColumnDescriptionTags"
+    }
+  ]
+}

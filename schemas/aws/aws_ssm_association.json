@@ -1,0 +1,131 @@
+{
+  "table_name": "aws_ssm_association",
+  "table_description": "AWS SSM Association",
+  "columns": [
+    {
+      "name": "association_id",
+      "type": "text",
+      "description": "The ID created by the system when you create an association."
+    },
+    {
+      "name": "association_name",
+      "type": "text",
+      "description": "The Name of association."
+    },
+    {
+      "name": "arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) specifying the association."
+    },
+    {
+      "name": "document_name",
+      "type": "text",
+      "description": "The name of the Systems Manager document."
+    },
+    {
+      "name": "date",
+      "type": "timestamp with time zone",
+      "description": "The date when the association was made."
+    },
+    {
+      "name": "compliance_severity",
+      "type": "text",
+      "description": "A cron expression that specifies a schedule when the association runs."
+    },
+    {
+      "name": "apply_only_at_cron_interval",
+      "type": "boolean",
+      "description": "By default, when you create a new associations, the system runs it immediately after it is created and then according to the schedule you specified. Specify this option if you don't want an association to run immediately after you create it. This parameter is not supported for rate expressions."
+    },
+    {
+      "name": "association_version",
+      "type": "text",
+      "description": "The association version."
+    },
+    {
+      "name": "automation_target_parameter_name",
+      "type": "text",
+      "description": "Specify the target for the association. This target is required for associations that use an Automation document and target resources by using rate controls."
+    },
+    {
+      "name": "document_version",
+      "type": "text",
+      "description": "The version of the document used in the association."
+    },
+    {
+      "name": "instance_id",
+      "type": "text",
+      "description": "The ID of the instance."
+    },
+    {
+      "name": "last_execution_date",
+      "type": "timestamp with time zone",
+      "description": "The date on which the association was last run."
+    },
+    {
+      "name": "last_successful_execution_date",
+      "type": "timestamp with time zone",
+      "description": "The last date on which the association was successfully run."
+    },
+    {
+      "name": "last_update_association_date",
+      "type": "timestamp with time zone",
+      "description": "The date when the association was last updated."
+    },
+    {
+      "name": "schedule_expression",
+      "type": "text",
+      "description": "A cron expression that specifies a schedule when the association runs."
+    },
+    {
+      "name": "max_concurrency",
+      "type": "text",
+      "description": "The maximum number of targets allowed to run the association at the same time."
+    },
+    {
+      "name": "max_errors",
+      "type": "text",
+      "description": "The number of errors that are allowed before the system stops sending requests to run the association on additional targets."
+    },
+    {
+      "name": "sync_compliance",
+      "type": "text",
+      "description": "The mode for generating association compliance. You can specify AUTO or MANUAL."
+    },
+    {
+      "name": "overview",
+      "type": "json",
+      "description": "Information about the association."
+    },
+    {
+      "name": "output_location",
+      "type": "json",
+      "description": "An S3 bucket where you want to store the output details of the request."
+    },
+    {
+      "name": "parameters",
+      "type": "json",
+      "description": "A description of the parameters for a document."
+    },
+    {
+      "name": "status",
+      "type": "text",
+      "description": "The status of the association. Status can be: Pending, Success, or Failed."
+    },
+    {
+      "name": "targets",
+      "type": "json",
+      "description": "A cron expression that specifies a schedule when the association runs."
+    },
+    {
+      "name": "target_locations",
+      "type": "json",
+      "description": "The combination of AWS Regions and AWS accounts where you want to run the association."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    }
+  ]
+}

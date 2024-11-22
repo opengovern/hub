@@ -1,0 +1,41 @@
+{
+  "table_name": "aws_ec2_key_pair",
+  "table_description": "AWS EC2 Key Pair",
+  "columns": [
+    {
+      "name": "key_name",
+      "type": "text",
+      "description": "The name of the key pair"
+    },
+    {
+      "name": "key_pair_id",
+      "type": "text",
+      "description": "The ID of the key pair"
+    },
+    {
+      "name": "key_fingerprint",
+      "type": "text",
+      "description": "If key pair was created using CreateKeyPair, this is the SHA-1 digest of the DER encoded private key. If key pair was created using ImportKeyPair to provide AWS the public key, this is the MD5 public key fingerprint as specified in section 4 of RFC4716"
+    },
+    {
+      "name": "tags_src",
+      "type": "json",
+      "description": "A list of tags assigned to the key pair"
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": ""
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    },
+    {
+      "name": "create_time",
+      "type": "timestamp with time zone",
+      "description": "The time that the keypair was created or imported"
+    }
+  ]
+}

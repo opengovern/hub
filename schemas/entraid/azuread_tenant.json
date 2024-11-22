@@ -1,0 +1,51 @@
+{
+  "table_name": "azuread_tenant",
+  "table_description": "Represents an Azure AD Tenant.",
+  "columns": [
+    {
+      "name": "tenant_id",
+      "type": "text",
+      "description": "The unique identifier for the Tenant."
+    },
+    {
+      "name": "display_name",
+      "type": "text",
+      "description": "The name displayed in the address book for the Tenant."
+    },
+    {
+      "name": "tenant_type",
+      "type": "text",
+      "description": "The type of the Tenant."
+    },
+    {
+      "name": "created_date_time",
+      "type": "timestamp with time zone",
+      "description": "The creation time for the Tenant."
+    },
+    {
+      "name": "verified_domains",
+      "type": "json",
+      "description": "Tenant verified domains."
+    },
+    {
+      "name": "on_premises_sync_enabled",
+      "type": "boolean",
+      "description": "Tenant verified domains."
+    },
+    {
+      "name": "metadata",
+      "type": "text",
+      "description": "Metadata of the Azure resource"
+    },
+    {
+      "name": "og_account_id",
+      "type": "text",
+      "description": "The Platform Account ID in which the resource is located."
+    },
+    {
+      "name": "og_resource_id",
+      "type": "text",
+      "description": "The unique ID of the resource in opengovernance."
+    }
+  ]
+}

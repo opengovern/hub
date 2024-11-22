@@ -1,0 +1,61 @@
+{
+  "table_name": "digitalocean_firewall",
+  "table_description": "DigitalOcean Cloud Firewalls are a network-based, stateful firewall service for Droplets provided at no additional cost. Cloud firewalls block all traffic that isn’t expressly permitted by a rule.",
+  "columns": [
+    {
+      "name": "id",
+      "type": "text",
+      "description": "The unique universal identifier of this firewall."
+    },
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The name of the Firewall."
+    },
+    {
+      "name": "created_at",
+      "type": "timestamp with time zone",
+      "description": "A time value given in ISO8601 combined date and time format that represents when the Firewall was created."
+    },
+    {
+      "name": "status",
+      "type": "text",
+      "description": "A status string indicating the current state of the Firewall."
+    },
+    {
+      "name": "urn",
+      "type": "text",
+      "description": "The uniform resource name (URN) for the Firewall."
+    },
+    {
+      "name": "droplet_ids",
+      "type": "json",
+      "description": "The list of the IDs of the Droplets assigned to the Firewall."
+    },
+    {
+      "name": "inbound_rules",
+      "type": "json",
+      "description": "The inbound access rule block for the Firewall."
+    },
+    {
+      "name": "outbound_rules",
+      "type": "json",
+      "description": "The outbound access rule block for the Firewall."
+    },
+    {
+      "name": "pending_changes",
+      "type": "json",
+      "description": "An list of object containing the fields, `droplet_id`, `removing`, and `status`. It is provided to detail exactly which Droplets are having their security policies updated. When empty, all changes have been successfully applied."
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": ""
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    }
+  ]
+}

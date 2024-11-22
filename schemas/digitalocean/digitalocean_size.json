@@ -1,0 +1,61 @@
+{
+  "table_name": "digitalocean_size",
+  "table_description": "The sizes objects represent different packages of hardware resources that can be used for Droplets. This includes the amount of RAM, the number of virtual CPUs, disk space, and transfer. The size object also includes the pricing details and the regions that the size is available in.",
+  "columns": [
+    {
+      "name": "slug",
+      "type": "text",
+      "description": "A unique slug identifier for the size."
+    },
+    {
+      "name": "available",
+      "type": "boolean",
+      "description": "This is a boolean value that represents whether new Droplets can be created with this size."
+    },
+    {
+      "name": "disk",
+      "type": "integer",
+      "description": "The amount of disk space set aside for Droplets of this size. The value is represented in gigabytes."
+    },
+    {
+      "name": "memory",
+      "type": "integer",
+      "description": "The amount of RAM allocated to Droplets created of this size. The value is represented in megabytes."
+    },
+    {
+      "name": "price_hourly",
+      "type": "double precision",
+      "description": "This describes the price of the Droplet size as measured hourly. The value is measured in US dollars."
+    },
+    {
+      "name": "price_monthly",
+      "type": "double precision",
+      "description": "This attribute describes the monthly cost of this Droplet size if the Droplet is kept for an entire month. The value is measured in US dollars."
+    },
+    {
+      "name": "regions",
+      "type": "json",
+      "description": "An array containing the region slugs where this size is available for Droplet creates."
+    },
+    {
+      "name": "transfer",
+      "type": "double precision",
+      "description": "The amount of transfer bandwidth that is available for Droplets created in this size. This only counts traffic on the public interface. The value is given in terabytes."
+    },
+    {
+      "name": "vcpus",
+      "type": "integer",
+      "description": "The integer of number CPUs allocated to Droplets of this size."
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": ""
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    }
+  ]
+}

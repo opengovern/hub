@@ -1,0 +1,76 @@
+{
+  "table_name": "aws_cloudsearch_domain",
+  "table_description": "AWS CloudSearch Domain",
+  "columns": [
+    {
+      "name": "domain_name",
+      "type": "text",
+      "description": "A string that represents the name of a domain."
+    },
+    {
+      "name": "domain_id",
+      "type": "text",
+      "description": "An internally generated unique identifier for a domain."
+    },
+    {
+      "name": "arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) of the search domain."
+    },
+    {
+      "name": "created",
+      "type": "boolean",
+      "description": "True if the search domain is created."
+    },
+    {
+      "name": "deleted",
+      "type": "boolean",
+      "description": "True if the search domain has been deleted."
+    },
+    {
+      "name": "processing",
+      "type": "boolean",
+      "description": "True if processing is being done to activate the current domain configuration."
+    },
+    {
+      "name": "requires_index_documents",
+      "type": "boolean",
+      "description": "True if Index Documents need to be called to activate the current domain configuration."
+    },
+    {
+      "name": "search_instance_count",
+      "type": "integer",
+      "description": "The number of search instances that are available to process search requests."
+    },
+    {
+      "name": "search_instance_type",
+      "type": "text",
+      "description": "The instance type that is being used to process search requests."
+    },
+    {
+      "name": "search_partition_count",
+      "type": "integer",
+      "description": "The number of partitions across which the search index is spread."
+    },
+    {
+      "name": "doc_service",
+      "type": "json",
+      "description": "The service endpoint for updating documents in a search domain."
+    },
+    {
+      "name": "limits",
+      "type": "json",
+      "description": "Limit details for a search domain."
+    },
+    {
+      "name": "search_service",
+      "type": "json",
+      "description": "The service endpoint for requesting search results from a search domain."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    }
+  ]
+}

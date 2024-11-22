@@ -1,0 +1,36 @@
+{
+  "table_name": "azure_recovery_services_backup_policy",
+  "table_description": "Azure Recovery Services Backup Policy",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The friendly name that identifies the table service"
+    },
+    {
+      "name": "id",
+      "type": "text",
+      "description": "Contains ID to identify a table service uniquely"
+    },
+    {
+      "name": "vault_name",
+      "type": "text",
+      "description": "Backup policy vault name"
+    },
+    {
+      "name": "properties",
+      "type": "json",
+      "description": "Backup policy properties"
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": "ColumnDescriptionTitle"
+    },
+    {
+      "name": "resource_group",
+      "type": "text",
+      "description": "ColumnDescriptionResourceGroup"
+    }
+  ]
+}

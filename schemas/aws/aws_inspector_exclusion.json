@@ -1,0 +1,41 @@
+{
+  "table_name": "aws_inspector_exclusion",
+  "table_description": "AWS Inspector Exclusion",
+  "columns": [
+    {
+      "name": "arn",
+      "type": "text",
+      "description": "The ARN that specifies the exclusion."
+    },
+    {
+      "name": "assessment_run_arn",
+      "type": "text",
+      "description": "The ARN that specifies the assessment run, the exclusion belongs to."
+    },
+    {
+      "name": "attributes",
+      "type": "json",
+      "description": "The system-defined attributes for the exclusion."
+    },
+    {
+      "name": "description",
+      "type": "text",
+      "description": "The description of the exclusion."
+    },
+    {
+      "name": "recommendation",
+      "type": "text",
+      "description": "The recommendation for the exclusion."
+    },
+    {
+      "name": "scopes",
+      "type": "json",
+      "description": "The AWS resources for which the exclusion pertains."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    }
+  ]
+}

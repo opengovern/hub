@@ -1,0 +1,61 @@
+{
+  "table_name": "aws_route53_health_check",
+  "table_description": "AWS Route53 Health Check",
+  "columns": [
+    {
+      "name": "id",
+      "type": "text",
+      "description": "The identifier that Amazon Route 53 assigned to the health check."
+    },
+    {
+      "name": "caller_reference",
+      "type": "text",
+      "description": "A unique string that you specified when you created the health check."
+    },
+    {
+      "name": "health_check_version",
+      "type": "integer",
+      "description": "The version of the health check."
+    },
+    {
+      "name": "linked_service_principal",
+      "type": "text",
+      "description": "If the health check was created by another service, the service that created the resource."
+    },
+    {
+      "name": "linked_service_description",
+      "type": "text",
+      "description": "If the health check was created by another service, an configurationtional description that can be provided by the other service."
+    },
+    {
+      "name": "cloud_watch_alarm_configuration",
+      "type": "json",
+      "description": "A complex type that contains information about the CloudWatch alarm that Amazon Route 53 is monitoring for this health check."
+    },
+    {
+      "name": "health_check_config",
+      "type": "json",
+      "description": "A complex type that contains detailed information about one health check."
+    },
+    {
+      "name": "health_check_status",
+      "type": "json",
+      "description": "A list that contains one HealthCheckObservation element for each Amazon Route 53 health checker that is reporting a status about the health check endpoint."
+    },
+    {
+      "name": "tags_src",
+      "type": "json",
+      "description": ""
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": ""
+    }
+  ]
+}

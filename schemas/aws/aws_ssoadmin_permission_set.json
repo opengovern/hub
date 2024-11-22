@@ -1,0 +1,56 @@
+{
+  "table_name": "aws_ssoadmin_permission_set",
+  "table_description": "AWS SSO Permission Set",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The name of the permission set."
+    },
+    {
+      "name": "arn",
+      "type": "text",
+      "description": "The ARN of the permission set."
+    },
+    {
+      "name": "created_date",
+      "type": "timestamp with time zone",
+      "description": "The date that the permission set was created."
+    },
+    {
+      "name": "description",
+      "type": "text",
+      "description": "The description of the permission set."
+    },
+    {
+      "name": "instance_arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) of the SSO Instance under which the operation will be executed."
+    },
+    {
+      "name": "relay_state",
+      "type": "text",
+      "description": "Used to redirect users within the application during the federation authentication process."
+    },
+    {
+      "name": "session_duration",
+      "type": "text",
+      "description": "The length of time that the application user sessions are valid for in the ISO-8601 standard."
+    },
+    {
+      "name": "tags_src",
+      "type": "json",
+      "description": ""
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": ""
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    }
+  ]
+}

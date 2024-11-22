@@ -1,0 +1,26 @@
+{
+  "table_name": "azure_synapse_workspacessqlpools",
+  "table_description": "Azure Synapse WorkspacesSqlPools",
+  "columns": [
+    {
+      "name": "id",
+      "type": "text",
+      "description": "The id of the workspacessqlpools."
+    },
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The name of the workspacessqlpools."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": "ColumnDescriptionTitle"
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": "ColumnDescriptionTags"
+    }
+  ]
+}

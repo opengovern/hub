@@ -1,0 +1,31 @@
+{
+  "table_name": "aws_ssoadmin_account_assignment",
+  "table_description": "AWS SSO Account Assignment",
+  "columns": [
+    {
+      "name": "target_account_id",
+      "type": "text",
+      "description": "The identifier of the AWS account from which to list the assignments."
+    },
+    {
+      "name": "instance_arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) of the SSO Instance under which the operation will be executed."
+    },
+    {
+      "name": "permission_set_arn",
+      "type": "text",
+      "description": "The ARN of the permission set from which to list assignments."
+    },
+    {
+      "name": "principal_type",
+      "type": "text",
+      "description": "The entity type for which the assignment will be created."
+    },
+    {
+      "name": "principal_id",
+      "type": "text",
+      "description": "An identifier for an object in IAM Identity Center, such as a user or group."
+    }
+  ]
+}

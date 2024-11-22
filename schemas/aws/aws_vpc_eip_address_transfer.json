@@ -1,0 +1,41 @@
+{
+  "table_name": "aws_vpc_eip_address_transfer",
+  "table_description": "AWS VPC Elastic IP Address Transfer",
+  "columns": [
+    {
+      "name": "allocation_id",
+      "type": "text",
+      "description": "The allocation ID of an Elastic IP address."
+    },
+    {
+      "name": "address_transfer_status",
+      "type": "text",
+      "description": "The Elastic IP address transfer status."
+    },
+    {
+      "name": "public_ip",
+      "type": "text",
+      "description": "The Elastic IP address being transferred."
+    },
+    {
+      "name": "transfer_account_id",
+      "type": "text",
+      "description": "The ID of the account that you want to transfer the Elastic IP address to."
+    },
+    {
+      "name": "transfer_offer_accepted_timestamp",
+      "type": "timestamp with time zone",
+      "description": "The timestamp when the Elastic IP address transfer was accepted."
+    },
+    {
+      "name": "transfer_offer_expiration_timestamp",
+      "type": "timestamp with time zone",
+      "description": "The timestamp when the Elastic IP address transfer expired."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    }
+  ]
+}

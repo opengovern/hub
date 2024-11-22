@@ -1,0 +1,96 @@
+{
+  "table_name": "aws_iam_user",
+  "table_description": "AWS IAM User",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The friendly name identifying the user."
+    },
+    {
+      "name": "user_id",
+      "type": "text",
+      "description": "The stable and unique string identifying the user."
+    },
+    {
+      "name": "path",
+      "type": "text",
+      "description": "The path to the user."
+    },
+    {
+      "name": "arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) that identifies the user."
+    },
+    {
+      "name": "create_date",
+      "type": "timestamp with time zone",
+      "description": "The date and time, when the user was created."
+    },
+    {
+      "name": "password_last_used",
+      "type": "timestamp with time zone",
+      "description": "The date and time, when the user's password was last used to sign in to an AWS website."
+    },
+    {
+      "name": "permissions_boundary_arn",
+      "type": "text",
+      "description": "The ARN of the policy used to set the permissions boundary for the user."
+    },
+    {
+      "name": "permissions_boundary_type",
+      "type": "text",
+      "description": ""
+    },
+    {
+      "name": "mfa_enabled",
+      "type": "boolean",
+      "description": "The MFA status of the user."
+    },
+    {
+      "name": "login_profile",
+      "type": "json",
+      "description": "Contains the user name and password create date for a user."
+    },
+    {
+      "name": "mfa_devices",
+      "type": "json",
+      "description": "A list of MFA devices attached to the user."
+    },
+    {
+      "name": "groups",
+      "type": "json",
+      "description": "A list of groups attached to the user."
+    },
+    {
+      "name": "inline_policies",
+      "type": "json",
+      "description": "A list of policy documents that are embedded as inline policies for the user."
+    },
+    {
+      "name": "inline_policies_std",
+      "type": "json",
+      "description": "Inline policies in canonical form for the user."
+    },
+    {
+      "name": "attached_policy_arns",
+      "type": "json",
+      "description": "A list of managed policies attached to the user."
+    },
+    {
+      "name": "tags_src",
+      "type": "json",
+      "description": "A list of tags that are attached to the user."
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": ""
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    }
+  ]
+}

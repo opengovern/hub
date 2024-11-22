@@ -1,0 +1,106 @@
+{
+  "table_name": "aws_ssm_managed_instance",
+  "table_description": "AWS SSM Managed Instance",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The name assigned to an on-premises server or virtual machine (VM) when it is activated as a Systems Manager managed instance."
+    },
+    {
+      "name": "instance_id",
+      "type": "text",
+      "description": "The ID of the instance."
+    },
+    {
+      "name": "arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) specifying the instance."
+    },
+    {
+      "name": "resource_type",
+      "type": "text",
+      "description": "The type of instance. Instances are either EC2 instances or managed instances."
+    },
+    {
+      "name": "ping_status",
+      "type": "text",
+      "description": "Connection status of SSM Agent."
+    },
+    {
+      "name": "activation_id",
+      "type": "text",
+      "description": "The activation ID created by Systems Manager when the server or VM was registered."
+    },
+    {
+      "name": "agent_version",
+      "type": "text",
+      "description": "The version of SSM Agent running on your Linux instance."
+    },
+    {
+      "name": "association_status",
+      "type": "text",
+      "description": "The status of the association."
+    },
+    {
+      "name": "computer_name",
+      "type": "text",
+      "description": "The fully qualified host name of the managed instance."
+    },
+    {
+      "name": "ip_address",
+      "type": "inet",
+      "description": "The IP address of the managed instance."
+    },
+    {
+      "name": "is_latest_version",
+      "type": "boolean",
+      "description": "Indicates whether the latest version of SSM Agent is running on your Linux Managed Instance."
+    },
+    {
+      "name": "last_association_execution_date",
+      "type": "timestamp with time zone",
+      "description": "The date the association was last run."
+    },
+    {
+      "name": "last_ping_date_time",
+      "type": "timestamp with time zone",
+      "description": "The date and time when the agent last pinged the Systems Manager service."
+    },
+    {
+      "name": "last_successful_association_execution_date",
+      "type": "timestamp with time zone",
+      "description": "The last date the association was successfully run."
+    },
+    {
+      "name": "platform_name",
+      "type": "text",
+      "description": "The name of the operating system platform running on your instance."
+    },
+    {
+      "name": "platform_type",
+      "type": "text",
+      "description": "The operating system platform type."
+    },
+    {
+      "name": "platform_version",
+      "type": "text",
+      "description": "The version of the OS platform running on your instance."
+    },
+    {
+      "name": "registration_date",
+      "type": "timestamp with time zone",
+      "description": "The date the server or VM was registered with AWS as a managed instance."
+    },
+    {
+      "name": "association_overview",
+      "type": "json",
+      "description": "Information about the association."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    }
+  ]
+}

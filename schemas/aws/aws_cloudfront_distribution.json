@@ -1,0 +1,156 @@
+{
+  "table_name": "aws_cloudfront_distribution",
+  "table_description": "AWS CloudFront Distribution",
+  "columns": [
+    {
+      "name": "id",
+      "type": "text",
+      "description": "The identifier for the Distribution."
+    },
+    {
+      "name": "arn",
+      "type": "text",
+      "description": "The ARN (Amazon Resource Name) for the distribution."
+    },
+    {
+      "name": "status",
+      "type": "text",
+      "description": "The current status of the Distribution."
+    },
+    {
+      "name": "caller_reference",
+      "type": "text",
+      "description": "A unique value that ensures that the request can't be replayed."
+    },
+    {
+      "name": "comment",
+      "type": "text",
+      "description": "The comment originally specified when this Distribution was created."
+    },
+    {
+      "name": "default_root_object",
+      "type": "text",
+      "description": "The object that you want CloudFront to request from your origin."
+    },
+    {
+      "name": "domain_name",
+      "type": "text",
+      "description": "The domain name that corresponds to the Distribution."
+    },
+    {
+      "name": "enabled",
+      "type": "boolean",
+      "description": "Whether the Distribution is enabled to accept user requests for content."
+    },
+    {
+      "name": "e_tag",
+      "type": "text",
+      "description": "The current version of the configuration."
+    },
+    {
+      "name": "http_version",
+      "type": "text",
+      "description": "Specify the maximum HTTP version that you want viewers to use to communicate with CloudFront. The default value for new web Distributions is http2. Viewers that don't support HTTP/2 will automatically use an earlier version."
+    },
+    {
+      "name": "is_ipv6_enabled",
+      "type": "boolean",
+      "description": "Whether CloudFront responds to IPv6 DNS requests with an IPv6 address for your Distribution."
+    },
+    {
+      "name": "in_progress_invalidation_batches",
+      "type": "integer",
+      "description": "The number of invalidation batches currently in progress."
+    },
+    {
+      "name": "last_modified_time",
+      "type": "timestamp with time zone",
+      "description": "The date and time the Distribution was last modified."
+    },
+    {
+      "name": "price_class",
+      "type": "text",
+      "description": "A complex type that contains information about price class for this streaming Distribution."
+    },
+    {
+      "name": "web_acl_id",
+      "type": "text",
+      "description": "The Web ACL Id (if any) associated with the distribution."
+    },
+    {
+      "name": "active_trusted_key_groups",
+      "type": "json",
+      "description": "CloudFront automatically adds this field to the response if you’ve configured a cache behavior in this distribution to serve private content using key groups."
+    },
+    {
+      "name": "active_trusted_signers",
+      "type": "json",
+      "description": "A list of AWS accounts and the identifiers of active CloudFront key pairs in each account that CloudFront can use to verify the signatures of signed URLs and signed cookies."
+    },
+    {
+      "name": "aliases",
+      "type": "json",
+      "description": "A complex type that contains information about CNAMEs (alternate domain names),if any, for this distribution."
+    },
+    {
+      "name": "alias_icp_recordals",
+      "type": "json",
+      "description": "AWS services in China customers must file for an Internet Content Provider (ICP) recordal if they want to serve content publicly on an alternate domain name, also known as a CNAME, that they've added to CloudFront. AliasICPRecordal provides the ICP recordal status for CNAMEs associated with distributions."
+    },
+    {
+      "name": "cache_behaviors",
+      "type": "json",
+      "description": "The number of cache behaviors for this Distribution."
+    },
+    {
+      "name": "custom_error_responses",
+      "type": "json",
+      "description": "A complex type that contains zero or more CustomErrorResponses elements."
+    },
+    {
+      "name": "default_cache_behavior",
+      "type": "json",
+      "description": "A complex type that describes the default cache behavior if you don't specify a CacheBehavior element or if files don't match any of the values of PathPattern in CacheBehavior elements. You must create exactly one default cache behavior."
+    },
+    {
+      "name": "logging",
+      "type": "json",
+      "description": "A complex type that controls whether access logs are written for the distribution."
+    },
+    {
+      "name": "origins",
+      "type": "json",
+      "description": "A complex type that contains information about origins for this distribution."
+    },
+    {
+      "name": "origin_groups",
+      "type": "json",
+      "description": "A complex type that contains information about origin groups for this distribution."
+    },
+    {
+      "name": "restrictions",
+      "type": "json",
+      "description": "A complex type that identifies ways in which you want to restrict distribution of your content."
+    },
+    {
+      "name": "tags_src",
+      "type": "json",
+      "description": "A list of tags assigned to the Maintenance Window"
+    },
+    {
+      "name": "viewer_certificate",
+      "type": "json",
+      "description": "A complex type that determines the distribution's SSL/TLS configuration for communicating with viewers."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": ""
+    }
+  ]
+}

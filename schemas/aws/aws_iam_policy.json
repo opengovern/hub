@@ -1,0 +1,91 @@
+{
+  "table_name": "aws_iam_policy",
+  "table_description": "AWS IAM Policy",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The friendly name that identifies the iam policy."
+    },
+    {
+      "name": "policy_id",
+      "type": "text",
+      "description": "The stable and unique string identifying the policy."
+    },
+    {
+      "name": "path",
+      "type": "text",
+      "description": "The path to the policy."
+    },
+    {
+      "name": "arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) specifying the iam policy."
+    },
+    {
+      "name": "is_aws_managed",
+      "type": "boolean",
+      "description": "Specifies whether the policy is AWS Managed or Customer Managed. If true policy is aws managed otherwise customer managed."
+    },
+    {
+      "name": "is_attachable",
+      "type": "boolean",
+      "description": "Specifies whether the policy can be attached to an IAM user, group, or role."
+    },
+    {
+      "name": "create_date",
+      "type": "timestamp with time zone",
+      "description": "The date and time, when the policy was created."
+    },
+    {
+      "name": "update_date",
+      "type": "timestamp with time zone",
+      "description": "The date and time, when the policy was last updated."
+    },
+    {
+      "name": "attachment_count",
+      "type": "integer",
+      "description": "The number of entities (users, groups, and roles) that the policy is attached to."
+    },
+    {
+      "name": "is_attached",
+      "type": "boolean",
+      "description": "Specifies whether the policy is attached to at least one IAM user, group, or role."
+    },
+    {
+      "name": "default_version_id",
+      "type": "text",
+      "description": "The identifier for the version of the policy that is set as the default version."
+    },
+    {
+      "name": "permissions_boundary_usage_count",
+      "type": "integer",
+      "description": "The number of entities (users and roles) for which the policy is used to set the permissions boundary."
+    },
+    {
+      "name": "policy",
+      "type": "json",
+      "description": "Contains the details about the policy."
+    },
+    {
+      "name": "policy_std",
+      "type": "json",
+      "description": "Contains the policy in a canonical form for easier searching."
+    },
+    {
+      "name": "tags_src",
+      "type": "json",
+      "description": "A list of tags attached with the IAM policy."
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": ""
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    }
+  ]
+}

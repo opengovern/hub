@@ -1,0 +1,71 @@
+{
+  "table_name": "aws_elastic_beanstalk_application_version",
+  "table_description": "AWS Elastic Beanstalk Application Version",
+  "columns": [
+    {
+      "name": "application_name",
+      "type": "text",
+      "description": "The name of the application to which the application version belongs."
+    },
+    {
+      "name": "application_version_arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) of the application version."
+    },
+    {
+      "name": "build_arn",
+      "type": "text",
+      "description": "Reference to the artifact from the AWS CodeBuild build."
+    },
+    {
+      "name": "date_created",
+      "type": "timestamp with time zone",
+      "description": "The creation date of the application version."
+    },
+    {
+      "name": "date_updated",
+      "type": "timestamp with time zone",
+      "description": "The last modified date of the application version."
+    },
+    {
+      "name": "description",
+      "type": "text",
+      "description": "The description of the application version."
+    },
+    {
+      "name": "status",
+      "type": "text",
+      "description": "The processing status of the application version. Reflects the state of the application version during its creation."
+    },
+    {
+      "name": "version_label",
+      "type": "text",
+      "description": "A unique identifier for the application version."
+    },
+    {
+      "name": "source_build_information",
+      "type": "json",
+      "description": "Information about the source code for the application version if the source code was retrieved from AWS CodeCommit."
+    },
+    {
+      "name": "source_bundle",
+      "type": "json",
+      "description": "The storage location of the application version's source bundle in Amazon S3."
+    },
+    {
+      "name": "tags_src",
+      "type": "json",
+      "description": "A list of tags assigned to the application."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": "A title for the resource, typically the resource name."
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": ""
+    }
+  ]
+}

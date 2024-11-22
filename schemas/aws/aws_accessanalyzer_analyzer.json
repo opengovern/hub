@@ -1,0 +1,61 @@
+{
+  "table_name": "aws_accessanalyzer_analyzer",
+  "table_description": "AWS Access Analyzer",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The name of the Analyzer."
+    },
+    {
+      "name": "arn",
+      "type": "text",
+      "description": "The ARN of the analyzer."
+    },
+    {
+      "name": "status",
+      "type": "text",
+      "description": "The status of the analyzer."
+    },
+    {
+      "name": "type",
+      "type": "text",
+      "description": "The type of analyzer, which corresponds to the zone of trust chosen for the analyzer."
+    },
+    {
+      "name": "created_at",
+      "type": "timestamp with time zone",
+      "description": "A timestamp for the time at which the analyzer was created."
+    },
+    {
+      "name": "last_resource_analyzed",
+      "type": "text",
+      "description": "The resource that was most recently analyzed by the analyzer."
+    },
+    {
+      "name": "last_resource_analyzed_at",
+      "type": "timestamp with time zone",
+      "description": "The time at which the most recently analyzed resource was analyzed."
+    },
+    {
+      "name": "status_reason",
+      "type": "text",
+      "description": "The statusReason provides more details about the current status of the analyzer."
+    },
+    {
+      "name": "findings",
+      "type": "json",
+      "description": "A list of findings retrieved from the analyzer that match the filter criteria specified, if any."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": ""
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "table_name": "aws_rds_db_parameter_group",
+  "table_description": "AWS RDS DB Parameter Group",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The friendly name to identify the DB parameter group."
+    },
+    {
+      "name": "arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) for the DB parameter group."
+    },
+    {
+      "name": "description",
+      "type": "text",
+      "description": "Provides the customer-specified description for this DB parameter group."
+    },
+    {
+      "name": "db_parameter_group_family",
+      "type": "text",
+      "description": "The name of the DB parameter group family that this DB parameter group is compatible with."
+    },
+    {
+      "name": "parameters",
+      "type": "json",
+      "description": "A list of detailed parameter for a particular DB parameter group."
+    },
+    {
+      "name": "tags_src",
+      "type": "json",
+      "description": "A list of tags attached to the DB parameter group."
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": ""
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    }
+  ]
+}

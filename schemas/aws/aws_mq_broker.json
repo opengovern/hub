@@ -1,0 +1,176 @@
+{
+  "table_name": "aws_mq_broker",
+  "table_description": "AWS MQ Broker",
+  "columns": [
+    {
+      "name": "broker_name",
+      "type": "text",
+      "description": "The broker's name."
+    },
+    {
+      "name": "broker_id",
+      "type": "text",
+      "description": "The unique ID that Amazon MQ generates for the broker."
+    },
+    {
+      "name": "arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) of the broker."
+    },
+    {
+      "name": "broker_state",
+      "type": "text",
+      "description": "The broker's status."
+    },
+    {
+      "name": "deployment_mode",
+      "type": "text",
+      "description": "The broker's deployment mode."
+    },
+    {
+      "name": "created",
+      "type": "timestamp with time zone",
+      "description": "The time when the broker was created."
+    },
+    {
+      "name": "host_instance_type",
+      "type": "text",
+      "description": "The broker's instance type."
+    },
+    {
+      "name": "authentication_strategy",
+      "type": "text",
+      "description": "The authentication strategy used to secure the broker. The default is SIMPLE."
+    },
+    {
+      "name": "data_replication_mode",
+      "type": "text",
+      "description": "Describes whether this broker is a part of a data replication pair."
+    },
+    {
+      "name": "engine_type",
+      "type": "text",
+      "description": "The type of broker engine. Currently, Amazon MQ supports ACTIVEMQ and RABBITMQ."
+    },
+    {
+      "name": "engine_version",
+      "type": "text",
+      "description": "The broker engine's version."
+    },
+    {
+      "name": "pending_authentication_strategy",
+      "type": "text",
+      "description": "The authentication strategy that will be applied when the broker is rebooted. The default is SIMPLE."
+    },
+    {
+      "name": "pending_data_replication_mode",
+      "type": "text",
+      "description": "Describes whether this broker will be a part of a data replication pair after reboot."
+    },
+    {
+      "name": "pending_engine_version",
+      "type": "text",
+      "description": "The broker engine version to upgrade to."
+    },
+    {
+      "name": "pending_host_instance_type",
+      "type": "text",
+      "description": "The broker's host instance type to upgrade to."
+    },
+    {
+      "name": "publicly_accessible",
+      "type": "boolean",
+      "description": "Enables connections from applications outside of the VPC that hosts the broker's subnets."
+    },
+    {
+      "name": "storage_type",
+      "type": "text",
+      "description": "The broker's storage type."
+    },
+    {
+      "name": "auto_minor_version_upgrade",
+      "type": "boolean",
+      "description": "Enables automatic upgrades to new minor versions for brokers, as new versions are released and supported by Amazon MQ."
+    },
+    {
+      "name": "actions_required",
+      "type": "json",
+      "description": "Actions required for a broker."
+    },
+    {
+      "name": "broker_instances",
+      "type": "json",
+      "description": "A list of information about allocated brokers."
+    },
+    {
+      "name": "configurations",
+      "type": "json",
+      "description": "The list of all revisions for the specified configuration."
+    },
+    {
+      "name": "data_replication_metadata",
+      "type": "json",
+      "description": "The replication details of the data replication-enabled broker. Only returned if dataReplicationMode is set to CRDR."
+    },
+    {
+      "name": "encryption_options",
+      "type": "json",
+      "description": "Encryption options for the broker."
+    },
+    {
+      "name": "ldap_server_metadata",
+      "type": "json",
+      "description": "The metadata of the LDAP server used to authenticate and authorize connections to the broker."
+    },
+    {
+      "name": "logs",
+      "type": "json",
+      "description": "The list of information about logs currently enabled and pending to be deployed for the specified broker."
+    },
+    {
+      "name": "pending_ldap_server_metadata",
+      "type": "json",
+      "description": "The metadata of the LDAP server that will be used to authenticate and authorize connections to the broker after it is rebooted."
+    },
+    {
+      "name": "maintenance_window_start_time",
+      "type": "json",
+      "description": "The parameters that determine the WeeklyStartTime."
+    },
+    {
+      "name": "pending_data_replication_metadata",
+      "type": "json",
+      "description": "The pending replication details of the data replication-enabled broker. Only returned if pendingDataReplicationMode is set to CRDR."
+    },
+    {
+      "name": "pending_security_groups",
+      "type": "json",
+      "description": "The list of pending security groups to authorize connections to brokers."
+    },
+    {
+      "name": "security_groups",
+      "type": "json",
+      "description": "The list of rules (1 minimum, 125 maximum) that authorize connections to brokers."
+    },
+    {
+      "name": "subnet_ids",
+      "type": "json",
+      "description": "The list of groups that define which subnets and IP ranges the broker can use from different Availability Zones."
+    },
+    {
+      "name": "users",
+      "type": "json",
+      "description": "The list of all broker usernames for the specified broker."
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": "A list of tags attached to the broker."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    }
+  ]
+}

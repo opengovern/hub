@@ -1,0 +1,21 @@
+{
+  "table_name": "aws_pricing_service_attribute",
+  "table_description": "AWS Pricing Service Attribute",
+  "columns": [
+    {
+      "name": "service_code",
+      "type": "text",
+      "description": "The service code of the AWS service."
+    },
+    {
+      "name": "attribute_name",
+      "type": "text",
+      "description": "The supported attribute names for the service."
+    },
+    {
+      "name": "attribute_values",
+      "type": "json",
+      "description": "The supported attribute values for the service and attribute name."
+    }
+  ]
+}

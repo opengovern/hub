@@ -1,0 +1,36 @@
+{
+  "table_name": "aws_api_gatewayv2_domain_name",
+  "table_description": "AWS API Gateway Version 2 Domain Name",
+  "columns": [
+    {
+      "name": "domain_name",
+      "type": "text",
+      "description": "The name of the DomainName resource"
+    },
+    {
+      "name": "api_mapping_selection_expression",
+      "type": "text",
+      "description": "The API mapping selection expression."
+    },
+    {
+      "name": "domain_name_configurations",
+      "type": "json",
+      "description": "The domain name configurations"
+    },
+    {
+      "name": "mutual_tls_authentication",
+      "type": "json",
+      "description": "The mutual TLS authentication configuration for a custom domain name"
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": ""
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    }
+  ]
+}

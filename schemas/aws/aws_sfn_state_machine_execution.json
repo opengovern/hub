@@ -1,0 +1,66 @@
+{
+  "table_name": "aws_sfn_state_machine_execution",
+  "table_description": "AWS Step Functions State Machine Execution",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The name of the execution."
+    },
+    {
+      "name": "execution_arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) that identifies the execution."
+    },
+    {
+      "name": "status",
+      "type": "text",
+      "description": "The current status of the execution."
+    },
+    {
+      "name": "input",
+      "type": "text",
+      "description": "The string that contains the JSON input data of the execution."
+    },
+    {
+      "name": "output",
+      "type": "text",
+      "description": "The JSON output data of the execution."
+    },
+    {
+      "name": "start_date",
+      "type": "timestamp with time zone",
+      "description": "The date the execution started."
+    },
+    {
+      "name": "state_machine_arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) of the executed state machine."
+    },
+    {
+      "name": "stop_date",
+      "type": "timestamp with time zone",
+      "description": "If the execution already ended, the date the execution stopped."
+    },
+    {
+      "name": "trace_header",
+      "type": "text",
+      "description": "The AWS X-Ray trace header that was passed to the execution."
+    },
+    {
+      "name": "input_details",
+      "type": "json",
+      "description": "Provides details about execution input or output."
+    },
+    {
+      "name": "output_details",
+      "type": "json",
+      "description": "Provides details about execution input or output."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "table_name": "azure_postgresql_flexible_server",
+  "table_description": "Azure PostgreSQL Flexible Server",
+  "columns": [
+    {
+      "name": "id",
+      "type": "text",
+      "description": "The id of the flexibleservers."
+    },
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The name of the flexibleservers."
+    },
+    {
+      "name": "type",
+      "type": "text",
+      "description": "The type of the resource."
+    },
+    {
+      "name": "location",
+      "type": "text",
+      "description": "The geo-location where the resource lives."
+    },
+    {
+      "name": "sku",
+      "type": "json",
+      "description": "The SKU (pricing tier) of the server."
+    },
+    {
+      "name": "server_properties",
+      "type": "json",
+      "description": "Properties of the server."
+    },
+    {
+      "name": "flexible_server_configurations",
+      "type": "json",
+      "description": "The server configurations(parameters) details of the server."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": "ColumnDescriptionTitle"
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": "ColumnDescriptionTags"
+    }
+  ]
+}

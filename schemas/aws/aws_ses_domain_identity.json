@@ -1,0 +1,46 @@
+{
+  "table_name": "aws_ses_domain_identity",
+  "table_description": "AWS SES Domain Identity",
+  "columns": [
+    {
+      "name": "identity",
+      "type": "text",
+      "description": "The domain identity."
+    },
+    {
+      "name": "arn",
+      "type": "text",
+      "description": "The ARN of the AWS SES identity."
+    },
+    {
+      "name": "verification_status",
+      "type": "text",
+      "description": "The verification status of the identity."
+    },
+    {
+      "name": "verification_token",
+      "type": "text",
+      "description": "The verification token for a domain identity."
+    },
+    {
+      "name": "dkim_attributes",
+      "type": "json",
+      "description": "The DKIM attributes for an email address or a domain."
+    },
+    {
+      "name": "identity_mail_from_domain_attributes",
+      "type": "json",
+      "description": "The custom MAIL FROM attributes for a list of identities."
+    },
+    {
+      "name": "notification_attributes",
+      "type": "json",
+      "description": "Represents the notification attributes of an identity."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    }
+  ]
+}

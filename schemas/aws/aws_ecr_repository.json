@@ -1,0 +1,101 @@
+{
+  "table_name": "aws_ecr_repository",
+  "table_description": "AWS ECR Repository",
+  "columns": [
+    {
+      "name": "repository_name",
+      "type": "text",
+      "description": "The name of the repository."
+    },
+    {
+      "name": "registry_id",
+      "type": "text",
+      "description": "The AWS account ID associated with the registry that contains the repositories to be described."
+    },
+    {
+      "name": "arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) that identifies the repository."
+    },
+    {
+      "name": "repository_uri",
+      "type": "text",
+      "description": "The URI for the repository."
+    },
+    {
+      "name": "created_at",
+      "type": "timestamp with time zone",
+      "description": "The date and time, in JavaScript date format, when the repository was created."
+    },
+    {
+      "name": "image_tag_mutability",
+      "type": "text",
+      "description": "The tag mutability setting for the repository."
+    },
+    {
+      "name": "last_evaluated_at",
+      "type": "timestamp with time zone",
+      "description": "The time stamp of the last time that the lifecycle policy was run."
+    },
+    {
+      "name": "max_results",
+      "type": "integer",
+      "description": "The maximum number of repository results returned by DescribeRepositories."
+    },
+    {
+      "name": "encryption_configuration",
+      "type": "json",
+      "description": "The encryption configuration for the repository."
+    },
+    {
+      "name": "image_details",
+      "type": "json",
+      "description": "A list of ImageDetail objects that contain data about the image."
+    },
+    {
+      "name": "repository_scanning_configuration",
+      "type": "json",
+      "description": "Gets the scanning configuration for one or more repositories."
+    },
+    {
+      "name": "image_scanning_configuration",
+      "type": "json",
+      "description": "The image scanning configuration for a repository."
+    },
+    {
+      "name": "image_scanning_findings",
+      "type": "json",
+      "description": "Scan findings for an image."
+    },
+    {
+      "name": "lifecycle_policy",
+      "type": "json",
+      "description": "The JSON lifecycle policy text."
+    },
+    {
+      "name": "policy",
+      "type": "json",
+      "description": "The JSON repository policy text associated with the repository."
+    },
+    {
+      "name": "policy_std",
+      "type": "json",
+      "description": "Contains the policy in a canonical form for easier searching."
+    },
+    {
+      "name": "tags_src",
+      "type": "json",
+      "description": "A list of tags assigned to the Repository."
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": ""
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    }
+  ]
+}

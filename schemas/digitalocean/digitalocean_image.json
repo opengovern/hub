@@ -1,0 +1,91 @@
+{
+  "table_name": "digitalocean_image",
+  "table_description": "A DigitalOcean image can be used to create a Droplet and may come in a number of flavors. Currently, there are five types of images: snapshots, backups, applications, distributions, and custom images.",
+  "columns": [
+    {
+      "name": "id",
+      "type": "integer",
+      "description": "A unique number that can be used to identify and reference a specific image."
+    },
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The display name that has been given to an image. This is what is shown in the control panel and is generally a descriptive title for the image in question."
+    },
+    {
+      "name": "created_at",
+      "type": "timestamp with time zone",
+      "description": "Time when the image was created."
+    },
+    {
+      "name": "description",
+      "type": "text",
+      "description": "An optional free-form text field to describe an image."
+    },
+    {
+      "name": "distribution",
+      "type": "text",
+      "description": "This attribute describes the base distribution used for this image. For custom images, this is user defined."
+    },
+    {
+      "name": "error_message",
+      "type": "text",
+      "description": "A string containing information about errors that may occur when importing a custom image."
+    },
+    {
+      "name": "min_disk_size",
+      "type": "integer",
+      "description": "The minimum disk size in GB required for a Droplet to use this image."
+    },
+    {
+      "name": "public",
+      "type": "boolean",
+      "description": "This is a boolean value that indicates whether the image in question is public or not. An image that is public is available to all accounts. A non-public image is only accessible from your account."
+    },
+    {
+      "name": "regions",
+      "type": "json",
+      "description": "Array of region slugs where the image is available."
+    },
+    {
+      "name": "size_gigabytes",
+      "type": "integer",
+      "description": "The size of the image in gigabytes."
+    },
+    {
+      "name": "slug",
+      "type": "text",
+      "description": "A uniquely identifying string that is associated with each of the DigitalOcean-provided public images. These can be used to reference a public image as an alternative to the numeric id."
+    },
+    {
+      "name": "status",
+      "type": "text",
+      "description": "A status string indicating the state of a custom image. This may be \\\"NEW\\\", \\\"available\\\", \\\"pending\\\", or \\\"deleted\\\"."
+    },
+    {
+      "name": "tags_src",
+      "type": "json",
+      "description": "An array containing the names of the tags the image has been tagged with."
+    },
+    {
+      "name": "type",
+      "type": "text",
+      "description": "Describes the kind of image. It may be one of \\\"snapshot\\\", \\\"backup\\\", or \\\"custom\\\"."
+    },
+    {
+      "name": "urn",
+      "type": "text",
+      "description": "The uniform resource name (URN) for the volume."
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": ""
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    }
+  ]
+}

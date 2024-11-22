@@ -1,0 +1,66 @@
+{
+  "table_name": "digitalocean_project",
+  "table_description": "Projects allow you to organize your resources into groups that fit the way you work. You can group resources (like Droplets, Spaces, load balancers, domains, and floating IPs) in ways that align with the applications you host on DigitalOcean.",
+  "columns": [
+    {
+      "name": "id",
+      "type": "text",
+      "description": "The unique universal identifier of this project."
+    },
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The globally unique human-readable name for the project."
+    },
+    {
+      "name": "created_at",
+      "type": "timestamp with time zone",
+      "description": "Time when the project was created."
+    },
+    {
+      "name": "description",
+      "type": "text",
+      "description": "The description of the project."
+    },
+    {
+      "name": "environment",
+      "type": "text",
+      "description": "The environment of the project's resources."
+    },
+    {
+      "name": "is_default",
+      "type": "boolean",
+      "description": "If true, all resources will be added to this project if no project is specified."
+    },
+    {
+      "name": "owner_id",
+      "type": "integer",
+      "description": "The integer id of the project owner."
+    },
+    {
+      "name": "owner_uuid",
+      "type": "text",
+      "description": "The unique universal identifier of the project owner."
+    },
+    {
+      "name": "purpose",
+      "type": "text",
+      "description": "The purpose of the project."
+    },
+    {
+      "name": "updated_at",
+      "type": "timestamp with time zone",
+      "description": "Time when the project was updated."
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": ""
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    }
+  ]
+}

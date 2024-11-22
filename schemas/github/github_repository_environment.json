@@ -1,0 +1,26 @@
+{
+  "table_name": "github_repository_environment",
+  "table_description": "GitHub Environments are named deployment targets, usually isolated for usage such as test, prod, staging, etc.",
+  "columns": [
+    {
+      "name": "repository_full_name",
+      "type": "text",
+      "description": "The full name of the repository (login/repo-name)."
+    },
+    {
+      "name": "id",
+      "type": "integer",
+      "description": "The ID of the environment."
+    },
+    {
+      "name": "node_id",
+      "type": "text",
+      "description": "The node ID of the environment."
+    },
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The name of the environment."
+    }
+  ]
+}

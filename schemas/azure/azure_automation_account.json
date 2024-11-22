@@ -1,0 +1,86 @@
+{
+  "table_name": "azure_automation_account",
+  "table_description": "Azure Automation Account",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The name of the resource."
+    },
+    {
+      "name": "id",
+      "type": "text",
+      "description": "Fully qualified resource ID."
+    },
+    {
+      "name": "description",
+      "type": "text",
+      "description": "The description for the account."
+    },
+    {
+      "name": "etag",
+      "type": "text",
+      "description": "Gets the etag of the resource."
+    },
+    {
+      "name": "creation_time",
+      "type": "timestamp with time zone",
+      "description": "The creation time of the account."
+    },
+    {
+      "name": "last_modified_time",
+      "type": "timestamp with time zone",
+      "description": "The last modified time of the account."
+    },
+    {
+      "name": "last_modified_by",
+      "type": "text",
+      "description": "The account last modified by."
+    },
+    {
+      "name": "type",
+      "type": "text",
+      "description": "The type of the resource."
+    },
+    {
+      "name": "state",
+      "type": "text",
+      "description": "The status of account. Possible values include: 'AccountStateOk', 'AccountStateUnavailable', 'AccountStateSuspended'."
+    },
+    {
+      "name": "sku_name",
+      "type": "text",
+      "description": "The SKU name of the account. Possible values include: 'SkuNameEnumFree', 'SkuNameEnumBasic'."
+    },
+    {
+      "name": "sku_family",
+      "type": "text",
+      "description": "The SKU family of the account."
+    },
+    {
+      "name": "sku_capacity",
+      "type": "text",
+      "description": "The SKU capacity of the account."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": "ColumnDescriptionTitle"
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": "ColumnDescriptionTags"
+    },
+    {
+      "name": "region",
+      "type": "text",
+      "description": "ColumnDescriptionRegion"
+    },
+    {
+      "name": "resource_group",
+      "type": "text",
+      "description": "ColumnDescriptionResourceGroup"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "table_name": "azure_security_center_setting",
+  "table_description": "Azure Security Center Setting",
+  "columns": [
+    {
+      "name": "id",
+      "type": "text",
+      "description": "The resource id."
+    },
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The resource name."
+    },
+    {
+      "name": "enabled",
+      "type": "boolean",
+      "description": "Data export setting status."
+    },
+    {
+      "name": "type",
+      "type": "text",
+      "description": "The resource type."
+    },
+    {
+      "name": "kind",
+      "type": "text",
+      "description": "The kind of the settings string (DataExportSettings)."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": "ColumnDescriptionTitle"
+    }
+  ]
+}

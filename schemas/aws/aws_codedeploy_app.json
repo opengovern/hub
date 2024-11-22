@@ -1,0 +1,56 @@
+{
+  "table_name": "aws_codedeploy_app",
+  "table_description": "AWS CodeDeploy Application",
+  "columns": [
+    {
+      "name": "application_id",
+      "type": "text",
+      "description": "The application ID."
+    },
+    {
+      "name": "application_name",
+      "type": "text",
+      "description": "The application name."
+    },
+    {
+      "name": "arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) specifying the application."
+    },
+    {
+      "name": "compute_platform",
+      "type": "text",
+      "description": "The destination platform type for deployment of the application (Lambda or Server)."
+    },
+    {
+      "name": "create_time",
+      "type": "timestamp with time zone",
+      "description": "The time at which the application was created."
+    },
+    {
+      "name": "github_account_name",
+      "type": "text",
+      "description": "The name for a connection to a GitHub account."
+    },
+    {
+      "name": "linked_to_github",
+      "type": "boolean",
+      "description": "True if the user has authenticated with GitHub for the specified application. Otherwise, false."
+    },
+    {
+      "name": "tags_src",
+      "type": "json",
+      "description": "A list of tag key and value pairs associated with this application."
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": ""
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    }
+  ]
+}

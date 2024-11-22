@@ -1,0 +1,56 @@
+{
+  "table_name": "aws_securityhub_product",
+  "table_description": "AWS Securityhub Product",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The name of the product."
+    },
+    {
+      "name": "product_arn",
+      "type": "text",
+      "description": "The ARN assigned to the product."
+    },
+    {
+      "name": "activation_url",
+      "type": "text",
+      "description": "The URL used to activate the product."
+    },
+    {
+      "name": "company_name",
+      "type": "text",
+      "description": "The name of the company that provides the product."
+    },
+    {
+      "name": "description",
+      "type": "text",
+      "description": "A description of the product."
+    },
+    {
+      "name": "marketplace_url",
+      "type": "text",
+      "description": "The URL for the page that contains more information about the product."
+    },
+    {
+      "name": "categories",
+      "type": "json",
+      "description": "The categories assigned to the product."
+    },
+    {
+      "name": "integration_types",
+      "type": "json",
+      "description": "The types of integration that the product supports."
+    },
+    {
+      "name": "product_subscription_resource_policy",
+      "type": "json",
+      "description": "The resource policy associated with the product."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    }
+  ]
+}

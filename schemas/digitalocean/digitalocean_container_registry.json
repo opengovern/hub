@@ -1,0 +1,36 @@
+{
+  "table_name": "digitalocean_container_registry",
+  "table_description": "DigitalOcean Container Registry",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "A globally unique name for the container registry."
+    },
+    {
+      "name": "created_at",
+      "type": "timestamp with time zone",
+      "description": "A time value given in ISO8601 combined date and time format that represents when the registry was created."
+    },
+    {
+      "name": "storage_usage_bytes",
+      "type": "integer",
+      "description": "The amount of storage used in the registry in bytes."
+    },
+    {
+      "name": "storage_usage_bytes_updated_at",
+      "type": "timestamp with time zone",
+      "description": "The time at which the storage usage was updated. Storage usage is calculated asynchronously, and may not immediately reflect pushes to the registry."
+    },
+    {
+      "name": "urn",
+      "type": "text",
+      "description": "The uniform resource name (URN) for the container registry."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    }
+  ]
+}

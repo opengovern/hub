@@ -1,0 +1,66 @@
+{
+  "table_name": "aws_codepipeline_pipeline",
+  "table_description": "AWS Codepipeline Pipeline",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The name of the pipeline."
+    },
+    {
+      "name": "arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) of the pipeline."
+    },
+    {
+      "name": "created_at",
+      "type": "timestamp with time zone",
+      "description": "The date and time the pipeline was created."
+    },
+    {
+      "name": "role_arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) for AWS CodePipeline to use to either perform actions with no actionRoleArn, or to use to assume roles for actions with an actionRoleArn."
+    },
+    {
+      "name": "updated_at",
+      "type": "timestamp with time zone",
+      "description": "The date and time of the last update to the pipeline."
+    },
+    {
+      "name": "version",
+      "type": "integer",
+      "description": "The version number of the pipeline."
+    },
+    {
+      "name": "encryption_key",
+      "type": "json",
+      "description": "The encryption key used to encrypt the data in the artifact store, such as an AWS Key Management Service (AWS KMS) key. If this is undefined, the default key for Amazon S3 is used."
+    },
+    {
+      "name": "artifact_stores",
+      "type": "json",
+      "description": "A mapping of artifactStore objects and their corresponding AWS Regions. There must be an artifact store for the pipeline Region and for each cross-region action in the pipeline."
+    },
+    {
+      "name": "stages",
+      "type": "json",
+      "description": "The stage in which to perform the action."
+    },
+    {
+      "name": "tags_src",
+      "type": "json",
+      "description": "A list of tag key and value pairs associated with this pipeline."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": ""
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "table_name": "aws_ssm_inventory",
+  "table_description": "AWS SSM Inventory",
+  "columns": [
+    {
+      "name": "id",
+      "type": "text",
+      "description": "ID of the inventory result entity."
+    },
+    {
+      "name": "type_name",
+      "type": "text",
+      "description": "The type of inventory item returned by the request."
+    },
+    {
+      "name": "capture_time",
+      "type": "timestamp with time zone",
+      "description": "The time that inventory information was collected for the managed node(s)."
+    },
+    {
+      "name": "schema_version",
+      "type": "text",
+      "description": "The inventory schema version used by the managed node(s)."
+    },
+    {
+      "name": "content",
+      "type": "json",
+      "description": "Contains all the inventory data of the item type. Results include attribute names and values."
+    },
+    {
+      "name": "schema",
+      "type": "json",
+      "description": "The inventory item schema definition. Users can use this to compose inventory query filters."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    }
+  ]
+}

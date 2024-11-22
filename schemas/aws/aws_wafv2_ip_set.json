@@ -1,0 +1,76 @@
+{
+  "table_name": "aws_wafv2_ip_set",
+  "table_description": "AWS WAFv2 IP Set",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The name of the IP set."
+    },
+    {
+      "name": "arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) of the entity."
+    },
+    {
+      "name": "id",
+      "type": "text",
+      "description": "A unique identifier for the IP set."
+    },
+    {
+      "name": "scope",
+      "type": "text",
+      "description": "Specifies the scope of the IP Set. Possible values are: 'REGIONAL' and 'CLOUDFRONT'."
+    },
+    {
+      "name": "description",
+      "type": "text",
+      "description": "A description of the IP set that helps with identification."
+    },
+    {
+      "name": "ip_address_version",
+      "type": "text",
+      "description": "Specifies the IP address type. Possible values are: 'IPV4' and 'IPV6'."
+    },
+    {
+      "name": "lock_token",
+      "type": "text",
+      "description": "A token used for optimistic locking."
+    },
+    {
+      "name": "addresses",
+      "type": "json",
+      "description": "An array of strings that specify one or more IP addresses or blocks of IP addresses in Classless Inter-Domain Routing (CIDR) notation."
+    },
+    {
+      "name": "tags_src",
+      "type": "json",
+      "description": "A list of tags associated with the resource."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": ""
+    },
+    {
+      "name": "partition",
+      "type": "text",
+      "description": "The AWS partition in which the resource is located (aws, aws-cn, or aws-us-gov)."
+    },
+    {
+      "name": "region",
+      "type": "text",
+      "description": "The AWS Region in which the resource is located."
+    },
+    {
+      "name": "account_id",
+      "type": "text",
+      "description": "The AWS Account ID in which the resource is located."
+    }
+  ]
+}

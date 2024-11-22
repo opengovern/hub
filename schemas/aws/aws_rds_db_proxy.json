@@ -1,0 +1,91 @@
+{
+  "table_name": "aws_rds_db_proxy",
+  "table_description": "AWS RDS DB Proxy",
+  "columns": [
+    {
+      "name": "db_proxy_name",
+      "type": "text",
+      "description": "The identifier for the proxy."
+    },
+    {
+      "name": "db_proxy_arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) for the proxy"
+    },
+    {
+      "name": "created_date",
+      "type": "timestamp with time zone",
+      "description": "The date and time when the proxy was first created."
+    },
+    {
+      "name": "status",
+      "type": "text",
+      "description": "The current status of this proxy."
+    },
+    {
+      "name": "debug_logging",
+      "type": "boolean",
+      "description": "Whether the proxy includes detailed information about SQL statements in its logs."
+    },
+    {
+      "name": "endpoint",
+      "type": "text",
+      "description": "The endpoint that you can use to connect to the DB proxy."
+    },
+    {
+      "name": "engine_family",
+      "type": "text",
+      "description": "The kinds of databases that the proxy can connect to."
+    },
+    {
+      "name": "idle_client_timeout",
+      "type": "integer",
+      "description": "The number of seconds a connection to the proxy can have no activity before the proxy drops the client connection."
+    },
+    {
+      "name": "require_tls",
+      "type": "boolean",
+      "description": "Indicates whether Transport Layer Security (TLS) encryption is required for connections to the proxy."
+    },
+    {
+      "name": "role_arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) for the IAM role that the proxy uses to access Amazon Secrets Manager."
+    },
+    {
+      "name": "updated_date",
+      "type": "timestamp with time zone",
+      "description": "The date and time when the proxy was last updated."
+    },
+    {
+      "name": "vpc_id",
+      "type": "text",
+      "description": "Provides the VPC ID of the DB proxy."
+    },
+    {
+      "name": "auth",
+      "type": "json",
+      "description": "One or more data structures specifying the authorization mechanism to connect to the associated RDS DB instance or Aurora DB cluster."
+    },
+    {
+      "name": "vpc_security_group_ids",
+      "type": "json",
+      "description": "Provides a list of VPC security groups that the proxy belongs to."
+    },
+    {
+      "name": "vpc_subnet_ids",
+      "type": "json",
+      "description": "The EC2 subnet IDs for the proxy."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": ""
+    }
+  ]
+}

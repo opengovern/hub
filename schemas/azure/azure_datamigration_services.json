@@ -1,0 +1,26 @@
+{
+  "table_name": "azure_datamigration_services",
+  "table_description": "Azure DataMigration Services",
+  "columns": [
+    {
+      "name": "id",
+      "type": "text",
+      "description": "The id of the services."
+    },
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The name of the services."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": "ColumnDescriptionTitle"
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": "ColumnDescriptionTags"
+    }
+  ]
+}

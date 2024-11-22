@@ -1,0 +1,201 @@
+{
+  "table_name": "aws_ecs_task",
+  "table_description": "AWS ECS Task",
+  "columns": [
+    {
+      "name": "task_arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) of the task."
+    },
+    {
+      "name": "container_instance_arn",
+      "type": "text",
+      "description": "The ARN of the container instances that host the task."
+    },
+    {
+      "name": "cluster_name",
+      "type": "text",
+      "description": "A user-generated string that you use to identify your cluster."
+    },
+    {
+      "name": "desired_status",
+      "type": "text",
+      "description": "The desired status of the task."
+    },
+    {
+      "name": "launch_type",
+      "type": "text",
+      "description": "The infrastructure on which your task is running."
+    },
+    {
+      "name": "availability_zone",
+      "type": "text",
+      "description": "The availability zone of the task."
+    },
+    {
+      "name": "capacity_provider_name",
+      "type": "text",
+      "description": "The capacity provider associated with the task."
+    },
+    {
+      "name": "cluster_arn",
+      "type": "text",
+      "description": "The ARN of the cluster that hosts the task."
+    },
+    {
+      "name": "connectivity",
+      "type": "text",
+      "description": "The connectivity status of a task."
+    },
+    {
+      "name": "connectivity_at",
+      "type": "timestamp with time zone",
+      "description": "The Unix timestamp for when the task last went into CONNECTED status."
+    },
+    {
+      "name": "cpu",
+      "type": "integer",
+      "description": "The number of CPU units used by the task as expressed in a task definition."
+    },
+    {
+      "name": "created_at",
+      "type": "timestamp with time zone",
+      "description": "The Unix timestamp for when the task was created."
+    },
+    {
+      "name": "enable_execute_command",
+      "type": "boolean",
+      "description": "Whether or not execute command functionality is enabled for this task. If true, this enables execute command functionality on all containers in the task."
+    },
+    {
+      "name": "execution_stopped_at",
+      "type": "timestamp with time zone",
+      "description": "The Unix timestamp for when the task execution stopped."
+    },
+    {
+      "name": "group",
+      "type": "text",
+      "description": "The name of the task group associated with the task."
+    },
+    {
+      "name": "health_status",
+      "type": "text",
+      "description": "The health status for the task, which is determined by the health of the essential containers in the task. If all essential containers in the task are reporting as HEALTHY, then the task status also reports as HEALTHY."
+    },
+    {
+      "name": "last_status",
+      "type": "text",
+      "description": "The last known status of the task."
+    },
+    {
+      "name": "memory",
+      "type": "integer",
+      "description": "The amount of memory (in MiB) used by the task as expressed in a task definition."
+    },
+    {
+      "name": "platform_version",
+      "type": "text",
+      "description": "The platform version on which your task is running."
+    },
+    {
+      "name": "pull_started_at",
+      "type": "timestamp with time zone",
+      "description": "The Unix timestamp for when the container image pull began."
+    },
+    {
+      "name": "pull_stopped_at",
+      "type": "timestamp with time zone",
+      "description": "The Unix timestamp for when the container image pull completed."
+    },
+    {
+      "name": "service_name",
+      "type": "text",
+      "description": "The name of the service."
+    },
+    {
+      "name": "started_at",
+      "type": "timestamp with time zone",
+      "description": "The Unix timestamp for when the task started."
+    },
+    {
+      "name": "started_by",
+      "type": "text",
+      "description": "The tag specified when a task is started."
+    },
+    {
+      "name": "stop_code",
+      "type": "text",
+      "description": "The stop code indicating why a task was stopped."
+    },
+    {
+      "name": "stopped_at",
+      "type": "timestamp with time zone",
+      "description": "The Unix timestamp for when the task was stopped."
+    },
+    {
+      "name": "stopped_reason",
+      "type": "text",
+      "description": "The reason that the task was stopped."
+    },
+    {
+      "name": "stopping_at",
+      "type": "timestamp with time zone",
+      "description": "The Unix timestamp for when the task stops."
+    },
+    {
+      "name": "task_definition_arn",
+      "type": "text",
+      "description": "The ARN of the task definition that creates the task."
+    },
+    {
+      "name": "version",
+      "type": "integer",
+      "description": "The version counter for the task."
+    },
+    {
+      "name": "attachments",
+      "type": "json",
+      "description": "The Elastic Network Adapter associated with the task if the task uses the awsvpc network mode."
+    },
+    {
+      "name": "attributes",
+      "type": "json",
+      "description": "The attributes of the task."
+    },
+    {
+      "name": "containers",
+      "type": "json",
+      "description": "The containers associated with the task."
+    },
+    {
+      "name": "ephemeral_storage",
+      "type": "json",
+      "description": "The ephemeral storage settings for the task."
+    },
+    {
+      "name": "inference_accelerators",
+      "type": "json",
+      "description": "The Elastic Inference accelerator associated with the task."
+    },
+    {
+      "name": "overrides",
+      "type": "json",
+      "description": "One or more container overrides."
+    },
+    {
+      "name": "protection",
+      "type": "json",
+      "description": "Protection status of task in an Amazon ECS service."
+    },
+    {
+      "name": "tags_src",
+      "type": "json",
+      "description": "A list of tags associated with task."
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": ""
+    }
+  ]
+}

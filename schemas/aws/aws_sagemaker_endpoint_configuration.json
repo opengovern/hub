@@ -1,0 +1,51 @@
+{
+  "table_name": "aws_sagemaker_endpoint_configuration",
+  "table_description": "AWS Sagemaker Endpoint Configuration",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The name of the endpoint configuration."
+    },
+    {
+      "name": "arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) of the endpoint configuration."
+    },
+    {
+      "name": "creation_time",
+      "type": "timestamp with time zone",
+      "description": "A timestamp that shows when the endpoint configuration was created."
+    },
+    {
+      "name": "kms_key_id",
+      "type": "text",
+      "description": "AWS KMS key ID Amazon SageMaker uses to encrypt data when storing it on the ML storage volume attached to the instance."
+    },
+    {
+      "name": "data_capture_config",
+      "type": "json",
+      "description": "Specifies the parameters to capture input/output of Sagemaker models endpoints."
+    },
+    {
+      "name": "production_variants",
+      "type": "json",
+      "description": "An array of ProductionVariant objects, one for each model that you want to host at this endpoint."
+    },
+    {
+      "name": "tags_src",
+      "type": "json",
+      "description": "The list of tags for the endpoint configuration."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": ""
+    }
+  ]
+}

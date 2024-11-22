@@ -1,0 +1,56 @@
+{
+  "table_name": "aws_vpc_customer_gateway",
+  "table_description": "AWS VPC Customer Gateway",
+  "columns": [
+    {
+      "name": "customer_gateway_id",
+      "type": "text",
+      "description": "The ID of the customer gateway."
+    },
+    {
+      "name": "type",
+      "type": "text",
+      "description": "The type of VPN connection the customer gateway supports (ipsec.1)."
+    },
+    {
+      "name": "state",
+      "type": "text",
+      "description": "The current state of the customer gateway (pending | available | deleting | deleted)."
+    },
+    {
+      "name": "bgp_asn",
+      "type": "text",
+      "description": "The customer gateway's Border Gateway Protocol (BGP) Autonomous System Number (ASN)."
+    },
+    {
+      "name": "certificate_arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) for the customer gateway certificate."
+    },
+    {
+      "name": "device_name",
+      "type": "text",
+      "description": "The name of customer gateway device."
+    },
+    {
+      "name": "ip_address",
+      "type": "inet",
+      "description": "The Internet-routable IP address of the customer gateway's outside interface."
+    },
+    {
+      "name": "tags_src",
+      "type": "json",
+      "description": "A list of tags that are attached to customer gateway."
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": ""
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "table_name": "aws_dax_parameter",
+  "table_description": "AWS DAX Parameter",
+  "columns": [
+    {
+      "name": "parameter_name",
+      "type": "text",
+      "description": "The name of the parameter."
+    },
+    {
+      "name": "parameter_group_name",
+      "type": "text",
+      "description": "The name of the parameter group."
+    },
+    {
+      "name": "parameter_value",
+      "type": "text",
+      "description": "The value of the parameter."
+    },
+    {
+      "name": "description",
+      "type": "text",
+      "description": "Description of the parameter."
+    },
+    {
+      "name": "allowed_values",
+      "type": "text",
+      "description": "A range of values within which the parameter can be set."
+    },
+    {
+      "name": "change_type",
+      "type": "text",
+      "description": "The conditions under which changes to this parameter can be applied. Possible values are 'IMMEDIATE', 'REQUIRES_REBOOT'."
+    },
+    {
+      "name": "data_type",
+      "type": "text",
+      "description": "The data type of the parameter."
+    },
+    {
+      "name": "is_modifiable",
+      "type": "text",
+      "description": "Whether the customer is allowed to modify the parameter. Possible values are 'TRUE', 'FALSE' 'CONDITIONAL'."
+    },
+    {
+      "name": "parameter_type",
+      "type": "text",
+      "description": "Determines whether the parameter can be applied to any node or only nodes of a particular type. Possible values are 'DEFAULT', 'NODE_TYPE_SPECIFIC'."
+    },
+    {
+      "name": "source",
+      "type": "text",
+      "description": "How the parameter is defined. For example, system denotes a system-defined parameter."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    }
+  ]
+}

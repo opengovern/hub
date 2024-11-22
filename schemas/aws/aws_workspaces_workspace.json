@@ -1,0 +1,101 @@
+{
+  "table_name": "aws_workspaces_workspace",
+  "table_description": "AWS Workspaces",
+  "columns": [
+    {
+      "name": "workspace_id",
+      "type": "text",
+      "description": "The id of the WorkSpace."
+    },
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The name of the WorkSpace."
+    },
+    {
+      "name": "arn",
+      "type": "text",
+      "description": "The arn of the WorkSpace."
+    },
+    {
+      "name": "bundle_id",
+      "type": "text",
+      "description": "The identifier of the bundle used to create the WorkSpace."
+    },
+    {
+      "name": "directory_id",
+      "type": "text",
+      "description": "The identifier of the AWS Directory Service directory for the WorkSpace."
+    },
+    {
+      "name": "state",
+      "type": "text",
+      "description": "The operational state of the WorkSpace."
+    },
+    {
+      "name": "error_code",
+      "type": "text",
+      "description": "The error code that is returned if the WorkSpace cannot be created."
+    },
+    {
+      "name": "error_message",
+      "type": "text",
+      "description": "The text of the error message that is returned if the WorkSpace cannot be created."
+    },
+    {
+      "name": "ip_address",
+      "type": "inet",
+      "description": "The IP address of the WorkSpace."
+    },
+    {
+      "name": "root_volume_encryption_enabled",
+      "type": "boolean",
+      "description": "Indicates whether the data stored on the root volume is encrypted."
+    },
+    {
+      "name": "subnet_id",
+      "type": "text",
+      "description": "The identifier of the subnet for the WorkSpace."
+    },
+    {
+      "name": "user_name",
+      "type": "text",
+      "description": "The user for the WorkSpace."
+    },
+    {
+      "name": "user_volume_encryption_enabled",
+      "type": "boolean",
+      "description": "Indicates whether the data stored on the user volume is encrypted."
+    },
+    {
+      "name": "volume_encryption_key",
+      "type": "text",
+      "description": "The symmetric AWS KMS customer master key (CMK) used to encrypt data stored on your WorkSpace. Amazon WorkSpaces does not support asymmetric CMKs."
+    },
+    {
+      "name": "modification_states",
+      "type": "json",
+      "description": "The modification states of the WorkSpace."
+    },
+    {
+      "name": "workspace_properties",
+      "type": "json",
+      "description": "The properties of the WorkSpace."
+    },
+    {
+      "name": "tags_src",
+      "type": "json",
+      "description": "The list of tags for the WorkSpace."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": ""
+    }
+  ]
+}

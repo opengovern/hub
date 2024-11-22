@@ -1,0 +1,111 @@
+{
+  "table_name": "aws_glue_crawler",
+  "table_description": "AWS Glue Crawler",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The name of the crawler."
+    },
+    {
+      "name": "arn",
+      "type": "text",
+      "description": "The ARN of the crawler."
+    },
+    {
+      "name": "database_name",
+      "type": "text",
+      "description": "The name of the database in which the crawler's output is stored."
+    },
+    {
+      "name": "state",
+      "type": "text",
+      "description": "Indicates whether the crawler is running or pending."
+    },
+    {
+      "name": "role",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) of an IAM role that's used to access customer resources, such as Amazon Simple Storage Service (Amazon S3) data."
+    },
+    {
+      "name": "creation_time",
+      "type": "timestamp with time zone",
+      "description": "The time that the crawler was created."
+    },
+    {
+      "name": "description",
+      "type": "text",
+      "description": "A description of the crawler."
+    },
+    {
+      "name": "crawl_elapsed_time",
+      "type": "integer",
+      "description": "If the crawler is running, contains the total time elapsed since the last crawl began."
+    },
+    {
+      "name": "crawler_lineage_settings",
+      "type": "text",
+      "description": "Specifies whether data lineage is enabled for the crawler."
+    },
+    {
+      "name": "crawler_security_configuration",
+      "type": "text",
+      "description": "The name of the SecurityConfiguration structure to be used by this crawler."
+    },
+    {
+      "name": "last_updated",
+      "type": "timestamp with time zone",
+      "description": "The time that the crawler was last updated."
+    },
+    {
+      "name": "recrawl_behavior",
+      "type": "text",
+      "description": "Specifies whether to crawl the entire dataset again or to crawl only folders that were added since the last crawler run. A value of CRAWL_EVERYTHING specifies crawling the entire dataset again. A value of CRAWL_NEW_FOLDERS_ONLY specifies crawling only folders that were added since the last crawler run. A value of CRAWL_EVENT_MODE specifies crawling only the changes identified by Amazon S3 events."
+    },
+    {
+      "name": "table_prefix",
+      "type": "text",
+      "description": "The prefix added to the names of tables that are created."
+    },
+    {
+      "name": "version",
+      "type": "integer",
+      "description": "The version of the crawler."
+    },
+    {
+      "name": "classifiers",
+      "type": "json",
+      "description": "A list of UTF-8 strings that specify the custom classifiers that are associated with the crawler."
+    },
+    {
+      "name": "configuration",
+      "type": "json",
+      "description": "Crawler configuration information."
+    },
+    {
+      "name": "last_crawl",
+      "type": "json",
+      "description": "The status of the last crawl, and potentially error information if an error occurred."
+    },
+    {
+      "name": "schedule",
+      "type": "json",
+      "description": "For scheduled crawlers, the schedule when the crawler runs."
+    },
+    {
+      "name": "schema_change_policy",
+      "type": "json",
+      "description": "The policy that specifies update and delete behaviors for the crawler."
+    },
+    {
+      "name": "targets",
+      "type": "json",
+      "description": "A collection of targets to crawl."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    }
+  ]
+}

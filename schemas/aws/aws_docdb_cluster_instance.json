@@ -1,0 +1,186 @@
+{
+  "table_name": "aws_docdb_cluster_instance",
+  "table_description": "AWS DocumentDB Cluster Instance",
+  "columns": [
+    {
+      "name": "db_instance_identifier",
+      "type": "text",
+      "description": "Contains a user-provided database identifier. This identifier is the unique key that identifies an instance."
+    },
+    {
+      "name": "db_instance_arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) for the instance."
+    },
+    {
+      "name": "db_cluster_identifier",
+      "type": "text",
+      "description": "Contains the name of the cluster that the instance is a member of if the instance is a member of a cluster."
+    },
+    {
+      "name": "db_instance_status",
+      "type": "text",
+      "description": "Specifies the current state of this database."
+    },
+    {
+      "name": "db_instance_class",
+      "type": "text",
+      "description": "Contains the name of the compute and memory capacity class of the instance."
+    },
+    {
+      "name": "dbi_resource_id",
+      "type": "text",
+      "description": "The Amazon Web Services Region-unique, immutable identifier for the instance."
+    },
+    {
+      "name": "availability_zone",
+      "type": "text",
+      "description": "Specifies the name of the availability zone the instance is located in."
+    },
+    {
+      "name": "backup_retention_period",
+      "type": "integer",
+      "description": "Specifies the number of days for which automatic snapshots are retained."
+    },
+    {
+      "name": "ca_certificate_identifier",
+      "type": "text",
+      "description": "The identifier of the CA certificate for this DB instance."
+    },
+    {
+      "name": "copy_tags_to_snapshot",
+      "type": "boolean",
+      "description": "Specifies whether tags are copied from the DB instance to snapshots of the DB instance, or not."
+    },
+    {
+      "name": "db_subnet_group_arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) for the DB subnet group."
+    },
+    {
+      "name": "db_subnet_group_description",
+      "type": "text",
+      "description": "Provides the description of the DB subnet group."
+    },
+    {
+      "name": "db_subnet_group_name",
+      "type": "text",
+      "description": "The name of the DB subnet group."
+    },
+    {
+      "name": "db_subnet_group_status",
+      "type": "text",
+      "description": "Provides the status of the DB subnet group."
+    },
+    {
+      "name": "endpoint_address",
+      "type": "text",
+      "description": "Specifies the DNS address of the instance."
+    },
+    {
+      "name": "endpoint_hosted_zone_id",
+      "type": "text",
+      "description": "Specifies the ID that Amazon Route 53 assigns when you create a hosted zone."
+    },
+    {
+      "name": "endpoint_port",
+      "type": "integer",
+      "description": "Specifies the port that the database engine is listening on."
+    },
+    {
+      "name": "engine",
+      "type": "text",
+      "description": "The name of the database engine to be used for this instance."
+    },
+    {
+      "name": "engine_version",
+      "type": "text",
+      "description": "Indicates the database engine version."
+    },
+    {
+      "name": "instance_create_time",
+      "type": "timestamp with time zone",
+      "description": "Provides the date and time the instance was created."
+    },
+    {
+      "name": "kms_key_id",
+      "type": "text",
+      "description": "If StorageEncrypted is true, the KMS key identifier for the encrypted instance."
+    },
+    {
+      "name": "latest_restorable_time",
+      "type": "timestamp with time zone",
+      "description": "Specifies the latest time to which a database can be restored with point-in-time restore."
+    },
+    {
+      "name": "preferred_backup_window",
+      "type": "text",
+      "description": "Specifies the daily time range during which automated backups are created."
+    },
+    {
+      "name": "preferred_maintenance_window",
+      "type": "text",
+      "description": "Specifies the weekly time range during which system maintenance can occur."
+    },
+    {
+      "name": "promotion_tier",
+      "type": "integer",
+      "description": "A value that specifies the order in which an Amazon DocumentDB replica is promoted to the primary instance after a failure of the existing primary instance."
+    },
+    {
+      "name": "publicly_accessible",
+      "type": "boolean",
+      "description": "Specifies the accessibility options for the DB instance."
+    },
+    {
+      "name": "storage_encrypted",
+      "type": "boolean",
+      "description": "Specifies whether or not the instance is encrypted."
+    },
+    {
+      "name": "vpc_id",
+      "type": "text",
+      "description": "Provides the VpcId of the DB subnet group."
+    },
+    {
+      "name": "enabled_cloudwatch_logs_exports",
+      "type": "json",
+      "description": "A list of log types that this instance is configured to export to CloudWatch Logs."
+    },
+    {
+      "name": "pending_modified_values",
+      "type": "json",
+      "description": "Specifies that changes to the instance are pending."
+    },
+    {
+      "name": "status_infos",
+      "type": "json",
+      "description": "The status of a read replica."
+    },
+    {
+      "name": "subnets",
+      "type": "json",
+      "description": "A list of subnet elements."
+    },
+    {
+      "name": "vpc_security_groups",
+      "type": "json",
+      "description": "A list of VPC security group elements that the instance belongs to."
+    },
+    {
+      "name": "tags_src",
+      "type": "json",
+      "description": "A list of tags attached to the Instance."
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": ""
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    }
+  ]
+}

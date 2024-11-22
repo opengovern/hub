@@ -1,0 +1,21 @@
+{
+  "table_name": "azure_dataprotection_backuppolicies",
+  "table_description": "Azure DataProtection BackupPolicies",
+  "columns": [
+    {
+      "name": "id",
+      "type": "text",
+      "description": "The id of the backuppolicies."
+    },
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The name of the backuppolicies."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": "ColumnDescriptionTitle"
+    }
+  ]
+}

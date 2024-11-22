@@ -1,0 +1,166 @@
+{
+  "table_name": "aws_codebuild_build",
+  "table_description": "AWS CodeBuild Build",
+  "columns": [
+    {
+      "name": "arn",
+      "type": "text",
+      "description": "The ARN of the build."
+    },
+    {
+      "name": "id",
+      "type": "text",
+      "description": "The unique identifier of the  build."
+    },
+    {
+      "name": "build_batch_arn",
+      "type": "text",
+      "description": "The ARN of the batch build that this build is a member of, if applicable."
+    },
+    {
+      "name": "build_complete",
+      "type": "boolean",
+      "description": "Indicates if the build is complete."
+    },
+    {
+      "name": "build_number",
+      "type": "integer",
+      "description": "The number of the build."
+    },
+    {
+      "name": "build_status",
+      "type": "json",
+      "description": "The status of the build."
+    },
+    {
+      "name": "current_phase",
+      "type": "text",
+      "description": "The current build phase."
+    },
+    {
+      "name": "encryption_key",
+      "type": "text",
+      "description": "The Key Management Service customer master key (CMK) to be used for encrypting the build output artifacts."
+    },
+    {
+      "name": "end_time",
+      "type": "timestamp with time zone",
+      "description": "The date and time that the build process ended, expressed in Unix time format."
+    },
+    {
+      "name": "initiator",
+      "type": "text",
+      "description": "The entity that started the build."
+    },
+    {
+      "name": "project_name",
+      "type": "text",
+      "description": "The name of the build project."
+    },
+    {
+      "name": "queued_timeout_in_minutes",
+      "type": "integer",
+      "description": "Specifies the amount of time, in minutes, that a build is allowed to be queued before it times out."
+    },
+    {
+      "name": "source_version",
+      "type": "text",
+      "description": "The identifier of the version of the source code to be built."
+    },
+    {
+      "name": "start_time",
+      "type": "timestamp with time zone",
+      "description": "The date and time that the build started."
+    },
+    {
+      "name": "timeout_in_minutes",
+      "type": "integer",
+      "description": "How long, in minutes, for CodeBuild to wait before timing out this build if it does not get marked as completed."
+    },
+    {
+      "name": "resolved_source_version",
+      "type": "text",
+      "description": "The identifier of the resolved version of this build's source code."
+    },
+    {
+      "name": "artifacts",
+      "type": "json",
+      "description": "A BuildArtifacts object the defines the build artifacts for this build."
+    },
+    {
+      "name": "cache",
+      "type": "json",
+      "description": "Information about the cache for the build."
+    },
+    {
+      "name": "debug_session",
+      "type": "json",
+      "description": "Contains information about the debug session for this build."
+    },
+    {
+      "name": "environment",
+      "type": "json",
+      "description": "Information about the build environment for this build project."
+    },
+    {
+      "name": "exported_environment_variables",
+      "type": "json",
+      "description": "A list of exported environment variables for this build."
+    },
+    {
+      "name": "file_system_locations",
+      "type": "json",
+      "description": "An array of ProjectFileSystemLocation objects for a CodeBuild build project."
+    },
+    {
+      "name": "logs",
+      "type": "json",
+      "description": "Information about the build's logs in CloudWatch Logs."
+    },
+    {
+      "name": "network_interfaces",
+      "type": "json",
+      "description": "Describes a network interface."
+    },
+    {
+      "name": "phases",
+      "type": "json",
+      "description": "Information about all previous build phases that are complete and information about any current build phase that is not yet complete."
+    },
+    {
+      "name": "report_arns",
+      "type": "json",
+      "description": "An array of the ARNs associated with this build's reports."
+    },
+    {
+      "name": "secondary_artifacts",
+      "type": "json",
+      "description": "An array of BuildArtifacts objects the define the build artifacts for this build."
+    },
+    {
+      "name": "secondary_source_versions",
+      "type": "json",
+      "description": "An array of ProjectSourceVersion objects."
+    },
+    {
+      "name": "secondary_sources",
+      "type": "json",
+      "description": "An array of ProjectSource objects that define the sources for the build."
+    },
+    {
+      "name": "source",
+      "type": "json",
+      "description": "Information about the build input source code for the build project."
+    },
+    {
+      "name": "vpc_config",
+      "type": "json",
+      "description": "Information about the VPC configuration that CodeBuild accesses."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    }
+  ]
+}

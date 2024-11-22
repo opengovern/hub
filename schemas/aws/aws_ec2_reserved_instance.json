@@ -1,0 +1,111 @@
+{
+  "table_name": "aws_ec2_reserved_instance",
+  "table_description": "AWS EC2 Reserved Instance",
+  "columns": [
+    {
+      "name": "reserved_instance_id",
+      "type": "text",
+      "description": "The ID of the Reserved instance."
+    },
+    {
+      "name": "arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) specifying the instance."
+    },
+    {
+      "name": "instance_type",
+      "type": "text",
+      "description": "The instance type on which the Reserved Instance can be used."
+    },
+    {
+      "name": "instance_state",
+      "type": "text",
+      "description": "The state of the Reserved Instance purchase."
+    },
+    {
+      "name": "availability_zone",
+      "type": "text",
+      "description": "The Availability Zone in which the Reserved Instance can be used."
+    },
+    {
+      "name": "currency_code",
+      "type": "text",
+      "description": "The currency of the Reserved Instance. It's specified using ISO 4217 standard currency codes. At this time, the only supported currency is USD."
+    },
+    {
+      "name": "duration",
+      "type": "integer",
+      "description": "The duration of the Reserved Instance, in seconds."
+    },
+    {
+      "name": "end_time",
+      "type": "timestamp with time zone",
+      "description": "The time when the Reserved Instance expires."
+    },
+    {
+      "name": "fixed_price",
+      "type": "double precision",
+      "description": "The purchase price of the Reserved Instance."
+    },
+    {
+      "name": "instance_count",
+      "type": "integer",
+      "description": "The number of reservations purchased."
+    },
+    {
+      "name": "instance_tenancy",
+      "type": "text",
+      "description": "The tenancy of the instance."
+    },
+    {
+      "name": "offering_class",
+      "type": "text",
+      "description": "The offering class of the Reserved Instance."
+    },
+    {
+      "name": "offering_type",
+      "type": "text",
+      "description": "The Reserved Instance offering type."
+    },
+    {
+      "name": "product_description",
+      "type": "text",
+      "description": "The Reserved Instance product platform description."
+    },
+    {
+      "name": "scope",
+      "type": "text",
+      "description": "The scope of the Reserved Instance."
+    },
+    {
+      "name": "start_time",
+      "type": "timestamp with time zone",
+      "description": "The date and time the Reserved Instance started."
+    },
+    {
+      "name": "usage_price",
+      "type": "double precision",
+      "description": "The usage price of the Reserved Instance, per hour."
+    },
+    {
+      "name": "reserved_instances_modifications",
+      "type": "json",
+      "description": "The Reserved Instance modification information."
+    },
+    {
+      "name": "tags_src",
+      "type": "json",
+      "description": "A list of tags assigned to the reserved instance."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": ""
+    }
+  ]
+}

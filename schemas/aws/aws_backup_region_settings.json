@@ -1,0 +1,21 @@
+{
+  "table_name": "aws_backup_region_settings",
+  "table_description": "AWS Backup Region Settings",
+  "columns": [
+    {
+      "name": "resource_type_management_preference",
+      "type": "json",
+      "description": "Resource Type Management Preference."
+    },
+    {
+      "name": "resource_type_opt_in_preference",
+      "type": "json",
+      "description": "Resource Type Opt In Preference."
+    },
+    {
+      "name": "region",
+      "type": "text",
+      "description": "The AWS Region in which the settings are for."
+    }
+  ]
+}

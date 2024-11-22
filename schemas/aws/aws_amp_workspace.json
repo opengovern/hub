@@ -1,0 +1,26 @@
+{
+  "table_name": "aws_amp_workspace",
+  "table_description": "AWS AMP Workspace",
+  "columns": [
+    {
+      "name": "workspace_id",
+      "type": "text",
+      "description": "The id of the workspace."
+    },
+    {
+      "name": "arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) of the workspace"
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": ""
+    }
+  ]
+}

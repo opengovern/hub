@@ -1,0 +1,146 @@
+{
+  "table_name": "aws_rds_db_instance_automated_backup",
+  "table_description": "AWS RDS DB Instance Automated Backup",
+  "columns": [
+    {
+      "name": "db_instance_identifier",
+      "type": "text",
+      "description": "The friendly name to identify the DB Instance."
+    },
+    {
+      "name": "arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) for the replicated automated backups."
+    },
+    {
+      "name": "db_instance_arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) for the automated backups."
+    },
+    {
+      "name": "status",
+      "type": "text",
+      "description": "Specifies the current state of this database."
+    },
+    {
+      "name": "allocated_storage",
+      "type": "integer",
+      "description": "Specifies the allocated storage size in gibibytes (GiB)."
+    },
+    {
+      "name": "availability_zone",
+      "type": "text",
+      "description": "The Availability Zone that the automated backup was created in."
+    },
+    {
+      "name": "backup_retention_period",
+      "type": "integer",
+      "description": "The retention period for the automated backups."
+    },
+    {
+      "name": "backup_target",
+      "type": "text",
+      "description": "Specifies where automated backups are stored: Amazon Web Services Outposts or the Amazon Web Services Region."
+    },
+    {
+      "name": "dbi_resource_id",
+      "type": "text",
+      "description": "The identifier for the source DB instance, which can't be changed and which is unique to an Amazon Web Services Region."
+    },
+    {
+      "name": "encrypted",
+      "type": "boolean",
+      "description": "Specifies whether the automated backup is encrypted."
+    },
+    {
+      "name": "engine",
+      "type": "text",
+      "description": "The name of the database engine for this automated backup."
+    },
+    {
+      "name": "engine_version",
+      "type": "text",
+      "description": "The version of the database engine for the automated backup."
+    },
+    {
+      "name": "iam_database_authentication_enabled",
+      "type": "boolean",
+      "description": "True if mapping of Amazon Web Services Identity and Access Management (IAM) accounts to database accounts is enabled, and otherwise false."
+    },
+    {
+      "name": "instance_create_time",
+      "type": "timestamp with time zone",
+      "description": "True if mapping of Amazon Web Services Identity and Access Management (IAM) accounts to database accounts is enabled, and otherwise false."
+    },
+    {
+      "name": "iops",
+      "type": "integer",
+      "description": "True if mapping of Amazon Web Services Identity and Access Management (IAM) accounts to database accounts is enabled, and otherwise false."
+    },
+    {
+      "name": "kms_key_id",
+      "type": "text",
+      "description": "The Amazon Web Services KMS key ID for an automated backup. The Amazon Web Services KMS key identifier is the key ARN, key ID, alias ARN, or alias name for the KMS key."
+    },
+    {
+      "name": "license_model",
+      "type": "text",
+      "description": "The Amazon Web Services KMS key ID for an automated backup. The Amazon Web Services KMS key identifier is the key ARN, key ID, alias ARN, or alias name for the KMS key."
+    },
+    {
+      "name": "master_username",
+      "type": "text",
+      "description": "The license model of an automated backup."
+    },
+    {
+      "name": "option_group_name",
+      "type": "text",
+      "description": "The option group the automated backup is associated with. If omitted, the default option group for the engine specified is used."
+    },
+    {
+      "name": "port",
+      "type": "integer",
+      "description": "The port number that the automated backup used for connections. Default: Inherits from the source DB instance Valid Values: 1150-65535."
+    },
+    {
+      "name": "storage_throughput",
+      "type": "integer",
+      "description": "Specifies the storage throughput for the automated backup."
+    },
+    {
+      "name": "storage_type",
+      "type": "text",
+      "description": "Specifies the storage type associated with the automated backup."
+    },
+    {
+      "name": "tde_credential_arn",
+      "type": "text",
+      "description": "The ARN from the key store with which the automated backup is associated for TDE encryption."
+    },
+    {
+      "name": "timezone",
+      "type": "text",
+      "description": "The time zone of the automated backup."
+    },
+    {
+      "name": "vpc_id",
+      "type": "text",
+      "description": "Provides the VPC ID associated with the DB instance."
+    },
+    {
+      "name": "db_instance_automated_backups_replications",
+      "type": "json",
+      "description": "The list of replications to different Amazon Web Services Regions associated with the automated backup."
+    },
+    {
+      "name": "restore_window",
+      "type": "json",
+      "description": "Earliest and latest time an instance can be restored to."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    }
+  ]
+}

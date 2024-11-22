@@ -1,0 +1,116 @@
+{
+  "table_name": "aws_emr_instance_group",
+  "table_description": "AWS EMR Instance Group",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The name of the instance group."
+    },
+    {
+      "name": "id",
+      "type": "text",
+      "description": "The identifier of the instance group."
+    },
+    {
+      "name": "arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) specifying the instance group."
+    },
+    {
+      "name": "cluster_id",
+      "type": "text",
+      "description": "The unique identifier for the cluster."
+    },
+    {
+      "name": "instance_group_type",
+      "type": "text",
+      "description": "The type of the instance group. Valid values are MASTER, CORE or TASK."
+    },
+    {
+      "name": "instance_type",
+      "type": "text",
+      "description": "The EC2 instance type for all instances in the instance group."
+    },
+    {
+      "name": "state",
+      "type": "text",
+      "description": "The current state of the instance group."
+    },
+    {
+      "name": "bid_price",
+      "type": "text",
+      "description": "The maximum price you are willing to pay for Spot Instances. If specified, indicates that the instance group uses Spot Instances."
+    },
+    {
+      "name": "configurations_version",
+      "type": "integer",
+      "description": "The version number of the requested configuration specification for this instance group."
+    },
+    {
+      "name": "ebs_optimized",
+      "type": "boolean",
+      "description": "Indicates whether the instance group is EBS-optimized, or not.  An Amazon EBS-optimized instance uses an optimized configuration stack and provides additional, dedicated capacity for Amazon EBS I/O."
+    },
+    {
+      "name": "last_successfully_applied_configurations_version",
+      "type": "integer",
+      "description": "The version number of a configuration specification that was successfully applied for an instance group last time."
+    },
+    {
+      "name": "market",
+      "type": "text",
+      "description": "The marketplace to provision instances for this group. Valid values are ON_DEMAND or SPOT."
+    },
+    {
+      "name": "requested_instance_count",
+      "type": "integer",
+      "description": "The target number of instances for the instance group."
+    },
+    {
+      "name": "running_instance_count",
+      "type": "integer",
+      "description": "The number of instances currently running in this instance group."
+    },
+    {
+      "name": "autoscaling_policy",
+      "type": "json",
+      "description": "An automatic scaling policy for a core instance group or task instance group in an Amazon EMR cluster."
+    },
+    {
+      "name": "configurations",
+      "type": "json",
+      "description": "A list of configurations supplied for an EMR cluster instance group. Only availbale for Amazon EMR releases 4.x or later."
+    },
+    {
+      "name": "ebs_block_devices",
+      "type": "json",
+      "description": "The EBS block devices that are mapped to this instance group."
+    },
+    {
+      "name": "last_successfully_applied_configurations",
+      "type": "json",
+      "description": "A list of configurations that were successfully applied for an instance group last time."
+    },
+    {
+      "name": "shrink_policy",
+      "type": "json",
+      "description": "Policy for customizing shrink operations."
+    },
+    {
+      "name": "state_change_reason",
+      "type": "json",
+      "description": "The status change reason details for the instance group."
+    },
+    {
+      "name": "status_timeline",
+      "type": "json",
+      "description": "The timeline of the instance group status over time."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "table_name": "azure_costmanagement_costbyresourcetype",
+  "table_description": "Azure CostManagement CostByResourceType",
+  "columns": [
+    {
+      "name": "id",
+      "type": "text",
+      "description": "The id of the costbyresourcetype."
+    },
+    {
+      "name": "usage_date",
+      "type": "integer",
+      "description": "Usage date"
+    },
+    {
+      "name": "cost",
+      "type": "double precision",
+      "description": "Cost"
+    },
+    {
+      "name": "resource_type",
+      "type": "text",
+      "description": "Resource type"
+    },
+    {
+      "name": "service_name",
+      "type": "text",
+      "description": "Service Name"
+    },
+    {
+      "name": "publisher_type",
+      "type": "text",
+      "description": "Publisher Type"
+    }
+  ]
+}

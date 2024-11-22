@@ -1,0 +1,71 @@
+{
+  "table_name": "aws_sns_topic_subscription",
+  "table_description": "AWS SNS Topic Subscription",
+  "columns": [
+    {
+      "name": "subscription_arn",
+      "type": "text",
+      "description": "Amazon Resource Name of the subscription."
+    },
+    {
+      "name": "topic_arn",
+      "type": "text",
+      "description": "The topic ARN that the subscription is associated with."
+    },
+    {
+      "name": "owner",
+      "type": "text",
+      "description": "The AWS account ID of the subscription's owner."
+    },
+    {
+      "name": "protocol",
+      "type": "text",
+      "description": "The subscription's protocol."
+    },
+    {
+      "name": "endpoint",
+      "type": "text",
+      "description": "The subscription's endpoint (format depends on the protocol)."
+    },
+    {
+      "name": "confirmation_was_authenticated",
+      "type": "boolean",
+      "description": "Reflects authentication status of the subscription."
+    },
+    {
+      "name": "pending_confirmation",
+      "type": "boolean",
+      "description": "Reflects the confirmation status of the subscription. True if the subscription hasn't been confirmed."
+    },
+    {
+      "name": "raw_message_delivery",
+      "type": "boolean",
+      "description": "true if raw message delivery is enabled for the subscription."
+    },
+    {
+      "name": "delivery_policy",
+      "type": "json",
+      "description": "The JSON of the subscription's delivery policy."
+    },
+    {
+      "name": "effective_delivery_policy",
+      "type": "json",
+      "description": "The JSON of the effective delivery policy that takes into account the topic delivery policy and account system defaults."
+    },
+    {
+      "name": "redrive_policy",
+      "type": "json",
+      "description": "When specified, sends undeliverable messages to the specified Amazon SQS dead-letter queue. Messages that can't be delivered due to client errors (for example, when the subscribed endpoint is unreachable) or server errors (for example, when the service that powers the subscribed endpoint becomes unavailable) are held in the dead-letter queue for further analysis or reprocessing."
+    },
+    {
+      "name": "filter_policy",
+      "type": "json",
+      "description": "The filter policy JSON that is assigned to the subscription."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    }
+  ]
+}

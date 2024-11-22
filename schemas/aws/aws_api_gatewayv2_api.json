@@ -1,0 +1,56 @@
+{
+  "table_name": "aws_api_gatewayv2_api",
+  "table_description": "AWS API Gateway Version 2 API",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The name of the API"
+    },
+    {
+      "name": "api_id",
+      "type": "text",
+      "description": "The API ID"
+    },
+    {
+      "name": "api_endpoint",
+      "type": "text",
+      "description": "The URI of the API, of the form {api-id}.execute-api.{region}.amazonaws.com"
+    },
+    {
+      "name": "protocol_type",
+      "type": "text",
+      "description": "The API protocol"
+    },
+    {
+      "name": "api_key_selection_expression",
+      "type": "text",
+      "description": "An API key selection expression. Supported only for WebSocket APIs"
+    },
+    {
+      "name": "disable_execute_api_endpoint",
+      "type": "boolean",
+      "description": "Specifies whether clients can invoke your API by using the default execute-api endpoint."
+    },
+    {
+      "name": "route_selection_expression",
+      "type": "text",
+      "description": "The route selection expression for the API. For HTTP APIs, the routeSelectionExpression must be ${request.method} ${request.path}. If not provided, this will be the default for HTTP APIs"
+    },
+    {
+      "name": "created_date",
+      "type": "timestamp with time zone",
+      "description": "The timestamp when the API was created"
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": ""
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    }
+  ]
+}

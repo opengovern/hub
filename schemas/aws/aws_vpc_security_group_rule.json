@@ -1,0 +1,146 @@
+{
+  "table_name": "aws_vpc_security_group_rule",
+  "table_description": "AWS VPC Security Group Rule",
+  "columns": [
+    {
+      "name": "security_group_rule_id",
+      "type": "text",
+      "description": "The ID of the security group rule."
+    },
+    {
+      "name": "group_name",
+      "type": "text",
+      "description": "The name of the security group to which rule belongs."
+    },
+    {
+      "name": "group_id",
+      "type": "text",
+      "description": "The ID of the security group to which rule belongs."
+    },
+    {
+      "name": "is_egress",
+      "type": "boolean",
+      "description": "Indicates whether the security group rule is an outbound rule."
+    },
+    {
+      "name": "type",
+      "type": "text",
+      "description": "Type of the rule ( ingress | egress)."
+    },
+    {
+      "name": "vpc_id",
+      "type": "text",
+      "description": "The ID of the VPC for the security group."
+    },
+    {
+      "name": "owner_id",
+      "type": "text",
+      "description": "The AWS account ID of the owner of the security group to which rule belongs."
+    },
+    {
+      "name": "group_owner_id",
+      "type": "text",
+      "description": "The ID of the Amazon Web Services account that owns the security group."
+    },
+    {
+      "name": "description",
+      "type": "text",
+      "description": "The security group rule description."
+    },
+    {
+      "name": "ip_protocol",
+      "type": "text",
+      "description": "The IP protocol name (tcp, udp, icmp, icmpv6) or number [see Protocol Numbers ](http://www.iana.org/assignments/protocol-numbers/protocol-numbers.xhtml). Use -1 to specify all protocols. When authorizing security group rules, specifying -1 or a protocol number other than tcp, udp, icmp, or icmpv6 allows traffic on all ports, regardless of any port range specified. For tcp, udp, and icmp, a port range is specified. For icmpv6, the port range is optional. If port range is omitted, traffic for all types and codes is allowed."
+    },
+    {
+      "name": "from_port",
+      "type": "integer",
+      "description": "The start of port range for the TCP and UDP protocols, or an ICMP/ICMPv6 type number. A value of -1 indicates all ICMP/ICMPv6 types."
+    },
+    {
+      "name": "to_port",
+      "type": "integer",
+      "description": "The end of port range for the TCP and UDP protocols, or an ICMP/ICMPv6 code. A value of -1 indicates all ICMP/ICMPv6 codes."
+    },
+    {
+      "name": "cidr_ip",
+      "type": "cidr",
+      "description": "The IPv4 CIDR range. It can be either a CIDR range or a source security group, not both. A single IPv4 address is denoted by /32 prefix length."
+    },
+    {
+      "name": "cidr_ipv4",
+      "type": "cidr",
+      "description": "The IPv4 CIDR range."
+    },
+    {
+      "name": "cidr_ipv6",
+      "type": "cidr",
+      "description": "The IPv6 CIDR range. It can be either a CIDR range or a source security group, not both. A single IPv6 address is denoted by /128 prefix length."
+    },
+    {
+      "name": "pair_group_id",
+      "type": "text",
+      "description": "The ID of the security group that references this user ID group pair."
+    },
+    {
+      "name": "referenced_group_id",
+      "type": "text",
+      "description": "The ID of the referenced security group."
+    },
+    {
+      "name": "pair_group_name",
+      "type": "text",
+      "description": "The name of the security group that references this user ID group pair."
+    },
+    {
+      "name": "pair_peering_status",
+      "type": "text",
+      "description": "The status of a VPC peering connection, if applicable."
+    },
+    {
+      "name": "referenced_peering_status",
+      "type": "text",
+      "description": "The status of a VPC peering connection, if applicable."
+    },
+    {
+      "name": "pair_user_id",
+      "type": "text",
+      "description": "The ID of an AWS account. For a referenced security group in another VPC, the account ID of the referenced security group is returned in the response. If the referenced security group is deleted, this value is not returned."
+    },
+    {
+      "name": "referenced_user_id",
+      "type": "text",
+      "description": "The ID of an AWS account. For a referenced security group in another VPC, the account ID of the referenced security group is returned in the response. If the referenced security group is deleted, this value is not returned."
+    },
+    {
+      "name": "pair_vpc_id",
+      "type": "text",
+      "description": "The ID of the VPC for the referenced security group, if applicable."
+    },
+    {
+      "name": "referenced_vpc_id",
+      "type": "text",
+      "description": "The ID of the VPC for the referenced security group, if applicable."
+    },
+    {
+      "name": "pair_vpc_peering_connection_id",
+      "type": "text",
+      "description": "The ID of the VPC peering connection, if applicable."
+    },
+    {
+      "name": "referenced_vpc_peering_connection_id",
+      "type": "text",
+      "description": "The ID of the VPC peering connection, if applicable."
+    },
+    {
+      "name": "prefix_list_id",
+      "type": "text",
+      "description": "The ID of the referenced prefix list."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "table_name": "azure_compute_resource_sku",
+  "table_description": "Azure Compute Resource SKU",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The name of SKU"
+    },
+    {
+      "name": "resource_type",
+      "type": "text",
+      "description": "The type of resource the SKU applies to"
+    },
+    {
+      "name": "tier",
+      "type": "text",
+      "description": "Specifies the tier of virtual machines in a scale set"
+    },
+    {
+      "name": "size",
+      "type": "text",
+      "description": "The Size of the SKU"
+    },
+    {
+      "name": "family",
+      "type": "text",
+      "description": "The Family of this particular SKU"
+    },
+    {
+      "name": "kind",
+      "type": "text",
+      "description": "The Kind of resources that are supported in this SKU"
+    },
+    {
+      "name": "default_capacity",
+      "type": "integer",
+      "description": "Contains the default capacity"
+    },
+    {
+      "name": "maximum_capacity",
+      "type": "integer",
+      "description": "The maximum capacity that can be set"
+    },
+    {
+      "name": "minimum_capacity",
+      "type": "integer",
+      "description": "The minimum capacity that can be set"
+    },
+    {
+      "name": "scale_type",
+      "type": "text",
+      "description": "The scale type applicable to the sku"
+    },
+    {
+      "name": "api_versions",
+      "type": "json",
+      "description": "The api versions that support this SKU"
+    },
+    {
+      "name": "capabilities",
+      "type": "json",
+      "description": "A name value pair to describe the capability"
+    },
+    {
+      "name": "costs",
+      "type": "json",
+      "description": "A list of metadata for retrieving price info"
+    },
+    {
+      "name": "location_info",
+      "type": "json",
+      "description": "A list of locations and availability zones in those locations where the SKU is available"
+    },
+    {
+      "name": "locations",
+      "type": "json",
+      "description": "The set of locations that the SKU is available"
+    },
+    {
+      "name": "restrictions",
+      "type": "json",
+      "description": "The restrictions because of which SKU cannot be used"
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": "ColumnDescriptionTitle"
+    }
+  ]
+}

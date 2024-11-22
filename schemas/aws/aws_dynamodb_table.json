@@ -1,0 +1,131 @@
+{
+  "table_name": "aws_dynamodb_table",
+  "table_description": "AWS DynamoDB Table",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The name of the table."
+    },
+    {
+      "name": "arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) that uniquely identifies the table."
+    },
+    {
+      "name": "table_id",
+      "type": "text",
+      "description": "Unique identifier for the table."
+    },
+    {
+      "name": "creation_date_time",
+      "type": "timestamp with time zone",
+      "description": "The date and time when the table was created."
+    },
+    {
+      "name": "table_class",
+      "type": "text",
+      "description": "The table class of the specified table. Valid values are STANDARD and STANDARD_INFREQUENT_ACCESS."
+    },
+    {
+      "name": "table_status",
+      "type": "text",
+      "description": "The current state of the table."
+    },
+    {
+      "name": "billing_mode",
+      "type": "text",
+      "description": "Controls how AWS charges for read and write throughput and manage capacity."
+    },
+    {
+      "name": "item_count",
+      "type": "integer",
+      "description": "Number of items in the table. Note that this is an approximate value."
+    },
+    {
+      "name": "global_table_version",
+      "type": "text",
+      "description": "Represents the version of global tables (https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/GlobalTables.html) in use, if the table is replicated across AWS Regions."
+    },
+    {
+      "name": "read_capacity",
+      "type": "integer",
+      "description": "The maximum number of strongly consistent reads consumed per second before DynamoDB returns a ThrottlingException."
+    },
+    {
+      "name": "write_capacity",
+      "type": "integer",
+      "description": "The maximum number of writes consumed per second before DynamoDB returns a ThrottlingException."
+    },
+    {
+      "name": "latest_stream_arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) that uniquely identifies the latest stream for this table."
+    },
+    {
+      "name": "latest_stream_label",
+      "type": "text",
+      "description": "A timestamp, in ISO 8601 format, for this stream."
+    },
+    {
+      "name": "table_size_bytes",
+      "type": "integer",
+      "description": "Size of the table in bytes. Note that this is an approximate value."
+    },
+    {
+      "name": "archival_summary",
+      "type": "json",
+      "description": "Contains information about the table archive."
+    },
+    {
+      "name": "attribute_definitions",
+      "type": "json",
+      "description": "An array of AttributeDefinition objects. Each of these objects describes one attribute in the table and index key schema."
+    },
+    {
+      "name": "key_schema",
+      "type": "json",
+      "description": "The primary key structure for the table."
+    },
+    {
+      "name": "sse_description",
+      "type": "json",
+      "description": "The description of the server-side encryption status on the specified table."
+    },
+    {
+      "name": "deletion_protection_enabled",
+      "type": "boolean",
+      "description": "Indicates whether deletion protection is enabled (true) or disabled (false) on the table."
+    },
+    {
+      "name": "continuous_backups_status",
+      "type": "text",
+      "description": "The continuous backups status of the table. ContinuousBackupsStatus can be one of the following states: ENABLED, DISABLED."
+    },
+    {
+      "name": "streaming_destination",
+      "type": "json",
+      "description": "Provides information about the status of Kinesis streaming."
+    },
+    {
+      "name": "point_in_time_recovery_description",
+      "type": "json",
+      "description": "The description of the point in time recovery settings applied to the table."
+    },
+    {
+      "name": "tags_src",
+      "type": "json",
+      "description": "A list of tags assigned to the table."
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": ""
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "table_name": "aws_vpc_flow_log",
+  "table_description": "AWS VPC Flowlog",
+  "columns": [
+    {
+      "name": "flow_log_id",
+      "type": "text",
+      "description": "The ID of the flow log."
+    },
+    {
+      "name": "creation_time",
+      "type": "timestamp with time zone",
+      "description": "The date and time the flow log was created."
+    },
+    {
+      "name": "deliver_logs_error_message",
+      "type": "text",
+      "description": "Information about the error that occurred."
+    },
+    {
+      "name": "deliver_logs_permission_arn",
+      "type": "text",
+      "description": "The ARN of the IAM role that posts logs to CloudWatch Logs."
+    },
+    {
+      "name": "deliver_logs_status",
+      "type": "text",
+      "description": "The status of the logs delivery (SUCCESS | FAILED)."
+    },
+    {
+      "name": "flow_log_status",
+      "type": "text",
+      "description": "The status of the flow log (ACTIVE)."
+    },
+    {
+      "name": "log_group_name",
+      "type": "text",
+      "description": "The name of the flow log group."
+    },
+    {
+      "name": "resource_id",
+      "type": "text",
+      "description": "The ID of the VPC, subnet, or network interface."
+    },
+    {
+      "name": "traffic_type",
+      "type": "text",
+      "description": "The type of traffic. Valid values are: 'ACCEPT', 'REJECT',  'ALL'."
+    },
+    {
+      "name": "log_destination_type",
+      "type": "text",
+      "description": "Specifies the type of destination to which the flow log data is published."
+    },
+    {
+      "name": "log_destination",
+      "type": "text",
+      "description": "Specifies the destination to which the flow log data is published."
+    },
+    {
+      "name": "bucket_name",
+      "type": "text",
+      "description": "The name of the destination bucket to which the flow log data is published."
+    },
+    {
+      "name": "log_format",
+      "type": "text",
+      "description": "The format of the flow log record."
+    },
+    {
+      "name": "max_aggregation_interval",
+      "type": "integer",
+      "description": "The maximum interval of time, in seconds, during which a flow of packets is captured and aggregated into a flow log record."
+    },
+    {
+      "name": "tags_src",
+      "type": "json",
+      "description": "A list of tags assigned to the VPC flowlog."
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": ""
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    }
+  ]
+}

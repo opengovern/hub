@@ -1,0 +1,81 @@
+{
+  "table_name": "azure_compute_availability_set",
+  "table_description": "Azure Compute Availability Set",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The friendly name that identifies the availability set"
+    },
+    {
+      "name": "id",
+      "type": "text",
+      "description": "The unique id identifying the resource in subscription"
+    },
+    {
+      "name": "type",
+      "type": "text",
+      "description": "The type of the resource in Azure"
+    },
+    {
+      "name": "platform_fault_domain_count",
+      "type": "integer",
+      "description": "Contains the fault domain count"
+    },
+    {
+      "name": "platform_update_domain_count",
+      "type": "integer",
+      "description": "Contains the update domain count"
+    },
+    {
+      "name": "proximity_placement_group_id",
+      "type": "text",
+      "description": "Specifies information about the proximity placement group that the availability set should be assigned to"
+    },
+    {
+      "name": "sku_capacity",
+      "type": "integer",
+      "description": "Specifies the number of virtual machines in the scale set"
+    },
+    {
+      "name": "sku_name",
+      "type": "text",
+      "description": "The availability sets sku name"
+    },
+    {
+      "name": "sku_tier",
+      "type": "text",
+      "description": "Specifies the tier of virtual machines in a scale set"
+    },
+    {
+      "name": "status",
+      "type": "json",
+      "description": "The resource status information"
+    },
+    {
+      "name": "virtual_machines",
+      "type": "json",
+      "description": "A list of references to all virtual machines in the availability set"
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": "ColumnDescriptionTitle"
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": "ColumnDescriptionTags"
+    },
+    {
+      "name": "region",
+      "type": "text",
+      "description": "ColumnDescriptionRegion"
+    },
+    {
+      "name": "resource_group",
+      "type": "text",
+      "description": "ColumnDescriptionResourceGroup"
+    }
+  ]
+}

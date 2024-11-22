@@ -1,0 +1,86 @@
+{
+  "table_name": "azure_app_configuration",
+  "table_description": "Azure App Configuration",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The name of the resource."
+    },
+    {
+      "name": "id",
+      "type": "text",
+      "description": "The resource ID."
+    },
+    {
+      "name": "provisioning_state",
+      "type": "text",
+      "description": "The provisioning state of the configuration store. Possible values include: 'Creating', 'Updating', 'Deleting', 'Succeeded', 'Failed', 'Canceled'."
+    },
+    {
+      "name": "type",
+      "type": "text",
+      "description": "The type of the resource."
+    },
+    {
+      "name": "creation_date",
+      "type": "timestamp with time zone",
+      "description": "The creation date of configuration store."
+    },
+    {
+      "name": "endpoint",
+      "type": "text",
+      "description": "The DNS endpoint where the configuration store API will be available."
+    },
+    {
+      "name": "public_network_access",
+      "type": "text",
+      "description": "Control permission for data plane traffic coming from public networks while private endpoint is enabled. Possible values include: 'Enabled', 'Disabled'."
+    },
+    {
+      "name": "sku_name",
+      "type": "text",
+      "description": "The SKU name of the configuration store."
+    },
+    {
+      "name": "diagnostic_settings",
+      "type": "json",
+      "description": "A list of active diagnostic settings for the configuration store."
+    },
+    {
+      "name": "encryption",
+      "type": "json",
+      "description": "The encryption settings of the configuration store."
+    },
+    {
+      "name": "identity",
+      "type": "json",
+      "description": "The managed identity information, if configured."
+    },
+    {
+      "name": "private_endpoint_connections",
+      "type": "json",
+      "description": "The list of private endpoint connections that are set up for this resource."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": "ColumnDescriptionTitle"
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": "ColumnDescriptionTags"
+    },
+    {
+      "name": "region",
+      "type": "text",
+      "description": "ColumnDescriptionRegion"
+    },
+    {
+      "name": "resource_group",
+      "type": "text",
+      "description": "ColumnDescriptionResourceGroup"
+    }
+  ]
+}

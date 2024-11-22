@@ -1,0 +1,26 @@
+{
+  "table_name": "azure_network_publicipprefixes",
+  "table_description": "Azure Network PublicIPPrefixes",
+  "columns": [
+    {
+      "name": "id",
+      "type": "text",
+      "description": "The id of the publicipprefixes."
+    },
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The name of the publicipprefixes."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": "ColumnDescriptionTitle"
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": "ColumnDescriptionTags"
+    }
+  ]
+}

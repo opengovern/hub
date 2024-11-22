@@ -1,0 +1,56 @@
+{
+  "table_name": "aws_wellarchitected_consolidated_report",
+  "table_description": "AWS Well-Architected Consolidated Report",
+  "columns": [
+    {
+      "name": "workload_name",
+      "type": "text",
+      "description": "The name of the workload."
+    },
+    {
+      "name": "workload_arn",
+      "type": "text",
+      "description": "The ARN for the workload."
+    },
+    {
+      "name": "workload_id",
+      "type": "text",
+      "description": "The ID assigned to the workload."
+    },
+    {
+      "name": "include_shared_resources",
+      "type": "boolean",
+      "description": "Set to true to have shared resources included in the report."
+    },
+    {
+      "name": "base64_string",
+      "type": "json",
+      "description": "The Base64-encoded string representation of a lens review report. This data can be used to create a PDF file. Only returned by GetConsolidatedReport when PDF format is requested."
+    },
+    {
+      "name": "lenses_applied_count",
+      "type": "integer",
+      "description": "The total number of lenses applied to the workload."
+    },
+    {
+      "name": "metric_type",
+      "type": "text",
+      "description": "The metric type of a metric in the consolidated report. Currently only WORKLOAD metric types are supported."
+    },
+    {
+      "name": "updated_at",
+      "type": "timestamp with time zone",
+      "description": "The date and time when the consolidated report was updated."
+    },
+    {
+      "name": "lenses",
+      "type": "json",
+      "description": "The metrics for the lenses in the workload."
+    },
+    {
+      "name": "risk_counts",
+      "type": "json",
+      "description": "A map from risk names to the count of how many questions have that rating."
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "table_name": "azure_kubernetes_service_version",
+  "table_description": "Azure Kubernetes Service Version",
+  "columns": [
+    {
+      "name": "version",
+      "type": "text",
+      "description": "The major.minor version of Kubernetes release."
+    },
+    {
+      "name": "is_preview",
+      "type": "boolean",
+      "description": "Whether Kubernetes version is currently in preview."
+    },
+    {
+      "name": "capabilities",
+      "type": "json",
+      "description": "Capabilities on this Kubernetes version."
+    },
+    {
+      "name": "patch_versions",
+      "type": "json",
+      "description": "Patch versions of Kubernetes release."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": "ColumnDescriptionTitle"
+    },
+    {
+      "name": "location",
+      "type": "text",
+      "description": "ColumnDescriptionRegion"
+    }
+  ]
+}

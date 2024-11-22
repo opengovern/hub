@@ -1,0 +1,121 @@
+{
+  "table_name": "aws_glue_job",
+  "table_description": "AWS Glue Job",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The name of the GlueJob."
+    },
+    {
+      "name": "arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) of the GlueJob."
+    },
+    {
+      "name": "allocated_capacity",
+      "type": "double precision",
+      "description": "[DEPRECATED] This column has been deprecated and will be removed in a future release, use max_capacity instead. The number of Glue data processing units (DPUs) that can be allocated when this job runs."
+    },
+    {
+      "name": "created_on",
+      "type": "timestamp with time zone",
+      "description": "The time and date that this job definition was created."
+    },
+    {
+      "name": "description",
+      "type": "text",
+      "description": "A description of the job."
+    },
+    {
+      "name": "glue_version",
+      "type": "text",
+      "description": "Glue version determines the versions of Apache Spark and Python that Glue supports."
+    },
+    {
+      "name": "last_modified_on",
+      "type": "timestamp with time zone",
+      "description": "The last point in time when this job definition was modified."
+    },
+    {
+      "name": "log_uri",
+      "type": "text",
+      "description": "This field is reserved for future use."
+    },
+    {
+      "name": "max_capacity",
+      "type": "double precision",
+      "description": "The number of Glue data processing units (DPUs) that can be allocated when this job runs."
+    },
+    {
+      "name": "max_retries",
+      "type": "integer",
+      "description": "The maximum number of times to retry this job after a JobRun fails."
+    },
+    {
+      "name": "number_of_workers",
+      "type": "integer",
+      "description": "The number of workers of a defined workerType that are allocated when a job runs."
+    },
+    {
+      "name": "role",
+      "type": "text",
+      "description": "The name or Amazon Resource Name (ARN) of the IAM role associated with this job."
+    },
+    {
+      "name": "security_configuration",
+      "type": "text",
+      "description": "The name of the SecurityConfiguration structure to be used with this job."
+    },
+    {
+      "name": "timeout",
+      "type": "integer",
+      "description": "The job timeout in minutes."
+    },
+    {
+      "name": "worker_type",
+      "type": "text",
+      "description": "The type of predefined worker that is allocated when a job runs. Accepts a value of Standard, G.1X, or G.2X."
+    },
+    {
+      "name": "command",
+      "type": "json",
+      "description": "The JobCommand that runs this job."
+    },
+    {
+      "name": "connections",
+      "type": "json",
+      "description": "The connections used for this job."
+    },
+    {
+      "name": "default_arguments",
+      "type": "json",
+      "description": "The default arguments for this job, specified as name-value pairs."
+    },
+    {
+      "name": "execution_property",
+      "type": "json",
+      "description": "An ExecutionProperty specifying the maximum number of concurrent runs allowed for this job."
+    },
+    {
+      "name": "job_bookmark",
+      "type": "json",
+      "description": "Defines a point that a job can resume processing."
+    },
+    {
+      "name": "non_overridable_arguments",
+      "type": "json",
+      "description": "Non-overridable arguments for this job, specified as name-value pairs."
+    },
+    {
+      "name": "notification_property",
+      "type": "json",
+      "description": "Specifies configuration properties of a job notification."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "table_name": "aws_backup_legal_hold",
+  "table_description": "AWS Backup Legal Hold",
+  "columns": [
+    {
+      "name": "legal_hold_id",
+      "type": "text",
+      "description": "ID of specific legal hold on one or more recovery points."
+    },
+    {
+      "name": "arn",
+      "type": "text",
+      "description": "This is an Amazon Resource Number (ARN) that uniquely identifies the legal hold."
+    },
+    {
+      "name": "creation_date",
+      "type": "timestamp with time zone",
+      "description": "This is the time in number format when legal hold was created."
+    },
+    {
+      "name": "status",
+      "type": "text",
+      "description": "This is the status of the legal hold. Statuses can be ACTIVE, CREATING, CANCELED, and CANCELING."
+    },
+    {
+      "name": "cancellation_date",
+      "type": "timestamp with time zone",
+      "description": "This is the time in number format when legal hold was cancelled."
+    },
+    {
+      "name": "description",
+      "type": "text",
+      "description": "This is the description of a legal hold."
+    },
+    {
+      "name": "retain_record_until",
+      "type": "timestamp with time zone",
+      "description": "This is the date and time until which the legal hold record will be retained."
+    },
+    {
+      "name": "recovery_point_selection",
+      "type": "json",
+      "description": "This specifies criteria to assign a set of resources, such as resource types or backup vaults."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    }
+  ]
+}

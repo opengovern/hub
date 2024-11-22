@@ -1,0 +1,101 @@
+{
+  "table_name": "azure_maintenance_configuration",
+  "table_description": "Azure Maintenance Configuration.",
+  "columns": [
+    {
+      "name": "id",
+      "type": "text",
+      "description": "Fully qualified identifier of the resource."
+    },
+    {
+      "name": "name",
+      "type": "text",
+      "description": "Name of the resource."
+    },
+    {
+      "name": "type",
+      "type": "text",
+      "description": "The type of the resource."
+    },
+    {
+      "name": "namespace",
+      "type": "text",
+      "description": "Gets or sets namespace of the resource."
+    },
+    {
+      "name": "visibility",
+      "type": "text",
+      "description": "The visibility of the configuration. The default value is 'Custom'. Possible values include: 'VisibilityCustom', 'VisibilityPublic'."
+    },
+    {
+      "name": "maintenance_scope",
+      "type": "text",
+      "description": "The maintenanceScope of the configuration. Possible values include: 'ScopeHost', 'ScopeOSImage', 'ScopeExtension', 'ScopeInGuestPatch', 'ScopeSQLDB', 'ScopeSQLManagedInstance'."
+    },
+    {
+      "name": "created_at",
+      "type": "timestamp with time zone",
+      "description": "The timestamp of resource creation (UTC)."
+    },
+    {
+      "name": "created_by",
+      "type": "text",
+      "description": "The identity that created the resource."
+    },
+    {
+      "name": "created_by_type",
+      "type": "text",
+      "description": "The type of identity that created the resource. Possible values include: 'CreatedByTypeUser', 'CreatedByTypeApplication', 'CreatedByTypeManagedIdentity', 'CreatedByTypeKey'."
+    },
+    {
+      "name": "last_modified_at",
+      "type": "timestamp with time zone",
+      "description": "The timestamp of resource last modification (UTC)."
+    },
+    {
+      "name": "last_modified_by",
+      "type": "text",
+      "description": "The identity that last modified the resource."
+    },
+    {
+      "name": "last_modified_by_type",
+      "type": "text",
+      "description": "The type of identity that last modified the resource. Possible values include: 'CreatedByTypeUser', 'CreatedByTypeApplication', 'CreatedByTypeManagedIdentity', 'CreatedByTypeKey'."
+    },
+    {
+      "name": "extension_properties",
+      "type": "json",
+      "description": "Gets or sets extensionProperties of the maintenanceConfiguration."
+    },
+    {
+      "name": "window",
+      "type": "json",
+      "description": "Definition of a MaintenanceWindow."
+    },
+    {
+      "name": "system_data",
+      "type": "json",
+      "description": "Azure Resource Manager metadata containing createdBy and modifiedBy information."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": "ColumnDescriptionTitle"
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": "ColumnDescriptionTags"
+    },
+    {
+      "name": "region",
+      "type": "text",
+      "description": "ColumnDescriptionRegion"
+    },
+    {
+      "name": "resource_group",
+      "type": "text",
+      "description": "ColumnDescriptionResourceGroup"
+    }
+  ]
+}

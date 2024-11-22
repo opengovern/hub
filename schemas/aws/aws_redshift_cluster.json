@@ -1,0 +1,271 @@
+{
+  "table_name": "aws_redshift_cluster",
+  "table_description": "AWS Redshift Cluster",
+  "columns": [
+    {
+      "name": "cluster_identifier",
+      "type": "text",
+      "description": "The unique identifier of the cluster."
+    },
+    {
+      "name": "arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) specifying the cluster."
+    },
+    {
+      "name": "cluster_namespace_arn",
+      "type": "text",
+      "description": "The namespace Amazon Resource Name (ARN) of the cluster."
+    },
+    {
+      "name": "allow_version_upgrade",
+      "type": "boolean",
+      "description": "A boolean value that, if true, indicates that major version upgrades will be applied automatically to the cluster during the maintenance window."
+    },
+    {
+      "name": "automated_snapshot_retention_period",
+      "type": "integer",
+      "description": "The number of days that automatic cluster snapshots are retained."
+    },
+    {
+      "name": "availability_zone",
+      "type": "text",
+      "description": "The name of the Availability Zone in which the cluster is located."
+    },
+    {
+      "name": "availability_zone_relocation_status",
+      "type": "text",
+      "description": "Describes the status of the Availability Zone relocation operation."
+    },
+    {
+      "name": "cluster_availability_status",
+      "type": "text",
+      "description": "The availability status of the cluster for queries."
+    },
+    {
+      "name": "cluster_create_time",
+      "type": "timestamp with time zone",
+      "description": "The date and time that the cluster was created."
+    },
+    {
+      "name": "cluster_nodes",
+      "type": "json",
+      "description": "The nodes in the cluster."
+    },
+    {
+      "name": "cluster_parameter_groups",
+      "type": "json",
+      "description": "The list of cluster parameter groups that are associated with this cluster. Each parameter group in the list is returned with its status."
+    },
+    {
+      "name": "cluster_public_key",
+      "type": "text",
+      "description": "The public key for the cluster."
+    },
+    {
+      "name": "cluster_revision_number",
+      "type": "text",
+      "description": "The specific revision number of the database in the cluster."
+    },
+    {
+      "name": "cluster_security_groups",
+      "type": "json",
+      "description": "A list of cluster security group that are associated with the cluster. Each security group is represented by an element that contains ClusterSecurityGroup.Name and ClusterSecurityGroup.Status subelements. Cluster security groups are used when the cluster is not created in an Amazon Virtual Private Cloud (VPC). Clusters that are created in a VPC use VPC security groups, which are listed by the VpcSecurityGroups parameter."
+    },
+    {
+      "name": "cluster_snapshot_copy_status",
+      "type": "json",
+      "description": "A value that returns the destination region and retention period that are configured for cross-region snapshot copy."
+    },
+    {
+      "name": "cluster_status",
+      "type": "text",
+      "description": "The current state of the cluster."
+    },
+    {
+      "name": "cluster_subnet_group_name",
+      "type": "text",
+      "description": "The name of the subnet group that is associated with the cluster. This parameter is valid only when the cluster is in a VPC."
+    },
+    {
+      "name": "cluster_version",
+      "type": "text",
+      "description": "The version ID of the Amazon Redshift engine that is running on the cluster."
+    },
+    {
+      "name": "data_transfer_progress",
+      "type": "json",
+      "description": "Describes the status of a cluster while it is in the process of resizing with an incremental resize."
+    },
+    {
+      "name": "db_name",
+      "type": "text",
+      "description": "The name of the initial database that was created when the cluster was created. This same name is returned for the life of the cluster. If an initial database was not specified, a database named devdev was created by default."
+    },
+    {
+      "name": "deferred_maintenance_windows",
+      "type": "json",
+      "description": "Describes a group of DeferredMaintenanceWindow objects."
+    },
+    {
+      "name": "elastic_ip_status",
+      "type": "json",
+      "description": "The status of the elastic IP (EIP) address."
+    },
+    {
+      "name": "elastic_resize_number_of_node_options",
+      "type": "text",
+      "description": "The number of nodes that you can resize the cluster to with the elastic resize method."
+    },
+    {
+      "name": "encrypted",
+      "type": "boolean",
+      "description": "A boolean value that, if true, indicates that data in the cluster is encrypted at rest."
+    },
+    {
+      "name": "endpoint",
+      "type": "json",
+      "description": "The connection endpoint."
+    },
+    {
+      "name": "enhanced_vpc_routing",
+      "type": "boolean",
+      "description": "An option that specifies whether to create the cluster with enhanced VPC routing enabled. To create a cluster that uses enhanced VPC routing, the cluster must be in a VPC. If this option is true, enhanced VPC routing is enabled."
+    },
+    {
+      "name": "expected_next_snapshot_schedule_time",
+      "type": "timestamp with time zone",
+      "description": "The date and time when the next snapshot is expected to be taken for clusters with a valid snapshot schedule and backups enabled."
+    },
+    {
+      "name": "expected_next_snapshot_schedule_time_status",
+      "type": "text",
+      "description": "The status of next expected snapshot for clusters having a valid snapshot schedule and backups enabled."
+    },
+    {
+      "name": "hsm_status",
+      "type": "json",
+      "description": "A value that reports whether the Amazon Redshift cluster has finished applying any hardware security module (HSM) settings changes specified in a modify cluster command."
+    },
+    {
+      "name": "iam_roles",
+      "type": "json",
+      "description": "A list of AWS Identity and Access Management (IAM) roles that can be used by the cluster to access other AWS services."
+    },
+    {
+      "name": "kms_key_id",
+      "type": "text",
+      "description": "The AWS Key Management Service (AWS KMS) key ID of the encryption key used to encrypt data in the cluster."
+    },
+    {
+      "name": "maintenance_track_name",
+      "type": "text",
+      "description": "The name of the maintenance track for the cluster."
+    },
+    {
+      "name": "manual_snapshot_retention_period",
+      "type": "integer",
+      "description": "The default number of days to retain a manual snapshot. If the value is -1, the snapshot is retained indefinitely. This setting doesn't change the retention period of existing snapshots. The value must be either -1 or an integer between 1 and 3,653."
+    },
+    {
+      "name": "master_username",
+      "type": "text",
+      "description": "The master user name for the cluster. This name is used to connect to the database that is specified in the DBName parameter."
+    },
+    {
+      "name": "modify_status",
+      "type": "text",
+      "description": "The status of a modify operation, if any, initiated for the cluster."
+    },
+    {
+      "name": "next_maintenance_window_start_time",
+      "type": "timestamp with time zone",
+      "description": "The date and time in UTC when system maintenance can begin."
+    },
+    {
+      "name": "node_type",
+      "type": "text",
+      "description": "The node type for the nodes in the cluster."
+    },
+    {
+      "name": "number_of_nodes",
+      "type": "integer",
+      "description": "The number of compute nodes in the cluster."
+    },
+    {
+      "name": "pending_actions",
+      "type": "json",
+      "description": "Cluster operations that are waiting to be started."
+    },
+    {
+      "name": "pending_modified_values",
+      "type": "json",
+      "description": "A value that, if present, indicates that changes to the cluster are pending. Specific pending changes are identified by subelements."
+    },
+    {
+      "name": "preferred_maintenance_window",
+      "type": "text",
+      "description": "The weekly time range, in Universal Coordinated Time (UTC), during which system maintenance can occur."
+    },
+    {
+      "name": "publicly_accessible",
+      "type": "boolean",
+      "description": "A boolean value that, if true, indicates that the cluster can be accessed from a public network."
+    },
+    {
+      "name": "resize_info",
+      "type": "json",
+      "description": "Describes a resize operation."
+    },
+    {
+      "name": "restore_status",
+      "type": "json",
+      "description": "A value that describes the status of a cluster restore action. This parameter returns null if the cluster was not created by restoring a snapshot."
+    },
+    {
+      "name": "snapshot_schedule_identifier",
+      "type": "text",
+      "description": "A unique identifier for the cluster snapshot schedule."
+    },
+    {
+      "name": "snapshot_schedule_state",
+      "type": "text",
+      "description": "The current state of the cluster snapshot schedule."
+    },
+    {
+      "name": "vpc_id",
+      "type": "text",
+      "description": "The identifier of the VPC the cluster is in, if the cluster is in a VPC."
+    },
+    {
+      "name": "vpc_security_groups",
+      "type": "json",
+      "description": "A list of Amazon Virtual Private Cloud (Amazon VPC) security groups that are associated with the cluster. This parameter is returned only if the cluster is in a VPC."
+    },
+    {
+      "name": "logging_status",
+      "type": "json",
+      "description": "Describes the status of logging for a cluster."
+    },
+    {
+      "name": "scheduled_actions",
+      "type": "json",
+      "description": "A list of scheduled actions for specified cluster."
+    },
+    {
+      "name": "tags_src",
+      "type": "json",
+      "description": "The list of tags for the cluster."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": ""
+    }
+  ]
+}

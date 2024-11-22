@@ -1,0 +1,151 @@
+{
+  "table_name": "digitalocean_load_balancer",
+  "table_description": "DigitalOcean Load Balancers provide a way to distribute traffic across multiple Droplets.",
+  "columns": [
+    {
+      "name": "id",
+      "type": "text",
+      "description": "A unique ID that can be used to identify and reference a load balancer."
+    },
+    {
+      "name": "name",
+      "type": "text",
+      "description": "A human-readable name for a load balancer instance."
+    },
+    {
+      "name": "algorithm",
+      "type": "text",
+      "description": "The load balancing algorithm used to determine which backend Droplet will be selected by a client. It must be either \\\"round_robin\\\" or \\\"least_connections\\\"."
+    },
+    {
+      "name": "created_at",
+      "type": "timestamp with time zone",
+      "description": "Time when the load balancer was created."
+    },
+    {
+      "name": "droplet_ids",
+      "type": "json",
+      "description": "An array containing the IDs of the Droplets assigned to the load balancer."
+    },
+    {
+      "name": "enable_backend_keepalive",
+      "type": "boolean",
+      "description": "A boolean value indicating whether HTTP keepalive connections are maintained to target Droplets."
+    },
+    {
+      "name": "enable_proxy_protocol",
+      "type": "boolean",
+      "description": "A boolean value indicating whether PROXY Protocol is in use."
+    },
+    {
+      "name": "forwarding_rules",
+      "type": "json",
+      "description": "An object specifying the forwarding rules for a load balancer."
+    },
+    {
+      "name": "health_check_healthy_threshold",
+      "type": "integer",
+      "description": "The number of times a health check must pass for a backend Droplet to be marked \\\"healthy\\\" and be re-added to the pool."
+    },
+    {
+      "name": "health_check_interval_seconds",
+      "type": "integer",
+      "description": "The number of seconds between between two consecutive health checks."
+    },
+    {
+      "name": "health_check_path",
+      "type": "text",
+      "description": "The path on the backend Droplets to which the load balancer instance will send a request."
+    },
+    {
+      "name": "health_check_port",
+      "type": "integer",
+      "description": "An integer representing the port on the backend Droplets on which the health check will attempt a connection."
+    },
+    {
+      "name": "health_check_protocol",
+      "type": "text",
+      "description": "The protocol used for health checks sent to the backend Droplets. The possible values are \\\"http\\\", \\\"https\\\", or \\\"tcp\\\"."
+    },
+    {
+      "name": "health_check_response_timeout_seconds",
+      "type": "integer",
+      "description": "The number of seconds the load balancer instance will wait for a response until marking a health check as failed."
+    },
+    {
+      "name": "health_check_unhealthy_threshold",
+      "type": "integer",
+      "description": "The number of times a health check must fail for a backend Droplet to be marked \\\"unhealthy\\\" and be removed from the pool."
+    },
+    {
+      "name": "ip",
+      "type": "inet",
+      "description": "An attribute containing the public-facing IP address of the load balancer."
+    },
+    {
+      "name": "redirect_http_to_https",
+      "type": "boolean",
+      "description": "A boolean value indicating whether HTTP requests to the load balancer on port 80 will be redirected to HTTPS on port 443."
+    },
+    {
+      "name": "region_slug",
+      "type": "text",
+      "description": "The unique slug identifier for the region the load balancer is deployed in."
+    },
+    {
+      "name": "region_name",
+      "type": "text",
+      "description": "The name of the region the load balancer is deployed in."
+    },
+    {
+      "name": "size_slug",
+      "type": "text",
+      "description": "The size of the load balancer. The available sizes are \\\"lb-small\\\", \\\"lb-medium\\\", or \\\"lb-large\\\"."
+    },
+    {
+      "name": "status",
+      "type": "text",
+      "description": "A status string indicating the current state of the load balancer. This can be \\\"new\\\", \\\"active\\\", or \\\"errored\\\"."
+    },
+    {
+      "name": "sticky_sessions_cookie_name",
+      "type": "text",
+      "description": "The name of the cookie sent to the client. This attribute is only returned when using \\\"cookies\\\" for the sticky sessions type."
+    },
+    {
+      "name": "sticky_sessions_cookie_ttl_seconds",
+      "type": "integer",
+      "description": "The number of seconds until the cookie set by the load balancer expires. This attribute is only returned when using \\\"cookies\\\" for the sticky sessions type."
+    },
+    {
+      "name": "sticky_sessions_type",
+      "type": "text",
+      "description": "An attribute indicating how and if requests from a client will be persistently served by the same backend Droplet. The possible values are \\\"cookies\\\" or \\\"none\\\"."
+    },
+    {
+      "name": "tag",
+      "type": "text",
+      "description": "The name of a Droplet tag corresponding to Droplets assigned to the load balancer."
+    },
+    {
+      "name": "urn",
+      "type": "text",
+      "description": "The uniform resource name (URN) for the load balancer."
+    },
+    {
+      "name": "vpc_uuid",
+      "type": "text",
+      "description": "A string specifying the UUID of the VPC to which the load balancer is assigned."
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": ""
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    }
+  ]
+}

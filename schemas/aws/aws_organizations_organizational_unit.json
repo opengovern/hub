@@ -1,0 +1,41 @@
+{
+  "table_name": "aws_organizations_organizational_unit",
+  "table_description": "AWS Organizations Organizational Unit",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The friendly name of this OU."
+    },
+    {
+      "name": "id",
+      "type": "text",
+      "description": "The unique identifier (ID) associated with this OU."
+    },
+    {
+      "name": "arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) of this OU."
+    },
+    {
+      "name": "parent_id",
+      "type": "text",
+      "description": "The unique identifier (ID) of the root or OU whose child OUs you want to list."
+    },
+    {
+      "name": "path",
+      "type": "text",
+      "description": "The OU path is a string representation that uniquely identifies the hierarchical location of an Organizational Unit within the AWS Organizations structure."
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": "Organizational Unit Tags"
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    }
+  ]
+}

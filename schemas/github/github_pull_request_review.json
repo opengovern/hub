@@ -1,0 +1,66 @@
+{
+  "table_name": "github_pull_request_review",
+  "table_description": "Pull Request Reviews are groups of pull request review comments on a pull request.",
+  "columns": [
+    {
+      "name": "repository_full_name",
+      "type": "text",
+      "description": "The full name of the repository (login/repo-name)."
+    },
+    {
+      "name": "number",
+      "type": "integer",
+      "description": "The PR number."
+    },
+    {
+      "name": "id",
+      "type": "integer",
+      "description": "The ID of the review."
+    },
+    {
+      "name": "node_id",
+      "type": "text",
+      "description": "The node ID of the review."
+    },
+    {
+      "name": "author",
+      "type": "json",
+      "description": "The actor who authored the review."
+    },
+    {
+      "name": "author_login",
+      "type": "text",
+      "description": "The login of the review author."
+    },
+    {
+      "name": "author_association",
+      "type": "text",
+      "description": "Author's association with the subject of the pr the review was raised on."
+    },
+    {
+      "name": "author_can_push_to_repository",
+      "type": "boolean",
+      "description": "Indicates whether the author of this review has push access to the repository."
+    },
+    {
+      "name": "body",
+      "type": "text",
+      "description": "The body of the review."
+    },
+    {
+      "name": "state",
+      "type": "text",
+      "description": "The state of the review."
+    },
+    {
+      "name": "url",
+      "type": "text",
+      "description": "The HTTP URL permalink for this PullRequestReview."
+    },
+    {
+      "name": "submitted_at",
+      "type": "timestamp with time zone",
+      "description": "Identifies when the Pull Request Review was submitted."
+    }
+  ]
+}

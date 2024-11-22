@@ -1,0 +1,101 @@
+{
+  "table_name": "aws_vpc_endpoint",
+  "table_description": "AWS VPC Endpoint",
+  "columns": [
+    {
+      "name": "vpc_endpoint_id",
+      "type": "text",
+      "description": "The ID of the VPC endpoint."
+    },
+    {
+      "name": "service_name",
+      "type": "text",
+      "description": "The name of the service to which the endpoint is associated."
+    },
+    {
+      "name": "owner_id",
+      "type": "text",
+      "description": "The ID of the AWS account that owns the VPC endpoint."
+    },
+    {
+      "name": "vpc_id",
+      "type": "text",
+      "description": "The ID of the VPC to which the endpoint is associated."
+    },
+    {
+      "name": "vpc_endpoint_type",
+      "type": "text",
+      "description": "The type of endpoint."
+    },
+    {
+      "name": "state",
+      "type": "text",
+      "description": "The state of the VPC endpoint."
+    },
+    {
+      "name": "private_dns_enabled",
+      "type": "boolean",
+      "description": "Indicates whether the VPC is associated with a private hosted zone."
+    },
+    {
+      "name": "requester_managed",
+      "type": "boolean",
+      "description": "Indicates whether the VPC endpoint is being managed by its service."
+    },
+    {
+      "name": "policy",
+      "type": "json",
+      "description": "The policy document associated with the endpoint, if applicable."
+    },
+    {
+      "name": "policy_std",
+      "type": "json",
+      "description": "Contains the policy in a canonical form for easier searching."
+    },
+    {
+      "name": "subnet_ids",
+      "type": "json",
+      "description": "One or more subnets in which the endpoint is located."
+    },
+    {
+      "name": "route_table_ids",
+      "type": "json",
+      "description": "One or more route tables associated with the endpoint."
+    },
+    {
+      "name": "groups",
+      "type": "json",
+      "description": "Information about the security groups that are associated with the network interface."
+    },
+    {
+      "name": "network_interface_ids",
+      "type": "json",
+      "description": "One or more network interfaces for the endpoint."
+    },
+    {
+      "name": "dns_entries",
+      "type": "json",
+      "description": "The DNS entries for the endpoint."
+    },
+    {
+      "name": "creation_timestamp",
+      "type": "timestamp with time zone",
+      "description": "The date and time that the VPC endpoint was created."
+    },
+    {
+      "name": "tags_src",
+      "type": "json",
+      "description": "A list of tags assigned to the VPC endpoint."
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": ""
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    }
+  ]
+}

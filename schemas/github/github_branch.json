@@ -1,0 +1,31 @@
+{
+  "table_name": "github_branch",
+  "table_description": "Branches in the given repository.",
+  "columns": [
+    {
+      "name": "repository_full_name",
+      "type": "text",
+      "description": "Full name of the repository that contains the branch."
+    },
+    {
+      "name": "name",
+      "type": "text",
+      "description": "Name of the branch."
+    },
+    {
+      "name": "commit",
+      "type": "json",
+      "description": "Latest commit on the branch."
+    },
+    {
+      "name": "protected",
+      "type": "boolean",
+      "description": "If true, the branch is protected."
+    },
+    {
+      "name": "branch_protection_rule",
+      "type": "json",
+      "description": "Branch protection rule if protected."
+    }
+  ]
+}

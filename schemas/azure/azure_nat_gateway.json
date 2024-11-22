@@ -1,0 +1,86 @@
+{
+  "table_name": "azure_nat_gateway",
+  "table_description": "Azure NAT Gateway",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The friendly name that identifies the nat gateway."
+    },
+    {
+      "name": "id",
+      "type": "text",
+      "description": "Contains ID to identify a nat gateway uniquely."
+    },
+    {
+      "name": "etag",
+      "type": "text",
+      "description": "An unique read-only string that changes whenever the resource is updated."
+    },
+    {
+      "name": "idle_timeout_in_minutes",
+      "type": "integer",
+      "description": "The idle timeout of the nat gateway."
+    },
+    {
+      "name": "provisioning_state",
+      "type": "text",
+      "description": "The provisioning state of the nat gateway resource."
+    },
+    {
+      "name": "resource_guid",
+      "type": "text",
+      "description": "The provisioning state of the nat gateway resource."
+    },
+    {
+      "name": "sku_name",
+      "type": "text",
+      "description": "The nat gateway SKU."
+    },
+    {
+      "name": "type",
+      "type": "text",
+      "description": "The resource type of the nat gateway."
+    },
+    {
+      "name": "public_ip_addresses",
+      "type": "json",
+      "description": "An array of public ip addresses associated with the nat gateway resource."
+    },
+    {
+      "name": "public_ip_prefixes",
+      "type": "json",
+      "description": "An array of public ip prefixes associated with the nat gateway resource."
+    },
+    {
+      "name": "subnets",
+      "type": "json",
+      "description": "An array of references to the subnets using this nat gateway resource."
+    },
+    {
+      "name": "zones",
+      "type": "json",
+      "description": "A list of availability zones denoting the zone in which Nat Gateway should be deployed."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": "ColumnDescriptionTitle"
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": "ColumnDescriptionTags"
+    },
+    {
+      "name": "region",
+      "type": "text",
+      "description": "ColumnDescriptionRegion"
+    },
+    {
+      "name": "resource_group",
+      "type": "text",
+      "description": "ColumnDescriptionResourceGroup"
+    }
+  ]
+}

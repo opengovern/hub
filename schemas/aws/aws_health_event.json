@@ -1,0 +1,56 @@
+{
+  "table_name": "aws_health_event",
+  "table_description": "AWS Health Event",
+  "columns": [
+    {
+      "name": "arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) of the HealthEvent."
+    },
+    {
+      "name": "availability_zone",
+      "type": "text",
+      "description": "The Amazon Web Services Availability Zone of the event."
+    },
+    {
+      "name": "start_time",
+      "type": "timestamp with time zone",
+      "description": "The date and time that the event began."
+    },
+    {
+      "name": "end_time",
+      "type": "timestamp with time zone",
+      "description": "The date and time that the event ended."
+    },
+    {
+      "name": "event_scope_code",
+      "type": "text",
+      "description": "This parameter specifies if the Health event is a public Amazon Web Services service event or an account-specific event."
+    },
+    {
+      "name": "event_type_category",
+      "type": "text",
+      "description": "A list of event type category codes. Possible values are issue, accountNotification, or scheduledChange."
+    },
+    {
+      "name": "event_type_code",
+      "type": "text",
+      "description": "The unique identifier for the event type."
+    },
+    {
+      "name": "last_updated_time",
+      "type": "timestamp with time zone",
+      "description": "The most recent date and time that the event was updated."
+    },
+    {
+      "name": "service",
+      "type": "text",
+      "description": "The Amazon Web Services service that is affected by the event. For example, EC2, RDS."
+    },
+    {
+      "name": "status_code",
+      "type": "text",
+      "description": "The most recent status of the event. Possible values are open, closed, and upcoming."
+    }
+  ]
+}

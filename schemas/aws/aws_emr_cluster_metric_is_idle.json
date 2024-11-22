@@ -1,0 +1,11 @@
+{
+  "table_name": "aws_emr_cluster_metric_is_idle",
+  "table_description": "AWS EMR Cluster Cloudwatch Metrics - IsIdle",
+  "columns": [
+    {
+      "name": "id",
+      "type": "text",
+      "description": "The unique identifier for the cluster."
+    }
+  ]
+}

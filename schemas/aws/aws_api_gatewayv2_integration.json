@@ -1,0 +1,121 @@
+{
+  "table_name": "aws_api_gatewayv2_integration",
+  "table_description": "AWS API Gateway Version 2 Integration",
+  "columns": [
+    {
+      "name": "integration_id",
+      "type": "text",
+      "description": "Represents the identifier of an integration."
+    },
+    {
+      "name": "api_id",
+      "type": "text",
+      "description": "Represents the identifier of an API."
+    },
+    {
+      "name": "arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) specifying the integration."
+    },
+    {
+      "name": "description",
+      "type": "text",
+      "description": "Represents the description of an integration."
+    },
+    {
+      "name": "integration_method",
+      "type": "text",
+      "description": "Specifies the integration's HTTP method type."
+    },
+    {
+      "name": "integration_type",
+      "type": "text",
+      "description": "Represents an API method integration type."
+    },
+    {
+      "name": "integration_uri",
+      "type": "text",
+      "description": "A string representation of a URI with a length between [1-2048]. For a Lambda integration, specify the URI of a Lambda function. For an HTTP integration, specify a fully-qualified URL."
+    },
+    {
+      "name": "api_gateway_managed",
+      "type": "boolean",
+      "description": "Specifies whether an integration is managed by API Gateway. If you created an API using using quick create, the resulting integration is managed by API Gateway. You can update a managed integration, but you can't delete it."
+    },
+    {
+      "name": "connection_id",
+      "type": "text",
+      "description": "The ID of the VPC link for a private integration. Supported only for HTTP APIs."
+    },
+    {
+      "name": "connection_type",
+      "type": "text",
+      "description": "Represents a connection type."
+    },
+    {
+      "name": "content_handling_strategy",
+      "type": "text",
+      "description": "Specifies how to handle response payload content type conversions. Supported only for WebSocket APIs."
+    },
+    {
+      "name": "credentials_arn",
+      "type": "text",
+      "description": "Specifies the credentials required for the integration, if any. For AWS integrations, three options are available. To specify an IAM Role for API Gateway to assume, use the role's Amazon Resource Name (ARN)."
+    },
+    {
+      "name": "integration_response_selection_expression",
+      "type": "text",
+      "description": "An expression used to extract information at runtime. See Selection Expressions(https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-websocket-api-selection-expressions.html#apigateway-websocket-api-apikey-selection-expressions for more information."
+    },
+    {
+      "name": "integration_subtype",
+      "type": "text",
+      "description": "A string with a length between [1-128]."
+    },
+    {
+      "name": "passthrough_behavior",
+      "type": "text",
+      "description": "Represents passthrough behavior for an integration response. Supported only for WebSocket APIs."
+    },
+    {
+      "name": "payload_format_version",
+      "type": "text",
+      "description": "Specifies the format of the payload sent to an integration. Required for HTTP APIs."
+    },
+    {
+      "name": "template_selection_expression",
+      "type": "text",
+      "description": "The template selection expression for the integration. Supported only for WebSocket APIs."
+    },
+    {
+      "name": "timeout_in_millis",
+      "type": "integer",
+      "description": "Indicates custom timeout between 50 and 29,000 milliseconds for WebSocket APIs and between 50 and 30,000 milliseconds for HTTP APIs. The default timeout is 29 seconds for WebSocket APIs and 30 seconds for HTTP APIs."
+    },
+    {
+      "name": "request_parameters",
+      "type": "json",
+      "description": "For HTTP API itegrations, without a specified integrationSubtype request parameters are a key-value map specifying how to transform HTTP requests before sending them to backend integrations. The key should follow the pattern \u003caction\u003e:\u003cheader|querystring|path\u003e.\u003clocation\u003e. The action can be append, overwrite or remove. For values, you can provide static values, or map request data, stage variables, or context variables that are evaluated at runtime. To learn more, see Transforming API requests and responses (https://docs.aws.amazon.com/apigateway/latest/developerguide/http-api-parameter-mapping.html)."
+    },
+    {
+      "name": "request_templates",
+      "type": "json",
+      "description": "Represents a map of Velocity templates that are applied on the request payload based on the value of the Content-Type header sent by the client. The content type value is the key in this map, and the template (as a String) is the value. Supported only for WebSocket APIs."
+    },
+    {
+      "name": "response_parameters",
+      "type": "json",
+      "description": "API requests and responses (https://docs.aws.amazon.com/apigateway/latest/developerguide/http-api-parameter-mapping.html)."
+    },
+    {
+      "name": "tls_config",
+      "type": "json",
+      "description": "The TLS configuration for a private integration. If you specify a TLS configuration, private integration traffic uses the HTTPS protocol. Supported only for HTTP APIs."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    }
+  ]
+}

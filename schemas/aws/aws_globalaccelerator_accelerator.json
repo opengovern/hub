@@ -1,0 +1,71 @@
+{
+  "table_name": "aws_globalaccelerator_accelerator",
+  "table_description": "AWS Global Accelerator Accelerator",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The name of the accelerator."
+    },
+    {
+      "name": "arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) of the accelerator."
+    },
+    {
+      "name": "created_time",
+      "type": "timestamp with time zone",
+      "description": "The date and time that the accelerator was created."
+    },
+    {
+      "name": "dns_name",
+      "type": "text",
+      "description": "The Domain Name System (DNS) name that Global Accelerator creates that points to your accelerator's static IP addresses."
+    },
+    {
+      "name": "enabled",
+      "type": "boolean",
+      "description": "Indicates whether the accelerator is enabled."
+    },
+    {
+      "name": "ip_address_type",
+      "type": "text",
+      "description": "The value for the address type must be IPv4."
+    },
+    {
+      "name": "ip_sets",
+      "type": "json",
+      "description": "The static IP addresses that Global Accelerator associates with the accelerator."
+    },
+    {
+      "name": "last_modified_time",
+      "type": "timestamp with time zone",
+      "description": "The date and time that the accelerator was last modified."
+    },
+    {
+      "name": "status",
+      "type": "text",
+      "description": "Describes the deployment status of the accelerator."
+    },
+    {
+      "name": "tags_src",
+      "type": "json",
+      "description": "A list of tags associated with the accelerator."
+    },
+    {
+      "name": "accelerator_attributes",
+      "type": "json",
+      "description": "Attributes of the accelerator."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": ""
+    }
+  ]
+}

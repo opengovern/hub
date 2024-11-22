@@ -1,0 +1,56 @@
+{
+  "table_name": "digitalocean_vpc",
+  "table_description": "VPCs (virtual private clouds) are virtual networks containing resources that can communicate with each other in full isolation using private IP addresses.",
+  "columns": [
+    {
+      "name": "id",
+      "type": "text",
+      "description": "A unique ID that can be used to identify and reference the VPC."
+    },
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The name of the VPC. Must be unique and may only contain alphanumeric characters, dashes, and periods."
+    },
+    {
+      "name": "created_at",
+      "type": "timestamp with time zone",
+      "description": "A time value given in ISO8601 combined date and time format."
+    },
+    {
+      "name": "description",
+      "type": "text",
+      "description": "A free-form text field for describing the VPC's purpose. It may be a maximum of 255 characters."
+    },
+    {
+      "name": "ip_range",
+      "type": "cidr",
+      "description": "The range of IP addresses in the VPC in CIDR notation."
+    },
+    {
+      "name": "is_default",
+      "type": "boolean",
+      "description": "A boolean value indicating whether or not the VPC is the default network for the region. All applicable resources are placed into the default VPC network unless otherwise specified during their creation. The `default` field cannot be unset from `true`. If you want to set a new default VPC network, update the `default` field of another VPC network in the same region. The previous network's `default` field will be set to `false` when a new default VPC has been defined."
+    },
+    {
+      "name": "region_slug",
+      "type": "text",
+      "description": "The slug identifier for the region where the VPC will be created."
+    },
+    {
+      "name": "urn",
+      "type": "text",
+      "description": "The uniform resource name (URN) for the VPC."
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": ""
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    }
+  ]
+}

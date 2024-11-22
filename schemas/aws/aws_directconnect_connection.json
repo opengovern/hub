@@ -1,0 +1,31 @@
+{
+  "table_name": "aws_directconnect_connection",
+  "table_description": "AWS DirectConnect Connection",
+  "columns": [
+    {
+      "name": "connection_id",
+      "type": "text",
+      "description": "The id of the connection."
+    },
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The name of the connection."
+    },
+    {
+      "name": "arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) of the connection"
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": ""
+    }
+  ]
+}

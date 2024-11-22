@@ -1,0 +1,31 @@
+{
+  "table_name": "aws_fms_policy",
+  "table_description": "AWS FMS Policy",
+  "columns": [
+    {
+      "name": "id",
+      "type": "text",
+      "description": "The id of the policy."
+    },
+    {
+      "name": "policy_name",
+      "type": "text",
+      "description": "The name of the policy."
+    },
+    {
+      "name": "arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) of the policy"
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": ""
+    }
+  ]
+}

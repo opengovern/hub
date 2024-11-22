@@ -1,0 +1,61 @@
+{
+  "table_name": "aws_ecrpublic_repository",
+  "table_description": "AWS ECR Public Repository",
+  "columns": [
+    {
+      "name": "repository_name",
+      "type": "text",
+      "description": "The name of the repository."
+    },
+    {
+      "name": "registry_id",
+      "type": "text",
+      "description": "The AWS account ID associated with the public registry that contains the repository."
+    },
+    {
+      "name": "arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) that identifies the repository."
+    },
+    {
+      "name": "repository_uri",
+      "type": "text",
+      "description": "The URI for the repository."
+    },
+    {
+      "name": "created_at",
+      "type": "timestamp with time zone",
+      "description": "The date and time, in JavaScript date format, when the repository was created."
+    },
+    {
+      "name": "image_details",
+      "type": "json",
+      "description": "A list of ImageDetail objects that contain data about the image."
+    },
+    {
+      "name": "policy",
+      "type": "json",
+      "description": "The JSON repository policy text associated with the repository."
+    },
+    {
+      "name": "policy_std",
+      "type": "json",
+      "description": "Contains the policy in a canonical form for easier searching."
+    },
+    {
+      "name": "tags_src",
+      "type": "json",
+      "description": "A list of tags assigned to the repository."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": ""
+    }
+  ]
+}

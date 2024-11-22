@@ -1,0 +1,96 @@
+{
+  "table_name": "aws_ssm_patch_baseline",
+  "table_description": "AWS SSM Patch Baseline",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The name of the patch baseline."
+    },
+    {
+      "name": "baseline_id",
+      "type": "text",
+      "description": "The ID of the retrieved patch baseline."
+    },
+    {
+      "name": "description",
+      "type": "text",
+      "description": "A description of the patch baseline."
+    },
+    {
+      "name": "operating_system",
+      "type": "text",
+      "description": "Returns the operating system specified for the patch baseline."
+    },
+    {
+      "name": "created_date",
+      "type": "timestamp with time zone",
+      "description": "The date the patch baseline was created."
+    },
+    {
+      "name": "modified_date",
+      "type": "timestamp with time zone",
+      "description": "The date the patch baseline was last modified."
+    },
+    {
+      "name": "approved_patches_compliance_level",
+      "type": "text",
+      "description": "Returns the specified compliance severity level for approved patches in the patch baseline."
+    },
+    {
+      "name": "approved_patches_enable_non_security",
+      "type": "boolean",
+      "description": "Indicates whether the list of approved patches includes non-security updates that should be applied to the instances. The default value is 'false'. Applies to Linux instances only."
+    },
+    {
+      "name": "approval_rules",
+      "type": "json",
+      "description": "A set of rules used to include patches in the baseline."
+    },
+    {
+      "name": "approved_patches",
+      "type": "json",
+      "description": "A list of explicitly approved patches for the baseline."
+    },
+    {
+      "name": "global_filters",
+      "type": "json",
+      "description": "A set of global filters used to exclude patches from the baseline."
+    },
+    {
+      "name": "patch_groups",
+      "type": "json",
+      "description": "Patch groups included in the patch baseline."
+    },
+    {
+      "name": "rejected_patches_action",
+      "type": "text",
+      "description": "The action specified to take on patches included in the RejectedPatches list. A patch can be allowed only if it is a dependency of another package, or blocked entirely along with packages that include it as a dependency."
+    },
+    {
+      "name": "rejected_patches",
+      "type": "json",
+      "description": "A list of explicitly rejected patches for the baseline."
+    },
+    {
+      "name": "sources",
+      "type": "json",
+      "description": "Information about the patches to use to update the instances, including target operating systems and source repositories. Applies to Linux instances only."
+    },
+    {
+      "name": "tags_src",
+      "type": "json",
+      "description": "A list of tags assigned to the patch baseline."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": ""
+    }
+  ]
+}

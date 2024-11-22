@@ -1,0 +1,46 @@
+{
+  "table_name": "azure_resource_group",
+  "table_description": "Azure Resource Group",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The friendly name that identifies the resource group."
+    },
+    {
+      "name": "id",
+      "type": "text",
+      "description": "Contains ID to identify a resource group uniquely."
+    },
+    {
+      "name": "provisioning_state",
+      "type": "text",
+      "description": "Current state of the resource group."
+    },
+    {
+      "name": "managed_by",
+      "type": "text",
+      "description": "Contains ID of the resource that manages this resource group."
+    },
+    {
+      "name": "type",
+      "type": "text",
+      "description": "Type of the resource group."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": "ColumnDescriptionTitle"
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": "ColumnDescriptionTags"
+    },
+    {
+      "name": "region",
+      "type": "text",
+      "description": "ColumnDescriptionRegion"
+    }
+  ]
+}

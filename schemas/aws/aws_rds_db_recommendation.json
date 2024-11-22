@@ -1,0 +1,111 @@
+{
+  "table_name": "aws_rds_db_recommendation",
+  "table_description": "AWS RDS DB Recommendation",
+  "columns": [
+    {
+      "name": "recommendation_id",
+      "type": "text",
+      "description": "The unique identifier for the recommendation."
+    },
+    {
+      "name": "resource_arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) of the RDS resource associated with the recommendation."
+    },
+    {
+      "name": "category",
+      "type": "text",
+      "description": "The category of the recommendation."
+    },
+    {
+      "name": "status",
+      "type": "text",
+      "description": "The current status of the recommendation."
+    },
+    {
+      "name": "created_time",
+      "type": "timestamp with time zone",
+      "description": "The time when the recommendation was created."
+    },
+    {
+      "name": "updated_time",
+      "type": "timestamp with time zone",
+      "description": "The time when the recommendation was last updated."
+    },
+    {
+      "name": "description",
+      "type": "text",
+      "description": "A detailed description of the recommendation."
+    },
+    {
+      "name": "detection",
+      "type": "text",
+      "description": "A short description of the issue identified for this recommendation."
+    },
+    {
+      "name": "impact",
+      "type": "text",
+      "description": "A short description that explains the possible impact of an issue."
+    },
+    {
+      "name": "reason",
+      "type": "text",
+      "description": "The reason why this recommendation was created."
+    },
+    {
+      "name": "recommendation",
+      "type": "text",
+      "description": "A short description of the recommendation to resolve an issue."
+    },
+    {
+      "name": "severity",
+      "type": "text",
+      "description": "The severity level of the recommendation."
+    },
+    {
+      "name": "source",
+      "type": "text",
+      "description": "The AWS service that generated the recommendations."
+    },
+    {
+      "name": "type_detection",
+      "type": "text",
+      "description": "A short description of the recommendation type."
+    },
+    {
+      "name": "type_id",
+      "type": "text",
+      "description": "A value that indicates the type of recommendation."
+    },
+    {
+      "name": "type_recommendation",
+      "type": "text",
+      "description": "A short description that summarizes the recommendation to fix all the issues of the recommendation type."
+    },
+    {
+      "name": "additional_info",
+      "type": "text",
+      "description": "Additional information about the recommendation."
+    },
+    {
+      "name": "issue_details",
+      "type": "json",
+      "description": "Details of the issue that caused the recommendation."
+    },
+    {
+      "name": "links",
+      "type": "json",
+      "description": "A link to documentation that provides additional information about the recommendation."
+    },
+    {
+      "name": "recommended_actions",
+      "type": "json",
+      "description": "A list of recommended actions."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    }
+  ]
+}

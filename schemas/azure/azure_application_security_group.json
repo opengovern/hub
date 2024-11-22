@@ -1,0 +1,56 @@
+{
+  "table_name": "azure_application_security_group",
+  "table_description": "Azure Application Security Group",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The friendly name that identifies the application security group"
+    },
+    {
+      "name": "id",
+      "type": "text",
+      "description": "Contains ID to identify a application security group uniquely"
+    },
+    {
+      "name": "etag",
+      "type": "text",
+      "description": "An unique read-only string that changes whenever the resource is updated"
+    },
+    {
+      "name": "type",
+      "type": "text",
+      "description": "The resource type of the application security group"
+    },
+    {
+      "name": "provisioning_state",
+      "type": "text",
+      "description": "The resource type of the application security group"
+    },
+    {
+      "name": "resource_guid",
+      "type": "text",
+      "description": "The resource GUID property of the application security group resource"
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": "ColumnDescriptionTitle"
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": "ColumnDescriptionTags"
+    },
+    {
+      "name": "region",
+      "type": "text",
+      "description": "ColumnDescriptionRegion"
+    },
+    {
+      "name": "resource_group",
+      "type": "text",
+      "description": "ColumnDescriptionResourceGroup"
+    }
+  ]
+}

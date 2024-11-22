@@ -1,0 +1,181 @@
+{
+  "table_name": "aws_ec2_network_interface",
+  "table_description": "AWS EC2 Network Interface",
+  "columns": [
+    {
+      "name": "network_interface_id",
+      "type": "text",
+      "description": "The ID of the network interface."
+    },
+    {
+      "name": "status",
+      "type": "text",
+      "description": "The status of the network interface."
+    },
+    {
+      "name": "interface_type",
+      "type": "text",
+      "description": "The type of network interface."
+    },
+    {
+      "name": "description",
+      "type": "text",
+      "description": "A description."
+    },
+    {
+      "name": "availability_zone",
+      "type": "text",
+      "description": "The Availability Zone."
+    },
+    {
+      "name": "owner_id",
+      "type": "text",
+      "description": "The AWS account ID of the owner of the network interface."
+    },
+    {
+      "name": "association_allocation_id",
+      "type": "text",
+      "description": "Allocation id for the association. Association can be an Elastic IP address (IPv4 only), or a Carrier IP address."
+    },
+    {
+      "name": "association_carrier_ip",
+      "type": "inet",
+      "description": "The carrier IP address associated with the network interface."
+    },
+    {
+      "name": "association_customer_owned_ip",
+      "type": "inet",
+      "description": "The customer-owned IP address associated with the network interface."
+    },
+    {
+      "name": "association_id",
+      "type": "text",
+      "description": "The association ID."
+    },
+    {
+      "name": "association_ip_owner_id",
+      "type": "text",
+      "description": "The ID of the Elastic IP address owner."
+    },
+    {
+      "name": "association_public_dns_name",
+      "type": "text",
+      "description": "The public DNS name of the association."
+    },
+    {
+      "name": "association_public_ip",
+      "type": "inet",
+      "description": "The address of the Elastic IP address bound to the network interface."
+    },
+    {
+      "name": "attached_instance_id",
+      "type": "text",
+      "description": "The ID of the attached instance."
+    },
+    {
+      "name": "attached_instance_owner_id",
+      "type": "text",
+      "description": "The AWS account ID of the owner of the attached instance."
+    },
+    {
+      "name": "attachment_id",
+      "type": "text",
+      "description": "The ID of the network interface attachment."
+    },
+    {
+      "name": "attachment_status",
+      "type": "text",
+      "description": "The attachment state."
+    },
+    {
+      "name": "attachment_time",
+      "type": "timestamp with time zone",
+      "description": "The timestamp indicating when the attachment initiated."
+    },
+    {
+      "name": "delete_on_instance_termination",
+      "type": "boolean",
+      "description": "Indicates whether the network interface is deleted when the instance is terminated."
+    },
+    {
+      "name": "device_index",
+      "type": "integer",
+      "description": "The device index of the network interface attachment on the instance."
+    },
+    {
+      "name": "mac_address",
+      "type": "text",
+      "description": "The MAC address of the interface."
+    },
+    {
+      "name": "outpost_arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) of the Outpost, if applicable."
+    },
+    {
+      "name": "private_dns_name",
+      "type": "text",
+      "description": "The private DNS name"
+    },
+    {
+      "name": "private_ip_address",
+      "type": "inet",
+      "description": "The IPv4 address of the network interface within the subnet."
+    },
+    {
+      "name": "requester_id",
+      "type": "text",
+      "description": "The ID of the entity that launched the instance on your behalf (for example, AWS Management Console or Auto Scaling)."
+    },
+    {
+      "name": "requester_managed",
+      "type": "boolean",
+      "description": "Indicates whether the network interface is being managed by AWS."
+    },
+    {
+      "name": "source_dest_check",
+      "type": "boolean",
+      "description": "Indicates whether traffic to or from the instance is validated."
+    },
+    {
+      "name": "subnet_id",
+      "type": "text",
+      "description": "The ID of the subnet."
+    },
+    {
+      "name": "vpc_id",
+      "type": "text",
+      "description": "The ID of the VPC."
+    },
+    {
+      "name": "groups",
+      "type": "json",
+      "description": "Any security groups for the network interface."
+    },
+    {
+      "name": "ipv6_addresses",
+      "type": "json",
+      "description": "The IPv6 addresses associated with the network interface."
+    },
+    {
+      "name": "private_ip_addresses",
+      "type": "json",
+      "description": "The IPv4 address of the network interface within the subnet."
+    },
+    {
+      "name": "tags_src",
+      "type": "json",
+      "description": "A list of tags that are attached to the network interface."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": ""
+    }
+  ]
+}

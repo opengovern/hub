@@ -1,0 +1,21 @@
+{
+  "table_name": "aws_ec2_localgateway",
+  "table_description": "AWS EC2 LocalGateway",
+  "columns": [
+    {
+      "name": "id",
+      "type": "text",
+      "description": "The id of the localgateway."
+    },
+    {
+      "name": "arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) of the localgateway"
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "table_name": "aws_availability_zone",
+  "table_description": "AWS Availability Zone",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The name of the Availability Zone, Local Zone, or Wavelength Zone"
+    },
+    {
+      "name": "zone_id",
+      "type": "text",
+      "description": "The ID of the Availability Zone, Local Zone, or Wavelength Zone."
+    },
+    {
+      "name": "zone_type",
+      "type": "text",
+      "description": "The type of zone. The valid values are availability-zone, local-zone, and wavelength-zone."
+    },
+    {
+      "name": "opt_in_status",
+      "type": "text",
+      "description": "For Availability Zones, this parameter always has the value of opt-in-not-required. For Local Zones and Wavelength Zones, this parameter is the opt-in status. The possible values are opted-in, and not-opted-in."
+    },
+    {
+      "name": "group_name",
+      "type": "text",
+      "description": "For Availability Zones, this parameter has the same value as the Region name. For Local Zones, the name of the associated group, for example us-west-2-lax-1. For Wavelength Zones, the name of the associated group, for example us-east-1-wl1-bos-wlz-1."
+    },
+    {
+      "name": "region_name",
+      "type": "text",
+      "description": "The name of the Region."
+    },
+    {
+      "name": "parent_zone_name",
+      "type": "text",
+      "description": "The name of the zone that handles some of the Local Zone or Wavelength Zone control plane operations, such as API calls."
+    },
+    {
+      "name": "parent_zone_id",
+      "type": "text",
+      "description": "The ID of the zone that handles some of the Local Zone or Wavelength Zone control plane operations, such as API calls"
+    },
+    {
+      "name": "messages",
+      "type": "text",
+      "description": "Any messages about the Availability Zone, Local Zone, or Wavelength Zone."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    }
+  ]
+}

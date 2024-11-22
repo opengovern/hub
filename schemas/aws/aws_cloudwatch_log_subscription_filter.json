@@ -1,0 +1,46 @@
+{
+  "table_name": "aws_cloudwatch_log_subscription_filter",
+  "table_description": "AWS CloudWatch Log Subscription Filter",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The name of the subscription filter."
+    },
+    {
+      "name": "log_group_name",
+      "type": "text",
+      "description": "The name of the log group."
+    },
+    {
+      "name": "creation_time",
+      "type": "timestamp with time zone",
+      "description": "The creation time of the subscription filter."
+    },
+    {
+      "name": "destination_arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) of the destination."
+    },
+    {
+      "name": "distribution",
+      "type": "text",
+      "description": "The method used to distribute log data to the destination."
+    },
+    {
+      "name": "filter_pattern",
+      "type": "text",
+      "description": "A symbolic description of how CloudWatch Logs should interpret the data in each log event."
+    },
+    {
+      "name": "role_arn",
+      "type": "text",
+      "description": "The role associated to the filter."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    }
+  ]
+}

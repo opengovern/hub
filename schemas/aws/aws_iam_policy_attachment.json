@@ -1,0 +1,31 @@
+{
+  "table_name": "aws_iam_policy_attachment",
+  "table_description": "AWS IAM Policy Attachment",
+  "columns": [
+    {
+      "name": "policy_arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) specifying the IAM policy."
+    },
+    {
+      "name": "is_attached",
+      "type": "boolean",
+      "description": "Specifies whether the policy is attached to at least one IAM user, group, or role."
+    },
+    {
+      "name": "policy_groups",
+      "type": "json",
+      "description": "A list of IAM groups that the policy is attached to."
+    },
+    {
+      "name": "policy_roles",
+      "type": "json",
+      "description": "A list of IAM roles that the policy is attached to."
+    },
+    {
+      "name": "policy_users",
+      "type": "json",
+      "description": "A list of IAM users that the policy is attached to."
+    }
+  ]
+}

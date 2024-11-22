@@ -1,0 +1,196 @@
+{
+  "table_name": "aws_dms_endpoint",
+  "table_description": "AWS DMS Endpoint",
+  "columns": [
+    {
+      "name": "endpoint_identifier",
+      "type": "text",
+      "description": "The database endpoint identifier."
+    },
+    {
+      "name": "arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) string that uniquely identifies the endpoint."
+    },
+    {
+      "name": "certificate_arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) used for SSL connection to the endpoint."
+    },
+    {
+      "name": "database_name",
+      "type": "text",
+      "description": "The name of the database at the endpoint."
+    },
+    {
+      "name": "endpoint_type",
+      "type": "text",
+      "description": "The type of endpoint. Valid values are source and target."
+    },
+    {
+      "name": "engine_display_name",
+      "type": "text",
+      "description": "The expanded name for the engine name. For example, if the EngineName parameter is 'aurora', this value would be 'Amazon Aurora MySQL'."
+    },
+    {
+      "name": "engine_name",
+      "type": "text",
+      "description": "The database engine name. Valid values, depending on the EndpointType, include 'mysql', 'oracle', 'postgres', 'mariadb', 'aurora', 'aurora-postgresql', 'redshift', 's3', 'db2', 'db2-zos', 'azuredb', 'sybase', 'dynamodb', 'mongodb', 'kinesis', 'kafka', 'elasticsearch', 'documentdb', 'sqlserver', 'neptune', and 'babelfish'."
+    },
+    {
+      "name": "external_id",
+      "type": "text",
+      "description": "Value returned by a call to CreateEndpoint that can be used for cross-account validation."
+    },
+    {
+      "name": "external_table_definition",
+      "type": "text",
+      "description": "The external table definition."
+    },
+    {
+      "name": "extra_connection_attributes",
+      "type": "text",
+      "description": "Additional connection attributes used to connect to the endpoint."
+    },
+    {
+      "name": "kms_key_id",
+      "type": "text",
+      "description": "An KMS key identifier that is used to encrypt the connection parameters for the endpoint."
+    },
+    {
+      "name": "server_name",
+      "type": "text",
+      "description": "The name of the server at the endpoint."
+    },
+    {
+      "name": "service_access_role_arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) used by the service to access the IAM role."
+    },
+    {
+      "name": "ssl_mode",
+      "type": "text",
+      "description": "The SSL mode used to connect to the endpoint. The default value is none."
+    },
+    {
+      "name": "status",
+      "type": "text",
+      "description": "The status of the endpoint."
+    },
+    {
+      "name": "username",
+      "type": "text",
+      "description": "The user name used to connect to the endpoint."
+    },
+    {
+      "name": "port",
+      "type": "integer",
+      "description": "The port value used to access the endpoint."
+    },
+    {
+      "name": "dms_transfer_settings",
+      "type": "json",
+      "description": "The settings for the DMS Transfer type source."
+    },
+    {
+      "name": "doc_db_settings",
+      "type": "json",
+      "description": "Provides information that defines a DocumentDB endpoint."
+    },
+    {
+      "name": "dynamo_db_settings",
+      "type": "json",
+      "description": "The settings for the DynamoDB target endpoint."
+    },
+    {
+      "name": "elasticsearch_settings",
+      "type": "json",
+      "description": "The settings for the OpenSearch source endpoint."
+    },
+    {
+      "name": "gcp_my_sql_settings",
+      "type": "json",
+      "description": "Settings in JSON format for the source GCP MySQL endpoint."
+    },
+    {
+      "name": "ibm_db2_settings",
+      "type": "json",
+      "description": "The settings for the IBM Db2 LUW source endpoint."
+    },
+    {
+      "name": "kafka_settings",
+      "type": "json",
+      "description": "The settings for the Apache Kafka target endpoint."
+    },
+    {
+      "name": "kinesis_settings",
+      "type": "json",
+      "description": "The settings for the Amazon Kinesis target endpoint."
+    },
+    {
+      "name": "microsoft_sql_server_settings",
+      "type": "json",
+      "description": "The settings for the Microsoft SQL Server source and target endpoint."
+    },
+    {
+      "name": "mongo_db_settings",
+      "type": "json",
+      "description": "The settings for the MongoDB source endpoint."
+    },
+    {
+      "name": "my_sql_settings",
+      "type": "json",
+      "description": "The settings for the MySQL source and target endpoint."
+    },
+    {
+      "name": "neptune_settings",
+      "type": "json",
+      "description": "The settings for the Amazon Neptune target endpoint."
+    },
+    {
+      "name": "oracle_settings",
+      "type": "json",
+      "description": "The settings for the Oracle source and target endpoint."
+    },
+    {
+      "name": "postgre_sql_settings",
+      "type": "json",
+      "description": "The settings for the PostgreSQL source and target endpoint."
+    },
+    {
+      "name": "redis_settings",
+      "type": "json",
+      "description": "The settings for the Redis target endpoint."
+    },
+    {
+      "name": "redshift_settings",
+      "type": "json",
+      "description": "Settings for the Amazon Redshift endpoint."
+    },
+    {
+      "name": "s3_settings",
+      "type": "json",
+      "description": "The settings for the S3 target endpoint."
+    },
+    {
+      "name": "sybase_settings",
+      "type": "json",
+      "description": "The settings for the SAP ASE source and target endpoint."
+    },
+    {
+      "name": "tags_src",
+      "type": "json",
+      "description": "A list of tags currently associated with the replication instance."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": ""
+    }
+  ]
+}

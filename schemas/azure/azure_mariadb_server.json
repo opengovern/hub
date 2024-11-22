@@ -1,0 +1,141 @@
+{
+  "table_name": "azure_mariadb_server",
+  "table_description": "Azure MariaDB Server",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The name of the resource."
+    },
+    {
+      "name": "id",
+      "type": "text",
+      "description": "A fully qualified resource ID for the resource."
+    },
+    {
+      "name": "type",
+      "type": "text",
+      "description": "The type of the resource."
+    },
+    {
+      "name": "version",
+      "type": "text",
+      "description": "Specifies the server version."
+    },
+    {
+      "name": "geo_redundant_backup_enabled",
+      "type": "text",
+      "description": "Indicates whether geo-redundant backup is enabled for server backup, or not."
+    },
+    {
+      "name": "user_visible_state",
+      "type": "text",
+      "description": "A state of a server that is visible to user. Valid values are: 'Ready', 'Dropping', 'Disabled'."
+    },
+    {
+      "name": "administrator_login",
+      "type": "text",
+      "description": "The administrator's login name of a server."
+    },
+    {
+      "name": "auto_grow_enabled",
+      "type": "text",
+      "description": "Indicates whether storage auto grow is enabled for server, or not."
+    },
+    {
+      "name": "backup_retention_days",
+      "type": "integer",
+      "description": "Specifies the backup retention days for the server."
+    },
+    {
+      "name": "earliest_restore_date",
+      "type": "timestamp with time zone",
+      "description": "Specifies the earliest restore point creation time."
+    },
+    {
+      "name": "fully_qualified_domain_name",
+      "type": "text",
+      "description": "The fully qualified domain name of a server."
+    },
+    {
+      "name": "master_service_id",
+      "type": "text",
+      "description": "The master server id of a replica server."
+    },
+    {
+      "name": "public_network_access",
+      "type": "text",
+      "description": "Indicates whether or not public network access is allowed for this server. Valid values are: 'Enabled', 'Disabled'."
+    },
+    {
+      "name": "replication_role",
+      "type": "text",
+      "description": "The replication role of the server."
+    },
+    {
+      "name": "replica_capacity",
+      "type": "integer",
+      "description": "The maximum number of replicas that a master server can have."
+    },
+    {
+      "name": "sku_capacity",
+      "type": "integer",
+      "description": "The scale up/out capacity, representing server's compute units."
+    },
+    {
+      "name": "sku_family",
+      "type": "text",
+      "description": "The family of hardware."
+    },
+    {
+      "name": "sku_name",
+      "type": "text",
+      "description": "The name of the sku."
+    },
+    {
+      "name": "sku_size",
+      "type": "text",
+      "description": "The size code, to be interpreted by resource as appropriate."
+    },
+    {
+      "name": "sku_tier",
+      "type": "text",
+      "description": "The tier of the particular SKU. Valid values are: 'Basic', 'GeneralPurpose', 'MemoryOptimized'."
+    },
+    {
+      "name": "ssl_enforcement",
+      "type": "text",
+      "description": "Indicates whether SSL enforcement is enabled, or not. Valid values are: 'Enabled', and 'Disabled'."
+    },
+    {
+      "name": "storage_mb",
+      "type": "integer",
+      "description": "Specifies the max storage allowed for a server."
+    },
+    {
+      "name": "private_endpoint_connections",
+      "type": "json",
+      "description": "A list of private endpoint connections on a server."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": "ColumnDescriptionTitle"
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": "ColumnDescriptionTags"
+    },
+    {
+      "name": "region",
+      "type": "text",
+      "description": "ColumnDescriptionRegion"
+    },
+    {
+      "name": "resource_group",
+      "type": "text",
+      "description": "ColumnDescriptionResourceGroup"
+    }
+  ]
+}

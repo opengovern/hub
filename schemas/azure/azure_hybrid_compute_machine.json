@@ -1,0 +1,146 @@
+{
+  "table_name": "azure_hybrid_compute_machine",
+  "table_description": "Azure Hybrid Compute Machine",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The name of the resource."
+    },
+    {
+      "name": "id",
+      "type": "text",
+      "description": "The resource ID."
+    },
+    {
+      "name": "status",
+      "type": "text",
+      "description": "The status of the hybrid machine agent."
+    },
+    {
+      "name": "provisioning_state",
+      "type": "text",
+      "description": "The provisioning state of the hybrid machine."
+    },
+    {
+      "name": "type",
+      "type": "text",
+      "description": "The type of the resource."
+    },
+    {
+      "name": "ad_fqdn",
+      "type": "text",
+      "description": "Specifies the AD fully qualified display name."
+    },
+    {
+      "name": "agent_version",
+      "type": "text",
+      "description": "The hybrid machine agent full version."
+    },
+    {
+      "name": "client_public_key",
+      "type": "text",
+      "description": "Public Key that the client provides to be used during initial resource onboarding."
+    },
+    {
+      "name": "dns_fqdn",
+      "type": "text",
+      "description": "Specifies the DNS fully qualified display name."
+    },
+    {
+      "name": "display_name",
+      "type": "text",
+      "description": "Specifies the hybrid machine display name."
+    },
+    {
+      "name": "domain_name",
+      "type": "text",
+      "description": "Specifies the Windows domain name."
+    },
+    {
+      "name": "last_status_change",
+      "type": "timestamp with time zone",
+      "description": "The time of the last status change."
+    },
+    {
+      "name": "machine_fqdn",
+      "type": "text",
+      "description": "Specifies the hybrid machine FQDN."
+    },
+    {
+      "name": "os_name",
+      "type": "text",
+      "description": "The Operating System running on the hybrid machine."
+    },
+    {
+      "name": "os_sku",
+      "type": "text",
+      "description": "Specifies the Operating System product SKU."
+    },
+    {
+      "name": "os_version",
+      "type": "text",
+      "description": "The version of Operating System running on the hybrid machine."
+    },
+    {
+      "name": "vm_id",
+      "type": "text",
+      "description": "Specifies the hybrid machine unique ID."
+    },
+    {
+      "name": "vm_uuid",
+      "type": "text",
+      "description": "Specifies the Arc Machine's unique SMBIOS ID."
+    },
+    {
+      "name": "error_details",
+      "type": "json",
+      "description": "Details about the error state."
+    },
+    {
+      "name": "extensions",
+      "type": "json",
+      "description": "The extensions of the compute machine."
+    },
+    {
+      "name": "identity",
+      "type": "json",
+      "description": "The identity of the compute machine."
+    },
+    {
+      "name": "location_data",
+      "type": "json",
+      "description": "The metadata pertaining to the geographic location of the resource."
+    },
+    {
+      "name": "machine_properties_extensions",
+      "type": "json",
+      "description": "The machine properties extensions of the compute machine."
+    },
+    {
+      "name": "os_profile",
+      "type": "json",
+      "description": "Specifies the operating system settings for the hybrid machine."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": "ColumnDescriptionTitle"
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": "ColumnDescriptionTags"
+    },
+    {
+      "name": "region",
+      "type": "text",
+      "description": "ColumnDescriptionRegion"
+    },
+    {
+      "name": "resource_group",
+      "type": "text",
+      "description": "ColumnDescriptionResourceGroup"
+    }
+  ]
+}

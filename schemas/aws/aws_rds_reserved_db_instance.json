@@ -1,0 +1,91 @@
+{
+  "table_name": "aws_rds_reserved_db_instance",
+  "table_description": "AWS RDS Reserved DB Instance",
+  "columns": [
+    {
+      "name": "reserved_db_instance_id",
+      "type": "text",
+      "description": "The unique identifier for the reservation."
+    },
+    {
+      "name": "arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) for the reserved DB Instance."
+    },
+    {
+      "name": "reserved_db_instances_offering_id",
+      "type": "text",
+      "description": "The offering identifier."
+    },
+    {
+      "name": "state",
+      "type": "text",
+      "description": "The state of the reserved DB instance."
+    },
+    {
+      "name": "class",
+      "type": "text",
+      "description": "The DB instance class for the reserved DB instance."
+    },
+    {
+      "name": "currency_code",
+      "type": "text",
+      "description": "The currency code for the reserved DB instance."
+    },
+    {
+      "name": "db_instance_count",
+      "type": "integer",
+      "description": "The number of reserved DB instances."
+    },
+    {
+      "name": "duration",
+      "type": "integer",
+      "description": "The duration of the reservation in seconds."
+    },
+    {
+      "name": "fixed_price",
+      "type": "double precision",
+      "description": "The fixed price charged for this reserved DB instance."
+    },
+    {
+      "name": "lease_id",
+      "type": "text",
+      "description": "The unique identifier for the lease associated with the reserved DB instance."
+    },
+    {
+      "name": "multi_az",
+      "type": "boolean",
+      "description": "Indicates if the reservation applies to Multi-AZ deployments."
+    },
+    {
+      "name": "offering_type",
+      "type": "text",
+      "description": "The offering type of this reserved DB instance."
+    },
+    {
+      "name": "product_description",
+      "type": "text",
+      "description": "The description of the reserved DB instance."
+    },
+    {
+      "name": "start_time",
+      "type": "timestamp with time zone",
+      "description": "The time the reservation started."
+    },
+    {
+      "name": "usage_price",
+      "type": "double precision",
+      "description": "The hourly price charged for this reserved DB instance."
+    },
+    {
+      "name": "recurring_charges",
+      "type": "json",
+      "description": "The recurring price charged to run this reserved DB instance."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    }
+  ]
+}

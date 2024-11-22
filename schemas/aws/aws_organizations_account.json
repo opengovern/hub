@@ -1,0 +1,61 @@
+{
+  "table_name": "aws_organizations_account",
+  "table_description": "AWS Organizations Account",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The description of the permission set."
+    },
+    {
+      "name": "id",
+      "type": "text",
+      "description": "The unique identifier (account ID) of the member account."
+    },
+    {
+      "name": "parent_id",
+      "type": "text",
+      "description": "The unique identifier (ID) for the parent root or organization unit (OU) whose accounts you want to list."
+    },
+    {
+      "name": "arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) of the account."
+    },
+    {
+      "name": "status",
+      "type": "text",
+      "description": "The status of the account in the organization."
+    },
+    {
+      "name": "email",
+      "type": "text",
+      "description": "The email address associated with the AWS account."
+    },
+    {
+      "name": "joined_method",
+      "type": "text",
+      "description": "The method by which the account joined the organization."
+    },
+    {
+      "name": "joined_timestamp",
+      "type": "timestamp with time zone",
+      "description": "The date the account became a part of the organization."
+    },
+    {
+      "name": "tags_src",
+      "type": "json",
+      "description": ""
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": ""
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    }
+  ]
+}

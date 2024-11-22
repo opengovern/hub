@@ -1,0 +1,121 @@
+{
+  "table_name": "azure_key_vault",
+  "table_description": "Azure Key Vault",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The friendly name that identifies the vault."
+    },
+    {
+      "name": "id",
+      "type": "text",
+      "description": "Contains ID to identify a vault uniquely."
+    },
+    {
+      "name": "vault_uri",
+      "type": "text",
+      "description": "Contains URI of the vault for performing operations on keys and secrets."
+    },
+    {
+      "name": "type",
+      "type": "text",
+      "description": "Type of the resource."
+    },
+    {
+      "name": "create_mode",
+      "type": "text",
+      "description": "The vault's create mode to indicate whether the vault need to be recovered or not. Possible values include: 'default', 'recover'."
+    },
+    {
+      "name": "enabled_for_deployment",
+      "type": "boolean",
+      "description": "Indicates whether Azure Virtual Machines are permitted to retrieve certificates stored as secrets from the key vault."
+    },
+    {
+      "name": "enabled_for_disk_encryption",
+      "type": "boolean",
+      "description": "Indicates whether Azure Disk Encryption is permitted to retrieve secrets from the vault and unwrap keys."
+    },
+    {
+      "name": "enabled_for_template_deployment",
+      "type": "boolean",
+      "description": "Indicates whether Azure Resource Manager is permitted to retrieve secrets from the key vault."
+    },
+    {
+      "name": "enable_rbac_authorization",
+      "type": "boolean",
+      "description": "Property that controls how data actions are authorized."
+    },
+    {
+      "name": "purge_protection_enabled",
+      "type": "boolean",
+      "description": "Indicates whether protection against purge is enabled for this vault."
+    },
+    {
+      "name": "soft_delete_enabled",
+      "type": "boolean",
+      "description": "Indicates whether the 'soft delete' functionality is enabled for this key vault."
+    },
+    {
+      "name": "soft_delete_retention_in_days",
+      "type": "integer",
+      "description": "Contains softDelete data retention days."
+    },
+    {
+      "name": "sku_family",
+      "type": "text",
+      "description": "Contains SKU family name."
+    },
+    {
+      "name": "sku_name",
+      "type": "text",
+      "description": "SKU name to specify whether the key vault is a standard vault or a premium vault."
+    },
+    {
+      "name": "tenant_id",
+      "type": "text",
+      "description": "The Azure Active Directory tenant ID that should be used for authenticating requests to the key vault."
+    },
+    {
+      "name": "access_policies",
+      "type": "json",
+      "description": "A list of 0 to 1024 identities that have access to the key vault."
+    },
+    {
+      "name": "diagnostic_settings",
+      "type": "json",
+      "description": "A list of active diagnostic settings for the vault."
+    },
+    {
+      "name": "network_acls",
+      "type": "json",
+      "description": "Rules governing the accessibility of the key vault from specific network locations."
+    },
+    {
+      "name": "private_endpoint_connections",
+      "type": "json",
+      "description": "List of private endpoint connections associated with the key vault."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": "ColumnDescriptionTitle"
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": "ColumnDescriptionTags"
+    },
+    {
+      "name": "region",
+      "type": "text",
+      "description": "ColumnDescriptionRegion"
+    },
+    {
+      "name": "resource_group",
+      "type": "text",
+      "description": "ColumnDescriptionResourceGroup"
+    }
+  ]
+}

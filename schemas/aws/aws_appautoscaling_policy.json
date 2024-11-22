@@ -1,0 +1,61 @@
+{
+  "table_name": "aws_appautoscaling_policy",
+  "table_description": "AWS Application Auto Scaling Policy",
+  "columns": [
+    {
+      "name": "policy_arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) of the appautoscaling policy."
+    },
+    {
+      "name": "policy_name",
+      "type": "text",
+      "description": "The name of the scaling policy."
+    },
+    {
+      "name": "service_namespace",
+      "type": "text",
+      "description": "The namespace of the AWS service that provides the resource, or a custom-resource."
+    },
+    {
+      "name": "resource_id",
+      "type": "text",
+      "description": "The identifier of the resource associated with the scaling policy."
+    },
+    {
+      "name": "scalable_dimension",
+      "type": "text",
+      "description": "The scalable dimension associated with the scaling policy. This string consists of the service namespace, resource type, and scaling property."
+    },
+    {
+      "name": "policy_type",
+      "type": "text",
+      "description": "The policy type. Currently supported values are TargetTrackingScaling and StepScaling"
+    },
+    {
+      "name": "target_tracking_scaling_policy_configuration",
+      "type": "json",
+      "description": "The target tracking scaling policy configuration (if policy type is TargetTrackingScaling)."
+    },
+    {
+      "name": "step_scaling_policy_configuration",
+      "type": "json",
+      "description": "The step tracking scaling policy configuration (if policy type is StepScaling)."
+    },
+    {
+      "name": "alarms",
+      "type": "json",
+      "description": "The CloudWatch alarms associated with the scaling policy."
+    },
+    {
+      "name": "creation_time",
+      "type": "timestamp with time zone",
+      "description": "The Unix timestamp for when the scaling policy was created."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    }
+  ]
+}

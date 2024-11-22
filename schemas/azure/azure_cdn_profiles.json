@@ -1,0 +1,76 @@
+{
+  "table_name": "azure_cdn_profiles",
+  "table_description": "Azure Cdn Profiles",
+  "columns": [
+    {
+      "name": "id",
+      "type": "text",
+      "description": "The id of the profiles."
+    },
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The name of the profiles."
+    },
+    {
+      "name": "type",
+      "type": "text",
+      "description": "The resource type."
+    },
+    {
+      "name": "location",
+      "type": "text",
+      "description": "The location of the CDN front door profile."
+    },
+    {
+      "name": "sku_name",
+      "type": "text",
+      "description": "Name of the pricing tier."
+    },
+    {
+      "name": "kind",
+      "type": "text",
+      "description": "Kind of the profile. Used by portal to differentiate traditional CDN profile and new AFD profile."
+    },
+    {
+      "name": "resource_state",
+      "type": "text",
+      "description": "Resource status of the CDN front door profile."
+    },
+    {
+      "name": "provisioning_state",
+      "type": "text",
+      "description": "Provisioning status of the CDN front door profile."
+    },
+    {
+      "name": "front_door_id",
+      "type": "text",
+      "description": "The ID of the front door."
+    },
+    {
+      "name": "origin_response_timeout_seconds",
+      "type": "integer",
+      "description": "Send and receive timeout on forwarding request to the origin. When timeout is reached, the request fails and returns."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": "ColumnDescriptionTitle"
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": "ColumnDescriptionTags"
+    },
+    {
+      "name": "region",
+      "type": "text",
+      "description": "The Azure region where the resource is located."
+    },
+    {
+      "name": "resource_group",
+      "type": "text",
+      "description": "The resource group in which the resource is located."
+    }
+  ]
+}

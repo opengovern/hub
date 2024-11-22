@@ -1,0 +1,181 @@
+{
+  "table_name": "digitalocean_database",
+  "table_description": "DigitalOcean's managed database service simplifies the creation and management of highly available database clusters. Currently, it offers support for PostgreSQL, Redis, and MySQL.",
+  "columns": [
+    {
+      "name": "id",
+      "type": "text",
+      "description": "A unique ID that can be used to identify and reference a database cluster."
+    },
+    {
+      "name": "name",
+      "type": "text",
+      "description": "A unique, human-readable name referring to a database cluster."
+    },
+    {
+      "name": "engine",
+      "type": "text",
+      "description": "A slug representing the database engine used for the cluster. The possible values are: \\\"pg\\\" for PostgreSQL, \\\"mysql\\\" for MySQL, and \\\"redis\\\" for Redis."
+    },
+    {
+      "name": "version",
+      "type": "text",
+      "description": "A string representing the version of the database engine in use for the cluster."
+    },
+    {
+      "name": "connection_database",
+      "type": "text",
+      "description": "The name of the default database."
+    },
+    {
+      "name": "connection_host",
+      "type": "text",
+      "description": "A public FQDN pointing to the database cluster's current primary node."
+    },
+    {
+      "name": "connection_password",
+      "type": "text",
+      "description": "The randomly generated password for the default user."
+    },
+    {
+      "name": "connection_port",
+      "type": "integer",
+      "description": "The port on which the database cluster is listening."
+    },
+    {
+      "name": "connection_ssl",
+      "type": "boolean",
+      "description": "A boolean value indicating if the connection should be made over SSL."
+    },
+    {
+      "name": "connection_uri",
+      "type": "text",
+      "description": "A connection string in the format accepted by the psql command. This is provided as a convenience and should be able to be constructed by the other attributes."
+    },
+    {
+      "name": "connection_user",
+      "type": "text",
+      "description": "The default user for the database."
+    },
+    {
+      "name": "created_at",
+      "type": "timestamp with time zone",
+      "description": "Time when the database was created."
+    },
+    {
+      "name": "db_names",
+      "type": "json",
+      "description": "An array of strings containing the names of databases created in the database cluster."
+    },
+    {
+      "name": "firewall_rules",
+      "type": "json",
+      "description": "A list of rules describing the inbound source to a database."
+    },
+    {
+      "name": "maintenance_window_day",
+      "type": "text",
+      "description": "The day of the week on which to apply maintenance updates (e.g. \\\"tuesday\\\")."
+    },
+    {
+      "name": "maintenance_window_description",
+      "type": "json",
+      "description": "A list of strings, each containing information about a pending maintenance update."
+    },
+    {
+      "name": "maintenance_window_hour",
+      "type": "text",
+      "description": "The hour in UTC at which maintenance updates will be applied in 24 hour format (e.g. \\\"16:00:00\\\")."
+    },
+    {
+      "name": "maintenance_window_pending",
+      "type": "boolean",
+      "description": "A boolean value indicating whether any maintenance is scheduled to be performed in the next window."
+    },
+    {
+      "name": "num_nodes",
+      "type": "integer",
+      "description": "The number of nodes in the database cluster."
+    },
+    {
+      "name": "private_connection_database",
+      "type": "text",
+      "description": "The name of the default database."
+    },
+    {
+      "name": "private_connection_host",
+      "type": "text",
+      "description": "The private FQDN pointing to the database cluster's current primary node."
+    },
+    {
+      "name": "private_connection_password",
+      "type": "text",
+      "description": "The randomly generated password for the default user."
+    },
+    {
+      "name": "private_connection_port",
+      "type": "integer",
+      "description": "The port on which the database cluster is listening."
+    },
+    {
+      "name": "private_connection_ssl",
+      "type": "boolean",
+      "description": "A boolean value indicating if the connection should be made over SSL."
+    },
+    {
+      "name": "private_connection_uri",
+      "type": "text",
+      "description": "A connection string in the format accepted by the psql command. This is provided as a convenience and should be able to be constructed by the other attributes."
+    },
+    {
+      "name": "private_connection_user",
+      "type": "text",
+      "description": "The default user for the database."
+    },
+    {
+      "name": "private_network_uuid",
+      "type": "text",
+      "description": "A string specifying the UUID of the VPC to which the database cluster is assigned."
+    },
+    {
+      "name": "region_slug",
+      "type": "text",
+      "description": "The unique slug identifier for the region the database is deployed in."
+    },
+    {
+      "name": "size_slug",
+      "type": "text",
+      "description": "The slug identifier representing the size of the nodes in the database cluster."
+    },
+    {
+      "name": "status",
+      "type": "text",
+      "description": "A string representing the current status of the database cluster. Possible values include creating, online, resizing, and migrating."
+    },
+    {
+      "name": "tags_src",
+      "type": "json",
+      "description": "An array of tags that have been applied to the database cluster."
+    },
+    {
+      "name": "urn",
+      "type": "text",
+      "description": "The uniform resource name (URN) for the database."
+    },
+    {
+      "name": "users",
+      "type": "json",
+      "description": "An array containing objects describing the database's users."
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": ""
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "table_name": "azure_logic_integrationaccounts",
+  "table_description": "Azure Logic IntegrationAccounts",
+  "columns": [
+    {
+      "name": "id",
+      "type": "text",
+      "description": "The id of the integrationaccounts."
+    },
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The name of the integrationaccounts."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": "ColumnDescriptionTitle"
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": "ColumnDescriptionTags"
+    }
+  ]
+}

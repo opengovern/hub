@@ -1,0 +1,86 @@
+{
+  "table_name": "aws_eks_cluster",
+  "table_description": "AWS Elastic Kubernetes Service Cluster",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The name of the cluster."
+    },
+    {
+      "name": "arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) of the cluster."
+    },
+    {
+      "name": "created_at",
+      "type": "timestamp with time zone",
+      "description": "The Unix epoch timestamp in seconds for when the cluster was created."
+    },
+    {
+      "name": "version",
+      "type": "text",
+      "description": "The Kubernetes server version for the cluster."
+    },
+    {
+      "name": "endpoint",
+      "type": "text",
+      "description": "The endpoint for your Kubernetes API server."
+    },
+    {
+      "name": "role_arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) of the IAM role that provides permissions for the Kubernetes control plane to make calls to AWS API operations on your behalf."
+    },
+    {
+      "name": "encryption_config",
+      "type": "json",
+      "description": "The encryption configuration for the cluster."
+    },
+    {
+      "name": "resources_vpc_config",
+      "type": "json",
+      "description": "The VPC configuration used by the cluster control plane."
+    },
+    {
+      "name": "kubernetes_network_config",
+      "type": "json",
+      "description": "The Kubernetes network configuration for the cluster."
+    },
+    {
+      "name": "logging",
+      "type": "json",
+      "description": "The logging configuration for the cluster."
+    },
+    {
+      "name": "identity",
+      "type": "json",
+      "description": "The identity provider information for the cluster."
+    },
+    {
+      "name": "status",
+      "type": "text",
+      "description": "The current status of the cluster."
+    },
+    {
+      "name": "certificate_authority",
+      "type": "json",
+      "description": "The certificate-authority-data for the cluster."
+    },
+    {
+      "name": "platform_version",
+      "type": "text",
+      "description": "The platform version of your Amazon EKS cluster."
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": "A list of tags assigned to the table"
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    }
+  ]
+}

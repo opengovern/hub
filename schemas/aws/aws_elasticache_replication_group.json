@@ -1,0 +1,126 @@
+{
+  "table_name": "aws_elasticache_replication_group",
+  "table_description": "AWS ElastiCache Replication Group",
+  "columns": [
+    {
+      "name": "replication_group_id",
+      "type": "text",
+      "description": "The identifier for the replication group."
+    },
+    {
+      "name": "arn",
+      "type": "text",
+      "description": "The ARN (Amazon Resource Name) of the replication group."
+    },
+    {
+      "name": "description",
+      "type": "text",
+      "description": "The user supplied description of the replication group."
+    },
+    {
+      "name": "at_rest_encryption_enabled",
+      "type": "boolean",
+      "description": "A flag that enables encryption at-rest when set to true."
+    },
+    {
+      "name": "kms_key_id",
+      "type": "text",
+      "description": "The ID of the KMS key used to encrypt the disk in the cluster."
+    },
+    {
+      "name": "auth_token_enabled",
+      "type": "boolean",
+      "description": "A flag that enables using an AuthToken (password) when issuing Redis commands."
+    },
+    {
+      "name": "auth_token_last_modified_date",
+      "type": "timestamp with time zone",
+      "description": "The date when the auth token was last modified."
+    },
+    {
+      "name": "automatic_failover",
+      "type": "text",
+      "description": "Indicates the status of automatic failover for this Redis replication group."
+    },
+    {
+      "name": "cache_node_type",
+      "type": "text",
+      "description": "The name of the compute and memory capacity node type for each node in the replication group."
+    },
+    {
+      "name": "cluster_enabled",
+      "type": "boolean",
+      "description": "A flag indicating whether or not this replication group is cluster enabled."
+    },
+    {
+      "name": "multi_az",
+      "type": "text",
+      "description": "A flag indicating if you have Multi-AZ enabled to enhance fault tolerance."
+    },
+    {
+      "name": "snapshot_retention_limit",
+      "type": "integer",
+      "description": "The number of days for which ElastiCache retains automatic cluster snapshots before deleting them."
+    },
+    {
+      "name": "snapshot_window",
+      "type": "text",
+      "description": "The daily time range (in UTC) during which ElastiCache begins taking a daily snapshot of your node group (shard)."
+    },
+    {
+      "name": "snapshotting_cluster_id",
+      "type": "text",
+      "description": "The cluster ID that is used as the daily snapshot source for the replication group."
+    },
+    {
+      "name": "status",
+      "type": "text",
+      "description": "The current state of this replication group - creating, available, modifying, deleting, create-failed, snapshotting."
+    },
+    {
+      "name": "transit_encryption_enabled",
+      "type": "boolean",
+      "description": "A flag that enables in-transit encryption when set to true."
+    },
+    {
+      "name": "configuration_endpoint",
+      "type": "json",
+      "description": "The configuration endpoint for this replication group."
+    },
+    {
+      "name": "global_replication_group_info",
+      "type": "json",
+      "description": "The name of the Global Datastore and role of this replication group in the Global Datastore."
+    },
+    {
+      "name": "member_clusters",
+      "type": "json",
+      "description": "The names of all the cache clusters that are part of this replication group."
+    },
+    {
+      "name": "member_clusters_outpost_arns",
+      "type": "json",
+      "description": "The outpost ARNs of the replication group's member clusters."
+    },
+    {
+      "name": "node_groups",
+      "type": "json",
+      "description": "A list of node groups in this replication group."
+    },
+    {
+      "name": "pending_modified_values",
+      "type": "json",
+      "description": "A group of settings to be applied to the replication group, either immediately or during the next maintenance window."
+    },
+    {
+      "name": "user_group_ids",
+      "type": "json",
+      "description": "The list of user group IDs that have access to the replication group."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "table_name": "aws_resource_explorer_index",
+  "table_description": "AWS Resource Explorer Index",
+  "columns": [
+    {
+      "name": "arn",
+      "type": "text",
+      "description": "The Amazon resource name (ARN) of the index."
+    },
+    {
+      "name": "type",
+      "type": "text",
+      "description": "The type of index. It can be one of the following values: LOCAL, AGGREGATOR."
+    },
+    {
+      "name": "region",
+      "type": "text",
+      "description": "The AWS Region in which the index exists."
+    }
+  ]
+}

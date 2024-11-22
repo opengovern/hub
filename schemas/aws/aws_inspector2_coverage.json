@@ -1,0 +1,96 @@
+{
+  "table_name": "aws_inspector2_coverage",
+  "table_description": "AWS Inspector2 Coverage",
+  "columns": [
+    {
+      "name": "source_account_id",
+      "type": "text",
+      "description": "The AWS Account ID in which the resource is located."
+    },
+    {
+      "name": "resource_id",
+      "type": "text",
+      "description": "The ID of the covered resource."
+    },
+    {
+      "name": "resource_type",
+      "type": "text",
+      "description": "The type of the covered resource."
+    },
+    {
+      "name": "scan_type",
+      "type": "text",
+      "description": "The Amazon Inspector scan type covering the resource."
+    },
+    {
+      "name": "ec2_ami_id",
+      "type": "text",
+      "description": "The ID of the Amazon Machine Image (AMI) used to launch the instance."
+    },
+    {
+      "name": "ecr_image_tag",
+      "type": "text",
+      "description": "Tags associated with the Amazon ECR image metadata."
+    },
+    {
+      "name": "ecr_repository_name",
+      "type": "text",
+      "description": "The name of the Amazon ECR repository."
+    },
+    {
+      "name": "ecr_repository_scan_frequency",
+      "type": "text",
+      "description": "The frequency of scans for an object that contains details about the repository an Amazon ECR image resides in."
+    },
+    {
+      "name": "lambda_function_name",
+      "type": "text",
+      "description": "The name of a function."
+    },
+    {
+      "name": "lambda_function_runtime",
+      "type": "text",
+      "description": "An AWS Lambda function's runtime."
+    },
+    {
+      "name": "scan_status_reason",
+      "type": "text",
+      "description": "The reason for the scan."
+    },
+    {
+      "name": "scan_status_code",
+      "type": "text",
+      "description": "The status code of the scan."
+    },
+    {
+      "name": "ec2_platform",
+      "type": "json",
+      "description": "The platform of the instance."
+    },
+    {
+      "name": "ec2_instance_tags",
+      "type": "json",
+      "description": "The tags attached to the instance."
+    },
+    {
+      "name": "ecr_image_tags",
+      "type": "json",
+      "description": "Tags associated with the Amazon ECR image metadata."
+    },
+    {
+      "name": "lambda_function_tags",
+      "type": "json",
+      "description": "The resource tags on an AWS Lambda function."
+    },
+    {
+      "name": "lambda_function_layers",
+      "type": "json",
+      "description": "The layers for an AWS Lambda function. A Lambda function can have up to five layers."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    }
+  ]
+}

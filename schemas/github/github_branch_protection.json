@@ -1,0 +1,186 @@
+{
+  "table_name": "github_branch_protection",
+  "table_description": "Branch protection defines rules for pushing to and managing a branch.",
+  "columns": [
+    {
+      "name": "repository_full_name",
+      "type": "text",
+      "description": "The full name of the repository (login/repo-name)."
+    },
+    {
+      "name": "id",
+      "type": "integer",
+      "description": "The ID of the branch protection rule."
+    },
+    {
+      "name": "node_id",
+      "type": "text",
+      "description": "The Node ID of the branch protection rule."
+    },
+    {
+      "name": "matching_branches",
+      "type": "integer",
+      "description": "Count of branches which match this rule."
+    },
+    {
+      "name": "is_admin_enforced",
+      "type": "boolean",
+      "description": "If true, enforce all configured restrictions for administrators."
+    },
+    {
+      "name": "allows_deletions",
+      "type": "boolean",
+      "description": "If true, allow users with push access to delete matching branches."
+    },
+    {
+      "name": "allows_force_pushes",
+      "type": "boolean",
+      "description": "If true, permit force pushes for all users with push access."
+    },
+    {
+      "name": "blocks_creations",
+      "type": "boolean",
+      "description": "If true, indicates that branch creation is a protected operation."
+    },
+    {
+      "name": "creator_login",
+      "type": "text",
+      "description": "The login of the user whom created the branch protection rule."
+    },
+    {
+      "name": "dismisses_stale_reviews",
+      "type": "boolean",
+      "description": "If true, new commits pushed to matching branches dismiss pull request review approvals."
+    },
+    {
+      "name": "lock_allows_fetch_and_merge",
+      "type": "boolean",
+      "description": "If true, users can pull changes from upstream when the branch is locked."
+    },
+    {
+      "name": "lock_branch",
+      "type": "boolean",
+      "description": "If true, matching branches are read-only and cannot be pushed to."
+    },
+    {
+      "name": "pattern",
+      "type": "text",
+      "description": "The protection rule pattern."
+    },
+    {
+      "name": "require_last_push_approval",
+      "type": "boolean",
+      "description": "If true, the most recent push must be approved by someone other than the person who pushed it."
+    },
+    {
+      "name": "requires_approving_reviews",
+      "type": "boolean",
+      "description": "If true, approving reviews required to update matching branches."
+    },
+    {
+      "name": "required_approving_review_count",
+      "type": "integer",
+      "description": "Number of approving reviews required to update matching branches."
+    },
+    {
+      "name": "requires_conversation_resolution",
+      "type": "boolean",
+      "description": "If true, requires all comments on the pull request to be resolved before it can be merged to a protected branch."
+    },
+    {
+      "name": "requires_code_owner_reviews",
+      "type": "boolean",
+      "description": "If true, reviews from code owners are required to update matching branches."
+    },
+    {
+      "name": "requires_commit_signatures",
+      "type": "boolean",
+      "description": "If true, commits are required to be signed by verified signatures."
+    },
+    {
+      "name": "requires_deployments",
+      "type": "boolean",
+      "description": "If true, matching branches require deployment to specific environments before merging."
+    },
+    {
+      "name": "required_deployment_environments",
+      "type": "json",
+      "description": "List of required deployment environments that must be deployed successfully to update matching branches."
+    },
+    {
+      "name": "requires_linear_history",
+      "type": "boolean",
+      "description": "If true, prevent merge commits from being pushed to matching branches."
+    },
+    {
+      "name": "requires_status_checks",
+      "type": "boolean",
+      "description": "If true, status checks are required to update matching branches."
+    },
+    {
+      "name": "required_status_checks",
+      "type": "json",
+      "description": "Status checks that must pass before a branch can be merged into branches matching this rule."
+    },
+    {
+      "name": "requires_strict_status_checks",
+      "type": "boolean",
+      "description": "If true, branches required to be up to date before merging."
+    },
+    {
+      "name": "restricts_review_dismissals",
+      "type": "boolean",
+      "description": "If true, review dismissals are restricted."
+    },
+    {
+      "name": "restricts_pushes",
+      "type": "boolean",
+      "description": "If true, pushing to matching branches is restricted."
+    },
+    {
+      "name": "push_allowance_apps",
+      "type": "json",
+      "description": "Applications can push to the branch only if in this list."
+    },
+    {
+      "name": "push_allowance_teams",
+      "type": "json",
+      "description": "Teams can push to the branch only if in this list."
+    },
+    {
+      "name": "push_allowance_users",
+      "type": "json",
+      "description": "Users can push to the branch only if in this list."
+    },
+    {
+      "name": "bypass_force_push_allowance_apps",
+      "type": "json",
+      "description": "Applications can force push to the branch only if in this list."
+    },
+    {
+      "name": "bypass_force_push_allowance_teams",
+      "type": "json",
+      "description": "Teams can force push to the branch only if in this list."
+    },
+    {
+      "name": "bypass_force_push_allowance_users",
+      "type": "json",
+      "description": "Users can force push to the branch only if in this list."
+    },
+    {
+      "name": "bypass_pull_request_allowance_apps",
+      "type": "json",
+      "description": "Applications can bypass pull requests to the branch only if in this list."
+    },
+    {
+      "name": "bypass_pull_request_allowance_teams",
+      "type": "json",
+      "description": "Teams can bypass pull requests to the branch only if in this list."
+    },
+    {
+      "name": "bypass_pull_request_allowance_users",
+      "type": "json",
+      "description": "Users can bypass pull requests to the branch only if in this list."
+    }
+  ]
+}

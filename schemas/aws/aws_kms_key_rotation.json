@@ -1,0 +1,31 @@
+{
+  "table_name": "aws_kms_key_rotation",
+  "table_description": "AWS KMS Key Rotation",
+  "columns": [
+    {
+      "name": "key_id",
+      "type": "text",
+      "description": "Unique identifier of the key."
+    },
+    {
+      "name": "key_arn",
+      "type": "text",
+      "description": "ARN of the key."
+    },
+    {
+      "name": "rotation_type",
+      "type": "text",
+      "description": "Identifies whether the key material rotation was a scheduled automatic rotation or an on-demand rotation."
+    },
+    {
+      "name": "rotation_date",
+      "type": "timestamp with time zone",
+      "description": "Date and time that the key material rotation completed."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    }
+  ]
+}

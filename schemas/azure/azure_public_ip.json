@@ -1,0 +1,131 @@
+{
+  "table_name": "azure_public_ip",
+  "table_description": "Azure Public IP",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The friendly name that identifies the public ip"
+    },
+    {
+      "name": "id",
+      "type": "text",
+      "description": "Contains ID to identify a public ip uniquely"
+    },
+    {
+      "name": "etag",
+      "type": "text",
+      "description": "An unique read-only string that changes whenever the resource is updated"
+    },
+    {
+      "name": "type",
+      "type": "text",
+      "description": "The resource type of the public ip"
+    },
+    {
+      "name": "provisioning_state",
+      "type": "text",
+      "description": "The resource type of the public ip"
+    },
+    {
+      "name": "ddos_custom_policy_id",
+      "type": "text",
+      "description": "The DDoS custom policy associated with the public IP"
+    },
+    {
+      "name": "ddos_settings_protected_ip",
+      "type": "boolean",
+      "description": "Indicates whether DDoS protection is enabled on the public IP, or not"
+    },
+    {
+      "name": "ddos_settings_protection_coverage",
+      "type": "text",
+      "description": "The DDoS protection policy customizability of the public IP"
+    },
+    {
+      "name": "dns_settings_domain_name_label",
+      "type": "text",
+      "description": "Contains the domain name label"
+    },
+    {
+      "name": "dns_settings_fqdn",
+      "type": "text",
+      "description": "The Fully Qualified Domain Name of the A DNS record associated with the public IP"
+    },
+    {
+      "name": "dns_settings_reverse_fqdn",
+      "type": "text",
+      "description": "Contains the reverse FQDN"
+    },
+    {
+      "name": "idle_timeout_in_minutes",
+      "type": "integer",
+      "description": "The idle timeout of the public IP address"
+    },
+    {
+      "name": "ip_address",
+      "type": "inet",
+      "description": "The IP address associated with the public IP address resource"
+    },
+    {
+      "name": "ip_configuration_id",
+      "type": "text",
+      "description": "Contains the IP configuration ID"
+    },
+    {
+      "name": "public_ip_address_version",
+      "type": "text",
+      "description": "Contains the public IP address version"
+    },
+    {
+      "name": "public_ip_allocation_method",
+      "type": "text",
+      "description": "Contains the public IP address allocation method"
+    },
+    {
+      "name": "public_ip_prefix_id",
+      "type": "text",
+      "description": "The Public IP Prefix this Public IP Address should be allocated from"
+    },
+    {
+      "name": "resource_guid",
+      "type": "text",
+      "description": "The resource GUID property of the public ip resource"
+    },
+    {
+      "name": "sku_name",
+      "type": "text",
+      "description": "Name of a public IP address SKU"
+    },
+    {
+      "name": "ip_tags",
+      "type": "json",
+      "description": "A list of tags associated with the public IP address"
+    },
+    {
+      "name": "zones",
+      "type": "json",
+      "description": "A collection of availability zones denoting the IP allocated for the resource needs to come from"
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": "ColumnDescriptionTitle"
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": "ColumnDescriptionTags"
+    },
+    {
+      "name": "region",
+      "type": "text",
+      "description": "ColumnDescriptionRegion"
+    },
+    {
+      "name": "resource_group",
+      "type": "text",
+      "description": "ColumnDescriptionResourceGroup"
+    }
+  ]
+}

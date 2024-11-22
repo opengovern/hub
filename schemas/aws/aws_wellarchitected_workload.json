@@ -1,0 +1,126 @@
+{
+  "table_name": "aws_wellarchitected_workload",
+  "table_description": "AWS Well-Architected Workload",
+  "columns": [
+    {
+      "name": "workload_name",
+      "type": "text",
+      "description": "The name of the workload."
+    },
+    {
+      "name": "workload_arn",
+      "type": "text",
+      "description": "The ARN for the workload."
+    },
+    {
+      "name": "workload_id",
+      "type": "text",
+      "description": "The ID assigned to the workload."
+    },
+    {
+      "name": "architectural_design",
+      "type": "text",
+      "description": "The URL of the architectural design for the workload."
+    },
+    {
+      "name": "description",
+      "type": "text",
+      "description": "The description for the workload."
+    },
+    {
+      "name": "environment",
+      "type": "text",
+      "description": "The environment for the workload."
+    },
+    {
+      "name": "improvement_status",
+      "type": "text",
+      "description": "The improvement status for a workload."
+    },
+    {
+      "name": "industry",
+      "type": "text",
+      "description": "The industry for the workload."
+    },
+    {
+      "name": "industry_type",
+      "type": "text",
+      "description": "The industry type for the workload."
+    },
+    {
+      "name": "is_review_owner_update_acknowledged",
+      "type": "boolean",
+      "description": "Flag indicating whether the workload owner has acknowledged that the review owner field is required."
+    },
+    {
+      "name": "notes",
+      "type": "text",
+      "description": "The notes associated with the workload."
+    },
+    {
+      "name": "owner",
+      "type": "text",
+      "description": "An AWS account ID."
+    },
+    {
+      "name": "review_owner",
+      "type": "text",
+      "description": "The review owner of the workload."
+    },
+    {
+      "name": "review_restriction_date",
+      "type": "timestamp with time zone",
+      "description": "The date and time recorded."
+    },
+    {
+      "name": "share_invitation_id",
+      "type": "text",
+      "description": "The ID assigned to the share invitation."
+    },
+    {
+      "name": "updated_at",
+      "type": "timestamp with time zone",
+      "description": "The date and time recorded."
+    },
+    {
+      "name": "account_ids",
+      "type": "json",
+      "description": "The list of AWS account IDs associated with the workload."
+    },
+    {
+      "name": "aws_regions",
+      "type": "json",
+      "description": "The list of AWS Regions associated with the workload, for example, us-east-2, or ca-central-1."
+    },
+    {
+      "name": "lenses",
+      "type": "json",
+      "description": "The list of lenses associated with the workload. Each lens is identified by its LensSummary$LensAlias."
+    },
+    {
+      "name": "non_aws_regions",
+      "type": "json",
+      "description": "The list of non-AWS Regions associated with the workload."
+    },
+    {
+      "name": "pillar_priorities",
+      "type": "json",
+      "description": "The priorities of the pillars, which are used to order items in the improvement plan. "
+    },
+    {
+      "name": "risk_counts",
+      "type": "json",
+      "description": "A map from risk names to the count of how questions have that rating."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": ""
+    }
+  ]
+}

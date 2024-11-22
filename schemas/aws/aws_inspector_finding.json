@@ -1,0 +1,111 @@
+{
+  "table_name": "aws_inspector_finding",
+  "table_description": "AWS Inspector Finding",
+  "columns": [
+    {
+      "name": "id",
+      "type": "text",
+      "description": "The ID of the finding."
+    },
+    {
+      "name": "arn",
+      "type": "text",
+      "description": "The ARN that specifies the finding."
+    },
+    {
+      "name": "agent_id",
+      "type": "text",
+      "description": "The ID of the agent that is installed on the EC2 instance where the finding is generated."
+    },
+    {
+      "name": "asset_type",
+      "type": "text",
+      "description": "The type of the host from which the finding is generated."
+    },
+    {
+      "name": "auto_scaling_group",
+      "type": "text",
+      "description": "The Auto Scaling group of the EC2 instance where the finding is generated."
+    },
+    {
+      "name": "confidence",
+      "type": "integer",
+      "description": "This data element is currently not used."
+    },
+    {
+      "name": "created_at",
+      "type": "timestamp with time zone",
+      "description": "The time when the finding was generated."
+    },
+    {
+      "name": "updated_at",
+      "type": "timestamp with time zone",
+      "description": "The time when AddAttributesToFindings is called."
+    },
+    {
+      "name": "description",
+      "type": "text",
+      "description": "The description of the finding."
+    },
+    {
+      "name": "indicator_of_compromise",
+      "type": "boolean",
+      "description": "This data element is currently not used."
+    },
+    {
+      "name": "numeric_severity",
+      "type": "double precision",
+      "description": "The numeric value of the finding severity."
+    },
+    {
+      "name": "recommendation",
+      "type": "text",
+      "description": "The recommendation for the finding."
+    },
+    {
+      "name": "schema_version",
+      "type": "integer",
+      "description": "The schema version of this data type."
+    },
+    {
+      "name": "service",
+      "type": "text",
+      "description": "The data element is set to 'Inspector'."
+    },
+    {
+      "name": "severity",
+      "type": "text",
+      "description": "The finding severity. Values can be set to High, Medium, Low, and Informational."
+    },
+    {
+      "name": "asset_attributes",
+      "type": "json",
+      "description": "A collection of attributes of the host from which the finding is generated."
+    },
+    {
+      "name": "attributes",
+      "type": "json",
+      "description": "The system-defined attributes for the finding."
+    },
+    {
+      "name": "failed_items",
+      "type": "json",
+      "description": "Attributes details that cannot be described. An error code is provided for each failed item."
+    },
+    {
+      "name": "service_attributes",
+      "type": "json",
+      "description": "This data type is used in the Finding data type."
+    },
+    {
+      "name": "user_attributes",
+      "type": "json",
+      "description": "The user-defined attributes that are assigned to the finding."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": "The name of the finding."
+    }
+  ]
+}

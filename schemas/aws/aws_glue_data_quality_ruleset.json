@@ -1,0 +1,61 @@
+{
+  "table_name": "aws_glue_data_quality_ruleset",
+  "table_description": "AWS Glue Data Quality Ruleset",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The name of the data quality ruleset."
+    },
+    {
+      "name": "database_name",
+      "type": "text",
+      "description": "The name of the database where the glue table exists."
+    },
+    {
+      "name": "table_name",
+      "type": "text",
+      "description": "The name of the glue table."
+    },
+    {
+      "name": "created_on",
+      "type": "timestamp with time zone",
+      "description": "The date and time the data quality ruleset was created."
+    },
+    {
+      "name": "description",
+      "type": "text",
+      "description": "A description of the data quality ruleset."
+    },
+    {
+      "name": "last_modified_on",
+      "type": "timestamp with time zone",
+      "description": "The date and time the data quality ruleset was last modified."
+    },
+    {
+      "name": "recommendation_run_id",
+      "type": "text",
+      "description": "When a ruleset was created from a recommendation run, this run ID is generated to link the two together."
+    },
+    {
+      "name": "rule_count",
+      "type": "integer",
+      "description": "The number of rules in the ruleset."
+    },
+    {
+      "name": "rule_set",
+      "type": "text",
+      "description": "A Data Quality Definition Language (DQDL) ruleset."
+    },
+    {
+      "name": "target_table",
+      "type": "json",
+      "description": "An object representing a glue table."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    }
+  ]
+}

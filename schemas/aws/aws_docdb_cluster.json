@@ -1,0 +1,181 @@
+{
+  "table_name": "aws_docdb_cluster",
+  "table_description": "AWS DocumentDB Cluster",
+  "columns": [
+    {
+      "name": "db_cluster_identifier",
+      "type": "text",
+      "description": "Contains a user-supplied cluster identifier. This identifier is the unique key that identifies a cluster."
+    },
+    {
+      "name": "arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) for the Cluster."
+    },
+    {
+      "name": "status",
+      "type": "text",
+      "description": "Specifies the current state of this cluster."
+    },
+    {
+      "name": "cluster_create_time",
+      "type": "timestamp with time zone",
+      "description": "Specifies the time when the cluster was created."
+    },
+    {
+      "name": "backup_retention_period",
+      "type": "integer",
+      "description": "Specifies the number of days for which automatic snapshots are retained."
+    },
+    {
+      "name": "clone_group_id",
+      "type": "text",
+      "description": "Identifies the clone group to which the DB cluster is associated."
+    },
+    {
+      "name": "db_cluster_parameter_group",
+      "type": "text",
+      "description": "Specifies the name of the cluster parameter group for the cluster."
+    },
+    {
+      "name": "db_cluster_resource_id",
+      "type": "text",
+      "description": "The Region-unique, immutable identifier for the cluster."
+    },
+    {
+      "name": "db_subnet_group",
+      "type": "text",
+      "description": "Specifies information on the subnet group associated with the cluster."
+    },
+    {
+      "name": "deletion_protection",
+      "type": "boolean",
+      "description": "Specifies whether the cluster has deletion protection enabled, or not."
+    },
+    {
+      "name": "earliest_restorable_time",
+      "type": "timestamp with time zone",
+      "description": "The earliest time to which a database can be restored with point-in-time restore."
+    },
+    {
+      "name": "endpoint",
+      "type": "text",
+      "description": "Specifies the connection endpoint for the primary instance of the DB cluster."
+    },
+    {
+      "name": "engine",
+      "type": "text",
+      "description": "The name of the database engine to be used for this DB cluster."
+    },
+    {
+      "name": "engine_version",
+      "type": "text",
+      "description": "Indicates the database engine version."
+    },
+    {
+      "name": "hosted_zone_id",
+      "type": "text",
+      "description": "Specifies the ID that Amazon Route 53 assigns when you create a hosted zone."
+    },
+    {
+      "name": "kms_key_id",
+      "type": "text",
+      "description": "The AWS KMS key identifier for the encrypted cluster."
+    },
+    {
+      "name": "latest_restorable_time",
+      "type": "timestamp with time zone",
+      "description": "Specifies the latest time to which a database can be restored with point-in-time restore."
+    },
+    {
+      "name": "master_user_name",
+      "type": "text",
+      "description": "Contains the master username for the cluster."
+    },
+    {
+      "name": "multi_az",
+      "type": "boolean",
+      "description": "Specifies whether the cluster has instances in multiple Availability Zones, or not."
+    },
+    {
+      "name": "percent_progress",
+      "type": "text",
+      "description": "Specifies the progress of the operation as a percentage."
+    },
+    {
+      "name": "port",
+      "type": "integer",
+      "description": "Specifies the port that the database engine is listening on."
+    },
+    {
+      "name": "preferred_backup_window",
+      "type": "text",
+      "description": "Specifies the daily time range during which automated backups are created."
+    },
+    {
+      "name": "preferred_maintenance_window",
+      "type": "text",
+      "description": "Specifies the weekly time range during which system maintenance can occur"
+    },
+    {
+      "name": "reader_endpoint",
+      "type": "text",
+      "description": "The reader endpoint for the DB cluster."
+    },
+    {
+      "name": "replication_source_identifier",
+      "type": "text",
+      "description": "Contains the identifier of the source cluster if this cluster is a secondary cluster."
+    },
+    {
+      "name": "storage_encrypted",
+      "type": "boolean",
+      "description": "Specifies whether the cluster is encrypted, or not."
+    },
+    {
+      "name": "associated_roles",
+      "type": "json",
+      "description": "A list of AWS IAM roles that are associated with the cluster."
+    },
+    {
+      "name": "availability_zones",
+      "type": "json",
+      "description": "A list of Availability Zones (AZs) where instances in the cluster can be created."
+    },
+    {
+      "name": "enabled_cloudwatch_logs_exports",
+      "type": "json",
+      "description": "A list of log types that this cluster is configured to export to Amazon CloudWatch Logs."
+    },
+    {
+      "name": "members",
+      "type": "json",
+      "description": "A list of instances that make up the cluster."
+    },
+    {
+      "name": "read_replica_identifiers",
+      "type": "json",
+      "description": "A list of identifiers of the read replicas associated with this cluster."
+    },
+    {
+      "name": "vpc_security_groups",
+      "type": "json",
+      "description": "A list of VPC security groups that the DB cluster belongs to."
+    },
+    {
+      "name": "tags_src",
+      "type": "json",
+      "description": "A list of tags attached to the Cluster."
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": ""
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    }
+  ]
+}

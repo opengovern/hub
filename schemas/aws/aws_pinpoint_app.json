@@ -1,0 +1,51 @@
+{
+  "table_name": "aws_pinpoint_app",
+  "table_description": "AWS Pinpoint App",
+  "columns": [
+    {
+      "name": "id",
+      "type": "text",
+      "description": "The unique identifier for the application."
+    },
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The display name of the application."
+    },
+    {
+      "name": "arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) of the application."
+    },
+    {
+      "name": "last_modified_date",
+      "type": "timestamp with time zone",
+      "description": "The date and time, in ISO 8601 format, when the application's settings were last modified."
+    },
+    {
+      "name": "campaign_hook",
+      "type": "json",
+      "description": "The settings for the AWS Lambda function to invoke by default as a code hook for campaigns in the application."
+    },
+    {
+      "name": "limits",
+      "type": "json",
+      "description": "The default sending limits for campaigns in the application."
+    },
+    {
+      "name": "quiet_time",
+      "type": "json",
+      "description": "The default quiet time for campaigns in the application."
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": ""
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    }
+  ]
+}

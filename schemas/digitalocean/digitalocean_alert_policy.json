@@ -1,0 +1,71 @@
+{
+  "table_name": "digitalocean_alert_policy",
+  "table_description": "DigitalOcean Alert Policy",
+  "columns": [
+    {
+      "name": "uuid",
+      "type": "text",
+      "description": "UUID of the alert policy."
+    },
+    {
+      "name": "compare",
+      "type": "text",
+      "description": "The compare parameter for the metric in alert policy."
+    },
+    {
+      "name": "enabled",
+      "type": "boolean",
+      "description": "Alert Policy enabled or not."
+    },
+    {
+      "name": "type",
+      "type": "text",
+      "description": "Alert Policy type."
+    },
+    {
+      "name": "description",
+      "type": "text",
+      "description": "The description of the alert policy."
+    },
+    {
+      "name": "value",
+      "type": "integer",
+      "description": "The value of the metric threshold in alert policy."
+    },
+    {
+      "name": "interval",
+      "type": "text",
+      "description": "The interval time of the metric in alert policy."
+    },
+    {
+      "name": "urn",
+      "type": "text",
+      "description": "The uniform resource name (URN) for the alert policy."
+    },
+    {
+      "name": "alerts",
+      "type": "json",
+      "description": "The notification details where alert details will be send."
+    },
+    {
+      "name": "entities",
+      "type": "json",
+      "description": "An array of entities of the alert policy."
+    },
+    {
+      "name": "tags_src",
+      "type": "json",
+      "description": "An array of tags for the resource."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": ""
+    }
+  ]
+}

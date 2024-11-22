@@ -1,0 +1,16 @@
+{
+  "table_name": "aws_resource_explorer_supported_resource_type",
+  "table_description": "AWS Resource Explorer Supported Resource Type",
+  "columns": [
+    {
+      "name": "resource_type",
+      "type": "text",
+      "description": "The unique identifier of the resource type."
+    },
+    {
+      "name": "service",
+      "type": "text",
+      "description": "The Amazon Web Service that is associated with the resource type. This is the primary service that lets you create and interact with resources of this type."
+    }
+  ]
+}

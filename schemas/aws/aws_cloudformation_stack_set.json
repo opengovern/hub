@@ -1,0 +1,106 @@
+{
+  "table_name": "aws_cloudformation_stack_set",
+  "table_description": "AWS CloudFormation StackSet",
+  "columns": [
+    {
+      "name": "stack_set_id",
+      "type": "text",
+      "description": "The ID of the stack set."
+    },
+    {
+      "name": "stack_set_name",
+      "type": "text",
+      "description": "The name of the stack set."
+    },
+    {
+      "name": "arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) of the stack set"
+    },
+    {
+      "name": "status",
+      "type": "text",
+      "description": "The status of the stack set."
+    },
+    {
+      "name": "description",
+      "type": "text",
+      "description": "A description of the stack set that you specify when the stack set is created or updated."
+    },
+    {
+      "name": "drift_status",
+      "type": "text",
+      "description": "Status of the stack set's actual configuration compared to its expected template and parameter configuration. A stack set is considered to have drifted if one or more of its stack instances have drifted from their expected template and parameter configuration."
+    },
+    {
+      "name": "last_drift_check_timestamp",
+      "type": "timestamp with time zone",
+      "description": "Most recent time when CloudFormation performed a drift detection operation on the stack set."
+    },
+    {
+      "name": "permission_model",
+      "type": "text",
+      "description": "Describes how the IAM roles required for stack set operations are created."
+    },
+    {
+      "name": "administration_role_arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) of the IAM role used to create or update the stack set."
+    },
+    {
+      "name": "execution_role_name",
+      "type": "text",
+      "description": "The name of the IAM execution role used to create or update the stack set."
+    },
+    {
+      "name": "template_body",
+      "type": "text",
+      "description": "The structure that contains the body of the template that was used to create or update the stack set."
+    },
+    {
+      "name": "auto_deployment",
+      "type": "json",
+      "description": "Describes whether StackSets automatically deploys to Organizations accounts that are added to a target organizational unit (OU)."
+    },
+    {
+      "name": "capabilities",
+      "type": "json",
+      "description": "The capabilities that are allowed in the stack set."
+    },
+    {
+      "name": "organizational_unit_ids",
+      "type": "json",
+      "description": "The organization root ID or organizational unit (OU) IDs that you specified for DeploymentTargets."
+    },
+    {
+      "name": "parameters",
+      "type": "json",
+      "description": "A list of input parameters for a stack set."
+    },
+    {
+      "name": "stack_set_drift_detection_details",
+      "type": "json",
+      "description": "Detailed information about the drift status of the stack set."
+    },
+    {
+      "name": "managed_execution",
+      "type": "json",
+      "description": "Describes whether StackSets performs non-conflicting operations concurrently and queues conflicting operations."
+    },
+    {
+      "name": "tags_src",
+      "type": "json",
+      "description": "A list of tags associated with stack."
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": ""
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    }
+  ]
+}

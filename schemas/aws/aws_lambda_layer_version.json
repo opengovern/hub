@@ -1,0 +1,76 @@
+{
+  "table_name": "aws_lambda_layer_version",
+  "table_description": "AWS Lambda Layer Version",
+  "columns": [
+    {
+      "name": "layer_name",
+      "type": "text",
+      "description": "The name of the layer."
+    },
+    {
+      "name": "layer_arn",
+      "type": "text",
+      "description": "The ARN of the layer."
+    },
+    {
+      "name": "layer_version_arn",
+      "type": "text",
+      "description": "The ARN of the layer version."
+    },
+    {
+      "name": "created_date",
+      "type": "timestamp with time zone",
+      "description": "The date that the version was created, in ISO 8601 format."
+    },
+    {
+      "name": "description",
+      "type": "text",
+      "description": "The description of the version."
+    },
+    {
+      "name": "license_info",
+      "type": "text",
+      "description": "The layer's open-source license."
+    },
+    {
+      "name": "revision_id",
+      "type": "text",
+      "description": "A unique identifier for the current revision of the policy."
+    },
+    {
+      "name": "version",
+      "type": "integer",
+      "description": "The version number."
+    },
+    {
+      "name": "compatible_architectures",
+      "type": "json",
+      "description": "A list of compatible instruction set architectures."
+    },
+    {
+      "name": "compatible_runtimes",
+      "type": "json",
+      "description": "The layer's compatible runtimes."
+    },
+    {
+      "name": "content",
+      "type": "json",
+      "description": "Details about the layer version."
+    },
+    {
+      "name": "policy",
+      "type": "json",
+      "description": "The policy document."
+    },
+    {
+      "name": "policy_std",
+      "type": "json",
+      "description": "Contains the policy document in a canonical form for easier searching."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    }
+  ]
+}

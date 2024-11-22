@@ -1,0 +1,16 @@
+{
+  "table_name": "aws_inspector2_coverage_statistics",
+  "table_description": "AWS Inspector2 Coverage Statistics",
+  "columns": [
+    {
+      "name": "total_counts",
+      "type": "integer",
+      "description": "The total number for all groups"
+    },
+    {
+      "name": "counts_by_group",
+      "type": "json",
+      "description": "An array with the number for each group"
+    }
+  ]
+}

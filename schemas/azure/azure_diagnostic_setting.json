@@ -1,0 +1,71 @@
+{
+  "table_name": "azure_diagnostic_setting",
+  "table_description": "Azure Diagnostic Setting",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The name of the resource."
+    },
+    {
+      "name": "id",
+      "type": "text",
+      "description": "The resource Id."
+    },
+    {
+      "name": "type",
+      "type": "text",
+      "description": "Type of the resource."
+    },
+    {
+      "name": "storage_account_id",
+      "type": "text",
+      "description": "The resource ID of the storage account to which you would like to send Diagnostic Logs."
+    },
+    {
+      "name": "service_bus_rule_id",
+      "type": "text",
+      "description": "The service bus rule Id of the diagnostic setting."
+    },
+    {
+      "name": "event_hub_authorization_rule_id",
+      "type": "text",
+      "description": "The resource Id for the event hub authorization rule."
+    },
+    {
+      "name": "event_hub_name",
+      "type": "text",
+      "description": "The name of the event hub."
+    },
+    {
+      "name": "workspace_id",
+      "type": "text",
+      "description": "The full ARM resource ID of the Log Analytics workspace to which you would like to send Diagnostic Logs."
+    },
+    {
+      "name": "log_analytics_destination_type",
+      "type": "text",
+      "description": "A string indicating whether the export to Log Analytics should use the default destinatio type."
+    },
+    {
+      "name": "metrics",
+      "type": "json",
+      "description": "The list of metric settings."
+    },
+    {
+      "name": "logs",
+      "type": "json",
+      "description": "The list of logs settings."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": "ColumnDescriptionTitle"
+    },
+    {
+      "name": "resource_group",
+      "type": "text",
+      "description": "ColumnDescriptionResourceGroup"
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "table_name": "azure_storage_queue",
+  "table_description": "Azure Storage Queue",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The friendly name that identifies the queue."
+    },
+    {
+      "name": "id",
+      "type": "text",
+      "description": "Contains ID to identify a queue uniquely."
+    },
+    {
+      "name": "storage_account_name",
+      "type": "text",
+      "description": "An unique read-only string that changes whenever the resource is updated."
+    },
+    {
+      "name": "type",
+      "type": "text",
+      "description": "Type of the resource."
+    },
+    {
+      "name": "metadata",
+      "type": "json",
+      "description": "A name-value pair that represents queue metadata."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": "ColumnDescriptionTitle"
+    },
+    {
+      "name": "region",
+      "type": "text",
+      "description": "ColumnDescriptionRegion"
+    },
+    {
+      "name": "resource_group",
+      "type": "text",
+      "description": "ColumnDescriptionResourceGroup"
+    }
+  ]
+}

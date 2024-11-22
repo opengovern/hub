@@ -1,0 +1,36 @@
+{
+  "table_name": "aws_user_effective_access",
+  "table_description": "AWS User Effective Access",
+  "columns": [
+    {
+      "name": "id",
+      "type": "text",
+      "description": "Contains ID to identify a role assignment uniquely."
+    },
+    {
+      "name": "target_account_id",
+      "type": "text",
+      "description": "The identifier of the AWS account from which to list the assignments."
+    },
+    {
+      "name": "instance_arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) of the SSO Instance under which the operation will be executed."
+    },
+    {
+      "name": "permission_set_arn",
+      "type": "text",
+      "description": "The ARN of the permission set from which to list assignments."
+    },
+    {
+      "name": "user_id",
+      "type": "text",
+      "description": "An identifier for an object in IAM Identity Center."
+    },
+    {
+      "name": "user_name",
+      "type": "text",
+      "description": "The user name."
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "table_name": "aws_cloudtrail_event_data_store",
+  "table_description": "AWS CloudTrail Event Data Store",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The name of the event data store."
+    },
+    {
+      "name": "arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) of the event data store."
+    },
+    {
+      "name": "status",
+      "type": "text",
+      "description": "The status of an event data store."
+    },
+    {
+      "name": "created_timestamp",
+      "type": "timestamp with time zone",
+      "description": "The timestamp of the event data store's creation."
+    },
+    {
+      "name": "multi_region_enabled",
+      "type": "boolean",
+      "description": "Indicates whether the event data store includes events from all regions, or only from the region in which it was created."
+    },
+    {
+      "name": "organization_enabled",
+      "type": "boolean",
+      "description": "Indicates that an event data store is collecting logged events for an organization."
+    },
+    {
+      "name": "retention_period",
+      "type": "integer",
+      "description": "The retention period, in days."
+    },
+    {
+      "name": "termination_protection_enabled",
+      "type": "boolean",
+      "description": "Indicates whether the event data store is protected from termination."
+    },
+    {
+      "name": "updated_timestamp",
+      "type": "timestamp with time zone",
+      "description": "The timestamp showing when an event data store was updated, if applicable. UpdatedTimestamp is always either the same or newer than the time shown in CreatedTimestamp."
+    },
+    {
+      "name": "advanced_event_selectors",
+      "type": "json",
+      "description": "The advanced event selectors that were used to select events for the data store."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    }
+  ]
+}

@@ -1,0 +1,161 @@
+{
+  "table_name": "azure_container_registry",
+  "table_description": "Azure Container Registry",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The name of the resource."
+    },
+    {
+      "name": "id",
+      "type": "text",
+      "description": "The unique id identifying the resource in subscription."
+    },
+    {
+      "name": "type",
+      "type": "text",
+      "description": "The type of the resource."
+    },
+    {
+      "name": "provisioning_state",
+      "type": "text",
+      "description": "The provisioning state of the container registry at the time the operation was called. Valid values are: 'Creating', 'Updating', 'Deleting', 'Succeeded', 'Failed', 'Canceled'."
+    },
+    {
+      "name": "creation_date",
+      "type": "timestamp with time zone",
+      "description": "The creation date of the container registry."
+    },
+    {
+      "name": "admin_user_enabled",
+      "type": "boolean",
+      "description": "Indicates whether the admin user is enabled, or not."
+    },
+    {
+      "name": "data_endpoint_enabled",
+      "type": "boolean",
+      "description": "Enable a single data endpoint per region for serving data."
+    },
+    {
+      "name": "login_server",
+      "type": "text",
+      "description": "The URL that can be used to log into the container registry."
+    },
+    {
+      "name": "network_rule_bypass_options",
+      "type": "text",
+      "description": "Indicates whether to allow trusted Azure services to access a network restricted registry. Valid values are: 'AzureServices', 'None'."
+    },
+    {
+      "name": "public_network_access",
+      "type": "text",
+      "description": "Indicates whether or not public network access is allowed for the container registry. Valid values are: 'Enabled', 'Disabled'."
+    },
+    {
+      "name": "sku_name",
+      "type": "text",
+      "description": "The SKU name of the container registry. Required for registry creation. Valid values are: 'Classic', 'Basic', 'Standard', 'Premium'."
+    },
+    {
+      "name": "sku_tier",
+      "type": "text",
+      "description": "The SKU tier based on the SKU name. Valid values are: 'Classic', 'Basic', 'Standard', 'Premium'."
+    },
+    {
+      "name": "status",
+      "type": "text",
+      "description": "The current status of the resource."
+    },
+    {
+      "name": "status_message",
+      "type": "text",
+      "description": "The detailed message for the status, including alerts and error messages."
+    },
+    {
+      "name": "status_timestamp",
+      "type": "timestamp with time zone",
+      "description": "The timestamp when the status was changed to the current value."
+    },
+    {
+      "name": "storage_account_id",
+      "type": "text",
+      "description": "The resource ID of the storage account. Only applicable to Classic SKU."
+    },
+    {
+      "name": "zone_redundancy",
+      "type": "text",
+      "description": "Indicates whether or not zone redundancy is enabled for this container registry. Valid values are: 'Enabled', 'Disabled'."
+    },
+    {
+      "name": "data_endpoint_host_names",
+      "type": "json",
+      "description": "A list of host names that will serve data when dataEndpointEnabled is true."
+    },
+    {
+      "name": "encryption",
+      "type": "json",
+      "description": "The encryption settings of container registry."
+    },
+    {
+      "name": "identity",
+      "type": "json",
+      "description": "The identity of the container registry."
+    },
+    {
+      "name": "login_credentials",
+      "type": "json",
+      "description": "The login credentials for the specified container registry."
+    },
+    {
+      "name": "network_rule_set",
+      "type": "json",
+      "description": "The network rule set for a container registry."
+    },
+    {
+      "name": "policies",
+      "type": "json",
+      "description": "The policies for a container registry."
+    },
+    {
+      "name": "private_endpoint_connections",
+      "type": "json",
+      "description": "A list of private endpoint connections for a container registry."
+    },
+    {
+      "name": "system_data",
+      "type": "json",
+      "description": "Metadata pertaining to creation and last modification of the resource."
+    },
+    {
+      "name": "usages",
+      "type": "json",
+      "description": "Specifies the quota usages for the specified container registry."
+    },
+    {
+      "name": "webhooks",
+      "type": "json",
+      "description": "Webhooks in Azure Container Registry provide a way to trigger custom actions in response to events happening within the registry."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": "ColumnDescriptionTitle"
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": "ColumnDescriptionTags"
+    },
+    {
+      "name": "region",
+      "type": "text",
+      "description": "ColumnDescriptionRegion"
+    },
+    {
+      "name": "resource_group",
+      "type": "text",
+      "description": "ColumnDescriptionResourceGroup"
+    }
+  ]
+}

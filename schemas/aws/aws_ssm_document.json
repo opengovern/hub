@@ -1,0 +1,171 @@
+{
+  "table_name": "aws_ssm_document",
+  "table_description": "AWS SSM Document",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The name of the Systems Manager document."
+    },
+    {
+      "name": "account_ids",
+      "type": "json",
+      "description": "The account IDs that have permission to use this document.The ID can be either an AWS account or All."
+    },
+    {
+      "name": "account_sharing_info_list",
+      "type": "json",
+      "description": "A list of AWS accounts where the current document is shared and the version shared with each account."
+    },
+    {
+      "name": "arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) of the document."
+    },
+    {
+      "name": "approved_version",
+      "type": "text",
+      "description": "The version of the document currently approved for use in the organization."
+    },
+    {
+      "name": "attachments_information",
+      "type": "json",
+      "description": "Details about the document attachments, including names, locations, sizes,and so on."
+    },
+    {
+      "name": "author",
+      "type": "text",
+      "description": "The user in your organization who created the document."
+    },
+    {
+      "name": "created_date",
+      "type": "timestamp with time zone",
+      "description": "The date when the document was created."
+    },
+    {
+      "name": "default_version",
+      "type": "text",
+      "description": "The default version."
+    },
+    {
+      "name": "description",
+      "type": "text",
+      "description": "A description of the document."
+    },
+    {
+      "name": "document_format",
+      "type": "text",
+      "description": "The document format, either JSON or YAML."
+    },
+    {
+      "name": "document_type",
+      "type": "text",
+      "description": "The type of document."
+    },
+    {
+      "name": "document_version",
+      "type": "text",
+      "description": "The document version."
+    },
+    {
+      "name": "hash",
+      "type": "text",
+      "description": "The Sha256 or Sha1 hash created by the system when the document was created."
+    },
+    {
+      "name": "hash_type",
+      "type": "text",
+      "description": "The hash type of the document."
+    },
+    {
+      "name": "latest_version",
+      "type": "text",
+      "description": "The latest version of the document."
+    },
+    {
+      "name": "owner_type",
+      "type": "text",
+      "description": "The AWS user account type to filter the documents. Possible values: Self, Amazon, Public, Private, ThirdParty, All, Default."
+    },
+    {
+      "name": "owner",
+      "type": "text",
+      "description": "The AWS user account that created the document."
+    },
+    {
+      "name": "parameters",
+      "type": "json",
+      "description": "A description of the parameters for a document."
+    },
+    {
+      "name": "pending_review_version",
+      "type": "text",
+      "description": "The version of the document that is currently under review."
+    },
+    {
+      "name": "platform_types",
+      "type": "json",
+      "description": "The operating system platform."
+    },
+    {
+      "name": "requires",
+      "type": "json",
+      "description": "A list of SSM documents required by a document."
+    },
+    {
+      "name": "review_information",
+      "type": "json",
+      "description": "Details about the review of a document."
+    },
+    {
+      "name": "review_status",
+      "type": "text",
+      "description": "The current status of the review."
+    },
+    {
+      "name": "schema_version",
+      "type": "text",
+      "description": "The schema version."
+    },
+    {
+      "name": "sha1",
+      "type": "text",
+      "description": "The SHA1 hash of the document, which you can use for verification."
+    },
+    {
+      "name": "status",
+      "type": "text",
+      "description": "The user in your organization who created the document."
+    },
+    {
+      "name": "status_information",
+      "type": "text",
+      "description": "A message returned by AWS Systems Manager that explains the Status value."
+    },
+    {
+      "name": "tags_src",
+      "type": "json",
+      "description": "A list of tags associated with document"
+    },
+    {
+      "name": "target_type",
+      "type": "text",
+      "description": "The target type which defines the kinds of resources the document can run on."
+    },
+    {
+      "name": "version_name",
+      "type": "text",
+      "description": "The version of the artifact associated with the document."
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": ""
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    }
+  ]
+}

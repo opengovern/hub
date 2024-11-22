@@ -1,0 +1,151 @@
+{
+  "table_name": "azure_iothub",
+  "table_description": "Azure Iot Hub",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The resource name."
+    },
+    {
+      "name": "id",
+      "type": "text",
+      "description": "The resource identifier."
+    },
+    {
+      "name": "state",
+      "type": "text",
+      "description": "The iot hub state."
+    },
+    {
+      "name": "provisioning_state",
+      "type": "text",
+      "description": "The iot hub provisioning state."
+    },
+    {
+      "name": "type",
+      "type": "text",
+      "description": "The resource type."
+    },
+    {
+      "name": "comments",
+      "type": "text",
+      "description": "Iot hub comments."
+    },
+    {
+      "name": "enable_file_upload_notifications",
+      "type": "boolean",
+      "description": "Indicates if file upload notifications are enabled for the iot hub."
+    },
+    {
+      "name": "etag",
+      "type": "text",
+      "description": "An unique read-only string that changes whenever the resource is updated."
+    },
+    {
+      "name": "features",
+      "type": "text",
+      "description": "The capabilities and features enabled for the iot hub. Possible values include: 'None', 'DeviceManagement'."
+    },
+    {
+      "name": "host_name",
+      "type": "text",
+      "description": "The name of the host."
+    },
+    {
+      "name": "min_tls_version",
+      "type": "text",
+      "description": "Specifies the minimum TLS version to support for this iot hub."
+    },
+    {
+      "name": "public_network_access",
+      "type": "text",
+      "description": "Indicates whether requests from public network are allowed."
+    },
+    {
+      "name": "sku_capacity",
+      "type": "text",
+      "description": "Iot hub SKU capacity."
+    },
+    {
+      "name": "sku_name",
+      "type": "text",
+      "description": "Iot hub SKU name."
+    },
+    {
+      "name": "sku_tier",
+      "type": "text",
+      "description": "Iot hub SKU tier."
+    },
+    {
+      "name": "authorization_policies",
+      "type": "json",
+      "description": "The shared access policies you can use to secure a connection to the iot hub."
+    },
+    {
+      "name": "cloud_to_device",
+      "type": "json",
+      "description": "CloudToDevice properties of the iot hub."
+    },
+    {
+      "name": "diagnostic_settings",
+      "type": "json",
+      "description": "A list of active diagnostic settings for the iot hub."
+    },
+    {
+      "name": "event_hub_endpoints",
+      "type": "json",
+      "description": "The event hub-compatible endpoint properties."
+    },
+    {
+      "name": "ip_filter_rules",
+      "type": "json",
+      "description": "The IP filter rules of the iot hub."
+    },
+    {
+      "name": "locations",
+      "type": "json",
+      "description": "Primary and secondary location for iot hub."
+    },
+    {
+      "name": "messaging_endpoints",
+      "type": "json",
+      "description": "The messaging endpoint properties for the file upload notification queue."
+    },
+    {
+      "name": "private_endpoint_connections",
+      "type": "json",
+      "description": "Private endpoint connections created on this iot hub."
+    },
+    {
+      "name": "routing",
+      "type": "json",
+      "description": "Routing properties of the iot hub."
+    },
+    {
+      "name": "storage_endpoints",
+      "type": "json",
+      "description": "The list of azure storage endpoints where you can upload files."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": "ColumnDescriptionTitle"
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": "ColumnDescriptionTags"
+    },
+    {
+      "name": "region",
+      "type": "text",
+      "description": "ColumnDescriptionRegion"
+    },
+    {
+      "name": "resource_group",
+      "type": "text",
+      "description": "ColumnDescriptionResourceGroup"
+    }
+  ]
+}

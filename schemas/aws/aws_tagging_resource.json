@@ -1,0 +1,46 @@
+{
+  "table_name": "aws_tagging_resource",
+  "table_description": "AWS Tagging Resource",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The name of the resource."
+    },
+    {
+      "name": "arn",
+      "type": "text",
+      "description": "The ARN of the resource."
+    },
+    {
+      "name": "compliance_status",
+      "type": "boolean",
+      "description": "Whether a resource is compliant with the effective tag policy."
+    },
+    {
+      "name": "keys_with_noncompliant_values",
+      "type": "json",
+      "description": "These are keys defined in the effective policy that are on the resource with either incorrect case treatment or noncompliant values."
+    },
+    {
+      "name": "noncompliant_keys",
+      "type": "json",
+      "description": "These tag keys on the resource are noncompliant with the effective tag policy."
+    },
+    {
+      "name": "tags_src",
+      "type": "json",
+      "description": "A list of tags assigned to the parameter."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": ""
+    }
+  ]
+}

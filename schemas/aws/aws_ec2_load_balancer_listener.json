@@ -1,0 +1,51 @@
+{
+  "table_name": "aws_ec2_load_balancer_listener",
+  "table_description": "AWS EC2 Load Balancer Listener",
+  "columns": [
+    {
+      "name": "arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) of the listener."
+    },
+    {
+      "name": "load_balancer_arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) of the load balancer."
+    },
+    {
+      "name": "port",
+      "type": "integer",
+      "description": "The port on which the load balancer is listening."
+    },
+    {
+      "name": "protocol",
+      "type": "text",
+      "description": "The protocol for connections from clients to the load balancer."
+    },
+    {
+      "name": "ssl_policy",
+      "type": "text",
+      "description": "The security policy that defines which protocols and ciphers are supported."
+    },
+    {
+      "name": "alpn_policy",
+      "type": "json",
+      "description": "The name of the Application-Layer Protocol Negotiation (ALPN) policy."
+    },
+    {
+      "name": "certificates",
+      "type": "json",
+      "description": "The default certificate for the listener."
+    },
+    {
+      "name": "default_actions",
+      "type": "json",
+      "description": "The default actions for the listener."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    }
+  ]
+}

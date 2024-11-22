@@ -1,0 +1,371 @@
+{
+  "table_name": "aws_ec2_instance",
+  "table_description": "AWS EC2 Instance",
+  "columns": [
+    {
+      "name": "instance_id",
+      "type": "text",
+      "description": "The ID of the instance."
+    },
+    {
+      "name": "arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) specifying the instance."
+    },
+    {
+      "name": "instance_type",
+      "type": "text",
+      "description": "The instance type."
+    },
+    {
+      "name": "instance_state",
+      "type": "text",
+      "description": "The state of the instance (pending | running | shutting-down | terminated | stopping | stopped)."
+    },
+    {
+      "name": "monitoring_state",
+      "type": "text",
+      "description": "Indicates whether detailed monitoring is enabled (disabled | enabled)."
+    },
+    {
+      "name": "disable_api_termination",
+      "type": "boolean",
+      "description": "If the value is true, instance can't be terminated through the Amazon EC2 console, CLI, or API."
+    },
+    {
+      "name": "ami_launch_index",
+      "type": "integer",
+      "description": "The AMI launch index, which can be used to find this instance in the launch group."
+    },
+    {
+      "name": "architecture",
+      "type": "text",
+      "description": "The architecture of the image."
+    },
+    {
+      "name": "boot_mode",
+      "type": "text",
+      "description": "The boot mode of the instance."
+    },
+    {
+      "name": "capacity_reservation_id",
+      "type": "text",
+      "description": "The ID of the Capacity Reservation."
+    },
+    {
+      "name": "capacity_reservation_specification",
+      "type": "text",
+      "description": "Information about the Capacity Reservation targeting option."
+    },
+    {
+      "name": "client_token",
+      "type": "text",
+      "description": "The idempotency token you provided when you launched the instance, if applicable."
+    },
+    {
+      "name": "cpu_options_core_count",
+      "type": "integer",
+      "description": "The number of CPU cores for the instance."
+    },
+    {
+      "name": "cpu_options_threads_per_core",
+      "type": "integer",
+      "description": "The number of threads per CPU core."
+    },
+    {
+      "name": "ebs_optimized",
+      "type": "boolean",
+      "description": "Indicates whether the instance is optimized for Amazon EBS I/O. This optimization provides dedicated throughput to Amazon EBS and an optimized configuration stack to provide optimal I/O performance. This optimization isn't available with all instance types."
+    },
+    {
+      "name": "ena_support",
+      "type": "boolean",
+      "description": "Specifies whether enhanced networking with ENA is enabled."
+    },
+    {
+      "name": "hypervisor",
+      "type": "text",
+      "description": "The hypervisor type of the instance. The value xen is used for both Xen and Nitro hypervisors."
+    },
+    {
+      "name": "iam_instance_profile_arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) of IAM instance profile associated with the instance, if applicable."
+    },
+    {
+      "name": "iam_instance_profile_id",
+      "type": "text",
+      "description": "The ID of the instance profile associated with the instance, if applicable."
+    },
+    {
+      "name": "image_id",
+      "type": "text",
+      "description": "The ID of the AMI used to launch the instance."
+    },
+    {
+      "name": "instance_initiated_shutdown_behavior",
+      "type": "text",
+      "description": "Indicates whether an instance stops or terminates when you initiate shutdown from the instance (using the operating system command for system shutdown)."
+    },
+    {
+      "name": "instance_lifecycle",
+      "type": "text",
+      "description": "Indicates whether this is a spot instance or a scheduled instance."
+    },
+    {
+      "name": "kernel_id",
+      "type": "text",
+      "description": "The kernel ID"
+    },
+    {
+      "name": "key_name",
+      "type": "text",
+      "description": "The name of the key pair, if this instance was launched with an associated key pair."
+    },
+    {
+      "name": "launch_time",
+      "type": "timestamp with time zone",
+      "description": "The time the instance was launched."
+    },
+    {
+      "name": "outpost_arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) of the Outpost, if applicable."
+    },
+    {
+      "name": "placement_affinity",
+      "type": "text",
+      "description": "The affinity setting for the instance on the Dedicated Host."
+    },
+    {
+      "name": "placement_availability_zone",
+      "type": "text",
+      "description": "The Availability Zone of the instance."
+    },
+    {
+      "name": "placement_group_id",
+      "type": "text",
+      "description": "The ID of the placement group that the instance is in."
+    },
+    {
+      "name": "placement_group_name",
+      "type": "text",
+      "description": "The name of the placement group the instance is in."
+    },
+    {
+      "name": "placement_host_id",
+      "type": "text",
+      "description": "The ID of the Dedicated Host on which the instance resides."
+    },
+    {
+      "name": "placement_host_resource_group_arn",
+      "type": "text",
+      "description": "The ARN of the host resource group in which to launch the instances."
+    },
+    {
+      "name": "placement_partition_number",
+      "type": "integer",
+      "description": "The ARN of the host resource group in which to launch the instances."
+    },
+    {
+      "name": "placement_tenancy",
+      "type": "text",
+      "description": "The tenancy of the instance (if the instance is running in a VPC). An instance with a tenancy of dedicated runs on single-tenant hardware."
+    },
+    {
+      "name": "platform",
+      "type": "text",
+      "description": "The value is 'Windows' for Windows instances; otherwise blank."
+    },
+    {
+      "name": "platform_details",
+      "type": "text",
+      "description": "The platform details value for the instance."
+    },
+    {
+      "name": "private_ip_address",
+      "type": "inet",
+      "description": "The private IPv4 address assigned to the instance."
+    },
+    {
+      "name": "private_dns_name",
+      "type": "text",
+      "description": "The private DNS hostname name assigned to the instance. This DNS hostname can only be used inside the Amazon EC2 network. This name is not available until the instance enters the running state."
+    },
+    {
+      "name": "public_dns_name",
+      "type": "text",
+      "description": "The public DNS name assigned to the instance. This name is not available until the instance enters the running state."
+    },
+    {
+      "name": "public_ip_address",
+      "type": "inet",
+      "description": "The public IPv4 address, or the Carrier IP address assigned to the instance, if applicable."
+    },
+    {
+      "name": "ram_disk_id",
+      "type": "text",
+      "description": "The RAM disk ID."
+    },
+    {
+      "name": "root_device_name",
+      "type": "text",
+      "description": "The device name of the root device volume (for example, /dev/sda1)."
+    },
+    {
+      "name": "root_device_type",
+      "type": "text",
+      "description": "The root device type used by the AMI. The AMI can use an EBS volume or an instance store volume."
+    },
+    {
+      "name": "source_dest_check",
+      "type": "boolean",
+      "description": "Specifies whether to enable an instance launched in a VPC to perform NAT. This controls whether source/destination checking is enabled on the instance."
+    },
+    {
+      "name": "spot_instance_request_id",
+      "type": "text",
+      "description": "If the request is a Spot Instance request, the ID of the request."
+    },
+    {
+      "name": "sriov_net_support",
+      "type": "text",
+      "description": "Indicates whether enhanced networking with the Intel 82599 Virtual Function interface is enabled."
+    },
+    {
+      "name": "state_code",
+      "type": "integer",
+      "description": "The reason code for the state change."
+    },
+    {
+      "name": "state_transition_reason",
+      "type": "text",
+      "description": "The reason for the most recent state transition."
+    },
+    {
+      "name": "state_transition_time",
+      "type": "timestamp with time zone",
+      "description": "The date and time, the instance state was last modified."
+    },
+    {
+      "name": "subnet_id",
+      "type": "text",
+      "description": "The ID of the subnet in which the instance is running."
+    },
+    {
+      "name": "tpm_support",
+      "type": "text",
+      "description": "If the instance is configured for NitroTPM support, the value is v2.0."
+    },
+    {
+      "name": "usage_operation",
+      "type": "text",
+      "description": "The usage operation value for the instance."
+    },
+    {
+      "name": "usage_operation_update_time",
+      "type": "text",
+      "description": "The time that the usage operation was last updated."
+    },
+    {
+      "name": "user_data",
+      "type": "text",
+      "description": "The user data of the instance."
+    },
+    {
+      "name": "virtualization_type",
+      "type": "text",
+      "description": "The virtualization type of the instance."
+    },
+    {
+      "name": "vpc_id",
+      "type": "text",
+      "description": "The ID of the VPC in which the instance is running."
+    },
+    {
+      "name": "block_device_mappings",
+      "type": "json",
+      "description": "Block device mapping entries for the instance."
+    },
+    {
+      "name": "elastic_gpu_associations",
+      "type": "json",
+      "description": "The Elastic GPU associated with the instance."
+    },
+    {
+      "name": "elastic_inference_accelerator_associations",
+      "type": "json",
+      "description": "The elastic inference accelerator associated with the instance."
+    },
+    {
+      "name": "enclave_options",
+      "type": "json",
+      "description": "Indicates whether the instance is enabled for Amazon Web Services Nitro Enclaves."
+    },
+    {
+      "name": "hibernation_options",
+      "type": "json",
+      "description": "Indicates whether the instance is enabled for hibernation."
+    },
+    {
+      "name": "launch_template_data",
+      "type": "json",
+      "description": "The configuration data of the specified instance."
+    },
+    {
+      "name": "licenses",
+      "type": "json",
+      "description": "The license configurations for the instance."
+    },
+    {
+      "name": "maintenance_options",
+      "type": "json",
+      "description": "The metadata options for the instance."
+    },
+    {
+      "name": "metadata_options",
+      "type": "json",
+      "description": "The metadata options for the instance."
+    },
+    {
+      "name": "network_interfaces",
+      "type": "json",
+      "description": "The network interfaces for the instance."
+    },
+    {
+      "name": "private_dns_name_options",
+      "type": "json",
+      "description": "The options for the instance hostname."
+    },
+    {
+      "name": "product_codes",
+      "type": "json",
+      "description": "The product codes attached to this instance, if applicable."
+    },
+    {
+      "name": "security_groups",
+      "type": "json",
+      "description": "The security groups for the instance."
+    },
+    {
+      "name": "instance_status",
+      "type": "json",
+      "description": "The status of an instance. Instance status includes scheduled events, status checks and instance state information."
+    },
+    {
+      "name": "tags_src",
+      "type": "json",
+      "description": "A list of tags assigned to the instance."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": ""
+    }
+  ]
+}

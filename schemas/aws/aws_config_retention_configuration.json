@@ -1,0 +1,21 @@
+{
+  "table_name": "aws_config_retention_configuration",
+  "table_description": "AWS Config Retention Configuration",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The name of the retention configuration object."
+    },
+    {
+      "name": "retention_period_in_days",
+      "type": "integer",
+      "description": "Number of days Config stores your historical information."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    }
+  ]
+}

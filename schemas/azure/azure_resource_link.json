@@ -1,0 +1,46 @@
+{
+  "table_name": "azure_resource_link",
+  "table_description": "Azure Resource Link",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The name of the resource link."
+    },
+    {
+      "name": "id",
+      "type": "text",
+      "description": "The fully qualified ID of the resource link."
+    },
+    {
+      "name": "type",
+      "type": "text",
+      "description": "The resource link type."
+    },
+    {
+      "name": "source_id",
+      "type": "text",
+      "description": "The fully qualified ID of the source resource in the link."
+    },
+    {
+      "name": "target_id",
+      "type": "text",
+      "description": "The fully qualified ID of the target resource in the link."
+    },
+    {
+      "name": "notes",
+      "type": "text",
+      "description": "Notes about the resource link."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": "ColumnDescriptionTitle"
+    },
+    {
+      "name": "resource_group",
+      "type": "text",
+      "description": "ColumnDescriptionResourceGroup"
+    }
+  ]
+}

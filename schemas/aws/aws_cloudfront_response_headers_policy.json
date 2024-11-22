@@ -1,0 +1,46 @@
+{
+  "table_name": "aws_cloudfront_response_headers_policy",
+  "table_description": "AWS Cloudfront Response Headers Policy",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The name of the response headers policy."
+    },
+    {
+      "name": "id",
+      "type": "text",
+      "description": "The identifier for the response headers policy."
+    },
+    {
+      "name": "arn",
+      "type": "text",
+      "description": "The version identifier for the current version of the response headers policy."
+    },
+    {
+      "name": "last_modified_time",
+      "type": "timestamp with time zone",
+      "description": "The date and time when the response headers policy was last modified."
+    },
+    {
+      "name": "type",
+      "type": "text",
+      "description": "The type of response headers policy, either managed (created by AWS) or custom (created in this AWS account)."
+    },
+    {
+      "name": "etag",
+      "type": "text",
+      "description": "The version identifier for the current version of the response headers policy."
+    },
+    {
+      "name": "response_headers_policy_config",
+      "type": "json",
+      "description": "A response headers policy contains information about a set of HTTP response headers and their values. CloudFront adds the headers in the policy to HTTP responses that it sends for requests that match a cache behavior that’s associated with the policy."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    }
+  ]
+}

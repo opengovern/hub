@@ -1,0 +1,26 @@
+{
+  "table_name": "aws_route53_query_log",
+  "table_description": "AWS Route53 Query Logging Configuration",
+  "columns": [
+    {
+      "name": "id",
+      "type": "text",
+      "description": "The ID for a configuration for DNS query logging."
+    },
+    {
+      "name": "hosted_zone_id",
+      "type": "text",
+      "description": "The ID of the hosted zone that CloudWatch Logs is logging queries for."
+    },
+    {
+      "name": "cloud_watch_logs_log_group_arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) of the CloudWatch Logs log group that Amazon Route 53 is publishing logs to."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    }
+  ]
+}

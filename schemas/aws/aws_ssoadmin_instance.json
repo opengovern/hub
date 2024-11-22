@@ -1,0 +1,21 @@
+{
+  "table_name": "aws_ssoadmin_instance",
+  "table_description": "AWS SSO Instance",
+  "columns": [
+    {
+      "name": "arn",
+      "type": "text",
+      "description": "The ARN of the SSO instance under which the operation will be executed."
+    },
+    {
+      "name": "identity_store_id",
+      "type": "text",
+      "description": "The identifier of the identity store that is connected to the SSO instance."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "table_name": "azure_api_management_backend",
+  "table_description": "Azure API Management Backend",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "A friendly name that identifies an API management backend."
+    },
+    {
+      "name": "id",
+      "type": "text",
+      "description": "Contains ID to identify an API management backend uniquely."
+    },
+    {
+      "name": "url",
+      "type": "text",
+      "description": "Runtime Url of the API management backend."
+    },
+    {
+      "name": "type",
+      "type": "text",
+      "description": "Resource type for API Management resource."
+    },
+    {
+      "name": "protocol",
+      "type": "text",
+      "description": "API management backend communication protocol. Possible values include: 'BackendProtocolHTTP', 'BackendProtocolSoap'."
+    },
+    {
+      "name": "description",
+      "type": "text",
+      "description": "The API management backend Description."
+    },
+    {
+      "name": "resource_id",
+      "type": "text",
+      "description": "Management Uri of the Resource in External System. This url can be the Arm Resource Id of Logic Apps, Function Apps or Api Apps."
+    },
+    {
+      "name": "properties",
+      "type": "json",
+      "description": "The API management backend Properties contract."
+    },
+    {
+      "name": "credentials",
+      "type": "json",
+      "description": "The API management backend credentials contract properties."
+    },
+    {
+      "name": "proxy",
+      "type": "json",
+      "description": "The API management backend proxy contract properties."
+    },
+    {
+      "name": "tls",
+      "type": "json",
+      "description": "The API management backend TLS properties."
+    },
+    {
+      "name": "service_name",
+      "type": "text",
+      "description": "Name of the API management service."
+    },
+    {
+      "name": "backend_id",
+      "type": "text",
+      "description": "The API management backend ID."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": "ColumnDescriptionTitle"
+    },
+    {
+      "name": "resource_group",
+      "type": "text",
+      "description": "ColumnDescriptionResourceGroup"
+    }
+  ]
+}

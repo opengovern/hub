@@ -1,0 +1,86 @@
+{
+  "table_name": "aws_accessanalyzer_finding",
+  "table_description": "AWS Access Analyzer Finding",
+  "columns": [
+    {
+      "name": "access_analyzer_arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) of the analyzer that generated the finding."
+    },
+    {
+      "name": "id",
+      "type": "text",
+      "description": "The ID of the finding."
+    },
+    {
+      "name": "analyzed_at",
+      "type": "timestamp with time zone",
+      "description": "The time at which the resource-based policy that generated the finding was analyzed."
+    },
+    {
+      "name": "created_at",
+      "type": "timestamp with time zone",
+      "description": "The time at which the finding was created."
+    },
+    {
+      "name": "error",
+      "type": "text",
+      "description": "The error that resulted in an Error finding."
+    },
+    {
+      "name": "is_public",
+      "type": "boolean",
+      "description": "Indicates whether the finding reports a resource that has a policy that allows public access."
+    },
+    {
+      "name": "resource",
+      "type": "text",
+      "description": "The resource that the external principal has access to."
+    },
+    {
+      "name": "resource_owner_account",
+      "type": "text",
+      "description": "The Amazon Web Services account ID that owns the resource."
+    },
+    {
+      "name": "resource_type",
+      "type": "text",
+      "description": "The type of the resource that the external principal has access to."
+    },
+    {
+      "name": "status",
+      "type": "text",
+      "description": "The status of the finding."
+    },
+    {
+      "name": "updated_at",
+      "type": "timestamp with time zone",
+      "description": "The time at which the finding was most recently updated."
+    },
+    {
+      "name": "action",
+      "type": "json",
+      "description": "The action in the analyzed policy statement that an external principal has permission to use."
+    },
+    {
+      "name": "sources",
+      "type": "json",
+      "description": "The sources of the finding, indicating how the access that generated the finding is granted. It is populated for Amazon S3 bucket findings."
+    },
+    {
+      "name": "principal",
+      "type": "json",
+      "description": "The external principal that has access to a resource within the zone of trust."
+    },
+    {
+      "name": "condition",
+      "type": "json",
+      "description": "The condition in the analyzed policy statement that resulted in a finding."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "table_name": "aws_oam_sink",
+  "table_description": "AWS OAM Sink",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The name of the sink."
+    },
+    {
+      "name": "id",
+      "type": "text",
+      "description": "The random ID string that Amazon Web Service generates as part of the sink ARN."
+    },
+    {
+      "name": "arn",
+      "type": "text",
+      "description": "The ARN of the sink."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": ""
+    }
+  ]
+}

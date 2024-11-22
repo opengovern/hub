@@ -1,0 +1,11 @@
+{
+  "table_name": "aws_cost_by_service_monthly",
+  "table_description": "AWS Cost Explorer - Cost by Service (Monthly)",
+  "columns": [
+    {
+      "name": "service",
+      "type": "text",
+      "description": "The name of the AWS service."
+    }
+  ]
+}

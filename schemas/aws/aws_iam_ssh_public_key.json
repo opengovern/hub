@@ -1,0 +1,31 @@
+{
+  "table_name": "aws_iam_ssh_public_key",
+  "table_description": "AWS IAM User Access Key",
+  "columns": [
+    {
+      "name": "ssh_public_key_id",
+      "type": "text",
+      "description": "The ID for this ssh public key key."
+    },
+    {
+      "name": "user_name",
+      "type": "text",
+      "description": "The name of the IAM user that the key is associated with."
+    },
+    {
+      "name": "status",
+      "type": "text",
+      "description": "The status of the ssh public key. Active means that the key is valid for API calls; Inactive means it is not."
+    },
+    {
+      "name": "update_date",
+      "type": "timestamp with time zone",
+      "description": "The date when the ssh public key was last updated."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "table_name": "aws_ec2_regional_settings",
+  "table_description": "AWS EC2 Regional Settings",
+  "columns": [
+    {
+      "name": "default_ebs_encryption_enabled",
+      "type": "boolean",
+      "description": "Indicates whether encryption by default is enabled."
+    },
+    {
+      "name": "default_ebs_encryption_key",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) or alias of the default CMK for encryption by default."
+    },
+    {
+      "name": "snapshot_block_public_access_state",
+      "type": "text",
+      "description": "Gets the current state of block public access for snapshots setting for the account and Region."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    }
+  ]
+}

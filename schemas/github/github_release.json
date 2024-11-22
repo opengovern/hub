@@ -1,0 +1,101 @@
+{
+  "table_name": "github_release",
+  "table_description": "GitHub Releases bundle project files for download by users.",
+  "columns": [
+    {
+      "name": "repository_full_name",
+      "type": "text",
+      "description": "Full name of the repository that contains the release."
+    },
+    {
+      "name": "assets",
+      "type": "json",
+      "description": "List of assets contained in the release."
+    },
+    {
+      "name": "assets_url",
+      "type": "text",
+      "description": "Assets URL for the release."
+    },
+    {
+      "name": "author_login",
+      "type": "text",
+      "description": "The login name of the user that created the release."
+    },
+    {
+      "name": "body",
+      "type": "text",
+      "description": "Text describing the contents of the tag."
+    },
+    {
+      "name": "created_at",
+      "type": "timestamp with time zone",
+      "description": "Time when the release was created."
+    },
+    {
+      "name": "draft",
+      "type": "boolean",
+      "description": "True if this is a draft (unpublished) release."
+    },
+    {
+      "name": "html_url",
+      "type": "text",
+      "description": "HTML URL for the release."
+    },
+    {
+      "name": "id",
+      "type": "integer",
+      "description": "Unique ID of the release."
+    },
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The name of the release."
+    },
+    {
+      "name": "node_id",
+      "type": "text",
+      "description": "Node where GitHub stores this data internally."
+    },
+    {
+      "name": "prerelease",
+      "type": "boolean",
+      "description": "True if this is a prerelease version."
+    },
+    {
+      "name": "published_at",
+      "type": "timestamp with time zone",
+      "description": "Time when the release was published."
+    },
+    {
+      "name": "tag_name",
+      "type": "text",
+      "description": "The name of the tag the release is associated with."
+    },
+    {
+      "name": "tarball_url",
+      "type": "text",
+      "description": "Tarball URL for the release."
+    },
+    {
+      "name": "target_commitish",
+      "type": "text",
+      "description": "Specifies the commitish value that determines where the Git tag is created from. Can be any branch or commit SHA."
+    },
+    {
+      "name": "upload_url",
+      "type": "text",
+      "description": "Upload URL for the release."
+    },
+    {
+      "name": "url",
+      "type": "text",
+      "description": "URL of the release."
+    },
+    {
+      "name": "zipball_url",
+      "type": "text",
+      "description": "Zipball URL for the release."
+    }
+  ]
+}

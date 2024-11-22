@@ -1,0 +1,66 @@
+{
+  "table_name": "aws_ec2_managed_prefix_list",
+  "table_description": "AWS EC2 Managed Prefix List",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The name of the prefix list."
+    },
+    {
+      "name": "id",
+      "type": "text",
+      "description": "The ID of the prefix list."
+    },
+    {
+      "name": "arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) for the prefix list."
+    },
+    {
+      "name": "state",
+      "type": "text",
+      "description": "The current state of the prefix list."
+    },
+    {
+      "name": "address_family",
+      "type": "text",
+      "description": "The IP address version of the prefix list."
+    },
+    {
+      "name": "max_entries",
+      "type": "integer",
+      "description": "The maximum number of entries for the prefix list."
+    },
+    {
+      "name": "owner_id",
+      "type": "text",
+      "description": "The ID of the owner of the prefix list."
+    },
+    {
+      "name": "state_message",
+      "type": "text",
+      "description": "The message regarding the current state of the prefix list."
+    },
+    {
+      "name": "version",
+      "type": "integer",
+      "description": "The version of the prefix list."
+    },
+    {
+      "name": "tags_src",
+      "type": "json",
+      "description": "The tags for the prefix list."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": ""
+    }
+  ]
+}

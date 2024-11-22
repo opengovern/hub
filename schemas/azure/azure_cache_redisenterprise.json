@@ -1,0 +1,26 @@
+{
+  "table_name": "azure_cache_redisenterprise",
+  "table_description": "Azure Cache RedisEnterprise",
+  "columns": [
+    {
+      "name": "id",
+      "type": "text",
+      "description": "The id of the redisenterprise."
+    },
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The name of the redisenterprise."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": "ColumnDescriptionTitle"
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": "ColumnDescriptionTags"
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "table_name": "aws_cloudfront_origin_request_policy",
+  "table_description": "AWS CloudFront Origin Request Policy",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "A unique name to identify the origin request policy."
+    },
+    {
+      "name": "id",
+      "type": "text",
+      "description": "The ID for the origin request policy."
+    },
+    {
+      "name": "comment",
+      "type": "text",
+      "description": "The comment for this origin request policy."
+    },
+    {
+      "name": "etag",
+      "type": "text",
+      "description": "The current version of the origin request policy."
+    },
+    {
+      "name": "last_modified_time",
+      "type": "timestamp with time zone",
+      "description": "The date and time when the origin request policy was last modified."
+    },
+    {
+      "name": "cookies_config",
+      "type": "json",
+      "description": "The cookies from viewer requests to include in origin requests."
+    },
+    {
+      "name": "headers_config",
+      "type": "json",
+      "description": "The HTTP headers to include in origin requests."
+    },
+    {
+      "name": "query_strings_config",
+      "type": "json",
+      "description": "The URL query strings from viewer requests to include in origin requests."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "table_name": "aws_servicequotas_service_quota_change_request",
+  "table_description": "AWS ServiceQuotas Service Quota Change Request",
+  "columns": [
+    {
+      "name": "id",
+      "type": "text",
+      "description": "The unique identifier."
+    },
+    {
+      "name": "case_id",
+      "type": "text",
+      "description": "The case ID."
+    },
+    {
+      "name": "status",
+      "type": "text",
+      "description": "The state of the quota increase request."
+    },
+    {
+      "name": "quota_name",
+      "type": "text",
+      "description": "The quota name."
+    },
+    {
+      "name": "quota_code",
+      "type": "text",
+      "description": "The quota code."
+    },
+    {
+      "name": "quota_arn",
+      "type": "text",
+      "description": "The arn of the service quota."
+    },
+    {
+      "name": "desired_value",
+      "type": "double precision",
+      "description": "The increased value for the quota."
+    },
+    {
+      "name": "created",
+      "type": "timestamp with time zone",
+      "description": "The date and time when the quota increase request was received and the case ID was created."
+    },
+    {
+      "name": "global_quota",
+      "type": "boolean",
+      "description": "Indicates whether the quota is global."
+    },
+    {
+      "name": "last_updated",
+      "type": "timestamp with time zone",
+      "description": "The date and time of the most recent change."
+    },
+    {
+      "name": "requester",
+      "type": "text",
+      "description": "The IAM identity of the requester."
+    },
+    {
+      "name": "service_name",
+      "type": "text",
+      "description": "The service name."
+    },
+    {
+      "name": "service_code",
+      "type": "text",
+      "description": "The service identifier."
+    },
+    {
+      "name": "unit",
+      "type": "text",
+      "description": "The unit of measurement."
+    },
+    {
+      "name": "tags_src",
+      "type": "json",
+      "description": "The list of tags associated with the change request."
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": ""
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    }
+  ]
+}

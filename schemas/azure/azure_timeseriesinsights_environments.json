@@ -1,0 +1,26 @@
+{
+  "table_name": "azure_timeseriesinsights_environments",
+  "table_description": "Azure TimeSeriesInsights Environments",
+  "columns": [
+    {
+      "name": "id",
+      "type": "text",
+      "description": "The id of the environments."
+    },
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The name of the environments."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": "ColumnDescriptionTitle"
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": "ColumnDescriptionTags"
+    }
+  ]
+}

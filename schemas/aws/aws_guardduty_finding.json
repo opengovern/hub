@@ -1,0 +1,76 @@
+{
+  "table_name": "aws_guardduty_finding",
+  "table_description": "AWS GuardDuty Finding",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The title of the finding."
+    },
+    {
+      "name": "id",
+      "type": "text",
+      "description": "The ID of the finding."
+    },
+    {
+      "name": "arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) specifying the finding."
+    },
+    {
+      "name": "detector_id",
+      "type": "text",
+      "description": "The ID of the detector."
+    },
+    {
+      "name": "severity",
+      "type": "double precision",
+      "description": "The severity of the finding."
+    },
+    {
+      "name": "created_at",
+      "type": "timestamp with time zone",
+      "description": "The time and date when the finding was created."
+    },
+    {
+      "name": "confidence",
+      "type": "double precision",
+      "description": "The confidence score for the finding."
+    },
+    {
+      "name": "description",
+      "type": "text",
+      "description": "The description of the finding."
+    },
+    {
+      "name": "schema_version",
+      "type": "text",
+      "description": "The version of the schema used for the finding."
+    },
+    {
+      "name": "type",
+      "type": "text",
+      "description": "The type of finding."
+    },
+    {
+      "name": "updated_at",
+      "type": "timestamp with time zone",
+      "description": "The time and date when the finding was last updated."
+    },
+    {
+      "name": "resource",
+      "type": "json",
+      "description": "Contains information about the AWS resource associated with the activity that prompted GuardDuty to generate a finding."
+    },
+    {
+      "name": "service",
+      "type": "json",
+      "description": "Contains additional information about the generated finding."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    }
+  ]
+}

@@ -1,0 +1,176 @@
+{
+  "table_name": "azure_data_protection_backup_job",
+  "table_description": "Azure Data Protection Backup Job",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "Resource name associated with the resource."
+    },
+    {
+      "name": "vault_name",
+      "type": "text",
+      "description": "The data protection vault name."
+    },
+    {
+      "name": "id",
+      "type": "text",
+      "description": "Resource ID represents the complete path to the resource."
+    },
+    {
+      "name": "type",
+      "type": "text",
+      "description": "Resource type represents the complete path of the form Namespace/ResourceType/ResourceType/..."
+    },
+    {
+      "name": "activity_id",
+      "type": "text",
+      "description": "Job Activity Id."
+    },
+    {
+      "name": "backup_instance_friendly_name",
+      "type": "text",
+      "description": "Name of the Backup Instance."
+    },
+    {
+      "name": "data_source_id",
+      "type": "text",
+      "description": "ARM ID of the DataSource."
+    },
+    {
+      "name": "data_source_location",
+      "type": "text",
+      "description": "Location of the DataSource."
+    },
+    {
+      "name": "data_source_name",
+      "type": "text",
+      "description": "User Friendly Name of the DataSource."
+    },
+    {
+      "name": "data_source_type",
+      "type": "text",
+      "description": "Type of DataSource."
+    },
+    {
+      "name": "is_user_triggered",
+      "type": "boolean",
+      "description": "Indicates whether the job is adhoc(true) or scheduled(false)."
+    },
+    {
+      "name": "operation",
+      "type": "text",
+      "description": "Type of Job i.e. Backup:full/log/diff ;Restore:ALR/OLR; Tiering:Backup/Archive ; Management:ConfigureProtection/UnConfigure."
+    },
+    {
+      "name": "operation_category",
+      "type": "text",
+      "description": "Indicates the type of Job i.e. Backup/Restore/Tiering/Management."
+    },
+    {
+      "name": "progress_enabled",
+      "type": "boolean",
+      "description": "Indicates whether progress is enabled for the job."
+    },
+    {
+      "name": "source_resource_group",
+      "type": "text",
+      "description": "Resource Group Name of the Datasource."
+    },
+    {
+      "name": "source_subscription_id",
+      "type": "text",
+      "description": "SubscriptionId corresponding to the DataSource."
+    },
+    {
+      "name": "start_time",
+      "type": "timestamp with time zone",
+      "description": "StartTime of the job (in UTC)."
+    },
+    {
+      "name": "status",
+      "type": "text",
+      "description": "Status of the job like InProgress/Success/Failed/Cancelled/SuccessWithWarning."
+    },
+    {
+      "name": "data_source_set_name",
+      "type": "text",
+      "description": "Data Source Set Name of the DataSource."
+    },
+    {
+      "name": "destination_data_store_name",
+      "type": "text",
+      "description": "Destination Data Store Name."
+    },
+    {
+      "name": "duration",
+      "type": "text",
+      "description": "Total run time of the job. ISO 8601 format."
+    },
+    {
+      "name": "etag",
+      "type": "text",
+      "description": "An unique read-only string that changes whenever the resource is updated."
+    },
+    {
+      "name": "source_data_store_name",
+      "type": "text",
+      "description": "Source Data Store Name."
+    },
+    {
+      "name": "backup_instance_id",
+      "type": "text",
+      "description": "ARM ID of the Backup Instance."
+    },
+    {
+      "name": "end_time",
+      "type": "timestamp with time zone",
+      "description": "EndTime of the job (in UTC)."
+    },
+    {
+      "name": "policy_id",
+      "type": "text",
+      "description": "ARM ID of the policy."
+    },
+    {
+      "name": "policy_name",
+      "type": "text",
+      "description": "Name of the policy."
+    },
+    {
+      "name": "progress_url",
+      "type": "text",
+      "description": "Url which contains job's progress."
+    },
+    {
+      "name": "restore_type",
+      "type": "text",
+      "description": "Indicates the sub type of operation i.e. in case of Restore it can be ALR/OLR."
+    },
+    {
+      "name": "error_details",
+      "type": "json",
+      "description": "A List, detailing the errors related to the job."
+    },
+    {
+      "name": "supported_actions",
+      "type": "json",
+      "description": "List of supported actions."
+    },
+    {
+      "name": "extended_info",
+      "type": "json",
+      "description": "Extended Information about the job."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": "ColumnDescriptionTitle"
+    },
+    {
+      "name": "resource_group",
+      "type": "text",
+      "description": "ColumnDescriptionResourceGroup"
+    }
+  ]
+}

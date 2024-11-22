@@ -1,0 +1,36 @@
+{
+  "table_name": "aws_globalaccelerator_listener",
+  "table_description": "AWS Global Accelerator Listener",
+  "columns": [
+    {
+      "name": "arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) of the listener."
+    },
+    {
+      "name": "accelerator_arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) of parent accelerator."
+    },
+    {
+      "name": "client_affinity",
+      "type": "text",
+      "description": "Client affinity setting for the listener."
+    },
+    {
+      "name": "port_ranges",
+      "type": "json",
+      "description": "The list of port ranges for the connections from clients to the accelerator."
+    },
+    {
+      "name": "protocol",
+      "type": "text",
+      "description": "The protocol for the connections from clients to the accelerator."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    }
+  ]
+}

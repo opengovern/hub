@@ -1,0 +1,36 @@
+{
+  "table_name": "aws_inspector_assessment_target",
+  "table_description": "AWS Inspector Assessment Target",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The name of the Amazon Inspector assessment target."
+    },
+    {
+      "name": "arn",
+      "type": "text",
+      "description": "The ARN that specifies the Amazon Inspector assessment target."
+    },
+    {
+      "name": "resource_group_arn",
+      "type": "text",
+      "description": "The ARN that specifies the resource group that is associated with the assessment target."
+    },
+    {
+      "name": "created_at",
+      "type": "timestamp with time zone",
+      "description": "The time at which the assessment target is created."
+    },
+    {
+      "name": "updated_at",
+      "type": "timestamp with time zone",
+      "description": "The time at which UpdateAssessmentTarget is called."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    }
+  ]
+}

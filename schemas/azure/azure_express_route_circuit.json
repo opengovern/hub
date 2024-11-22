@@ -1,0 +1,116 @@
+{
+  "table_name": "azure_express_route_circuit",
+  "table_description": "Azure Express Route Circuit",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The friendly name that identifies the circuit."
+    },
+    {
+      "name": "id",
+      "type": "text",
+      "description": "Resource ID."
+    },
+    {
+      "name": "etag",
+      "type": "text",
+      "description": "An unique read-only string that changes whenever the resource is updated."
+    },
+    {
+      "name": "sku_name",
+      "type": "text",
+      "description": "The name of the SKU."
+    },
+    {
+      "name": "sku_tier",
+      "type": "text",
+      "description": "The tier of the SKU. Possible values include: 'Standard', 'Premium', 'Basic', 'Local'."
+    },
+    {
+      "name": "sku_family",
+      "type": "text",
+      "description": "The family of the SKU. Possible values include: 'UnlimitedData', 'MeteredData'."
+    },
+    {
+      "name": "allow_classic_operations",
+      "type": "boolean",
+      "description": "Allow classic operations."
+    },
+    {
+      "name": "circuit_provisioning_state",
+      "type": "text",
+      "description": "The CircuitProvisioningState state of the resource."
+    },
+    {
+      "name": "service_provider_provisioning_state",
+      "type": "text",
+      "description": "The ServiceProviderProvisioningState state of the resource. Possible values include: 'NotProvisioned', 'Provisioning', 'Provisioned', 'Deprovisioning'."
+    },
+    {
+      "name": "authorizations",
+      "type": "json",
+      "description": "The list of authorizations."
+    },
+    {
+      "name": "peerings",
+      "type": "json",
+      "description": "The list of peerings."
+    },
+    {
+      "name": "service_key",
+      "type": "text",
+      "description": "The ServiceKey."
+    },
+    {
+      "name": "service_provider_notes",
+      "type": "text",
+      "description": "The ServiceProviderNotes."
+    },
+    {
+      "name": "service_provider_properties",
+      "type": "json",
+      "description": "The ServiceProviderProperties."
+    },
+    {
+      "name": "express_route_port",
+      "type": "json",
+      "description": "The reference to the ExpressRoutePort resource when the circuit is provisioned on an ExpressRoutePort resource."
+    },
+    {
+      "name": "bandwidth_in_gbps",
+      "type": "double precision",
+      "description": "The bandwidth of the circuit when the circuit is provisioned on an ExpressRoutePort resource."
+    },
+    {
+      "name": "provisioning_state",
+      "type": "text",
+      "description": "The provisioning state of the express route circuit resource. Possible values include: 'Succeeded', 'Updating', 'Deleting', 'Failed'."
+    },
+    {
+      "name": "global_reach_enabled",
+      "type": "boolean",
+      "description": "Flag denoting global reach status."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": "ColumnDescriptionTitle"
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": "ColumnDescriptionTags"
+    },
+    {
+      "name": "region",
+      "type": "text",
+      "description": "ColumnDescriptionRegion"
+    },
+    {
+      "name": "resource_group",
+      "type": "text",
+      "description": "ColumnDescriptionResourceGroup"
+    }
+  ]
+}

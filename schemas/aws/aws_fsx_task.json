@@ -1,0 +1,26 @@
+{
+  "table_name": "aws_fsx_task",
+  "table_description": "AWS FSX Task",
+  "columns": [
+    {
+      "name": "task_id",
+      "type": "text",
+      "description": "The id of the task."
+    },
+    {
+      "name": "resource_arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) of the task"
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": ""
+    }
+  ]
+}

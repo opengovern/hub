@@ -1,0 +1,86 @@
+{
+  "table_name": "aws_vpc_endpoint_service",
+  "table_description": "AWS VPC Endpoint Service",
+  "columns": [
+    {
+      "name": "service_name",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) of the service."
+    },
+    {
+      "name": "service_id",
+      "type": "text",
+      "description": "The ID of the endpoint service."
+    },
+    {
+      "name": "owner",
+      "type": "text",
+      "description": "The AWS account ID of the service owner."
+    },
+    {
+      "name": "acceptance_required",
+      "type": "boolean",
+      "description": "Indicates whether VPC endpoint connection requests to the service must be accepted by the service owner."
+    },
+    {
+      "name": "manages_vpc_endpoints",
+      "type": "boolean",
+      "description": "Indicates whether the service manages its VPC endpoints. Management of the service VPC endpoints using the VPC endpoint API is restricted."
+    },
+    {
+      "name": "private_dns_name",
+      "type": "text",
+      "description": "The private DNS name for the service."
+    },
+    {
+      "name": "private_dns_name_verification_state",
+      "type": "text",
+      "description": "The verification state of the VPC endpoint service. Consumers of the endpoint service cannot use the private name when the state is not verified."
+    },
+    {
+      "name": "vpc_endpoint_policy_supported",
+      "type": "boolean",
+      "description": "Indicates whether the service supports endpoint policies."
+    },
+    {
+      "name": "availability_zones",
+      "type": "json",
+      "description": "The Availability Zones in which the service is available."
+    },
+    {
+      "name": "base_endpoint_dns_names",
+      "type": "json",
+      "description": "The DNS names for the service."
+    },
+    {
+      "name": "service_type",
+      "type": "json",
+      "description": "The type of service."
+    },
+    {
+      "name": "vpc_endpoint_connections",
+      "type": "json",
+      "description": "Information about one or more VPC endpoint connections."
+    },
+    {
+      "name": "vpc_endpoint_service_permissions",
+      "type": "json",
+      "description": "Information about one or more allowed principals."
+    },
+    {
+      "name": "tags_src",
+      "type": "json",
+      "description": "A list of tags assigned to the service."
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": ""
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    }
+  ]
+}

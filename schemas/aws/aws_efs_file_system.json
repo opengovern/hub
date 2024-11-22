@@ -1,0 +1,106 @@
+{
+  "table_name": "aws_efs_file_system",
+  "table_description": "AWS Elastic File System",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "Name of the file system provided by the user."
+    },
+    {
+      "name": "file_system_id",
+      "type": "text",
+      "description": "The ID of the file system, assigned by Amazon EFS."
+    },
+    {
+      "name": "arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) for the EFS file system."
+    },
+    {
+      "name": "owner_id",
+      "type": "text",
+      "description": "The AWS account that created the file system."
+    },
+    {
+      "name": "creation_token",
+      "type": "text",
+      "description": "The opaque string specified in the request."
+    },
+    {
+      "name": "creation_time",
+      "type": "timestamp with time zone",
+      "description": "The time that the file system was created."
+    },
+    {
+      "name": "automatic_backups",
+      "type": "text",
+      "description": "Automatic backups use a default backup plan with the AWS Backup recommended settings for automatic backups."
+    },
+    {
+      "name": "life_cycle_state",
+      "type": "text",
+      "description": "The lifecycle phase of the file system."
+    },
+    {
+      "name": "number_of_mount_targets",
+      "type": "integer",
+      "description": "The current number of mount targets that the file system has."
+    },
+    {
+      "name": "performance_mode",
+      "type": "text",
+      "description": "The performance mode of the file system."
+    },
+    {
+      "name": "encrypted",
+      "type": "boolean",
+      "description": "A Boolean value that, if true, indicates that the file system is encrypted."
+    },
+    {
+      "name": "kms_key_id",
+      "type": "text",
+      "description": "The ID of an AWS Key Management Service (AWS KMS) customer master key (CMK) that was used to protect the encrypted file system."
+    },
+    {
+      "name": "throughput_mode",
+      "type": "text",
+      "description": "The throughput mode for a file system."
+    },
+    {
+      "name": "provisioned_throughput_in_mibps",
+      "type": "double precision",
+      "description": "The throughput, measured in MiB/s, that you want to provision for a file system."
+    },
+    {
+      "name": "size_in_bytes",
+      "type": "json",
+      "description": "The latest known metered size (in bytes) of data stored in the file system."
+    },
+    {
+      "name": "policy",
+      "type": "json",
+      "description": "The JSON formatted FileSystemPolicy for the EFS file system."
+    },
+    {
+      "name": "policy_std",
+      "type": "json",
+      "description": "Contains the policy in a canonical form for easier searching."
+    },
+    {
+      "name": "tags_src",
+      "type": "json",
+      "description": "A list of tags associated with Filesystem."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": ""
+    }
+  ]
+}

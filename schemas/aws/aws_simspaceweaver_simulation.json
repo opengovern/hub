@@ -1,0 +1,76 @@
+{
+  "table_name": "aws_simspaceweaver_simulation",
+  "table_description": "AWS SimSpace Weaver Simulation",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The name of the simulation."
+    },
+    {
+      "name": "arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) of the simulation."
+    },
+    {
+      "name": "creation_time",
+      "type": "timestamp with time zone",
+      "description": "The time when the simulation was created, expressed as the number of seconds and milliseconds in UTC since the Unix epoch (0:0:0.000, January 1, 1970)."
+    },
+    {
+      "name": "status",
+      "type": "text",
+      "description": "The current status of the simulation."
+    },
+    {
+      "name": "execution_id",
+      "type": "text",
+      "description": "A universally unique identifier (UUID) for this simulation."
+    },
+    {
+      "name": "maximum_duration",
+      "type": "text",
+      "description": "The maximum running time of the simulation, specified as a number of months (m or M), hours (h or H), or days (d or D)."
+    },
+    {
+      "name": "role_arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) of the Identity and Access Management (IAM) role that the simulation assumes to perform actions."
+    },
+    {
+      "name": "schema_error",
+      "type": "text",
+      "description": "An error message that SimSpace Weaver returns only if there is a problem with the simulation schema."
+    },
+    {
+      "name": "live_simulation_state",
+      "type": "json",
+      "description": "A collection of additional state information, such as domain and clock configuration."
+    },
+    {
+      "name": "logging_configuration",
+      "type": "json",
+      "description": "Settings that control how SimSpace Weaver handles your simulation log data."
+    },
+    {
+      "name": "schema_s3_location",
+      "type": "json",
+      "description": "The location of the simulation schema in Amazon Simple Storage Service (Amazon S3)."
+    },
+    {
+      "name": "target_status",
+      "type": "json",
+      "description": "The desired status of the simulation."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    },
+    {
+      "name": "tags",
+      "type": "text",
+      "description": ""
+    }
+  ]
+}

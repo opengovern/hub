@@ -1,0 +1,171 @@
+{
+  "table_name": "aws_iam_account_summary",
+  "table_description": "AWS IAM Account Summary",
+  "columns": [
+    {
+      "name": "access_keys_per_user_quota",
+      "type": "integer",
+      "description": "Specifies the allowed quota of access keys per user."
+    },
+    {
+      "name": "account_access_keys_present",
+      "type": "integer",
+      "description": "Specifies the number of account level access keys present."
+    },
+    {
+      "name": "account_mfa_enabled",
+      "type": "boolean",
+      "description": "Specifies whether MFA is enabled for the account."
+    },
+    {
+      "name": "account_signing_certificates_present",
+      "type": "integer",
+      "description": "Specifies the number of account signing certificates present."
+    },
+    {
+      "name": "assume_role_policy_size_quota",
+      "type": "integer",
+      "description": "Specifies the allowed assume role policy size."
+    },
+    {
+      "name": "attached_policies_per_group_quota",
+      "type": "integer",
+      "description": "Specifies the allowed attached policies per group."
+    },
+    {
+      "name": "attached_policies_per_role_quota",
+      "type": "integer",
+      "description": "Specifies the allowed attached policies per role."
+    },
+    {
+      "name": "attached_policies_per_user_quota",
+      "type": "integer",
+      "description": "Specifies the allowed attached policies per user."
+    },
+    {
+      "name": "global_endpoint_token_version",
+      "type": "integer",
+      "description": "Specifies the token version of the global endpoint."
+    },
+    {
+      "name": "group_policy_size_quota",
+      "type": "integer",
+      "description": "Specifies the allowed group policy size."
+    },
+    {
+      "name": "groups",
+      "type": "integer",
+      "description": "Specifies the number of groups."
+    },
+    {
+      "name": "groups_per_user_quota",
+      "type": "integer",
+      "description": "Specifies the allowed number of groups."
+    },
+    {
+      "name": "groups_quota",
+      "type": "integer",
+      "description": "Specifies the allowed number of groups."
+    },
+    {
+      "name": "instance_profiles",
+      "type": "integer",
+      "description": "Specifies the number of groups."
+    },
+    {
+      "name": "instance_profiles_quota",
+      "type": "integer",
+      "description": "Specifies the allowed number of groups."
+    },
+    {
+      "name": "mfa_devices",
+      "type": "integer",
+      "description": "Specifies the number of MFA devices."
+    },
+    {
+      "name": "mfa_devices_in_use",
+      "type": "integer",
+      "description": "Specifies the number of MFA devices in use."
+    },
+    {
+      "name": "policies",
+      "type": "integer",
+      "description": "Specifies the number of policies."
+    },
+    {
+      "name": "policies_quota",
+      "type": "integer",
+      "description": "Specifies the allowed number of policies."
+    },
+    {
+      "name": "policy_size_quota",
+      "type": "integer",
+      "description": "Specifies the allowed size of policies."
+    },
+    {
+      "name": "policy_versions_in_use",
+      "type": "integer",
+      "description": "Specifies the number of policy versions in use."
+    },
+    {
+      "name": "policy_versions_in_use_quota",
+      "type": "integer",
+      "description": "Specifies the allowed number of policy versions."
+    },
+    {
+      "name": "providers",
+      "type": "integer",
+      "description": "Specifies the number of providers."
+    },
+    {
+      "name": "role_policy_size_quota",
+      "type": "integer",
+      "description": "Specifies the allowed role policy size."
+    },
+    {
+      "name": "roles",
+      "type": "integer",
+      "description": "Specifies the number of roles."
+    },
+    {
+      "name": "roles_quota",
+      "type": "integer",
+      "description": "Specifies the allowed number of roles."
+    },
+    {
+      "name": "server_certificates",
+      "type": "integer",
+      "description": "Specifies the number of server certificates."
+    },
+    {
+      "name": "server_certificates_quota",
+      "type": "integer",
+      "description": "Specifies the allowed number of server certificates."
+    },
+    {
+      "name": "signing_certificates_per_user_quota",
+      "type": "integer",
+      "description": "Specifies the allowed number of signing certificates per user."
+    },
+    {
+      "name": "user_policy_size_quota",
+      "type": "integer",
+      "description": "Specifies the allowed user policy size."
+    },
+    {
+      "name": "users",
+      "type": "integer",
+      "description": "Specifies the number of users."
+    },
+    {
+      "name": "users_quota",
+      "type": "integer",
+      "description": "Specifies the allowed number of users."
+    },
+    {
+      "name": "versions_per_policy_quota",
+      "type": "integer",
+      "description": "Specifies the allowed number of versions per policy."
+    }
+  ]
+}

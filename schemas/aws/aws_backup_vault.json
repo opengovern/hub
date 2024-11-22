@@ -1,0 +1,66 @@
+{
+  "table_name": "aws_backup_vault",
+  "table_description": "AWS Backup Vault",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The name of a logical container where backups are stored."
+    },
+    {
+      "name": "arn",
+      "type": "text",
+      "description": "An Amazon Resource Name (ARN) that uniquely identifies a backup vault."
+    },
+    {
+      "name": "creation_date",
+      "type": "timestamp with time zone",
+      "description": "The date and time a resource backup is created."
+    },
+    {
+      "name": "creator_request_id",
+      "type": "text",
+      "description": "An unique string that identifies the request and allows failed requests to be retried without the risk of running the operation twice."
+    },
+    {
+      "name": "encryption_key_arn",
+      "type": "text",
+      "description": "The server-side encryption key that is used to protect your backups."
+    },
+    {
+      "name": "number_of_recovery_points",
+      "type": "double precision",
+      "description": "The number of recovery points that are stored in a backup vault."
+    },
+    {
+      "name": "sns_topic_arn",
+      "type": "text",
+      "description": "An ARN that uniquely identifies an Amazon Simple Notification Service."
+    },
+    {
+      "name": "policy",
+      "type": "json",
+      "description": "The backup vault access policy document in JSON format."
+    },
+    {
+      "name": "policy_std",
+      "type": "json",
+      "description": "Contains the backup vault access policy document in a canonical form for easier searching."
+    },
+    {
+      "name": "backup_vault_events",
+      "type": "json",
+      "description": "An array of events that indicate the status of jobs to back up resources to the backup vault."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": ""
+    }
+  ]
+}

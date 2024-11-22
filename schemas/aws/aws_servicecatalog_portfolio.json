@@ -1,0 +1,61 @@
+{
+  "table_name": "aws_servicecatalog_portfolio",
+  "table_description": "AWS Service Catalog Portfolio",
+  "columns": [
+    {
+      "name": "display_name",
+      "type": "text",
+      "description": "The name to use for display purposes."
+    },
+    {
+      "name": "id",
+      "type": "text",
+      "description": "The portfolio identifier."
+    },
+    {
+      "name": "arn",
+      "type": "text",
+      "description": "The ARN assigned to the portfolio."
+    },
+    {
+      "name": "created_time",
+      "type": "timestamp with time zone",
+      "description": "The UTC timestamp of the creation time."
+    },
+    {
+      "name": "description",
+      "type": "text",
+      "description": "The description of the portfolio."
+    },
+    {
+      "name": "provider_name",
+      "type": "text",
+      "description": "The name of the portfolio provider."
+    },
+    {
+      "name": "budgets",
+      "type": "json",
+      "description": "Information about the associated budgets."
+    },
+    {
+      "name": "tag_options",
+      "type": "json",
+      "description": "Information about the tag options associated with the portfolio."
+    },
+    {
+      "name": "tags_src",
+      "type": "json",
+      "description": "Information about the tags associated with the portfolio."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": ""
+    }
+  ]
+}

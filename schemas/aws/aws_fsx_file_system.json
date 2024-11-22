@@ -1,0 +1,121 @@
+{
+  "table_name": "aws_fsx_file_system",
+  "table_description": "AWS FSx File System",
+  "columns": [
+    {
+      "name": "file_system_id",
+      "type": "text",
+      "description": "The system-generated, unique 17-digit ID of the file system."
+    },
+    {
+      "name": "arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) for the EFS file system."
+    },
+    {
+      "name": "file_system_type",
+      "type": "text",
+      "description": "The type of Amazon FSx file system, which can be LUSTRE, WINDOWS, or ONTAP."
+    },
+    {
+      "name": "lifecycle",
+      "type": "text",
+      "description": "The lifecycle status of the file system, following are the possible values AVAILABLE, CREATING, DELETING, FAILED, MISCONFIGURED, UPDATING."
+    },
+    {
+      "name": "creation_time",
+      "type": "timestamp with time zone",
+      "description": "The time that the file system was created."
+    },
+    {
+      "name": "dns_name",
+      "type": "text",
+      "description": "The DNS name for the file system."
+    },
+    {
+      "name": "file_system_type_version",
+      "type": "text",
+      "description": "The version of your Amazon FSx for Lustre file system, either 2.10 or 2.12."
+    },
+    {
+      "name": "kms_key_id",
+      "type": "text",
+      "description": "The ID of the Key Management Service (KMS) key used to encrypt the file system's."
+    },
+    {
+      "name": "owner_id",
+      "type": "text",
+      "description": "The AWS account that created the file system."
+    },
+    {
+      "name": "storage_capacity",
+      "type": "integer",
+      "description": "The storage capacity of the file system in gibibytes (GiB)."
+    },
+    {
+      "name": "storage_type",
+      "type": "text",
+      "description": "The storage type of the file system."
+    },
+    {
+      "name": "vpc_id",
+      "type": "text",
+      "description": "The ID of the primary VPC for the file system."
+    },
+    {
+      "name": "administrative_actions",
+      "type": "json",
+      "description": "A list of administrative actions for the file system that are in process or waiting to be processed."
+    },
+    {
+      "name": "failure_details",
+      "type": "json",
+      "description": "A structure providing details of any failures that occur when creating the file system has failed."
+    },
+    {
+      "name": "lustre_configuration",
+      "type": "json",
+      "description": "The configuration for the Amazon FSx for Lustre file system."
+    },
+    {
+      "name": "network_interface_ids",
+      "type": "json",
+      "description": "The IDs of the elastic network interface from which a specific file system is accessible."
+    },
+    {
+      "name": "ontap_configuration",
+      "type": "json",
+      "description": "The configuration for this FSx for NetApp ONTAP file system."
+    },
+    {
+      "name": "open_zfs_configuration",
+      "type": "json",
+      "description": "The configuration for this FSx for NetApp ONTAP file system."
+    },
+    {
+      "name": "subnet_ids",
+      "type": "json",
+      "description": "Specifies the IDs of the subnets that the file system is accessible from."
+    },
+    {
+      "name": "tags_src",
+      "type": "json",
+      "description": "A list of tags associated with Filesystem."
+    },
+    {
+      "name": "windows_configuration",
+      "type": "json",
+      "description": "The configuration for this Microsoft Windows file system."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": ""
+    }
+  ]
+}

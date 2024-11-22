@@ -1,0 +1,141 @@
+{
+  "table_name": "azure_sql_server",
+  "table_description": "Azure SQL Server",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The friendly name that identifies the SQL server."
+    },
+    {
+      "name": "id",
+      "type": "text",
+      "description": "Contains ID to identify a SQL server uniquely."
+    },
+    {
+      "name": "type",
+      "type": "text",
+      "description": "The resource type of the SQL server."
+    },
+    {
+      "name": "state",
+      "type": "text",
+      "description": "The state of the server."
+    },
+    {
+      "name": "kind",
+      "type": "text",
+      "description": "The Kind of sql server."
+    },
+    {
+      "name": "location",
+      "type": "text",
+      "description": "The resource location."
+    },
+    {
+      "name": "administrator_login",
+      "type": "text",
+      "description": "Specifies the username of the administrator for this server."
+    },
+    {
+      "name": "administrator_login_password",
+      "type": "text",
+      "description": "The administrator login password."
+    },
+    {
+      "name": "minimal_tls_version",
+      "type": "text",
+      "description": "Minimal TLS version. Allowed values: '1.0', '1.1', '1.2'."
+    },
+    {
+      "name": "public_network_access",
+      "type": "text",
+      "description": "Whether or not public endpoint access is allowed for this server."
+    },
+    {
+      "name": "version",
+      "type": "text",
+      "description": "The version of the server."
+    },
+    {
+      "name": "fully_qualified_domain_name",
+      "type": "text",
+      "description": "The fully qualified domain name of the server."
+    },
+    {
+      "name": "server_audit_policy",
+      "type": "json",
+      "description": "Specifies the audit policy configuration for server."
+    },
+    {
+      "name": "server_security_alert_policy",
+      "type": "json",
+      "description": "Specifies the security alert policy configuration for server."
+    },
+    {
+      "name": "server_azure_ad_administrator",
+      "type": "json",
+      "description": "Specifies the active directory administrator."
+    },
+    {
+      "name": "server_vulnerability_assessment",
+      "type": "json",
+      "description": "Specifies the server's vulnerability assessment."
+    },
+    {
+      "name": "firewall_rules",
+      "type": "json",
+      "description": "A list of firewall rules for this server."
+    },
+    {
+      "name": "automatic_tuning",
+      "type": "json",
+      "description": "Automatic tuning setting for this server."
+    },
+    {
+      "name": "encryption_protector",
+      "type": "json",
+      "description": "The server encryption protector."
+    },
+    {
+      "name": "private_endpoint_connections",
+      "type": "json",
+      "description": "The private endpoint connections of the sql server."
+    },
+    {
+      "name": "tags_src",
+      "type": "json",
+      "description": "Specifies the set of tags attached to the server."
+    },
+    {
+      "name": "virtual_network_rules",
+      "type": "json",
+      "description": "A list of virtual network rules for this server."
+    },
+    {
+      "name": "failover_groups",
+      "type": "json",
+      "description": "A list of failover groups for this server."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": "ColumnDescriptionTitle"
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": "ColumnDescriptionTags"
+    },
+    {
+      "name": "region",
+      "type": "text",
+      "description": "ColumnDescriptionRegion"
+    },
+    {
+      "name": "resource_group",
+      "type": "text",
+      "description": "ColumnDescriptionResourceGroup"
+    }
+  ]
+}

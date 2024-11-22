@@ -1,0 +1,126 @@
+{
+  "table_name": "aws_lightsail_instance",
+  "table_description": "AWS Lightsail Instance",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The name of the instance."
+    },
+    {
+      "name": "arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) specifying the instance."
+    },
+    {
+      "name": "blueprint_id",
+      "type": "text",
+      "description": "The blueprint ID (e.g., os_amlinux_2016_03)."
+    },
+    {
+      "name": "blueprint_name",
+      "type": "text",
+      "description": "The friendly name of the blueprint (e.g., Amazon Linux)."
+    },
+    {
+      "name": "bundle_id",
+      "type": "text",
+      "description": "The bundle for the instance (e.g., micro_1_0)."
+    },
+    {
+      "name": "created_at",
+      "type": "timestamp with time zone",
+      "description": "The timestamp when the instance was created."
+    },
+    {
+      "name": "hardware",
+      "type": "json",
+      "description": "The size of the vCPU and the amount of RAM for the instance."
+    },
+    {
+      "name": "ip_address_type",
+      "type": "json",
+      "description": "The IP address type of the instance."
+    },
+    {
+      "name": "ip_v6_addresses",
+      "type": "json",
+      "description": "The IPv6 addresses of the instance."
+    },
+    {
+      "name": "is_static_ip",
+      "type": "boolean",
+      "description": "A Boolean value indicating whether this instance has a static IP assigned to it."
+    },
+    {
+      "name": "availability_zone",
+      "type": "text",
+      "description": "The Availability Zone where the instance is located."
+    },
+    {
+      "name": "metadata_options",
+      "type": "json",
+      "description": "The metadata options for the Amazon Lightsail instance."
+    },
+    {
+      "name": "networking",
+      "type": "json",
+      "description": "Information about the public ports and monthly data transfer rates for the instance."
+    },
+    {
+      "name": "private_ip_address",
+      "type": "text",
+      "description": "The private IP address of the instance."
+    },
+    {
+      "name": "public_ip_address",
+      "type": "text",
+      "description": "The public IP address of the instance."
+    },
+    {
+      "name": "resource_type",
+      "type": "text",
+      "description": "The type of resource."
+    },
+    {
+      "name": "ssh_key_name",
+      "type": "text",
+      "description": "The name of the SSH key being used to connect to the instance."
+    },
+    {
+      "name": "state_code",
+      "type": "integer",
+      "description": "The status code for the instance."
+    },
+    {
+      "name": "state_name",
+      "type": "text",
+      "description": "The status of the instance."
+    },
+    {
+      "name": "support_code",
+      "type": "text",
+      "description": "The support code."
+    },
+    {
+      "name": "username",
+      "type": "text",
+      "description": "The user name for connecting to the instance."
+    },
+    {
+      "name": "tags_src",
+      "type": "json",
+      "description": "A list of tags assigned to the instance."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": ""
+    }
+  ]
+}

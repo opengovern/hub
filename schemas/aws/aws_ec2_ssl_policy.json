@@ -1,0 +1,26 @@
+{
+  "table_name": "aws_ec2_ssl_policy",
+  "table_description": "AWS EC2 SSL Policy",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The name of the policy."
+    },
+    {
+      "name": "ciphers",
+      "type": "json",
+      "description": "A list of ciphers."
+    },
+    {
+      "name": "ssl_protocols",
+      "type": "json",
+      "description": "A list of protocols."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    }
+  ]
+}

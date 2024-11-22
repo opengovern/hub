@@ -1,0 +1,31 @@
+{
+  "table_name": "aws_ec2_placement_group",
+  "table_description": "AWS Ec2 Placement Group",
+  "columns": [
+    {
+      "name": "group_id",
+      "type": "text",
+      "description": "The id of the placement group."
+    },
+    {
+      "name": "group_name",
+      "type": "text",
+      "description": "The name of the placement group."
+    },
+    {
+      "name": "arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) of the placement group"
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": ""
+    }
+  ]
+}

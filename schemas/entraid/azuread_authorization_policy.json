@@ -1,0 +1,66 @@
+{
+  "table_name": "azuread_authorization_policy",
+  "table_description": "Represents a policy that can control Azure Active Directory authorization settings.",
+  "columns": [
+    {
+      "name": "display_name",
+      "type": "text",
+      "description": "Display name for this policy."
+    },
+    {
+      "name": "id",
+      "type": "text",
+      "description": "ID of the authorization policy."
+    },
+    {
+      "name": "description",
+      "type": "text",
+      "description": "Description of this policy."
+    },
+    {
+      "name": "allowed_to_sign_up_email_based_subscriptions",
+      "type": "boolean",
+      "description": "Indicates whether users can sign up for email based subscriptions."
+    },
+    {
+      "name": "allowed_to_use_sspr",
+      "type": "boolean",
+      "description": "Indicates whether the Self-Serve Password Reset feature can be used by users on the tenant."
+    },
+    {
+      "name": "allowed_email_verified_users_to_join_organization",
+      "type": "boolean",
+      "description": "Indicates whether a user can join the tenant by email validation."
+    },
+    {
+      "name": "allow_invites_from",
+      "type": "text",
+      "description": "Indicates who can invite external users to the organization. Possible values are: none, adminsAndGuestInviters, adminsGuestInvitersAndAllMembers, everyone."
+    },
+    {
+      "name": "block_msol_powershell",
+      "type": "boolean",
+      "description": "To disable the use of MSOL PowerShell set this property to true. This will also disable user-based access to the legacy service endpoint used by MSOL PowerShell. This does not affect Azure AD Connect or Microsoft Graph."
+    },
+    {
+      "name": "guest_user_role_id",
+      "type": "text",
+      "description": "Represents role templateId for the role that should be granted to guest user."
+    },
+    {
+      "name": "default_user_role_permissions",
+      "type": "json",
+      "description": "Specifies certain customizable permissions for default user role."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": "ColumnDescriptionTitle"
+    },
+    {
+      "name": "tenant_id",
+      "type": "text",
+      "description": "ColumnDescriptionTenant"
+    }
+  ]
+}

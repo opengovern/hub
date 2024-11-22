@@ -1,0 +1,56 @@
+{
+  "table_name": "aws_eks_fargate_profile",
+  "table_description": "AWS Elastic Kubernetes Service Fargate Profile",
+  "columns": [
+    {
+      "name": "fargate_profile_name",
+      "type": "text",
+      "description": "The name of the Fargate profile."
+    },
+    {
+      "name": "cluster_name",
+      "type": "text",
+      "description": "The name of the Amazon EKS cluster that the Fargate profile belongs to."
+    },
+    {
+      "name": "fargate_profile_arn",
+      "type": "text",
+      "description": "The full Amazon Resource Name (ARN) of the Fargate profile."
+    },
+    {
+      "name": "created_at",
+      "type": "timestamp with time zone",
+      "description": "The Unix epoch timestamp in seconds for when the Fargate profile was created."
+    },
+    {
+      "name": "pod_execution_role_arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) of the pod execution role to use for pods that match the selectors in the Fargate profile."
+    },
+    {
+      "name": "status",
+      "type": "text",
+      "description": "The current status of the Fargate profile."
+    },
+    {
+      "name": "selectors",
+      "type": "json",
+      "description": "The selectors to match for pods to use this Fargate profile."
+    },
+    {
+      "name": "subnets",
+      "type": "json",
+      "description": "The subnets used by the Fargate profile."
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": "A list of tags assigned to the Fargate profile."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    }
+  ]
+}

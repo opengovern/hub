@@ -1,0 +1,56 @@
+{
+  "table_name": "azure_autoscale_setting",
+  "table_description": "Azure Autoscale Setting",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The name of the resource."
+    },
+    {
+      "name": "id",
+      "type": "text",
+      "description": "The resource Id."
+    },
+    {
+      "name": "type",
+      "type": "text",
+      "description": "Type of the resource."
+    },
+    {
+      "name": "profiles",
+      "type": "json",
+      "description": "Autoscale setting profiles"
+    },
+    {
+      "name": "enabled",
+      "type": "json",
+      "description": "Whether the autoscale setting is enabled or not."
+    },
+    {
+      "name": "notifications",
+      "type": "json",
+      "description": "Autoscale setting notifications settings."
+    },
+    {
+      "name": "target_resource_location",
+      "type": "text",
+      "description": "Autoscale setting target resource location."
+    },
+    {
+      "name": "target_resource_uri",
+      "type": "text",
+      "description": "Autoscale setting target resource uri."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": "ColumnDescriptionTitle"
+    },
+    {
+      "name": "resource_group",
+      "type": "text",
+      "description": "ColumnDescriptionResourceGroup"
+    }
+  ]
+}

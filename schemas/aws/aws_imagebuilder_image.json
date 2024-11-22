@@ -1,0 +1,26 @@
+{
+  "table_name": "aws_imagebuilder_image",
+  "table_description": "AWS ImageBuilder Image",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The name of the image."
+    },
+    {
+      "name": "arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) of the image"
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": ""
+    }
+  ]
+}

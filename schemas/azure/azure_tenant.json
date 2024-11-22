@@ -1,0 +1,51 @@
+{
+  "table_name": "azure_tenant",
+  "table_description": "Azure Tenant",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The display name of the tenant."
+    },
+    {
+      "name": "id",
+      "type": "text",
+      "description": "The fully qualified ID of the tenant. For example, /tenants/00000000-0000-0000-0000-000000000000."
+    },
+    {
+      "name": "tenant_id",
+      "type": "text",
+      "description": "The tenant ID. For example, 00000000-0000-0000-0000-000000000000."
+    },
+    {
+      "name": "tenant_category",
+      "type": "text",
+      "description": "The tenant category. Possible values include: 'Home', 'ProjectedBy', 'ManagedBy'."
+    },
+    {
+      "name": "country",
+      "type": "text",
+      "description": "Country/region name of the address for the tenant."
+    },
+    {
+      "name": "country_code",
+      "type": "text",
+      "description": "Country/region abbreviation for the tenant."
+    },
+    {
+      "name": "display_name",
+      "type": "text",
+      "description": "The list of domains for the tenant."
+    },
+    {
+      "name": "domains",
+      "type": "json",
+      "description": "The list of domains for the tenant."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": "ColumnDescriptionTitle"
+    }
+  ]
+}

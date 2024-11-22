@@ -1,0 +1,81 @@
+{
+  "table_name": "aws_securitylake_subscriber",
+  "table_description": "AWS Security Lake Subscriber",
+  "columns": [
+    {
+      "name": "subscriber_name",
+      "type": "text",
+      "description": "The name of your Amazon Security Lake subscriber account."
+    },
+    {
+      "name": "subscription_id",
+      "type": "text",
+      "description": "The subscription ID of the Amazon Security Lake subscriber account."
+    },
+    {
+      "name": "created_at",
+      "type": "timestamp with time zone",
+      "description": "The date and time when the subscription was created."
+    },
+    {
+      "name": "subscription_status",
+      "type": "text",
+      "description": "Subscription status of the Amazon Security Lake subscriber account."
+    },
+    {
+      "name": "updated_at",
+      "type": "timestamp with time zone",
+      "description": "The date and time when the subscription was updated."
+    },
+    {
+      "name": "external_id",
+      "type": "text",
+      "description": "The external ID of the subscriber."
+    },
+    {
+      "name": "role_arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) specifying the role of the subscriber."
+    },
+    {
+      "name": "s3_bucket_arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) for the Amazon S3 bucket."
+    },
+    {
+      "name": "sns_arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) for the Amazon Simple Notification Service."
+    },
+    {
+      "name": "subscriber_description",
+      "type": "text",
+      "description": "The subscriber descriptions for a subscriber account."
+    },
+    {
+      "name": "subscription_endpoint",
+      "type": "text",
+      "description": "The subscription endpoint to which exception messages are posted."
+    },
+    {
+      "name": "subscription_protocol",
+      "type": "text",
+      "description": "The subscription protocol to which exception messages are posted."
+    },
+    {
+      "name": "access_types",
+      "type": "json",
+      "description": "You can choose to notify subscribers of new objects with an Amazon Simple Queue Service (Amazon SQS) queue or through messaging to an HTTPS endpoint provided by the subscriber. Subscribers can consume data by directly querying Lake Formation tables in your S3 bucket via services like Amazon Athena. This subscription type is defined as LAKEFORMATION."
+    },
+    {
+      "name": "source_types",
+      "type": "json",
+      "description": "Amazon Security Lake supports logs and events collection for the natively-supported Amazon Web Services services."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    }
+  ]
+}

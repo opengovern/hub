@@ -1,0 +1,96 @@
+{
+  "table_name": "azure_key_vault_managed_hardware_security_module",
+  "table_description": "Azure Key Vault Managed Hardware Security Module",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The name of the managed HSM Pool."
+    },
+    {
+      "name": "id",
+      "type": "text",
+      "description": "The Azure Resource Manager resource ID for the managed HSM Pool."
+    },
+    {
+      "name": "type",
+      "type": "text",
+      "description": "The resource type of the managed HSM Pool."
+    },
+    {
+      "name": "provisioning_state",
+      "type": "text",
+      "description": "Provisioning state. Possible values include: 'ProvisioningStateSucceeded', 'ProvisioningStateProvisioning', 'ProvisioningStateFailed', 'ProvisioningStateUpdating', 'ProvisioningStateDeleting', 'ProvisioningStateActivated', 'ProvisioningStateSecurityDomainRestore', 'ProvisioningStateRestoring'."
+    },
+    {
+      "name": "hsm_uri",
+      "type": "text",
+      "description": "The URI of the managed hsm pool for performing operations on keys."
+    },
+    {
+      "name": "enable_soft_delete",
+      "type": "boolean",
+      "description": "Property to specify whether the 'soft delete' functionality is enabled for this managed HSM pool. If it's not set to any value(true or false) when creating new managed HSM pool, it will be set to true by default. Once set to true, it cannot be reverted to false."
+    },
+    {
+      "name": "soft_delete_retention_in_days",
+      "type": "integer",
+      "description": "Indicates softDelete data retention days. It accepts \u003e=7 and \u003c=90."
+    },
+    {
+      "name": "enable_purge_protection",
+      "type": "boolean",
+      "description": "Property specifying whether protection against purge is enabled for this managed HSM pool. Setting this property to true activates protection against purge for this managed HSM pool and its content - only the Managed HSM service may initiate a hard, irrecoverable deletion. The setting is effective only if soft delete is also enabled. Enabling this functionality is irreversible."
+    },
+    {
+      "name": "status_message",
+      "type": "text",
+      "description": "Resource Status Message."
+    },
+    {
+      "name": "create_mode",
+      "type": "text",
+      "description": "The create mode to indicate whether the resource is being created or is being recovered from a deleted resource. Possible values include: 'CreateModeRecover', 'CreateModeDefault'."
+    },
+    {
+      "name": "sku_family",
+      "type": "text",
+      "description": "Contains SKU family name."
+    },
+    {
+      "name": "sku_name",
+      "type": "text",
+      "description": "SKU name to specify whether the key vault is a standard vault or a premium vault."
+    },
+    {
+      "name": "tenant_id",
+      "type": "text",
+      "description": "The Azure Active Directory tenant ID that should be used for authenticating requests to the key vault."
+    },
+    {
+      "name": "diagnostic_settings",
+      "type": "json",
+      "description": "A list of active diagnostic settings for the managed HSM."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": "ColumnDescriptionTitle"
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": "ColumnDescriptionTags"
+    },
+    {
+      "name": "region",
+      "type": "text",
+      "description": "ColumnDescriptionRegion"
+    },
+    {
+      "name": "resource_group",
+      "type": "text",
+      "description": "ColumnDescriptionResourceGroup"
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "table_name": "azure_compute_disk_encryption_set",
+  "table_description": "Azure Compute Disk Encryption Set",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The friendly name that identifies the disk encryption set"
+    },
+    {
+      "name": "id",
+      "type": "text",
+      "description": "The unique id identifying the resource in subscription"
+    },
+    {
+      "name": "type",
+      "type": "text",
+      "description": "The type of the resource in Azure"
+    },
+    {
+      "name": "provisioning_state",
+      "type": "text",
+      "description": "The disk encryption set provisioning state"
+    },
+    {
+      "name": "active_key_source_vault_id",
+      "type": "text",
+      "description": "Resource id of the KeyVault containing the key or secret"
+    },
+    {
+      "name": "active_key_url",
+      "type": "text",
+      "description": "Url pointing to a key or secret in KeyVault"
+    },
+    {
+      "name": "encryption_type",
+      "type": "text",
+      "description": "Contains the type of the encryption"
+    },
+    {
+      "name": "identity_principal_id",
+      "type": "text",
+      "description": "The object id of the Managed Identity Resource"
+    },
+    {
+      "name": "identity_tenant_id",
+      "type": "text",
+      "description": "The tenant id of the Managed Identity Resource"
+    },
+    {
+      "name": "identity_type",
+      "type": "text",
+      "description": "The type of Managed Identity used by the DiskEncryptionSet"
+    },
+    {
+      "name": "previous_keys",
+      "type": "json",
+      "description": "A list of key vault keys previously used by this disk encryption set while a key rotation is in progress"
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": "ColumnDescriptionTitle"
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": "ColumnDescriptionTags"
+    },
+    {
+      "name": "region",
+      "type": "text",
+      "description": "ColumnDescriptionRegion"
+    },
+    {
+      "name": "resource_group",
+      "type": "text",
+      "description": "ColumnDescriptionResourceGroup"
+    }
+  ]
+}

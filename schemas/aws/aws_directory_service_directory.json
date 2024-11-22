@@ -1,0 +1,166 @@
+{
+  "table_name": "aws_directory_service_directory",
+  "table_description": "AWS Directory Service Directory",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The fully qualified name of the directory."
+    },
+    {
+      "name": "directory_id",
+      "type": "text",
+      "description": "The directory identifier."
+    },
+    {
+      "name": "arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) that uniquely identifies the directory."
+    },
+    {
+      "name": "stage",
+      "type": "text",
+      "description": "The current stage of the directory."
+    },
+    {
+      "name": "type",
+      "type": "text",
+      "description": "The directory type."
+    },
+    {
+      "name": "access_url",
+      "type": "text",
+      "description": "The access URL for the directory, such as http://\u003calias\u003e.awsapps.com."
+    },
+    {
+      "name": "alias",
+      "type": "text",
+      "description": "The alias for the directory."
+    },
+    {
+      "name": "description",
+      "type": "text",
+      "description": "The description for the directory."
+    },
+    {
+      "name": "desired_number_of_domain_controllers",
+      "type": "integer",
+      "description": "The desired number of domain controllers in the directory if the directory is Microsoft AD."
+    },
+    {
+      "name": "edition",
+      "type": "text",
+      "description": "The edition associated with this directory."
+    },
+    {
+      "name": "launch_time",
+      "type": "timestamp with time zone",
+      "description": "Specifies when the directory was created."
+    },
+    {
+      "name": "radius_status",
+      "type": "text",
+      "description": "The status of the RADIUS MFA server connection."
+    },
+    {
+      "name": "share_method",
+      "type": "text",
+      "description": "The method used when sharing a directory to determine whether the directory should be shared within your AWS organization (ORGANIZATIONS) or with any AWS account by sending a shared directory request (HANDSHAKE)."
+    },
+    {
+      "name": "share_notes",
+      "type": "text",
+      "description": "A directory share request that is sent by the directory owner to the directory consumer."
+    },
+    {
+      "name": "share_status",
+      "type": "text",
+      "description": "Current directory status of the shared AWS Managed Microsoft AD directory."
+    },
+    {
+      "name": "short_name",
+      "type": "text",
+      "description": "The short name of the directory."
+    },
+    {
+      "name": "size",
+      "type": "text",
+      "description": "The directory size."
+    },
+    {
+      "name": "sso_enabled",
+      "type": "boolean",
+      "description": "Indicates if single sign-on is enabled for the directory. For more information, see EnableSso and DisableSso."
+    },
+    {
+      "name": "stage_last_updated_date_time",
+      "type": "timestamp with time zone",
+      "description": "The date and time that the stage was last updated."
+    },
+    {
+      "name": "stage_reason",
+      "type": "text",
+      "description": "Additional information about the directory stage."
+    },
+    {
+      "name": "connect_settings",
+      "type": "json",
+      "description": "A DirectoryConnectSettingsDescription object that contains additional information about an AD Connector directory."
+    },
+    {
+      "name": "dns_ip_addrs",
+      "type": "json",
+      "description": "The IP addresses of the DNS servers for the directory."
+    },
+    {
+      "name": "event_topics",
+      "type": "json",
+      "description": "Amazon SNS topic names that receive status messages from the specified Directory ID."
+    },
+    {
+      "name": "snapshot_limit",
+      "type": "json",
+      "description": "Obtains the manual snapshot limits for a directory."
+    },
+    {
+      "name": "owner_directory_description",
+      "type": "json",
+      "description": "Describes the AWS Managed Microsoft AD directory in the directory owner account."
+    },
+    {
+      "name": "radius_settings",
+      "type": "json",
+      "description": "A RadiusSettings object that contains information about the RADIUS server."
+    },
+    {
+      "name": "regions_info",
+      "type": "json",
+      "description": "Lists the Regions where the directory has replicated."
+    },
+    {
+      "name": "shared_directories",
+      "type": "json",
+      "description": "Details about the shared directory in the directory owner account for which the share request in the directory consumer account has been accepted."
+    },
+    {
+      "name": "vpc_settings",
+      "type": "json",
+      "description": "A DirectoryVpcSettingsDescription object that contains additional information about a directory."
+    },
+    {
+      "name": "tags_src",
+      "type": "json",
+      "description": "A list of tags currently associated with the Directory Service Directory."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": ""
+    }
+  ]
+}

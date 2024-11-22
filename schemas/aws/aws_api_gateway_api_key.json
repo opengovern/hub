@@ -1,0 +1,66 @@
+{
+  "table_name": "aws_api_gateway_api_key",
+  "table_description": "AWS API Gateway API Key",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The name of the API Key"
+    },
+    {
+      "name": "id",
+      "type": "text",
+      "description": "The identifier of the API Key"
+    },
+    {
+      "name": "enabled",
+      "type": "boolean",
+      "description": "Specifies whether the API Key can be used by callers"
+    },
+    {
+      "name": "created_date",
+      "type": "timestamp with time zone",
+      "description": "The timestamp when the API Key was created"
+    },
+    {
+      "name": "last_updated_date",
+      "type": "timestamp with time zone",
+      "description": "The timestamp when the API Key was last updated"
+    },
+    {
+      "name": "customer_id",
+      "type": "text",
+      "description": "An AWS Marketplace customer identifier , when integrating with the AWS SaaS Marketplace"
+    },
+    {
+      "name": "description",
+      "type": "text",
+      "description": "The description of the API Key"
+    },
+    {
+      "name": "value",
+      "type": "text",
+      "description": "The value of the API Key"
+    },
+    {
+      "name": "stage_keys",
+      "type": "json",
+      "description": "A list of Stage resources that are associated with the ApiKey resource"
+    },
+    {
+      "name": "tags_src",
+      "type": "json",
+      "description": "A list of tags attached to API key"
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": ""
+    }
+  ]
+}

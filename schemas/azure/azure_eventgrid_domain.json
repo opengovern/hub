@@ -1,0 +1,151 @@
+{
+  "table_name": "azure_eventgrid_domain",
+  "table_description": "Azure Event Grid Domain",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The name of the resource."
+    },
+    {
+      "name": "id",
+      "type": "text",
+      "description": "Fully qualified identifier of the resource."
+    },
+    {
+      "name": "type",
+      "type": "text",
+      "description": "The resource type."
+    },
+    {
+      "name": "provisioning_state",
+      "type": "text",
+      "description": "Provisioning state of the event grid domain resource. Possible values include: 'Creating', 'Updating', 'Deleting', 'Succeeded', 'Canceled', 'Failed'."
+    },
+    {
+      "name": "auto_create_topic_with_first_subscription",
+      "type": "boolean",
+      "description": "This Boolean is used to specify the creation mechanism for 'all' the event grid domain topics associated with this event grid domain resource."
+    },
+    {
+      "name": "auto_delete_topic_with_last_subscription",
+      "type": "boolean",
+      "description": "This Boolean is used to specify the deletion mechanism for 'all' the Event Grid Domain Topics associated with this Event Grid Domain resource."
+    },
+    {
+      "name": "created_at",
+      "type": "timestamp with time zone",
+      "description": "The timestamp of resource creation (UTC)."
+    },
+    {
+      "name": "created_by",
+      "type": "text",
+      "description": "The identity that created the resource."
+    },
+    {
+      "name": "created_by_type",
+      "type": "text",
+      "description": "The type of identity that created the resource."
+    },
+    {
+      "name": "disable_local_auth",
+      "type": "boolean",
+      "description": "This boolean is used to enable or disable local auth. Default value is false. When the property is set to true, only AAD token will be used to authenticate if user is allowed to publish to the domain."
+    },
+    {
+      "name": "endpoint",
+      "type": "text",
+      "description": "Endpoint for the Event Grid Domain Resource which is used for publishing the events."
+    },
+    {
+      "name": "identity_type",
+      "type": "text",
+      "description": "The type of managed identity used. The type 'SystemAssigned, UserAssigned' includes both an implicitly created identity and a set of user-assigned identities. The type 'None' will remove any identity. Possible values include: 'None', 'SystemAssigned', 'UserAssigned', 'SystemAssignedUserAssigned'."
+    },
+    {
+      "name": "input_schema",
+      "type": "text",
+      "description": "This determines the format that Event Grid should expect for incoming events published to the Event Grid Domain Resource. Possible values include: 'EventGridSchema', 'CustomEventSchema', 'CloudEventSchemaV10'."
+    },
+    {
+      "name": "last_modified_at",
+      "type": "timestamp with time zone",
+      "description": "The timestamp of resource last modification (UTC)."
+    },
+    {
+      "name": "last_modified_by",
+      "type": "text",
+      "description": "The identity that last modified the resource."
+    },
+    {
+      "name": "last_modified_by_type",
+      "type": "text",
+      "description": "The type of identity that last modified the resource."
+    },
+    {
+      "name": "location",
+      "type": "text",
+      "description": "Location of the resource."
+    },
+    {
+      "name": "principal_id",
+      "type": "text",
+      "description": "The principal ID of resource identity."
+    },
+    {
+      "name": "public_network_access",
+      "type": "text",
+      "description": "This determines if traffic is allowed over public network. By default it is enabled."
+    },
+    {
+      "name": "sku_name",
+      "type": "text",
+      "description": "Name of this SKU. Possible values include: 'Basic', 'Standard'."
+    },
+    {
+      "name": "user_assigned_identities",
+      "type": "json",
+      "description": "The list of user identities associated with the resource. The user identity dictionary key references will be ARM resource ids."
+    },
+    {
+      "name": "diagnostic_settings",
+      "type": "json",
+      "description": "A list of active diagnostic settings for the eventgrid domain."
+    },
+    {
+      "name": "inbound_ip_rules",
+      "type": "json",
+      "description": "This can be used to restrict traffic from specific IPs instead of all IPs. Note: These are considered only if PublicNetworkAccess is enabled."
+    },
+    {
+      "name": "input_schema_mapping",
+      "type": "json",
+      "description": "Information about the InputSchemaMapping which specified the info about mapping event payload."
+    },
+    {
+      "name": "private_endpoint_connections",
+      "type": "json",
+      "description": "List of private endpoint connections."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": "ColumnDescriptionTitle"
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": "ColumnDescriptionTags"
+    },
+    {
+      "name": "region",
+      "type": "text",
+      "description": "ColumnDescriptionRegion"
+    },
+    {
+      "name": "resource_group",
+      "type": "text",
+      "description": "ColumnDescriptionResourceGroup"
+    }
+  ]
+}

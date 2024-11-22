@@ -1,0 +1,141 @@
+{
+  "table_name": "aws_appstream_fleet",
+  "table_description": "AWS AppStream Fleet",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The name of the fleet."
+    },
+    {
+      "name": "arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) for the fleet."
+    },
+    {
+      "name": "instance_type",
+      "type": "text",
+      "description": "The instance type to use when launching fleet instances."
+    },
+    {
+      "name": "state",
+      "type": "text",
+      "description": "The current state for the fleet."
+    },
+    {
+      "name": "created_time",
+      "type": "timestamp with time zone",
+      "description": "The time the fleet was created."
+    },
+    {
+      "name": "description",
+      "type": "text",
+      "description": "The description to display."
+    },
+    {
+      "name": "display_name",
+      "type": "text",
+      "description": "The fleet name to display."
+    },
+    {
+      "name": "disconnect_timeout_in_seconds",
+      "type": "integer",
+      "description": "The amount of time that a streaming session remains active after users disconnect. If they try to reconnect to the streaming session after a disconnection or network interruption within this time interval, they are connected to their previous session. Otherwise, they are connected to a new session with a new streaming instance. Specify a value between 60 and 360000."
+    },
+    {
+      "name": "directory_name",
+      "type": "text",
+      "description": "The fully qualified name of the directory (for example, corp.example.com)."
+    },
+    {
+      "name": "organizational_unit_distinguished_name",
+      "type": "text",
+      "description": "The distinguished name of the organizational unit for computer accounts."
+    },
+    {
+      "name": "enable_default_internet_access",
+      "type": "boolean",
+      "description": "Indicates whether default internet access is enabled for the fleet."
+    },
+    {
+      "name": "fleet_type",
+      "type": "text",
+      "description": "The fleet type. ALWAYS_ON Provides users with instant-on access to their apps. You are charged for all running instances in your fleet, even if no users are streaming apps. ON_DEMAND Provide users with access to applications after they connect, which takes one to two minutes. You are charged for instance streaming when users are connected and a small hourly fee for instances that are not streaming apps."
+    },
+    {
+      "name": "iam_role_arn",
+      "type": "text",
+      "description": "The ARN of the IAM role that is applied to the fleet."
+    },
+    {
+      "name": "idle_disconnect_timeout_in_seconds",
+      "type": "integer",
+      "description": "The amount of time that users can be idle (inactive) before they are disconnected from their streaming session and the DisconnectTimeoutInSeconds time interval begins."
+    },
+    {
+      "name": "image_arn",
+      "type": "text",
+      "description": "The ARN for the public, private, or shared image."
+    },
+    {
+      "name": "image_name",
+      "type": "text",
+      "description": "The name of the image used to create the fleet."
+    },
+    {
+      "name": "max_concurrent_sessions",
+      "type": "integer",
+      "description": "The maximum number of concurrent sessions for the fleet."
+    },
+    {
+      "name": "max_user_duration_in_seconds",
+      "type": "integer",
+      "description": "The maximum amount of time that a streaming session can remain active, in seconds. If users are still connected to a streaming instance five minutes before this limit is reached, they are prompted to save any open documents before being disconnected."
+    },
+    {
+      "name": "platform",
+      "type": "text",
+      "description": "The platform of the fleet."
+    },
+    {
+      "name": "stream_view",
+      "type": "text",
+      "description": "The AppStream 2.0 view that is displayed to your users when they stream from the fleet. When APP is specified, only the windows of applications opened by users display. When DESKTOP is specified, the standard desktop that is provided by the operating system displays. The default value is APP."
+    },
+    {
+      "name": "compute_capacity_status",
+      "type": "json",
+      "description": "The capacity status for the fleet."
+    },
+    {
+      "name": "fleet_errors",
+      "type": "json",
+      "description": "The fleet errors."
+    },
+    {
+      "name": "session_script_s3_location",
+      "type": "json",
+      "description": "The S3 location of the session scripts configuration zip file. This only applies to Elastic fleets."
+    },
+    {
+      "name": "usb_device_filter_strings",
+      "type": "json",
+      "description": "The USB device filter strings associated with the fleet."
+    },
+    {
+      "name": "vpc_config",
+      "type": "json",
+      "description": "The VPC configuration for the fleet."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": ""
+    }
+  ]
+}

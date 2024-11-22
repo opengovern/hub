@@ -1,0 +1,31 @@
+{
+  "table_name": "aws_region",
+  "table_description": "AWS Region",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The name of the region"
+    },
+    {
+      "name": "opt_in_status",
+      "type": "text",
+      "description": "The Region opt-in status. The possible values are opt-in-not-required, opted-in, and not-opted-in"
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    },
+    {
+      "name": "partition",
+      "type": "text",
+      "description": "The AWS partition in which the resource is located (aws, aws-cn, or aws-us-gov)."
+    },
+    {
+      "name": "region",
+      "type": "text",
+      "description": "The AWS Region in which the resource is located."
+    }
+  ]
+}

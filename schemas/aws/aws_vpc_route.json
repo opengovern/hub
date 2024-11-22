@@ -1,0 +1,91 @@
+{
+  "table_name": "aws_vpc_route",
+  "table_description": "AWS VPC Route",
+  "columns": [
+    {
+      "name": "route_table_id",
+      "type": "text",
+      "description": "The ID of the route table containing the route."
+    },
+    {
+      "name": "state",
+      "type": "text",
+      "description": "The state of the route. The blackhole state indicates that the route's target isn't available (for example, the specified gateway isn't attached to the VPC, or the specified NAT instance has been terminated)."
+    },
+    {
+      "name": "destination_cidr_block",
+      "type": "cidr",
+      "description": "The IPv4 CIDR block used for the destination match."
+    },
+    {
+      "name": "destination_ipv6_cidr_block",
+      "type": "cidr",
+      "description": "The IPv6 CIDR block used for the destination match."
+    },
+    {
+      "name": "carrier_gateway_id",
+      "type": "text",
+      "description": "The ID of the carrier gateway."
+    },
+    {
+      "name": "destination_prefix_list_id",
+      "type": "text",
+      "description": "The prefix of the AWS service."
+    },
+    {
+      "name": "egress_only_internet_gateway_id",
+      "type": "text",
+      "description": "The ID of the egress-only internet gateway."
+    },
+    {
+      "name": "gateway_id",
+      "type": "text",
+      "description": "The ID of a gateway attached to your VPC."
+    },
+    {
+      "name": "instance_id",
+      "type": "text",
+      "description": "The ID of a NAT instance in your VPC."
+    },
+    {
+      "name": "instance_owner_id",
+      "type": "text",
+      "description": "The AWS account ID of the owner of the instance."
+    },
+    {
+      "name": "local_gateway_id",
+      "type": "text",
+      "description": "The ID of the local gateway."
+    },
+    {
+      "name": "nat_gateway_id",
+      "type": "text",
+      "description": "The ID of a NAT gateway."
+    },
+    {
+      "name": "network_interface_id",
+      "type": "text",
+      "description": "The ID of the network interface."
+    },
+    {
+      "name": "transit_gateway_id",
+      "type": "text",
+      "description": "The ID of a transit gateway."
+    },
+    {
+      "name": "vpc_peering_connection_id",
+      "type": "text",
+      "description": "The ID of a VPC peering connection."
+    },
+    {
+      "name": "origin",
+      "type": "text",
+      "description": "Describes how the route was created. CreateRouteTable - The route was automatically created when the route table was created. CreateRoute - The route was manually added to the route table. EnableVgwRoutePropagation - The route was propagated by route propagation."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    }
+  ]
+}

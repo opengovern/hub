@@ -1,0 +1,26 @@
+{
+  "table_name": "github_traffic_view_weekly",
+  "table_description": "Weekly traffic view over the last 14 days for the given repository.",
+  "columns": [
+    {
+      "name": "repository_full_name",
+      "type": "text",
+      "description": "Full name of the repository that contains the branch."
+    },
+    {
+      "name": "timestamp",
+      "type": "timestamp with time zone",
+      "description": "Date for the view data."
+    },
+    {
+      "name": "count",
+      "type": "integer",
+      "description": "View count for the day."
+    },
+    {
+      "name": "uniques",
+      "type": "integer",
+      "description": "Unique viewer count for the day."
+    }
+  ]
+}

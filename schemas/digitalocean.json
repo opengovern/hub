@@ -1,0 +1,126 @@
+{
+  "count_of_named_tables": 24,
+  "count_of_named_columns": 305,
+  "tables": [
+    {
+      "table_name": "digitalocean_account",
+      "description": "Retrieve information about your current account.",
+      "count_of_columns": 10
+    },
+    {
+      "table_name": "digitalocean_action",
+      "description": "Actions are records of events that have occurred on the resources in your account. These can be things like rebooting a Action, or transferring an image to a new region.",
+      "count_of_columns": 8
+    },
+    {
+      "table_name": "digitalocean_alert_policy",
+      "description": "DigitalOcean Alert Policy",
+      "count_of_columns": 13
+    },
+    {
+      "table_name": "digitalocean_app",
+      "description": "DigitalOcean App",
+      "count_of_columns": 16
+    },
+    {
+      "table_name": "digitalocean_balance",
+      "description": "Balance information for the current account.",
+      "count_of_columns": 4
+    },
+    {
+      "table_name": "digitalocean_bill",
+      "description": "Billing history is a record of billing events for your account. For example, entries may include events like payments made, invoices issued, or credits granted.",
+      "count_of_columns": 6
+    },
+    {
+      "table_name": "digitalocean_container_registry",
+      "description": "DigitalOcean Container Registry",
+      "count_of_columns": 6
+    },
+    {
+      "table_name": "digitalocean_database",
+      "description": "DigitalOcean's managed database service simplifies the creation and management of highly available database clusters. Currently, it offers support for PostgreSQL, Redis, and MySQL.",
+      "count_of_columns": 35
+    },
+    {
+      "table_name": "digitalocean_domain",
+      "description": "DigitalOcean Domain",
+      "count_of_columns": 5
+    },
+    {
+      "table_name": "digitalocean_droplet",
+      "description": "A Droplet is a DigitalOcean virtual machine.",
+      "count_of_columns": 29
+    },
+    {
+      "table_name": "digitalocean_firewall",
+      "description": "DigitalOcean Cloud Firewalls are a network-based, stateful firewall service for Droplets provided at no additional cost. Cloud firewalls block all traffic that isn’t expressly permitted by a rule.",
+      "count_of_columns": 11
+    },
+    {
+      "table_name": "digitalocean_floating_ip",
+      "description": "DigitalOcean Floating IPs are publicly-accessible static IP addresses that can be mapped to one of your Droplets. They can be used to create highly available setups or other configurations requiring movable addresses.",
+      "count_of_columns": 8
+    },
+    {
+      "table_name": "digitalocean_image",
+      "description": "A DigitalOcean image can be used to create a Droplet and may come in a number of flavors. Currently, there are five types of images: snapshots, backups, applications, distributions, and custom images.",
+      "count_of_columns": 17
+    },
+    {
+      "table_name": "digitalocean_key",
+      "description": "DigitalOcean allows you to add SSH public keys to the interface so that you can embed your public key into a Droplet at the time of creation. Only the public key is required to take advantage of this functionality.",
+      "count_of_columns": 6
+    },
+    {
+      "table_name": "digitalocean_kubernetes_cluster",
+      "description": "DigitalOcean Kubernetes (DOKS) is a managed Kubernetes service that lets you deploy Kubernetes clusters without the complexities of handling the control plane and containerized infrastructure. Clusters are compatible with standard Kubernetes toolchains and integrate natively with DigitalOcean Load Balancers and block storage volumes.",
+      "count_of_columns": 20
+    },
+    {
+      "table_name": "digitalocean_kubernetes_node_pool",
+      "description": "DigitalOcean Kubernetes Node Pool",
+      "count_of_columns": 14
+    },
+    {
+      "table_name": "digitalocean_load_balancer",
+      "description": "DigitalOcean Load Balancers provide a way to distribute traffic across multiple Droplets.",
+      "count_of_columns": 29
+    },
+    {
+      "table_name": "digitalocean_project",
+      "description": "Projects allow you to organize your resources into groups that fit the way you work. You can group resources (like Droplets, Spaces, load balancers, domains, and floating IPs) in ways that align with the applications you host on DigitalOcean.",
+      "count_of_columns": 12
+    },
+    {
+      "table_name": "digitalocean_region",
+      "description": "A region in DigitalOcean represents a datacenter where Droplets can be deployed and images can be transferred. Each region represents a specific datacenter in a geographic location. Some geographical locations may have multiple \\\"regions\\\" available. This means that there are multiple datacenters available within that area.",
+      "count_of_columns": 7
+    },
+    {
+      "table_name": "digitalocean_size",
+      "description": "The sizes objects represent different packages of hardware resources that can be used for Droplets. This includes the amount of RAM, the number of virtual CPUs, disk space, and transfer. The size object also includes the pricing details and the regions that the size is available in.",
+      "count_of_columns": 11
+    },
+    {
+      "table_name": "digitalocean_snapshot",
+      "description": "Snapshots are saved instances of a Droplet or a block storage volume.",
+      "count_of_columns": 11
+    },
+    {
+      "table_name": "digitalocean_tag",
+      "description": "A tag is a label that can be applied to a resource (currently Droplets, Images, Volumes, Volume Snapshots, and Database clusters) in order to better organize or facilitate the lookups and actions on it.",
+      "count_of_columns": 3
+    },
+    {
+      "table_name": "digitalocean_volume",
+      "description": "DigitalOcean Block Storage Volumes provide expanded storage capacity for your Droplets and can be moved between Droplets within a specific region. Volumes function as raw block devices, meaning they appear to the operating system as locally attached storage which can be formatted using any file system supported by the OS.",
+      "count_of_columns": 14
+    },
+    {
+      "table_name": "digitalocean_vpc",
+      "description": "VPCs (virtual private clouds) are virtual networks containing resources that can communicate with each other in full isolation using private IP addresses.",
+      "count_of_columns": 10
+    }
+  ]
+}

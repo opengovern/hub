@@ -1,0 +1,166 @@
+{
+  "table_name": "azure_network_interface",
+  "table_description": "Azure Network Interface",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The friendly name that identifies the network interface"
+    },
+    {
+      "name": "id",
+      "type": "text",
+      "description": "Contains ID to identify a network interface uniquely"
+    },
+    {
+      "name": "etag",
+      "type": "text",
+      "description": "An unique read-only string that changes whenever the resource is updated"
+    },
+    {
+      "name": "type",
+      "type": "text",
+      "description": "The resource type of the network interface"
+    },
+    {
+      "name": "provisioning_state",
+      "type": "text",
+      "description": "Providsioning state of the network interface resource"
+    },
+    {
+      "name": "enable_accelerated_networking",
+      "type": "boolean",
+      "description": "Indicates whether the network interface is accelerated networking enabled"
+    },
+    {
+      "name": "enable_ip_forwarding",
+      "type": "boolean",
+      "description": "Indicates whether IP forwarding is enabled on this network interface"
+    },
+    {
+      "name": "internal_dns_name_label",
+      "type": "text",
+      "description": "Relative DNS name for this NIC used for internal communications between VMs in the same virtual network"
+    },
+    {
+      "name": "internal_domain_name_suffix",
+      "type": "text",
+      "description": "Contains domain name suffix for the network interface"
+    },
+    {
+      "name": "internal_fqdn",
+      "type": "text",
+      "description": "Fully qualified DNS name supporting internal communications between VMs in the same virtual network"
+    },
+    {
+      "name": "is_primary",
+      "type": "boolean",
+      "description": "Indicates whether this is a primary network interface on a virtual machine"
+    },
+    {
+      "name": "mac_address",
+      "type": "text",
+      "description": "The MAC address of the network interface"
+    },
+    {
+      "name": "network_security_group_id",
+      "type": "text",
+      "description": "The reference to the NetworkSecurityGroup resource"
+    },
+    {
+      "name": "resource_guid",
+      "type": "text",
+      "description": "The resource GUID property of the network interface resource"
+    },
+    {
+      "name": "virtual_machine_id",
+      "type": "text",
+      "description": "The reference to a virtual machine"
+    },
+    {
+      "name": "vnet_encryption_supported",
+      "type": "boolean",
+      "description": "Whether the virtual machine this NIC is attached to supports encryption."
+    },
+    {
+      "name": "workload_type",
+      "type": "text",
+      "description": "Workload type of the network interface for BareMetal resources."
+    },
+    {
+      "name": "nic_type",
+      "type": "text",
+      "description": "Type of network interface resource (e.g., Standard, Elastic)."
+    },
+    {
+      "name": "migration_phase",
+      "type": "text",
+      "description": "Migration phase of network interface resource."
+    },
+    {
+      "name": "auxiliary_mode",
+      "type": "text",
+      "description": "Auxiliary mode of network interface resource."
+    },
+    {
+      "name": "applied_dns_servers",
+      "type": "json",
+      "description": "A list of applied dns servers"
+    },
+    {
+      "name": "dns_servers",
+      "type": "json",
+      "description": "A collection of DNS servers IP addresses"
+    },
+    {
+      "name": "hosted_workloads",
+      "type": "json",
+      "description": "A collection of references to linked BareMetal resources"
+    },
+    {
+      "name": "ip_configurations",
+      "type": "json",
+      "description": "A list of IPConfigurations of the network interface"
+    },
+    {
+      "name": "tap_configurations",
+      "type": "json",
+      "description": "A collection of TapConfigurations of the network interface"
+    },
+    {
+      "name": "dscp_configuration",
+      "type": "json",
+      "description": "A reference to the DSCP configuration to which the network interface is linked."
+    },
+    {
+      "name": "private_link_service",
+      "type": "json",
+      "description": "Private link service of the network interface resource."
+    },
+    {
+      "name": "private_endpoint",
+      "type": "json",
+      "description": "A reference to the private endpoint to which the network interface is linked."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": "ColumnDescriptionTitle"
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": "ColumnDescriptionTags"
+    },
+    {
+      "name": "region",
+      "type": "text",
+      "description": "ColumnDescriptionRegion"
+    },
+    {
+      "name": "resource_group",
+      "type": "text",
+      "description": "ColumnDescriptionResourceGroup"
+    }
+  ]
+}

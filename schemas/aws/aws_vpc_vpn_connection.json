@@ -1,0 +1,81 @@
+{
+  "table_name": "aws_vpc_vpn_connection",
+  "table_description": "AWS VPC VPN Connection",
+  "columns": [
+    {
+      "name": "vpn_connection_id",
+      "type": "text",
+      "description": "The ID of the VPN connection."
+    },
+    {
+      "name": "arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) specifying the VPN connection."
+    },
+    {
+      "name": "state",
+      "type": "text",
+      "description": "The current state of the VPN connection."
+    },
+    {
+      "name": "type",
+      "type": "text",
+      "description": "The type of VPN connection."
+    },
+    {
+      "name": "category",
+      "type": "text",
+      "description": "The category of the VPN connection. A value of VPN indicates an AWS VPN connection."
+    },
+    {
+      "name": "vpn_gateway_id",
+      "type": "text",
+      "description": "The ID of the virtual private gateway at the AWS side of the VPN connection."
+    },
+    {
+      "name": "customer_gateway_id",
+      "type": "text",
+      "description": "The ID of the customer gateway at your end of the VPN connection."
+    },
+    {
+      "name": "customer_gateway_configuration",
+      "type": "text",
+      "description": "The configuration information for the VPN connection's customer gateway."
+    },
+    {
+      "name": "transit_gateway_id",
+      "type": "text",
+      "description": "The ID of the transit gateway associated with the VPN connection."
+    },
+    {
+      "name": "options",
+      "type": "json",
+      "description": "The VPN connection options."
+    },
+    {
+      "name": "routes",
+      "type": "json",
+      "description": "The static routes associated with the VPN connection."
+    },
+    {
+      "name": "vgw_telemetry",
+      "type": "json",
+      "description": "Information about the VPN tunnel."
+    },
+    {
+      "name": "tags_src",
+      "type": "json",
+      "description": "A list of tags that are attached to VPN gateway."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": ""
+    }
+  ]
+}

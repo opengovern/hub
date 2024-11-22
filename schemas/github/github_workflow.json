@@ -1,0 +1,76 @@
+{
+  "table_name": "github_workflow",
+  "table_description": "GitHub Workflows bundle project files for download by users.",
+  "columns": [
+    {
+      "name": "repository_full_name",
+      "type": "text",
+      "description": "Full name of the repository that contains the workflow."
+    },
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The name of the workflow."
+    },
+    {
+      "name": "id",
+      "type": "integer",
+      "description": "Unique ID of the workflow."
+    },
+    {
+      "name": "path",
+      "type": "text",
+      "description": "Path of the workflow."
+    },
+    {
+      "name": "badge_url",
+      "type": "text",
+      "description": "Badge URL for the workflow."
+    },
+    {
+      "name": "created_at",
+      "type": "timestamp with time zone",
+      "description": "Time when the workflow was created."
+    },
+    {
+      "name": "html_url",
+      "type": "text",
+      "description": "HTML URL for the workflow."
+    },
+    {
+      "name": "node_id",
+      "type": "text",
+      "description": "Node where GitHub stores this data internally."
+    },
+    {
+      "name": "state",
+      "type": "text",
+      "description": "State of the workflow."
+    },
+    {
+      "name": "updated_at",
+      "type": "timestamp with time zone",
+      "description": "Time when the workflow was updated."
+    },
+    {
+      "name": "url",
+      "type": "text",
+      "description": "URL of the workflow."
+    },
+    {
+      "name": "workflow_file_content",
+      "type": "text",
+      "description": "Content of github workflow file in text format."
+    },
+    {
+      "name": "workflow_file_content_json",
+      "type": "json",
+      "description": "Content of github workflow file in the JSON format."
+    },
+    {
+      "name": "pipeline",
+      "type": "json",
+      "description": "Github workflow in the generic pipeline entity format to be used across CI/CD platforms."
+    }
+  ]
+}

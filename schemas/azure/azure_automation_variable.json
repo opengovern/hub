@@ -1,0 +1,61 @@
+{
+  "table_name": "azure_automation_variable",
+  "table_description": "Azure Automation Variable",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The name of the resource."
+    },
+    {
+      "name": "account_name",
+      "type": "text",
+      "description": "The name of the account."
+    },
+    {
+      "name": "id",
+      "type": "text",
+      "description": "Fully qualified resource ID."
+    },
+    {
+      "name": "description",
+      "type": "text",
+      "description": "The description for the variable."
+    },
+    {
+      "name": "creation_time",
+      "type": "timestamp with time zone",
+      "description": "The creation time of the variable."
+    },
+    {
+      "name": "last_modified_time",
+      "type": "timestamp with time zone",
+      "description": "The last modified time of the variable."
+    },
+    {
+      "name": "type",
+      "type": "text",
+      "description": "The type of the resource."
+    },
+    {
+      "name": "is_encrypted",
+      "type": "boolean",
+      "description": "The encrypted flag of the variable."
+    },
+    {
+      "name": "value",
+      "type": "text",
+      "description": "The value of the variable."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": "ColumnDescriptionTitle"
+    },
+    {
+      "name": "resource_group",
+      "type": "text",
+      "description": "ColumnDescriptionResourceGroup"
+    }
+  ]
+}

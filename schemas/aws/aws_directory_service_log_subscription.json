@@ -1,0 +1,26 @@
+{
+  "table_name": "aws_directory_service_log_subscription",
+  "table_description": "AWS Directory Service Log Subscription",
+  "columns": [
+    {
+      "name": "directory_id",
+      "type": "text",
+      "description": "Identifier (ID) of the directory that you want to associate with the log subscription."
+    },
+    {
+      "name": "log_group_name",
+      "type": "text",
+      "description": "The name of the log group."
+    },
+    {
+      "name": "subscription_created_date_time",
+      "type": "timestamp with time zone",
+      "description": "The date and time that the log subscription was created."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    }
+  ]
+}

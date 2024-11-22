@@ -1,0 +1,26 @@
+{
+  "table_name": "aws_appstream_application",
+  "table_description": "AWS AppStream Application",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The name of the application."
+    },
+    {
+      "name": "arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) of the application"
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": ""
+    }
+  ]
+}

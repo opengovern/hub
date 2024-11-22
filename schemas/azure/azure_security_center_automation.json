@@ -1,0 +1,76 @@
+{
+  "table_name": "azure_security_center_automation",
+  "table_description": "Azure Security Center Automation",
+  "columns": [
+    {
+      "name": "id",
+      "type": "text",
+      "description": "The resource id."
+    },
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The resource name."
+    },
+    {
+      "name": "type",
+      "type": "text",
+      "description": "The type of the resource."
+    },
+    {
+      "name": "description",
+      "type": "text",
+      "description": "The security automation description."
+    },
+    {
+      "name": "is_enabled",
+      "type": "boolean",
+      "description": "Indicates whether the security automation is enabled."
+    },
+    {
+      "name": "kind",
+      "type": "text",
+      "description": "Kind of the resource."
+    },
+    {
+      "name": "etag",
+      "type": "text",
+      "description": "Entity tag is used for comparing two or more entities from the same requested resource."
+    },
+    {
+      "name": "actions",
+      "type": "json",
+      "description": "A collection of the actions which are triggered if all the configured rules evaluations, within at least one rule set, are true."
+    },
+    {
+      "name": "scopes",
+      "type": "json",
+      "description": "A collection of scopes on which the security automations logic is applied. Supported scopes are the subscription itself or a resource group under that subscription. The automation will only apply on defined scopes."
+    },
+    {
+      "name": "sources",
+      "type": "json",
+      "description": "A collection of the source event types which evaluate the security automation set of rules."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": "ColumnDescriptionTitle"
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": "A list of key value pairs that describe the resource."
+    },
+    {
+      "name": "region",
+      "type": "text",
+      "description": "ColumnDescriptionRegion"
+    },
+    {
+      "name": "resource_group",
+      "type": "text",
+      "description": "ColumnDescriptionResourceGroup"
+    }
+  ]
+}

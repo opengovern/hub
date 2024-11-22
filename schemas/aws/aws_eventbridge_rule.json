@@ -1,0 +1,71 @@
+{
+  "table_name": "aws_eventbridge_rule",
+  "table_description": "AWS EventBridge Rule",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The name of the rule."
+    },
+    {
+      "name": "arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) of the rule."
+    },
+    {
+      "name": "description",
+      "type": "text",
+      "description": "The description of the rule."
+    },
+    {
+      "name": "state",
+      "type": "text",
+      "description": "The state of the rule."
+    },
+    {
+      "name": "event_bus_name",
+      "type": "text",
+      "description": "The name or ARN of the event bus associated with the rule."
+    },
+    {
+      "name": "created_by",
+      "type": "text",
+      "description": "The account ID of the user that created the rule."
+    },
+    {
+      "name": "managed_by",
+      "type": "text",
+      "description": "If this is a managed rule, created by an AWS service on your behalf, this field displays the principal name of the AWS service that created the rule."
+    },
+    {
+      "name": "event_pattern",
+      "type": "json",
+      "description": "The event pattern of the rule."
+    },
+    {
+      "name": "name_prefix",
+      "type": "text",
+      "description": "Specifying this limits the results to only those event rules with names that start with the specified prefix."
+    },
+    {
+      "name": "targets",
+      "type": "json",
+      "description": "The targets assigned to the rule."
+    },
+    {
+      "name": "tags_src",
+      "type": "json",
+      "description": "A list of tags assigned to the rule."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": ""
+    }
+  ]
+}

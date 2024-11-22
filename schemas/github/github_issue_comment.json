@@ -1,0 +1,136 @@
+{
+  "table_name": "github_issue_comment",
+  "table_description": "GitHub Issue Comments are the responses/comments on GitHub Issues.",
+  "columns": [
+    {
+      "name": "repository_full_name",
+      "type": "text",
+      "description": "The full name of the repository (login/repo-name)."
+    },
+    {
+      "name": "number",
+      "type": "integer",
+      "description": "The issue/pr number."
+    },
+    {
+      "name": "id",
+      "type": "integer",
+      "description": "The ID of the comment."
+    },
+    {
+      "name": "node_id",
+      "type": "text",
+      "description": "The node ID of the comment."
+    },
+    {
+      "name": "author",
+      "type": "json",
+      "description": "The actor who authored the comment."
+    },
+    {
+      "name": "author_login",
+      "type": "text",
+      "description": "The login of the comment author."
+    },
+    {
+      "name": "author_association",
+      "type": "text",
+      "description": "Author's association with the subject of the issue/pr the comment was raised on."
+    },
+    {
+      "name": "body",
+      "type": "text",
+      "description": "The contents of the comment as markdown."
+    },
+    {
+      "name": "body_text",
+      "type": "text",
+      "description": "The contents of the comment as text."
+    },
+    {
+      "name": "created_at",
+      "type": "timestamp with time zone",
+      "description": "Timestamp when comment was created."
+    },
+    {
+      "name": "created_via_email",
+      "type": "boolean",
+      "description": "If true, comment was created via email."
+    },
+    {
+      "name": "editor",
+      "type": "json",
+      "description": "The actor who edited the comment."
+    },
+    {
+      "name": "editor_login",
+      "type": "text",
+      "description": "The login of the comment editor."
+    },
+    {
+      "name": "includes_created_edit",
+      "type": "boolean",
+      "description": "If true, comment was edited and includes an edit with the creation data."
+    },
+    {
+      "name": "is_minimized",
+      "type": "boolean",
+      "description": "If true, comment has been minimized."
+    },
+    {
+      "name": "minimized_reason",
+      "type": "text",
+      "description": "The reason for comment being minimized."
+    },
+    {
+      "name": "last_edited_at",
+      "type": "timestamp with time zone",
+      "description": "Timestamp when comment was last edited."
+    },
+    {
+      "name": "published_at",
+      "type": "timestamp with time zone",
+      "description": "Timestamp when comment was published."
+    },
+    {
+      "name": "updated_at",
+      "type": "timestamp with time zone",
+      "description": "Timestamp when comment was last updated."
+    },
+    {
+      "name": "url",
+      "type": "text",
+      "description": "URL for the comment."
+    },
+    {
+      "name": "can_delete",
+      "type": "boolean",
+      "description": "If true, user can delete the comment."
+    },
+    {
+      "name": "can_minimize",
+      "type": "boolean",
+      "description": "If true, user can minimize the comment."
+    },
+    {
+      "name": "can_react",
+      "type": "boolean",
+      "description": "If true, user can react to the comment."
+    },
+    {
+      "name": "can_update",
+      "type": "boolean",
+      "description": "If true, user can update the comment."
+    },
+    {
+      "name": "cannot_update_reasons",
+      "type": "json",
+      "description": "A list of reasons why user cannot update the comment."
+    },
+    {
+      "name": "did_author",
+      "type": "boolean",
+      "description": "If true, user authored the comment."
+    }
+  ]
+}

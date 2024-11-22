@@ -1,0 +1,41 @@
+{
+  "table_name": "aws_cloudfront_function",
+  "table_description": "AWS CloudFront Function",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The name of the CloudFront function."
+    },
+    {
+      "name": "arn",
+      "type": "text",
+      "description": "The version identifier for the current version of the CloudFront function."
+    },
+    {
+      "name": "status",
+      "type": "text",
+      "description": "The status of the CloudFront function."
+    },
+    {
+      "name": "e_tag",
+      "type": "text",
+      "description": "The version identifier for the current version of the CloudFront function."
+    },
+    {
+      "name": "function_config",
+      "type": "json",
+      "description": "Contains configuration information about a CloudFront function."
+    },
+    {
+      "name": "function_metadata",
+      "type": "json",
+      "description": "Contains metadata about a CloudFront function."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    }
+  ]
+}

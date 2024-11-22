@@ -1,0 +1,61 @@
+{
+  "table_name": "aws_vpc_security_group",
+  "table_description": "AWS VPC Security Group",
+  "columns": [
+    {
+      "name": "group_name",
+      "type": "text",
+      "description": "The friendly name that identifies the security group."
+    },
+    {
+      "name": "group_id",
+      "type": "text",
+      "description": "Contains the unique ID to identify a security group."
+    },
+    {
+      "name": "arn",
+      "type": "text",
+      "description": "The Amazon Resource Name (ARN) specifying the security group."
+    },
+    {
+      "name": "description",
+      "type": "text",
+      "description": "A description of the security group."
+    },
+    {
+      "name": "vpc_id",
+      "type": "text",
+      "description": "The ID of the VPC for the security group."
+    },
+    {
+      "name": "owner_id",
+      "type": "text",
+      "description": "Contains the AWS account ID of the owner of the security group."
+    },
+    {
+      "name": "ip_permissions",
+      "type": "json",
+      "description": "A list of inbound rules associated with the security group"
+    },
+    {
+      "name": "ip_permissions_egress",
+      "type": "json",
+      "description": "A list of outbound rules associated with the security group"
+    },
+    {
+      "name": "tags_src",
+      "type": "json",
+      "description": "A list of tags that are attached to the security group"
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": ""
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": ""
+    }
+  ]
+}

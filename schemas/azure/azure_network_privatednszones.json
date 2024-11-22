@@ -1,0 +1,26 @@
+{
+  "table_name": "azure_network_privatednszones",
+  "table_description": "Azure Network PrivateDNSZones",
+  "columns": [
+    {
+      "name": "id",
+      "type": "text",
+      "description": "The id of the privatednszones."
+    },
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The name of the privatednszones."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": "ColumnDescriptionTitle"
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": "ColumnDescriptionTags"
+    }
+  ]
+}

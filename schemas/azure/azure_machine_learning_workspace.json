@@ -1,0 +1,131 @@
+{
+  "table_name": "azure_machine_learning_workspace",
+  "table_description": "Azure Machine Learning Workspace",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The resource name."
+    },
+    {
+      "name": "friendly_name",
+      "type": "text",
+      "description": "The friendly name for this workspace. This name in mutable."
+    },
+    {
+      "name": "id",
+      "type": "text",
+      "description": "The resource identifier."
+    },
+    {
+      "name": "provisioning_state",
+      "type": "text",
+      "description": "The current deployment state of workspace resource, The provisioningState is to indicate states for resource provisioning. Possible values include: 'Unknown', 'Updating', 'Creating', 'Deleting', 'Succeeded', 'Failed', 'Canceled'."
+    },
+    {
+      "name": "creation_time",
+      "type": "timestamp with time zone",
+      "description": "The creation time for this workspace resource."
+    },
+    {
+      "name": "workspace_id",
+      "type": "text",
+      "description": "The immutable id associated with this workspace."
+    },
+    {
+      "name": "application_insights",
+      "type": "text",
+      "description": "ARM id of the application insights associated with this workspace. This cannot be changed once the workspace has been created."
+    },
+    {
+      "name": "container_registry",
+      "type": "text",
+      "description": "ARM id of the container registry associated with this workspace. This cannot be changed once the workspace has been created."
+    },
+    {
+      "name": "description",
+      "type": "text",
+      "description": "The description of this workspace."
+    },
+    {
+      "name": "discovery_url",
+      "type": "text",
+      "description": "ARM id of the container registry associated with this workspace. This cannot be changed once the workspace has been created."
+    },
+    {
+      "name": "hbi_workspace",
+      "type": "boolean",
+      "description": "The flag to signal HBI data in the workspace and reduce diagnostic data collected by the service."
+    },
+    {
+      "name": "key_vault",
+      "type": "text",
+      "description": "ARM id of the key vault associated with this workspace, This cannot be changed once the workspace has been created."
+    },
+    {
+      "name": "location",
+      "type": "text",
+      "description": "The location of the resource. This cannot be changed after the resource is created."
+    },
+    {
+      "name": "service_provisioned_resource_group",
+      "type": "text",
+      "description": "The name of the managed resource group created by workspace RP in customer subscription if the workspace is CMK workspace."
+    },
+    {
+      "name": "sku_name",
+      "type": "text",
+      "description": "Name of the sku."
+    },
+    {
+      "name": "sku_tier",
+      "type": "text",
+      "description": "Tier of the sku like Basic or Enterprise."
+    },
+    {
+      "name": "storage_account",
+      "type": "text",
+      "description": "ARM id of the storage account associated with this workspace. This cannot be changed once the workspace has been created."
+    },
+    {
+      "name": "type",
+      "type": "text",
+      "description": "The resource type."
+    },
+    {
+      "name": "diagnostic_settings",
+      "type": "json",
+      "description": "A list of active diagnostic settings for the azure ML workspace."
+    },
+    {
+      "name": "encryption",
+      "type": "json",
+      "description": "The encryption settings of Azure ML workspace."
+    },
+    {
+      "name": "identity",
+      "type": "json",
+      "description": "The identity of the resource."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": "ColumnDescriptionTitle"
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": "ColumnDescriptionTags"
+    },
+    {
+      "name": "region",
+      "type": "text",
+      "description": "ColumnDescriptionRegion"
+    },
+    {
+      "name": "resource_group",
+      "type": "text",
+      "description": "ColumnDescriptionResourceGroup"
+    }
+  ]
+}
