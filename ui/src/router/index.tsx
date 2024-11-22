@@ -7,6 +7,8 @@ import Pricing from '../pages/pricing';
 import Policies from '../pages/policies';
 import FrameworkDetail from '../pages/policies/detail';
 import ControlDetail from '../pages/policies/detail/controls/detail';
+import Schema from '../pages/schema';
+import SchemaTables from '../pages/schema/tables';
 
 
 const authRoutes = [
@@ -43,6 +45,19 @@ const authRoutes = [
     key: "controlDetail",
     path: "/controls/:id",
     element: <ControlDetail />,
+    noAuth: true,
+  },
+  {
+    key: "schmea",
+    path: "/schema/",
+    element: <Schema />,
+    noAuth: true,
+  },
+
+  {
+    key: "schmea-tables",
+    path: "/schema/:id",
+    element: <SchemaTables />,
     noAuth: true,
   },
 ];

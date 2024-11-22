@@ -16,23 +16,29 @@ import {
   RiUserLine,
 } from "@remixicon/react";
 import React, { Fragment, useEffect, useState } from "react";
-import { Benchmarks } from "./types";
+
 import Card from "../../components/Card";
 import { useNavigate } from "react-router-dom";
+import { Integration } from "./types";
+import IntegrationCard from "../../components/IntegrationCard";
 
-export default function Policies() {
-  const [benchmarks, setBenchmarks] = useState<Benchmarks[]>([]);
+export default function Schema() {
+  const [integrations, setIntegrations] = useState<Integration[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   const navigate = useNavigate();
-  const [page,setPage] = useState(1)
+  const [page, setPage] = useState(1);
   const getPolcies = () => {
     setLoading(true);
     axios
-      .get("http://localhost:8000/api/frameworks?per_page=15&cursor=1")
+      .get(
+        "https://raw.githubusercontent.com/opengovern/opengovernance/refs/heads/main/assets/integrations/integrations.json"
+      )
       .then((res) => {
         if (res.data) {
-          setBenchmarks(res.data);
+            const arr =res.data
+            arr.sort(() => Math.random() - 0.5);
+          setIntegrations(arr);
         }
         setLoading(false);
       })
@@ -41,10 +47,10 @@ export default function Policies() {
         setLoading(false);
       });
   };
-  
-    useEffect(() => {
-        getPolcies();
-    }, []);
+
+  useEffect(() => {
+    getPolcies();
+  }, []);
 
   return (
     <div className="mx-auto pt-36 max-w-6xl">
@@ -57,7 +63,7 @@ export default function Policies() {
             animationFillMode: "backwards",
           }}
         >
-          <Badge>Policies</Badge>
+          <Badge>Schema</Badge>
           <h1 className="mt-2 inline-block bg-gradient-to-br from-gray-900 to-gray-800 bg-clip-text py-2 text-4xl font-bold tracking-tighter text-transparent sm:text-4xl md:text-4xl dark:from-gray-50 dark:to-gray-300">
             Our plans scale with you
           </h1>
@@ -68,18 +74,18 @@ export default function Policies() {
           </p>
         </section>
         <div className="flex gap-3 flex-col mt-5">
-          {benchmarks &&
-            benchmarks?.map((benchmark) => {
+          {integrations &&
+            integrations?.map((integration) => {
               return (
                 <>
-                  <Card
-                    title={benchmark.title}
-                    imageUri={getIntegrationLogo(benchmark?.integration_type)}
-                    description={benchmark.description}
-                    controlCount={benchmark.control_count}
-                    onClick={()=>{
-                        navigate("/frameworks/" + benchmark.id);
+                  <IntegrationCard
+                    title={integration.name}
+                    imageUri={`https://raw.githubusercontent.com/opengovern/website/main/connectors/icons/${integration?.Icon}`}
+                    description={integration.Description}
+                    onClick={() => {
+                      navigate("/schema/" + integration.schema_ids[0]);
                     }}
+                    tier={integration?.tier}
                   />
                 </>
               );

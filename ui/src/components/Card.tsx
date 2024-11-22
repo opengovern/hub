@@ -7,24 +7,18 @@ import {
   useState,
 } from "react";
 interface CardProps {
-  id: string;
   title: string;
-  integrationType: string[];
   imageUri: string;
     description: string;
     controlCount: number;
-    numberOfTables: number;
     onClick?: () => void;
 }
 
 const Card: FunctionComponent<CardProps> = ({
-  id,
     title,
-    integrationType,
     imageUri,
     description,
     controlCount,
-    numberOfTables,
     onClick
 
 
@@ -66,9 +60,9 @@ const Card: FunctionComponent<CardProps> = ({
               <span className="text-white text-sm bg-gray-500 p-1 rounded-md min-w-max">
                 {controlCount} Controls
               </span>
-              <span className="text-white text-sm bg-gray-500 p-1 rounded-md min-w-max">
+              {/* <span className="text-white text-sm bg-gray-500 p-1 rounded-md min-w-max">
                 {numberOfTables} Tables
-              </span>
+              </span> */}
             </div>
           </div>
         </div>
