@@ -43,7 +43,7 @@ const authRoutes = [
   },
   {
     key: "controlDetail",
-    path: "/controls/:id",
+    path: "/controls/:framework_id/:id",
     element: <ControlDetail />,
     noAuth: true,
   },

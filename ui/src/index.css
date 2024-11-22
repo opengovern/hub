@@ -11,6 +11,9 @@
   src: url("./fonts/NanumPenScript.woff2") format("woff2");
 }
 
+.awsui_card-header_p8a6i_1trdm_402{
+  width: 100%!important;
+}
 .backdrop-blur {
   -webkit-backdrop-filter: blur(3px);
   backdrop-filter: blur(3px);

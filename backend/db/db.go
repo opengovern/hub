@@ -3,6 +3,7 @@ package db
 import (
 	"github.com/opengovern/website/db/models"
 	"gorm.io/gorm"
+	"gorm.io/gorm/clause"
 )
 
 type Database struct {
@@ -89,20 +90,91 @@ func (db Database) ListBenchmarkOfIdS(ids []string) ([]models.Benchmark, error) 
 }
 
 
-func (db Database) ListBenchmark() ([]models.Benchmark, error) {
+func (db Database) ListRootBenchmarks() ([]models.Benchmark, error) {
 	var s []models.Benchmark
 	tx := db.Orm.Model(&models.Benchmark{}).	
-		Order("control_count desc").
+	    Where("NOT EXISTS (SELECT 1 FROM benchmark_children WHERE benchmark_children.child_id = benchmarks.id)").
+		Preload(clause.Associations).
+		
 		Find(&s)
 	if tx.Error != nil {
 		return nil, tx.Error
 	}
 	return s, nil
 }
+func (db Database) ListBenchmarks() ([]models.Benchmark, error) {
+	var s []models.Benchmark
+	tx := db.Orm.Model(&models.Benchmark{}).Preload(clause.Associations).
+	Order("control_count desc").
+	
+		Find(&s)
+	if tx.Error != nil {
+		return nil, tx.Error
+	}
+	return s, nil
+}
+func (db Database) ListRootBenchmarksWithSubtreeControls() ([]models.Benchmark, error) {
+	var benchmarks []models.Benchmark
+
+	allBenchmarks, err := db.ListBenchmarks()
+	if err != nil {
+		return nil, err
+	}
+	allBenchmarksMap := make(map[string]models.Benchmark)
+	for _, b := range allBenchmarks {
+		allBenchmarksMap[b.ID] = b
+	}
+
+	var populateControls func( benchmark *models.Benchmark) error
+	populateControls = func( benchmark *models.Benchmark) error {
+		
+		if benchmark == nil {
+			return nil
+		}
+		if len(benchmark.Children) > 0 {
+			for _, child := range benchmark.Children {
+				child := allBenchmarksMap[child.ID]
+				err := populateControls( &child)
+				if err != nil {
+					return err
+				}
+				for _, control := range child.Controls {
+					found := false
+					for _, c := range benchmark.Controls {
+						if c.ID == control.ID {
+							found = true
+							break
+						}
+					}
+					if !found {
+						benchmark.Controls = append(benchmark.Controls, control)
+					}
+				}
+			}
+		}
+		return nil
+	}
+
+	rootBenchmarks, err := db.ListRootBenchmarks( )
+	if err != nil {
+		return nil, err
+	}
+
+	for _, b := range rootBenchmarks {
+		err := populateControls( &b)
+		if err != nil {
+			return nil, err
+		}
+		benchmarks = append(benchmarks, b)
+	}
+
+	return benchmarks, nil
+}
 
 func (db Database) BenchamrkDetail(id string) (*models.Benchmark, error) {
 	var s models.Benchmark
-	tx := db.Orm.Model(&models.Benchmark{}).	
+	tx := db.Orm.Model(&models.Benchmark{}).
+		Preload(clause.Associations).
 		Where("id =?",id).
 		Find(&s)
 	if tx.Error != nil {
@@ -112,21 +184,17 @@ func (db Database) BenchamrkDetail(id string) (*models.Benchmark, error) {
 }
 
 
-func (db Database) BenchmarkControls(id string) ([]models.Control, error) {
-	var benchmark_controls []models.BenchmarkControls
-	tx := db.Orm.Model(&models.BenchmarkControls{}).	
-		Where("benchmark_id =?",id).
-		Find(&benchmark_controls)
-	if tx.Error != nil {
-		return nil, tx.Error
-	}
-	var controlIds []string
-	for _, control := range benchmark_controls {
-		controlIds = append(controlIds, control.ControlID)
-	}
+func (db Database) BenchmarkControls(ids []string) ([]models.Control, error) {
+	
+	
 	var controls  []models.Control
-	tx = db.Orm.Model(&models.Control{}).
-	Where("id IN ?",controlIds).Find(&controls)
+	tx := db.Orm.Model(&models.Control{}).
+	Distinct("controls.*").
+	Preload("Benchmarks").
+	Joins("JOIN benchmark_controls bc ON bc.control_id = controls.id").
+	Where("bc.benchmark_id IN ?", ids).
+	Order("created_at desc").
+	Find(&controls)
 
 	if tx.Error != nil {
 		return nil, tx.Error
@@ -135,23 +203,14 @@ func (db Database) BenchmarkControls(id string) ([]models.Control, error) {
 	return controls, nil
 }
 // new function for count of benchmark controls
-func (db Database) BenchmarkControlsCount(id string) (int, error) {
-	var count int64
-	tx := db.Orm.Model(&models.BenchmarkControls{}).	
-		Where("benchmark_id =?",id).
-		Count(&count)
-	if tx.Error != nil {
-		return 0, tx.Error
-	}
-	return int(count), nil
 
-}
 
 
 func (db Database) ControlDetail(id string) (*models.Control, error) {
 	var s models.Control
 	tx := db.Orm.Model(&models.Control{}).	
 		Where("id =?",id).
+		Preload(clause.Associations).
 		Find(&s)
 	if tx.Error != nil {
 		return nil, tx.Error

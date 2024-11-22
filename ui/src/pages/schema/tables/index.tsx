@@ -76,7 +76,7 @@ const [tables,setTables]= useState<TypeTables>();
   }, []);
 
   return (
-    <div className="mx-auto pt-36 max-w-6xl">
+    <div className="mx-auto pt-20 max-w-6xl">
       <div className="px-3">
         <section
           aria-labelledby="pricing-title"
@@ -100,7 +100,7 @@ const [tables,setTables]= useState<TypeTables>();
         <div className="flex gap-3 flex-col mt-5">
           {tables && (
             <>
-              <div className="flex flex-row gap-5">
+              <div className="flex flex-row gap-5 schema">
                 <SideNavigation
                   className="text-white dark:bg-white dark:text-gray-900 rounded-xl max-w-[300px] max-h-[60dvh] "
                   activeHref={selectedTable}

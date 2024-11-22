@@ -29,7 +29,7 @@ export default function FrameworkDetail() {
    const getDetail= () => {
      setLoading(true);
      axios
-       .get(`https://hub.opencomply.io/api/api/frameworks/${framework_id}`)
+       .get(`https://hub.opencomply.io/api/frameworks/${framework_id}`)
        .then((res) => {
          if (res.data) {
            setBenchmark(res.data);
@@ -46,7 +46,7 @@ export default function FrameworkDetail() {
    },[framework_id])
 
   return (
-    <div className="mx-auto pt-36 max-w-6xl">
+    <div className="mx-auto pt-20 max-w-6xl">
       <div className="px-3">
         {benchmark && benchmark?.id && (
           <>

@@ -69,7 +69,7 @@ func (s API) Frameworks(ctx echo.Context) error {
 			return err
 		}
 	}
-	frameworks,err := s.db.ListBenchmark()
+	frameworks,err := s.db.ListRootBenchmarksWithSubtreeControls()
 	if err != nil {
 		return err
 	}
@@ -86,14 +86,19 @@ func (s API) Frameworks(ctx echo.Context) error {
 			Title: framework.Title,
 			IntegrationType: framework.IntegrationType,
 			Description: framework.Description,
-			Control_Count: framework.ControlCount,
+			Control_Count: len(framework.Controls),
 			NumberOfTables: len(metadata.ListOfTables),
 			CreatedAt: framework.CreatedAt.String(),
 			UpdatedAt: framework.UpdatedAt.String(),
 		})
 	}
+	paginated := service.Paginate(cursor, perPage, response)
+	final_response := map[string]interface{}{
+		"frameworks": paginated,
+		"total": len(response),
+	}
 
-	return ctx.JSON(http.StatusOK, 	service.Paginate(cursor, perPage, response))
+	return ctx.JSON(http.StatusOK,final_response)
 
 
 
@@ -159,7 +164,14 @@ func (s API) FrameWorkControls(ctx echo.Context) error {
 	if frameWorkID == "" {
 		return echo.NewHTTPError(http.StatusBadRequest, "frameworkId is required")
 	}
-	controls,err := s.db.BenchmarkControls(frameWorkID)
+	var frameworks []string
+	childs ,err := s.getChildBenchmarks(ctx, frameWorkID)
+	if err != nil {
+		return err
+	}
+	frameworks = append(frameworks, frameWorkID)
+	frameworks = append(frameworks, childs...)
+	controls,err := s.db.BenchmarkControls(frameworks)
 	if err != nil {
 		return err
 	}
@@ -177,8 +189,13 @@ func (s API) FrameWorkControls(ctx echo.Context) error {
 			UpdatedAt: control.UpdatedAt.String(),
 		})
 	}
+	paginated := service.Paginate(cursor, perPage, response)
+	final_response := map[string]interface{}{
+		"controls": paginated,
+		"total": len(response),
+	}
 	
-	return ctx.JSON(http.StatusOK, service.Paginate(cursor, perPage, response))
+	return ctx.JSON(http.StatusOK,final_response)
 
 
 }
@@ -202,6 +219,8 @@ func (s API) ControlDetail(ctx echo.Context) error {
 		ManualVerification: control.ManualVerification,
 		CreatedAt: control.CreatedAt.String(),
 		UpdatedAt: control.UpdatedAt.String(),
+		Query: control.Query.QueryToExecute,
+
 	}
 	return ctx.JSON(http.StatusOK, resp)
 
@@ -238,3 +257,23 @@ func (s API) ControlQuery(ctx echo.Context) error {
 
 
 
+
+
+func (h API) getChildBenchmarks(ctx echo.Context, benchmarkId string) ([]string, error) {
+	var benchmarks []string
+	benchmark, err := h.db.BenchamrkDetail( benchmarkId)
+	if err != nil {
+		h.logger.Error("failed to fetch benchmarks", zap.Error(err))
+		return nil, err
+	}
+	
+	for _, child := range benchmark.Children {
+		childBenchmarks, err := h.getChildBenchmarks(ctx, child.ID)
+		if err != nil {
+			return nil, err
+		}
+		benchmarks = append(benchmarks, childBenchmarks...)
+	}
+	benchmarks = append(benchmarks, benchmarkId)
+	return benchmarks, nil
+}

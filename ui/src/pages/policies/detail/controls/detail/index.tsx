@@ -38,7 +38,7 @@ import {
   Title,
 } from "@tremor/react";
 import axios from "axios";
-import { CopyToClipboard, KeyValuePairs } from "@cloudscape-design/components";
+import { BreadcrumbGroup, CopyToClipboard, KeyValuePairs } from "@cloudscape-design/components";
 import dayjs, { Dayjs } from "dayjs";
 import LocalizedFormat from "dayjs/plugin/localizedFormat";
 import timezone from "dayjs/plugin/timezone";
@@ -105,7 +105,7 @@ export const dateTimeDisplay = (
 };
 
 export default function ControlDetail() {
-  const { id } = useParams();
+  const { id, framework_id } = useParams();
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   const [control, setControl] = useState<any>();
@@ -113,7 +113,7 @@ export default function ControlDetail() {
   const getDetail = () => {
     setLoading(true);
     axios
-      .get(`https://hub.opencomply.io/api/api/controls/${id}`)
+      .get(`https://hub.opencomply.io/api/controls/${id}`)
       .then((res) => {
         if (res.data) {
           setControl(res.data);
@@ -135,11 +135,18 @@ export default function ControlDetail() {
        value: (
          // @ts-ignore
          <CopyToClipboard
-         className="text-white mt-2"
+           className="text-white mt-2"
            variant="inline"
-           textToCopy={control?.id }
+           textToCopy={control?.id}
            copySuccessText="Control ID copied to clipboard"
          />
+       ),
+     },
+     {
+       label: "Severity",
+       value: (
+         // @ts-ignore
+         <>{severityBadge(control?.severity)}</>
        ),
      },
    ];
@@ -150,15 +157,32 @@ export default function ControlDetail() {
        label: "Last updated",
        value: (
          // @ts-ignore
-         <>{control?.updated_at}</>
+         <>{control?.updated_at.split(".")[0]}</>
        ),
      }
    );
    return temp;
    // @ts-ignore
  };
+ const GetBreadcrumb = () => {
+  const temp = [
+    {
+      text: "Frameworks",
+      href: "/framewrosk",
+    },
+    {
+      text: framework_id,
+      href: `${window.origin}/frameworks/${framework_id}`,
+    },
+    {
+      text: id,
+      href: id,
+    },
+  ];
+  return temp
+ }
   return (
-    <div className="mx-auto pt-36 max-w-6xl">
+    <div className="mx-auto pt-20 max-w-6xl">
       <div className="px-3">
         <div className="px-3">
           {control && control?.id && (
@@ -172,13 +196,20 @@ export default function ControlDetail() {
                 }}
               >
                 <div></div>
-                <KBadge>Controls</KBadge>
-
-                <h1 className="mt-2 inline-block bg-gradient-to-br from-gray-900 to-gray-800 bg-clip-text py-2 text-3xl font-bold tracking-tighter text-transparent sm:text-6xl md:text-4xl dark:from-gray-50 dark:to-gray-300">
+                {/* <KBadge>Controls</KBadge> */}
+                <BreadcrumbGroup
+                  onClick={(event) => {
+                    console.log(event);
+                  }}
+                  items={GetBreadcrumb()}
+                  className="dark:text-white custom-bread mt-5"
+                  ariaLabel="Breadcrumbs"
+                />
+                <h1 className="mt-2 mb-2 inline-block bg-gradient-to-br from-gray-900 to-gray-800 bg-clip-text py-2 text-3xl font-bold tracking-tighter text-transparent sm:text-6xl md:text-4xl dark:from-gray-50 dark:to-gray-300">
                   {control?.title}
                 </h1>
                 <p className="mt-2 mb-2  text-lg text-gray-700 dark:text-gray-400">
-                  {control.description} {severityBadge(control?.severity)}
+                  {control.description}
                 </p>
               </section>
               <div>
@@ -186,15 +217,25 @@ export default function ControlDetail() {
                   <Card className="h-fit ">
                     <KeyValuePairs
                       className=" text-white custom-key-value "
-                      columns={2}
+                      columns={3}
                       items={GetKeyValue()}
                     />
                   </Card>
-                  <Card className="max-h-[350px] cursor-pointer overflow-hidden ">
+                  <Card
+                    onClick={() => {
+                      navigator.clipboard.writeText(
+                        control?.query.replace(
+                          "$IS_ALL_CONNECTIONS_QUERY",
+                          "true"
+                        ) || ""
+                      );
+                    }}
+                    className=" cursor-pointer max-h-[350px] overflow-y-scroll  "
+                  >
                     <Editor
                       onValueChange={() => 1}
                       highlight={(text) => {}}
-                      disabled={true}
+                      disabled={false}
                       //  highlight(text, languages.sql, "sql")
                       value={
                         control?.query.replace(
@@ -202,41 +243,14 @@ export default function ControlDetail() {
                           "true"
                         ) || ""
                       }
-                      className="w-full   dark:text-white font-mono text-sm"
+                      className="w-full max-h-max    dark:text-white font-mono text-sm"
                       style={{
-                        minHeight: "200px",
+                        minHeight: "80dvh",
                       }}
+                      color="white"
+                      textareaClassName="dark:text-white editor-text-area"
                       placeholder="-- write your SQL query here"
                     />
-                    {/* <Divider /> */}
-                    {/* <Flex className="mt-2"> */}
-                      {/* <CopyToClipboard
-                        className="text-white mt-2"
-                        variant="inline"
-                        textToCopy={""}
-                        copySuccessText="Control ID copied to clipboard"
-                      /> */}
-                      {/* <Button
-                        variant="light"
-                        icon={""}
-                        iconPosition="left"
-                        onClick={() =>
-                          clipboardCopy(
-                            controlDetail?.control?.query?.queryToExecute?.replace(
-                              "$IS_ALL_CONNECTIONS_QUERY",
-                              "true"
-                            ) || ""
-                          ).then(() =>
-                            setNotification({
-                              text: "Query copied to clipboard",
-                              type: "info",
-                            })
-                          )
-                        }
-                      >
-                        Copy
-                      </Button> */}
-                    {/* </Flex> */}
                   </Card>
                 </Grid>
               </div>

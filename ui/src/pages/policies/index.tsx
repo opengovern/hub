@@ -26,14 +26,16 @@ export default function Policies() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   const navigate = useNavigate();
-  const [page,setPage] = useState(1)
+  const [page, setPage] = useState(0);
+  const [total, setTotal] = useState(0);
   const getPolcies = () => {
     setLoading(true);
     axios
-      .get(`https://hub.opencomply.io/api/api/frameworks?per_page=15&cursor=${page}`)
+      .get(`https://hub.opencomply.io/api/frameworks?per_page=10&cursor=${page+1}`)
       .then((res) => {
         if (res.data) {
-          setBenchmarks(res.data);
+          setBenchmarks(res.data.frameworks);
+          setTotal(res.data.total);
         }
         setLoading(false);
       })
@@ -42,13 +44,13 @@ export default function Policies() {
         setLoading(false);
       });
   };
-  
-    useEffect(() => {
-        getPolcies();
-    }, []);
+
+  useEffect(() => {
+    getPolcies();
+  }, [page]);
 
   return (
-    <div className="mx-auto pt-36 max-w-6xl">
+    <div className="mx-auto pt-20 max-w-6xl">
       <div className="px-3">
         <section
           aria-labelledby="pricing-title"
@@ -78,8 +80,8 @@ export default function Policies() {
                     imageUri={getIntegrationLogo(benchmark?.integration_type)}
                     description={benchmark.description}
                     controlCount={benchmark.control_count}
-                    onClick={()=>{
-                        navigate("/frameworks/" + benchmark.id);
+                    onClick={() => {
+                      navigate("/frameworks/" + benchmark.id);
                     }}
                   />
                 </>
@@ -87,13 +89,13 @@ export default function Policies() {
             })}
         </div>
         <div className="mt-5">
-          {/* <Pagination
-            page_size={15}
-            total={benchmarks[0]?.total}
-            current_page={page}
-            /> */}
-
-
+          <Pagination
+            page_size={10}
+            paginationCount={Math.ceil(total / 10)}
+            page={page}
+            setPage={setPage}
+            isZeroBased={false}
+          />
         </div>
       </div>
     </div>

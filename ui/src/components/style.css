@@ -1,0 +1,45 @@
+.custom-pagination .awsui_page-item_fvjdu_chz9p_251{
+    /* background-color: #818CF8!important; */
+    border-radius: 4px;
+    padding: 2rem;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+   
+
+}
+
+.custom-pagination .awsui_page-item_fvjdu_chz9p_251 button{
+    /* background-color: #818CF8!important; */
+    border-radius: 4px;
+    padding: 0.5rem!important;
+    color: white!important;
+    text-align: center;
+    height: 30px;
+      display: flex;
+    justify-content: center;
+    align-items: center;
+   
+
+}
+.custom-pagination .awsui_button-current_fvjdu_chz9p_234{
+    /* background-color: #818CF8!important; */
+   font-weight: 800;
+   font-size: 18px;
+   
+
+}
+
+.custom-pagination .awsui_page-item_fvjdu_chz9p_251 button span{
+   
+    color: white!important;
+    text-align: center;
+    height: 20px;
+
+
+   
+
+}

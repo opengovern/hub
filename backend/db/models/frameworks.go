@@ -47,7 +47,7 @@ type Benchmark struct {
 	Enabled           bool
 	AutoAssign        bool
 	TracksDriftEvents bool
-	Metadata          pgtype.JSONB
+	Metadata          pgtype.JSONB 
 	Children  []Benchmark `gorm:"many2many:benchmark_children;"`
 	Controls  []Control   `gorm:"many2many:benchmark_controls;"`
 	ControlCount int

@@ -230,7 +230,7 @@ export default function Controls({
     }
     const truncate = (text: string | undefined) => {
         if (text) {
-            return text.length > 30 ? text.substring(0, 30) + '...' : text
+            return text.length > 40 ? text.substring(0, 40) + '...' : text
         }
     }
     const GetControls = (flag: boolean, id: string | undefined) => {
@@ -238,11 +238,13 @@ export default function Controls({
         const benchmark_id = flag ? id : benchmarkId
          axios
            .get(
-             `https://hub.opencomply.io/api/api/frameworks/${benchmark_id}/controls?per_page=10&cursor=1`
+             `https://hub.opencomply.io/api/frameworks/${benchmark_id}/controls?per_page=10&cursor=1`
            )
            .then((res) => {
              if (res.data) {
-               setRows(res.data);
+               setRows(res.data.controls);
+                setTotalPage(Math.ceil(res.data.total / 10));
+                setTotalCount(res.data.total);
              }
              setLoading(false);
            })
@@ -253,7 +255,7 @@ export default function Controls({
        
     }
     const GetTree = () => {
-        const url = "https://hub.opencomply.io/api"
+        const url = "https://hub.opencomply.io"
         axios
           .get(`${url}/api/frameworks/${benchmarkId}/tree`)
           .then((res) => {
@@ -356,11 +358,13 @@ export default function Controls({
       <Grid numItems={12} className="gap-4 mt-4 ">
         <Col numColSpan={12}>
           <BreadcrumbGroup
+            
             onClick={(event) => {
               event.preventDefault();
               setSelected(event.detail.href);
             }}
             items={selectedBread}
+            className="dark:text-white custom-bread"
             ariaLabel="Breadcrumbs"
           />
         </Col>
@@ -372,7 +376,7 @@ export default function Controls({
             >
               <>
                 <SideNavigation
-                  className="w-full   h-[550px] overflow-y-scroll  p-4 pb-0"
+                  className="w-full   h-[550px] overflow-y-scroll   p-4 pb-0"
                   activeHref={selected}
                   virtualScroll
                   header={{
@@ -458,7 +462,7 @@ export default function Controls({
                   header: "Title",
                   cell: (item) => (
                     <Link
-                      href={`/controls/${item.id}`}
+                      href={`/controls/${id}/${item.id}`}
                      
 
                       // onClick={() => {
