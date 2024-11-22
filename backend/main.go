@@ -54,7 +54,7 @@ func Command() *cobra.Command {
 			Password: "postgres",
 		},
 		Http: koanf.HttpServer{
-			Address: "localhost:8000",
+			Address: "0.0.0.0:8000",
 		},
 	})
 
