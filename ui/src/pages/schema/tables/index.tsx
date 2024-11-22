@@ -16,7 +16,7 @@ import {
   RiUserLine,
 } from "@remixicon/react";
 import React, { Fragment, useEffect, useState } from "react";
-
+import './style.css'
 import Card from "../../../components/Card";
 import { useNavigate, useParams } from "react-router-dom";
 import { TableDefinition, TypeTables } from "./types";
@@ -40,7 +40,7 @@ const [tables,setTables]= useState<TypeTables>();
     setLoading(true);
     axios
       .get(
-        `https://raw.githubusercontent.com/opengovern/scripts/refs/heads/main/hub/json/${id}.json`
+        `https://raw.githubusercontent.com/opengovern/hub/refs/heads/main/schemas/${id}.json`
       )
       .then((res) => {
         if (res.data) {
@@ -57,7 +57,7 @@ const [tables,setTables]= useState<TypeTables>();
     setLoading(true);
     axios
       .get(
-        `https://raw.githubusercontent.com/opengovern/scripts/refs/heads/main/hub/json/${id}/${name}.json`
+        `https://raw.githubusercontent.com/opengovern/hub/refs/heads/main/schemas/${id}/${name}.json`
       )
       .then((res) => {
         if (res.data) {
@@ -100,8 +100,9 @@ const [tables,setTables]= useState<TypeTables>();
         <div className="flex gap-3 flex-col mt-5">
           {tables && (
             <>
-              <div>
+              <div className="flex flex-row gap-5">
                 <SideNavigation
+                  className="text-white dark:bg-white dark:text-gray-900 rounded-xl max-w-[300px] max-h-[60dvh] "
                   activeHref={selectedTable}
                   header={{
                     href: "1",
@@ -123,70 +124,78 @@ const [tables,setTables]= useState<TypeTables>();
                   })}
                 />
 
-                <Table
-                  className="p-3"
-                  renderAriaLive={({
-                    firstIndex,
-                    lastIndex,
-                    totalItemsCount,
-                  }) =>
-                    `Displaying items ${firstIndex} to ${lastIndex} of ${totalItemsCount}`
-                  }
-                  columnDefinitions={[
-                    {
-                      id: "name",
-                      header: "Column name",
-                      cell: (item) => <>{item.name || "-"}</>,
-                      sortingField: "name",
-                      isRowHeader: true,
-                    },
-
-                    {
-                      id: "description",
-                      header: "Description",
-                      cell: (item) => item.description || "-",
-                    },
-                  ]}
-                  enableKeyboardNavigation
-                  // @ts-ignore
-                  items={tableData?.columns}
-                  loadingText="Loading resources"
-                  sortingDisabled
-                  empty={
-                    <Box
-                      margin={{ vertical: "xs" }}
-                      textAlign="center"
-                      color="inherit"
-                    >
-                      <SpaceBetween size="m">
-                        <b>No resources</b>
-                      </SpaceBetween>
-                    </Box>
-                  }
-                  header={
-                    <Header
-                      actions={
-                        <>
-                          <div className="back">
-                            <Button
-                              className="back-btn"
-                              variant="primary"
-                              onClick={() => {
-                                navigate("/schema");
-                              }}
-                            >
-                              Go back
-                            </Button>
-                          </div>
-                        </>
+                {tableData && (
+                  <>
+                    <Table
+                      className="p-5 pt-0 overflow-y-scroll max-h-[60dvh]"
+                      renderAriaLive={({
+                        firstIndex,
+                        lastIndex,
+                        totalItemsCount,
+                      }) =>
+                        `Displaying items ${firstIndex} to ${lastIndex} of ${totalItemsCount}`
                       }
-                      className="p-0"
-                    >
-                      {" "}
-                      {selectedTable}
-                    </Header>
-                  }
-                />
+                      columnDefinitions={[
+                        {
+                          id: "name",
+                          header: "Column name",
+                          cell: (item) => <>{item.name || "-"}</>,
+                          sortingField: "name",
+                          isRowHeader: true,
+                          maxWidth: "30px",
+                        },
+
+                        {
+                          id: "description",
+                          header: "Description",
+                          cell: (item) => item.description || "-",
+                          hasDynamicContent: true,
+                          maxWidth: "100px",
+                        },
+                      ]}
+                      enableKeyboardNavigation
+                      // resizableColumns={true}
+                      // @ts-ignore
+                      items={tableData?.columns}
+                      loadingText="Loading resources"
+                      sortingDisabled
+                      empty={
+                        <Box
+                          margin={{ vertical: "xs" }}
+                          textAlign="center"
+                          color="inherit"
+                        >
+                          <SpaceBetween size="m">
+                            <b>No resources</b>
+                          </SpaceBetween>
+                        </Box>
+                      }
+                      header={
+                        <Header
+                          actions={
+                            <>
+                              <div className="back">
+                                {/* <Button
+                                  className="back-btn"
+                                  variant="primary"
+                                  onClick={() => {
+                                    navigate("/schema");
+                                  }}
+                                >
+                                  Go back
+                                </Button> */}
+                              </div>
+                            </>
+                          }
+                          className="p-0"
+                        >
+                          {" "}
+                          {selectedTable}
+                        </Header>
+                      }
+                    />
+                  </>
+                )}
               </div>
             </>
           )}

@@ -1,6 +1,8 @@
 services:
     website-backend:
-        image: ghcr.io/opengovernance-io/website-service:v0.0.9
+        build:
+          context: .
+          dockerfile: backend/Dockerfile
         container_name: website-service
         ports:
         - "8000:8000"
@@ -31,6 +33,15 @@ services:
         networks:
         - og-network
         restart: always
+    ui: #Define the client service so we can run it in an isolated environment.
+     stdin_open: true
+     container_name : ui
+     ports:
+        - "3000:3000"
+     build:
+       context: .
+       dockerfile: ui/Dockerfile #The client service requires a docker file to be specified. For development, we’re going to use the Dockerfile.dev file.
+  
 volumes:
     pgdata:
 
