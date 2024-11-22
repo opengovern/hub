@@ -12,7 +12,7 @@ services:
           - SCHEMA_POSTGRES__PORT=5432
           - SCHEMA_POSTGRES__DB=website
           - SCHEMA_POSTGRES__USERNAME=website
-          - SCHEMA_POSTGRES__PASSWORD=${PG_PASSWORD}
+          - SCHEMA_POSTGRES__PASSWORD=postgres
           - SCHEMA_POSTGRES_SSL_MODE=disable
         depends_on:
         - postgres
