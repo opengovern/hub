@@ -24,7 +24,8 @@ import { Integration } from "./types";
 import IntegrationCard from "../../components/IntegrationCard";
 import Pagination from "../../components/Pagination";
 import CustomPagination from "../../components/Pagination";
-import { Box, Cards, Link, SpaceBetween } from "@cloudscape-design/components";
+import { Box, Cards, Link, Modal, SpaceBetween } from "@cloudscape-design/components";
+import Cal from "@calcom/embed-react";
 
 export default function Schema() {
   const [integrations, setIntegrations] = useState<Integration[]>([]);
@@ -32,6 +33,8 @@ export default function Schema() {
   const [error, setError] = useState(null);
   const navigate = useNavigate();
   const [page, setPage] = useState(0);
+  const [open, setOpen] = useState(false);
+
   const getPolcies = () => {
     setLoading(true);
     axios
@@ -41,7 +44,7 @@ export default function Schema() {
       .then((res) => {
         if (res.data) {
             const arr =res.data
-            arr.sort(() => Math.random() - 0.5);
+            // arr.sort(() => Math.random() - 0.5);
           setIntegrations(arr);
         }
         setLoading(false);
@@ -225,29 +228,29 @@ export default function Schema() {
  
 
   return (
-    <div className="mx-auto pt-20 max-w-6xl">
-      
-      <div className="px-3">
-        <section
-          aria-labelledby="pricing-title"
-          className="animate-slide-up-fade"
-          style={{
-            animationDuration: "600ms",
-            animationFillMode: "backwards",
-          }}
-        >
-          <Badge>Schema</Badge>
-          <h1 className="mt-2 inline-block bg-gradient-to-br from-gray-900 to-gray-800 bg-clip-text py-2 text-4xl font-bold tracking-tighter text-transparent sm:text-4xl md:text-4xl dark:from-gray-50 dark:to-gray-300">
-            Our plans scale with you
-          </h1>
-          <p className=" mb-2  text-lg text-gray-700 dark:text-gray-400">
-            Plans that empower you and your team to ship without friction. Our
-            flexible pricing models ensure that efficiency doesn&rsquo;t come at
-            the cost of your budget.
-          </p>
-        </section>
-        <div className="flex gap-3 flex-col mt-5">
-          {/* {integrations &&
+    <>
+      <div className="mx-auto pt-20 max-w-6xl">
+        <div className="px-3">
+          <section
+            aria-labelledby="pricing-title"
+            className="animate-slide-up-fade"
+            style={{
+              animationDuration: "600ms",
+              animationFillMode: "backwards",
+            }}
+          >
+            <Badge>Schema</Badge>
+            <h1 className="mt-2 inline-block bg-gradient-to-br from-gray-900 to-gray-800 bg-clip-text py-2 text-4xl font-bold tracking-tighter text-transparent sm:text-4xl md:text-4xl dark:from-gray-50 dark:to-gray-300">
+              Our plans scale with you
+            </h1>
+            <p className=" mb-2  text-lg text-gray-700 dark:text-gray-400">
+              Plans that empower you and your team to ship without friction. Our
+              flexible pricing models ensure that efficiency doesn&rsquo;t come
+              at the cost of your budget.
+            </p>
+          </section>
+          <div className="flex gap-3 flex-col mt-5">
+            {/* {integrations &&
             integrations
               ?.slice(page * 10, (page + 1) * 10)
               ?.map((integration) => {
@@ -265,123 +268,137 @@ export default function Schema() {
                   </>
                 );
               })} */}
-          <Cards
-            ariaLabels={{
-              itemSelectionLabel: (e, t) => `select ${t.name}`,
-              selectionGroupLabel: "Item selection",
-            }}
-            onSelectionChange={({ detail }) => {
-              const item = detail?.selectedItems[0];
-              if (item.tier === "Community") {
-                                     navigate("/schema/" + item.schema_id);
+            <Cards
+              ariaLabels={{
+                itemSelectionLabel: (e, t) => `select ${t.name}`,
+                selectionGroupLabel: "Item selection",
+              }}
+              onSelectionChange={({ detail }) => {
+                const item = detail?.selectedItems[0];
+                if (item.tier === "Community" && item?.SourceCode !="") {
+                  navigate("/schema/" + item.schema_id);
+                } else {
+                  setOpen(true);
+                }
+                // setSelectedItems(detail?.selectedItems ?? []);
+              }}
+              selectedItems={[]}
+              cardDefinition={{
+                header: (item) => (
+                  <Link
+                    className="w-100"
+                    onClick={() => {
+                      if (item.tier === "Community") {
+                        navigate("/schema/" + item.schema_id);
+                      } else {
+                        // setOpen(true);
+                      }
+                    }}
+                  >
+                    <div className="w-100 flex flex-row justify-between">
+                      <span>{item.name}</span>
+                      <div className="flex flex-row gap-1 items-center">
+                        {GetTierIcon(item.tier)}
+                        {/* <span className="text-white">{item.tier}</span> */}
+                      </div>
+                    </div>
+                  </Link>
+                ),
+                sections: [
+                  {
+                    id: "logo",
 
-              } else {
-                // setOpen(true);
-              }
-              // setSelectedItems(detail?.selectedItems ?? []);
-            }}
-            selectedItems={[]}
-            cardDefinition={{
-              header: (item) => (
-                <Link
-                  className="w-100"
-                  onClick={() => {
-                    if (item.tier === "Community") {
-                      navigate("/schema/" + item.schema_id);
-                    } else {
-                      // setOpen(true);
-                    }
-                  }}
+                    content: (item) => (
+                      <div className="w-100 d-flex justify-content-start mt-1 ">
+                        <img
+                          className="w-[50px] h-[50px]"
+                          src={item.logo}
+                          alt="placeholder"
+                        />
+                      </div>
+                    ),
+                  },
+                  {
+                    id: "description",
+                    header: "Description",
+                    content: (item) => item.description,
+                  },
+                  // {
+                  //   id: "tier",
+                  //   header: "Tier",
+                  //   content: (item) => item.tier,
+                  //   width: 85,
+                  // },
+                  // {
+                  //   id: "tables",
+                  //   header: "Table",
+                  //   content: (item) => (item.count ? item.count : "--"),
+                  //   width: 15,
+                  // },
+                ],
+              }}
+              cardsPerRow={[
+                { cards: 1 },
+                { minWidth: 750, cards: 3 },
+                { minWidth: 680, cards: 2 },
+              ]}
+              items={integrations
+                ?.slice(page * 9, (page + 1) * 9)
+                .map((type) => {
+                  return {
+                    id: type.id,
+                    tier: type.tier,
+                    description: type.Description,
+                    name: type.name,
+                    count: 0,
+                    schema_id: type?.schema_ids[0],
+                    SourceCode: type.SourceCode,
+                    logo: `https://raw.githubusercontent.com/opengovern/website/main/connectors/icons/${type.Icon}`,
+                  };
+                })}
+              loadingText="Loading resources"
+              stickyHeader
+              entireCardClickable
+              variant="full-page"
+              selectionType="single"
+              trackBy="name"
+              empty={
+                <Box
+                  margin={{ vertical: "xs" }}
+                  textAlign="center"
+                  color="inherit"
                 >
-                  <div className="w-100 flex flex-row justify-between">
-                    <span>{item.name}</span>
-                    <div className="flex flex-row gap-1 items-center">
-                      {GetTierIcon(item.tier)}
-                      {/* <span className="text-white">{item.tier}</span> */}
-                    </div>
-                  </div>
-                </Link>
-              ),
-              sections: [
-                {
-                  id: "logo",
-
-                  content: (item) => (
-                    <div className="w-100 d-flex justify-content-start mt-1 ">
-                      <img
-                        className="w-[50px] h-[50px]"
-                        src={item.logo}
-                        alt="placeholder"
-                      />
-                    </div>
-                  ),
-                },
-                {
-                  id: "description",
-                  header: "Description",
-                  content: (item) => item.description,
-                },
-                // {
-                //   id: "tier",
-                //   header: "Tier",
-                //   content: (item) => item.tier,
-                //   width: 85,
-                // },
-                // {
-                //   id: "tables",
-                //   header: "Table",
-                //   content: (item) => (item.count ? item.count : "--"),
-                //   width: 15,
-                // },
-              ],
-            }}
-            cardsPerRow={[
-              { cards: 1 },
-              { minWidth: 750, cards: 3 },
-              { minWidth: 680, cards: 2 },
-            ]}
-            items={integrations
-              ?.slice(page * 9, (page + 1) * 9)
-              .map((type) => {
-                return {
-                  id: type.id,
-                  tier: type.tier,
-                  description: type.Description,
-                  name: type.name,
-                  count: 0,
-                  schema_id: type?.schema_ids[0],
-                  logo: `https://raw.githubusercontent.com/opengovern/website/main/connectors/icons/${type.Icon}`,
-                };
-              })}
-            loadingText="Loading resources"
-            stickyHeader
-            entireCardClickable
-            variant="full-page"
-            selectionType="single"
-            trackBy="name"
-            empty={
-              <Box
-                margin={{ vertical: "xs" }}
-                textAlign="center"
-                color="inherit"
-              >
-                <SpaceBetween size="m">
-                  <b>No resources</b>
-                </SpaceBetween>
-              </Box>
-            }
-          />
-        </div>
-        <div className="flex gap-3 flex-col mt-5">
-          <CustomPagination
-            page_size={9}
-            paginationCount={Math.ceil(integrations.length / 9)}
-            page={page}
-            setPage={setPage}
-            isZeroBased={true}
-          />
+                  <SpaceBetween size="m">
+                    <b>No resources</b>
+                  </SpaceBetween>
+                </Box>
+              }
+            />
+          </div>
+          <div className="flex gap-3 flex-row w-full justify-center mt-5">
+            <CustomPagination
+              page_size={9}
+              paginationCount={Math.ceil(integrations.length / 9)}
+              page={page}
+              setPage={setPage}
+              isZeroBased={true}
+            />
+          </div>
         </div>
       </div>
-    </div>
+      <Modal
+        header="Try enterprise Edition"
+        size="large"
+        visible={open}
+        onDismiss={() => setOpen(false)}
+      >
+        <Cal
+          namespace="try-enterprise"
+          calLink="team/opencomply/try-enterprise"
+          style={{ width: "100%", height: "100%", overflow: "scroll" }}
+          config={{ layout: "month_view" }}
+        />
+      </Modal>
+    </>
   );
 }

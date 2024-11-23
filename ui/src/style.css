@@ -1450,6 +1450,22 @@ select {
   max-height: max-content;
 }
 
+.max-h-\[61\.7dvh\] {
+  max-height: 61.7dvh;
+}
+
+.max-h-\[61\.7vh\] {
+  max-height: 61.7vh;
+}
+
+.max-h-\[62\] {
+  max-height: 62;
+}
+
+.max-h-\[62dvh\] {
+  max-height: 62dvh;
+}
+
 .min-h-\[550px\] {
   min-height: 550px;
 }

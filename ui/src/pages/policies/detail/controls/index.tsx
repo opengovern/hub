@@ -238,7 +238,7 @@ export default function Controls({
         const benchmark_id = flag ? id : benchmarkId
          axios
            .get(
-             `https://hub.opencomply.io/api/frameworks/${benchmark_id}/controls?per_page=10&cursor=1`
+             `http://localhost:8000/api/frameworks/${benchmark_id}/controls?per_page=10&cursor=1`
            )
            .then((res) => {
              if (res.data) {
@@ -255,7 +255,7 @@ export default function Controls({
        
     }
     const GetTree = () => {
-        const url = "https://hub.opencomply.io"
+        const url = "http://localhost:8000"
         axios
           .get(`${url}/api/frameworks/${benchmarkId}/tree`)
           .then((res) => {

@@ -29,7 +29,7 @@ export default function FrameworkDetail() {
    const getDetail= () => {
      setLoading(true);
      axios
-       .get(`https://hub.opencomply.io/api/frameworks/${framework_id}`)
+       .get(`http://localhost:8000/api/frameworks/${framework_id}`)
        .then((res) => {
          if (res.data) {
            setBenchmark(res.data);

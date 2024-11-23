@@ -20,12 +20,13 @@ import './style.css'
 import Card from "../../../components/Card";
 import { useNavigate, useParams } from "react-router-dom";
 import { TableDefinition, TypeTables } from "./types";
-import { SideNavigation, Table } from "@cloudscape-design/components";
+import {  SideNavigation, Table } from "@cloudscape-design/components";
 import Box from "@cloudscape-design/components/box";
 import SpaceBetween from "@cloudscape-design/components/space-between";
 import TextFilter from "@cloudscape-design/components/text-filter";
 import Header from "@cloudscape-design/components/header";
 import Pagination from "@cloudscape-design/components/pagination";
+import { Col, Grid } from "@tremor/react";
 
 export default function SchemaTables() {
 const {id}  = useParams();
@@ -100,82 +101,90 @@ const [tables,setTables]= useState<TypeTables>();
         <div className="flex gap-3 flex-col mt-5">
           {tables && (
             <>
-              <div className="flex flex-row gap-5 schema">
-                <SideNavigation
-                  className="text-white dark:bg-white dark:text-gray-900 rounded-xl max-w-[300px] max-h-[60dvh] "
-                  activeHref={selectedTable}
-                  header={{
-                    href: "1",
-                    text: `${id}`,
-                  }}
-                  onFollow={(event) => {
-                    if (!event.detail.external) {
-                      event.preventDefault();
-                      setSelectedTable(event.detail.href);
-                      getTableData(event.detail.href);
-                    }
-                  }}
-                  items={tables?.tables.map((table, index) => {
-                    return {
-                      type: "link",
-                      text: table.table_name,
-                      href: table.table_name,
-                    };
-                  })}
-                />
+              <Grid className="  gap-5 schema" numItems={12}>
+                <Col
+                  numColSpan={12}
+                  numColSpanSm={3}
+                  className=""
+                >
+                  <SideNavigation
+                    className="text-white dark:bg-white dark:text-gray-900 rounded-xl p-2 max-h-[62dvh]   "
+                    activeHref={selectedTable}
+                    header={{
+                      href: "1",
+                      text: `${id}`,
+                    }}
+                    onFollow={(event) => {
+                      if (!event.detail.external) {
+                        event.preventDefault();
+                        setSelectedTable(event.detail.href);
+                        getTableData(event.detail.href);
+                      }
+                    }}
+                    items={tables?.tables.map((table, index) => {
+                      return {
+                        type: "link",
+                        text: table.table_name,
+                        href: table.table_name,
+                      };
+                    })}
+                  />
+                </Col>
 
                 {tableData && (
                   <>
-                    <Table
-                      className="p-5 pt-0 overflow-y-scroll max-h-[60dvh]"
-                      renderAriaLive={({
-                        firstIndex,
-                        lastIndex,
-                        totalItemsCount,
-                      }) =>
-                        `Displaying items ${firstIndex} to ${lastIndex} of ${totalItemsCount}`
-                      }
-                      columnDefinitions={[
-                        {
-                          id: "name",
-                          header: "Column name",
-                          cell: (item) => <>{item.name || "-"}</>,
-                          sortingField: "name",
-                          isRowHeader: true,
-                          maxWidth: "30px",
-                        },
+                    <Col numColSpan={12} numColSpanSm={9} className=" ">
+                      <Table
+                        className="p-5 pt-2 "
+                        renderAriaLive={({
+                          firstIndex,
+                          lastIndex,
+                          totalItemsCount,
+                        }) =>
+                          `Displaying items ${firstIndex} to ${lastIndex} of ${totalItemsCount}`
+                        }
+                        columnDefinitions={[
+                          {
+                            id: "name",
+                            header: "Column name",
+                            cell: (item) => <>{item.name || "-"}</>,
+                            sortingField: "name",
+                            isRowHeader: true,
+                            maxWidth: "30px",
+                          },
 
-                        {
-                          id: "description",
-                          header: "Description",
-                          cell: (item) => item.description || "-",
-                          hasDynamicContent: true,
-                          maxWidth: "100px",
-                        },
-                      ]}
-                      enableKeyboardNavigation
-                      // resizableColumns={true}
-                      // @ts-ignore
-                      items={tableData?.columns}
-                      loadingText="Loading resources"
-                      sortingDisabled
-                      empty={
-                        <Box
-                          margin={{ vertical: "xs" }}
-                          textAlign="center"
-                          color="inherit"
-                        >
-                          <SpaceBetween size="m">
-                            <b>No resources</b>
-                          </SpaceBetween>
-                        </Box>
-                      }
-                      header={
-                        <Header
-                          actions={
-                            <>
-                              <div className="back">
-                                {/* <Button
+                          {
+                            id: "description",
+                            header: "Description",
+                            cell: (item) => item.description || "-",
+                            hasDynamicContent: true,
+                            maxWidth: "100px",
+                          },
+                        ]}
+                        enableKeyboardNavigation
+                        // resizableColumns={true}
+                        // @ts-ignore
+                        items={tableData?.columns}
+                        resizableColumns
+                        loadingText="Loading resources"
+                        sortingDisabled
+                        empty={
+                          <Box
+                            margin={{ vertical: "xs" }}
+                            textAlign="center"
+                            color="inherit"
+                          >
+                            <SpaceBetween size="m">
+                              <b>No resources</b>
+                            </SpaceBetween>
+                          </Box>
+                        }
+                        header={
+                          <Header
+                            actions={
+                              <>
+                                <div className="back">
+                                  {/* <Button
                                   className="back-btn"
                                   variant="primary"
                                   onClick={() => {
@@ -184,19 +193,20 @@ const [tables,setTables]= useState<TypeTables>();
                                 >
                                   Go back
                                 </Button> */}
-                              </div>
-                            </>
-                          }
-                          className="p-0"
-                        >
-                          {" "}
-                          {selectedTable}
-                        </Header>
-                      }
-                    />
+                                </div>
+                              </>
+                            }
+                            className="p-0"
+                          >
+                            {" "}
+                            {selectedTable}
+                          </Header>
+                        }
+                      />
+                    </Col>
                   </>
                 )}
-              </div>
+              </Grid>
             </>
           )}
         </div>

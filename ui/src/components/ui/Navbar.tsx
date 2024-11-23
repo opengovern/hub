@@ -145,7 +145,7 @@ export function Navigation() {
           <Button className="hidden h-10 font-semibold md:flex">
             Book a demo
           </Button>
-          <div className="flex gap-x-2 md:hidden">
+          <div className="flex gap-x-2 md:hidden dark:text-white">
             <Button>Book demo</Button>
             <Button
               onClick={() => setOpen(!open)}
@@ -168,22 +168,81 @@ export function Navigation() {
         >
           <ul className="space-y-4 font-medium">
             <li onClick={() => setOpen(false)}>
-              <a href={"/about"}>About</a>
-            </li>
-            <li onClick={() => setOpen(false)}>
-              <a href={"/price"}>Pricing</a>
-            </li>
-            <li onClick={() => setOpen(false)}>
-              <a href={"/change"}>Changelog</a>
-            </li>
-            <li onClick={() => setOpen(false)}>
-              <a href={"/Schema"}>Schema</a>
+              <a className="dark:text-white" href={"/Schema"}>
+                Schema
+              </a>
             </li>{" "}
             <li onClick={() => setOpen(false)}>
-              <a href={"/frameworks"}>Compliance</a>
+              <a className="dark:text-white" href={"/frameworks"}>
+                Compliance
+              </a>
             </li>
             <li onClick={() => setOpen(false)}>
-              <a href={"/frameworks"}>More</a>
+              <DropdownMenu>
+                <DropdownMenuTrigger asChild>
+                  <a
+                    className="px-2 py-1 flex flex-row items-center  gap-2 text-gray-900 dark:text-gray-50"
+                    href={"#"}
+                  >
+                    More
+                    <svg
+                      className="-mr-1 size-5 text-gray-400"
+                      viewBox="0 0 20 20"
+                      fill="white"
+                      aria-hidden="true"
+                      data-slot="icon"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                  </a>
+                </DropdownMenuTrigger>
+                <DropdownMenuContent>
+                  <DropdownMenuItem
+                    onClick={() => {
+                      navigate("/about");
+                    }}
+                  >
+                    {" "}
+                    <a
+                      className="px-2 py-1 text-gray-900 dark:text-gray-50"
+                      href={"/about"}
+                    >
+                      About
+                    </a>
+                  </DropdownMenuItem>
+                  <DropdownMenuSeparator />
+
+                  <DropdownMenuItem
+                    onClick={() => {
+                      navigate("/change");
+                    }}
+                  >
+                    <a
+                      className="px-2 py-1 text-gray-900 dark:text-gray-50"
+                      href={"/change"}
+                    >
+                      Changelog
+                    </a>
+                  </DropdownMenuItem>
+                  <DropdownMenuSeparator />
+                  <DropdownMenuItem
+                    onClick={() => {
+                      navigate("/pricing");
+                    }}
+                  >
+                    <a
+                      className="px-2 py-1 text-gray-900 dark:text-gray-50"
+                      href={"/pricing"}
+                    >
+                      Pricing
+                    </a>
+                  </DropdownMenuItem>
+                </DropdownMenuContent>
+              </DropdownMenu>
             </li>
           </ul>
         </nav>

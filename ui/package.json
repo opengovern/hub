@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@calcom/embed-react": "^1.5.1",
     "@cloudscape-design/components": "^3.0.836",
     "@cloudscape-design/global-styles": "^1.0.32",
     "@headlessui/tailwindcss": "^0.2.1",
