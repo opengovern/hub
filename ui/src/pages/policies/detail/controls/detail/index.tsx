@@ -113,7 +113,7 @@ export default function ControlDetail() {
   const getDetail = () => {
     setLoading(true);
     axios
-      .get(`http://localhost:8000/api/controls/${id}`)
+      .get(`https://hub.opencomply.io/api/controls/${id}`)
       .then((res) => {
         if (res.data) {
           setControl(res.data);

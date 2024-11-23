@@ -31,7 +31,7 @@ export default function Policies() {
   const getPolcies = () => {
     setLoading(true);
     axios
-      .get(`http://localhost:8000/api/frameworks?per_page=10&cursor=${page}`)
+      .get(`https://hub.opencomply.io/api/frameworks?per_page=10&cursor=${page}`)
       .then((res) => {
         if (res.data) {
           setBenchmarks(res.data.frameworks);
