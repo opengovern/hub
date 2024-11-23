@@ -1,6 +1,8 @@
 package db
 
 import (
+	"sort"
+
 	"github.com/opengovern/website/db/models"
 	"gorm.io/gorm"
 	"gorm.io/gorm/clause"
@@ -167,7 +169,9 @@ func (db Database) ListRootBenchmarksWithSubtreeControls() ([]models.Benchmark, 
 		}
 		benchmarks = append(benchmarks, b)
 	}
-
+	sort.Slice(benchmarks, func(i, j int) bool {
+		return len(benchmarks[i].Controls) > len(benchmarks[j].Controls)
+	})
 	return benchmarks, nil
 }
 
