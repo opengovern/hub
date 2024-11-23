@@ -358,7 +358,6 @@ export default function Controls({
       <Grid numItems={12} className="gap-4 mt-4 ">
         <Col numColSpan={12}>
           <BreadcrumbGroup
-            
             onClick={(event) => {
               event.preventDefault();
               setSelected(event.detail.href);
@@ -369,7 +368,7 @@ export default function Controls({
           />
         </Col>
         {tree && tree.length > 0 && (
-          <Col numColSpan={3}>
+          <Col numColSpan={12} numColSpanSm={3}>
             <Flex
               className="bg-white  w-full border-solid border-2 h-[550px]  p-2   rounded-xl gap-1 "
               flexDirection="col"
@@ -433,7 +432,7 @@ export default function Controls({
             </Flex>
           </Col>
         )}
-        <Col numColSpan={tree && tree.length > 0 ? 9 : 12}>
+        <Col numColSpanSm={tree && tree.length > 0 ? 9 : 12} numColSpan={12}>
           {" "}
           <Flex className="flex flex-col  min-h-[550px] ">
             <Table
@@ -448,6 +447,7 @@ export default function Controls({
               }}
               sortingColumn={sort}
               sortingDescending={sortOrder}
+              // resizableColumns
               // sortingDescending={sortOrder == 'desc' ? true : false}
               columnDefinitions={[
                 {
@@ -463,7 +463,6 @@ export default function Controls({
                   cell: (item) => (
                     <Link
                       href={`/controls/${id}/${item.id}`}
-                     
 
                       // onClick={() => {
                       //     navigateToInsightsDetails(item.id)
@@ -474,7 +473,8 @@ export default function Controls({
                   ),
                   sortingField: "title",
                   // minWidth: 400,
-                  maxWidth: 200,
+                  minWidth: "320px",
+                  maxWidth: "320px",
                 },
                 {
                   id: "connector",
@@ -499,7 +499,9 @@ export default function Controls({
                         item.severity.slice(1)}
                     </Badge>
                   ),
-                  maxWidth: 100,
+
+                  minWidth: "120px",
+                  maxWidth: "120px",
                 },
                 {
                   id: "query.parameters",

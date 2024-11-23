@@ -26,12 +26,12 @@ export default function Policies() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   const navigate = useNavigate();
-  const [page, setPage] = useState(0);
+  const [page, setPage] = useState(1);
   const [total, setTotal] = useState(0);
   const getPolcies = () => {
     setLoading(true);
     axios
-      .get(`http://localhost:8000/api/frameworks?per_page=10&cursor=${page+1}`)
+      .get(`http://localhost:8000/api/frameworks?per_page=10&cursor=${page}`)
       .then((res) => {
         if (res.data) {
           setBenchmarks(res.data.frameworks);
@@ -88,7 +88,7 @@ export default function Policies() {
               );
             })}
         </div>
-        <div className="mt-5">
+        <div className="mt-5 flex flex-row w-full justify-center">
           <Pagination
             page_size={10}
             paginationCount={Math.ceil(total / 10)}
