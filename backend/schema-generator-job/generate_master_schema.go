@@ -11,7 +11,7 @@ import (
 )
 
 // GenerateMasterSchema generates the master schema from all provider JSON files.
-func GenerateMasterSchema(jsonDir string, outputFile string) error {
+func GenerateMasterSchema(jsonDir string, outputFile string,integrations *[]Integration) error {
 	// Initialize the output structure
 	output := OutputStructure{
 		Total:   TotalInfo{Integration: 0, CountOfNamedTables: 0, CountOfNamedColumns: 0},
@@ -98,13 +98,23 @@ func GenerateMasterSchema(jsonDir string, outputFile string) error {
 		separateOutput.CountOfNamedTables = tableInfos.CountOfNamedTables
 		separateOutput.CountOfNamedColumns = tableInfos.CountOfNamedColumns
 		separateOutput.Tables = output.Details[groupName]
+		// find the integration in integrations
+		for _, integration := range *integrations {
+			if integration.ID == 0 {
+				continue
+			}
+			if strings.ToLower(integration.Name) == strings.ToLower(groupName) {
+				separateOutput.Description = integration.Description
+				break
+			}
+		}
 		// Marshal the output structure into JSON with indentation
 		outputData, err := json.MarshalIndent(separateOutput, "", "  ")
 		if err != nil {
 			return fmt.Errorf("error marshalling result to JSON: %v", err)
 		}
 		// Write the output JSON to a file
-		file_path := filepath.Join("json", groupName+".json")
+		file_path := filepath.Join(jsonDir, groupName+".json")
 		err = os.WriteFile(file_path, outputData, 0644)
 		if err != nil {
 			return fmt.Errorf("error writing output to '%s': %v", outputFile, err)

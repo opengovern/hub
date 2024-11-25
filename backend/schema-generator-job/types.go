@@ -74,4 +74,5 @@ type SeperateOutputStructure struct{
 	CountOfNamedTables int 	`json:"count_of_named_tables"`
 	CountOfNamedColumns int 	`json:"count_of_named_columns"`
 	Tables []TableInfo 		`json:"tables"`
+	Description string 		`json:"description"`
 }

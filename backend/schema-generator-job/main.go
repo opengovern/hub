@@ -30,6 +30,8 @@ func main() {
 	generateMasterSchemaStep := &GenerateMasterSchemaStep{
 		jsonDir:    "../../schemas",
 		outputFile: filepath.Join("../../schemas", "schema.json"),
+		integrations: readIntegrationDefinitionStep.integrations,
+
 	}
 
 	// Define the cleanup step, passing the shared clonedDirs

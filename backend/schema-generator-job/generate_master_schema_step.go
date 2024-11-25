@@ -10,12 +10,13 @@ import (
 type GenerateMasterSchemaStep struct {
 	jsonDir    string // Directory where provider JSONs are stored, e.g., "json"
 	outputFile string // Output master schema file, e.g., "json/schema.json"
+	integrations *[]Integration // Pointer to the shared integrations slice
 }
 
 // Do performs the step of generating the master schema.
 func (s *GenerateMasterSchemaStep) Do(ctx context.Context) error {
 	log.Printf("Generating master schema from '%s'...", s.jsonDir)
-	err := GenerateMasterSchema(s.jsonDir, s.outputFile)
+	err := GenerateMasterSchema(s.jsonDir, s.outputFile,s.integrations)
 	if err != nil {
 		return fmt.Errorf("error generating master schema: %v", err)
 	}
