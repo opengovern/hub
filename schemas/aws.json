@@ -2397,5 +2397,6 @@
       "description": "AWS Workspaces",
       "count_of_columns": 19
     }
-  ]
+  ],
+  "description": "Gain visibility into Repos, Deployments, PRs."
 }

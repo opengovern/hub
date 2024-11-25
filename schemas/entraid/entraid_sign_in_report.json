@@ -1,0 +1,131 @@
+{
+  "table_name": "entraid_sign_in_report",
+  "table_description": "Represents an Azure Active Directory (Azure AD) sign-in report.",
+  "columns": [
+    {
+      "name": "id",
+      "type": "text",
+      "description": "Unique ID representing the sign-in activity."
+    },
+    {
+      "name": "created_date_time",
+      "type": "timestamp with time zone",
+      "description": "Date and time (UTC) the sign-in was initiated."
+    },
+    {
+      "name": "user_display_name",
+      "type": "text",
+      "description": "Display name of the user that initiated the sign-in."
+    },
+    {
+      "name": "user_principal_name",
+      "type": "text",
+      "description": "User principal name of the user that initiated the sign-in."
+    },
+    {
+      "name": "user_id",
+      "type": "text",
+      "description": "ID of the user that initiated the sign-in."
+    },
+    {
+      "name": "app_id",
+      "type": "text",
+      "description": "Unique GUID representing the app ID in the Azure Active Directory."
+    },
+    {
+      "name": "app_display_name",
+      "type": "text",
+      "description": "App name displayed in the Azure Portal."
+    },
+    {
+      "name": "ip_address",
+      "type": "text",
+      "description": "IP address of the client used to sign in."
+    },
+    {
+      "name": "client_app_used",
+      "type": "text",
+      "description": "Identifies the legacy client used for sign-in activity."
+    },
+    {
+      "name": "correlation_id",
+      "type": "text",
+      "description": "The request ID sent from the client when the sign-in is initiated; used to troubleshoot sign-in activity."
+    },
+    {
+      "name": "conditional_access_status",
+      "type": "text",
+      "description": "Reports status of an activated conditional access policy. Possible values are: success, failure, notApplied, and unknownFutureValue."
+    },
+    {
+      "name": "is_interactive",
+      "type": "boolean",
+      "description": "Indicates if a sign-in is interactive or not."
+    },
+    {
+      "name": "risk_detail",
+      "type": "text",
+      "description": "Provides the 'reason' behind a specific state of a risky user, sign-in or a risk event. The possible values are: none, adminGeneratedTemporaryPassword, userPerformedSecuredPasswordChange, userPerformedSecuredPasswordReset, adminConfirmedSigninSafe, aiConfirmedSigninSafe, userPassedMFADrivenByRiskBasedPolicy, adminDismissedAllRiskForUser, adminConfirmedSigninCompromised, unknownFutureValue."
+    },
+    {
+      "name": "risk_level_aggregated",
+      "type": "text",
+      "description": "Aggregated risk level. The possible values are: none, low, medium, high, hidden, and unknownFutureValue."
+    },
+    {
+      "name": "risk_level_during_sign_in",
+      "type": "text",
+      "description": "Risk level during sign-in. The possible values are: none, low, medium, high, hidden, and unknownFutureValue."
+    },
+    {
+      "name": "risk_state",
+      "type": "text",
+      "description": "Reports status of the risky user, sign-in, or a risk event. The possible values are: none, confirmedSafe, remediated, dismissed, atRisk, confirmedCompromised, unknownFutureValue."
+    },
+    {
+      "name": "resource_display_name",
+      "type": "text",
+      "description": "Name of the resource the user signed into."
+    },
+    {
+      "name": "resource_id",
+      "type": "text",
+      "description": "ID of the resource that the user signed into."
+    },
+    {
+      "name": "risk_event_types",
+      "type": "json",
+      "description": "Risk event types associated with the sign-in. The possible values are: unlikelyTravel, anonymizedIPAddress, maliciousIPAddress, unfamiliarFeatures, malwareInfectedIPAddress, suspiciousIPAddress, leakedCredentials, investigationsThreatIntelligence, generic, and unknownFutureValue."
+    },
+    {
+      "name": "status",
+      "type": "json",
+      "description": "Sign-in status. Includes the error code and description of the error (in case of a sign-in failure)."
+    },
+    {
+      "name": "device_detail",
+      "type": "json",
+      "description": "Device information from where the sign-in occurred; includes device ID, operating system, and browser."
+    },
+    {
+      "name": "location",
+      "type": "json",
+      "description": "Provides the city, state, and country code where the sign-in originated."
+    },
+    {
+      "name": "applied_conditional_access_policies",
+      "type": "json",
+      "description": "Provides a list of conditional access policies that are triggered by the corresponding sign-in activity."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": "ColumnDescriptionTitle"
+    },
+    {
+      "name": "tenant_id",
+      "type": "text",
+      "description": "ColumnDescriptionTenant"
+    }
+  ]
+}

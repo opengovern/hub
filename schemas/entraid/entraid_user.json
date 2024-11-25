@@ -1,0 +1,101 @@
+{
+  "table_name": "entraid_user",
+  "table_description": "Represents an Azure AD user account.",
+  "columns": [
+    {
+      "name": "display_name",
+      "type": "text",
+      "description": "The name displayed in the address book for the user. This is usually the combination of the user's first name, middle initial and last name."
+    },
+    {
+      "name": "id",
+      "type": "text",
+      "description": "The unique identifier for the user. Should be treated as an opaque identifier."
+    },
+    {
+      "name": "user_principal_name",
+      "type": "text",
+      "description": "Principal email of the active directory user."
+    },
+    {
+      "name": "account_enabled",
+      "type": "boolean",
+      "description": "True if the account is enabled; otherwise, false."
+    },
+    {
+      "name": "created_date_time",
+      "type": "timestamp with time zone",
+      "description": "The time at which the user was created."
+    },
+    {
+      "name": "last_sign_in_date_time",
+      "type": "timestamp with time zone",
+      "description": "The time at which the user was last signed in."
+    },
+    {
+      "name": "user_type",
+      "type": "text",
+      "description": "A string value that can be used to classify user types in your directory."
+    },
+    {
+      "name": "mail",
+      "type": "text",
+      "description": "The SMTP address for the user, for example, jeff@contoso.onmicrosoft.com."
+    },
+    {
+      "name": "job_title",
+      "type": "text",
+      "description": "The user job title."
+    },
+    {
+      "name": "identities",
+      "type": "json",
+      "description": "User identities"
+    },
+    {
+      "name": "password_policies",
+      "type": "text",
+      "description": "Specifies password policies for the user. This value is an enumeration with one possible value being DisableStrongPassword, which allows weaker passwords than the default policy to be specified. DisablePasswordExpiration can also be specified. The two may be specified together; for example: DisablePasswordExpiration, DisableStrongPassword."
+    },
+    {
+      "name": "sign_in_sessions_valid_from_date_time",
+      "type": "timestamp with time zone",
+      "description": "Any refresh tokens or sessions tokens (session cookies) issued before this time are invalid, and applications will get an error when using an invalid refresh or sessions token to acquire a delegated access token (to access APIs such as Microsoft Graph)."
+    },
+    {
+      "name": "usage_location",
+      "type": "text",
+      "description": "A two letter country code (ISO standard 3166), required for users that will be assigned licenses due to legal requirement to check for availability of services in countries."
+    },
+    {
+      "name": "im_addresses",
+      "type": "json",
+      "description": "The instant message voice over IP (VOIP) session initiation protocol (SIP) addresses for the user."
+    },
+    {
+      "name": "other_mails",
+      "type": "json",
+      "description": "A list of additional email addresses for the user."
+    },
+    {
+      "name": "tenant_id",
+      "type": "text",
+      "description": "ColumnDescriptionTenant"
+    },
+    {
+      "name": "metadata",
+      "type": "text",
+      "description": "Metadata of the Azure resource"
+    },
+    {
+      "name": "og_account_id",
+      "type": "text",
+      "description": "The Platform Account ID in which the resource is located."
+    },
+    {
+      "name": "og_resource_id",
+      "type": "text",
+      "description": "The unique ID of the resource in opengovernance."
+    }
+  ]
+}

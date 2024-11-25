@@ -1,0 +1,116 @@
+{
+  "table_name": "entraid_app_registration",
+  "table_description": "Represents an Azure Active Directory (Azure AD) service principal.",
+  "columns": [
+    {
+      "name": "display_name",
+      "type": "text",
+      "description": "The display name for the application."
+    },
+    {
+      "name": "id",
+      "type": "text",
+      "description": "The unique identifier for the application."
+    },
+    {
+      "name": "app_id",
+      "type": "text",
+      "description": "The unique identifier for the application that is assigned to an application by Azure AD."
+    },
+    {
+      "name": "created_date_time",
+      "type": "timestamp with time zone",
+      "description": "The date and time the application was registered. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time."
+    },
+    {
+      "name": "description",
+      "type": "text",
+      "description": "Free text field to provide a description of the application object to end users."
+    },
+    {
+      "name": "is_authorization_service_enabled",
+      "type": "boolean",
+      "description": "Is authorization service enabled."
+    },
+    {
+      "name": "oauth2_require_post_response",
+      "type": "boolean",
+      "description": "Specifies whether, as part of OAuth 2.0 token requests, Azure AD allows POST requests, as opposed to GET requests. The default is false, which specifies that only GET requests are allowed."
+    },
+    {
+      "name": "publisher_domain",
+      "type": "text",
+      "description": "The verified publisher domain for the application."
+    },
+    {
+      "name": "sign_in_audience",
+      "type": "text",
+      "description": "Specifies the Microsoft accounts that are supported for the current application."
+    },
+    {
+      "name": "api",
+      "type": "json",
+      "description": "Specifies settings for an application that implements a web API."
+    },
+    {
+      "name": "identifier_uris",
+      "type": "json",
+      "description": "The URIs that identify the application within its Azure AD tenant, or within a verified custom domain if the application is multi-tenant."
+    },
+    {
+      "name": "info",
+      "type": "json",
+      "description": "Basic profile information of the application such as app's marketing, support, terms of service and privacy statement URLs. The terms of service and privacy statement are surfaced to users through the user consent experience."
+    },
+    {
+      "name": "key_credentials",
+      "type": "json",
+      "description": "The collection of key credentials associated with the application."
+    },
+    {
+      "name": "owner_ids",
+      "type": "json",
+      "description": "Id of the owners of the application. The owners are a set of non-admin users who are allowed to modify this object."
+    },
+    {
+      "name": "parental_control_settings",
+      "type": "json",
+      "description": "Specifies parental control settings for an application."
+    },
+    {
+      "name": "password_credentials",
+      "type": "json",
+      "description": "The collection of password credentials associated with the application."
+    },
+    {
+      "name": "spa",
+      "type": "json",
+      "description": "Specifies settings for a single-page application, including sign out URLs and redirect URIs for authorization codes and access tokens."
+    },
+    {
+      "name": "tags_src",
+      "type": "json",
+      "description": "Custom strings that can be used to categorize and identify the application."
+    },
+    {
+      "name": "web",
+      "type": "json",
+      "description": "Specifies settings for a web application."
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": "ColumnDescriptionTags"
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": "ColumnDescriptionTitle"
+    },
+    {
+      "name": "tenant_id",
+      "type": "text",
+      "description": "ColumnDescriptionTenant"
+    }
+  ]
+}

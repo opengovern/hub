@@ -1,0 +1,161 @@
+{
+  "table_name": "entraid_service_principal",
+  "table_description": "Represents an Azure Active Directory (Azure AD) service principal.",
+  "columns": [
+    {
+      "name": "id",
+      "type": "text",
+      "description": "The unique identifier for the service principal."
+    },
+    {
+      "name": "display_name",
+      "type": "text",
+      "description": "The display name for the service principal."
+    },
+    {
+      "name": "app_id",
+      "type": "text",
+      "description": "The unique identifier for the associated application (its appId property)."
+    },
+    {
+      "name": "account_enabled",
+      "type": "boolean",
+      "description": "true if the service principal account is enabled; otherwise, false."
+    },
+    {
+      "name": "app_display_name",
+      "type": "text",
+      "description": "The display name exposed by the associated application."
+    },
+    {
+      "name": "app_owner_organization_id",
+      "type": "text",
+      "description": "Contains the tenant id where the application is registered. This is applicable only to service principals backed by applications."
+    },
+    {
+      "name": "app_role_assignment_required",
+      "type": "boolean",
+      "description": "Specifies whether users or other service principals need to be granted an app role assignment for this service principal before users can sign in or apps can get tokens. The default value is false."
+    },
+    {
+      "name": "service_principal_type",
+      "type": "text",
+      "description": "Identifies whether the service principal represents an application, a managed identity, or a legacy application. This is set by Azure AD internally."
+    },
+    {
+      "name": "sign_in_audience",
+      "type": "text",
+      "description": "Specifies the Microsoft accounts that are supported for the current application. Supported values are: AzureADMyOrg, AzureADMultipleOrgs, AzureADandPersonalMicrosoftAccount, PersonalMicrosoftAccount."
+    },
+    {
+      "name": "app_description",
+      "type": "text",
+      "description": "The description exposed by the associated application."
+    },
+    {
+      "name": "description",
+      "type": "text",
+      "description": "Free text field to provide an internal end-user facing description of the service principal."
+    },
+    {
+      "name": "login_url",
+      "type": "text",
+      "description": "Specifies the URL where the service provider redirects the user to Azure AD to authenticate. Azure AD uses the URL to launch the application from Microsoft 365 or the Azure AD My Apps. When blank, Azure AD performs IdP-initiated sign-on for applications configured with SAML-based single sign-on."
+    },
+    {
+      "name": "logout_url",
+      "type": "text",
+      "description": "Specifies the URL that will be used by Microsoft's authorization service to logout an user using OpenId Connect front-channel, back-channel or SAML logout protocols."
+    },
+    {
+      "name": "add_ins",
+      "type": "json",
+      "description": "Defines custom behavior that a consuming service can use to call an app in specific contexts."
+    },
+    {
+      "name": "alternative_names",
+      "type": "json",
+      "description": "Used to retrieve service principals by subscription, identify resource group and full resource ids for managed identities."
+    },
+    {
+      "name": "app_roles",
+      "type": "json",
+      "description": "The roles exposed by the application which this service principal represents."
+    },
+    {
+      "name": "info",
+      "type": "json",
+      "description": "Basic profile information of the acquired application such as app's marketing, support, terms of service and privacy statement URLs."
+    },
+    {
+      "name": "key_credentials",
+      "type": "json",
+      "description": "The collection of key credentials associated with the service principal."
+    },
+    {
+      "name": "notification_email_addresses",
+      "type": "json",
+      "description": "Specifies the list of email addresses where Azure AD sends a notification when the active certificate is near the expiration date. This is only for the certificates used to sign the SAML token issued for Azure AD Gallery applications."
+    },
+    {
+      "name": "owner_ids",
+      "type": "json",
+      "description": "Id of the owners of the application. The owners are a set of non-admin users who are allowed to modify this object."
+    },
+    {
+      "name": "password_credentials",
+      "type": "json",
+      "description": "Represents a password credential associated with a service principal."
+    },
+    {
+      "name": "oauth2_permission_scopes",
+      "type": "json",
+      "description": "The published permission scopes."
+    },
+    {
+      "name": "reply_urls",
+      "type": "json",
+      "description": "The URLs that user tokens are sent to for sign in with the associated application, or the redirect URIs that OAuth 2.0 authorization codes and access tokens are sent to for the associated application."
+    },
+    {
+      "name": "service_principal_names",
+      "type": "json",
+      "description": "Contains the list of identifiersUris, copied over from the associated application. Additional values can be added to hybrid applications. These values can be used to identify the permissions exposed by this app within Azure AD."
+    },
+    {
+      "name": "tags_src",
+      "type": "json",
+      "description": "Custom strings that can be used to categorize and identify the service principal."
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": "ColumnDescriptionTags"
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": "ColumnDescriptionTitle"
+    },
+    {
+      "name": "tenant_id",
+      "type": "text",
+      "description": "ColumnDescriptionTenant"
+    },
+    {
+      "name": "metadata",
+      "type": "text",
+      "description": "Metadata of the Azure resource"
+    },
+    {
+      "name": "og_account_id",
+      "type": "text",
+      "description": "The Platform Account ID in which the resource is located."
+    },
+    {
+      "name": "og_resource_id",
+      "type": "text",
+      "description": "The unique ID of the resource in opengovernance."
+    }
+  ]
+}

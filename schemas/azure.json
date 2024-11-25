@@ -1042,5 +1042,6 @@
       "description": "Azure Web ServerFarms",
       "count_of_columns": 4
     }
-  ]
+  ],
+  "description": "Gain visibility into Repos, Deployments, PRs."
 }

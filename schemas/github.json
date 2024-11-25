@@ -192,5 +192,6 @@
       "description": "GitHub Workflows bundle project files for download by users.",
       "count_of_columns": 14
     }
-  ]
+  ],
+  "description": "Gain visibility into Repos, Deployments, PRs."
 }

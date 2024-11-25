@@ -1,0 +1,81 @@
+{
+  "table_name": "entraid_group_membership",
+  "table_description": "Represents an Azure AD group membership.",
+  "columns": [
+    {
+      "name": "display_name",
+      "type": "text",
+      "description": "The name displayed in the address book for the user. This is usually the combination of the user's first name, middle initial and last name."
+    },
+    {
+      "name": "id",
+      "type": "text",
+      "description": "The unique identifier for the user."
+    },
+    {
+      "name": "group_id",
+      "type": "text",
+      "description": "The group id."
+    },
+    {
+      "name": "account_enabled",
+      "type": "boolean",
+      "description": "is the account enabled or not"
+    },
+    {
+      "name": "user_principal_name",
+      "type": "text",
+      "description": "user principal name."
+    },
+    {
+      "name": "user_type",
+      "type": "text",
+      "description": "user type."
+    },
+    {
+      "name": "state",
+      "type": "text",
+      "description": "state."
+    },
+    {
+      "name": "security_identifier",
+      "type": "text",
+      "description": "state."
+    },
+    {
+      "name": "proxy_addresses",
+      "type": "text",
+      "description": "user proxy addresses."
+    },
+    {
+      "name": "mail",
+      "type": "text",
+      "description": "user email."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": "ColumnDescriptionTitle"
+    },
+    {
+      "name": "tenant_id",
+      "type": "text",
+      "description": "ColumnDescriptionTenant"
+    },
+    {
+      "name": "metadata",
+      "type": "text",
+      "description": "Metadata of the Azure resource"
+    },
+    {
+      "name": "og_account_id",
+      "type": "text",
+      "description": "The Platform Account ID in which the resource is located."
+    },
+    {
+      "name": "og_resource_id",
+      "type": "text",
+      "description": "The unique ID of the resource in opengovernance."
+    }
+  ]
+}

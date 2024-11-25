@@ -1,0 +1,46 @@
+{
+  "table_name": "entraid_admin_consent_request_policy",
+  "table_description": "Represents the policy for enabling or disabling the Azure AD admin consent workflow.",
+  "columns": [
+    {
+      "name": "is_enabled",
+      "type": "boolean",
+      "description": "Specifies whether the admin consent request feature is enabled or disabled."
+    },
+    {
+      "name": "notify_reviewers",
+      "type": "boolean",
+      "description": "Specifies whether reviewers will receive notifications."
+    },
+    {
+      "name": "reminders_enabled",
+      "type": "boolean",
+      "description": "Specifies whether reviewers will receive reminder emails."
+    },
+    {
+      "name": "request_duration_in_days",
+      "type": "integer",
+      "description": "Specifies the duration the request is active before it automatically expires if no decision is applied."
+    },
+    {
+      "name": "version",
+      "type": "integer",
+      "description": "Specifies the version of this policy. When the policy is updated, this version is updated."
+    },
+    {
+      "name": "reviewers",
+      "type": "json",
+      "description": "The list of reviewers for the admin consent."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": "ColumnDescriptionTitle"
+    },
+    {
+      "name": "tenant_id",
+      "type": "text",
+      "description": "ColumnDescriptionTenant"
+    }
+  ]
+}

@@ -1,0 +1,96 @@
+{
+  "table_name": "entraid_user_registration_details",
+  "table_description": "Represents an Azure AD user registration details.",
+  "columns": [
+    {
+      "name": "id",
+      "type": "text",
+      "description": "The unique identifier for the user. Should be treated as an opaque identifier."
+    },
+    {
+      "name": "user_display_name",
+      "type": "text",
+      "description": "User Display name."
+    },
+    {
+      "name": "user_principal_name",
+      "type": "text",
+      "description": "User Principal name."
+    },
+    {
+      "name": "user_type",
+      "type": "text",
+      "description": "User Type."
+    },
+    {
+      "name": "system_preferred_authentication_methods",
+      "type": "json",
+      "description": "SystemPreferredAuthenticationMethods"
+    },
+    {
+      "name": "is_system_preferred_authentication_method_enabled",
+      "type": "boolean",
+      "description": "IsSystemPreferredAuthenticationMethodEnabled"
+    },
+    {
+      "name": "is_admin",
+      "type": "boolean",
+      "description": "Whether the user is admin or not."
+    },
+    {
+      "name": "is_mfa_capable",
+      "type": "boolean",
+      "description": "IsMfaCapable"
+    },
+    {
+      "name": "is_mfa_registered",
+      "type": "boolean",
+      "description": "IsMfaRegistered"
+    },
+    {
+      "name": "is_sspr_capable",
+      "type": "boolean",
+      "description": "IsSsprCapable"
+    },
+    {
+      "name": "is_sspr_registered",
+      "type": "boolean",
+      "description": "IsSsprRegistered"
+    },
+    {
+      "name": "is_sspr_enabled",
+      "type": "boolean",
+      "description": "IsSsprEnabled"
+    },
+    {
+      "name": "is_passwordless_capable",
+      "type": "boolean",
+      "description": "IsPasswordlessCapable"
+    },
+    {
+      "name": "last_updated_date_time",
+      "type": "timestamp with time zone",
+      "description": "LastUpdatedDateTime"
+    },
+    {
+      "name": "methods_registered",
+      "type": "json",
+      "description": "MethodsRegistered"
+    },
+    {
+      "name": "user_preferred_method_for_secondary_authentication",
+      "type": "text",
+      "description": "UserPreferredMethodForSecondaryAuthentication"
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": "ColumnDescriptionTitle"
+    },
+    {
+      "name": "tenant_id",
+      "type": "text",
+      "description": "ColumnDescriptionTenant"
+    }
+  ]
+}

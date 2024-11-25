@@ -122,5 +122,6 @@
       "description": "VPCs (virtual private clouds) are virtual networks containing resources that can communicate with each other in full isolation using private IP addresses.",
       "count_of_columns": 10
     }
-  ]
+  ],
+  "description": "Manage DigitalOcean resources and droplets."
 }

@@ -1,0 +1,91 @@
+{
+  "table_name": "entraid_device",
+  "table_description": "Represents an Azure AD device.",
+  "columns": [
+    {
+      "name": "id",
+      "type": "text",
+      "description": "The unique identifier for the device. Inherited from directoryObject."
+    },
+    {
+      "name": "display_name",
+      "type": "text",
+      "description": "The name displayed for the device."
+    },
+    {
+      "name": "account_enabled",
+      "type": "boolean",
+      "description": "True if the account is enabled; otherwise, false."
+    },
+    {
+      "name": "device_id",
+      "type": "text",
+      "description": "Unique identifier set by Azure Device Registration Service at the time of registration."
+    },
+    {
+      "name": "approximate_last_sign_in_date_time",
+      "type": "timestamp with time zone",
+      "description": "The timestamp type represents date and time information using ISO 8601 format and is always in UTC time."
+    },
+    {
+      "name": "filter",
+      "type": "text",
+      "description": "Odata query to search for resources."
+    },
+    {
+      "name": "is_compliant",
+      "type": "boolean",
+      "description": "True if the device is compliant; otherwise, false."
+    },
+    {
+      "name": "is_managed",
+      "type": "boolean",
+      "description": "True if the device is managed; otherwise, false."
+    },
+    {
+      "name": "mdm_app_id",
+      "type": "text",
+      "description": "Application identifier used to register device into MDM."
+    },
+    {
+      "name": "operating_system",
+      "type": "text",
+      "description": "The type of operating system on the device."
+    },
+    {
+      "name": "operating_system_version",
+      "type": "text",
+      "description": "The version of the operating system on the device."
+    },
+    {
+      "name": "profile_type",
+      "type": "text",
+      "description": "A string value that can be used to classify device types."
+    },
+    {
+      "name": "trust_type",
+      "type": "text",
+      "description": "Type of trust for the joined device. Possible values: Workplace (indicates bring your own personal devices), AzureAd (Cloud only joined devices), ServerAd (on-premises domain joined devices joined to Azure AD)."
+    },
+    {
+      "name": "extension_attributes",
+      "type": "json",
+      "description": "Contains extension attributes 1-15 for the device. The individual extension attributes are not selectable. These properties are mastered in cloud and can be set during creation or update of a device object in Azure AD."
+    },
+    {
+      "name": "member_of",
+      "type": "json",
+      "description": "A list the groups and directory roles that the device is a direct member of."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": "ColumnDescriptionTitle"
+    },
+    {
+      "name": "tenant_id",
+      "type": "text",
+      "description": "ColumnDescriptionTenant"
+    }
+  ]
+}
