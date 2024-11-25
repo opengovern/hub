@@ -20,7 +20,7 @@ import './style.css'
 import Card from "../../../components/Card";
 import { useNavigate, useParams } from "react-router-dom";
 import { TableDefinition, TypeTables } from "./types";
-import {  SideNavigation, Table } from "@cloudscape-design/components";
+import {  Select, SideNavigation, Table } from "@cloudscape-design/components";
 import Box from "@cloudscape-design/components/box";
 import SpaceBetween from "@cloudscape-design/components/space-between";
 import TextFilter from "@cloudscape-design/components/text-filter";
@@ -29,7 +29,7 @@ import Pagination from "@cloudscape-design/components/pagination";
 import { Col, Grid } from "@tremor/react";
 
 export default function SchemaTables() {
-const {id}  = useParams();
+const {id,table_id}  = useParams();
 const [tables,setTables]= useState<TypeTables>();
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -37,6 +37,7 @@ const [tables,setTables]= useState<TypeTables>();
   const [page, setPage] = useState(1);
   const [selectedTable, setSelectedTable] = useState("");
   const [tableData, setTableData] = useState<TableDefinition>();
+  const [selectedOption, setSelectedOption] = useState<any>([]);
   const getMasterSchema = () => {
     setLoading(true);
     axios
@@ -46,6 +47,12 @@ const [tables,setTables]= useState<TypeTables>();
       .then((res) => {
         if (res.data) {
           setTables(res.data);
+           if (res.data.tables && res.data.tables.length > 0) {
+             if (window.innerWidth > 768 && !table_id) {
+               setSelectedTable(res.data.tables[0].table_name);
+               getTableData(res.data.tables[0].table_name);
+             }
+           }
         }
         setLoading(false);
       })
@@ -63,6 +70,9 @@ const [tables,setTables]= useState<TypeTables>();
       .then((res) => {
         if (res.data) {
           setTableData(res.data);
+        
+
+         
         }
         setLoading(false);
       })
@@ -74,6 +84,14 @@ const [tables,setTables]= useState<TypeTables>();
 
   useEffect(() => {
     getMasterSchema();
+    if(table_id && table_id !== ""){
+      setSelectedTable(table_id)
+      getTableData(table_id)
+      setSelectedOption({
+        label: table_id,
+        value: table_id,
+      })
+    }
   }, []);
 
   return (
@@ -93,42 +111,62 @@ const [tables,setTables]= useState<TypeTables>();
             {tables && <>({tables?.count_of_named_tables})</>}
           </h1>
           <p className=" mb-2  text-lg text-gray-700 dark:text-gray-400">
-            Plans that empower you and your team to ship without friction. Our
-            flexible pricing models ensure that efficiency doesn&rsquo;t come at
-            the cost of your budget.
+           {tables?.description}
           </p>
         </section>
         <div className="flex gap-3 flex-col mt-5">
           {tables && (
             <>
               <Grid className="  gap-5 schema" numItems={12}>
-                <Col
-                  numColSpan={12}
-                  numColSpanSm={3}
-                  className=""
-                >
-                  <SideNavigation
-                    className="text-white dark:bg-white dark:text-gray-900 rounded-xl p-2 max-h-[62dvh]   "
-                    activeHref={selectedTable}
-                    header={{
-                      href: "1",
-                      text: `${id}`,
-                    }}
-                    onFollow={(event) => {
-                      if (!event.detail.external) {
-                        event.preventDefault();
-                        setSelectedTable(event.detail.href);
-                        getTableData(event.detail.href);
-                      }
-                    }}
-                    items={tables?.tables.map((table, index) => {
-                      return {
-                        type: "link",
-                        text: table.table_name,
-                        href: table.table_name,
-                      };
-                    })}
-                  />
+                <Col numColSpan={12} numColSpanSm={3} className="">
+                  {window.innerWidth > 768 ? (
+                    <>
+                      <SideNavigation
+                        className="text-white dark:bg-white dark:text-gray-900 rounded-xl p-2 max-h-[62dvh]   "
+                        activeHref={selectedTable}
+                        header={{
+                          href: "1",
+                          text: `${id}`,
+                        }}
+                        onFollow={(event) => {
+                          if (!event.detail.external) {
+                            event.preventDefault();
+                            setSelectedTable(event.detail.href);
+                            getTableData(event.detail.href);
+                          }
+                        }}
+                        items={tables?.tables.map((table, index) => {
+                          return {
+                            type: "link",
+                            text: table.table_name,
+                            href: table.table_name,
+                          };
+                        })}
+                      />
+                    </>
+                  ) : (
+                    <>
+                      <Select
+                        selectedOption={selectedOption}
+                        virtualScroll
+                        placeholder="Select a table"
+                        onChange={({ detail }) => {
+                          setSelectedOption(detail.selectedOption);
+                          // @ts-ignore
+                          setSelectedTable(detail.selectedOption.value);
+                          // @ts-ignore
+
+                          getTableData(detail.selectedOption.value);
+                        }}
+                        options={tables?.tables.map((table, index) => {
+                          return {
+                            label: table.table_name,
+                            value: table.table_name,
+                          };
+                        })}
+                      />
+                    </>
+                  )}
                 </Col>
 
                 {tableData && (
@@ -150,7 +188,15 @@ const [tables,setTables]= useState<TypeTables>();
                             cell: (item) => <>{item.name || "-"}</>,
                             sortingField: "name",
                             isRowHeader: true,
-                            maxWidth: "30px",
+                            minWidth: "50px",
+                          },
+                          {
+                            id: "type",
+                            header: "Data type",
+                            cell: (item) => <>{item.type || "-"}</>,
+                            sortingField: "type",
+                            isRowHeader: true,
+                            minWidth: "50px",
                           },
 
                           {
@@ -158,14 +204,14 @@ const [tables,setTables]= useState<TypeTables>();
                             header: "Description",
                             cell: (item) => item.description || "-",
                             hasDynamicContent: true,
-                            maxWidth: "100px",
+                            // maxWidth: "500px",
                           },
                         ]}
                         enableKeyboardNavigation
                         // resizableColumns={true}
                         // @ts-ignore
                         items={tableData?.columns}
-                        resizableColumns
+                        // resizableColumns
                         loadingText="Loading resources"
                         sortingDisabled
                         empty={

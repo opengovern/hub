@@ -13,23 +13,25 @@ export default function Hero() {
         className="inline-block animate-slide-up-fade bg-gradient-to-br from-gray-900 to-gray-800 bg-clip-text p-2 text-4xl font-bold tracking-tighter text-transparent sm:text-6xl md:text-7xl dark:from-gray-50 dark:to-gray-300"
         style={{ animationDuration: "700ms" }}
       >
-        The database for <br /> modern applications
+        Compliance for <br /> Engineering Teams
       </h1>
       <p
         className="mt-6 max-w-lg animate-slide-up-fade text-lg text-gray-700 dark:text-gray-400"
         style={{ animationDuration: "900ms" }}
       >
-        Database is a general purpose, relational database built for modern
-        application developers and for the cloud era.
+        Manage, secure, and audit your entire tech stack with SQL-based policies
+        from a unified, vendor-agnostic platform.
       </p>
       <div
         className="mt-8 flex w-full animate-slide-up-fade flex-col justify-center gap-3 px-3 sm:flex-row"
         style={{ animationDuration: "1100ms" }}
       >
         <Button className="h-10 font-semibold">
-          <a href="#">Start 14-day trial</a>
+          <a href="https://docs.opencomply.io/oss" target="__blank">
+            Download Community edition
+          </a>
         </Button>
-        <Button
+        {/* <Button
           asChild
           variant="light"
           className="group gap-x-2 bg-transparent font-semibold hover:bg-transparent dark:bg-transparent hover:dark:bg-transparent"
@@ -47,7 +49,7 @@ export default function Hero() {
             </span>
             Watch video
           </a>
-        </Button>
+        </Button> */}
       </div>
       <div
         className="relative mx-auto ml-3 mt-20 h-fit w-[40rem] max-w-6xl animate-slide-up-fade sm:ml-auto sm:w-full sm:px-2"
@@ -60,5 +62,5 @@ export default function Hero() {
         />
       </div>
     </section>
-  )
+  );
 }

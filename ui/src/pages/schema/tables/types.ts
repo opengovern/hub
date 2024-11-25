@@ -1,7 +1,8 @@
 export interface TypeTables {
-    count_of_named_tables:  number;
-    count_of_named_columns: number;
-    tables:                 Table[];
+  count_of_named_tables: number;
+  count_of_named_columns: number;
+  tables: Table[];
+  description: string;
 }
 
 export interface Table {

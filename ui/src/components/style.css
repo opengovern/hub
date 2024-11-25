@@ -40,6 +40,9 @@
     height: 20px;
 
 
-   
+}
 
+.integration-logos{
+
+filter: brightness(0) saturate(100%) invert(87%) sepia(12%) saturate(22%) hue-rotate(314deg) brightness(88%) contrast(80%);
 }

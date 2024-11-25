@@ -31,13 +31,13 @@ const authRoutes = [
   },
   {
     key: "frameworks",
-    path: "/frameworks",
+    path: "/compliance/frameworks",
     element: <Policies />,
     noAuth: true,
   },
   {
     key: "controls",
-    path: "/frameworks/:framework_id",
+    path: "/compliance/frameworks/:framework_id",
     element: <FrameworkDetail />,
     noAuth: true,
   },
@@ -49,14 +49,20 @@ const authRoutes = [
   },
   {
     key: "schmea",
-    path: "/schema/",
+    path: "/integrations",
     element: <Schema />,
     noAuth: true,
   },
 
   {
     key: "schmea-tables",
-    path: "/schema/:id",
+    path: "/integrations/:id/schema",
+    element: <SchemaTables />,
+    noAuth: true,
+  },
+  {
+    key: "schmea-tables",
+    path: "/integrations/:id/schema/:table_id",
     element: <SchemaTables />,
     noAuth: true,
   },

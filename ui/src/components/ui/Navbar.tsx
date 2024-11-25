@@ -18,6 +18,7 @@ import {
   DropdownMenuTrigger,
 } from "../Dropdown";
 import { useNavigate } from "react-router-dom"
+import ThemedImage from "./ThemedImage"
 
 
 export function Navigation() {
@@ -41,10 +42,10 @@ export function Navigation() {
   return (
     <header
       className={cx(
-        "fixed inset-x-3 top-4 z-50 mx-auto flex max-w-6xl transform-gpu animate-slide-down-fade justify-center overflow-hidden rounded-xl border border-transparent px-3 py-3 transition-all duration-300 ease-[cubic-bezier(0.16,1,0.3,1.03)] will-change-transform",
-        open === true ? "h-52" : "h-16",
+        "fixed inset-x-3 top-4 z-50 mx-auto flex max-w-3xl transform-gpu animate-slide-down-fade justify-center overflow-hidden rounded-xl border border-transparent px-3 py-3 transition-all duration-300 ease-[cubic-bezier(0.16,1,0.3,1.03)] will-change-transform",
+        open === true ? "h-62" : "h-16",
         scrolled || open === true
-          ? "backdrop-blur-nav max-w-4xl border-gray-100 bg-white/80 shadow-xl shadow-black/5 dark:border-white/15 dark:bg-black/70"
+          ? "backdrop-blur-nav max-w-2xl border-gray-100 bg-white/80 shadow-xl shadow-black/5 dark:border-white/15 dark:bg-black/70"
           : "bg-white/0 dark:bg-gray-950/0"
       )}
     >
@@ -54,28 +55,43 @@ export function Navigation() {
             <span className="sr-only">Company logo</span>
             <DatabaseLogo className="w-28 md:w-32" />
           </a>
-          <nav className="hidden md:absolute md:left-1/2 md:top-1/2 md:block md:-translate-x-1/2 md:-translate-y-1/2 md:transform">
+          <nav className="hidden md:absolute md:left-[55%] md:top-1/2 md:block md:-translate-x-1/2 md:-translate-y-1/2 md:transform">
             <div className="flex items-center gap-10 font-medium">
               {" "}
               <a
                 className="px-2 py-1 text-gray-900 dark:text-gray-50"
-                href={"/docs"}
+                href={"https://docs.opencomply.io/"}
+                target="_blank"
               >
                 Docs
               </a>
               <a
                 className="px-2 py-1 text-gray-900 dark:text-gray-50"
-                href={"/schema"}
+                href={"/integrations"}
               >
                 Schema
               </a>
               <a
                 className="px-2 py-1 text-gray-900 dark:text-gray-50"
-                href={"/frameworks"}
+                href={"/compliance/frameworks"}
               >
                 Compliance
               </a>
-              <DropdownMenu>
+              <a
+                className="px-2 py-1 text-gray-900 dark:text-gray-50 flex flex-row gap-1 justify-center items-center align-middle"
+                href={"https://github.com/opengovern/opengovernance"}
+                target="_blank"
+              >
+                <ThemedImage
+                  lightSrc={require("../../images/github-mark/github-mark.png")}
+                  darkSrc={require("../../images/github-mark/github-mark-white.png")}
+                  alt="A preview of app"
+                  width={20}
+                  height={20}
+                />
+                <span>Github</span>
+              </a>
+              {/* <DropdownMenu>
                 <DropdownMenuTrigger asChild>
                   <a
                     className="px-2 py-1 flex flex-row gap-2 text-gray-900 dark:text-gray-50"
@@ -139,23 +155,25 @@ export function Navigation() {
                     </a>
                   </DropdownMenuItem>
                 </DropdownMenuContent>
-              </DropdownMenu>
+              </DropdownMenu> */}
             </div>
           </nav>
-          <Button className="hidden h-10 font-semibold md:flex">
+          {/* <Button className="hidden h-10 font-semibold md:flex">
             Book a demo
-          </Button>
-          <div className="flex gap-x-2 md:hidden dark:text-white">
-            <Button>Book demo</Button>
+          </Button> */}
+          <div className="flex gap-x-1 md:hidden dark:text-white">
+            {/* <Button
+              className="p-1"
+            >Book demo</Button> */}
             <Button
               onClick={() => setOpen(!open)}
               variant="light"
-              className="aspect-square p-2"
+              className="aspect-square p-1"
             >
               {open ? (
-                <RiCloseLine aria-hidden="true" className="size-5" />
+                <RiCloseLine aria-hidden="true" className="size-4" />
               ) : (
-                <RiMenuLine aria-hidden="true" className="size-5" />
+                <RiMenuLine aria-hidden="true" className="size-4" />
               )}
             </Button>
           </div>
@@ -168,20 +186,44 @@ export function Navigation() {
         >
           <ul className="space-y-4 font-medium">
             <li onClick={() => setOpen(false)}>
-              <a className="dark:text-white" href={"/Schema"}>
+              <a
+                className="dark:text-white"
+                href={"https://docs.opencomply.io/"}
+                target="_blank"
+              >
+                Docs
+              </a>
+            </li>{" "}
+            <li onClick={() => setOpen(false)}>
+              <a className="dark:text-white" href={"/integrations"}>
                 Schema
               </a>
             </li>{" "}
             <li onClick={() => setOpen(false)}>
-              <a className="dark:text-white" href={"/frameworks"}>
+              <a className="dark:text-white" href={"/compliance/frameworks"}>
                 Compliance
               </a>
             </li>
             <li onClick={() => setOpen(false)}>
+              <a
+                className="dark:text-white"
+                href={"https://github.com/opengovern/opengovernance"}
+              >
+                <ThemedImage
+                  lightSrc={require("../../images/github-mark/github-mark.png")}
+                  darkSrc={require("../../images/github-mark/github-mark-white.png")}
+                  alt="A preview of app"
+                  width={20}
+                  height={20}
+                />
+                <span>Github</span>
+              </a>
+            </li>
+            {/* <li onClick={() => setOpen(false)}>
               <DropdownMenu>
                 <DropdownMenuTrigger asChild>
                   <a
-                    className="px-2 py-1 flex flex-row items-center  gap-2 text-gray-900 dark:text-gray-50"
+                    className="pr-2 py-1 flex flex-row items-center  gap-2 text-gray-900 dark:text-gray-50"
                     href={"#"}
                   >
                     More
@@ -243,7 +285,7 @@ export function Navigation() {
                   </DropdownMenuItem>
                 </DropdownMenuContent>
               </DropdownMenu>
-            </li>
+            </li> */}
           </ul>
         </nav>
       </div>

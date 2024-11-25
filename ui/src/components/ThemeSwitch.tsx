@@ -2,7 +2,8 @@
 import { cx, focusRing } from "../lib/utils"
 import * as RadioGroupPrimitives from "@radix-ui/react-radio-group"
 import { RiComputerLine, RiMoonLine, RiSunLine } from "@remixicon/react"
-import React, { useEffect, useState } from "react"
+import React, { useContext, useEffect, useState } from "react"
+import { ThemeContext } from "../Theme"
 
 // Based on Tremor Raw RadioGroup [v0.0.0]
 
@@ -59,15 +60,12 @@ export { RadioGroup, RadioGroupItem }
 
 const ThemeSwitch = () => {
   const [mounted, setMounted] = useState(false)
-  const [value, setValue] = useState('dark');
-
+  const { theme, changeTheme } = useContext(ThemeContext);
 
   useEffect(() => {
     setMounted(true)
   }, [])
-  useEffect(() => {
-    setValue(document.getElementsByTagName("body")[0].classList[0] || "system")
-  }, [document.getElementsByTagName("body")[0].classList]);
+
 
   if (!mounted) {
     return null
@@ -75,11 +73,10 @@ const ThemeSwitch = () => {
 
   return (
     <RadioGroup
-      value={value}
+      value={theme}
       onValueChange={(value) => {
-        document.getElementsByTagName("body")[0].classList.remove("light", "dark", "system")
-        document.getElementsByTagName("body")[0].classList.add(value)
-        setValue(value)
+       
+        changeTheme(value)
       }}
       className="flex gap-1"
     >

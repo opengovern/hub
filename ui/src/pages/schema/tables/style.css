@@ -9,7 +9,16 @@
 .schema .awsui_content-wrapper_14iqq_1uqiy_304{
     min-height: calc(62dvh - 1.75rem);
      max-height: calc(62dvh - 1.75rem);
-    overflow: hidden;
+    /* overflow: hidden; */
     overflow-y: scroll;
 
+}
+.schema .awsui_wrapper_wih1l_1200x_208{
+     min-height: calc(62dvh - 6rem);
+     /* max-height: calc(62dvh - 1.75rem); */
+    /* overflow: hidden; */
+    /* overflow-y: scroll; */
+}
+.schema .awsui_header-controls_wih1l_1200x_321{
+    padding-left: 0!important;
 }

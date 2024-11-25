@@ -60,14 +60,12 @@ export default function Policies() {
             animationFillMode: "backwards",
           }}
         >
-          <Badge>Policies</Badge>
+          {/* <Badge>Policies</Badge> */}
           <h1 className="mt-2 inline-block bg-gradient-to-br from-gray-900 to-gray-800 bg-clip-text py-2 text-4xl font-bold tracking-tighter text-transparent sm:text-4xl md:text-4xl dark:from-gray-50 dark:to-gray-300">
-            Our plans scale with you
+            Compliance Frameworks
           </h1>
           <p className=" mb-2  text-lg text-gray-700 dark:text-gray-400">
-            Plans that empower you and your team to ship without friction. Our
-            flexible pricing models ensure that efficiency doesn&rsquo;t come at
-            the cost of your budget.
+            Build your own compliance framework with ease. Or use built-in.
           </p>
         </section>
         <div className="flex gap-3 flex-col mt-5">
@@ -81,7 +79,7 @@ export default function Policies() {
                     description={benchmark.description}
                     controlCount={benchmark.control_count}
                     onClick={() => {
-                      navigate("/frameworks/" + benchmark.id);
+                      navigate("/compliance/frameworks/" + benchmark.id);
                     }}
                   />
                 </>

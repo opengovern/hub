@@ -35,56 +35,27 @@ export default function Cta() {
                 id="cta-title"
                 className="inline-block bg-gradient-to-t from-gray-900 to-gray-800 bg-clip-text p-2 text-4xl font-bold tracking-tighter text-transparent md:text-6xl dark:from-gray-50 dark:to-gray-300"
               >
-                Ready to get started?
+                Ready to take control?
               </h3>
               <p className="mx-auto mt-4 max-w-2xl text-gray-600 sm:text-lg dark:text-gray-400">
                 <Balancer>
-                  Launch a new cluster or migrate to Database with zero
-                  downtime.
+                  Unlock seamless governance across your entire stack. Get
+                  started today!
                 </Balancer>
               </p>
             </div>
-            <div className="mt-14 w-full rounded-[16px] bg-gray-300/5 p-1.5 ring-1 ring-black/[3%] backdrop-blur dark:bg-gray-900/10 dark:ring-white/[3%]">
-              <div className="rounded-xl bg-white p-4 shadow-lg shadow-indigo-500/10 ring-1 ring-black/5 dark:bg-gray-950 dark:shadow-indigo-500/10 dark:ring-white/5">
-                <form
-                  className="flex flex-col items-center gap-3 sm:flex-row"
-                  onSubmit={(e) => e.preventDefault()}
-                >
-                  <label htmlFor="email" className="sr-only">
-                    Email address
-                  </label>
-                  <Input
-                    name="email"
-                    type="email"
-                    autoComplete="email"
-                    required
-                    id="email"
-                    className="h-10 w-full min-w-0 flex-auto"
-                    inputClassName="h-full"
-                    placeholder="Your Work Email "
-                  />
-                  <Button
-                    className="h-10 w-full sm:w-fit sm:flex-none"
-                    type="submit"
-                    variant="primary"
-                  >
-                    Get started
-                  </Button>
-                </form>
-              </div>
-            </div>
-            <p className="mt-4 text-xs text-gray-600 sm:text-sm dark:text-gray-400">
-              Not sure where to start?{" "}
-              <a
-                href="#"
-                className="font-semibold text-indigo-600 hover:text-indigo-500 dark:text-indigo-500 dark:hover:text-indigo-400"
-              >
-                Talk to sales
+            <Button
+              className="w-20 mt-5 w-full sm:w-max sm:flex-none"
+              type="submit"
+              variant="primary"
+            >
+              <a href="https://opencomply.io/oss" target="__blank">
+                Get started
               </a>
-            </p>
+            </Button>
           </div>
         </div>
       </div>
     </section>
-  )
+  );
 }

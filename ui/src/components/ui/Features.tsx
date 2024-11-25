@@ -1,5 +1,6 @@
 import React from "react"
 import { Badge } from "../Badge"
+import { Button } from "../Button";
 
 const stats = [
   {
@@ -27,16 +28,23 @@ export default function Features() {
         id="features-title"
         className="mt-2 inline-block bg-gradient-to-br from-gray-900 to-gray-800 bg-clip-text py-2 text-4xl font-bold tracking-tighter text-transparent sm:text-6xl md:text-6xl dark:from-gray-50 dark:to-gray-300"
       >
-        Architected for speed and reliability
+        Compliance Simplified
       </h2>
       <p className="mt-6 max-w-3xl text-lg leading-7 text-gray-600 dark:text-gray-400">
-        Database&rsquo; innovative architecture avoids the central bottlenecks
-        of traditional systems, enhancing system reliability. This design
-        ensures high productivity and security, minimizing the risk of service
-        disruptions and outages.
+        Managing code, data, and applications across multiple clouds and
+        platforms is complex. Traditional compliance methods can’t keep up.
+        That’s why we built opencomply—a centralized solution for your entire
+        tech stack. OpenComply gathers all your data and uses simple SQL to
+        manage compliance consistently across all environments. With opencomply,
+        you can oversee and control deployments, configurations, and networks on
+        every platform.
       </p>
-      <dl className="mt-12 grid grid-cols-1 gap-y-8 md:grid-cols-3 md:border-y md:border-gray-200 md:py-14 dark:border-gray-800">
-        {stats.map((stat, index) => (
+
+      <Button className="mt-4">
+        <a href="https://opencomply.io/oss" target="__blank">See it for yourself</a>
+      </Button>
+      {/* <dl className="mt-12 grid grid-cols-1 gap-y-8 md:grid-cols-3 md:border-y md:border-gray-200 md:py-14 dark:border-gray-800"> */}
+      {/* {stats.map((stat, index) => (
           <React.Fragment key={index}>
             <div className="border-l-2 border-indigo-100 pl-6 md:border-l md:text-center lg:border-gray-200 lg:first:border-none dark:border-indigo-900 lg:dark:border-gray-800">
               <dd className="inline-block bg-gradient-to-t from-indigo-900 to-indigo-600 bg-clip-text text-5xl font-bold tracking-tight text-transparent lg:text-6xl dark:from-indigo-700 dark:to-indigo-400">
@@ -47,8 +55,8 @@ export default function Features() {
               </dt>
             </div>
           </React.Fragment>
-        ))}
-      </dl>
+        ))} */}
+      {/* </dl> */}
     </section>
-  )
+  );
 }

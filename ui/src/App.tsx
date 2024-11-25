@@ -1,9 +1,16 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import './App.css';
 import Router from './router';
-
+import { ThemeContext } from "./Theme";
 function App() {
-  return <Router />;
+  const { theme } = useContext(ThemeContext);
+  return (
+    <div className={`${theme}`}>
+      {" "}
+      <Router />
+    </div>
+  );
+
 }
 
 export default App;

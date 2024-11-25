@@ -168,11 +168,11 @@ export default function ControlDetail() {
   const temp = [
     {
       text: "Frameworks",
-      href: "/framewrosk",
+      href: "/compliance/frameworks",
     },
     {
       text: framework_id,
-      href: `${window.origin}/frameworks/${framework_id}`,
+      href: `${window.origin}/compliance/frameworks/${framework_id}`,
     },
     {
       text: id,

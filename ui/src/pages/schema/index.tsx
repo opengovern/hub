@@ -239,14 +239,12 @@ export default function Schema() {
               animationFillMode: "backwards",
             }}
           >
-            <Badge>Schema</Badge>
+            <Badge>SCHEMA</Badge>
             <h1 className="mt-2 inline-block bg-gradient-to-br from-gray-900 to-gray-800 bg-clip-text py-2 text-4xl font-bold tracking-tighter text-transparent sm:text-4xl md:text-4xl dark:from-gray-50 dark:to-gray-300">
-              Our plans scale with you
+              Integrations
             </h1>
             <p className=" mb-2  text-lg text-gray-700 dark:text-gray-400">
-              Plans that empower you and your team to ship without friction. Our
-              flexible pricing models ensure that efficiency doesn&rsquo;t come
-              at the cost of your budget.
+              Use the Built-in Connectors.
             </p>
           </section>
           <div className="flex gap-3 flex-col mt-5">
@@ -275,8 +273,8 @@ export default function Schema() {
               }}
               onSelectionChange={({ detail }) => {
                 const item = detail?.selectedItems[0];
-                if (item.tier === "Community" && item?.SourceCode !="") {
-                  navigate("/schema/" + item.schema_id);
+                if (item.tier === "Community" && item?.SourceCode != "") {
+                  navigate("/integrations/" + item.schema_id + "/schema");
                 } else {
                   setOpen(true);
                 }
@@ -289,7 +287,7 @@ export default function Schema() {
                     className="w-100"
                     onClick={() => {
                       if (item.tier === "Community") {
-                        navigate("/schema/" + item.schema_id);
+                        navigate("/integrations/" + item.schema_id+'/schema');
                       } else {
                         // setOpen(true);
                       }
@@ -313,6 +311,11 @@ export default function Schema() {
                         <img
                           className="w-[50px] h-[50px]"
                           src={item.logo}
+                          onError={(e) => {
+                            e.currentTarget.onerror = null;
+                            e.currentTarget.src =
+                              "https://raw.githubusercontent.com/opengovern/website/main/connectors/icons/default.svg";
+                          }}
                           alt="placeholder"
                         />
                       </div>

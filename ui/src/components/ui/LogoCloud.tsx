@@ -9,18 +9,18 @@ export default function LogoCloud() {
       style={{ animationDuration: "1500ms" }}
     >
       <p className="text-lg font-medium tracking-tighter text-gray-800 dark:text-gray-200">
-        Trusted by the world&rsquo;s best engineering teams
+        Integrates with Your Favorite Tools
       </p>
-      <div className="grid grid-cols-2 gap-10 gap-y-4 text-gray-900 md:grid-cols-4 md:gap-x-20 dark:text-gray-200">
-        <Logos.Biosynthesis className="w-28" />
-        <Logos.AltShift className="w-28" />
-        <Logos.Capsule className="w-28" />
-        <Logos.Catalog className="w-28" />
-        <Logos.Cloudwatch className="w-28" />
-        <Logos.FocalPoint className="w-28" />
-        <Logos.Interlock className="w-28" />
-        <Logos.Sisyphus className="w-28" />
+      <div className=" grid grid-cols-2 justify-center fill-neutral-500 items-center gap-10 gap-y-4 text-gray-900 md:grid-cols-4 md:gap-x-20 dark:text-gray-200">
+        <Logos.AWS className="  w-28 fill-neutral-500" />
+        <Logos.Azure className="  w-28 fill-neutral-500" />
+        <Logos.CloudFlare className="w-28 fill-neutral-500" />
+        <Logos.Github className=" integration-logos w-28 h-28" />
+        <Logos.EntraID className="  w-28" />
+        <Logos.OpenAi className=" integration-logos w-28 h-28" />
+        <Logos.DigitalOcean className="w-28 " />
+        <Logos.OpenConply className="w-28 " />
       </div>
     </section>
-  )
+  );
 }

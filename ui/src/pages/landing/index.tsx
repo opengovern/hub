@@ -1,3 +1,5 @@
+import Advantage from "../../components/ui/Advantage"
+import Benefits from "../../components/ui/Benefits"
 import CodeExample from "../../components/ui/CodeExample"
 import Cta from "../../components/ui/Cta"
 import Features from "../../components/ui/Features"
@@ -10,10 +12,13 @@ export default function Home() {
     <main className="flex flex-col overflow-hidden">
       <Hero />
       <LogoCloud />
-      <GlobalDatabase />
-      <CodeExample />
+      {/* <GlobalDatabase /> */}
+      {/* <CodeExample /> */}
       <Features />
+      <Advantage />
+
+      {/* <Benefits /> */}
       <Cta />
     </main>
-  )
+  );
 }
