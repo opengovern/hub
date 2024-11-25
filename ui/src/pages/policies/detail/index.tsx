@@ -8,7 +8,7 @@ import { Tooltip } from "../../../components/Tooltip";
 import { ArrowAnimated } from "../../../components/ui/ArrowAnimated";
 import { Faqs } from "../../../components/ui/Faqs";
 import Testimonial from "../../../components/ui/Testimonial";
-import { cx } from "../../../lib/utils";
+import { cx, getAPIUrl } from "../../../lib/utils";
 import {
   RiCheckLine,
   RiCloudLine,
@@ -28,8 +28,9 @@ export default function FrameworkDetail() {
 
    const getDetail= () => {
      setLoading(true);
+     const url = getAPIUrl();
      axios
-       .get(`https://hub.opencomply.io/api/frameworks/${framework_id}`)
+       .get(`${url}/api/frameworks/${framework_id}`)
        .then((res) => {
          if (res.data) {
            setBenchmark(res.data);

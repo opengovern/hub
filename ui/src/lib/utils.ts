@@ -52,3 +52,16 @@ export const getIntegrationLogo = (name: string[]) => {
   }
  
 }
+
+const REACT_APP_BASE_URL = "https://hub.opencomply.io";
+
+export const getAPIUrl = () => {
+   let url = "";
+   if (window.location.origin === "http://localhost:3000") {
+     url = REACT_APP_BASE_URL;
+   } else {
+     url = window.location.origin;
+   }
+   // @ts-ignore
+   return url;
+}

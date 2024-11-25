@@ -39,6 +39,7 @@ import {
   PropertyFilter,
   Select,
 } from "@cloudscape-design/components";
+import { getAPIUrl } from "../../../../lib/utils";
 
 interface IPolicies {
   id: string | undefined;
@@ -233,9 +234,11 @@ export default function Controls({ id, enable, title }: IPolicies) {
   const GetControls = (flag: boolean, id: string | undefined) => {
     setLoading(true);
     const benchmark_id = flag ? id : benchmarkId;
+     const url = getAPIUrl();
+
     axios
       .get(
-        `https://hub.opencomply.io/api/frameworks/${benchmark_id}/controls?per_page=10&cursor=1`
+        `${url}/api/frameworks/${benchmark_id}/controls?per_page=10&cursor=1`
       )
       .then((res) => {
         if (res.data) {
@@ -251,7 +254,8 @@ export default function Controls({ id, enable, title }: IPolicies) {
       });
   };
   const GetTree = () => {
-    const url = "https://hub.opencomply.io";
+         const url = getAPIUrl();
+
     axios
       .get(`${url}/api/frameworks/${benchmarkId}/tree`)
       .then((res) => {
