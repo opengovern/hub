@@ -13,9 +13,10 @@ export default function Home() {
       <Hero />
       <LogoCloud />
       {/* <GlobalDatabase /> */}
-      {/* <CodeExample /> */}
       <Features />
-      <Advantage />
+
+      <CodeExample />
+      {/* <Advantage /> */}
 
       {/* <Benefits /> */}
       <Cta />

@@ -34,7 +34,7 @@ export default function Advantage() {
   return (
     <section
       aria-labelledby="features-title"
-      className="mx-auto mt-44 w-full max-w-6xl px-3"
+      className="mx-auto mt-44 w-full max-w-6xl px-3 flex flex-col justify-center items-center"
     >
       <Badge>Security at Scale</Badge>
       {/* <h2
@@ -58,7 +58,7 @@ export default function Advantage() {
           See it for yourself
         </a>
       </Button> */}
-      <dl className="mt-12 grid grid-cols-1 gap-y-9 md:grid-cols-5 justify-center items-center md:border-y md:border-gray-200 md:py-14 dark:border-gray-800">
+      <dl className="mt-12 grid grid-cols-1  gap-y-9 md:grid-cols-5 justify-center items-center md:border-y md:border-gray-200 md:py-14 dark:border-gray-800">
         {stats.map((stat, index) => (
           <React.Fragment key={index}>
             <div className="border-l-2 border-indigo-100 pl-4 pr-8 md:border-l md:text-center lg:border-gray-200 lg:first:border-none dark:border-indigo-900 lg:dark:border-gray-800">

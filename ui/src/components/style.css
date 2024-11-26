@@ -46,3 +46,16 @@
 
 filter: brightness(0) saturate(100%) invert(87%) sepia(12%) saturate(22%) hue-rotate(314deg) brightness(88%) contrast(80%);
 }
+
+.custom-copy .awsui_text-to-copy_ljpwc_1spew_9{
+    color: whitesmoke;
+}
+
+:root {
+    --tw-ring-offset-shadow : 0 0 #0000;
+    --tw-ring-shadow: 0 0 0 0 calc(1px ) hsla(0, 0%, 100%, .05);
+}
+.custom-shadow{
+   -webkit-box-shadow: -3px 4px 4px 0px rgba(255, 255, 255, 0.39) !important; 
+box-shadow: -3px 4px 4px 0px rgba(255, 255, 255, 0.39) !important;
+}

@@ -69,7 +69,7 @@ export function Navigation() {
                 className="px-2 py-1 text-gray-900 dark:text-gray-50"
                 href={"/integrations"}
               >
-                Schema
+                Integrations
               </a>
               <a
                 className="px-2 py-1 text-gray-900 dark:text-gray-50"
@@ -196,7 +196,7 @@ export function Navigation() {
             </li>{" "}
             <li onClick={() => setOpen(false)}>
               <a className="dark:text-white" href={"/integrations"}>
-                Schema
+                Integrations
               </a>
             </li>{" "}
             <li onClick={() => setOpen(false)}>

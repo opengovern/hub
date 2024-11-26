@@ -1,9 +1,13 @@
 // @ts-nocheck
 // import Code from "../Code"
 import {
+  RiGitBranchLine,
+  RiLink,
   RiLinksLine,
+  RiLockStarLine,
   RiPlugLine,
   RiShieldKeyholeLine,
+  RiShieldStarLine,
   RiStackLine,
 } from "@remixicon/react"
 import { Badge } from "../Badge"
@@ -59,47 +63,53 @@ const code2 = `async function fetchCustomerOrders() {
 
 const features = [
   {
-    name: "Use Database with your stack",
+    name: "Unified Governance",
     description:
-      "We offer client and server libraries in everything from React and Ruby to iOS.",
+      "Govern across your stack, detect flaws instantly across clouds, environments, platforms, and tools.",
     icon: RiStackLine,
   },
   {
-    name: "Try plug & play options",
+    name: "Automated Compliance",
     description:
-      "Customize and deploy data infrastructure directly from the Database Dashboard.",
-    icon: RiPlugLine,
+      "Track drifts, enforce standards, capture evidence. Leverage 50+ frameworks and 2,000+ pre-built controls.",
+    icon: RiShieldStarLine,
   },
   {
-    name: "Explore pre-built integrations",
+    name: "Rich Integrations",
     description:
-      "Connect Database to over a hundred tools including Stripe, Salesforce, or Quickbooks.",
-    icon: RiLinksLine,
+      "Connect your CI/CD, SAST, DAST to see every risks and key events across your entire stack, from code to cloud.",
+    icon: RiLink,
   },
   {
-    name: "Security & privacy",
+    name: "Developer Friendly",
     description:
-      "Database supports PII data encrypted with AES-256 at rest or explicit user consent flows.",
-    icon: RiShieldKeyholeLine,
+      "Manage policies in Git and embed checks into workflows for continuous governance across any cloud. No DSL, custom extensions, or scripts",
+    icon: RiGitBranchLine,
   },
-]
+  {
+    name: "Enterprise Ready",
+    description:
+      "Enterprise-grade security & compliance. SSO, SSL, agentless. Deploy fast.",
+    icon: RiLockStarLine,
+  },
+];
 
 export default function CodeExample() {
   return (
     <section
       aria-labelledby="code-example-title"
-      className="mx-auto mt-28 w-full max-w-6xl px-3"
+      className="mx-auto mt-28 w-full max-w-6xl px-3 flex flex-col justify-center items-center"
     >
-      <Badge>Developer-first</Badge>
+      {/* <Badge>Developer-first</Badge> */}
       <h2
         id="code-example-title"
         className="mt-2 inline-block bg-gradient-to-br from-gray-900 to-gray-800 bg-clip-text py-2 text-4xl font-bold tracking-tighter text-transparent sm:text-6xl md:text-6xl dark:from-gray-50 dark:to-gray-300"
       >
-        Built by developers, <br /> for developers
+        The Advantage
       </h2>
       <p className="mt-6 max-w-2xl text-lg text-gray-600 dark:text-gray-400">
-        Rich and expressive query language that allows you to filter and sort by
-        any field, no matter how nested it may be.
+        Govern your entire stack. See what matters. Secure every deployment and
+        change.
       </p>
       {/* <CodeExampleTabs
         tab1={
@@ -136,5 +146,5 @@ export default function CodeExample() {
         ))}
       </dl>
     </section>
-  )
+  );
 }

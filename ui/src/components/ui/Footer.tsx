@@ -32,7 +32,10 @@ const navigation = {
 export default function Footer() {
   return (
     <footer id="footer">
-      <div className="mx-auto max-w-6xl px-3 pb-8 pt-16 sm:pt-24 lg:pt-32">
+      <div className="mx-auto max-w-6xl px-3 pb-8 pt-16 sm:pt-8 lg:pt-8">
+        {/* <div className="flex space-x-6">
+          <ThemeSwitch />
+        </div> */}
         {/* <div className="xl:grid xl:grid-cols-3 xl:gap-20">
           <div className="space-y-8">
             <DatabaseLogo className="w-32 sm:w-40" />
@@ -182,7 +185,7 @@ export default function Footer() {
             reserved.
           </p>
           <div className="rounded-full border border-gray-200 py-1 pl-1 pr-2 dark:border-gray-800">
-            <div className="flex items-center gap-1.5">
+            {/* <div className="flex items-center gap-1.5">
               <div className="relative size-4 shrink-0">
                 <div className="absolute inset-[1px] rounded-full bg-emerald-500/20 dark:bg-emerald-600/20" />
                 <div className="absolute inset-1 rounded-full bg-emerald-600 dark:bg-emerald-500" />
@@ -190,7 +193,8 @@ export default function Footer() {
               <span className="text-xs text-gray-700 dark:text-gray-50">
                 All systems operational
               </span>
-            </div>
+            </div> */}
+            <ThemeSwitch />
           </div>
         </div>
       </div>
