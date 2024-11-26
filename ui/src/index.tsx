@@ -9,11 +9,15 @@ import { BrowserRouter } from "react-router-dom";
 import { ThemeProvider } from "./Theme";
 import enMessages from "@cloudscape-design/components/i18n/messages/all.en";
 import { I18nProvider } from "@cloudscape-design/components/i18n";
+import "swiper/css";
+import "swiper/css/autoplay";
+
+
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
-  <React.StrictMode>
+  // <React.StrictMode>
     <BrowserRouter>
       <I18nProvider locale="en" messages={[enMessages]}>
         <ThemeProvider>
@@ -21,7 +25,7 @@ root.render(
         </ThemeProvider>
       </I18nProvider>
     </BrowserRouter>
-  </React.StrictMode>
+  // </React.StrictMode>
 );
 
 

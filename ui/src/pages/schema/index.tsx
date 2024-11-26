@@ -35,8 +35,8 @@ export default function Schema() {
   const [page, setPage] = useState(0);
   const [open, setOpen] = useState(false);
   const [counts, setCounts] = useState<any>({});
-
-  const getPolcies = () => {
+  
+  const getPolcies = async () => {
     setLoading(true);
     axios
       .get(
@@ -49,7 +49,7 @@ export default function Schema() {
           setIntegrations(arr);
           arr?.map((integration:any) => {
             if(integration.schema_ids && integration.schema_ids.length>0 && integration.tier === "Community" && integration.SourceCode != ""){
-            getMasterSchema(integration.schema_ids[0]);
+               getMasterSchema(integration.schema_ids[0]);
             }
           });
         }
@@ -67,13 +67,12 @@ export default function Schema() {
         `https://raw.githubusercontent.com/opengovern/hub/refs/heads/main/schemas/${id}.json`
       )
       .then((res) => {
-        const temp =counts;
+        
         if (res.data) {
           // @ts-ignore
-          temp[id] = res.data.count_of_named_tables;
+          setCounts((prev) => ({ ...prev, [id]: res.data.tables.length }));
          
         }
-        setCounts(temp);
         setLoading(false);
       })
       .catch((err) => {

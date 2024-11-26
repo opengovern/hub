@@ -1,5 +1,8 @@
 import { Button } from "../Button";
 import { Logos } from "./Logos"
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Virtual ,Autoplay} from "swiper/modules";
+// Import Swiper styles
 
 export default function LogoCloud() {
   return (
@@ -12,14 +15,45 @@ export default function LogoCloud() {
       <p className="text-lg font-medium tracking-tighter text-gray-800 dark:text-gray-200">
         Integrates with Your Favorite Tools
       </p>
-      <div className=" grid grid-cols-4 justify-center fill-neutral-500 items-center gap-2 gap-y-4 text-gray-900 md:grid-cols-7 md:gap-x-10 dark:text-gray-200">
-        <Logos.AWS className="    w-8 fill-neutral-500 h-8" />
-        <Logos.Azure className="   w-8 fill-neutral-500 h-8" />
-        <Logos.CloudFlare className="w-8 fill-neutral-500 h-8" />
-        <Logos.Github className=" integration-logos  w-8 h-8" />
-        <Logos.EntraID className="  w-8 h-8" />
-        <Logos.OpenAi className=" integration-logos  w-8 h-8" />
-        <Logos.DigitalOcean className="w-8  h-8  " />
+      <div className=" w-1/3 flex  justify-center fill-neutral-500 items-center  text-gray-900  dark:text-gray-200">
+        <Swiper
+          spaceBetween={70}
+          modules={[Autoplay]}
+          // virtual
+          slidesPerView={4}
+          autoplay={{
+            delay: 2000,
+            disableOnInteraction: false,
+          }}
+          loop={true}
+          centerInsufficientSlides={true}
+          centeredSlides={true}
+          onSlideChange={() => console.log("slide change")}
+          onSwiper={(swiper: any) => console.log("swiper")}
+        >
+          <SwiperSlide>
+            <Logos.AWS className="    w-8 fill-neutral-500 h-8" />{" "}
+          </SwiperSlide>
+          <SwiperSlide>
+            <Logos.Azure className="   w-8 fill-neutral-500 h-8" />
+          </SwiperSlide>
+          <SwiperSlide>
+            <Logos.CloudFlare className="w-8 fill-neutral-500 h-8" />
+          </SwiperSlide>
+          <SwiperSlide>
+            <Logos.Github className=" integration-logos  w-8 h-8" />
+          </SwiperSlide>
+          <SwiperSlide>
+            <Logos.EntraID className="  w-8 h-8" />
+          </SwiperSlide>
+          <SwiperSlide>
+            <Logos.OpenAi className=" integration-logos  w-8 h-8" />
+          </SwiperSlide>
+          <SwiperSlide>
+            <Logos.DigitalOcean className="w-8  h-8  " />
+          </SwiperSlide>
+        </Swiper>
+
         {/* <Logos.OpenConply className="w-14 h-14 " /> */}
       </div>
       <div>

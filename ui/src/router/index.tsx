@@ -9,12 +9,18 @@ import FrameworkDetail from '../pages/policies/detail';
 import ControlDetail from '../pages/policies/detail/controls/detail';
 import Schema from '../pages/schema';
 import SchemaTables from '../pages/schema/tables';
+import Preview from '../pages/preview';
 
 
 const authRoutes = [
   {
     path: "/",
     element: <Home />,
+    noAuth: true,
+  },
+  {
+    path: "/preview",
+    element: <Preview />,
     noAuth: true,
   },
   {

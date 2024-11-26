@@ -8,13 +8,13 @@ import Hero from "../../components/ui/Hero"
 import LogoCloud from "../../components/ui/LogoCloud"
 import Steps from "../../components/ui/Steps"
 
-export default function Home() {
+export default function Preview() {
   return (
     <main className="flex flex-col overflow-hidden">
       <Hero />
       <LogoCloud />
       {/* <GlobalDatabase /> */}
-      {/* <Steps  /> */}
+      <Steps  />
       <Features />
 
       <CodeExample />
