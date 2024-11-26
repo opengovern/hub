@@ -11,6 +11,9 @@
   src: url("./fonts/NanumPenScript.woff2") format("woff2");
 }
 
+:root {
+  color-scheme: light dark;
+}
 .awsui_card-header_p8a6i_1trdm_402{
   width: 100%!important;
 }

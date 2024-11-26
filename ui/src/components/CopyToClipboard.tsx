@@ -24,10 +24,13 @@ export default function CopyToClipboard({ code }: { code: string }) {
       className="select-none rounded border border-white/10 bg-white/20 p-1.5 backdrop-blur-xl"
     >
       {!copied ? (
-        <RiFileCopy2Line aria-hidden="true" className="size-5 text-white" />
+        <RiFileCopy2Line
+          aria-hidden="true"
+          className="size-5 dark:text-white"
+        />
       ) : (
-        <RiCheckLine aria-hidden="true" className="size-5 text-white" />
+        <RiCheckLine aria-hidden="true" className="size-5 dark:text-white" />
       )}
     </button>
-  )
+  );
 }

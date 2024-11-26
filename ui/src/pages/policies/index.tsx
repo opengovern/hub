@@ -63,7 +63,7 @@ export default function Policies() {
         >
           {/* <Badge>Policies</Badge> */}
           <h1 className="mt-2 inline-block bg-gradient-to-br from-gray-900 to-gray-800 bg-clip-text py-2 text-4xl font-bold tracking-tighter text-transparent sm:text-4xl md:text-4xl dark:from-gray-50 dark:to-gray-300">
-            Compliance Frameworks
+            Compliance Frameworks {benchmarks && <>({total})</>}
           </h1>
           <p className=" mb-2  text-lg text-gray-700 dark:text-gray-400">
             Build your own compliance framework with ease. Or use built-in.

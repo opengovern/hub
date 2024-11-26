@@ -55,7 +55,7 @@ export function Navigation() {
             <span className="sr-only">Company logo</span>
             <DatabaseLogo className="w-28 md:w-32" />
           </a>
-          <nav className="hidden md:absolute md:left-[55%] md:top-1/2 md:block md:-translate-x-1/2 md:-translate-y-1/2 md:transform">
+          <nav className="hidden md:absolute md:left-[60%] md:top-1/2 md:block md:-translate-x-1/2 md:-translate-y-1/2 md:transform">
             <div className="flex items-center gap-10 font-medium">
               {" "}
               <a

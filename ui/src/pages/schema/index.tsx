@@ -34,6 +34,7 @@ export default function Schema() {
   const navigate = useNavigate();
   const [page, setPage] = useState(0);
   const [open, setOpen] = useState(false);
+  const [counts, setCounts] = useState<any>({});
 
   const getPolcies = () => {
     setLoading(true);
@@ -46,6 +47,11 @@ export default function Schema() {
             const arr =res.data
             // arr.sort(() => Math.random() - 0.5);
           setIntegrations(arr);
+          arr?.map((integration:any) => {
+            if(integration.schema_ids && integration.schema_ids.length>0 && integration.tier === "Community" && integration.SourceCode != ""){
+            getMasterSchema(integration.schema_ids[0]);
+            }
+          });
         }
         setLoading(false);
       })
@@ -54,7 +60,27 @@ export default function Schema() {
         setLoading(false);
       });
   };
-
+  const getMasterSchema = (id: string) => {
+    setLoading(true);
+    axios
+      .get(
+        `https://raw.githubusercontent.com/opengovern/hub/refs/heads/main/schemas/${id}.json`
+      )
+      .then((res) => {
+        const temp =counts;
+        if (res.data) {
+          // @ts-ignore
+          temp[id] = res.data.count_of_named_tables;
+         
+        }
+        setCounts(temp);
+        setLoading(false);
+      })
+      .catch((err) => {
+        setError(err);
+        setLoading(false);
+      });
+  };
   useEffect(() => {
     getPolcies();
   }, []);
@@ -239,9 +265,9 @@ export default function Schema() {
               animationFillMode: "backwards",
             }}
           >
-            <Badge>SCHEMA</Badge>
+            {/* <Badge>SCHEMA</Badge> */}
             <h1 className="mt-2 inline-block bg-gradient-to-br from-gray-900 to-gray-800 bg-clip-text py-2 text-4xl font-bold tracking-tighter text-transparent sm:text-4xl md:text-4xl dark:from-gray-50 dark:to-gray-300">
-              Integrations
+              Integrations {integrations && `(${integrations.length})`}
             </h1>
             <p className=" mb-2  text-lg text-gray-700 dark:text-gray-400">
               Use the Built-in Connectors.
@@ -287,7 +313,7 @@ export default function Schema() {
                     className="w-100"
                     onClick={() => {
                       if (item.tier === "Community") {
-                        navigate("/integrations/" + item.schema_id+'/schema');
+                        navigate("/integrations/" + item.schema_id + "/schema");
                       } else {
                         // setOpen(true);
                       }
@@ -323,9 +349,28 @@ export default function Schema() {
                   },
                   {
                     id: "description",
-                    header: "Description",
-                    content: (item) => item.description,
+                    header: (
+                      <>
+                        <div className="flex justify-between">
+                          <span>{"Description"}</span>
+                          <span>{"Table"}</span>
+                        </div>
+                      </>
+                    ),
+                    content: (item) => (
+                      <>
+                        <div className="flex justify-between">
+                          <span className="max-w-60">{item.description}</span>
+                          <span>{item.count ? item.count : "--" }</span>
+                        </div>
+                      </>
+                    ),
                   },
+                  // {
+                  //   id: "table",
+                  //   header: "Table",
+                  //   content: (item) => item.count,
+                  // },
                   // {
                   //   id: "tier",
                   //   header: "Tier",
@@ -353,7 +398,7 @@ export default function Schema() {
                     tier: type.tier,
                     description: type.Description,
                     name: type.name,
-                    count: 0,
+                    count: counts[type.schema_ids[0]] || 0,
                     schema_id: type?.schema_ids[0],
                     SourceCode: type.SourceCode,
                     logo: `https://raw.githubusercontent.com/opengovern/website/main/connectors/icons/${type.Icon}`,

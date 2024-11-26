@@ -10,7 +10,7 @@ type IProps = {
 export default function Layout({ children }: IProps) {
   
     return (
-      <div className="min-h-screen scroll-auto antialiased selection:bg-indigo-100 selection:text-indigo-700 dark:bg-gray-950">
+      <div className="min-h-screen scroll-auto antialiased bg-white selection:bg-indigo-100 selection:text-indigo-700 dark:bg-gray-950">
         <Navigation />
         {children}
         <Footer />
