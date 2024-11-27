@@ -4,6 +4,16 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Virtual ,Autoplay} from "swiper/modules";
 import { RiArrowRightDoubleLine } from "@remixicon/react";
 // Import Swiper styles
+import  AWSSVG  from "../../images/integration-logos/aws.svg";
+import  AZURESVG  from "../../images/integration-logos/azure.svg";
+import  ENTRASVG  from "../../images/integration-logos/entraid.svg";
+import  CLOUDSVG  from "../../images/integration-logos/cloudflare.svg";
+import  DIGITALSVG  from "../../images/integration-logos/DigitalOcean_logo.svg";
+import  GITUBSVG  from "../../images/integration-logos/github.svg";
+import  OPENCOMPLYSVG  from "../../images/integration-logos/opencomply.svg";
+import  OPENAISVG  from "../../images/integration-logos/openai.svg";
+
+
 
 export default function LogoCloud() {
   return (
@@ -14,12 +24,12 @@ export default function LogoCloud() {
       style={{ animationDuration: "1500ms" }}
     >
       <p className="text-lg flex flex-row gap-2 items-center font-medium tracking-tighter text-gray-800 dark:text-gray-200">
-        Integrates with Your Favorite Tools 
+        Integrates with Your Favorite Tools
         <RiArrowRightDoubleLine color="white" />
       </p>
       <div className=" w-1/3 flex  justify-center fill-neutral-500 items-center  text-gray-900  dark:text-gray-200">
         <Swiper
-          spaceBetween={window.innerWidth > 640 ? 20 : 30}
+          spaceBetween={window.innerWidth > 640 ? 30 : 30}
           modules={[Autoplay]}
           // virtual
           slidesPerView={window.innerWidth > 640 ? 4 : 3}
@@ -34,25 +44,45 @@ export default function LogoCloud() {
           onSwiper={(swiper: any) => console.log("swiper")}
         >
           <SwiperSlide>
-            <Logos.AWS className="    w-8 fill-neutral-500 h-8" />{" "}
+            <img
+              src={AWSSVG}
+              className=" integration-logos   w-fit fill-neutral-500 h-12"
+            />
           </SwiperSlide>
           <SwiperSlide>
-            <Logos.Azure className="   w-8 fill-neutral-500 h-8" />
+            <img src={AZURESVG} className="   w-fit fill-neutral-500 h-12" />
+            {/* <Logos.Azure className="   w-12 fill-neutral-500 h-12" /> */}
           </SwiperSlide>
           <SwiperSlide>
-            <Logos.CloudFlare className="w-8 fill-neutral-500 h-8" />
+            <img src={CLOUDSVG} className="   w-fit fill-neutral-500 h-12" />
+
+            {/* <Logos.CloudFlare className="w-12 fill-neutral-500 h-12" /> */}
           </SwiperSlide>
           <SwiperSlide>
-            <Logos.Github className=" integration-logos  w-8 h-8" />
+            <img
+              src={GITUBSVG}
+              className="  integration-logos  w-fit fill-neutral-500 h-12"
+            />
+
+            {/* <Logos.Github className=" integration-logos  w-12 h-12" /> */}
           </SwiperSlide>
           <SwiperSlide>
-            <Logos.EntraID className="  w-8 h-8" />
+            <img src={ENTRASVG} className=" w-fit   fill-neutral-500 h-12" />
+
+            {/* <Logos.EntraID className="  w-12 h-12" /> */}
           </SwiperSlide>
           <SwiperSlide>
-            <Logos.OpenAi className=" integration-logos  w-8 h-8" />
+            <img
+              src={OPENAISVG}
+              className="  w-fit mr-12 pr-12  integration-logos fill-neutral-500 h-12"
+            />
+
+            {/* <Logos.OpenAi className=" integration-logos  w-12 h-12" /> */}
           </SwiperSlide>
           <SwiperSlide>
-            <Logos.DigitalOcean className="w-8  h-8  " />
+            <img src={DIGITALSVG} className="   fill-neutral-500 h-12" />
+
+            {/* <Logos.DigitalOcean className="w-12  h-12  " /> */}
           </SwiperSlide>
         </Swiper>
 

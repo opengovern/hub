@@ -15,14 +15,15 @@ export default function Preview() {
       <Hero />
       <LogoCloud />
       {/* <GlobalDatabase /> */}
-      <Steps  />
       <Features />
+
+      <Steps />
 
       <CodeExample />
       {/* <Advantage /> */}
 
       {/* <Benefits /> */}
-      <Cta />
+      {/* <Cta /> */}
       <Faqs />
     </main>
   );

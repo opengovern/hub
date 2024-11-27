@@ -137,7 +137,7 @@ export default function ControlDetail() {
        value: (
          // @ts-ignore
          <CopyToClipboard
-           className="text-white mt-2"
+           className="text-white custom-copy mt-2"
            variant="inline"
            textToCopy={control?.id}
            copySuccessText="Control ID copied to clipboard"
@@ -232,7 +232,7 @@ export default function ControlDetail() {
                         ) || ""
                       );
                     }}
-                    className=" cursor-pointer max-h-[350px] overflow-y-scroll  "
+                    className=" cursor-pointer  h-full "
                   >
                     <Editor
                       onValueChange={() => 1}
@@ -245,12 +245,13 @@ export default function ControlDetail() {
                           "true"
                         ) || ""
                       }
-                      className="w-full max-h-max    dark:text-white font-mono text-sm"
+                      className="w-full max-h-max text-black  overflow-scroll   dark:text-white font-mono text-sm"
                       style={{
-                        minHeight: "80dvh",
+                        maxHeight: "40dvh",
+                        minHeight: "40dvh",
                       }}
                       color="white"
-                      textareaClassName="dark:text-white editor-text-area"
+                      textareaClassName="text-black dark:text-white editor-text-area"
                       placeholder="-- write your SQL query here"
                     />
                   </Card>

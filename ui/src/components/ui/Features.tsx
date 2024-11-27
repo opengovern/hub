@@ -21,16 +21,16 @@ export default function Features() {
   return (
     <section
       aria-labelledby="features-title"
-      className="mx-auto mt-24 w-full max-w-6xl px-3 flex flex-col justify-center items-center"
+      className="mx-auto mt-24 w-full max-w-6xl px-10 border dark:border-white ring-1 bg-[#59759c]  ring-tremor-background-emphasis p-3 rounded-xl  flex flex-col justify-start items-start"
     >
       {/* <Badge>Security at Scale</Badge> */}
       <h2
         id="features-title"
-        className="mt-2 inline-block text-center w-full bg-gradient-to-br from-gray-900 to-gray-800 bg-clip-text py-2 text-4xl font-bold tracking-tighter text-transparent sm:text-6xl md:text-6xl dark:from-gray-50 dark:to-gray-300"
+        className="mt-2 inline-block text-white text-start w-full bg-gradient-to-br from-gray-900 to-gray-800 bg-clip-text py-2 text-4xl font-bold tracking-tighter text-transparent sm:text-6xl md:text-6xl dark:from-gray-50 dark:to-gray-300"
       >
-        Compliance Simplified
+        The Problem with compliance
       </h2>
-      <p className="mt-6   text-lg max-w-xl  text-left leading-7 text-gray-600 dark:text-gray-400">
+      <p className="mt-6   text-lg max-w-xl  text-left leading-7 text-white dark:text-white">
         Managing code, data, and applications across multiple clouds and
         platforms is complex. Traditional compliance methods can’t keep up.
         <br />
@@ -44,17 +44,17 @@ export default function Features() {
         configurations, and networks on every platform.
         <br />
         <br />
-        <b className="text-white">
-        Don't take our word for it, experience it.
+        <b className="dark:text-white font-bold">
+          Don't take our word for it, experience it.
         </b>
       </p>
-      <div className="mt-4 w-full text-center">
+      {/* <div className="mt-4 w-full text-center">
         <Button className="mt-4 ">
           <a href="https://opencomply.io/oss" target="__blank">
             See it for yourself
           </a>
         </Button>
-      </div>
+      </div> */}
       {/* <dl className="mt-12 grid grid-cols-1 gap-y-8 md:grid-cols-3 md:border-y md:border-gray-200 md:py-14 dark:border-gray-800"> */}
       {/* {stats.map((stat, index) => (
           <React.Fragment key={index}>

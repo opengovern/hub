@@ -187,7 +187,7 @@ export function Navigation() {
           <ul className="space-y-4 font-medium">
             <li onClick={() => setOpen(false)}>
               <a
-                className="dark:text-white"
+                className="text-black dark:text-white"
                 href={"https://docs.opencomply.io/"}
                 target="_blank"
               >
@@ -195,18 +195,21 @@ export function Navigation() {
               </a>
             </li>{" "}
             <li onClick={() => setOpen(false)}>
-              <a className="dark:text-white" href={"/integrations"}>
+              <a className="text-black dark:text-white" href={"/integrations"}>
                 Integrations
               </a>
             </li>{" "}
             <li onClick={() => setOpen(false)}>
-              <a className="dark:text-white" href={"/compliance/frameworks"}>
+              <a
+                className="text-black dark:text-white"
+                href={"/compliance/frameworks"}
+              >
                 Compliance
               </a>
             </li>
             <li onClick={() => setOpen(false)}>
               <a
-                className="dark:text-white"
+                className="text-black dark:text-white flex flex-row gap-2 items-center"
                 href={"https://github.com/opengovern/opengovernance"}
               >
                 <ThemedImage

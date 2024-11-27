@@ -1,15 +1,22 @@
-.custom-key-value label{
+.custom-key-value label:is(.dark *){
     color: white;
    
 }
-.custom-key-value dd{
+.custom-key-value dd:is(.dark *){
     color: white!important;
    
 }
-.editor-text-area{
+.editor-text-area:is(.dark *){
     color: white!important;
     background: red;
     -webkit-text-fill-color: white!important;
+   /* min-height: 50dvh;; */
+   
+}
+.editor-text-area{
+    color: black!important;
+    background: red;
+    -webkit-text-fill-color: black!important;
    /* min-height: 50dvh;; */
    
 }
@@ -17,7 +24,7 @@
     margin-top: 1rem!important;
     padding-top: 2rem;
 }
-.custom-bread .awsui_text_1kosq_1tkru_202  {
+.custom-bread .awsui_text_1kosq_1tkru_202:is(.dark *)  {
     color: white;
  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 

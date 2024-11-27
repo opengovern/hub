@@ -6,9 +6,9 @@ import CopyToClipboard from "../CopyToClipboard";
 import { Button } from "@cloudscape-design/components";
 
 const DISCOVER_URLS = [
-  "https://www.youtube.com/watch?v=ZK-rNEhJIDs",
-  "https://www.youtube.com/watch?v=BY2mTMBkuFI",
-  "https://www.youtube.com/watch?v=joiyb6c_Ry4",
+  "https://www.youtube.com/embed/ZK-rNEhJIDs",
+  "https://www.youtube.com/embed/BY2mTMBkuFI",
+  "https://www.youtube.com/embed/joiyb6c_Ry4",
 ];
 
 export default function Steps() {
@@ -67,7 +67,7 @@ export default function Steps() {
               {/* code to copy */}
               <div className="flex flex-row gap-2 mt-2 w-full relative">
                 <div className="p-5 border dark:border-white rounded-xl w-full">
-                  <code className=" text-[12px]">
+                  <code className=" text-[12px] text-black dark:text-white">
                     <span className="text-[#8250df]">helm</span> repo add
                     opencomply https://charts.opencomply.io
                     <br />
@@ -307,16 +307,15 @@ kubectl port-forward -n opencomply svc/nginx-proxy 8080:80`}
             </div>
           </div>
 
-          <div className="w-[calc(100%-4rem)]  md:w-[calc(100%)]   rounded">
-            <div className="rounded-2xl bg-slate-50/40 p-2 ring-1 ring-inset ring-slate-200/50 dark:bg-gray-900/70 dark:ring-white/10">
-              <div className="rounded-xl bg-white ring-1 ring-slate-900/5 dark:bg-slate-950 dark:ring-white/15">
-                <video
-                  className="rounded-xl w-full shadow-2xl dark:shadow-indigo-600/10"
-                  controls
-                >
-                  <source src={DISCOVER_URLS[discoverList]} type="video/mp4" />
-                  Your browser does not support the video tag.
-                </video>
+          <div className="w-[calc(100%-4rem)]  md:w-[calc(100%)] h-full   rounded">
+            <div className="rounded-2xl bg-slate-50/40 p-2 ring-1 h-full ring-inset ring-slate-200/50 dark:bg-gray-900/70 dark:ring-white/10">
+              <div className="rounded-xl h-full bg-white ring-1 ring-slate-900/5 dark:bg-slate-950 dark:ring-white/15">
+                <iframe
+                  height={"400"}
+                  width={"100%"}
+                  className="rounded-xl  w-full shadow-2xl dark:shadow-indigo-600/10"
+                  src={DISCOVER_URLS[discoverList]}
+                ></iframe>
               </div>
             </div>
             <div className="mt-[3rem] ml-4">some texts goes here also</div>
@@ -347,13 +346,12 @@ kubectl port-forward -n opencomply svc/nginx-proxy 8080:80`}
           <div className="w-[calc(100%-4rem)]  md:w-[calc(100%)]  rounded">
             <div className="rounded-2xl bg-slate-50/40 p-2 ring-1 ring-inset ring-slate-200/50 dark:bg-gray-900/70 dark:ring-white/10">
               <div className="rounded-xl bg-white ring-1 ring-slate-900/5 dark:bg-slate-950 dark:ring-white/15">
-                <video
-                  className="rounded-xl w-full shadow-2xl dark:shadow-indigo-600/10"
-                  controls
-                >
-                  <source src={DISCOVER_URLS[discoverList]} type="video/mp4" />
-                  Your browser does not support the video tag.
-                </video>
+                <iframe
+                  height={"400"}
+                  width={"100%"}
+                  className="rounded-xl  w-full shadow-2xl dark:shadow-indigo-600/10"
+                  src={DISCOVER_URLS[discoverList]}
+                ></iframe>
               </div>
             </div>
             <div className="mt-[3rem] ml-4">some texts goes here also</div>
@@ -407,13 +405,12 @@ kubectl port-forward -n opencomply svc/nginx-proxy 8080:80`}
           <div className="w-[calc(100%-4rem)]  md:w-[calc(100%)]  rounded">
             <div className="rounded-2xl bg-slate-50/40 p-2 ring-1 ring-inset ring-slate-200/50 dark:bg-gray-900/70 dark:ring-white/10">
               <div className="rounded-xl bg-white ring-1 ring-slate-900/5 dark:bg-slate-950 dark:ring-white/15">
-                <video
-                  className="rounded-xl w-full shadow-2xl dark:shadow-indigo-600/10"
-                  controls
-                >
-                  <source src={DISCOVER_URLS[discoverList]} type="video/mp4" />
-                  Your browser does not support the video tag.
-                </video>
+                <iframe
+                  height={"400"}
+                  width={"100%"}
+                  className="rounded-xl  w-full shadow-2xl dark:shadow-indigo-600/10"
+                  src={DISCOVER_URLS[discoverList]}
+                ></iframe>
               </div>
             </div>
             <div className="flex text-sm flex-wrap  flex-1 justify-center flex-row gap-2 mt-2 ">
@@ -453,44 +450,6 @@ kubectl port-forward -n opencomply svc/nginx-proxy 8080:80`}
         </div>
 
         {/* <!-- Item #5 --> */}
-        <div className="relative flex items-start pt-[10rem] w-full gap-5 justify-center md:justify-center  group">
-          <div className="flex items-center justify-center w-10 h-10  rounded-full border border-white bg-dark-tremor-background  text-slate-500 dark:text-white  group-[.is-active]:text-emerald-50 shadow shrink-0  ">
-            6
-          </div>
-          {/* <!-- Card --> */}
-          <div className="w-[calc(100%-4rem)] min-h-[200px]  md:w-[calc(50%-2.5rem)]  rounded">
-            <div className="flex items-center justify-between space-x-2 mb-1">
-              <div className="font-bold text-slate-900 dark:text-white text-2xl">
-                Embed
-              </div>
-              {/* <time className="font-caveat font-medium text-amber-500">
-                Exp. 12/08/2023
-              </time> */}
-            </div>
-            <div className="text-slate-500 dark:text-white mt-4">
-              Adopt Compliance into your Workflows, CI/CD Deployments.
-            </div>
-          </div>
-          <div className="w-[calc(100%-4rem)]  md:w-[calc(100%)]  rounded">
-            <div className="flex flex-col justify-center mx-auto gap-2">
-              <div className="w-full border dark:border-white p-4 rounded">
-                some content
-              </div>
-              <div className="w-full gap-2 flex flex-row">
-                <div className="w-full border rounded dark:border-white p-4">
-                  premium
-                </div>
-                <div className="w-full border rounded dark:border-white p-4">
-                  premium
-                </div>
-                <div className="w-full border rounded dark:border-white p-4">
-                  premium
-                </div>
-              </div>
-            </div>
-          </div>
-          {/* <!-- Icon --> */}
-        </div>
       </div>
     </section>
   );

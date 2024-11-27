@@ -86,7 +86,8 @@ export function Faqs() {
             Frequently Asked Questions
           </h2>
           <p className="mt-4 text-base leading-7 text-gray-600 dark:text-gray-400">
-            Can&rsquo;t find the answer you&rsquo;re looking for? Don&rsquo;t
+            Do you have any questions? Your answer might be below!
+            {/* Don&rsquo;t
             hesitate to get in touch with our{" "}
             <a
               href="#"
@@ -94,7 +95,7 @@ export function Faqs() {
             >
               customer support
             </a>{" "}
-            team.
+            team. */}
           </p>
         </div>
         <div className="col-span-full mt-6 lg:col-span-7 lg:mt-0">
