@@ -42,14 +42,14 @@ export default function Steps() {
         </a>
       </Button> */}
       <div className="space-y-8 w-full relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px  md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-slate-300 before:to-transparent">
-        <div className="relative flex gap-5 items-start justify-start md:justify-center md:odd:flex-row group is-active">
+        <div className="relative flex gap-5 flex-wrap items-start justify-start md:justify-start md:odd:flex-row group is-active">
           {/* <!-- Icon --> */}
 
           {/* <!-- Card --> */}
           <div className="flex items-center justify-center w-10 h-10  rounded-full border border-white bg-dark-tremor-background text-slate-500 dark:text-white  group-[.is-active]:text-emerald-50 shadow shrink-0 md:order-0  md:group-even:translate-x-1/2">
             1
           </div>
-          <div className="w-[calc(100%-4rem)] min-h-[200px] md:w-[calc(50%-2.5rem)]  rounded">
+          <div className="w-[calc(100%-4rem)]  md:w-[calc(35%-2.5rem)]  rounded">
             <div className="flex items-center justify-between space-x-2 mb-1">
               <div className="font-bold text-slate-900  dark:text-white text-2xl">
                 Install
@@ -62,7 +62,8 @@ export default function Steps() {
               Deploy to Kubernetes in minutes
             </div>
           </div>
-          <div className="w-[calc(100%-4rem)] md:w-[calc(100%)]   rounded">
+          <div className="md:hidden w-10 h-10"></div>
+          <div className="w-[calc(100%-4rem)] md:w-[calc(65%-2.5rem)]   rounded">
             <div className="w-full">
               {/* code to copy */}
               <div className="flex flex-row gap-2 mt-2 w-full relative">
@@ -91,7 +92,7 @@ kubectl port-forward -n opencomply svc/nginx-proxy 8080:80`}
                   />{" "}
                 </div>
               </div>
-              <div className="flex text-sm  flex-1 justify-center flex-row gap-2 mt-2 ">
+              <div className="flex text-sm flex-wrap flex-1 justify-start md:justify-center flex-row gap-2 mt-2 ">
                 <Button
                   ariaLabel="Report a bug (opens new tab)"
                   href="https://example.com"
@@ -158,14 +159,14 @@ kubectl port-forward -n opencomply svc/nginx-proxy 8080:80`}
         </div>
 
         {/* <!-- Item #1 --> */}
-        <div className="relative flex gap-5 pt-[12rem] items-start justify-start md:justify-center md:odd:flex-row group is-active">
+        <div className="relative flex flex-wrap gap-5 pt-[3rem] md:pt-[12rem] items-start justify-start md:justify-center md:odd:flex-row group is-active">
           {/* <!-- Icon --> */}
 
           {/* <!-- Card --> */}
           <div className="flex items-center justify-center w-10 h-10  rounded-full border border-white bg-dark-tremor-background  text-slate-500 dark:text-white  group-[.is-active]:text-emerald-50 shadow shrink-0  ">
             2
           </div>
-          <div className="w-[calc(100%-4rem)] min-h-[200px] md:w-[calc(50%-2.5rem)]  rounded">
+          <div className="w-[calc(100%-4rem)]  md:w-[calc(35%-2.5rem)]  rounded">
             <div className="flex items-center justify-between space-x-2 mb-1">
               <div className="font-bold text-slate-900  dark:text-white text-2xl">
                 Connect Your Tools
@@ -179,7 +180,9 @@ kubectl port-forward -n opencomply svc/nginx-proxy 8080:80`}
               Cloud Accounts to Code Repos
             </div>
           </div>
-          <div className="w-[calc(100%-4rem)] md:w-[calc(100%)]   rounded">
+          <div className="md:hidden w-10 h-10"></div>
+
+          <div className="w-[calc(100%-4rem)] md:w-[calc(65%-2.5rem)]   rounded">
             <div className="rounded-2xl bg-slate-50/40  ring-1 ring-inset ring-slate-200/50 dark:bg-gray-900/70 dark:ring-white/10">
               <div className="rounded-xl bg-white ring-1 ring-slate-900/5 dark:bg-slate-950 dark:ring-white/15">
                 <video
@@ -192,7 +195,7 @@ kubectl port-forward -n opencomply svc/nginx-proxy 8080:80`}
                 </video>
               </div>
             </div>
-            <div className="flex text-sm flex-wrap  flex-1 justify-center flex-row gap-2 mt-2 ">
+            <div className="flex text-sm flex-wrap  flex-1 flex-wrap md:justify-center flex-row gap-2 mt-2 ">
               <Button
                 ariaLabel="Report a bug (opens new tab)"
                 href="https://example.com"
@@ -258,14 +261,14 @@ kubectl port-forward -n opencomply svc/nginx-proxy 8080:80`}
         </div>
 
         {/* <!-- Item #2 --> */}
-        <div className="relative flex  items-start pt-[10rem] gap-5 justify-center md:justify-center md:odd:flex-row group is-active">
+        <div className="relative flex flex-wrap  items-start pt-[3rem]  md:pt-[10rem] gap-5 justify-center md:justify-center md:odd:flex-row group is-active">
           {/* <!-- Icon --> */}
 
           {/* <!-- Card --> */}
           <div className="flex items-center justify-center w-10 h-10  rounded-full border border-white bg-dark-tremor-background  text-slate-500 dark:text-white  group-[.is-active]:text-emerald-50 shadow shrink-0  ">
             3
           </div>
-          <div className="w-[calc(100%-4rem)] min-h-[200px] md:w-[calc(50%-2.5rem)]  rounded">
+          <div className="w-[calc(100%-4rem)]  md:w-[calc(35%-2.5rem)]  rounded">
             <div className="flex items-center justify-between space-x-2 mb-1">
               <div className="font-bold text-slate-900 dark:text-white text-2xl">
                 Discover
@@ -306,8 +309,8 @@ kubectl port-forward -n opencomply svc/nginx-proxy 8080:80`}
               </div>
             </div>
           </div>
-
-          <div className="w-[calc(100%-4rem)]  md:w-[calc(100%)] h-full   rounded">
+          <div className="md:hidden w-10 h-10"></div>
+          <div className="w-[calc(100%-4rem)]  md:w-[calc(65%-2.5rem)] h-full   rounded">
             <div className="rounded-2xl bg-slate-50/40 p-2 ring-1 h-full ring-inset ring-slate-200/50 dark:bg-gray-900/70 dark:ring-white/10">
               <div className="rounded-xl h-full bg-white ring-1 ring-slate-900/5 dark:bg-slate-950 dark:ring-white/15">
                 <iframe
@@ -323,14 +326,14 @@ kubectl port-forward -n opencomply svc/nginx-proxy 8080:80`}
         </div>
 
         {/* <!-- Item #3 --> */}
-        <div className="relative flex pt-[10rem] items-start justify-center gap-5 md:justify-center  group is-active">
+        <div className="relative flex flex-wrap pt-[3rem]  md:pt-[10rem] items-start justify-center gap-5 md:justify-center  group is-active">
           {/* <!-- Icon --> */}
 
           {/* <!-- Card --> */}
           <div className="flex items-center justify-center w-10 h-10  rounded-full border border-white bg-dark-tremor-background  text-slate-500 dark:text-white  group-[.is-active]:text-emerald-50 shadow shrink-0  ">
             4
           </div>
-          <div className="w-[calc(100%-4rem)] min-h-[200px]  md:w-[calc(50%-2.5rem)] p-4 rounded">
+          <div className="w-[calc(100%-4rem)]   md:w-[calc(35%-2.5rem)] p-4 rounded">
             <div className="flex items-center justify-between space-x-2 mb-1">
               <div className="font-bold text-slate-900 dark:text-white text-2xl">
                 Audit
@@ -343,7 +346,8 @@ kubectl port-forward -n opencomply svc/nginx-proxy 8080:80`}
               Audit your platform against Industry standard
             </div>
           </div>
-          <div className="w-[calc(100%-4rem)]  md:w-[calc(100%)]  rounded">
+          <div className="md:hidden w-10 h-10"></div>
+          <div className="w-[calc(100%-4rem)]  md:w-[calc(65%-2.5rem)]  rounded">
             <div className="rounded-2xl bg-slate-50/40 p-2 ring-1 ring-inset ring-slate-200/50 dark:bg-gray-900/70 dark:ring-white/10">
               <div className="rounded-xl bg-white ring-1 ring-slate-900/5 dark:bg-slate-950 dark:ring-white/15">
                 <iframe
@@ -359,12 +363,12 @@ kubectl port-forward -n opencomply svc/nginx-proxy 8080:80`}
         </div>
 
         {/* <!-- Item #4 --> */}
-        <div className="relative flex items-start gap-5  pt-[10rem] justify-center md:justify-center  group is-active">
+        <div className="relative flex flex-wrap items-start gap-5 pt-[3rem]  md:pt-[3rem]   justify-center md:justify-center  group is-active">
           {/* <!-- Icon --> */}
           <div className="flex items-center justify-center w-10 h-10 rounded-full border border-white bg-dark-tremor-background  text-slate-500 dark:text-white  group-[.is-active]:text-emerald-50 shadow shrink-0  ">
             5
           </div>
-          <div className="w-[calc(100%-4rem)] min-h-[200px] md:w-[calc(50%-2.5rem)] rounded">
+          <div className="w-[calc(100%-4rem)]  md:w-[calc(35%-2.5rem)] rounded">
             <div className="flex items-center justify-between space-x-2 mb-1">
               <div className="font-bold text-slate-900 dark:text-white text-2xl">
                 Customize
@@ -400,9 +404,9 @@ kubectl port-forward -n opencomply svc/nginx-proxy 8080:80`}
               </div>
             </div>
           </div>
-
+          <div className="md:hidden w-10 h-10"></div>
           {/* <!-- Card --> */}
-          <div className="w-[calc(100%-4rem)]  md:w-[calc(100%)]  rounded">
+          <div className="w-[calc(100%-4rem)]  md:w-[calc(65%-2.5rem)]  rounded">
             <div className="rounded-2xl bg-slate-50/40 p-2 ring-1 ring-inset ring-slate-200/50 dark:bg-gray-900/70 dark:ring-white/10">
               <div className="rounded-xl bg-white ring-1 ring-slate-900/5 dark:bg-slate-950 dark:ring-white/15">
                 <iframe

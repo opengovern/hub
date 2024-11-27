@@ -29,7 +29,7 @@ export default function LogoCloud() {
       </p>
       <div className=" w-1/3 flex  justify-center fill-neutral-500 items-center  text-gray-900  dark:text-gray-200">
         <Swiper
-          spaceBetween={window.innerWidth > 640 ? 30 : 30}
+          spaceBetween={window.innerWidth > 640 ? 30 : 12}
           modules={[Autoplay]}
           // virtual
           slidesPerView={window.innerWidth > 640 ? 4 : 3}

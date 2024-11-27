@@ -52,7 +52,7 @@ export default function Hero() {
         </Button> */}
       </div>
       <div
-        className="relative mx-auto ml-3 mt-20 h-fit w-[40rem] max-w-6xl animate-slide-up-fade sm:ml-auto sm:w-full sm:px-2"
+        className="relative mx-auto ml-3 mt-20 h-fit md:w-[40rem] max-w-6xl animate-slide-up-fade sm:ml-auto sm:w-full sm:px-2"
         style={{ animationDuration: "1400ms" }}
       >
         <HeroImage />
