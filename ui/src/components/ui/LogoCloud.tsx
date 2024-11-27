@@ -2,6 +2,7 @@ import { Button } from "../Button";
 import { Logos } from "./Logos"
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Virtual ,Autoplay} from "swiper/modules";
+import { RiArrowRightDoubleLine } from "@remixicon/react";
 // Import Swiper styles
 
 export default function LogoCloud() {
@@ -12,15 +13,16 @@ export default function LogoCloud() {
       className="mt-24 flex animate-slide-up-fade flex-col items-center justify-center gap-y-6 text-center sm:mt-32"
       style={{ animationDuration: "1500ms" }}
     >
-      <p className="text-lg font-medium tracking-tighter text-gray-800 dark:text-gray-200">
-        Integrates with Your Favorite Tools
+      <p className="text-lg flex flex-row gap-2 items-center font-medium tracking-tighter text-gray-800 dark:text-gray-200">
+        Integrates with Your Favorite Tools 
+        <RiArrowRightDoubleLine color="white" />
       </p>
       <div className=" w-1/3 flex  justify-center fill-neutral-500 items-center  text-gray-900  dark:text-gray-200">
         <Swiper
-          spaceBetween={70}
+          spaceBetween={window.innerWidth > 640 ? 20 : 30}
           modules={[Autoplay]}
           // virtual
-          slidesPerView={4}
+          slidesPerView={window.innerWidth > 640 ? 4 : 3}
           autoplay={{
             delay: 2000,
             disableOnInteraction: false,
@@ -56,11 +58,11 @@ export default function LogoCloud() {
 
         {/* <Logos.OpenConply className="w-14 h-14 " /> */}
       </div>
-      <div>
+      {/* <div>
         <Button className="h-10 mt-2">
           <a href="/integrations">See The complete list</a>
         </Button>
-      </div>
+      </div> */}
     </section>
   );
 }

@@ -1691,6 +1691,14 @@ select {
   min-width: min-content;
 }
 
+.min-w-\[\] {
+  min-width: ;
+}
+
+.min-w-\[300px\] {
+  min-width: 300px;
+}
+
 .max-w-2xl {
   max-width: 42rem;
 }
