@@ -1,10 +1,18 @@
 import React from "react";
 import { Badge } from "../Badge";
-import { Button } from "../Button";
+// @ts-ignore
+import video from "../../videos/2024-10-08-How_to_Customize_Controls.mp4";
+import CopyToClipboard from "../CopyToClipboard";
+import { Button } from "@cloudscape-design/components";
 
-
+const DISCOVER_URLS = [
+  "https://www.youtube.com/watch?v=ZK-rNEhJIDs",
+  "https://www.youtube.com/watch?v=BY2mTMBkuFI",
+  "https://www.youtube.com/watch?v=joiyb6c_Ry4",
+];
 
 export default function Steps() {
+  const [discoverList, setDiscoverList] = React.useState(0);
   return (
     <section
       aria-labelledby="features-title"
@@ -33,114 +41,455 @@ export default function Steps() {
           See it for yourself
         </a>
       </Button> */}
-      <div className="space-y-8 w-full relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-slate-300 before:to-transparent">
-        {/* <!-- Item #1 --> */}
-        <div className="relative flex gap-5 items-center justify-center md:justify-center md:odd:flex-row group is-active">
+      <div className="space-y-8 w-full relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px  md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-slate-300 before:to-transparent">
+        <div className="relative flex gap-5 items-start justify-start md:justify-center md:odd:flex-row group is-active">
           {/* <!-- Icon --> */}
 
           {/* <!-- Card --> */}
-          <div className="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-white p-4 rounded border border-slate-200 shadow">
-            {/* <div className="flex items-center justify-between space-x-2 mb-1">
-              <div className="font-bold text-slate-900">Connect</div>
-            </div>
-            <div className="text-slate-500">140 chat</div> */}
-            content
-          </div>
-          <div className="flex items-center justify-center w-10 h-10 rounded-full border border-white bg-slate-300 text-slate-500 group-[.is-active]:text-emerald-50 shadow shrink-0 md:order-0  md:group-even:translate-x-1/2">
+          <div className="flex items-center justify-center w-10 h-10  rounded-full border border-white bg-dark-tremor-background text-slate-500 dark:text-white  group-[.is-active]:text-emerald-50 shadow shrink-0 md:order-0  md:group-even:translate-x-1/2">
             1
           </div>
-          <div className="w-[calc(100%-4rem)] min-h-[200px] md:w-[calc(50%-2.5rem)] bg-white p-4 rounded border border-slate-200 shadow">
+          <div className="w-[calc(100%-4rem)] min-h-[200px] md:w-[calc(50%-2.5rem)]  rounded">
             <div className="flex items-center justify-between space-x-2 mb-1">
-              <div className="font-bold text-slate-900">Connect</div>
+              <div className="font-bold text-slate-900  dark:text-white text-2xl">
+                Install
+              </div>
               {/* <time className="font-caveat font-medium text-indigo-500">
                 08/06/2023
               </time> */}
             </div>
-            <div className="text-slate-500">140 chat</div>
+            <div className="text-slate-500 dark:text-white  dark:text-white mt-4">
+              Deploy to Kubernetes in minutes
+            </div>
+          </div>
+          <div className="w-[calc(100%-4rem)] md:w-[calc(100%)]   rounded">
+            <div className="w-full">
+              {/* code to copy */}
+              <div className="flex flex-row gap-2 mt-2 w-full relative">
+                <div className="p-5 border dark:border-white rounded-xl w-full">
+                  <code className=" text-[12px]">
+                    <span className="text-[#8250df]">helm</span> repo add
+                    opencomply https://charts.opencomply.io
+                    <br />
+                    <span className="text-[#8250df]">helm</span> repo update
+                    <br />
+                    <span className="text-[#8250df]">helm</span> install -n
+                    opencomply opencomply opencomply/opencomply
+                    --create-namespace --timeout=10m
+                    <br />
+                    <span className="text-[#8250df]"> kubectl</span>{" "}
+                    port-forward -n opencomply svc/nginx-proxy 8080:80
+                  </code>
+                </div>
+                <div className=" absolute right-2 top-2  [grid-area:2/1] z-[2] justify-self-end backdrop-blur-md leading-none self-start  text-dark-tremor-brand-subtle  rounded-md    print:hidden">
+                  <CopyToClipboard
+                    code={`helm repo add opencomply https://charts.opencomply.io
+helm repo update 
+helm install -n opencomply opencomply
+opencomply/opencomply --create-namespace --timeout=10m
+kubectl port-forward -n opencomply svc/nginx-proxy 8080:80`}
+                  />{" "}
+                </div>
+              </div>
+              <div className="flex text-sm  flex-1 justify-center flex-row gap-2 mt-2 ">
+                <Button
+                  ariaLabel="Report a bug (opens new tab)"
+                  href="https://example.com"
+                  iconAlign="right"
+                  iconName="external"
+                  target="_blank"
+                  variant="primary"
+                >
+                  AWS
+                </Button>
+                <Button
+                  ariaLabel="Report a bug (opens new tab)"
+                  href="https://example.com"
+                  iconAlign="right"
+                  iconName="external"
+                  target="_blank"
+                  variant="primary"
+                >
+                  Azure
+                </Button>
+                <Button
+                  ariaLabel="Report a bug (opens new tab)"
+                  href="https://example.com"
+                  iconAlign="right"
+                  iconName="external"
+                  target="_blank"
+                  variant="primary"
+                >
+                  DigitalOcean
+                </Button>
+                <Button
+                  ariaLabel="Report a bug (opens new tab)"
+                  href="https://example.com"
+                  iconAlign="right"
+                  iconName="external"
+                  target="_blank"
+                  variant="primary"
+                >
+                  GKE
+                </Button>
+                <Button
+                  ariaLabel="Report a bug (opens new tab)"
+                  href="https://example.com"
+                  iconAlign="right"
+                  iconName="external"
+                  target="_blank"
+                  variant="primary"
+                >
+                  Linode
+                </Button>
+                {/* <Button
+                  ariaLabel="Report a bug (opens new tab)"
+                  href="https://example.com"
+                  iconAlign="right"
+                  iconName="external"
+                  target="_blank"
+                  variant="primary"
+                >
+                  Vultr
+                </Button> */}
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* <!-- Item #1 --> */}
+        <div className="relative flex gap-5 pt-[12rem] items-start justify-start md:justify-center md:odd:flex-row group is-active">
+          {/* <!-- Icon --> */}
+
+          {/* <!-- Card --> */}
+          <div className="flex items-center justify-center w-10 h-10  rounded-full border border-white bg-dark-tremor-background  text-slate-500 dark:text-white  group-[.is-active]:text-emerald-50 shadow shrink-0  ">
+            2
+          </div>
+          <div className="w-[calc(100%-4rem)] min-h-[200px] md:w-[calc(50%-2.5rem)]  rounded">
+            <div className="flex items-center justify-between space-x-2 mb-1">
+              <div className="font-bold text-slate-900  dark:text-white text-2xl">
+                Connect Your Tools
+              </div>
+              {/* <time className="font-caveat font-medium text-indigo-500">
+                08/06/2023
+              </time> */}
+            </div>
+            <div className="text-slate-500 dark:text-white  dark:text-white mt-4">
+              Connect your tool with a simple read-only read in Seconds, from
+              Cloud Accounts to Code Repos
+            </div>
+          </div>
+          <div className="w-[calc(100%-4rem)] md:w-[calc(100%)]   rounded">
+            <div className="rounded-2xl bg-slate-50/40  ring-1 ring-inset ring-slate-200/50 dark:bg-gray-900/70 dark:ring-white/10">
+              <div className="rounded-xl bg-white ring-1 ring-slate-900/5 dark:bg-slate-950 dark:ring-white/15">
+                <video
+                  className="rounded-xl w-full shadow-2xl dark:shadow-indigo-600/10"
+                  autoPlay
+                  loop
+                >
+                  <source src={video} type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+            </div>
+            <div className="flex text-sm flex-wrap  flex-1 justify-center flex-row gap-2 mt-2 ">
+              <Button
+                ariaLabel="Report a bug (opens new tab)"
+                href="https://example.com"
+                iconAlign="right"
+                iconName="external"
+                target="_blank"
+                variant="primary"
+              >
+                AWS
+              </Button>
+              <Button
+                ariaLabel="Report a bug (opens new tab)"
+                href="https://example.com"
+                iconAlign="right"
+                iconName="external"
+                target="_blank"
+                variant="primary"
+              >
+                Azure
+              </Button>
+              <Button
+                ariaLabel="Report a bug (opens new tab)"
+                href="https://example.com"
+                iconAlign="right"
+                iconName="external"
+                target="_blank"
+                variant="primary"
+              >
+                GitHub
+              </Button>
+              <Button
+                ariaLabel="Report a bug (opens new tab)"
+                href="https://example.com"
+                iconAlign="right"
+                iconName="external"
+                target="_blank"
+                variant="primary"
+              >
+                OpenAI
+              </Button>
+              <Button
+                ariaLabel="Report a bug (opens new tab)"
+                href="https://example.com"
+                iconAlign="right"
+                iconName="external"
+                target="_blank"
+                variant="primary"
+              >
+                Cloudflare
+              </Button>
+              {/* <Button
+                  ariaLabel="Report a bug (opens new tab)"
+                  href="https://example.com"
+                  iconAlign="right"
+                  iconName="external"
+                  target="_blank"
+                  variant="primary"
+                >
+                  Vultr
+                </Button> */}
+            </div>
           </div>
         </div>
 
         {/* <!-- Item #2 --> */}
-        <div className="relative flex items-center gap-5 justify-center md:justify-center md:odd:flex-row group is-active">
+        <div className="relative flex  items-start pt-[10rem] gap-5 justify-center md:justify-center md:odd:flex-row group is-active">
           {/* <!-- Icon --> */}
 
           {/* <!-- Card --> */}
-          <div className="w-[calc(100%-4rem)] min-h-[200px] md:w-[calc(50%-2.5rem)] bg-white p-4 rounded border border-slate-200 shadow">
+          <div className="flex items-center justify-center w-10 h-10  rounded-full border border-white bg-dark-tremor-background  text-slate-500 dark:text-white  group-[.is-active]:text-emerald-50 shadow shrink-0  ">
+            3
+          </div>
+          <div className="w-[calc(100%-4rem)] min-h-[200px] md:w-[calc(50%-2.5rem)]  rounded">
             <div className="flex items-center justify-between space-x-2 mb-1">
-              <div className="font-bold text-slate-900">Discover</div>
+              <div className="font-bold text-slate-900 dark:text-white text-2xl">
+                Discover
+              </div>
             </div>
-            <div className="text-slate-500">140 chat</div>
+            <div className="text-slate-500 dark:text-white mt-4">
+              <div className="flex flex-col gap-5">
+                <div className="text-slate-500 dark:text-white ">
+                  {" "}
+                  some texts goes here
+                </div>
+                <div className="flex flex-row gap-2 flex-wrap">
+                  <div
+                    className="p-2 border dark:border-white rounded-3xl cursor-pointer"
+                    onClick={() => {
+                      setDiscoverList(0);
+                    }}
+                  >
+                    Inventory
+                  </div>
+                  <div
+                    className="p-2 border dark:border-white rounded-3xl cursor-pointer"
+                    onClick={() => {
+                      setDiscoverList(1);
+                    }}
+                  >
+                    Misconfiguration
+                  </div>
+                  <div
+                    className="p-2 border dark:border-white rounded-3xl cursor-pointer"
+                    onClick={() => {
+                      setDiscoverList(2);
+                    }}
+                  >
+                    Optimization
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div className="flex items-center justify-center w-10 h-10 rounded-full border border-white bg-slate-300  text-slate-500 group-[.is-active]:text-emerald-50 shadow shrink-0  ">
-            2
-          </div>
-          <div className="w-[calc(100%-4rem)]  md:w-[calc(50%-2.5rem)] bg-white p-4 rounded border border-slate-200 shadow">
-            content
+
+          <div className="w-[calc(100%-4rem)]  md:w-[calc(100%)]   rounded">
+            <div className="rounded-2xl bg-slate-50/40 p-2 ring-1 ring-inset ring-slate-200/50 dark:bg-gray-900/70 dark:ring-white/10">
+              <div className="rounded-xl bg-white ring-1 ring-slate-900/5 dark:bg-slate-950 dark:ring-white/15">
+                <video
+                  className="rounded-xl w-full shadow-2xl dark:shadow-indigo-600/10"
+                  controls
+                >
+                  <source src={DISCOVER_URLS[discoverList]} type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+            </div>
+            <div className="mt-[3rem] ml-4">some texts goes here also</div>
           </div>
         </div>
 
         {/* <!-- Item #3 --> */}
-        <div className="relative flex items-center justify-center gap-5 md:justify-center  group is-active">
+        <div className="relative flex pt-[10rem] items-start justify-center gap-5 md:justify-center  group is-active">
           {/* <!-- Icon --> */}
 
           {/* <!-- Card --> */}
-          <div className="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-white p-4 rounded border border-slate-200 shadow">
-            content
+          <div className="flex items-center justify-center w-10 h-10  rounded-full border border-white bg-dark-tremor-background  text-slate-500 dark:text-white  group-[.is-active]:text-emerald-50 shadow shrink-0  ">
+            4
           </div>
-          <div className="flex items-center justify-center w-10 h-10 rounded-full border border-white bg-slate-300  text-slate-500 group-[.is-active]:text-emerald-50 shadow shrink-0  ">
-            3
-          </div>
-          <div className="w-[calc(100%-4rem)] min-h-[200px]  md:w-[calc(50%-2.5rem)] bg-white p-4 rounded border border-slate-200 shadow">
+          <div className="w-[calc(100%-4rem)] min-h-[200px]  md:w-[calc(50%-2.5rem)] p-4 rounded">
             <div className="flex items-center justify-between space-x-2 mb-1">
-              <div className="font-bold text-slate-900">Audit</div>
+              <div className="font-bold text-slate-900 dark:text-white text-2xl">
+                Audit
+              </div>
               {/* <time className="font-caveat font-medium text-indigo-500">
                 10/06/2023
               </time> */}
             </div>
-            <div className="text-slate-500">140 chat</div>
+            <div className="text-slate-500 dark:text-white mt-4">
+              Audit your platform against Industry standard
+            </div>
+          </div>
+          <div className="w-[calc(100%-4rem)]  md:w-[calc(100%)]  rounded">
+            <div className="rounded-2xl bg-slate-50/40 p-2 ring-1 ring-inset ring-slate-200/50 dark:bg-gray-900/70 dark:ring-white/10">
+              <div className="rounded-xl bg-white ring-1 ring-slate-900/5 dark:bg-slate-950 dark:ring-white/15">
+                <video
+                  className="rounded-xl w-full shadow-2xl dark:shadow-indigo-600/10"
+                  controls
+                >
+                  <source src={DISCOVER_URLS[discoverList]} type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+            </div>
+            <div className="mt-[3rem] ml-4">some texts goes here also</div>
           </div>
         </div>
 
         {/* <!-- Item #4 --> */}
-        <div className="relative flex items-center gap-5 justify-center md:justify-center  group is-active">
+        <div className="relative flex items-start gap-5  pt-[10rem] justify-center md:justify-center  group is-active">
           {/* <!-- Icon --> */}
-          <div className="w-[calc(100%-4rem)] min-h-[200px] md:w-[calc(50%-2.5rem)] bg-white p-4 rounded border border-slate-200 shadow">
+          <div className="flex items-center justify-center w-10 h-10 rounded-full border border-white bg-dark-tremor-background  text-slate-500 dark:text-white  group-[.is-active]:text-emerald-50 shadow shrink-0  ">
+            5
+          </div>
+          <div className="w-[calc(100%-4rem)] min-h-[200px] md:w-[calc(50%-2.5rem)] rounded">
             <div className="flex items-center justify-between space-x-2 mb-1">
-              <div className="font-bold text-slate-900">Customize</div>
+              <div className="font-bold text-slate-900 dark:text-white text-2xl">
+                Customize
+              </div>
               {/* <time className="font-caveat font-medium text-indigo-500">
                 12/06/2023
               </time> */}
             </div>
-            <div className="text-slate-500">140 chat</div>
+            <div className="text-slate-500 dark:text-white mt-4">
+              <div className="flex flex-col gap-5">
+                <div className="text-slate-500 dark:text-white ">
+                  {" "}
+                  Customize Compliance Controls, Frameworks as needed
+                </div>
+                {/* <div className="flex flex-row gap-2 flex-wrap">
+                  <div
+                    className="p-2 border dark:border-white rounded-3xl cursor-pointer"
+                    onClick={() => {
+                      setDiscoverList(1);
+                    }}
+                  >
+                    Define Frameworks
+                  </div>
+                  <div
+                    className="p-2 border dark:border-white rounded-3xl cursor-pointer"
+                    onClick={() => {
+                      setDiscoverList(2);
+                    }}
+                  >
+                    Custom Controls
+                  </div>
+                </div> */}
+              </div>
+            </div>
           </div>
-          <div className="flex items-center justify-center w-10 h-10 rounded-full border border-white bg-slate-300  text-slate-500 group-[.is-active]:text-emerald-50 shadow shrink-0  ">
-            4
-          </div>
+
           {/* <!-- Card --> */}
-          <div className="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-white p-4 rounded border border-slate-200 shadow">
-            content
+          <div className="w-[calc(100%-4rem)]  md:w-[calc(100%)]  rounded">
+            <div className="rounded-2xl bg-slate-50/40 p-2 ring-1 ring-inset ring-slate-200/50 dark:bg-gray-900/70 dark:ring-white/10">
+              <div className="rounded-xl bg-white ring-1 ring-slate-900/5 dark:bg-slate-950 dark:ring-white/15">
+                <video
+                  className="rounded-xl w-full shadow-2xl dark:shadow-indigo-600/10"
+                  controls
+                >
+                  <source src={DISCOVER_URLS[discoverList]} type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+            </div>
+            <div className="flex text-sm flex-wrap  flex-1 justify-center flex-row gap-2 mt-2 ">
+              <Button
+                ariaLabel="Report a bug (opens new tab)"
+                href="https://example.com"
+                iconAlign="right"
+                iconName="external"
+                target="_blank"
+                variant="primary"
+              >
+                Define Frameworks
+              </Button>
+              <Button
+                ariaLabel="Report a bug (opens new tab)"
+                href="https://example.com"
+                iconAlign="right"
+                iconName="external"
+                target="_blank"
+                variant="primary"
+              >
+                Custom Controls
+              </Button>
+
+              {/* <Button
+                  ariaLabel="Report a bug (opens new tab)"
+                  href="https://example.com"
+                  iconAlign="right"
+                  iconName="external"
+                  target="_blank"
+                  variant="primary"
+                >
+                  Vultr
+                </Button> */}
+            </div>
           </div>
         </div>
 
         {/* <!-- Item #5 --> */}
-        <div className="relative flex items-center w-full gap-5 justify-center md:justify-center  group">
-          <div className="w-[calc(100%-4rem)]  md:w-[calc(50%-2.5rem)] bg-white p-4 rounded border border-slate-200 shadow">
-            content
-          </div>
-          {/* <!-- Icon --> */}
-          <div className="flex items-center justify-center w-10 h-10 rounded-full border border-white bg-slate-300  text-slate-500 group-[.is-active]:text-emerald-50 shadow shrink-0  ">
-            5
+        <div className="relative flex items-start pt-[10rem] w-full gap-5 justify-center md:justify-center  group">
+          <div className="flex items-center justify-center w-10 h-10  rounded-full border border-white bg-dark-tremor-background  text-slate-500 dark:text-white  group-[.is-active]:text-emerald-50 shadow shrink-0  ">
+            6
           </div>
           {/* <!-- Card --> */}
-          <div className="w-[calc(100%-4rem)] min-h-[200px]  md:w-[calc(50%-2.5rem)] bg-white p-4 rounded border border-slate-200 shadow">
+          <div className="w-[calc(100%-4rem)] min-h-[200px]  md:w-[calc(50%-2.5rem)]  rounded">
             <div className="flex items-center justify-between space-x-2 mb-1">
-              <div className="font-bold text-slate-900">Integrate</div>
+              <div className="font-bold text-slate-900 dark:text-white text-2xl">
+                Embed
+              </div>
               {/* <time className="font-caveat font-medium text-amber-500">
                 Exp. 12/08/2023
               </time> */}
             </div>
-            <div className="text-slate-500">140 chat</div>
+            <div className="text-slate-500 dark:text-white mt-4">
+              Adopt Compliance into your Workflows, CI/CD Deployments.
+            </div>
           </div>
+          <div className="w-[calc(100%-4rem)]  md:w-[calc(100%)]  rounded">
+            <div className="flex flex-col justify-center mx-auto gap-2">
+              <div className="w-full border dark:border-white p-4 rounded">
+                some content
+              </div>
+              <div className="w-full gap-2 flex flex-row">
+                <div className="w-full border rounded dark:border-white p-4">
+                  premium
+                </div>
+                <div className="w-full border rounded dark:border-white p-4">
+                  premium
+                </div>
+                <div className="w-full border rounded dark:border-white p-4">
+                  premium
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* <!-- Icon --> */}
         </div>
       </div>
     </section>

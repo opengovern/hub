@@ -2,6 +2,7 @@ import Advantage from "../../components/ui/Advantage"
 import Benefits from "../../components/ui/Benefits"
 import CodeExample from "../../components/ui/CodeExample"
 import Cta from "../../components/ui/Cta"
+import { Faqs } from "../../components/ui/Faqs"
 import Features from "../../components/ui/Features"
 import { GlobalDatabase } from "../../components/ui/GlobalDatabase"
 import Hero from "../../components/ui/Hero"
@@ -22,6 +23,7 @@ export default function Preview() {
 
       {/* <Benefits /> */}
       <Cta />
+      <Faqs />
     </main>
   );
 }
