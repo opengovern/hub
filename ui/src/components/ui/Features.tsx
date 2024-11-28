@@ -21,16 +21,16 @@ export default function Features() {
   return (
     <section
       aria-labelledby="features-title"
-      className=" mt-24 w-full max-w-6xl px-10 mx-auto border dark:border-white ring-1 bg-[#59759c]  ring-tremor-background-emphasis p-3 rounded-xl  flex flex-col justify-start items-start"
+      className=" mt-24 w-full max-w-6xl px-60 py-12 mx-auto border dark:border-white ring-1 bg-white  ring-tremor-background-emphasis  rounded-xl  flex flex-col justify-start items-start"
     >
       {/* <Badge>Security at Scale</Badge> */}
       <h2
         id="features-title"
-        className="mt-2 inline-block text-white text-start w-full bg-gradient-to-br from-gray-900 to-gray-800 bg-clip-text py-2 text-4xl font-bold tracking-tighter text-transparent sm:text-6xl md:text-6xl dark:from-gray-50 dark:to-gray-300"
+        className=" inline-block text-black text-start w-full bg-gradient-to-br from-gray-900 to-gray-800 bg-clip-text py-2 text-4xl font-bold tracking-tighter text-transparent sm:text-4xl md:text-4xl "
       >
         The Problem with compliance
       </h2>
-      <p className="mt-6   text-lg max-w-xl  text-left leading-7 text-white dark:text-white">
+      <p className="mt-6   text-lg max-w-xl  text-left leading-7 text-black dark:text-black">
         Managing code, data, and applications across multiple clouds and
         platforms is complex. Traditional compliance methods can’t keep up.
         <br />
@@ -44,7 +44,7 @@ export default function Features() {
         configurations, and networks on every platform.
         <br />
         <br />
-        <b className="dark:text-white font-bold">
+        <b className="dark:text-black font-bold">
           Don't take our word for it, experience it.
         </b>
       </p>

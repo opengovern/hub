@@ -10,6 +10,7 @@ import ControlDetail from '../pages/policies/detail/controls/detail';
 import Schema from '../pages/schema';
 import SchemaTables from '../pages/schema/tables';
 import Preview from '../pages/preview';
+import UseCase from '../pages/useCases';
 
 
 const authRoutes = [
@@ -70,6 +71,12 @@ const authRoutes = [
     key: "schmea-tables",
     path: "/integrations/:id/schema/:table_id",
     element: <SchemaTables />,
+    noAuth: true,
+  },
+  {
+    key: "use-cases",
+    path: "/use-cases",
+    element: <UseCase />,
     noAuth: true,
   },
 ];
