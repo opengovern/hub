@@ -33,7 +33,9 @@ const UseCaseCard: FunctionComponent<CardProps> = ({
 
   return (
     <>
-      <div className="card rounded-lg border shadow-2xl dark:border-none dark:bg-white h-full flex flex-col justify-between  w-full gap-4 ">
+      <div onClick={()=>{
+        onClick?.()
+      }} className="card cursor-pointer rounded-lg border shadow-2xl dark:border-none dark:bg-white h-full flex flex-col justify-between  w-full gap-4 ">
         <div className="flex flex-row justify-between rounded-xl  items-center px-4 py-2">
           <div className="flex flex-row gap-2">
             <div className=" bg-gray-300 dark:bg-slate-400 rounded p-2">
