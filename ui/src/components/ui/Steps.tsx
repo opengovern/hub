@@ -12,7 +12,7 @@ const DISCOVER_URLS = [
 ];
 
 export default function Steps() {
-  const [discoverList, setDiscoverList] = React.useState(0);
+  const [discoverOption, setDiscoverOption] = React.useState(0);
   return (
     <section
       aria-labelledby="features-title"
@@ -282,25 +282,25 @@ kubectl port-forward -n opencomply svc/nginx-proxy 8080:80`}
                 </div>
                 <div className="flex flex-row gap-2 flex-wrap">
                   <div
-                    className="p-2 border dark:border-white rounded-3xl cursor-pointer"
+                    className={`p-2 border dark:border-white rounded-3xl cursor-pointer hover:dark:bg-white hover:bg-blue-950 hover:text-white hover:dark:text-black  ${discoverOption == 0 && "text-bold dark:bg-white dark:text-black bg-blue-950 text-white "}  `}
                     onClick={() => {
-                      setDiscoverList(0);
+                      setDiscoverOption(0);
                     }}
                   >
                     Inventory
                   </div>
                   <div
-                    className="p-2 border dark:border-white rounded-3xl cursor-pointer"
+                    className={`p-2 border dark:border-white rounded-3xl cursor-pointer hover:dark:bg-white hover:bg-blue-950 hover:text-white hover:dark:text-black  ${discoverOption == 1 && "text-bold dark:bg-white dark:text-black bg-blue-950 text-white "}  `}
                     onClick={() => {
-                      setDiscoverList(1);
+                      setDiscoverOption(1);
                     }}
                   >
                     Misconfiguration
                   </div>
                   <div
-                    className="p-2 border dark:border-white rounded-3xl cursor-pointer"
+                    className={`p-2 border dark:border-white rounded-3xl cursor-pointer hover:dark:bg-white hover:bg-blue-950 hover:text-white hover:dark:text-black  ${discoverOption == 2 && "text-bold dark:bg-white dark:text-black bg-blue-950 text-white "}  `}
                     onClick={() => {
-                      setDiscoverList(2);
+                      setDiscoverOption(2);
                     }}
                   >
                     Optimization
@@ -317,7 +317,7 @@ kubectl port-forward -n opencomply svc/nginx-proxy 8080:80`}
                   height={"400"}
                   width={"100%"}
                   className="rounded-xl  w-full shadow-2xl dark:shadow-indigo-600/10"
-                  src={DISCOVER_URLS[discoverList]}
+                  src={DISCOVER_URLS[discoverOption]}
                 ></iframe>
               </div>
             </div>
@@ -354,7 +354,7 @@ kubectl port-forward -n opencomply svc/nginx-proxy 8080:80`}
                   height={"400"}
                   width={"100%"}
                   className="rounded-xl  w-full shadow-2xl dark:shadow-indigo-600/10"
-                  src={DISCOVER_URLS[discoverList]}
+                  src={DISCOVER_URLS[discoverOption]}
                 ></iframe>
               </div>
             </div>
@@ -413,7 +413,7 @@ kubectl port-forward -n opencomply svc/nginx-proxy 8080:80`}
                   height={"400"}
                   width={"100%"}
                   className="rounded-xl  w-full shadow-2xl dark:shadow-indigo-600/10"
-                  src={DISCOVER_URLS[discoverList]}
+                  src={DISCOVER_URLS[discoverOption]}
                 ></iframe>
               </div>
             </div>
