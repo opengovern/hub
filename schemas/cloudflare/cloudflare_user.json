@@ -1,0 +1,76 @@
+{
+  "table_name": "cloudflare_user",
+  "table_description": "Information about the current user making the request.",
+  "columns": [
+    {
+      "name": "id",
+      "type": "text",
+      "description": "ID of the user."
+    },
+    {
+      "name": "email",
+      "type": "text",
+      "description": "Email of the user."
+    },
+    {
+      "name": "username",
+      "type": "text",
+      "description": "Username (actually often in ID style) of the user."
+    },
+    {
+      "name": "telephone",
+      "type": "text",
+      "description": "Telephone number of the user."
+    },
+    {
+      "name": "first_name",
+      "type": "text",
+      "description": "First name of the user."
+    },
+    {
+      "name": "last_name",
+      "type": "text",
+      "description": "Last name of the user."
+    },
+    {
+      "name": "country",
+      "type": "text",
+      "description": "Country of the user."
+    },
+    {
+      "name": "zipcode",
+      "type": "text",
+      "description": "Zipcode of the user."
+    },
+    {
+      "name": "created_on",
+      "type": "timestamp with time zone",
+      "description": "When the user was created."
+    },
+    {
+      "name": "modified_on",
+      "type": "timestamp with time zone",
+      "description": "When the user was last modified."
+    },
+    {
+      "name": "api_key",
+      "type": "text",
+      "description": "API Key for the user."
+    },
+    {
+      "name": "two_factor_authentication_enabled",
+      "type": "boolean",
+      "description": "True if two factor authentication is enabled for this user."
+    },
+    {
+      "name": "betas",
+      "type": "json",
+      "description": "Beta feature flags associated with the user."
+    },
+    {
+      "name": "organizations",
+      "type": "json",
+      "description": "Organizations the user is a member of."
+    }
+  ]
+}

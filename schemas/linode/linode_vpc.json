@@ -1,0 +1,41 @@
+{
+  "table_name": "linode_vpc",
+  "table_description": "Images in the Linode account.",
+  "columns": [
+    {
+      "name": "id",
+      "type": "integer",
+      "description": "The unique ID of this VPC."
+    },
+    {
+      "name": "label",
+      "type": "text",
+      "description": "A short description of the VPC."
+    },
+    {
+      "name": "description",
+      "type": "text",
+      "description": "A description of the VPC."
+    },
+    {
+      "name": "region",
+      "type": "text",
+      "description": ""
+    },
+    {
+      "name": "subnets",
+      "type": "json",
+      "description": ""
+    },
+    {
+      "name": "created",
+      "type": "timestamp with time zone",
+      "description": ""
+    },
+    {
+      "name": "updated",
+      "type": "timestamp with time zone",
+      "description": ""
+    }
+  ]
+}

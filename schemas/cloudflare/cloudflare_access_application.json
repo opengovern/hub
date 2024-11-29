@@ -1,0 +1,81 @@
+{
+  "table_name": "cloudflare_access_application",
+  "table_description": "Access Applications are used to restrict access to a whole application using an authorisation gateway managed by Cloudflare.",
+  "columns": [
+    {
+      "name": "id",
+      "type": "text",
+      "description": "Application API uuid."
+    },
+    {
+      "name": "name",
+      "type": "text",
+      "description": "Friendly name of the access application."
+    },
+    {
+      "name": "account_id",
+      "type": "text",
+      "description": "ID of the account, access application belongs."
+    },
+    {
+      "name": "account_name",
+      "type": "text",
+      "description": "Name of the account, access application belongs."
+    },
+    {
+      "name": "domain",
+      "type": "text",
+      "description": "The domain and path that access will block."
+    },
+    {
+      "name": "created_at",
+      "type": "timestamp with time zone",
+      "description": "Timestamp when the application was created."
+    },
+    {
+      "name": "aud",
+      "type": "text",
+      "description": "Audience tag."
+    },
+    {
+      "name": "auto_redirect_to_identity",
+      "type": "boolean",
+      "description": "Option to skip identity provider selection if only one is configured in allowed_idps. Defaults to false (disabled)."
+    },
+    {
+      "name": "custom_deny_message",
+      "type": "text",
+      "description": "Option that returns a custom error message when a user is denied access to the application."
+    },
+    {
+      "name": "custom_deny_url",
+      "type": "text",
+      "description": "Option that redirects to a custom URL when a user is denied access to the application."
+    },
+    {
+      "name": "enable_binding_cookie",
+      "type": "boolean",
+      "description": "Option to provide increased security against compromised authorization tokens and CSRF attacks by requiring an additional \\\"binding\\\" cookie on requests. Defaults to false."
+    },
+    {
+      "name": "session_duration",
+      "type": "text",
+      "description": "How often a user will be forced to re-authorise. Must be in the format \\\"48h\\\" or \\\"2h45m\\\". Valid time units are ns, us (or µs), ms, s, m, h. Defaults to 24h."
+    },
+    {
+      "name": "updated_at",
+      "type": "timestamp with time zone",
+      "description": "Timestamp when the application was last modified."
+    },
+    {
+      "name": "allowed_idps",
+      "type": "json",
+      "description": "The identity providers selected for the application."
+    },
+    {
+      "name": "cors_headers",
+      "type": "json",
+      "description": "CORS configuration for the access application. See below for reference structure."
+    }
+  ]
+}

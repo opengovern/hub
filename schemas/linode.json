@@ -1,0 +1,77 @@
+{
+  "count_of_named_tables": 14,
+  "count_of_named_columns": 162,
+  "tables": [
+    {
+      "table_name": "linode_account",
+      "description": "Account information.",
+      "count_of_columns": 16
+    },
+    {
+      "table_name": "linode_database",
+      "description": "Instances in the Linode account.",
+      "count_of_columns": 16
+    },
+    {
+      "table_name": "linode_domain",
+      "description": "Domains in the Linode account.",
+      "count_of_columns": 14
+    },
+    {
+      "table_name": "linode_firewall",
+      "description": "Firewalls in the Linode account.",
+      "count_of_columns": 7
+    },
+    {
+      "table_name": "linode_image",
+      "description": "Images in the Linode account.",
+      "count_of_columns": 11
+    },
+    {
+      "table_name": "linode_instance",
+      "description": "Instances in the Linode account.",
+      "count_of_columns": 17
+    },
+    {
+      "table_name": "linode_ip_address",
+      "description": "Images in the Linode account.",
+      "count_of_columns": 11
+    },
+    {
+      "table_name": "linode_kubernetes_cluster",
+      "description": "Kubernetes clusters in the Linode account.",
+      "count_of_columns": 9
+    },
+    {
+      "table_name": "linode_longview_client",
+      "description": "Instances in the Linode account.",
+      "count_of_columns": 8
+    },
+    {
+      "table_name": "linode_node_balancer",
+      "description": "NodeBalancers that are assigned to this Linode and readable by the requesting User.",
+      "count_of_columns": 11
+    },
+    {
+      "table_name": "linode_objectstorage_bucket",
+      "description": "Instances in the Linode account.",
+      "count_of_columns": 7
+    },
+    {
+      "table_name": "linode_stack_script",
+      "description": "Instances in the Linode account.",
+      "count_of_columns": 17
+    },
+    {
+      "table_name": "linode_volume",
+      "description": "Volumes in the Linode account.",
+      "count_of_columns": 11
+    },
+    {
+      "table_name": "linode_vpc",
+      "description": "Images in the Linode account.",
+      "count_of_columns": 7
+    }
+  ],
+  "description": "Connect Linode to manage cloud accounts."
+}

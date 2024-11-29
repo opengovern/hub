@@ -1,0 +1,86 @@
+{
+  "table_name": "linode_database",
+  "table_description": "Instances in the Linode account.",
+  "columns": [
+    {
+      "name": "id",
+      "type": "integer",
+      "description": "The unique ID of this Instance."
+    },
+    {
+      "name": "status",
+      "type": "text",
+      "description": ""
+    },
+    {
+      "name": "label",
+      "type": "text",
+      "description": "The Instance’s label is for display purposes only."
+    },
+    {
+      "name": "hosts",
+      "type": "json",
+      "description": ""
+    },
+    {
+      "name": "region",
+      "type": "text",
+      "description": ""
+    },
+    {
+      "name": "type",
+      "type": "text",
+      "description": ""
+    },
+    {
+      "name": "engine",
+      "type": "text",
+      "description": ""
+    },
+    {
+      "name": "version",
+      "type": "text",
+      "description": ""
+    },
+    {
+      "name": "cluster_size",
+      "type": "integer",
+      "description": ""
+    },
+    {
+      "name": "replication_type",
+      "type": "text",
+      "description": ""
+    },
+    {
+      "name": "ssl_connection",
+      "type": "boolean",
+      "description": ""
+    },
+    {
+      "name": "encrypted",
+      "type": "boolean",
+      "description": ""
+    },
+    {
+      "name": "allow_list",
+      "type": "json",
+      "description": ""
+    },
+    {
+      "name": "instance_uri",
+      "type": "text",
+      "description": ""
+    },
+    {
+      "name": "created",
+      "type": "timestamp with time zone",
+      "description": ""
+    },
+    {
+      "name": "updated",
+      "type": "timestamp with time zone",
+      "description": ""
+    }
+  ]
+}

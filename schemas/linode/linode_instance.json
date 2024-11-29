@@ -1,0 +1,91 @@
+{
+  "table_name": "linode_instance",
+  "table_description": "Instances in the Linode account.",
+  "columns": [
+    {
+      "name": "id",
+      "type": "integer",
+      "description": "The unique ID of this Instance."
+    },
+    {
+      "name": "label",
+      "type": "text",
+      "description": "The Instance’s label is for display purposes only."
+    },
+    {
+      "name": "alerts",
+      "type": "json",
+      "description": "Alerts are triggered if CPU, IO, etc exceed these limits."
+    },
+    {
+      "name": "backups",
+      "type": "json",
+      "description": "Information about this Linode’s backups status."
+    },
+    {
+      "name": "created",
+      "type": "timestamp with time zone",
+      "description": "When this Instance was created."
+    },
+    {
+      "name": "hypervisor",
+      "type": "text",
+      "description": "The virtualization software powering this Linode, e.g. kvm."
+    },
+    {
+      "name": "image",
+      "type": "text",
+      "description": "An Image ID to deploy the Disk from."
+    },
+    {
+      "name": "instance_type",
+      "type": "text",
+      "description": "This is the Linode Type that this Linode was deployed with."
+    },
+    {
+      "name": "ipv4",
+      "type": "json",
+      "description": "Array of this Linode’s IPv4 Addresses."
+    },
+    {
+      "name": "ipv6",
+      "type": "cidr",
+      "description": "This Linode’s IPv6 SLAAC address."
+    },
+    {
+      "name": "region",
+      "type": "text",
+      "description": "Region where the instance resides."
+    },
+    {
+      "name": "specs",
+      "type": "json",
+      "description": "Information about the resources available to this Linode, e.g. disk space."
+    },
+    {
+      "name": "status",
+      "type": "text",
+      "description": "The current status of the instance: creating, active, resizing, contact_support."
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": "Tags applied to this instance as a map."
+    },
+    {
+      "name": "tags_src",
+      "type": "json",
+      "description": "List of Tags applied to this instance."
+    },
+    {
+      "name": "updated",
+      "type": "timestamp with time zone",
+      "description": "When this Instance was last updated."
+    },
+    {
+      "name": "watchdog_enabled",
+      "type": "boolean",
+      "description": "The watchdog, named Lassie, is a Shutdown Watchdog that monitors your Linode and will reboot it if it powers off unexpectedly."
+    }
+  ]
+}

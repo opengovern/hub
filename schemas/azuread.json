@@ -113,5 +113,5 @@
       "count_of_columns": 18
     }
   ],
-  "description": "Manage DigitalOcean resources and droplets."
+  "description": "Gain visibility into DNS, WAFs, Firewall Rules."
 }

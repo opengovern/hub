@@ -1,0 +1,91 @@
+{
+  "table_name": "cloudflare_load_balancer_monitor",
+  "table_description": "A monitor issues health checks at regular intervals to evaluate the health of an origin pool.",
+  "columns": [
+    {
+      "name": "id",
+      "type": "text",
+      "description": "Load balancer monitor API item identifier."
+    },
+    {
+      "name": "created_on",
+      "type": "timestamp with time zone",
+      "description": "Timestamp when the load balancer monitor was created."
+    },
+    {
+      "name": "modified_on",
+      "type": "timestamp with time zone",
+      "description": "Timestamp when the load balancer monitor was last modified."
+    },
+    {
+      "name": "type",
+      "type": "text",
+      "description": "The protocol to use for the healthcheck. Currently supported protocols are \\\"HTTP\\\", \\\"HTTPS\\\" and \\\"TCP\\\". Default: \\\"http\\\"."
+    },
+    {
+      "name": "description",
+      "type": "text",
+      "description": "Monitor description."
+    },
+    {
+      "name": "method",
+      "type": "text",
+      "description": "The method to use for the health check. Valid values are any valid HTTP verb if type is \\\"http\\\" or \\\"https\\\", or connection_established if type is \\\"tcp\\\". Default: \\\"GET\\\" if type is \\\"http\\\" or \\\"https\\\", or \\\"connection_established\\\" if type is \\\"tcp\\\" ."
+    },
+    {
+      "name": "path",
+      "type": "text",
+      "description": "The endpoint path to health check against. Default: \\\"/\\\". Only valid if type is \\\"http\\\" or \\\"https\\\"."
+    },
+    {
+      "name": "header",
+      "type": "json",
+      "description": "The HTTP request headers to send in the health check. It is recommended you set a Host header by default. The User-Agent header cannot be overridden. Fields documented below. Only valid if type is \\\"http\\\" or \\\"https\\\"."
+    },
+    {
+      "name": "timeout",
+      "type": "integer",
+      "description": "The timeout (in seconds) before marking the health check as failed. Default: 5."
+    },
+    {
+      "name": "retries",
+      "type": "integer",
+      "description": "The number of retries to attempt in case of a timeout before marking the origin as unhealthy. Retries are attempted immediately. Default: 2."
+    },
+    {
+      "name": "interval",
+      "type": "integer",
+      "description": "The interval between each health check. Shorter intervals may improve failover time, but will increase load on the origins as we check from multiple locations. Default: 60."
+    },
+    {
+      "name": "port",
+      "type": "integer",
+      "description": "The port number to use for the healthcheck, required when creating a TCP monitor. Valid values are in the range 0-65535"
+    },
+    {
+      "name": "expected_body",
+      "type": "text",
+      "description": "A case-insensitive sub-string to look for in the response body. If this string is not found, the origin will be marked as unhealthy. Only valid if type is \\\"http\\\" or \\\"https\\\". Default: \\\"\\\"."
+    },
+    {
+      "name": "expected_codes",
+      "type": "text",
+      "description": "The expected HTTP response code or code range of the health check. Eg 2xx. Only valid and required if type is \\\"http\\\" or \\\"https\\\"."
+    },
+    {
+      "name": "follow_redirects",
+      "type": "boolean",
+      "description": "Follow redirects if returned by the origin. Only valid if type is \\\"http\\\" or \\\"https\\\"."
+    },
+    {
+      "name": "allow_insecure",
+      "type": "boolean",
+      "description": "Do not validate the certificate when monitor use HTTPS. Only valid if type is \\\"http\\\" or \\\"https\\\"."
+    },
+    {
+      "name": "probe_zone",
+      "type": "text",
+      "description": "Assign this monitor to emulate the specified zone while probing. Only valid if type is \\\"http\\\" or \\\"https\\\"."
+    }
+  ]
+}

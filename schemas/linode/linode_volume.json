@@ -1,0 +1,61 @@
+{
+  "table_name": "linode_volume",
+  "table_description": "Volumes in the Linode account.",
+  "columns": [
+    {
+      "name": "id",
+      "type": "integer",
+      "description": "The unique ID of this Volume."
+    },
+    {
+      "name": "label",
+      "type": "text",
+      "description": "The Volume’s label is for display purposes only."
+    },
+    {
+      "name": "size",
+      "type": "integer",
+      "description": "The Volume’s size, in GiB."
+    },
+    {
+      "name": "created",
+      "type": "timestamp with time zone",
+      "description": "When this Volume was created."
+    },
+    {
+      "name": "filesystem_path",
+      "type": "text",
+      "description": "The full filesystem path for the Volume based on the Volume’s label."
+    },
+    {
+      "name": "linode_id",
+      "type": "integer",
+      "description": "If a Volume is attached to a specific Linode, the ID of that Linode will be displayed here."
+    },
+    {
+      "name": "region",
+      "type": "text",
+      "description": "Region where the volume resides."
+    },
+    {
+      "name": "status",
+      "type": "text",
+      "description": "The current status of the volume: creating, active, resizing, contact_support."
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": "Tags applied to this volume as a map."
+    },
+    {
+      "name": "tags_src",
+      "type": "json",
+      "description": "List of Tags applied to this volume."
+    },
+    {
+      "name": "updated",
+      "type": "timestamp with time zone",
+      "description": "When this Volume was last updated."
+    }
+  ]
+}

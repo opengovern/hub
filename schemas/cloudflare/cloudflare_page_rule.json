@@ -1,0 +1,51 @@
+{
+  "table_name": "cloudflare_page_rule",
+  "table_description": "Page Rules gives the ability to control how Cloudflare works on a URL or subdomain basis.",
+  "columns": [
+    {
+      "name": "id",
+      "type": "text",
+      "description": "Specifies the Page Rule identifier."
+    },
+    {
+      "name": "status",
+      "type": "text",
+      "description": "Specifies the status of the page rule."
+    },
+    {
+      "name": "zone_id",
+      "type": "text",
+      "description": "Specifies the zone identifier."
+    },
+    {
+      "name": "created_on",
+      "type": "timestamp with time zone",
+      "description": "The time when the page rule is created."
+    },
+    {
+      "name": "modified_on",
+      "type": "timestamp with time zone",
+      "description": "The time when the page rule was last modified."
+    },
+    {
+      "name": "priority",
+      "type": "integer",
+      "description": "A number that indicates the preference for a page rule over another."
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "description": "Title of the resource."
+    },
+    {
+      "name": "actions",
+      "type": "json",
+      "description": "A list of actions to perform if the targets of this rule match the request. Actions can redirect the url to another url or override settings (but not both)."
+    },
+    {
+      "name": "targets",
+      "type": "json",
+      "description": "A list of targets to evaluate on a request."
+    }
+  ]
+}

@@ -88,12 +88,12 @@
       "description": "Metadata of the Azure resource"
     },
     {
-      "name": "og_account_id",
+      "name": "platform_account_id",
       "type": "text",
       "description": "The Platform Account ID in which the resource is located."
     },
     {
-      "name": "og_resource_id",
+      "name": "platform_resource_id",
       "type": "text",
       "description": "The unique ID of the resource in opengovernance."
     }

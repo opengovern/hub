@@ -1,0 +1,46 @@
+{
+  "table_name": "linode_longview_client",
+  "table_description": "Instances in the Linode account.",
+  "columns": [
+    {
+      "name": "id",
+      "type": "integer",
+      "description": "The unique ID of this Instance."
+    },
+    {
+      "name": "label",
+      "type": "text",
+      "description": "The Instance’s label is for display purposes only."
+    },
+    {
+      "name": "api_key",
+      "type": "text",
+      "description": "Alerts are triggered if CPU, IO, etc exceed these limits."
+    },
+    {
+      "name": "created",
+      "type": "timestamp with time zone",
+      "description": "When this Instance was created."
+    },
+    {
+      "name": "updated",
+      "type": "timestamp with time zone",
+      "description": "When this Instance was created."
+    },
+    {
+      "name": "install_code",
+      "type": "text",
+      "description": "Alerts are triggered if CPU, IO, etc exceed these limits."
+    },
+    {
+      "name": "label",
+      "type": "text",
+      "description": "Alerts are triggered if CPU, IO, etc exceed these limits."
+    },
+    {
+      "name": "apps",
+      "type": "json",
+      "description": "Alerts are triggered if CPU, IO, etc exceed these limits."
+    }
+  ]
+}

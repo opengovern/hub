@@ -1,0 +1,26 @@
+{
+  "table_name": "cloudflare_account",
+  "table_description": "Accounts the user has access to.",
+  "columns": [
+    {
+      "name": "id",
+      "type": "text",
+      "description": "ID of the account."
+    },
+    {
+      "name": "name",
+      "type": "text",
+      "description": "Name of the account."
+    },
+    {
+      "name": "type",
+      "type": "text",
+      "description": "Type of the account."
+    },
+    {
+      "name": "settings",
+      "type": "json",
+      "description": "Settings for the account."
+    }
+  ]
+}

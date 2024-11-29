@@ -1,0 +1,92 @@
+{
+  "count_of_named_tables": 17,
+  "count_of_named_columns": 206,
+  "tables": [
+    {
+      "table_name": "cloudflare_access_application",
+      "description": "Access Applications are used to restrict access to a whole application using an authorisation gateway managed by Cloudflare.",
+      "count_of_columns": 15
+    },
+    {
+      "table_name": "cloudflare_access_group",
+      "description": "Access Groups allows to define a set of users to which an application policy can be applied.",
+      "count_of_columns": 9
+    },
+    {
+      "table_name": "cloudflare_access_policy",
+      "description": "Access Policies define the users or groups who can, or cannot, reach the Application Resource.",
+      "count_of_columns": 15
+    },
+    {
+      "table_name": "cloudflare_account",
+      "description": "Accounts the user has access to.",
+      "count_of_columns": 4
+    },
+    {
+      "table_name": "cloudflare_account_member",
+      "description": "Cloudflare Account Member",
+      "count_of_columns": 8
+    },
+    {
+      "table_name": "cloudflare_account_role",
+      "description": "A Role defines what permissions a Member of an Account has.",
+      "count_of_columns": 6
+    },
+    {
+      "table_name": "cloudflare_api_token",
+      "description": "API tokens for the user.",
+      "count_of_columns": 9
+    },
+    {
+      "table_name": "cloudflare_dns_record",
+      "description": "DNS records for a zone.",
+      "count_of_columns": 15
+    },
+    {
+      "table_name": "cloudflare_firewall_rule",
+      "description": "Cloudflare Firewall Rules is a flexible and intuitive framework for filtering HTTP requests.",
+      "count_of_columns": 11
+    },
+    {
+      "table_name": "cloudflare_load_balancer",
+      "description": "Cloudflare Load balancers allows to distribute traffic across servers, which reduces server strain and latency and improves the experience for end users.",
+      "count_of_columns": 18
+    },
+    {
+      "table_name": "cloudflare_load_balancer_monitor",
+      "description": "A monitor issues health checks at regular intervals to evaluate the health of an origin pool.",
+      "count_of_columns": 17
+    },
+    {
+      "table_name": "cloudflare_load_balancer_pool",
+      "description": "A pool is a group of origin servers, with each origin identified by its IP address or hostname.",
+      "count_of_columns": 14
+    },
+    {
+      "table_name": "cloudflare_page_rule",
+      "description": "Page Rules gives the ability to control how Cloudflare works on a URL or subdomain basis.",
+      "count_of_columns": 9
+    },
+    {
+      "table_name": "cloudflare_user",
+      "description": "Information about the current user making the request.",
+      "count_of_columns": 14
+    },
+    {
+      "table_name": "cloudflare_user_audit_log",
+      "description": "Cloudflare User Audit Logs",
+      "count_of_columns": 14
+    },
+    {
+      "table_name": "cloudflare_worker_route",
+      "description": "Routes are basic patterns used to enable or disable workers that match requests.",
+      "count_of_columns": 5
+    },
+    {
+      "table_name": "cloudflare_zone",
+      "description": "A Zone is a domain name along with its subdomains and other identities.",
+      "count_of_columns": 23
+    }
+  ],
+  "description": "Gain visibility into DNS, WAFs, Firewall Rules."
+}

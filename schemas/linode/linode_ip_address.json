@@ -1,0 +1,61 @@
+{
+  "table_name": "linode_ip_address",
+  "table_description": "Images in the Linode account.",
+  "columns": [
+    {
+      "name": "address",
+      "type": "text",
+      "description": ""
+    },
+    {
+      "name": "gateway",
+      "type": "text",
+      "description": ""
+    },
+    {
+      "name": "subnet_mask",
+      "type": "text",
+      "description": ""
+    },
+    {
+      "name": "prefix",
+      "type": "integer",
+      "description": ""
+    },
+    {
+      "name": "type",
+      "type": "text",
+      "description": ""
+    },
+    {
+      "name": "public",
+      "type": "boolean",
+      "description": ""
+    },
+    {
+      "name": "rdns",
+      "type": "text",
+      "description": ""
+    },
+    {
+      "name": "linode_id",
+      "type": "integer",
+      "description": ""
+    },
+    {
+      "name": "region",
+      "type": "text",
+      "description": ""
+    },
+    {
+      "name": "vpc_nat_1_1",
+      "type": "json",
+      "description": ""
+    },
+    {
+      "name": "reserved",
+      "type": "boolean",
+      "description": ""
+    }
+  ]
+}

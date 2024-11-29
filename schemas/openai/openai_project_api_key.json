@@ -1,0 +1,41 @@
+{
+  "table_name": "openai_project_api_key",
+  "table_description": "Completions available in OpenAI.",
+  "columns": [
+    {
+      "name": "id",
+      "type": "text",
+      "description": "ID of the project."
+    },
+    {
+      "name": "object",
+      "type": "text",
+      "description": ""
+    },
+    {
+      "name": "name",
+      "type": "text",
+      "description": ""
+    },
+    {
+      "name": "redacted_value",
+      "type": "text",
+      "description": ""
+    },
+    {
+      "name": "created_at",
+      "type": "integer",
+      "description": ""
+    },
+    {
+      "name": "owner",
+      "type": "json",
+      "description": ""
+    },
+    {
+      "name": "project_id",
+      "type": "text",
+      "description": ""
+    }
+  ]
+}

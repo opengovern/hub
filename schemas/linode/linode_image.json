@@ -1,0 +1,61 @@
+{
+  "table_name": "linode_image",
+  "table_description": "Images in the Linode account.",
+  "columns": [
+    {
+      "name": "id",
+      "type": "text",
+      "description": "The unique ID of this Image."
+    },
+    {
+      "name": "label",
+      "type": "text",
+      "description": "A short description of the Image."
+    },
+    {
+      "name": "created",
+      "type": "timestamp with time zone",
+      "description": "When this Image was created."
+    },
+    {
+      "name": "created_by",
+      "type": "text",
+      "description": "The name of the User who created this Image, or 'linode' for official Images."
+    },
+    {
+      "name": "deprecated",
+      "type": "boolean",
+      "description": "Whether or not this Image is deprecated. Will only be true for deprecated public Images."
+    },
+    {
+      "name": "description",
+      "type": "text",
+      "description": "A detailed description of this Image."
+    },
+    {
+      "name": "expiry",
+      "type": "timestamp with time zone",
+      "description": "Only Images created automatically (from a deleted Linode; type=automatic) will expire."
+    },
+    {
+      "name": "image_type",
+      "type": "text",
+      "description": "How the Image was created: manual, automatic."
+    },
+    {
+      "name": "is_public",
+      "type": "boolean",
+      "description": "True if the Image is public."
+    },
+    {
+      "name": "size",
+      "type": "integer",
+      "description": "The minimum size this Image needs to deploy. Size is in MB."
+    },
+    {
+      "name": "vendor",
+      "type": "text",
+      "description": "The upstream distribution vendor. None for private Images."
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "table_name": "cloudflare_access_group",
+  "table_description": "Access Groups allows to define a set of users to which an application policy can be applied.",
+  "columns": [
+    {
+      "name": "id",
+      "type": "text",
+      "description": "Identifier of the access group."
+    },
+    {
+      "name": "name",
+      "type": "text",
+      "description": "Friendly name of the access group."
+    },
+    {
+      "name": "account_id",
+      "type": "text",
+      "description": "ID of the account, access group belongs."
+    },
+    {
+      "name": "account_name",
+      "type": "text",
+      "description": "Name of the account, access group belongs."
+    },
+    {
+      "name": "created_at",
+      "type": "timestamp with time zone",
+      "description": "Timestamp when access group was created."
+    },
+    {
+      "name": "updated_at",
+      "type": "timestamp with time zone",
+      "description": "TImestamp when access group was last modified."
+    },
+    {
+      "name": "exclude",
+      "type": "json",
+      "description": "The exclude policy works like a NOT logical operator. The user must not satisfy all of the rules in exclude."
+    },
+    {
+      "name": "include",
+      "type": "json",
+      "description": "The include policy works like an OR logical operator. The user must satisfy one of the rules in includes."
+    },
+    {
+      "name": "require",
+      "type": "json",
+      "description": "The require policy works like a AND logical operator. The user must satisfy all of the rules in require."
+    }
+  ]
+}

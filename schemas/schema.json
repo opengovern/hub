@@ -1,8 +1,8 @@
 {
   "total": {
-    "integration": 6,
-    "count_of_named_tables": 793,
-    "count_of_named_columns": 11388
+    "integration": 9,
+    "count_of_named_tables": 833,
+    "count_of_named_columns": 11820
   },
   "summary": {
     "aws": {
@@ -17,6 +17,10 @@
       "count_of_named_tables": 22,
       "count_of_named_columns": 401
     },
+    "cloudflare": {
+      "count_of_named_tables": 17,
+      "count_of_named_columns": 206
+    },
     "digitalocean": {
       "count_of_named_tables": 24,
       "count_of_named_columns": 305
@@ -28,6 +32,14 @@
     "github": {
       "count_of_named_tables": 38,
       "count_of_named_columns": 642
+    },
+    "linode": {
+      "count_of_named_tables": 14,
+      "count_of_named_columns": 162
+    },
+    "openai": {
+      "count_of_named_tables": 9,
+      "count_of_named_columns": 64
     }
   },
   "details": {
@@ -3582,6 +3594,93 @@
         "count_of_columns": 18
       }
     ],
+    "cloudflare": [
+      {
+        "table_name": "cloudflare_access_application",
+        "description": "Access Applications are used to restrict access to a whole application using an authorisation gateway managed by Cloudflare.",
+        "count_of_columns": 15
+      },
+      {
+        "table_name": "cloudflare_access_group",
+        "description": "Access Groups allows to define a set of users to which an application policy can be applied.",
+        "count_of_columns": 9
+      },
+      {
+        "table_name": "cloudflare_access_policy",
+        "description": "Access Policies define the users or groups who can, or cannot, reach the Application Resource.",
+        "count_of_columns": 15
+      },
+      {
+        "table_name": "cloudflare_account",
+        "description": "Accounts the user has access to.",
+        "count_of_columns": 4
+      },
+      {
+        "table_name": "cloudflare_account_member",
+        "description": "Cloudflare Account Member",
+        "count_of_columns": 8
+      },
+      {
+        "table_name": "cloudflare_account_role",
+        "description": "A Role defines what permissions a Member of an Account has.",
+        "count_of_columns": 6
+      },
+      {
+        "table_name": "cloudflare_api_token",
+        "description": "API tokens for the user.",
+        "count_of_columns": 9
+      },
+      {
+        "table_name": "cloudflare_dns_record",
+        "description": "DNS records for a zone.",
+        "count_of_columns": 15
+      },
+      {
+        "table_name": "cloudflare_firewall_rule",
+        "description": "Cloudflare Firewall Rules is a flexible and intuitive framework for filtering HTTP requests.",
+        "count_of_columns": 11
+      },
+      {
+        "table_name": "cloudflare_load_balancer",
+        "description": "Cloudflare Load balancers allows to distribute traffic across servers, which reduces server strain and latency and improves the experience for end users.",
+        "count_of_columns": 18
+      },
+      {
+        "table_name": "cloudflare_load_balancer_monitor",
+        "description": "A monitor issues health checks at regular intervals to evaluate the health of an origin pool.",
+        "count_of_columns": 17
+      },
+      {
+        "table_name": "cloudflare_load_balancer_pool",
+        "description": "A pool is a group of origin servers, with each origin identified by its IP address or hostname.",
+        "count_of_columns": 14
+      },
+      {
+        "table_name": "cloudflare_page_rule",
+        "description": "Page Rules gives the ability to control how Cloudflare works on a URL or subdomain basis.",
+        "count_of_columns": 9
+      },
+      {
+        "table_name": "cloudflare_user",
+        "description": "Information about the current user making the request.",
+        "count_of_columns": 14
+      },
+      {
+        "table_name": "cloudflare_user_audit_log",
+        "description": "Cloudflare User Audit Logs",
+        "count_of_columns": 14
+      },
+      {
+        "table_name": "cloudflare_worker_route",
+        "description": "Routes are basic patterns used to enable or disable workers that match requests.",
+        "count_of_columns": 5
+      },
+      {
+        "table_name": "cloudflare_zone",
+        "description": "A Zone is a domain name along with its subdomains and other identities.",
+        "count_of_columns": 23
+      }
+    ],
     "digitalocean": [
       {
         "table_name": "digitalocean_account",
@@ -4006,6 +4105,125 @@
         "table_name": "github_workflow",
         "description": "GitHub Workflows bundle project files for download by users.",
         "count_of_columns": 14
+      }
+    ],
+    "linode": [
+      {
+        "table_name": "linode_account",
+        "description": "Account information.",
+        "count_of_columns": 16
+      },
+      {
+        "table_name": "linode_database",
+        "description": "Instances in the Linode account.",
+        "count_of_columns": 16
+      },
+      {
+        "table_name": "linode_domain",
+        "description": "Domains in the Linode account.",
+        "count_of_columns": 14
+      },
+      {
+        "table_name": "linode_firewall",
+        "description": "Firewalls in the Linode account.",
+        "count_of_columns": 7
+      },
+      {
+        "table_name": "linode_image",
+        "description": "Images in the Linode account.",
+        "count_of_columns": 11
+      },
+      {
+        "table_name": "linode_instance",
+        "description": "Instances in the Linode account.",
+        "count_of_columns": 17
+      },
+      {
+        "table_name": "linode_ip_address",
+        "description": "Images in the Linode account.",
+        "count_of_columns": 11
+      },
+      {
+        "table_name": "linode_kubernetes_cluster",
+        "description": "Kubernetes clusters in the Linode account.",
+        "count_of_columns": 9
+      },
+      {
+        "table_name": "linode_longview_client",
+        "description": "Instances in the Linode account.",
+        "count_of_columns": 8
+      },
+      {
+        "table_name": "linode_node_balancer",
+        "description": "NodeBalancers that are assigned to this Linode and readable by the requesting User.",
+        "count_of_columns": 11
+      },
+      {
+        "table_name": "linode_objectstorage_bucket",
+        "description": "Instances in the Linode account.",
+        "count_of_columns": 7
+      },
+      {
+        "table_name": "linode_stack_script",
+        "description": "Instances in the Linode account.",
+        "count_of_columns": 17
+      },
+      {
+        "table_name": "linode_volume",
+        "description": "Volumes in the Linode account.",
+        "count_of_columns": 11
+      },
+      {
+        "table_name": "linode_vpc",
+        "description": "Images in the Linode account.",
+        "count_of_columns": 7
+      }
+    ],
+    "openai": [
+      {
+        "table_name": "openai_assistant",
+        "description": "Completions available in OpenAI.",
+        "count_of_columns": 10
+      },
+      {
+        "table_name": "openai_file",
+        "description": "Files uploaded to OpenAI for fine-tuning.",
+        "count_of_columns": 6
+      },
+      {
+        "table_name": "openai_model",
+        "description": "Models available in OpenAI.",
+        "count_of_columns": 6
+      },
+      {
+        "table_name": "openai_project",
+        "description": "Completions available in OpenAI.",
+        "count_of_columns": 6
+      },
+      {
+        "table_name": "openai_project_api_key",
+        "description": "Completions available in OpenAI.",
+        "count_of_columns": 7
+      },
+      {
+        "table_name": "openai_project_rate_limit",
+        "description": "Completions available in OpenAI.",
+        "count_of_columns": 10
+      },
+      {
+        "table_name": "openai_project_service_account",
+        "description": "Service accounts in a Project.",
+        "count_of_columns": 6
+      },
+      {
+        "table_name": "openai_project_user",
+        "description": "Completions available in OpenAI.",
+        "count_of_columns": 2
+      },
+      {
+        "table_name": "openai_vector_store",
+        "description": "Completions available in OpenAI.",
+        "count_of_columns": 11
       }
     ]
   }

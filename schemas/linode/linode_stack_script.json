@@ -1,0 +1,91 @@
+{
+  "table_name": "linode_stack_script",
+  "table_description": "Instances in the Linode account.",
+  "columns": [
+    {
+      "name": "id",
+      "type": "integer",
+      "description": "The unique ID of this Instance."
+    },
+    {
+      "name": "label",
+      "type": "text",
+      "description": "The Instance’s label is for display purposes only."
+    },
+    {
+      "name": "username",
+      "type": "text",
+      "description": ""
+    },
+    {
+      "name": "description",
+      "type": "text",
+      "description": ""
+    },
+    {
+      "name": "ordinal",
+      "type": "integer",
+      "description": ""
+    },
+    {
+      "name": "logo_url",
+      "type": "text",
+      "description": ""
+    },
+    {
+      "name": "images",
+      "type": "json",
+      "description": ""
+    },
+    {
+      "name": "deployments_total",
+      "type": "integer",
+      "description": ""
+    },
+    {
+      "name": "deployments_active",
+      "type": "integer",
+      "description": ""
+    },
+    {
+      "name": "is_public",
+      "type": "boolean",
+      "description": ""
+    },
+    {
+      "name": "mine",
+      "type": "boolean",
+      "description": ""
+    },
+    {
+      "name": "created",
+      "type": "timestamp with time zone",
+      "description": ""
+    },
+    {
+      "name": "updated",
+      "type": "timestamp with time zone",
+      "description": ""
+    },
+    {
+      "name": "rev_note",
+      "type": "text",
+      "description": ""
+    },
+    {
+      "name": "script",
+      "type": "text",
+      "description": ""
+    },
+    {
+      "name": "user_defined_fields",
+      "type": "json",
+      "description": ""
+    },
+    {
+      "name": "user_gravatar_id",
+      "type": "text",
+      "description": ""
+    }
+  ]
+}

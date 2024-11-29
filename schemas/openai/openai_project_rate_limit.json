@@ -1,0 +1,56 @@
+{
+  "table_name": "openai_project_rate_limit",
+  "table_description": "Completions available in OpenAI.",
+  "columns": [
+    {
+      "name": "id",
+      "type": "text",
+      "description": "ID of the project."
+    },
+    {
+      "name": "object",
+      "type": "text",
+      "description": ""
+    },
+    {
+      "name": "model",
+      "type": "text",
+      "description": ""
+    },
+    {
+      "name": "max_requests_per_1_minute",
+      "type": "integer",
+      "description": ""
+    },
+    {
+      "name": "max_tokens_per_1_minute",
+      "type": "integer",
+      "description": ""
+    },
+    {
+      "name": "max_images_per_1_minute",
+      "type": "integer",
+      "description": ""
+    },
+    {
+      "name": "max_audio_megabytes_per_1_minute",
+      "type": "integer",
+      "description": ""
+    },
+    {
+      "name": "max_requests_per_1_day",
+      "type": "integer",
+      "description": ""
+    },
+    {
+      "name": "batch_1_day_max_input_tokens",
+      "type": "integer",
+      "description": ""
+    },
+    {
+      "name": "project_id",
+      "type": "text",
+      "description": ""
+    }
+  ]
+}

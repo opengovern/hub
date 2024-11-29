@@ -1,0 +1,41 @@
+{
+  "table_name": "linode_firewall",
+  "table_description": "Firewalls in the Linode account.",
+  "columns": [
+    {
+      "name": "id",
+      "type": "integer",
+      "description": "The unique ID of this Firewall."
+    },
+    {
+      "name": "created",
+      "type": "timestamp with time zone",
+      "description": "The date and time this firewall was created."
+    },
+    {
+      "name": "updated",
+      "type": "timestamp with time zone",
+      "description": "The date and time this firewall was updated."
+    },
+    {
+      "name": "label",
+      "type": "text",
+      "description": "The firewall’s label is for display purposes only."
+    },
+    {
+      "name": "status",
+      "type": "text",
+      "description": "The status of the firewall. Possible values are 'enabled', 'disabled', or 'deleted'."
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": "Tags applied to this firewall."
+    },
+    {
+      "name": "rules",
+      "type": "json",
+      "description": "The rules associated with the firewall."
+    }
+  ]
+}

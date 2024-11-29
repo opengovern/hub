@@ -1,0 +1,121 @@
+{
+  "table_name": "cloudflare_zone",
+  "table_description": "A Zone is a domain name along with its subdomains and other identities.",
+  "columns": [
+    {
+      "name": "id",
+      "type": "text",
+      "description": "Zone identifier tag."
+    },
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The domain name."
+    },
+    {
+      "name": "betas",
+      "type": "json",
+      "description": "Beta feature flags associated with the zone."
+    },
+    {
+      "name": "created_on",
+      "type": "timestamp with time zone",
+      "description": "When the zone was created."
+    },
+    {
+      "name": "deactivation_reason",
+      "type": "text",
+      "description": "TODO"
+    },
+    {
+      "name": "development_mode",
+      "type": "integer",
+      "description": "The interval (in seconds) from when development mode expires (positive integer) or last expired (negative integer) for the domain. If development mode has never been enabled, this value is 0."
+    },
+    {
+      "name": "dnssec",
+      "type": "json",
+      "description": "DNSSEC settings for the zone."
+    },
+    {
+      "name": "host",
+      "type": "json",
+      "description": "TODO"
+    },
+    {
+      "name": "meta",
+      "type": "json",
+      "description": "Metadata associated with the zone."
+    },
+    {
+      "name": "modified_on",
+      "type": "timestamp with time zone",
+      "description": "When the zone was last modified."
+    },
+    {
+      "name": "name_servers",
+      "type": "json",
+      "description": "Cloudflare-assigned name servers. This is only populated for zones that use Cloudflare DNS."
+    },
+    {
+      "name": "original_dnshost",
+      "type": "text",
+      "description": "DNS host at the time of switching to Cloudflare."
+    },
+    {
+      "name": "original_name_servers",
+      "type": "json",
+      "description": "Original name servers before moving to Cloudflare."
+    },
+    {
+      "name": "original_registrar",
+      "type": "text",
+      "description": "Registrar for the domain at the time of switching to Cloudflare."
+    },
+    {
+      "name": "owner",
+      "type": "json",
+      "description": "Information about the user or organization that owns the zone."
+    },
+    {
+      "name": "paused",
+      "type": "boolean",
+      "description": "Indicates if the zone is only using Cloudflare DNS services. A true value means the zone will not receive security or performance benefits."
+    },
+    {
+      "name": "permissions",
+      "type": "json",
+      "description": "Available permissions on the zone for the current user requesting the item."
+    },
+    {
+      "name": "settings",
+      "type": "json",
+      "description": "Simple key value map of zone settings like advanced_ddos = on. Full settings details are in settings_src."
+    },
+    {
+      "name": "plan",
+      "type": "json",
+      "description": "Current plan associated with the zone."
+    },
+    {
+      "name": "plan_pending",
+      "type": "json",
+      "description": "Pending plan change associated with the zone."
+    },
+    {
+      "name": "status",
+      "type": "text",
+      "description": "Status of the zone."
+    },
+    {
+      "name": "type",
+      "type": "text",
+      "description": "A full zone implies that DNS is hosted with Cloudflare. A partial zone is typically a partner-hosted zone or a CNAME setup."
+    },
+    {
+      "name": "vanity_name_servers",
+      "type": "json",
+      "description": "Custom name servers for the zone."
+    }
+  ]
+}

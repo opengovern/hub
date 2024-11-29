@@ -1,0 +1,16 @@
+{
+  "table_name": "openai_project_user",
+  "table_description": "Completions available in OpenAI.",
+  "columns": [
+    {
+      "name": "user_id",
+      "type": "text",
+      "description": "User ID"
+    },
+    {
+      "name": "project_id",
+      "type": "text",
+      "description": ""
+    }
+  ]
+}

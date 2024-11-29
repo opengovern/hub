@@ -1,0 +1,61 @@
+{
+  "table_name": "openai_vector_store",
+  "table_description": "Completions available in OpenAI.",
+  "columns": [
+    {
+      "name": "id",
+      "type": "text",
+      "description": "ID of the project."
+    },
+    {
+      "name": "object",
+      "type": "text",
+      "description": ""
+    },
+    {
+      "name": "name",
+      "type": "text",
+      "description": ""
+    },
+    {
+      "name": "created_at",
+      "type": "timestamp with time zone",
+      "description": ""
+    },
+    {
+      "name": "usage_bytes",
+      "type": "integer",
+      "description": ""
+    },
+    {
+      "name": "file_counts",
+      "type": "json",
+      "description": ""
+    },
+    {
+      "name": "status",
+      "type": "text",
+      "description": ""
+    },
+    {
+      "name": "expires_after",
+      "type": "json",
+      "description": ""
+    },
+    {
+      "name": "expires_at",
+      "type": "text",
+      "description": ""
+    },
+    {
+      "name": "last_active_at",
+      "type": "text",
+      "description": ""
+    },
+    {
+      "name": "metadata",
+      "type": "json",
+      "description": ""
+    }
+  ]
+}

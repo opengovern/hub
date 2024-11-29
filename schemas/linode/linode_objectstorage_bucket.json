@@ -1,0 +1,41 @@
+{
+  "table_name": "linode_objectstorage_bucket",
+  "table_description": "Instances in the Linode account.",
+  "columns": [
+    {
+      "name": "label",
+      "type": "text",
+      "description": "The name of this bucket."
+    },
+    {
+      "name": "cluster",
+      "type": "text",
+      "description": "The ID of the Object Storage Cluster this bucket is in."
+    },
+    {
+      "name": "region",
+      "type": "text",
+      "description": ""
+    },
+    {
+      "name": "created",
+      "type": "timestamp with time zone",
+      "description": "When this bucket was created."
+    },
+    {
+      "name": "hostname",
+      "type": "text",
+      "description": "The hostname where this bucket can be accessed. This hostname can be accessed through a browser if the bucket is made public."
+    },
+    {
+      "name": "objects",
+      "type": "integer",
+      "description": ""
+    },
+    {
+      "name": "size",
+      "type": "integer",
+      "description": ""
+    }
+  ]
+}

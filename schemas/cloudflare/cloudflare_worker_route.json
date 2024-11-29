@@ -1,0 +1,31 @@
+{
+  "table_name": "cloudflare_worker_route",
+  "table_description": "Routes are basic patterns used to enable or disable workers that match requests.",
+  "columns": [
+    {
+      "name": "id",
+      "type": "text",
+      "description": "API item identifier tag."
+    },
+    {
+      "name": "zone_name",
+      "type": "text",
+      "description": "Specifies the zone name."
+    },
+    {
+      "name": "pattern",
+      "type": "text",
+      "description": "Patterns decide what (if any) script is matched based on the URL of that request."
+    },
+    {
+      "name": "script",
+      "type": "text",
+      "description": "Name of the script to apply when the route is matched. The route is skipped when this is blank/missing."
+    },
+    {
+      "name": "zone_id",
+      "type": "text",
+      "description": "Specifies the zone identifier."
+    }
+  ]
+}

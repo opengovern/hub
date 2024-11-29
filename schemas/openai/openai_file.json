@@ -1,0 +1,36 @@
+{
+  "table_name": "openai_file",
+  "table_description": "Files uploaded to OpenAI for fine-tuning.",
+  "columns": [
+    {
+      "name": "id",
+      "type": "text",
+      "description": "ID of the file, e.g. davinci."
+    },
+    {
+      "name": "file_name",
+      "type": "text",
+      "description": "Name of the file."
+    },
+    {
+      "name": "created_at",
+      "type": "timestamp with time zone",
+      "description": "Timestamp of when the file was created."
+    },
+    {
+      "name": "bytes",
+      "type": "integer",
+      "description": "Size of the file in bytes"
+    },
+    {
+      "name": "object",
+      "type": "text",
+      "description": "The type of the uploaded document, e.g. file."
+    },
+    {
+      "name": "purpose",
+      "type": "text",
+      "description": "The intended purpose of the uploaded documents."
+    }
+  ]
+}

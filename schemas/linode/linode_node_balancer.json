@@ -1,0 +1,61 @@
+{
+  "table_name": "linode_node_balancer",
+  "table_description": "NodeBalancers that are assigned to this Linode and readable by the requesting User.",
+  "columns": [
+    {
+      "name": "id",
+      "type": "integer",
+      "description": "The unique ID of this NodeBalancer."
+    },
+    {
+      "name": "created",
+      "type": "timestamp with time zone",
+      "description": "When the NodeBalancer was created."
+    },
+    {
+      "name": "updated",
+      "type": "timestamp with time zone",
+      "description": "When the NodeBalancer was updated."
+    },
+    {
+      "name": "label",
+      "type": "text",
+      "description": "The NodeBalancer's label. These must be unique on your Account."
+    },
+    {
+      "name": "region",
+      "type": "text",
+      "description": "The Region where this NodeBalancer is located. NodeBalancers only support backends in the same Region."
+    },
+    {
+      "name": "hostname",
+      "type": "text",
+      "description": "The NodeBalancer's hostname, ending with .nodebalancer.linode.com."
+    },
+    {
+      "name": "ipv4",
+      "type": "inet",
+      "description": "The NodeBalancer's public IPv4 address."
+    },
+    {
+      "name": "ipv6",
+      "type": "inet",
+      "description": "The NodeBalancer's public IPv6 address."
+    },
+    {
+      "name": "client_conn_throttle",
+      "type": "integer",
+      "description": "Throttle connections per second (0-20). Set to 0 (zero) to disable throttling."
+    },
+    {
+      "name": "transfer",
+      "type": "json",
+      "description": "Information about the amount of transfer this NodeBalancer has had so far this month."
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": "An array of tags applied to this object. Tags are for organizational purposes only."
+    }
+  ]
+}

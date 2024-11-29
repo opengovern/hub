@@ -1,0 +1,81 @@
+{
+  "table_name": "cloudflare_dns_record",
+  "table_description": "DNS records for a zone.",
+  "columns": [
+    {
+      "name": "zone_id",
+      "type": "text",
+      "description": "Zone where the record is defined."
+    },
+    {
+      "name": "zone_name",
+      "type": "text",
+      "description": "Name of the zone where the record is defined."
+    },
+    {
+      "name": "id",
+      "type": "text",
+      "description": "ID of the record."
+    },
+    {
+      "name": "type",
+      "type": "text",
+      "description": "Type of the record (e.g. A, MX, CNAME)."
+    },
+    {
+      "name": "name",
+      "type": "text",
+      "description": "Domain name for the record (e.g. steampipe.io)."
+    },
+    {
+      "name": "content",
+      "type": "text",
+      "description": "Content or value of the record. Changes by type, including IP address for A records and domain for CNAME records."
+    },
+    {
+      "name": "ttl",
+      "type": "integer",
+      "description": "Time to live in seconds of the record."
+    },
+    {
+      "name": "created_on",
+      "type": "timestamp with time zone",
+      "description": "When the record was created."
+    },
+    {
+      "name": "locked",
+      "type": "boolean",
+      "description": "True if the record is locked."
+    },
+    {
+      "name": "modified_on",
+      "type": "timestamp with time zone",
+      "description": "When the record was last modified."
+    },
+    {
+      "name": "priority",
+      "type": "integer",
+      "description": "Priority for this record, primarily used for MX records."
+    },
+    {
+      "name": "proxiable",
+      "type": "boolean",
+      "description": "True if the record is eligible for Cloudflare's origin protection."
+    },
+    {
+      "name": "proxied",
+      "type": "boolean",
+      "description": "True if the record has Cloudflare's origin protection."
+    },
+    {
+      "name": "data",
+      "type": "json",
+      "description": "Map of attributes that constitute the record value. Primarily used for LOC and SRV record types."
+    },
+    {
+      "name": "meta",
+      "type": "json",
+      "description": "Cloudflare metadata for this record."
+    }
+  ]
+}

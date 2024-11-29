@@ -1,0 +1,36 @@
+{
+  "table_name": "openai_model",
+  "table_description": "Models available in OpenAI.",
+  "columns": [
+    {
+      "name": "id",
+      "type": "text",
+      "description": "ID of the model, e.g. davinci."
+    },
+    {
+      "name": "created_at",
+      "type": "timestamp with time zone",
+      "description": "Timestamp of when the model was created."
+    },
+    {
+      "name": "owned_by",
+      "type": "text",
+      "description": "Organization that owns the model, e.g. openai."
+    },
+    {
+      "name": "object",
+      "type": "text",
+      "description": "Type of the object, e.g. model."
+    },
+    {
+      "name": "root",
+      "type": "text",
+      "description": "Root of this model."
+    },
+    {
+      "name": "permission",
+      "type": "json",
+      "description": "Permissions for the model."
+    }
+  ]
+}

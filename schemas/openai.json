@@ -1,0 +1,52 @@
+{
+  "count_of_named_tables": 9,
+  "count_of_named_columns": 64,
+  "tables": [
+    {
+      "table_name": "openai_assistant",
+      "description": "Completions available in OpenAI.",
+      "count_of_columns": 10
+    },
+    {
+      "table_name": "openai_file",
+      "description": "Files uploaded to OpenAI for fine-tuning.",
+      "count_of_columns": 6
+    },
+    {
+      "table_name": "openai_model",
+      "description": "Models available in OpenAI.",
+      "count_of_columns": 6
+    },
+    {
+      "table_name": "openai_project",
+      "description": "Completions available in OpenAI.",
+      "count_of_columns": 6
+    },
+    {
+      "table_name": "openai_project_api_key",
+      "description": "Completions available in OpenAI.",
+      "count_of_columns": 7
+    },
+    {
+      "table_name": "openai_project_rate_limit",
+      "description": "Completions available in OpenAI.",
+      "count_of_columns": 10
+    },
+    {
+      "table_name": "openai_project_service_account",
+      "description": "Service accounts in a Project.",
+      "count_of_columns": 6
+    },
+    {
+      "table_name": "openai_project_user",
+      "description": "Completions available in OpenAI.",
+      "count_of_columns": 2
+    },
+    {
+      "table_name": "openai_vector_store",
+      "description": "Completions available in OpenAI.",
+      "count_of_columns": 11
+    }
+  ],
+  "description": "Integrate OpenAI for language models and AI."
+}

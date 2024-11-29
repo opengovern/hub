@@ -1,0 +1,56 @@
+{
+  "table_name": "openai_assistant",
+  "table_description": "Completions available in OpenAI.",
+  "columns": [
+    {
+      "name": "id",
+      "type": "text",
+      "description": "ID of the project."
+    },
+    {
+      "name": "name",
+      "type": "text",
+      "description": ""
+    },
+    {
+      "name": "description",
+      "type": "text",
+      "description": ""
+    },
+    {
+      "name": "model",
+      "type": "text",
+      "description": ""
+    },
+    {
+      "name": "instructions",
+      "type": "text",
+      "description": ""
+    },
+    {
+      "name": "tools",
+      "type": "json",
+      "description": ""
+    },
+    {
+      "name": "tool_resources",
+      "type": "json",
+      "description": ""
+    },
+    {
+      "name": "metadata",
+      "type": "json",
+      "description": ""
+    },
+    {
+      "name": "temperature",
+      "type": "integer",
+      "description": ""
+    },
+    {
+      "name": "top_p",
+      "type": "integer",
+      "description": ""
+    }
+  ]
+}

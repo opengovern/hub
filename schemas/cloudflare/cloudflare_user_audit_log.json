@@ -1,0 +1,76 @@
+{
+  "table_name": "cloudflare_user_audit_log",
+  "table_description": "Cloudflare User Audit Logs",
+  "columns": [
+    {
+      "name": "actor_email",
+      "type": "text",
+      "description": "Email of the actor."
+    },
+    {
+      "name": "actor_id",
+      "type": "text",
+      "description": "Unique identifier of the actor in Cloudflare’s system."
+    },
+    {
+      "name": "actor_ip",
+      "type": "text",
+      "description": "Physical network address of the actor."
+    },
+    {
+      "name": "actor_type",
+      "type": "text",
+      "description": "Type of user that started the audit trail."
+    },
+    {
+      "name": "id",
+      "type": "text",
+      "description": "Unique identifier of an audit log."
+    },
+    {
+      "name": "new_value",
+      "type": "text",
+      "description": "Contains the new value for the audited item."
+    },
+    {
+      "name": "old_value",
+      "type": "text",
+      "description": "Contains the old value for the audited item."
+    },
+    {
+      "name": "owner_id",
+      "type": "text",
+      "description": "The identifier of the user that was acting or was acted on behalf of. If a user did the action themselves, this value will be the same as the ActorID."
+    },
+    {
+      "name": "when",
+      "type": "timestamp with time zone",
+      "description": "When the change happened."
+    },
+    {
+      "name": "action",
+      "type": "json",
+      "description": "The action that was taken."
+    },
+    {
+      "name": "metadata",
+      "type": "json",
+      "description": "Additional audit log-specific information. Metadata is organized in key:value pairs. Key and Value formats can vary by ResourceType."
+    },
+    {
+      "name": "new_value_json",
+      "type": "json",
+      "description": "Contains the new value for the audited item in JSON format."
+    },
+    {
+      "name": "old_value_json",
+      "type": "json",
+      "description": "Contains the old value for the audited item in JSON format."
+    },
+    {
+      "name": "resource",
+      "type": "json",
+      "description": "Target resource the action was performed on."
+    }
+  ]
+}

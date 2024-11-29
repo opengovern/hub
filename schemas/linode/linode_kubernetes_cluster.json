@@ -1,0 +1,51 @@
+{
+  "table_name": "linode_kubernetes_cluster",
+  "table_description": "Kubernetes clusters in the Linode account.",
+  "columns": [
+    {
+      "name": "id",
+      "type": "integer",
+      "description": "This Kubernetes cluster’s unique ID."
+    },
+    {
+      "name": "label",
+      "type": "text",
+      "description": "This Kubernetes cluster’s unique label for display purposes only."
+    },
+    {
+      "name": "created",
+      "type": "timestamp with time zone",
+      "description": "When this Kubernetes cluster was created."
+    },
+    {
+      "name": "k8s_version",
+      "type": "text",
+      "description": "The desired Kubernetes version for this Kubernetes cluster in the format of \u003cmajor\u003e.\u003cminor\u003e, and the latest supported patch version will be deployed."
+    },
+    {
+      "name": "region",
+      "type": "text",
+      "description": "This Kubernetes cluster’s location."
+    },
+    {
+      "name": "status",
+      "type": "text",
+      "description": ""
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": "Tags applied to the Kubernetes cluster as a map."
+    },
+    {
+      "name": "tags_src",
+      "type": "json",
+      "description": "List of Tags applied to the Kubernetes cluster."
+    },
+    {
+      "name": "updated",
+      "type": "timestamp with time zone",
+      "description": "When this Kubernetes cluster was updated."
+    }
+  ]
+}

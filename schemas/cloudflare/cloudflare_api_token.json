@@ -1,0 +1,51 @@
+{
+  "table_name": "cloudflare_api_token",
+  "table_description": "API tokens for the user.",
+  "columns": [
+    {
+      "name": "id",
+      "type": "text",
+      "description": "ID of the API token."
+    },
+    {
+      "name": "name",
+      "type": "text",
+      "description": "Name of the API token."
+    },
+    {
+      "name": "status",
+      "type": "text",
+      "description": "Status of the API token."
+    },
+    {
+      "name": "condition",
+      "type": "json",
+      "description": "Conditions (e.g. client IP ranges) associated with the API token."
+    },
+    {
+      "name": "expires_on",
+      "type": "timestamp with time zone",
+      "description": "When the API token expires."
+    },
+    {
+      "name": "issued_on",
+      "type": "timestamp with time zone",
+      "description": "When the API token was issued."
+    },
+    {
+      "name": "modified_on",
+      "type": "timestamp with time zone",
+      "description": "When the API token was last modified."
+    },
+    {
+      "name": "not_before",
+      "type": "timestamp with time zone",
+      "description": "When the API token becomes valid."
+    },
+    {
+      "name": "policies",
+      "type": "json",
+      "description": "Policies associated with this API token."
+    }
+  ]
+}
