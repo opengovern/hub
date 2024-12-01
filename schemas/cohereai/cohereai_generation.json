@@ -1,0 +1,31 @@
+{
+  "table_name": "cohereai_generation",
+  "table_description": "Generation in Cohere AI.",
+  "columns": [
+    {
+      "name": "generation",
+      "type": "text",
+      "description": "Generation for a given text prompt."
+    },
+    {
+      "name": "likelihood",
+      "type": "double precision",
+      "description": "The likelihood of the generated text."
+    },
+    {
+      "name": "token_likelihoods",
+      "type": "json",
+      "description": "The likelihood of the generated tokens/prompt."
+    },
+    {
+      "name": "prompt",
+      "type": "text",
+      "description": "The prompt to get generations for, encoded as a string."
+    },
+    {
+      "name": "settings",
+      "type": "json",
+      "description": "Settings is a JSONB object that accepts any of the generate API request parameters."
+    }
+  ]
+}

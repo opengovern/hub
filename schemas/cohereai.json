@@ -1,0 +1,67 @@
+{
+  "count_of_named_tables": 12,
+  "count_of_named_columns": 70,
+  "tables": [
+    {
+      "table_name": "cohereai_classify",
+      "description": "Classification in Cohere AI.",
+      "count_of_columns": 7
+    },
+    {
+      "table_name": "cohereai_connectors",
+      "description": "Cohere Ai list of connectors.",
+      "count_of_columns": 8
+    },
+    {
+      "table_name": "cohereai_datasets",
+      "description": "Cohere Ai list of datasets.",
+      "count_of_columns": 11
+    },
+    {
+      "table_name": "cohereai_detect_language",
+      "description": "Detect languages of texts using Cohere AI.",
+      "count_of_columns": 4
+    },
+    {
+      "table_name": "cohereai_detokenize",
+      "description": "Detokenize tokens into text using Cohere AI.",
+      "count_of_columns": 2
+    },
+    {
+      "table_name": "cohereai_embed",
+      "description": "Get embeddings from Cohere AI.",
+      "count_of_columns": 4
+    },
+    {
+      "table_name": "cohereai_embed_jobs",
+      "description": "Cohere Ai list of EmbedJobs.",
+      "count_of_columns": 8
+    },
+    {
+      "table_name": "cohereai_fine_tuned_models",
+      "description": "Cohere Ai list of fine tuned models.",
+      "count_of_columns": 10
+    },
+    {
+      "table_name": "cohereai_generation",
+      "description": "Generation in Cohere AI.",
+      "count_of_columns": 5
+    },
+    {
+      "table_name": "cohereai_models",
+      "description": "Cohere Ai list of models.",
+      "count_of_columns": 4
+    },
+    {
+      "table_name": "cohereai_summarize",
+      "description": "Summarize text using Cohere AI.",
+      "count_of_columns": 4
+    },
+    {
+      "table_name": "cohereai_tokenize",
+      "description": "Tokenize in Cohere AI.",
+      "count_of_columns": 3
+    }
+  ],
+  "description": "Integrate Cohere AI for language models and AI."
+}

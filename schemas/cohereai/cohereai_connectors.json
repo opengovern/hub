@@ -1,0 +1,46 @@
+{
+  "table_name": "cohereai_connectors",
+  "table_description": "Cohere Ai list of connectors.",
+  "columns": [
+    {
+      "name": "id",
+      "type": "text",
+      "description": "ID of Connector."
+    },
+    {
+      "name": "name",
+      "type": "text",
+      "description": "Name of the connector."
+    },
+    {
+      "name": "created_at",
+      "type": "timestamp with time zone",
+      "description": "Timestamp of when the connector was created."
+    },
+    {
+      "name": "updated_at",
+      "type": "timestamp with time zone",
+      "description": "Timestamp of when the connector was updated"
+    },
+    {
+      "name": "organization_id",
+      "type": "text",
+      "description": "ID of the organization that owns the connector."
+    },
+    {
+      "name": "url",
+      "type": "text",
+      "description": "URL of the connector."
+    },
+    {
+      "name": "excludes",
+      "type": "json",
+      "description": "List of excluded fields."
+    },
+    {
+      "name": "description",
+      "type": "text",
+      "description": "Description of the connector."
+    }
+  ]
+}

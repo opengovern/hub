@@ -1,0 +1,26 @@
+{
+  "table_name": "cohereai_summarize",
+  "table_description": "Summarize text using Cohere AI.",
+  "columns": [
+    {
+      "name": "id",
+      "type": "text",
+      "description": "ID for the given text."
+    },
+    {
+      "name": "summary",
+      "type": "text",
+      "description": "Summary for the given text."
+    },
+    {
+      "name": "text",
+      "type": "text",
+      "description": "The text to summarize, encoded as a string."
+    },
+    {
+      "name": "settings",
+      "type": "json",
+      "description": "Settings is a JSONB object that accepts any of the summarize API request parameters."
+    }
+  ]
+}

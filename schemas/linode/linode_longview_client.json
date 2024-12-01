@@ -33,11 +33,6 @@
       "description": "Alerts are triggered if CPU, IO, etc exceed these limits."
     },
     {
-      "name": "label",
-      "type": "text",
-      "description": "Alerts are triggered if CPU, IO, etc exceed these limits."
-    },
-    {
       "name": "apps",
       "type": "json",
       "description": "Alerts are triggered if CPU, IO, etc exceed these limits."

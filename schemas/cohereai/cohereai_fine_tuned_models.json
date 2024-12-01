@@ -1,0 +1,56 @@
+{
+  "table_name": "cohereai_fine_tuned_models",
+  "table_description": "Cohere Ai list of fine tuned models.",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "Name of the model."
+    },
+    {
+      "name": "default_endpoints",
+      "type": "json",
+      "description": "Default endpoints of the model."
+    },
+    {
+      "name": "id",
+      "type": "text",
+      "description": "ID of the model."
+    },
+    {
+      "name": "created_at",
+      "type": "timestamp with time zone",
+      "description": "Timestamp of when the model was created."
+    },
+    {
+      "name": "updated_at",
+      "type": "timestamp with time zone",
+      "description": "Timestamp of when the model was updated."
+    },
+    {
+      "name": "completed_at",
+      "type": "timestamp with time zone",
+      "description": "Timestamp of when the model was completed."
+    },
+    {
+      "name": "status",
+      "type": "text",
+      "description": "Status of the model."
+    },
+    {
+      "name": "last_used",
+      "type": "timestamp with time zone",
+      "description": "Timestamp of when the model was last used."
+    },
+    {
+      "name": "creator_id",
+      "type": "text",
+      "description": "ID of the creator of the model."
+    },
+    {
+      "name": "organization_id",
+      "type": "text",
+      "description": "ID of the organization of the model."
+    }
+  ]
+}

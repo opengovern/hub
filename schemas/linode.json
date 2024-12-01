@@ -1,6 +1,6 @@
 {
   "count_of_named_tables": 14,
-  "count_of_named_columns": 162,
+  "count_of_named_columns": 161,
   "tables": [
     {
       "table_name": "linode_account",
@@ -45,7 +45,7 @@
     {
       "table_name": "linode_longview_client",
       "description": "Instances in the Linode account.",
-      "count_of_columns": 8
+      "count_of_columns": 7
     },
     {
       "table_name": "linode_node_balancer",

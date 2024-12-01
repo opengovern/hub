@@ -1,8 +1,8 @@
 {
   "total": {
-    "integration": 9,
-    "count_of_named_tables": 833,
-    "count_of_named_columns": 11820
+    "integration": 10,
+    "count_of_named_tables": 845,
+    "count_of_named_columns": 11889
   },
   "summary": {
     "aws": {
@@ -21,6 +21,10 @@
       "count_of_named_tables": 17,
       "count_of_named_columns": 206
     },
+    "cohereai": {
+      "count_of_named_tables": 12,
+      "count_of_named_columns": 70
+    },
     "digitalocean": {
       "count_of_named_tables": 24,
       "count_of_named_columns": 305
@@ -35,7 +39,7 @@
     },
     "linode": {
       "count_of_named_tables": 14,
-      "count_of_named_columns": 162
+      "count_of_named_columns": 161
     },
     "openai": {
       "count_of_named_tables": 9,
@@ -3681,6 +3685,68 @@
         "count_of_columns": 23
       }
     ],
+    "cohereai": [
+      {
+        "table_name": "cohereai_classify",
+        "description": "Classification in Cohere AI.",
+        "count_of_columns": 7
+      },
+      {
+        "table_name": "cohereai_connectors",
+        "description": "Cohere Ai list of connectors.",
+        "count_of_columns": 8
+      },
+      {
+        "table_name": "cohereai_datasets",
+        "description": "Cohere Ai list of datasets.",
+        "count_of_columns": 11
+      },
+      {
+        "table_name": "cohereai_detect_language",
+        "description": "Detect languages of texts using Cohere AI.",
+        "count_of_columns": 4
+      },
+      {
+        "table_name": "cohereai_detokenize",
+        "description": "Detokenize tokens into text using Cohere AI.",
+        "count_of_columns": 2
+      },
+      {
+        "table_name": "cohereai_embed",
+        "description": "Get embeddings from Cohere AI.",
+        "count_of_columns": 4
+      },
+      {
+        "table_name": "cohereai_embed_jobs",
+        "description": "Cohere Ai list of EmbedJobs.",
+        "count_of_columns": 8
+      },
+      {
+        "table_name": "cohereai_fine_tuned_models",
+        "description": "Cohere Ai list of fine tuned models.",
+        "count_of_columns": 10
+      },
+      {
+        "table_name": "cohereai_generation",
+        "description": "Generation in Cohere AI.",
+        "count_of_columns": 5
+      },
+      {
+        "table_name": "cohereai_models",
+        "description": "Cohere Ai list of models.",
+        "count_of_columns": 4
+      },
+      {
+        "table_name": "cohereai_summarize",
+        "description": "Summarize text using Cohere AI.",
+        "count_of_columns": 4
+      },
+      {
+        "table_name": "cohereai_tokenize",
+        "description": "Tokenize in Cohere AI.",
+        "count_of_columns": 3
+      }
+    ],
     "digitalocean": [
       {
         "table_name": "digitalocean_account",
@@ -4151,7 +4217,7 @@
       {
         "table_name": "linode_longview_client",
         "description": "Instances in the Linode account.",
-        "count_of_columns": 8
+        "count_of_columns": 7
       },
       {
         "table_name": "linode_node_balancer",

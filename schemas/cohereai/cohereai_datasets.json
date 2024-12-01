@@ -1,0 +1,61 @@
+{
+  "table_name": "cohereai_datasets",
+  "table_description": "Cohere Ai list of datasets.",
+  "columns": [
+    {
+      "name": "id",
+      "type": "text",
+      "description": "ID of Dataset."
+    },
+    {
+      "name": "name",
+      "type": "text",
+      "description": "Name of the dataset."
+    },
+    {
+      "name": "created_at",
+      "type": "timestamp with time zone",
+      "description": "Timestamp of when the dataset was created."
+    },
+    {
+      "name": "updated_at",
+      "type": "timestamp with time zone",
+      "description": "Timestamp of when the dataset was updated"
+    },
+    {
+      "name": "dataset_type",
+      "type": "text",
+      "description": "Type of the dataset."
+    },
+    {
+      "name": "validation_status",
+      "type": "text",
+      "description": "Validation status of the dataset."
+    },
+    {
+      "name": "schema",
+      "type": "text",
+      "description": "Schema of the dataset."
+    },
+    {
+      "name": "required_fields",
+      "type": "json",
+      "description": "List of required fields."
+    },
+    {
+      "name": "preserve_fields",
+      "type": "json",
+      "description": "List of preserved fields."
+    },
+    {
+      "name": "dataset_parts",
+      "type": "json",
+      "description": "List of dataset parts."
+    },
+    {
+      "name": "parse_info",
+      "type": "json",
+      "description": "Parse info of the dataset."
+    }
+  ]
+}

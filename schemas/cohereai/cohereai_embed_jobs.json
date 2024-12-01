@@ -1,0 +1,46 @@
+{
+  "table_name": "cohereai_embed_jobs",
+  "table_description": "Cohere Ai list of EmbedJobs.",
+  "columns": [
+    {
+      "name": "job_id",
+      "type": "text",
+      "description": "job_id of Embed job."
+    },
+    {
+      "name": "name",
+      "type": "text",
+      "description": "Name of the Embed job."
+    },
+    {
+      "name": "status",
+      "type": "text",
+      "description": "Status of the Embed job."
+    },
+    {
+      "name": "created_at",
+      "type": "timestamp with time zone",
+      "description": "Timestamp of when the Embed job was created."
+    },
+    {
+      "name": "model",
+      "type": "text",
+      "description": "Model of the Embed job."
+    },
+    {
+      "name": "input_dataset_id",
+      "type": "text",
+      "description": "Input dataset id of the Embed job."
+    },
+    {
+      "name": "output_dataset_id",
+      "type": "text",
+      "description": "Output dataset id of the Embed job."
+    },
+    {
+      "name": "truncate",
+      "type": "boolean",
+      "description": "Truncate of the Embed job."
+    }
+  ]
+}

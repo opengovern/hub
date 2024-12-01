@@ -1,0 +1,26 @@
+{
+  "table_name": "cohereai_models",
+  "table_description": "Cohere Ai list of models.",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "Name of the model."
+    },
+    {
+      "name": "endpoints",
+      "type": "json",
+      "description": "Endpoints of the model."
+    },
+    {
+      "name": "tokenizer_url",
+      "type": "text",
+      "description": "Tokenizer URL of the model."
+    },
+    {
+      "name": "default_endpoints",
+      "type": "json",
+      "description": "Default endpoints of the model."
+    }
+  ]
+}

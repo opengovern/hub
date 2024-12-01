@@ -1,0 +1,21 @@
+{
+  "table_name": "cohereai_tokenize",
+  "table_description": "Tokenize in Cohere AI.",
+  "columns": [
+    {
+      "name": "tokens",
+      "type": "text",
+      "description": "Tokens for a given text prompt."
+    },
+    {
+      "name": "token_strings",
+      "type": "text",
+      "description": "Tokens in the form of input string."
+    },
+    {
+      "name": "text",
+      "type": "text",
+      "description": "The text to tokenize for, encoded as a string."
+    }
+  ]
+}
