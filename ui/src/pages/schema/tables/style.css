@@ -1,20 +1,20 @@
 
 .schema .awsui_list_l0dv0_1behr_221{
-     max-height: 50dvh;
+    max-height: calc(62dvh - 7rem);
     overflow: hidden;
-    overflow-y: scroll;
+    overflow-y: auto;
 }
 
 
 .schema .awsui_content-wrapper_14iqq_1uqiy_304{
     min-height: calc(62dvh - 1.75rem);
-     max-height: calc(62dvh - 1.75rem);
+    max-height: calc(62dvh - 1.75rem);
     /* overflow: hidden; */
-    overflow-y: scroll;
+    overflow-y: auto;
 
 }
 .schema .awsui_wrapper_wih1l_1200x_208{
-     min-height: calc(62dvh - 6rem);
+     min-height: calc(62dvh - 7rem);
      /* max-height: calc(62dvh - 1.75rem); */
     /* overflow: hidden; */
     /* overflow-y: scroll; */

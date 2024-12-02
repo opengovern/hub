@@ -122,7 +122,7 @@ const [tables,setTables]= useState<TypeTables>();
                   {window.innerWidth > 768 ? (
                     <>
                       <SideNavigation
-                        className="text-white dark:bg-white dark:text-gray-900 rounded-xl p-2 max-h-[62dvh]   "
+                        className="text-white dark:bg-white dark:text-gray-900 rounded-xl p-2 h-full max-h-[62dvh]   "
                         activeHref={selectedTable}
                         header={{
                           href: "1",
