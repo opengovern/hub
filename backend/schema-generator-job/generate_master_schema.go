@@ -103,7 +103,13 @@ func GenerateMasterSchema(jsonDir string, outputFile string,integrations *[]Inte
 			if integration.ID == 0 {
 				continue
 			}
-			if strings.ToLower(integration.Name) == strings.ToLower(groupName) {
+			fmt.Println(integration.Name)
+			fmt.Println(groupName)
+			fmt.Println(strings.Contains(integration.Name,groupName))
+
+
+			if strings.Contains(strings.ToLower((integration.Name)),groupName) {
+				
 				separateOutput.Description = integration.Description
 				break
 			}
