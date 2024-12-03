@@ -125,6 +125,20 @@ export function Navigation() {
 
                   <DropdownMenuItem
                     onClick={() => {
+                      navigate("/use-cases");
+                    }}
+                  >
+                    <a
+                      className="px-2 py-1 text-gray-900 dark:text-gray-50"
+                      href={"/use-cases"}
+                    >
+                      Use cases
+                    </a>
+                  </DropdownMenuItem>
+                  <DropdownMenuSeparator />
+
+                  <DropdownMenuItem
+                    onClick={() => {
                       navigate("/change");
                     }}
                   >
@@ -277,6 +291,20 @@ export function Navigation() {
                       href={"/compliance/frameworks"}
                     >
                       Compliance
+                    </a>
+                  </DropdownMenuItem>
+                  <DropdownMenuSeparator />
+
+                  <DropdownMenuItem
+                    onClick={() => {
+                      navigate("/use-cases");
+                    }}
+                  >
+                    <a
+                      className="px-2 py-1 text-gray-900 dark:text-gray-50"
+                      href={"/use-cases"}
+                    >
+                      Use cases
                     </a>
                   </DropdownMenuItem>
                   <DropdownMenuSeparator />
