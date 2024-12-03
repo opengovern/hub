@@ -11,6 +11,7 @@ import Schema from '../pages/schema';
 import SchemaTables from '../pages/schema/tables';
 import Preview from '../pages/preview';
 import UseCase from '../pages/useCases';
+import ChangeLog from '../pages/changelog';
 
 
 const authRoutes = [
@@ -19,11 +20,11 @@ const authRoutes = [
     element: <Home />,
     noAuth: true,
   },
-  {
-    path: "/preview",
-    element: <Preview />,
-    noAuth: true,
-  },
+  // {
+  //   path: "/preview",
+  //   element: <Preview />,
+  //   noAuth: true,
+  // },
   {
     key: "*",
     path: "*",
@@ -77,6 +78,12 @@ const authRoutes = [
     key: "use-cases",
     path: "/use-cases",
     element: <UseCase />,
+    noAuth: true,
+  },
+  {
+    key: "ChangeLog",
+    path: "/changelog",
+    element: <ChangeLog />,
     noAuth: true,
   },
 ];

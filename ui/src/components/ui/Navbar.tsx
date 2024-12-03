@@ -4,7 +4,7 @@ import useScroll from "../../lib/use-scroll"
 import { cx } from "../../lib/utils"
 import { RiCloseLine, RiMenuLine } from "@remixicon/react"
 
-import React from "react"
+import React, { useContext } from "react"
 import { DatabaseLogo } from "../DatabaseLogo"
 import { Button } from "../Button"
 import { Select, SelectItem } from "@tremor/react"
@@ -19,12 +19,14 @@ import {
 } from "../Dropdown";
 import { useNavigate } from "react-router-dom"
 import ThemedImage from "./ThemedImage"
+import { ThemeContext } from "../../Theme"
 
 
 export function Navigation() {
   const scrolled = useScroll(15)
   const [open, setOpen] = React.useState(false)
   const navigate = useNavigate();
+  const { theme, changeTheme } = useContext(ThemeContext);
   React.useEffect(() => {
     const mediaQuery: MediaQueryList = window.matchMedia("(min-width: 768px)")
     const handleMediaQueryChange = () => {
@@ -71,12 +73,83 @@ export function Navigation() {
               >
                 Integrations(42)
               </a>
-              <a
-                className="px-2 py-1 text-gray-900 dark:text-gray-50"
-                href={"/compliance/frameworks"}
-              >
-                Compliance
-              </a>
+              <DropdownMenu>
+                <DropdownMenuTrigger asChild>
+                  <a
+                    className="px-2 py-1 flex flex-row gap-2 text-gray-900 dark:text-gray-50"
+                    href={"#"}
+                  >
+                    More
+                    <svg
+                      className="-mr-1 size-5 text-gray-400 "
+                      viewBox="0 0 20 20"
+                      fill={theme === "dark" ? "white" : "black"}
+                      aria-hidden="true"
+                      data-slot="icon"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                  </a>
+                </DropdownMenuTrigger>
+                <DropdownMenuContent>
+                  {/* <DropdownMenuItem
+                    onClick={() => {
+                      navigate("/about");
+                    }}
+                  >
+                    {" "}
+                    <a
+                      className="px-2 py-1 text-gray-900 dark:text-gray-50"
+                      href={"/about"}
+                    >
+                      About
+                    </a>
+                  </DropdownMenuItem> */}
+                  <DropdownMenuItem
+                    onClick={() => {
+                      navigate("/compliance/frameworks");
+                    }}
+                  >
+                    <a
+                      className="px-2 py-1 text-gray-900 dark:text-gray-50"
+                      href={"/compliance/frameworks"}
+                    >
+                      Compliance
+                    </a>
+                  </DropdownMenuItem>
+                  <DropdownMenuSeparator />
+
+                  <DropdownMenuItem
+                    onClick={() => {
+                      navigate("/change");
+                    }}
+                  >
+                    <a
+                      className="px-2 py-1 text-gray-900 dark:text-gray-50"
+                      href={"/changelog"}
+                    >
+                      Changelog
+                    </a>
+                  </DropdownMenuItem>
+                  {/* <DropdownMenuSeparator /> */}
+                  {/* <DropdownMenuItem
+                    onClick={() => {
+                      navigate("/pricing");
+                    }}
+                  >
+                    <a
+                      className="px-2 py-1 text-gray-900 dark:text-gray-50"
+                      href={"/pricing"}
+                    >
+                      Pricing
+                    </a>
+                  </DropdownMenuItem> */}
+                </DropdownMenuContent>
+              </DropdownMenu>
               <a
                 className="px-2 py-1 text-gray-900 dark:text-gray-50 flex flex-row gap-1 justify-center items-center align-middle"
                 href={"https://github.com/opengovern/opengovernance"}
@@ -91,71 +164,6 @@ export function Navigation() {
                 />
                 <span>Github</span>
               </a>
-              {/* <DropdownMenu>
-                <DropdownMenuTrigger asChild>
-                  <a
-                    className="px-2 py-1 flex flex-row gap-2 text-gray-900 dark:text-gray-50"
-                    href={"#"}
-                  >
-                    More
-                    <svg
-                      className="-mr-1 size-5 text-gray-400"
-                      viewBox="0 0 20 20"
-                      fill="white"
-                      aria-hidden="true"
-                      data-slot="icon"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z"
-                        clip-rule="evenodd"
-                      />
-                    </svg>
-                  </a>
-                </DropdownMenuTrigger>
-                <DropdownMenuContent>
-                  <DropdownMenuItem
-                    onClick={() => {
-                      navigate("/about");
-                    }}
-                  >
-                    {" "}
-                    <a
-                      className="px-2 py-1 text-gray-900 dark:text-gray-50"
-                      href={"/about"}
-                    >
-                      About
-                    </a>
-                  </DropdownMenuItem>
-                  <DropdownMenuSeparator />
-
-                  <DropdownMenuItem
-                    onClick={() => {
-                      navigate("/change");
-                    }}
-                  >
-                    <a
-                      className="px-2 py-1 text-gray-900 dark:text-gray-50"
-                      href={"/change"}
-                    >
-                      Changelog
-                    </a>
-                  </DropdownMenuItem>
-                  <DropdownMenuSeparator />
-                  <DropdownMenuItem
-                    onClick={() => {
-                      navigate("/pricing");
-                    }}
-                  >
-                    <a
-                      className="px-2 py-1 text-gray-900 dark:text-gray-50"
-                      href={"/pricing"}
-                    >
-                      Pricing
-                    </a>
-                  </DropdownMenuItem>
-                </DropdownMenuContent>
-              </DropdownMenu> */}
             </div>
           </nav>
           {/* <Button className="hidden h-10 font-semibold md:flex">
@@ -222,7 +230,7 @@ export function Navigation() {
                 <span>Github</span>
               </a>
             </li>
-            {/* <li onClick={() => setOpen(false)}>
+            <li onClick={() => setOpen(false)}>
               <DropdownMenu>
                 <DropdownMenuTrigger asChild>
                   <a
@@ -233,7 +241,7 @@ export function Navigation() {
                     <svg
                       className="-mr-1 size-5 text-gray-400"
                       viewBox="0 0 20 20"
-                      fill="white"
+                      fill={theme === "dark" ? "white" : "black"}
                       aria-hidden="true"
                       data-slot="icon"
                     >
@@ -246,7 +254,7 @@ export function Navigation() {
                   </a>
                 </DropdownMenuTrigger>
                 <DropdownMenuContent>
-                  <DropdownMenuItem
+                  {/* <DropdownMenuItem
                     onClick={() => {
                       navigate("/about");
                     }}
@@ -258,6 +266,18 @@ export function Navigation() {
                     >
                       About
                     </a>
+                  </DropdownMenuItem> */}
+                  <DropdownMenuItem
+                    onClick={() => {
+                      navigate("/compliance/frameworks");
+                    }}
+                  >
+                    <a
+                      className="px-2 py-1 text-gray-900 dark:text-gray-50"
+                      href={"/compliance/frameworks"}
+                    >
+                      Compliance
+                    </a>
                   </DropdownMenuItem>
                   <DropdownMenuSeparator />
 
@@ -268,13 +288,13 @@ export function Navigation() {
                   >
                     <a
                       className="px-2 py-1 text-gray-900 dark:text-gray-50"
-                      href={"/change"}
+                      href={"/changelog"}
                     >
                       Changelog
                     </a>
                   </DropdownMenuItem>
-                  <DropdownMenuSeparator />
-                  <DropdownMenuItem
+                  {/* <DropdownMenuSeparator /> */}
+                  {/* <DropdownMenuItem
                     onClick={() => {
                       navigate("/pricing");
                     }}
@@ -285,10 +305,10 @@ export function Navigation() {
                     >
                       Pricing
                     </a>
-                  </DropdownMenuItem>
+                  </DropdownMenuItem> */}
                 </DropdownMenuContent>
               </DropdownMenu>
-            </li> */}
+            </li>
           </ul>
         </nav>
       </div>

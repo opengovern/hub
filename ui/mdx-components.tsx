@@ -1,5 +1,4 @@
 import type { MDXComponents } from "mdx/types"
-
 import {
   Bold,
   ChangelogEntry,
@@ -31,3 +30,4 @@ export function useMDXComponents(components: MDXComponents) {
     ...components,
   }
 }
+

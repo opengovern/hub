@@ -57,7 +57,7 @@ const UseCaseCard: FunctionComponent<CardProps> = ({
 
         <div className="flex flex-row justify-center bg-gray-600 dark:bg-blue-900 rounded-b-lg px-4 py-2 items-center">
           {/* <span className="dark:text-white">google sheet + some text </span> */}
-          <div className="flex flex-row items-center gap-2">
+          <div className="flex dark:text-white flex-row items-center gap-2">
             <span>Try it</span>
             <RiArrowRightLine color="white" />
           </div>
