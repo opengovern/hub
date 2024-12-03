@@ -1,40 +1,15 @@
 import Balancer from "react-wrap-balancer";
-import Page from "./page.mdx";
+import { ChangeLogText } from "./page.js";
 import { MDXProvider } from "@mdx-js/react";
-import { useMDXComponents } from "../../../mdx-components";
+import { useMDXComponents } from "../../components/mdx-components.js";
 import { compile } from "@mdx-js/mdx";
 import { evaluateSync } from "@mdx-js/mdx";
 import * as runtime from "react/jsx-runtime";
-
-import {
-  Bold,
-  ChangelogEntry,
-  CustomLink,
-  H1,
-  H2,
-  H3,
-  P,
-  Ul,
-} from "../../components/mdx";
-
-import { ChangelogImage } from "../../components/mdx";
+import ReactMarkdown from "react-markdown";
 
 
 export default  function  ChangeLog() {
- 
-let customComponents = {
-  h1: H1,
-  h2: H2,
-  h3: H3,
-  p: P,
-  Bold: Bold,
-  ul: Ul,
-  a: CustomLink,
-  ChangelogEntry: ChangelogEntry,
-  ChangelogImage: ChangelogImage,
-};
-const { default: MDXContent } =  evaluateSync("./page.mdx", runtime);
-console.log(MDXContent)
+
   return (
     <main
       className="mx-auto mt-36 max-w-3xl animate-slide-up-fade px-3"
@@ -55,9 +30,10 @@ console.log(MDXContent)
         </p>
       </div>
       <div className="mt-28">
-        <MDXProvider components={customComponents}>
-          <Page />
-        </MDXProvider>
+        <ReactMarkdown
+        // @ts-ignore
+          components={useMDXComponents({})}
+        children={ChangeLogText} />
       </div>
     </main>
   );

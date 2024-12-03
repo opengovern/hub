@@ -1,4 +1,6 @@
+export const ChangeLogText = `
 <ChangelogEntry version="v3.17.0" date="Apr 27, 2024">
+
 ## Safe migrations on development branches
 
 After months of development, Safe migrations can now be activated on development
@@ -72,3 +74,5 @@ For more information, refer to our docs post on read replicas or the read
 replicas section in [the documentation](#).
 
 </ChangelogEntry>
+
+`;
