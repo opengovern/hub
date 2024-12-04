@@ -19,27 +19,30 @@ import React, { Fragment, useEffect, useState } from "react";
 import Balancer from "react-wrap-balancer";
 import ReactMarkdown from "react-markdown";
 import { useMDXComponents } from "../../components/mdx-components.js";
-import aws_cloud_account from "./aws_cloud_account.md"
-import azure_subscription from "./azure_subscription.md";
-import cloudflare_account from "./cloudflare_account.md";
-import digitalocean_team from "./digitalocean_team.md";
-import entraid_directory from "./entraid_directory.md";
-import linode_account from "./linode_account.md";
+import aws from "./aws.md"
+import azure from "./azure.md";
+import cloudflare from "./cloudflare.md";
+import digitalocean from "./digitalocean.md";
+import entraid from "./entraid.md";
+import linode from "./linode.md";
+import google_workspace from "./google_workspace.md";
 
 const setupFiles = {
-    aws_cloud_account,
-    azure_subscription,
-    cloudflare_account,
-    digitalocean_team,
-    entraid_directory,
-    linode_account,
-}
+  aws,
+  azure,
+  cloudflare,
+  digitalocean,
+  entraid,
+  linode,
+  google_workspace,
+};
 
 
 export default function Setup() {
 const { id } = useParams();
 const [file, setFile] = useState<string>();
 const getFile = () => {
+    console.log(id)
     // @ts-ignore
     fetch(setupFiles[id]).then((res) => {
       res.text().then((text) => {
@@ -54,7 +57,7 @@ useEffect(()=>{
 },[])
 
   return (
-    <div className="mx-auto pt-36 max-w-6xl">
+    <div className="mx-auto pt-2 max-w-6xl">
       <div className="text-center">
         <h1 className="inline-block bg-gradient-to-t from-gray-900 to-gray-800 bg-clip-text py-2 text-4xl font-bold tracking-tighter text-transparent sm:text-5xl dark:from-gray-50 dark:to-gray-300">
           Setup {id?.split("_")[0].toLocaleUpperCase()}

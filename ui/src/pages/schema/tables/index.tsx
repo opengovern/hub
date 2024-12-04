@@ -111,7 +111,7 @@ const [tables,setTables]= useState<TypeTables>();
             {tables && <>({tables?.count_of_named_tables})</>}
           </h1>
           <p className=" mb-2  text-lg text-gray-700 dark:text-gray-400">
-           {tables?.description}
+            {tables?.description}
           </p>
         </section>
         <div className="flex gap-3 flex-col mt-5">
@@ -122,7 +122,7 @@ const [tables,setTables]= useState<TypeTables>();
                   {window.innerWidth > 768 ? (
                     <>
                       <SideNavigation
-                        className="text-white dark:bg-white dark:text-gray-900 rounded-xl p-2 h-full max-h-[62dvh]   "
+                        className="text-white bg-[#f7f7f7] dark:bg-white dark:text-gray-900 rounded-xl p-2 h-full max-h-[62dvh]   "
                         activeHref={selectedTable}
                         header={{
                           href: "1",
@@ -173,7 +173,7 @@ const [tables,setTables]= useState<TypeTables>();
                   <>
                     <Col numColSpan={12} numColSpanSm={9} className=" ">
                       <Table
-                        className="p-5 pt-2 "
+                        className="p-5 pt-2  bg-[#e4e3e3]"
                         renderAriaLive={({
                           firstIndex,
                           lastIndex,

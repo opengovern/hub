@@ -192,7 +192,7 @@ kubectl port-forward -n opencomply svc/nginx-proxy 8080:80`}
             <div className="flex text-sm   flex-1 flex-wrap md:justify-start flex-row gap-2 mt-2 ">
               <Button
                 ariaLabel="Report a bug (opens new tab)"
-                href="/integrations/aws_cloud_account/setup"
+                href="/integrations/aws/setup"
                 iconAlign="right"
                 iconName="external"
                 target="_blank"
@@ -339,7 +339,7 @@ kubectl port-forward -n opencomply svc/nginx-proxy 8080:80`}
                 ></iframe>
               </div>
             </div>
-            <div className="mt-[3rem] ml-4">some texts goes here also</div>
+            {/* <div className="mt-[3rem] ml-4">some texts goes here also</div> */}
           </div>
         </div>
 

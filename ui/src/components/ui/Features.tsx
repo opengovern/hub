@@ -21,7 +21,7 @@ export default function Features() {
   return (
     <section
       aria-labelledby="features-title"
-      className=" mt-24 w-full max-w-6xl px-3 sm:px-60 py-12 mx-auto border dark:border-white ring-1 bg-white  ring-tremor-background-emphasis  rounded-xl  flex flex-col justify-start items-start"
+      className="custom-container mt-24 w-full max-w-6xl px-3 sm:px-60 py-12 mx-auto border dark:border-white ring-1 bg-white  ring-tremor-background-emphasis  rounded-xl  flex flex-col justify-start items-start"
     >
       {/* <Badge>Security at Scale</Badge> */}
       <h2
