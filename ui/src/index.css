@@ -60,3 +60,28 @@ a {
 *:hover > .anchor-link {
   @apply visible;
 }
+
+
+/* change scrollbar style */
+
+::-webkit-scrollbar {
+    width: 2px; /* Set the width of the scrollbar */
+    height: 5px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: #757474a4; /* Set the color of the scrollbar thumb */
+    border-radius: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background-color: #2b2b2b; /* Set the color of the scrollbar track */
+    /* // color: rebeccapurple; */
+    background-color: transparent;
+  }
+
+    ::-webkit-scrollbar-thumb:is(.dark *) {
+    background-color: #757474a4; /* Set the color of the scrollbar thumb */
+    border-radius: 8px;
+  }
+

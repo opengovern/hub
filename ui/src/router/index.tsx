@@ -90,7 +90,7 @@ const authRoutes = [
   {
     key: "setup",
     path: "/integrations/:id/setup",
-    element: <Setup />,
+    element: <SchemaDetail />,
     noAuth: true,
   },
 ];

@@ -2619,6 +2619,16 @@ select {
   background-color: rgb(232 239 250 / var(--tw-bg-opacity, 1));
 }
 
+.bg-\[\#e4e3e3\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(228 227 227 / var(--tw-bg-opacity, 1));
+}
+
+.bg-\[\#f7f7f7\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(247 247 247 / var(--tw-bg-opacity, 1));
+}
+
 .bg-blue-950 {
   --tw-bg-opacity: 1;
   background-color: rgb(23 37 84 / var(--tw-bg-opacity, 1));
@@ -2840,24 +2850,6 @@ select {
 
 .bg-white\/\[1\%\] {
   background-color: rgb(255 255 255 / 1%);
-}
-
-.bg-\[\#f7f7f7\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(247 247 247 / var(--tw-bg-opacity, 1));
-}
-
-.bg-\[\] {
-  background-color: ;
-}
-
-.bg-\[\#\] {
-  background-color: #;
-}
-
-.bg-\[\#e4e3e3\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(228 227 227 / var(--tw-bg-opacity, 1));
 }
 
 .bg-opacity-10 {
@@ -4337,6 +4329,33 @@ a {
 
 *:hover > .anchor-link {
   visibility: visible;
+}
+
+/* change scrollbar style */
+
+::-webkit-scrollbar {
+  width: 2px;
+  /* Set the width of the scrollbar */
+  height: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #757474a4;
+  /* Set the color of the scrollbar thumb */
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #2b2b2b;
+  /* Set the color of the scrollbar track */
+  /* // color: rebeccapurple; */
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb:is(.dark *) {
+  background-color: #757474a4;
+  /* Set the color of the scrollbar thumb */
+  border-radius: 8px;
 }
 
 .selection\:bg-indigo-100 *::selection {
@@ -7350,3 +7369,4 @@ a {
 .\[\&_code\]\:min-w-full code {
   min-width: 100%;
 }
+
