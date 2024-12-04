@@ -1,7 +1,9 @@
 // @ts-nocheck
 // import Code from "../Code"
 import {
+  RiContractUpDownLine,
   RiGitBranchLine,
+  RiGroup2Line,
   RiLink,
   RiLinksLine,
   RiLockStarLine,
@@ -9,9 +11,9 @@ import {
   RiShieldKeyholeLine,
   RiShieldStarLine,
   RiStackLine,
-} from "@remixicon/react"
-import { Badge } from "../Badge"
-import CodeExampleTabs from "./CodeExampleTabs"
+} from "@remixicon/react";
+import { Badge } from "../Badge";
+import CodeExampleTabs from "./CodeExampleTabs";
 
 const code = `CREATE TABLE Customers (
     customer_id SERIAL PRIMARY KEY,
@@ -35,7 +37,7 @@ CREATE TABLE Items (
 CREATE TABLE Order_Items (
     order_id INT REFERENCES Orders(order_id),
     item_id INT REFERENCES Items(item_id),
-);`
+);`;
 
 const code2 = `async function fetchCustomerOrders() {
     const result = await prisma.orders.findMany({
@@ -59,37 +61,58 @@ const code2 = `async function fetchCustomerOrders() {
         }
     });
     return result;
-}`
+}`;
 
 const features = [
   {
-    name: "Unified Governance",
+    name: "Open",
     description:
-      "Govern across your stack, detect flaws instantly across clouds, environments, platforms, and tools.",
+      "Built as an open platform inspired by Steampipe, allowing customization and extension without restrictions.",
+    icon: RiShieldStarLine,
+  },
+
+  {
+    name: "Robust Integrations",
+    description:
+      "Connect DevOps, AI/ML, and SecOps tools for complete governance across your stack.",
+    icon: RiContractUpDownLine,
+  },
+
+  {
+    name: "Unified Data",
+    description:
+      "Eliminate blind spots and inconsistencies with a centralized inventory data plane.",
     icon: RiStackLine,
   },
   {
-    name: "Automated Compliance",
+    name: "Vendor-Agnostic",
     description:
-      "Track drifts, enforce standards, capture evidence. Leverage 50+ frameworks and 2,000+ pre-built controls.",
-    icon: RiShieldStarLine,
-  },
-  {
-    name: "Rich Integrations",
-    description:
-      "Connect your CI/CD, SAST, DAST to see every risks and key events across your entire stack, from code to cloud.",
+      "Inventory and Audit for compliance across clouds, projects, environments, and tools.",
     icon: RiLink,
   },
   {
-    name: "Developer Friendly",
+    name: "DRY",
     description:
-      "Manage policies in Git and embed checks into workflows for continuous governance across any cloud. No DSL, custom extensions, or scripts",
+      "Reuse controls and leverage variables and views to prevent policy duplication.",
+    icon: RiShieldStarLine,
+  },
+
+  {
+    name: "Workflow Friendly",
+    description:
+      "Embed compliance and audit into your development and operational workflows. ",
     icon: RiGitBranchLine,
+  },
+  {
+    name: "Built for Teams",
+    description:
+      "Empower collaboration on compliance tasks with shared insights and real-time teamwork.",
+    icon: RiGroup2Line,
   },
   {
     name: "Enterprise Ready",
     description:
-      "Enterprise-grade security & compliance. SSO, SSL, agentless. Deploy fast.",
+      "Secure with SSO, SSL, and API integrations; no disruptive changes or agent deployments.",
     icon: RiLockStarLine,
   },
 ];

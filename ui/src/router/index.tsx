@@ -12,6 +12,7 @@ import SchemaTables from '../pages/schema/tables';
 import Preview from '../pages/preview';
 import UseCase from '../pages/useCases';
 import ChangeLog from '../pages/changelog';
+import Setup from '../pages/setup';
 
 
 const authRoutes = [
@@ -61,7 +62,6 @@ const authRoutes = [
     element: <Schema />,
     noAuth: true,
   },
-
   {
     key: "schmea-tables",
     path: "/integrations/:id/schema",
@@ -84,6 +84,12 @@ const authRoutes = [
     key: "ChangeLog",
     path: "/changelog",
     element: <ChangeLog />,
+    noAuth: true,
+  },
+  {
+    key: "setup",
+    path: "/integrations/:id/setup",
+    element: <Setup />,
     noAuth: true,
   },
 ];

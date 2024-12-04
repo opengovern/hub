@@ -89,7 +89,7 @@ kubectl port-forward -n opencomply svc/nginx-proxy 8080:80`}
               <div className="flex text-sm flex-wrap flex-1 justify-start md:justify-center flex-row gap-2 mt-2 ">
                 <Button
                   ariaLabel="Report a bug (opens new tab)"
-                  href="https://example.com"
+                  href="https://docs.opencomply.io/oss/advanced-setup/deploy-to-aws"
                   iconAlign="right"
                   iconName="external"
                   target="_blank"
@@ -99,7 +99,7 @@ kubectl port-forward -n opencomply svc/nginx-proxy 8080:80`}
                 </Button>
                 <Button
                   ariaLabel="Report a bug (opens new tab)"
-                  href="https://example.com"
+                  href=" https://docs.opencomply.io/oss/advanced-setup/deploy-to-azure"
                   iconAlign="right"
                   iconName="external"
                   target="_blank"
@@ -109,7 +109,7 @@ kubectl port-forward -n opencomply svc/nginx-proxy 8080:80`}
                 </Button>
                 <Button
                   ariaLabel="Report a bug (opens new tab)"
-                  href="https://example.com"
+                  href="https://docs.opencomply.io/oss/advanced-setup/deploy-on-digitalocean-linode "
                   iconAlign="right"
                   iconName="external"
                   target="_blank"
@@ -119,7 +119,7 @@ kubectl port-forward -n opencomply svc/nginx-proxy 8080:80`}
                 </Button>
                 <Button
                   ariaLabel="Report a bug (opens new tab)"
-                  href="https://example.com"
+                  href="https://docs.opencomply.io/oss/advanced-setup/deploy-to-google-cloud-gke "
                   iconAlign="right"
                   iconName="external"
                   target="_blank"
@@ -129,7 +129,7 @@ kubectl port-forward -n opencomply svc/nginx-proxy 8080:80`}
                 </Button>
                 <Button
                   ariaLabel="Report a bug (opens new tab)"
-                  href="https://example.com"
+                  href="https://docs.opencomply.io/oss/advanced-setup/deploy-on-digitalocean-linode"
                   iconAlign="right"
                   iconName="external"
                   target="_blank"
@@ -189,10 +189,10 @@ kubectl port-forward -n opencomply svc/nginx-proxy 8080:80`}
                 </video>
               </div>
             </div>
-            <div className="flex text-sm flex-wrap  flex-1 flex-wrap md:justify-center flex-row gap-2 mt-2 ">
+            <div className="flex text-sm   flex-1 flex-wrap md:justify-start flex-row gap-2 mt-2 ">
               <Button
                 ariaLabel="Report a bug (opens new tab)"
-                href="https://example.com"
+                href="/integrations/aws_cloud_account/setup"
                 iconAlign="right"
                 iconName="external"
                 target="_blank"
@@ -202,7 +202,7 @@ kubectl port-forward -n opencomply svc/nginx-proxy 8080:80`}
               </Button>
               <Button
                 ariaLabel="Report a bug (opens new tab)"
-                href="https://example.com"
+                href="/integrations/azure_subscription/setup"
                 iconAlign="right"
                 iconName="external"
                 target="_blank"
@@ -210,29 +210,10 @@ kubectl port-forward -n opencomply svc/nginx-proxy 8080:80`}
               >
                 Azure
               </Button>
+
               <Button
                 ariaLabel="Report a bug (opens new tab)"
-                href="https://example.com"
-                iconAlign="right"
-                iconName="external"
-                target="_blank"
-                variant="primary"
-              >
-                GitHub
-              </Button>
-              <Button
-                ariaLabel="Report a bug (opens new tab)"
-                href="https://example.com"
-                iconAlign="right"
-                iconName="external"
-                target="_blank"
-                variant="primary"
-              >
-                OpenAI
-              </Button>
-              <Button
-                ariaLabel="Report a bug (opens new tab)"
-                href="https://example.com"
+                href="/integrations/cloudflare_account/setup"
                 iconAlign="right"
                 iconName="external"
                 target="_blank"
@@ -240,6 +221,39 @@ kubectl port-forward -n opencomply svc/nginx-proxy 8080:80`}
               >
                 Cloudflare
               </Button>
+
+              <Button
+                ariaLabel="Report a bug (opens new tab)"
+                href="/integrations/entraid_directory/setup"
+                iconAlign="right"
+                iconName="external"
+                target="_blank"
+                variant="primary"
+              >
+                EntraId
+              </Button>
+
+              <Button
+                ariaLabel="Report a bug (opens new tab)"
+                href="/integrations/linode_account/setup"
+                iconAlign="right"
+                iconName="external"
+                target="_blank"
+                variant="primary"
+              >
+                Linode
+              </Button>
+              <Button
+                ariaLabel="Report a bug (opens new tab)"
+                href="/integrations/digitalocean_team/setup"
+                iconAlign="right"
+                iconName="external"
+                target="_blank"
+                variant="primary"
+              >
+                Digital Ocean
+              </Button>
+
               {/* <Button
                   ariaLabel="Report a bug (opens new tab)"
                   href="https://example.com"
@@ -272,7 +286,9 @@ kubectl port-forward -n opencomply svc/nginx-proxy 8080:80`}
               <div className="flex flex-col gap-5">
                 <div className="text-slate-500 dark:text-white ">
                   {" "}
-                  some texts goes here
+                  Gain visibility into over 800+ Types of Assets across vendors,
+                  environments, tools, platforms, projects, and regions.
+                  Everything from Code to Cloud
                 </div>
                 <div className="flex flex-row gap-2 flex-wrap">
                   <div
@@ -281,7 +297,7 @@ kubectl port-forward -n opencomply svc/nginx-proxy 8080:80`}
                       setDiscoverOption(0);
                     }}
                   >
-                    Inventory
+                    AI Datasets
                   </div>
                   <div
                     className={`p-2 border dark:border-white rounded-3xl cursor-pointer hover:dark:bg-white hover:bg-blue-950 hover:text-white hover:dark:text-black  ${discoverOption == 1 && "text-bold dark:bg-white dark:text-black bg-blue-950 text-white "}  `}
@@ -289,7 +305,7 @@ kubectl port-forward -n opencomply svc/nginx-proxy 8080:80`}
                       setDiscoverOption(1);
                     }}
                   >
-                    Misconfiguration
+                    Identities
                   </div>
                   <div
                     className={`p-2 border dark:border-white rounded-3xl cursor-pointer hover:dark:bg-white hover:bg-blue-950 hover:text-white hover:dark:text-black  ${discoverOption == 2 && "text-bold dark:bg-white dark:text-black bg-blue-950 text-white "}  `}
@@ -297,7 +313,15 @@ kubectl port-forward -n opencomply svc/nginx-proxy 8080:80`}
                       setDiscoverOption(2);
                     }}
                   >
-                    Optimization
+                    Assets
+                  </div>
+                  <div
+                    className={`p-2 border dark:border-white rounded-3xl cursor-pointer hover:dark:bg-white hover:bg-blue-950 hover:text-white hover:dark:text-black  ${discoverOption == 2 && "text-bold dark:bg-white dark:text-black bg-blue-950 text-white "}  `}
+                    onClick={() => {
+                      setDiscoverOption(2);
+                    }}
+                  >
+                    Databases
                   </div>
                 </div>
               </div>
@@ -337,7 +361,8 @@ kubectl port-forward -n opencomply svc/nginx-proxy 8080:80`}
               </time> */}
             </div>
             <div className="text-slate-500 dark:text-white mt-4">
-              Audit your platform against Industry standard
+              Audit your platform against Industry standards, Regulatory
+              Frameworks, Developer Best Practices.
             </div>
           </div>
           <div className="md:hidden w-10 h-10"></div>
@@ -352,7 +377,18 @@ kubectl port-forward -n opencomply svc/nginx-proxy 8080:80`}
                 ></iframe>
               </div>
             </div>
-            <div className="mt-[3rem] ml-4">some texts goes here also</div>
+            <div className="flex text-sm flex-wrap  flex-1 justify-center flex-row gap-2 mt-2 ">
+              <Button
+                ariaLabel="Report a bug (opens new tab)"
+                href="https://opencomply.io/compliance/frameworks"
+                iconAlign="right"
+                iconName="external"
+                target="_blank"
+                variant="primary"
+              >
+                40+ Compliance Frameworks
+              </Button>
+            </div>
           </div>
         </div>
 
@@ -414,7 +450,7 @@ kubectl port-forward -n opencomply svc/nginx-proxy 8080:80`}
             <div className="flex text-sm flex-wrap  flex-1 justify-center flex-row gap-2 mt-2 ">
               <Button
                 ariaLabel="Report a bug (opens new tab)"
-                href="https://example.com"
+                href="https://docs.opencomply.io/oss/guide/compliance-framework/write-a-framework"
                 iconAlign="right"
                 iconName="external"
                 target="_blank"
@@ -424,7 +460,7 @@ kubectl port-forward -n opencomply svc/nginx-proxy 8080:80`}
               </Button>
               <Button
                 ariaLabel="Report a bug (opens new tab)"
-                href="https://example.com"
+                href="https://docs.opencomply.io/oss/guide/controls/write-your-first-control"
                 iconAlign="right"
                 iconName="external"
                 target="_blank"
