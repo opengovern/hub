@@ -95,7 +95,7 @@ const [tables,setTables]= useState<TypeTables>();
   }, []);
 
   return (
-    <div className="mx-auto pt-20 max-w-6xl">
+    <div className="mx-auto pt-2 max-w-6xl">
       <div className="px-3">
         <section
           aria-labelledby="pricing-title"
@@ -105,8 +105,8 @@ const [tables,setTables]= useState<TypeTables>();
             animationFillMode: "backwards",
           }}
         >
-          <Badge>Tables</Badge>
-          <h1 className="mt-2 inline-block bg-gradient-to-br from-gray-900 to-gray-800 bg-clip-text py-2 text-4xl font-bold tracking-tighter text-transparent sm:text-4xl md:text-4xl dark:from-gray-50 dark:to-gray-300">
+          {/* <Badge>Tables</Badge> */}
+          <h1 className=" inline-block bg-gradient-to-br from-gray-900 to-gray-800 bg-clip-text py-2 text-4xl font-bold tracking-tighter text-transparent sm:text-4xl md:text-4xl dark:from-gray-50 dark:to-gray-300">
             {String(id).charAt(0).toUpperCase() + String(id).slice(1)}
             {tables && <>({tables?.count_of_named_tables})</>}
           </h1>

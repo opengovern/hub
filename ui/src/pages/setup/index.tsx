@@ -63,7 +63,7 @@ useEffect(()=>{
           Setup {id?.split("_")[0].toLocaleUpperCase()}
         </h1>
       </div>
-      <div className="mt-28">
+      <div className="mt-5">
         <ReactMarkdown
           // @ts-ignore
           components={useMDXComponents({})}

@@ -23,7 +23,7 @@ To set up the OpenComply integration (formerly OpenGovernance) with Cloudflare, 
 - On the **Account page**, locate your **Account ID**.
 - **Copy** the Account ID and store it securely in a file. See screenshot below
 
-![Copy Account ID]()
+![Copy Account ID](https://raw.githubusercontent.com/opengovern/hub/refs/heads/main/ui/src/pages/setup/setup-cloudflare.png)
 
 > **Note:** Ensure you keep your Account ID confidential and store it in a secure location.
 

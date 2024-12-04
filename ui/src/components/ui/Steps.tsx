@@ -192,7 +192,7 @@ kubectl port-forward -n opencomply svc/nginx-proxy 8080:80`}
             <div className="flex text-sm   flex-1 flex-wrap md:justify-start flex-row gap-2 mt-2 ">
               <Button
                 ariaLabel="Report a bug (opens new tab)"
-                href="/integrations/aws/setup"
+                href="/integrations/aws/schema"
                 iconAlign="right"
                 iconName="external"
                 target="_blank"
@@ -202,7 +202,7 @@ kubectl port-forward -n opencomply svc/nginx-proxy 8080:80`}
               </Button>
               <Button
                 ariaLabel="Report a bug (opens new tab)"
-                href="/integrations/azure_subscription/setup"
+                href="/integrations/azure/schema"
                 iconAlign="right"
                 iconName="external"
                 target="_blank"
@@ -213,7 +213,7 @@ kubectl port-forward -n opencomply svc/nginx-proxy 8080:80`}
 
               <Button
                 ariaLabel="Report a bug (opens new tab)"
-                href="/integrations/cloudflare_account/setup"
+                href="/integrations/cloudflare/schema"
                 iconAlign="right"
                 iconName="external"
                 target="_blank"
@@ -224,7 +224,7 @@ kubectl port-forward -n opencomply svc/nginx-proxy 8080:80`}
 
               <Button
                 ariaLabel="Report a bug (opens new tab)"
-                href="/integrations/entraid_directory/setup"
+                href="/integrations/entraid/schema"
                 iconAlign="right"
                 iconName="external"
                 target="_blank"
@@ -235,7 +235,7 @@ kubectl port-forward -n opencomply svc/nginx-proxy 8080:80`}
 
               <Button
                 ariaLabel="Report a bug (opens new tab)"
-                href="/integrations/linode_account/setup"
+                href="/integrations/linode/schema"
                 iconAlign="right"
                 iconName="external"
                 target="_blank"
@@ -245,7 +245,7 @@ kubectl port-forward -n opencomply svc/nginx-proxy 8080:80`}
               </Button>
               <Button
                 ariaLabel="Report a bug (opens new tab)"
-                href="/integrations/digitalocean_team/setup"
+                href="/integrations/digitalocean/schema"
                 iconAlign="right"
                 iconName="external"
                 target="_blank"
