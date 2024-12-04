@@ -139,7 +139,7 @@ export function Navigation() {
 
                   <DropdownMenuItem
                     onClick={() => {
-                      navigate("/change");
+                      navigate("/changelog");
                     }}
                   >
                     <a
@@ -311,7 +311,7 @@ export function Navigation() {
 
                   <DropdownMenuItem
                     onClick={() => {
-                      navigate("/change");
+                      navigate("/changelog");
                     }}
                   >
                     <a
