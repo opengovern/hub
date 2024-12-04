@@ -1,0 +1,46 @@
+{
+  "table_name": "google_workspace_role",
+  "table_description": "Details about roles in the Google Workspace system, including privileges and system settings.",
+  "columns": [
+    {
+      "name": "roleId",
+      "type": "text",
+      "description": "The unique identifier of the role."
+    },
+    {
+      "name": "roleName",
+      "type": "text",
+      "description": "The name of the role."
+    },
+    {
+      "name": "roleDescription",
+      "type": "text",
+      "description": "A description of what the role entails."
+    },
+    {
+      "name": "isSystemRole",
+      "type": "boolean",
+      "description": "Indicates if the role is a system role."
+    },
+    {
+      "name": "isSuperAdminRole",
+      "type": "boolean",
+      "description": "Indicates if the role is a super admin role."
+    },
+    {
+      "name": "kind",
+      "type": "text",
+      "description": "The type of role (e.g., system, custom)."
+    },
+    {
+      "name": "etag",
+      "type": "text",
+      "description": "The etag identifier for the resource."
+    },
+    {
+      "name": "rolePrivileges",
+      "type": "json",
+      "description": "List of privileges associated with the role."
+    }
+  ]
+}

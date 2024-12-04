@@ -1,0 +1,236 @@
+{
+  "table_name": "google_workspace_user",
+  "table_description": "Users in the Google Workspace domain.",
+  "columns": [
+    {
+      "name": "id",
+      "type": "text",
+      "description": "The unique ID of the user."
+    },
+    {
+      "name": "primaryEmail",
+      "type": "text",
+      "description": "The primary email address of the user."
+    },
+    {
+      "name": "password",
+      "type": "text",
+      "description": "Password associated with the user."
+    },
+    {
+      "name": "hashFunction",
+      "type": "text",
+      "description": "Hash function used to store the password."
+    },
+    {
+      "name": "isAdmin",
+      "type": "boolean",
+      "description": "Indicates if the user is an administrator."
+    },
+    {
+      "name": "isDelegatedAdmin",
+      "type": "boolean",
+      "description": "Indicates if the user is a delegated administrator."
+    },
+    {
+      "name": "agreedToTerms",
+      "type": "boolean",
+      "description": "Indicates if the user has agreed to the terms of service."
+    },
+    {
+      "name": "suspended",
+      "type": "boolean",
+      "description": "Indicates if the user's account is suspended."
+    },
+    {
+      "name": "changePasswordAtNextLogin",
+      "type": "boolean",
+      "description": "Indicates if the user needs to change their password at the next login."
+    },
+    {
+      "name": "ipWhitelisted",
+      "type": "boolean",
+      "description": "Indicates if the user is IP whitelisted."
+    },
+    {
+      "name": "name",
+      "type": "json",
+      "description": "The name of the user, including given name and family name."
+    },
+    {
+      "name": "kind",
+      "type": "text",
+      "description": "Resource kind identifier, typically 'admin#directory#user'."
+    },
+    {
+      "name": "etag",
+      "type": "text",
+      "description": "ETag of the resource."
+    },
+    {
+      "name": "emails",
+      "type": "json",
+      "description": "Email addresses associated with the user."
+    },
+    {
+      "name": "externalIds",
+      "type": "json",
+      "description": "External IDs associated with the user."
+    },
+    {
+      "name": "relations",
+      "type": "json",
+      "description": "Relationships associated with the user."
+    },
+    {
+      "name": "aliases",
+      "type": "json",
+      "description": "Email aliases for the user."
+    },
+    {
+      "name": "isMailboxSetup",
+      "type": "boolean",
+      "description": "Indicates if the user's mailbox is set up."
+    },
+    {
+      "name": "customerId",
+      "type": "text",
+      "description": "The customer ID associated with the user."
+    },
+    {
+      "name": "addresses",
+      "type": "json",
+      "description": "Addresses associated with the user."
+    },
+    {
+      "name": "organizations",
+      "type": "json",
+      "description": "Organizations associated with the user."
+    },
+    {
+      "name": "lastLoginTime",
+      "type": "timestamp with time zone",
+      "description": "Timestamp of the user's last login."
+    },
+    {
+      "name": "phones",
+      "type": "json",
+      "description": "Phone numbers associated with the user."
+    },
+    {
+      "name": "suspensionReason",
+      "type": "text",
+      "description": "Reason for suspending the user's account."
+    },
+    {
+      "name": "thumbnailPhotoUrl",
+      "type": "text",
+      "description": "URL to the user's thumbnail photo."
+    },
+    {
+      "name": "languages",
+      "type": "json",
+      "description": "Languages spoken by the user."
+    },
+    {
+      "name": "posixAccounts",
+      "type": "json",
+      "description": "POSIX account information associated with the user."
+    },
+    {
+      "name": "creationTime",
+      "type": "timestamp with time zone",
+      "description": "Timestamp when the user was created."
+    },
+    {
+      "name": "nonEditableAliases",
+      "type": "json",
+      "description": "Non-editable aliases for the user."
+    },
+    {
+      "name": "sshPublicKeys",
+      "type": "json",
+      "description": "SSH public keys associated with the user."
+    },
+    {
+      "name": "notes",
+      "type": "json",
+      "description": "Notes associated with the user."
+    },
+    {
+      "name": "websites",
+      "type": "json",
+      "description": "Websites associated with the user."
+    },
+    {
+      "name": "locations",
+      "type": "json",
+      "description": "Locations associated with the user."
+    },
+    {
+      "name": "includeInGlobalAddressList",
+      "type": "boolean",
+      "description": "Indicates if the user is included in the global address list."
+    },
+    {
+      "name": "keywords",
+      "type": "json",
+      "description": "Keywords associated with the user."
+    },
+    {
+      "name": "deletionTime",
+      "type": "timestamp with time zone",
+      "description": "Timestamp when the user's account was deleted."
+    },
+    {
+      "name": "gender",
+      "type": "json",
+      "description": "Gender information associated with the user."
+    },
+    {
+      "name": "thumbnailPhotoEtag",
+      "type": "text",
+      "description": "ETag for the user's thumbnail photo."
+    },
+    {
+      "name": "ims",
+      "type": "json",
+      "description": "Instant messaging service accounts associated with the user."
+    },
+    {
+      "name": "customSchemas",
+      "type": "json",
+      "description": "Custom schema information associated with the user."
+    },
+    {
+      "name": "isEnrolledIn2Sv",
+      "type": "boolean",
+      "description": "Indicates if the user is enrolled in two-step verification."
+    },
+    {
+      "name": "isEnforcedIn2Sv",
+      "type": "boolean",
+      "description": "Indicates if two-step verification is enforced for the user."
+    },
+    {
+      "name": "archived",
+      "type": "boolean",
+      "description": "Indicates if the user account is archived."
+    },
+    {
+      "name": "orgUnitPath",
+      "type": "text",
+      "description": "The organizational unit path for the user."
+    },
+    {
+      "name": "recoveryEmail",
+      "type": "text",
+      "description": "The user's recovery email address."
+    },
+    {
+      "name": "recoveryPhone",
+      "type": "text",
+      "description": "The user's recovery phone number."
+    }
+  ]
+}

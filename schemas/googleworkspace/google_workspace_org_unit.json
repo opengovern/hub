@@ -1,0 +1,51 @@
+{
+  "table_name": "google_workspace_org_unit",
+  "table_description": "Organizational Units in the Google Workspace domain.",
+  "columns": [
+    {
+      "name": "kind",
+      "type": "text",
+      "description": "Resource kind identifier, typically 'admin#directory#orgUnit'."
+    },
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The name of the organizational unit."
+    },
+    {
+      "name": "description",
+      "type": "text",
+      "description": "A description of the organizational unit."
+    },
+    {
+      "name": "etag",
+      "type": "text",
+      "description": "ETag of the resource."
+    },
+    {
+      "name": "blockInheritance",
+      "type": "boolean",
+      "description": "Indicates if inheritance of organizational unit settings is blocked."
+    },
+    {
+      "name": "orgUnitId",
+      "type": "text",
+      "description": "The unique ID of the organizational unit."
+    },
+    {
+      "name": "orgUnitPath",
+      "type": "text",
+      "description": "The full path of the organizational unit in the domain."
+    },
+    {
+      "name": "parentOrgUnitId",
+      "type": "text",
+      "description": "The ID of the parent organizational unit."
+    },
+    {
+      "name": "parentOrgUnitPath",
+      "type": "text",
+      "description": "The path of the parent organizational unit."
+    }
+  ]
+}

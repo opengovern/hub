@@ -1,0 +1,46 @@
+{
+  "table_name": "google_workspace_resource_building",
+  "table_description": "Details about a building, including address, coordinates, and floor information.",
+  "columns": [
+    {
+      "name": "buildingId",
+      "type": "text",
+      "description": "The unique ID of the building."
+    },
+    {
+      "name": "buildingName",
+      "type": "text",
+      "description": "The name of the building."
+    },
+    {
+      "name": "description",
+      "type": "text",
+      "description": "Description or purpose of the building."
+    },
+    {
+      "name": "kind",
+      "type": "text",
+      "description": "The kind of building resource."
+    },
+    {
+      "name": "etags",
+      "type": "text",
+      "description": "The etag identifier for the building resource."
+    },
+    {
+      "name": "coordinates",
+      "type": "json",
+      "description": "The geographic coordinates of the building (latitude, longitude)."
+    },
+    {
+      "name": "address",
+      "type": "json",
+      "description": "The address of the building, including street, city, state, and postal code."
+    },
+    {
+      "name": "floorNames",
+      "type": "json",
+      "description": "A list of floor names in the building."
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "table_name": "google_workspace_group_member",
+  "table_description": "Group members in the Google Workspace domain.",
+  "columns": [
+    {
+      "name": "kind",
+      "type": "text",
+      "description": "Resource kind identifier, typically 'admin#directory#groupMember'."
+    },
+    {
+      "name": "email",
+      "type": "text",
+      "description": "The email address of the group member."
+    },
+    {
+      "name": "role",
+      "type": "text",
+      "description": "The role of the user within the group, such as 'OWNER', 'MEMBER', or 'MANAGER'."
+    },
+    {
+      "name": "etag",
+      "type": "text",
+      "description": "ETag of the resource."
+    },
+    {
+      "name": "type",
+      "type": "text",
+      "description": "The type of member (can be 'USER' or 'SERVICE_ACCOUNT')."
+    },
+    {
+      "name": "status",
+      "type": "text",
+      "description": "The membership status of the user in the group, such as 'ACTIVE' or 'INVITED'."
+    },
+    {
+      "name": "delivery_settings",
+      "type": "text",
+      "description": "The email delivery setting for the member. It can be 'ALL_EMAILS', 'NOTIFICATIONS_ONLY', or 'NONE'."
+    },
+    {
+      "name": "id",
+      "type": "text",
+      "description": "The unique ID of the group member."
+    }
+  ]
+}

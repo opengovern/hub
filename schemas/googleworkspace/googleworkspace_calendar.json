@@ -1,0 +1,41 @@
+{
+  "table_name": "googleworkspace_calendar",
+  "table_description": "Metadata of the specified calendar.",
+  "columns": [
+    {
+      "name": "id",
+      "type": "text",
+      "description": "Identifier of the calendar."
+    },
+    {
+      "name": "summary",
+      "type": "text",
+      "description": "Title of the calendar."
+    },
+    {
+      "name": "timezone",
+      "type": "text",
+      "description": "The time zone of the calendar."
+    },
+    {
+      "name": "description",
+      "type": "text",
+      "description": "Description of the calendar."
+    },
+    {
+      "name": "etag",
+      "type": "text",
+      "description": "ETag of the resource."
+    },
+    {
+      "name": "location",
+      "type": "text",
+      "description": "Geographic location of the calendar as free-form text."
+    },
+    {
+      "name": "conference_properties",
+      "type": "json",
+      "description": "Describes the conferencing properties for this calendar."
+    }
+  ]
+}

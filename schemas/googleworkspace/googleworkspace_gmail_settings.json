@@ -1,0 +1,41 @@
+{
+  "table_name": "googleworkspace_gmail_settings",
+  "table_description": "Retrieves settings for the specified account.",
+  "columns": [
+    {
+      "name": "user_email",
+      "type": "text",
+      "description": "The specified user's email address."
+    },
+    {
+      "name": "display_language",
+      "type": "text",
+      "description": "Specifies the language settings for the specified account."
+    },
+    {
+      "name": "auto_forwarding",
+      "type": "json",
+      "description": "Describes the auto-forwarding setting for the specified account."
+    },
+    {
+      "name": "delegates",
+      "type": "json",
+      "description": "A list of delegates for the specified account."
+    },
+    {
+      "name": "imap",
+      "type": "json",
+      "description": "Describes the IMAP setting for the specified account."
+    },
+    {
+      "name": "pop",
+      "type": "json",
+      "description": "Describes the POP settings for the specified account."
+    },
+    {
+      "name": "vacation",
+      "type": "json",
+      "description": "Describes the vacation responder settings for the specified account."
+    }
+  ]
+}

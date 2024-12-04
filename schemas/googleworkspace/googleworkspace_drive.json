@@ -1,0 +1,81 @@
+{
+  "table_name": "googleworkspace_drive",
+  "table_description": "Drives defined user's shared drives in the Google Drive.",
+  "columns": [
+    {
+      "name": "id",
+      "type": "text",
+      "description": "The ID of this shared drive which is also the ID of the top level folder of this shared drive."
+    },
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The name of this shared drive."
+    },
+    {
+      "name": "created_time",
+      "type": "timestamp with time zone",
+      "description": "The time at which the shared drive was created."
+    },
+    {
+      "name": "hidden",
+      "type": "boolean",
+      "description": "Indicates whether the shared drive is hidden from default view, or not."
+    },
+    {
+      "name": "admin_managed_restrictions",
+      "type": "boolean",
+      "description": "Indicates whether administrative privileges on this shared drive are required to modify restrictions, or not."
+    },
+    {
+      "name": "background_image_link",
+      "type": "text",
+      "description": "A short-lived link to this shared drive's background image."
+    },
+    {
+      "name": "color_rgb",
+      "type": "text",
+      "description": "The color of this shared drive as an RGB hex string."
+    },
+    {
+      "name": "copy_requires_writer_permission",
+      "type": "boolean",
+      "description": "Indicates whether the options to copy, print, or download files inside this shared drive, should be disabled for readers and commenters, or not."
+    },
+    {
+      "name": "domain_users_only",
+      "type": "boolean",
+      "description": "Indicates whether access to this shared drive and items inside this shared drive is restricted to users of the domain to which this shared drive belongs."
+    },
+    {
+      "name": "drive_members_only",
+      "type": "boolean",
+      "description": "Indicates whether access to items inside this shared drive is restricted to its members, or not."
+    },
+    {
+      "name": "theme_id",
+      "type": "text",
+      "description": "The ID of the theme from which the background image and color will be set."
+    },
+    {
+      "name": "use_domain_admin_access",
+      "type": "boolean",
+      "description": "Issue the request as a domain administrator; if set to true, then all shared drives of the domain in which the requester is an administrator are returned. Please refer Refer https://developers.google.com/drive/api/v3/ref-search-terms#drive_properties."
+    },
+    {
+      "name": "query",
+      "type": "text",
+      "description": "Query string for [searching](https://developers.google.com/drive/api/v3/ref-search-terms#drive_properties) shared drives."
+    },
+    {
+      "name": "background_image_file",
+      "type": "json",
+      "description": "An image file and cropping parameters from which a background image for this shared drive is set."
+    },
+    {
+      "name": "capabilities",
+      "type": "json",
+      "description": "Describes the capabilities the current user has on this shared drive."
+    }
+  ]
+}

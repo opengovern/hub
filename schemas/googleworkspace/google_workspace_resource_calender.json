@@ -1,0 +1,81 @@
+{
+  "table_name": "google_workspace_resource_calender",
+  "table_description": "Details about resources in a building, including capacity, floor, and category.",
+  "columns": [
+    {
+      "name": "kind",
+      "type": "text",
+      "description": "The kind of resource."
+    },
+    {
+      "name": "etags",
+      "type": "text",
+      "description": "The etag identifier for the resource."
+    },
+    {
+      "name": "resourceName",
+      "type": "text",
+      "description": "The name of the resource."
+    },
+    {
+      "name": "resourceDescription",
+      "type": "text",
+      "description": "The description of the resource."
+    },
+    {
+      "name": "resourceType",
+      "type": "text",
+      "description": "The type of the resource."
+    },
+    {
+      "name": "resourceEmail",
+      "type": "text",
+      "description": "The email associated with the resource."
+    },
+    {
+      "name": "resourceCategory",
+      "type": "text",
+      "description": "The category of the resource."
+    },
+    {
+      "name": "userVisibleDescription",
+      "type": "text",
+      "description": "A description that is visible to the user."
+    },
+    {
+      "name": "generatedResourceName",
+      "type": "text",
+      "description": "The generated name of the resource."
+    },
+    {
+      "name": "resourceId",
+      "type": "text",
+      "description": "The unique identifier for the resource."
+    },
+    {
+      "name": "capacity",
+      "type": "integer",
+      "description": "The capacity of the resource."
+    },
+    {
+      "name": "floorName",
+      "type": "text",
+      "description": "The name of the floor where the resource is located."
+    },
+    {
+      "name": "buildingId",
+      "type": "text",
+      "description": "The unique identifier for the building."
+    },
+    {
+      "name": "floorSection",
+      "type": "text",
+      "description": "The section of the floor where the resource is located."
+    },
+    {
+      "name": "featureInstances",
+      "type": "json",
+      "description": "Feature instances associated with the resource."
+    }
+  ]
+}

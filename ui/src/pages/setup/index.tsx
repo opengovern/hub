@@ -25,7 +25,7 @@ import cloudflare from "./cloudflare.md";
 import digitalocean from "./digitalocean.md";
 import entraid from "./entraid.md";
 import linode from "./linode.md";
-import google_workspace from "./google_workspace.md";
+import googleworkspace from "./googleworkspace.md";
 
 const setupFiles = {
   aws,
@@ -34,7 +34,7 @@ const setupFiles = {
   digitalocean,
   entraid,
   linode,
-  google_workspace,
+  googleworkspace,
 };
 
 

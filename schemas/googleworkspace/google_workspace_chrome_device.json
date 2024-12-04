@@ -1,0 +1,176 @@
+{
+  "table_name": "google_workspace_chrome_device",
+  "table_description": "Details of mobile devices, including model, status, hardware, and software information.",
+  "columns": [
+    {
+      "name": "deviceId",
+      "type": "text",
+      "description": "Unique device identifier."
+    },
+    {
+      "name": "serialNumber",
+      "type": "text",
+      "description": "The serial number of the device."
+    },
+    {
+      "name": "status",
+      "type": "text",
+      "description": "The current status of the device."
+    },
+    {
+      "name": "lastSync",
+      "type": "timestamp with time zone",
+      "description": "Timestamp of the last device sync."
+    },
+    {
+      "name": "supportEndDate",
+      "type": "timestamp with time zone",
+      "description": "The support end date for the device."
+    },
+    {
+      "name": "model",
+      "type": "text",
+      "description": "Model of the device."
+    },
+    {
+      "name": "meid",
+      "type": "text",
+      "description": "MEID number of the device."
+    },
+    {
+      "name": "orderNumber",
+      "type": "text",
+      "description": "Order number associated with the device."
+    },
+    {
+      "name": "willAutoRenew",
+      "type": "boolean",
+      "description": "Indicates if the device will auto-renew."
+    },
+    {
+      "name": "osVersion",
+      "type": "text",
+      "description": "The OS version installed on the device."
+    },
+    {
+      "name": "platformVersion",
+      "type": "text",
+      "description": "The platform version of the device."
+    },
+    {
+      "name": "firmwareVersion",
+      "type": "text",
+      "description": "The firmware version installed on the device."
+    },
+    {
+      "name": "macAddress",
+      "type": "text",
+      "description": "The MAC address of the device."
+    },
+    {
+      "name": "bootMode",
+      "type": "text",
+      "description": "The boot mode of the device."
+    },
+    {
+      "name": "lastEnrollmentTime",
+      "type": "timestamp with time zone",
+      "description": "Timestamp when the device was last enrolled."
+    },
+    {
+      "name": "kind",
+      "type": "text",
+      "description": "The type of the device."
+    },
+    {
+      "name": "recentUsers",
+      "type": "json",
+      "description": "List of recent users associated with the device."
+    },
+    {
+      "name": "activeTimeRanges",
+      "type": "json",
+      "description": "Active time ranges associated with the device."
+    },
+    {
+      "name": "lastKnownNetwork",
+      "type": "json",
+      "description": "Last known network information for the device."
+    },
+    {
+      "name": "systemRamTotal",
+      "type": "text",
+      "description": "Total system RAM."
+    },
+    {
+      "name": "diskVolumeReports",
+      "type": "json",
+      "description": "Reports on the device's disk volumes."
+    },
+    {
+      "name": "cpuStatusReports",
+      "type": "json",
+      "description": "Reports on the CPU status."
+    },
+    {
+      "name": "cpuInfo",
+      "type": "json",
+      "description": "CPU information."
+    },
+    {
+      "name": "deviceFiles",
+      "type": "json",
+      "description": "List of device files."
+    },
+    {
+      "name": "autoUpdateExpiration",
+      "type": "timestamp with time zone",
+      "description": "Expiration date for auto-update."
+    },
+    {
+      "name": "ethernetMacAddress",
+      "type": "text",
+      "description": "Ethernet MAC address."
+    },
+    {
+      "name": "orgUnitPath",
+      "type": "text",
+      "description": "Organizational unit path for the device."
+    },
+    {
+      "name": "tpmVersionInfo",
+      "type": "json",
+      "description": "TPM version details."
+    },
+    {
+      "name": "osUpdateStatus",
+      "type": "json",
+      "description": "Operating system update status."
+    },
+    {
+      "name": "extendedSupportEligible",
+      "type": "boolean",
+      "description": "Indicates if extended support is eligible."
+    },
+    {
+      "name": "extendedSupportStart",
+      "type": "timestamp with time zone",
+      "description": "Start date of extended support."
+    },
+    {
+      "name": "extendedSupportEnabled",
+      "type": "boolean",
+      "description": "Indicates if extended support is enabled."
+    },
+    {
+      "name": "fanInfo",
+      "type": "json",
+      "description": "Information about the device's fan."
+    },
+    {
+      "name": "backlightInfo",
+      "type": "json",
+      "description": "Information about the device's backlight."
+    }
+  ]
+}
