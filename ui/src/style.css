@@ -1471,6 +1471,10 @@ select {
   height: 1px;
 }
 
+.h-\[20px\] {
+  height: 20px;
+}
+
 .h-\[31rem\] {
   height: 31rem;
 }
@@ -1629,6 +1633,10 @@ select {
 
 .w-\[15rem\] {
   width: 15rem;
+}
+
+.w-\[20px\] {
+  width: 20px;
 }
 
 .w-\[25rem\] {
@@ -6892,6 +6900,10 @@ a {
 
   .md\:w-\[40rem\] {
     width: 40rem;
+  }
+
+  .md\:w-\[50rem\] {
+    width: 50rem;
   }
 
   .md\:w-\[calc\(35\%-2\.5rem\)\] {
