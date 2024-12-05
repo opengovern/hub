@@ -1683,6 +1683,10 @@ select {
   width: 80%;
 }
 
+.w-8 {
+  width: 2rem;
+}
+
 .min-w-32 {
   min-width: 8rem;
 }
