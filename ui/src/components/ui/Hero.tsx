@@ -22,7 +22,7 @@ export default function Hero() {
         style={{ animationDuration: "900ms" }}
       >
         OpenComply makes compliance across clouds, platforms, and regions
-        radically simple. Govern every change, deployments, and asset.
+        radically simple. Govern every change, deployment, and asset.
       </p>
       <div
         className="mt-8 flex w-full animate-slide-up-fade flex-col justify-center gap-3 px-3 sm:flex-row"
