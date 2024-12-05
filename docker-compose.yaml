@@ -38,6 +38,8 @@ services:
      ports:
         - "3000:3000"
      build: ./ui/
+     restart: always
+
   
 volumes:
     pgdata:
