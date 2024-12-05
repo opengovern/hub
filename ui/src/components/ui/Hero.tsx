@@ -15,7 +15,7 @@ export default function Hero() {
       >
         Compliance
         <br />
-        without complexity.
+        without complexity
       </h1>
       <p
         className="mt-1 max-w-3xl animate-slide-up-fade text-2xl text-gray-700 dark:text-gray-400"
