@@ -27,9 +27,9 @@ export default function LogoCloud() {
         Integrates with Your Favorite Tools
         <RiArrowRightDoubleLine color="white" />
       </p>
-      <div className=" w-1/3 flex  justify-center fill-neutral-500 items-center  text-gray-900  dark:text-gray-200">
+      <div className=" w-[80%] sm:w-1/3 flex  justify-center fill-neutral-500 items-center  text-gray-900  dark:text-gray-200">
         <Swiper
-          spaceBetween={window.innerWidth > 640 ? 30 : 12}
+          spaceBetween={window.innerWidth > 640 ? 30 : 20}
           modules={[Autoplay]}
           // virtual
           slidesPerView={window.innerWidth > 640 ? 4 : 3}
@@ -74,7 +74,7 @@ export default function LogoCloud() {
           <SwiperSlide>
             <img
               src={OPENAISVG}
-              className="  w-fit mr-12 pr-12  integration-logos fill-neutral-500 h-12"
+              className="  w-fit  integration-logos fill-neutral-500 h-12"
             />
 
             {/* <Logos.OpenAi className=" integration-logos  w-12 h-12" /> */}

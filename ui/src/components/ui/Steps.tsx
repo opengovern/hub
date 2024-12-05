@@ -351,7 +351,7 @@ kubectl port-forward -n opencomply svc/nginx-proxy 8080:80`}
           <div className="flex items-center justify-center w-10 h-10  rounded-full border border-white bg-dark-tremor-background  text-slate-500 dark:text-white  group-[.is-active]:text-emerald-50 shadow shrink-0  ">
             4
           </div>
-          <div className="w-[calc(100%-4rem)]   md:w-[calc(35%-2.5rem)] p-4 rounded">
+          <div className="w-[calc(100%-4rem)]   md:w-[calc(35%-2.5rem)]  rounded">
             <div className="flex items-center justify-between space-x-2 mb-1">
               <div className="font-bold text-slate-900 dark:text-white text-2xl">
                 Audit
