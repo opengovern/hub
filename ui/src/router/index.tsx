@@ -66,7 +66,7 @@ const authRoutes = [
   {
     key: "schmea-tables",
     path: "/integrations/:id/schema",
-    element: <SchemaDetail />,
+    element: <SchemaTables />,
     noAuth: true,
   },
   {
@@ -90,7 +90,7 @@ const authRoutes = [
   {
     key: "setup",
     path: "/integrations/:id/setup",
-    element: <SchemaDetail />,
+    element: <SchemaTables />,
     noAuth: true,
   },
 ];
