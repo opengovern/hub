@@ -165,7 +165,7 @@ export function Navigation() {
                 </DropdownMenuContent>
               </DropdownMenu>
               <a
-                className="px-2 py-1 text-gray-900 dark:text-gray-50 flex flex-row gap-1 justify-center items-center align-middle"
+                className="w-[20px] h-[20px] py-1 text-gray-900 dark:text-gray-50  flex flex-row gap-1 justify-center items-center align-middle"
                 href={"https://github.com/opengovern/opengovernance"}
                 target="_blank"
               >
@@ -176,7 +176,7 @@ export function Navigation() {
                   width={20}
                   height={20}
                 />
-                <span>Github</span>
+                {/* <span>Github</span> */}
               </a>
             </div>
           </nav>
@@ -231,7 +231,7 @@ export function Navigation() {
             </li>
             <li onClick={() => setOpen(false)}>
               <a
-                className="text-black dark:text-white flex flex-row gap-2 items-center"
+                className="w-[20px] h-[20px] text-black dark:text-white flex flex-row gap-2 items-center"
                 href={"https://github.com/opengovern/opengovernance"}
               >
                 <ThemedImage
