@@ -6620,6 +6620,10 @@ a {
     height: 100%;
   }
 
+  .sm\:h-14 {
+    height: 3.5rem;
+  }
+
   .sm\:w-40 {
     width: 10rem;
   }
