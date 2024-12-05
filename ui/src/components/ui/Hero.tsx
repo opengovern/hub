@@ -10,19 +10,19 @@ export default function Hero() {
     >
       <h1
         id="hero-title"
-        className="inline-block animate-slide-up-fade bg-gradient-to-br from-gray-900 to-gray-800 bg-clip-text p-2 text-4xl font-bold tracking-tighter text-transparent sm:text-6xl md:text-7xl dark:from-gray-50 dark:to-gray-300"
+        className="inline-block animate-slide-up-fade bg-gradient-to-br from-gray-900 to-gray-800 bg-clip-text p-2 text-4xl font-bold tracking-tighter text-transparent sm:text-6xl md:text-6xl dark:from-gray-50 dark:to-gray-300"
         style={{ animationDuration: "700ms" }}
       >
-        Compliance without 
-        <br/>
-        the complexity
+        Dominate Compliance.
+        <br />
+        Govern Everything.
       </h1>
       <p
-        className="mt-6 max-w-lg animate-slide-up-fade text-lg text-gray-700 dark:text-gray-400"
+        className="mt-1 max-w-3xl animate-slide-up-fade text-2xl text-gray-700 dark:text-gray-400"
         style={{ animationDuration: "900ms" }}
       >
-        Manage, secure, and audit your entire tech stack with SQL-based policies
-        from a unified, vendor-agnostic platform.
+        OpenComply makes compliance across clouds, platforms, and regions
+        radically simple. Govern every change, deployments, and asset.
       </p>
       <div
         className="mt-8 flex w-full animate-slide-up-fade flex-col justify-center gap-3 px-3 sm:flex-row"
@@ -54,7 +54,7 @@ export default function Hero() {
         </Button> */}
       </div>
       <div
-        className="relative mx-auto ml-3 mt-20 h-fit md:w-[40rem] max-w-6xl animate-slide-up-fade sm:ml-auto sm:w-full sm:px-2"
+        className="relative mx-auto ml-3 mt-20 h-fit md:w-[50rem] max-w-6xl animate-slide-up-fade sm:ml-auto sm:w-full sm:px-2"
         style={{ animationDuration: "1400ms" }}
       >
         <HeroImage />
