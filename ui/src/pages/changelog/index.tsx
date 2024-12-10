@@ -12,7 +12,7 @@ export default  function  ChangeLog() {
 
   return (
     <main
-      className="mx-auto mt-36 max-w-3xl animate-slide-up-fade px-3"
+      className="mx-auto pt-36 max-w-3xl animate-slide-up-fade px-3"
       style={{
         animationDuration: "600ms",
         animationFillMode: "backwards",
