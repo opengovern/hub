@@ -44,34 +44,41 @@ export function Navigation() {
   return (
     <header
       className={cx(
-        "fixed inset-x-3 top-4 z-50 mx-auto flex max-w-3xl transform-gpu animate-slide-down-fade justify-center overflow-hidden rounded-xl border border-transparent px-3 py-3 transition-all duration-300 ease-[cubic-bezier(0.16,1,0.3,1.03)] will-change-transform",
+        "fixed inset-x-3 top-4 z-50 mx-auto flex max-w-4xl transform-gpu animate-slide-down-fade justify-center overflow-hidden rounded-xl border border-transparent px-3 py-3 transition-all duration-300 ease-[cubic-bezier(0.16,1,0.3,1.03)] will-change-transform",
         open === true ? "h-62" : "h-12 sm:h-14",
         scrolled || open === true
-          ? "backdrop-blur-nav max-w-2xl border-gray-100 bg-white/80 shadow-xl shadow-black/5 dark:border-white/15 dark:bg-black/70"
-          : "bg-white/0 dark:bg-gray-950/0"
+          ? "backdrop-blur-nav max-w-3xl border-gray-100 bg-white/80 shadow-xl shadow-black/5 dark:border-white/15 dark:bg-black/70"
+          : "bg-white/0 dark:bg-gray-950/0",
+        `${theme}`
       )}
     >
       <div className="w-full md:my-auto">
-        <div className="relative flex items-center justify-between">
+        <div className="relative flex items-center justify-between w-full">
           <a href={"/"} aria-label="Home">
             <span className="sr-only">Company logo</span>
             <DatabaseLogo className="w-28 md:w-32" />
           </a>
-          <nav className="hidden md:absolute md:left-[60%] md:top-1/2 md:block md:-translate-x-1/2 md:-translate-y-1/2 md:transform">
-            <div className="flex items-center gap-10 font-medium">
+          <nav className="hidden w-f md:absolute md:left-[60%] md:top-1/2 md:block md:-translate-x-1/2 md:-translate-y-1/2 md:transform">
+            <div className="flex items-center justify-center gap-10 font-medium">
               {" "}
               <a
-                className="px-2 py-1 text-gray-900 dark:text-gray-50"
+                className="px-2 py-1 min-w-fit text-gray-900 dark:text-gray-50"
                 href={"https://docs.opencomply.io/"}
                 target="_blank"
               >
                 Docs
               </a>
               <a
-                className="px-2 py-1 text-gray-900 dark:text-gray-50"
+                className="px-2 py-1 min-w-fit text-gray-900 dark:text-gray-50"
                 href={"/integrations"}
               >
-                Integrations(42)
+                Integrations (42)
+              </a>
+              <a
+                className="px-2 py-1 w-full min-w-fit  text-gray-900 dark:text-gray-50"
+                href={"/compliance/frameworks"}
+              >
+                Frameworks (49)
               </a>
               <DropdownMenu>
                 <DropdownMenuTrigger asChild>
@@ -109,7 +116,7 @@ export function Navigation() {
                       About
                     </a>
                   </DropdownMenuItem> */}
-                  <DropdownMenuItem
+                  {/* <DropdownMenuItem
                     onClick={() => {
                       navigate("/compliance/frameworks");
                     }}
@@ -121,9 +128,9 @@ export function Navigation() {
                       Compliance
                     </a>
                   </DropdownMenuItem>
-                  <DropdownMenuSeparator />
+                  <DropdownMenuSeparator /> */}
 
-                  <DropdownMenuItem
+                  {/* <DropdownMenuItem
                     onClick={() => {
                       navigate("/use-cases");
                     }}
@@ -135,7 +142,7 @@ export function Navigation() {
                       Use cases
                     </a>
                   </DropdownMenuItem>
-                  <DropdownMenuSeparator />
+                  <DropdownMenuSeparator /> */}
 
                   <DropdownMenuItem
                     onClick={() => {
@@ -165,7 +172,7 @@ export function Navigation() {
                 </DropdownMenuContent>
               </DropdownMenu>
               <a
-                className="w-[20px] h-[20px] py-1 text-gray-900 dark:text-gray-50  flex flex-row gap-1 justify-center items-center align-middle"
+                className="w-[20px] h-[20px] min-w-fit py-1 text-gray-900 dark:text-gray-50  flex flex-row gap-1 justify-center items-center align-middle"
                 href={"https://github.com/opengovern/opengovernance"}
                 target="_blank"
               >
@@ -226,7 +233,7 @@ export function Navigation() {
                 className="text-black dark:text-white"
                 href={"/compliance/frameworks"}
               >
-                Compliance
+                Frameworks (49)
               </a>
             </li>
             <li onClick={() => setOpen(false)}>
@@ -281,7 +288,8 @@ export function Navigation() {
                       About
                     </a>
                   </DropdownMenuItem> */}
-                  <DropdownMenuItem
+                  {/* <DropdownMenuItem
+                    className="bg-red-50"
                     onClick={() => {
                       navigate("/compliance/frameworks");
                     }}
@@ -293,9 +301,9 @@ export function Navigation() {
                       Compliance
                     </a>
                   </DropdownMenuItem>
-                  <DropdownMenuSeparator />
+                  <DropdownMenuSeparator /> */}
 
-                  <DropdownMenuItem
+                  {/* <DropdownMenuItem
                     onClick={() => {
                       navigate("/use-cases");
                     }}
@@ -307,7 +315,7 @@ export function Navigation() {
                       Use cases
                     </a>
                   </DropdownMenuItem>
-                  <DropdownMenuSeparator />
+                  <DropdownMenuSeparator /> */}
 
                   <DropdownMenuItem
                     onClick={() => {

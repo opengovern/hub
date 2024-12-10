@@ -35,7 +35,21 @@ export default function Policies() {
       .get(`${url}/api/frameworks?per_page=10&cursor=${page}`)
       .then((res) => {
         if (res.data) {
-          setBenchmarks(res.data.frameworks);
+          const temp = [
+            {
+              title: "Your Custom Framework",
+              description:
+                "Define your own custom compliance framework in YAML. Audit for conformance, get a audit repot.",
+                id:"-1",
+                control_count: -1
+            },
+          ];
+          res?.data?.frameworks?.map((item : any)=>{
+            temp.push(item)
+          })
+          
+          // @ts-ignore
+          setBenchmarks(temp);
           setTotal(res.data.total);
         }
         setLoading(false);
@@ -80,6 +94,9 @@ export default function Policies() {
                     description={benchmark.description}
                     controlCount={benchmark.control_count}
                     onClick={() => {
+                      if(benchmark?.id == "-1"){
+                        return
+                      }
                       navigate("/compliance/frameworks/" + benchmark.id);
                     }}
                   />

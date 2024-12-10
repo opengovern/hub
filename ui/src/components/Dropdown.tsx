@@ -12,6 +12,7 @@ import {
 } from "@remixicon/react";
 
 import { cx } from "../lib/utils";
+import { ThemeContext } from "../Theme";
 
 const DropdownMenu = DropdownMenuPrimitives.Root;
 DropdownMenu.displayName = "DropdownMenu";
@@ -62,35 +63,41 @@ DropdownMenuSubMenuTrigger.displayName = "DropdownMenuSubMenuTrigger";
 const DropdownMenuSubMenuContent = React.forwardRef<
   React.ElementRef<typeof DropdownMenuPrimitives.SubContent>,
   React.ComponentPropsWithoutRef<typeof DropdownMenuPrimitives.SubContent>
->(({ className, collisionPadding = 8, ...props }, forwardedRef) => (
-  <DropdownMenuPrimitives.Portal>
-    <DropdownMenuPrimitives.SubContent
-      ref={forwardedRef}
-      collisionPadding={collisionPadding}
-      className={cx(
-        // base
-        "relative z-50 overflow-hidden rounded-md border p-1 shadow-xl shadow-black/[2.5%]",
-        // widths
-        "min-w-32",
-        // heights
-        "max-h-[var(--radix-popper-available-height)]",
-        // background color
-        "bg-white dark:bg-gray-950",
-        // text color
-        "text-gray-900 dark:text-gray-50",
-        // border color
-        "border-gray-200 dark:border-gray-800",
-        // transition
-        "will-change-[transform,opacity]",
-        // "data-[state=open]:animate-slideDownAndFade",
-        "data-[state=closed]:animate-hide",
-        "data-[side=bottom]:animate-slideDownAndFade data-[side=left]:animate-slideLeftAndFade data-[side=right]:animate-slideRightAndFade data-[side=top]:animate-slideUpAndFade",
-        className
-      )}
-      {...props}
-    />
-  </DropdownMenuPrimitives.Portal>
-));
+>(({ className, collisionPadding = 8, ...props }, forwardedRef) => {
+  const { theme, changeTheme } = React.useContext(ThemeContext);
+  
+  return (
+    <DropdownMenuPrimitives.Portal>
+      <DropdownMenuPrimitives.SubContent
+        ref={forwardedRef}
+        collisionPadding={collisionPadding}
+        className={cx(
+          // base
+          "relative z-50 overflow-hidden rounded-md border p-1 shadow-xl shadow-black/[2.5%]",
+          // widths
+          "min-w-32",
+          // heights
+          "max-h-[var(--radix-popper-available-height)]",
+          // background color
+          "bg-white dark:bg-gray-950",
+          // text color
+          "text-gray-900 dark:text-gray-50",
+          // border color
+          "border-gray-200 dark:border-gray-800",
+          // transition
+          "will-change-[transform,opacity]",
+          // "data-[state=open]:animate-slideDownAndFade",
+          "data-[state=closed]:animate-hide",
+          "data-[side=bottom]:animate-slideDownAndFade data-[side=left]:animate-slideLeftAndFade data-[side=right]:animate-slideRightAndFade data-[side=top]:animate-slideUpAndFade",
+          `${theme}`,
+
+          className
+        )}
+        {...props}
+      />
+    </DropdownMenuPrimitives.Portal>
+  );
+});
 DropdownMenuSubMenuContent.displayName = "DropdownMenuSubMenuContent";
 
 const DropdownMenuContent = React.forwardRef<
@@ -107,7 +114,13 @@ const DropdownMenuContent = React.forwardRef<
       ...props
     },
     forwardedRef
-  ) => (
+  ) => 
+  {    
+  const { theme, changeTheme } = React.useContext(ThemeContext);
+
+
+    return (
+    
     <DropdownMenuPrimitives.Portal>
       <DropdownMenuPrimitives.Content
         ref={forwardedRef}
@@ -128,6 +141,7 @@ const DropdownMenuContent = React.forwardRef<
           "will-change-[transform,opacity]",
           "data-[state=closed]:animate-hide",
           "data-[side=bottom]:animate-slideDownAndFade data-[side=left]:animate-slideLeftAndFade data-[side=right]:animate-slideRightAndFade data-[side=top]:animate-slideUpAndFade",
+          `${theme}`,
           className
         )}
         sideOffset={sideOffset}
@@ -137,7 +151,7 @@ const DropdownMenuContent = React.forwardRef<
         {...props}
       />
     </DropdownMenuPrimitives.Portal>
-  )
+  )}
 );
 DropdownMenuContent.displayName = "DropdownMenuContent";
 

@@ -31,22 +31,26 @@ export default function Features() {
         The Problem with compliance
       </h2>
       <p className="mt-6   text-lg max-w-xl  text-left leading-7 text-black dark:text-black">
-        Managing code, data, and applications across multiple clouds and
-        platforms is complex. Traditional compliance methods can’t keep up.
+        For too long,
+        <b>compliance has been a convoluted mess</b>
+        {/* <br />
+        <br /> */}
+        Buried in proprietary tools, tangled in abstract rules, and disconnected
+        from how real teams work.{" "}
+        <b>
+          You’re left guessing what matters, wrestling with black-box mandates,
+          and wasting time on SOC2 hoops without any real improvement.
+        </b>{" "}
+        {/* <br /> */}
+        {/* <br /> */}
+        That’s not clarity. That’s just busywork. Compliance should guide, not
+        confuse. It should align with the way you build and deliver software,
+        not impose brittle workflows and vague rules.
+        <b>It’s time to move beyond guessing games</b> and treat compliance as
+        an integral, empowering part of your process.
         <br />
         <br />
-        That’s why we built opencomply- a centralized solution for your entire
-        tech stack. OpenComply gathers all your data and uses simple SQL to
-        manage compliance consistently across all environments.
-        <br />
-        <br />
-        With opencomply, you can oversee and control deployments,
-        configurations, and networks on every platform.
-        <br />
-        <br />
-        <b className="dark:text-black font-bold">
-          Don't take our word for it, experience it.
-        </b>
+        <b> Welcome to opencomply.</b>
       </p>
       {/* <div className="mt-4 w-full text-center">
         <Button className="mt-4 ">

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
@@ -6,25 +6,27 @@ import './style.css'
 // import reportWebVitals from './reportWebVitals';
 import "@cloudscape-design/global-styles/index.css";
 import { BrowserRouter } from "react-router-dom";
-import { ThemeProvider } from "./Theme";
+import { ThemeContext, ThemeProvider } from "./Theme";
 import enMessages from "@cloudscape-design/components/i18n/messages/all.en";
 import { I18nProvider } from "@cloudscape-design/components/i18n";
 import "swiper/css";
 import "swiper/css/autoplay";
 
-
 const root = ReactDOM.createRoot(
-  document.getElementById('root') as HTMLElement
+  document.getElementById('root') as HTMLElement,
+  
 );
+
 root.render(
   // <React.StrictMode>
+  <ThemeProvider>
     <BrowserRouter>
       <I18nProvider locale="en" messages={[enMessages]}>
-        <ThemeProvider>
-          <App />
-        </ThemeProvider>
+        <App />
       </I18nProvider>
     </BrowserRouter>
+  </ThemeProvider>
+
   // </React.StrictMode>
 );
 
