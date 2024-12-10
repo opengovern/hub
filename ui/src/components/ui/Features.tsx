@@ -30,24 +30,32 @@ export default function Features() {
       >
         The Problem with compliance
       </h2>
-      <p className="mt-6   text-lg max-w-xl  text-left leading-7 text-black dark:text-black">
-        For too long,
-        <b>compliance has been a convoluted mess</b>
+      <p className="mt-6   text-lg max-w-3xl  text-left leading-7 text-black dark:text-black">
+        <b>For too long, compliance has been a convoluted mess</b>
         {/* <br />
         <br /> */}
-        Buried in proprietary tools, tangled in abstract rules, and disconnected
-        from how real teams work.{" "}
+        buried in generic controls, reliant on proprietary tools and
+        spreadsheets, and disconnected from how real teams work. You’re left
+        <b> guessing what matters, </b> wrestling with <b>black-box mandates</b>
+        , and wasting time on SOC2 hoops without any real improvement.{" "}
+        <b>That’s not clarity. That’s just busywork.</b>
+        <br />
+        <br />
+        It doesn’t have to be this way.
+        <br />
+        <br />
+        Compliance should <b>guide you, not confuse you.</b> It should be
         <b>
-          You’re left guessing what matters, wrestling with black-box mandates,
-          and wasting time on SOC2 hoops without any real improvement.
-        </b>{" "}
-        {/* <br /> */}
-        {/* <br /> */}
-        That’s not clarity. That’s just busywork. Compliance should guide, not
-        confuse. It should align with the way you build and deliver software,
-        not impose brittle workflows and vague rules.
-        <b>It’s time to move beyond guessing games</b> and treat compliance as
-        an integral, empowering part of your process.
+          {" "}
+          transparent, easy to adopt, and align with your real-world workflows.
+        </b>
+        <br />
+        <br />
+        <b>Stop wrestling with generic mandates.</b> It’s time to
+        <b> cut through the noise,</b> focus on <b>what truly matters,</b>
+        and make compliance{" "}
+        <b> an integral, meaningful part of how you work every day</b>—clear,
+        meaningful, and built for the way you build software.
         <br />
         <br />
         <b> Welcome to opencomply.</b>
