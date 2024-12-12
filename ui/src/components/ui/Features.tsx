@@ -32,18 +32,21 @@ export default function Features() {
       </h2>
       <p className="mt-6   text-lg max-w-3xl  text-left leading-7 text-black dark:text-black">
         <b>Compliance is painful.</b>{" "}
-        {/* <br />
-        <br /> */}
-        It’s been a frustrating obstacle—buried in generic rules, locked behind
-        outdated systems, and disconnected from how you actually work.
         <br />
         <br />
-        <b>Opencomply reimagines compliance.</b> We’ve built a platform that
-        empowers you to focus on what truly matters: building amazing products.
+        Generic controls. Outdated processes. Confusing standards. Overpriced
+        tools that can’t handle modern stacks or real-world workflows.
         <br />
         <br />
-        Compliance should be
-        <b>simple, transparent, and seamlessly integrated</b>into your workflow.
+        <b>We want to change that.</b>
+        <br />
+        <br />
+        We believe compliance should be simple, transparent, and adaptable, so
+        it fits naturally into how you work.
+        <br />
+        <br />
+        That’s why we built a platform that evolves with your stack, letting you
+        focus on what really matters—building incredible products.
         <br />
         <br />
         <b> Welcome to opencomply.</b>
