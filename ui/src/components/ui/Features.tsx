@@ -28,12 +28,11 @@ export default function Features() {
         id="features-title"
         className=" inline-block text-black text-start w-full bg-gradient-to-br from-gray-900 to-gray-800 bg-clip-text py-2 text-4xl font-bold tracking-tighter  sm:text-4xl md:text-4xl "
       >
-        The Problem with compliance
+        Compliance is painful
       </h2>
       <p className="mt-6   text-lg max-w-3xl  text-left leading-7 text-black dark:text-black">
-        <b>Compliance is painful.</b>{" "}
-        <br />
-        <br />
+        {/* <b>Compliance is painful.</b> <br />
+        <br /> */}
         Generic controls. Outdated processes. Confusing standards. Overpriced
         tools that can’t handle modern stacks or real-world workflows.
         <br />
