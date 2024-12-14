@@ -4,9 +4,9 @@ import Layout from '../layout'
 import NotFound from '../pages/notFound';
 import Home from '../pages/landing';
 import Pricing from '../pages/pricing';
-import Policies from '../pages/policies';
-import FrameworkDetail from '../pages/policies/detail';
-import ControlDetail from '../pages/policies/detail/controls/detail';
+import Compliance from "../pages/compliance";
+import FrameworkDetail from '../pages/compliance/detail';
+import ControlDetail from '../pages/compliance/detail/controls/detail';
 import Schema from '../pages/schema';
 import SchemaTables from '../pages/schema/tables';
 import Preview from '../pages/preview';
@@ -42,7 +42,7 @@ const authRoutes = [
   {
     key: "frameworks",
     path: "/compliance/frameworks",
-    element: <Policies />,
+    element: <Compliance />,
     noAuth: true,
   },
   {

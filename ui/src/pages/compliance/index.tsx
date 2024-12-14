@@ -21,7 +21,7 @@ import Card from "../../components/Card";
 import { useNavigate } from "react-router-dom";
 import Pagination from "../../components/Pagination";
 
-export default function Policies() {
+export default function Compliance() {
   const [benchmarks, setBenchmarks] = useState<Benchmarks[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -40,14 +40,14 @@ export default function Policies() {
               title: "Your Custom Framework",
               description:
                 "Define your own custom compliance framework in YAML. Audit for conformance, get a audit repot.",
-                id:"-1",
-                control_count: -1
+              id: "-1",
+              control_count: -1,
             },
           ];
-          res?.data?.frameworks?.map((item : any)=>{
-            temp.push(item)
-          })
-          
+          res?.data?.frameworks?.map((item: any) => {
+            temp.push(item);
+          });
+
           // @ts-ignore
           setBenchmarks(temp);
           setTotal(res.data.total);
@@ -94,8 +94,8 @@ export default function Policies() {
                     description={benchmark.description}
                     controlCount={benchmark.control_count}
                     onClick={() => {
-                      if(benchmark?.id == "-1"){
-                        return
+                      if (benchmark?.id == "-1") {
+                        return;
                       }
                       navigate("/compliance/frameworks/" + benchmark.id);
                     }}

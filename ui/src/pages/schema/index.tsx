@@ -36,7 +36,7 @@ export default function Schema() {
   const [open, setOpen] = useState(false);
   const [counts, setCounts] = useState<any>({});
   
-  const getPolcies = async () => {
+  const getIntegrations = async () => {
     setLoading(true);
     axios
       .get(
@@ -81,7 +81,7 @@ export default function Schema() {
       });
   };
   useEffect(() => {
-    getPolcies();
+    getIntegrations();
   }, []);
 
   const GetTierIcon   =(tier: string) =>{

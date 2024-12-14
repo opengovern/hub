@@ -4,7 +4,7 @@ import useScroll from "../../lib/use-scroll"
 import { cx } from "../../lib/utils"
 import { RiCloseLine, RiMenuLine } from "@remixicon/react"
 
-import React, { useContext } from "react"
+import React, { useContext, useEffect } from "react"
 import { DatabaseLogo } from "../DatabaseLogo"
 import { Button } from "../Button"
 import { Select, SelectItem } from "@tremor/react"
@@ -20,11 +20,16 @@ import {
 import { useNavigate } from "react-router-dom"
 import ThemedImage from "./ThemedImage"
 import { ThemeContext } from "../../Theme"
+import axios from "axios"
+import {  getAPIUrl, getIntegrationLogo } from "../../lib/utils";
+
 
 
 export function Navigation() {
   const scrolled = useScroll(15)
   const [open, setOpen] = React.useState(false)
+  const [integrations, setIntegrations] = React.useState()
+  const [complianceCount, setComplianceCount] = React.useState()
   const navigate = useNavigate();
   const { theme, changeTheme } = useContext(ThemeContext);
   React.useEffect(() => {
@@ -39,7 +44,44 @@ export function Navigation() {
     return () => {
       mediaQuery.removeEventListener("change", handleMediaQueryChange)
     }
+
+
   }, [])
+ const getIntegrations = async () => {
+   axios
+     .get(
+       "https://raw.githubusercontent.com/opengovern/opengovernance/refs/heads/main/assets/integrations/integrations.json"
+     )
+     .then((res) => {
+       if (res.data) {
+         const arr = res.data;
+         // arr.sort(() => Math.random() - 0.5);
+         setIntegrations(arr);
+        
+       }
+     })
+     .catch((err) => {
+     });
+ };
+  const getPolcies = () => {
+    const url = getAPIUrl();
+    axios
+      .get(`${url}/api/frameworks?per_page=10&cursor=${0}`)
+      .then((res) => {
+        if (res.data) {
+         
+
+          // @ts-ignore
+          setComplianceCount(res.data.total);
+        }
+      })
+      .catch((err) => {
+      });
+  };
+  useEffect(()=>{
+    getIntegrations()
+    getPolcies()
+  },[])
 
   return (
     <header
@@ -72,13 +114,14 @@ export function Navigation() {
                 className="px-2 py-1 min-w-fit text-gray-900 dark:text-gray-50"
                 href={"/integrations"}
               >
-                Integrations (42)
+                {/* @ts-ignore */}
+                Integrations {integrations && `(${integrations?.length})`}
               </a>
               <a
                 className="px-2 py-1 w-full min-w-fit  text-gray-900 dark:text-gray-50"
                 href={"/compliance/frameworks"}
               >
-                Frameworks (49)
+                Frameworks {complianceCount && `(${complianceCount})`}{" "}
               </a>
               <DropdownMenu>
                 <DropdownMenuTrigger asChild>
@@ -225,7 +268,8 @@ export function Navigation() {
             </li>{" "}
             <li onClick={() => setOpen(false)}>
               <a className="text-black dark:text-white" href={"/integrations"}>
-                Integrations(42)
+                {/* @ts-ignore */}
+                Integrations {integrations && `(${integrations?.length})`}{" "}
               </a>
             </li>{" "}
             <li onClick={() => setOpen(false)}>
@@ -233,7 +277,7 @@ export function Navigation() {
                 className="text-black dark:text-white"
                 href={"/compliance/frameworks"}
               >
-                Frameworks (49)
+                Frameworks {complianceCount && `(${complianceCount})`}
               </a>
             </li>
             <li onClick={() => setOpen(false)}>
