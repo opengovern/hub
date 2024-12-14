@@ -42,14 +42,17 @@ export default function Setup() {
 const { id } = useParams();
 const [file, setFile] = useState<string>();
 const getFile = () => {
-    console.log(id)
-    // @ts-ignore
-    fetch(setupFiles[id]).then((res) => {
-      res.text().then((text) => {
-        console.log(text);
-        setFile(text);
+    if(id){
+      // @ts-ignore
+
+      fetch(setupFiles[id]).then((res) => {
+        res.text().then((text) => {
+          console.log(text);
+          setFile(text);
+        });
       });
-    });
+    }
+  
 
 }
 useEffect(()=>{
