@@ -1,0 +1,56 @@
+{
+  "table_name": "googleworkspace_group",
+  "table_description": "Groups in the Google Workspace domain.",
+  "columns": [
+    {
+      "name": "id",
+      "type": "text",
+      "description": "The unique ID of the group."
+    },
+    {
+      "name": "email",
+      "type": "text",
+      "description": "The email address of the group."
+    },
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The name of the group."
+    },
+    {
+      "name": "description",
+      "type": "text",
+      "description": "A description of the group."
+    },
+    {
+      "name": "adminCreated",
+      "type": "boolean",
+      "description": "Indicates if the group was created by an admin."
+    },
+    {
+      "name": "directMembersCount",
+      "type": "text",
+      "description": "The number of direct members in the group."
+    },
+    {
+      "name": "kind",
+      "type": "text",
+      "description": "Resource kind identifier, typically 'admin#directory#group'."
+    },
+    {
+      "name": "etag",
+      "type": "text",
+      "description": "ETag of the resource."
+    },
+    {
+      "name": "aliases",
+      "type": "json",
+      "description": "List of email aliases associated with the group."
+    },
+    {
+      "name": "nonEditableAliases",
+      "type": "json",
+      "description": "List of email aliases that cannot be edited."
+    }
+  ]
+}

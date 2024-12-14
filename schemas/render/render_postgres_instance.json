@@ -1,0 +1,116 @@
+{
+  "table_name": "render_postgres_instance",
+  "table_description": "Information about PostgreSQL database descriptions, including ID, configuration, status, and timestamps.",
+  "columns": [
+    {
+      "name": "id",
+      "type": "text",
+      "description": "The unique identifier for the PostgreSQL instance."
+    },
+    {
+      "name": "ipAllowList",
+      "type": "json",
+      "description": "A list of IP addresses allowed to access the PostgreSQL instance."
+    },
+    {
+      "name": "createdAt",
+      "type": "timestamp with time zone",
+      "description": "The timestamp of when the PostgreSQL instance was created."
+    },
+    {
+      "name": "updatedAt",
+      "type": "timestamp with time zone",
+      "description": "The timestamp of the last update to the PostgreSQL instance."
+    },
+    {
+      "name": "expiresAt",
+      "type": "timestamp with time zone",
+      "description": "The timestamp of when the PostgreSQL instance expires."
+    },
+    {
+      "name": "databaseName",
+      "type": "text",
+      "description": "The name of the PostgreSQL database."
+    },
+    {
+      "name": "databaseUser",
+      "type": "text",
+      "description": "The username for the PostgreSQL database."
+    },
+    {
+      "name": "environmentId",
+      "type": "text",
+      "description": "The ID of the environment associated with the PostgreSQL instance."
+    },
+    {
+      "name": "highAvailabilityEnabled",
+      "type": "boolean",
+      "description": "Indicates whether high availability is enabled for the PostgreSQL instance."
+    },
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The name of the PostgreSQL instance."
+    },
+    {
+      "name": "owner",
+      "type": "json",
+      "description": "Information about the owner of the PostgreSQL instance."
+    },
+    {
+      "name": "plan",
+      "type": "text",
+      "description": "The plan associated with the PostgreSQL instance."
+    },
+    {
+      "name": "diskSizeGB",
+      "type": "integer",
+      "description": "The disk size of the PostgreSQL instance in gigabytes."
+    },
+    {
+      "name": "primaryPostgresID",
+      "type": "text",
+      "description": "The ID of the primary PostgreSQL instance."
+    },
+    {
+      "name": "region",
+      "type": "text",
+      "description": "The region where the PostgreSQL instance is located."
+    },
+    {
+      "name": "readReplicas",
+      "type": "json",
+      "description": "A list of read replicas associated with the PostgreSQL instance."
+    },
+    {
+      "name": "role",
+      "type": "text",
+      "description": "The role of the PostgreSQL instance (e.g., primary, replica)."
+    },
+    {
+      "name": "status",
+      "type": "text",
+      "description": "The status of the PostgreSQL instance."
+    },
+    {
+      "name": "version",
+      "type": "text",
+      "description": "The version of PostgreSQL used in the instance."
+    },
+    {
+      "name": "suspended",
+      "type": "text",
+      "description": "Indicates whether the PostgreSQL instance is suspended."
+    },
+    {
+      "name": "suspenders",
+      "type": "json",
+      "description": "A list of suspenders associated with the PostgreSQL instance."
+    },
+    {
+      "name": "dashboardUrl",
+      "type": "text",
+      "description": "The URL of the PostgreSQL instance's dashboard."
+    }
+  ]
+}

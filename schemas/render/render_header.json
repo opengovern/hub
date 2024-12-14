@@ -1,0 +1,26 @@
+{
+  "table_name": "render_header",
+  "table_description": "Information about header descriptions, including ID, path, name, and value.",
+  "columns": [
+    {
+      "name": "id",
+      "type": "text",
+      "description": "The unique identifier for the header."
+    },
+    {
+      "name": "path",
+      "type": "text",
+      "description": "The path of the header."
+    },
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The name of the header."
+    },
+    {
+      "name": "value",
+      "type": "text",
+      "description": "The value of the header."
+    }
+  ]
+}

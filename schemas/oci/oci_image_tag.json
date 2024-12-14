@@ -1,0 +1,36 @@
+{
+  "table_name": "oci_image_tag",
+  "table_description": "Retrieve information about images in the repository",
+  "columns": [
+    {
+      "name": "registry_type",
+      "type": "text",
+      "description": ""
+    },
+    {
+      "name": "repository",
+      "type": "text",
+      "description": ""
+    },
+    {
+      "name": "image",
+      "type": "text",
+      "description": ""
+    },
+    {
+      "name": "tag",
+      "type": "text",
+      "description": ""
+    },
+    {
+      "name": "manifest",
+      "type": "json",
+      "description": ""
+    },
+    {
+      "name": "descriptor",
+      "type": "json",
+      "description": ""
+    }
+  ]
+}

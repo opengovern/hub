@@ -1,0 +1,31 @@
+{
+  "table_name": "googleworkspace_group_alias",
+  "table_description": "Details about user aliases in Google Workspace, including alias, primary email, and alias type.",
+  "columns": [
+    {
+      "name": "id",
+      "type": "text",
+      "description": "The unique identifier for the user alias."
+    },
+    {
+      "name": "primaryEmail",
+      "type": "text",
+      "description": "The primary email address associated with the alias."
+    },
+    {
+      "name": "alias",
+      "type": "text",
+      "description": "The alias email address."
+    },
+    {
+      "name": "kind",
+      "type": "text",
+      "description": "The type or kind of the user alias."
+    },
+    {
+      "name": "etag",
+      "type": "text",
+      "description": "The etag identifier for the resource."
+    }
+  ]
+}

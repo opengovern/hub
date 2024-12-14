@@ -1,0 +1,21 @@
+{
+  "table_name": "googleworkspace_resource_feature",
+  "table_description": "Details about a resource, including its name, kind, and etags.",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The name of the resource."
+    },
+    {
+      "name": "kind",
+      "type": "text",
+      "description": "The kind of resource."
+    },
+    {
+      "name": "etags",
+      "type": "text",
+      "description": "The etag identifier for the resource."
+    }
+  ]
+}

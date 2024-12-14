@@ -1,0 +1,36 @@
+{
+  "table_name": "render_project",
+  "table_description": "Information about project descriptions, including ID, name, owner, and associated environments.",
+  "columns": [
+    {
+      "name": "id",
+      "type": "text",
+      "description": "The unique identifier for the project."
+    },
+    {
+      "name": "createdAt",
+      "type": "timestamp with time zone",
+      "description": "The timestamp of when the project was created."
+    },
+    {
+      "name": "updatedAt",
+      "type": "timestamp with time zone",
+      "description": "The timestamp of the last update to the project."
+    },
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The name of the project."
+    },
+    {
+      "name": "owner",
+      "type": "json",
+      "description": "Information about the owner of the project."
+    },
+    {
+      "name": "environmentIds",
+      "type": "json",
+      "description": "A list of environment IDs associated with the project."
+    }
+  ]
+}

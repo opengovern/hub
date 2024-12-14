@@ -1,102 +1,87 @@
 {
-  "count_of_named_tables": 19,
-  "count_of_named_columns": 246,
+  "count_of_named_tables": 16,
+  "count_of_named_columns": 217,
   "tables": [
     {
-      "table_name": "googleworkspace_calendar",
-      "description": "Metadata of the specified calendar.",
-      "count_of_columns": 7
-    },
-    {
-      "table_name": "googleworkspace_chrome_device",
+      "table_name": "google_workspace_chrome_device",
       "description": "Details of mobile devices, including model, status, hardware, and software information.",
       "count_of_columns": 34
     },
     {
-      "table_name": "googleworkspace_domain",
+      "table_name": "google_workspace_domain",
       "description": "Information about domain aliases in Google Workspace, including domain name, verification status, and aliases.",
       "count_of_columns": 7
     },
     {
-      "table_name": "googleworkspace_domain_alias",
+      "table_name": "google_workspace_domain_alias",
       "description": "Information about a domain alias entry, including the parent domain, alias name, and verification status.",
       "count_of_columns": 6
     },
     {
-      "table_name": "googleworkspace_drive",
-      "description": "Drives defined user's shared drives in the Google Drive.",
-      "count_of_columns": 15
-    },
-    {
-      "table_name": "googleworkspace_gmail_settings",
-      "description": "Retrieves settings for the specified account.",
-      "count_of_columns": 7
-    },
-    {
-      "table_name": "googleworkspace_group",
+      "table_name": "google_workspace_group",
       "description": "Groups in the Google Workspace domain.",
       "count_of_columns": 10
     },
     {
-      "table_name": "googleworkspace_group_alias",
+      "table_name": "google_workspace_group_alias",
       "description": "Details about user aliases in Google Workspace, including alias, primary email, and alias type.",
       "count_of_columns": 5
     },
     {
-      "table_name": "googleworkspace_group_member",
+      "table_name": "google_workspace_group_member",
       "description": "Group members in the Google Workspace domain.",
       "count_of_columns": 8
     },
     {
-      "table_name": "googleworkspace_mobile_device",
+      "table_name": "google_workspace_mobile_device",
       "description": "Device details including model, status, hardware, and applications.",
       "count_of_columns": 37
     },
     {
-      "table_name": "googleworkspace_org_unit",
+      "table_name": "google_workspace_org_unit",
       "description": "Organizational Units in the Google Workspace domain.",
       "count_of_columns": 9
     },
     {
-      "table_name": "googleworkspace_privilege",
+      "table_name": "google_workspace_privilege",
       "description": "Information about privileges, including service details and child privileges.",
       "count_of_columns": 7
     },
     {
-      "table_name": "googleworkspace_resource_building",
+      "table_name": "google_workspace_resource_building",
       "description": "Details about a building, including address, coordinates, and floor information.",
       "count_of_columns": 8
     },
     {
-      "table_name": "googleworkspace_resource_calender",
+      "table_name": "google_workspace_resource_calender",
       "description": "Details about resources in a building, including capacity, floor, and category.",
       "count_of_columns": 15
     },
     {
-      "table_name": "googleworkspace_resource_feature",
+      "table_name": "google_workspace_resource_feature",
       "description": "Details about a resource, including its name, kind, and etags.",
       "count_of_columns": 3
     },
     {
-      "table_name": "googleworkspace_role",
+      "table_name": "google_workspace_role",
       "description": "Details about roles in the Google Workspace system, including privileges and system settings.",
       "count_of_columns": 8
     },
     {
-      "table_name": "googleworkspace_role_assignment",
+      "table_name": "google_workspace_role_assignment",
       "description": "Details about role assignments in Google Workspace, including assignee, scope, and conditions.",
       "count_of_columns": 9
     },
     {
-      "table_name": "googleworkspace_user",
+      "table_name": "google_workspace_user",
       "description": "Users in the Google Workspace domain.",
       "count_of_columns": 46
     },
     {
-      "table_name": "googleworkspace_user_alias",
+      "table_name": "google_workspace_user_alias",
       "description": "User aliases in the Google Workspace domain.",
       "count_of_columns": 5
     }
   ],
-  "description": ""
+  "description": "Inventory and govern Identities, Users, Groups."
 }

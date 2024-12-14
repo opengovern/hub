@@ -1,0 +1,46 @@
+{
+  "table_name": "render_deploy",
+  "table_description": "Information about deployment descriptions, including ID, commit details, image, status, and timestamps.",
+  "columns": [
+    {
+      "name": "id",
+      "type": "text",
+      "description": "The unique identifier for the deployment."
+    },
+    {
+      "name": "commit",
+      "type": "json",
+      "description": "The commit details associated with the deployment."
+    },
+    {
+      "name": "image",
+      "type": "json",
+      "description": "The image details used in the deployment."
+    },
+    {
+      "name": "status",
+      "type": "text",
+      "description": "The current status of the deployment (e.g., pending, completed)."
+    },
+    {
+      "name": "trigger",
+      "type": "text",
+      "description": "The trigger that initiated the deployment."
+    },
+    {
+      "name": "finishedAt",
+      "type": "timestamp with time zone",
+      "description": "The timestamp of when the deployment finished."
+    },
+    {
+      "name": "createdAt",
+      "type": "timestamp with time zone",
+      "description": "The timestamp of when the deployment was created."
+    },
+    {
+      "name": "updatedAt",
+      "type": "timestamp with time zone",
+      "description": "The timestamp of the last update to the deployment."
+    }
+  ]
+}

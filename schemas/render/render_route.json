@@ -1,0 +1,31 @@
+{
+  "table_name": "render_route",
+  "table_description": "Information about route descriptions, including ID, type, source, destination, and priority.",
+  "columns": [
+    {
+      "name": "id",
+      "type": "text",
+      "description": "The unique identifier for the route."
+    },
+    {
+      "name": "type",
+      "type": "text",
+      "description": "The type of the route."
+    },
+    {
+      "name": "source",
+      "type": "text",
+      "description": "The source of the route."
+    },
+    {
+      "name": "destination",
+      "type": "text",
+      "description": "The destination of the route."
+    },
+    {
+      "name": "priority",
+      "type": "integer",
+      "description": "The priority of the route."
+    }
+  ]
+}

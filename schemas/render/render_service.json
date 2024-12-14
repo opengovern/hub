@@ -1,0 +1,106 @@
+{
+  "table_name": "render_service",
+  "table_description": "Information about service descriptions, including ID, name, environment, and deployment configuration.",
+  "columns": [
+    {
+      "name": "id",
+      "type": "text",
+      "description": "The unique identifier for the service."
+    },
+    {
+      "name": "autoDeploy",
+      "type": "text",
+      "description": "Indicates whether the service deploys automatically."
+    },
+    {
+      "name": "branch",
+      "type": "text",
+      "description": "The branch associated with the service."
+    },
+    {
+      "name": "buildFilter",
+      "type": "json",
+      "description": "The build filter associated with the service."
+    },
+    {
+      "name": "createdAt",
+      "type": "timestamp with time zone",
+      "description": "The timestamp of when the service was created."
+    },
+    {
+      "name": "dashboardUrl",
+      "type": "text",
+      "description": "The URL to the service's dashboard."
+    },
+    {
+      "name": "environmentId",
+      "type": "text",
+      "description": "The ID of the environment associated with the service."
+    },
+    {
+      "name": "imagePath",
+      "type": "text",
+      "description": "The image path used by the service."
+    },
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The name of the service."
+    },
+    {
+      "name": "notifyOnFail",
+      "type": "text",
+      "description": "Indicates whether to notify on build failure."
+    },
+    {
+      "name": "ownerId",
+      "type": "text",
+      "description": "The ID of the owner of the service."
+    },
+    {
+      "name": "registryCredential",
+      "type": "json",
+      "description": "The registry credentials associated with the service."
+    },
+    {
+      "name": "repo",
+      "type": "text",
+      "description": "The repository associated with the service."
+    },
+    {
+      "name": "rootDir",
+      "type": "text",
+      "description": "The root directory for the service."
+    },
+    {
+      "name": "slug",
+      "type": "text",
+      "description": "The slug associated with the service."
+    },
+    {
+      "name": "suspended",
+      "type": "text",
+      "description": "Indicates whether the service is suspended."
+    },
+    {
+      "name": "suspenders",
+      "type": "json",
+      "description": "A list of suspenders associated with the service."
+    },
+    {
+      "name": "type",
+      "type": "text",
+      "description": "The type of the service."
+    },
+    {
+      "name": "updatedAt",
+      "type": "timestamp with time zone",
+      "description": "The timestamp of the last update to the service."
+    },
+    {
+      "name": "serviceDetails",
+      "type": "json",
+      "description": "The details of the service."
+    }
+  ]
+}

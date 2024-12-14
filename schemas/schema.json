@@ -1,8 +1,8 @@
 {
   "total": {
-    "integration": 12,
-    "count_of_named_tables": 857,
-    "count_of_named_columns": 12106
+    "integration": 14,
+    "count_of_named_tables": 892,
+    "count_of_named_columns": 12471
   },
   "summary": {
     "aws": {
@@ -34,10 +34,13 @@
       "count_of_named_columns": 401
     },
     "github": {
-      "count_of_named_tables": 38,
-      "count_of_named_columns": 642
+      "count_of_named_tables": 44,
+      "count_of_named_columns": 679
     },
-   
+    "google": {
+      "count_of_named_tables": 16,
+      "count_of_named_columns": 217
+    },
     "googleworkspace": {
       "count_of_named_tables": 19,
       "count_of_named_columns": 246
@@ -46,9 +49,17 @@
       "count_of_named_tables": 14,
       "count_of_named_columns": 161
     },
+    "oci": {
+      "count_of_named_tables": 2,
+      "count_of_named_columns": 9
+    },
     "openai": {
       "count_of_named_tables": 9,
       "count_of_named_columns": 64
+    },
+    "render": {
+      "count_of_named_tables": 11,
+      "count_of_named_columns": 102
     }
   },
   "details": {
@@ -4003,6 +4014,11 @@
         "count_of_columns": 8
       },
       {
+        "table_name": "github_container_package",
+        "description": "",
+        "count_of_columns": 6
+      },
+      {
         "table_name": "github_gitignore",
         "description": "GitHub defined .gitignore templates that you can associate with your repository.",
         "count_of_columns": 2
@@ -4023,6 +4039,21 @@
         "count_of_columns": 13
       },
       {
+        "table_name": "github_maven_package",
+        "description": "",
+        "count_of_columns": 6
+      },
+      {
+        "table_name": "github_npm_package",
+        "description": "",
+        "count_of_columns": 6
+      },
+      {
+        "table_name": "github_nuget_package",
+        "description": "",
+        "count_of_columns": 6
+      },
+      {
         "table_name": "github_organization",
         "description": "GitHub Organizations are shared accounts where businesses and open-source projects can collaborate across many projects at once.",
         "count_of_columns": 74
@@ -4035,6 +4066,11 @@
       {
         "table_name": "github_organization_external_identity",
         "description": "GitHub members for a given organization. GitHub Users are user accounts in GitHub.",
+        "count_of_columns": 7
+      },
+      {
+        "table_name": "github_package_version",
+        "description": "Details of package versions, including version, size, digest, and download count.",
         "count_of_columns": 7
       },
       {
@@ -4106,6 +4142,11 @@
         "table_name": "github_repository_vulnerability_alert",
         "description": "Vulnerability Alerts from a repository.",
         "count_of_columns": 19
+      },
+      {
+        "table_name": "github_ruby_gems_package",
+        "description": "",
+        "count_of_columns": 6
       },
       {
         "table_name": "github_stargazer",
@@ -4232,6 +4273,21 @@
         "count_of_columns": 7
       },
       {
+        "table_name": "googleworkspace_chrome_device",
+        "description": "Details of mobile devices, including model, status, hardware, and software information.",
+        "count_of_columns": 34
+      },
+      {
+        "table_name": "googleworkspace_domain",
+        "description": "Information about domain aliases in Google Workspace, including domain name, verification status, and aliases.",
+        "count_of_columns": 7
+      },
+      {
+        "table_name": "googleworkspace_domain_alias",
+        "description": "Information about a domain alias entry, including the parent domain, alias name, and verification status.",
+        "count_of_columns": 6
+      },
+      {
         "table_name": "googleworkspace_drive",
         "description": "Drives defined user's shared drives in the Google Drive.",
         "count_of_columns": 15
@@ -4240,6 +4296,71 @@
         "table_name": "googleworkspace_gmail_settings",
         "description": "Retrieves settings for the specified account.",
         "count_of_columns": 7
+      },
+      {
+        "table_name": "googleworkspace_group",
+        "description": "Groups in the Google Workspace domain.",
+        "count_of_columns": 10
+      },
+      {
+        "table_name": "googleworkspace_group_alias",
+        "description": "Details about user aliases in Google Workspace, including alias, primary email, and alias type.",
+        "count_of_columns": 5
+      },
+      {
+        "table_name": "googleworkspace_group_member",
+        "description": "Group members in the Google Workspace domain.",
+        "count_of_columns": 8
+      },
+      {
+        "table_name": "googleworkspace_mobile_device",
+        "description": "Device details including model, status, hardware, and applications.",
+        "count_of_columns": 37
+      },
+      {
+        "table_name": "googleworkspace_org_unit",
+        "description": "Organizational Units in the Google Workspace domain.",
+        "count_of_columns": 9
+      },
+      {
+        "table_name": "googleworkspace_privilege",
+        "description": "Information about privileges, including service details and child privileges.",
+        "count_of_columns": 7
+      },
+      {
+        "table_name": "googleworkspace_resource_building",
+        "description": "Details about a building, including address, coordinates, and floor information.",
+        "count_of_columns": 8
+      },
+      {
+        "table_name": "googleworkspace_resource_calender",
+        "description": "Details about resources in a building, including capacity, floor, and category.",
+        "count_of_columns": 15
+      },
+      {
+        "table_name": "googleworkspace_resource_feature",
+        "description": "Details about a resource, including its name, kind, and etags.",
+        "count_of_columns": 3
+      },
+      {
+        "table_name": "googleworkspace_role",
+        "description": "Details about roles in the Google Workspace system, including privileges and system settings.",
+        "count_of_columns": 8
+      },
+      {
+        "table_name": "googleworkspace_role_assignment",
+        "description": "Details about role assignments in Google Workspace, including assignee, scope, and conditions.",
+        "count_of_columns": 9
+      },
+      {
+        "table_name": "googleworkspace_user",
+        "description": "Users in the Google Workspace domain.",
+        "count_of_columns": 46
+      },
+      {
+        "table_name": "googleworkspace_user_alias",
+        "description": "User aliases in the Google Workspace domain.",
+        "count_of_columns": 5
       }
     ],
     "linode": [
@@ -4314,6 +4435,18 @@
         "count_of_columns": 7
       }
     ],
+    "oci": [
+      {
+        "table_name": "oci_image",
+        "description": "Retrieve information about images in the repository",
+        "count_of_columns": 3
+      },
+      {
+        "table_name": "oci_image_tag",
+        "description": "Retrieve information about images in the repository",
+        "count_of_columns": 6
+      }
+    ],
     "openai": [
       {
         "table_name": "openai_assistant",
@@ -4359,6 +4492,63 @@
         "table_name": "openai_vector_store",
         "description": "Completions available in OpenAI.",
         "count_of_columns": 11
+      }
+    ],
+    "render": [
+      {
+        "table_name": "render_blueprint",
+        "description": "Information about blueprint descriptions, including ID, name, status, and synchronization details.",
+        "count_of_columns": 7
+      },
+      {
+        "table_name": "render_deploy",
+        "description": "Information about deployment descriptions, including ID, commit details, image, status, and timestamps.",
+        "count_of_columns": 8
+      },
+      {
+        "table_name": "render_disk",
+        "description": "Information about disk descriptions, including ID, name, size, mount path, and timestamps.",
+        "count_of_columns": 7
+      },
+      {
+        "table_name": "render_env_group",
+        "description": "Information about environment group descriptions, including ID, name, owner, service links, and timestamps.",
+        "count_of_columns": 7
+      },
+      {
+        "table_name": "render_environment",
+        "description": "Information about environment descriptions, including ID, name, project details, and associated resources.",
+        "count_of_columns": 8
+      },
+      {
+        "table_name": "render_header",
+        "description": "Information about header descriptions, including ID, path, name, and value.",
+        "count_of_columns": 4
+      },
+      {
+        "table_name": "render_job",
+        "description": "Information about job descriptions, including ID, service details, status, and timestamps.",
+        "count_of_columns": 8
+      },
+      {
+        "table_name": "render_postgres_instance",
+        "description": "Information about PostgreSQL database descriptions, including ID, configuration, status, and timestamps.",
+        "count_of_columns": 22
+      },
+      {
+        "table_name": "render_project",
+        "description": "Information about project descriptions, including ID, name, owner, and associated environments.",
+        "count_of_columns": 6
+      },
+      {
+        "table_name": "render_route",
+        "description": "Information about route descriptions, including ID, type, source, destination, and priority.",
+        "count_of_columns": 5
+      },
+      {
+        "table_name": "render_service",
+        "description": "Information about service descriptions, including ID, name, environment, and deployment configuration.",
+        "count_of_columns": 20
       }
     ]
   }

@@ -1,0 +1,36 @@
+{
+  "table_name": "github_container_package",
+  "table_description": "",
+  "columns": [
+    {
+      "name": "id",
+      "type": "text",
+      "description": "Unique identifier for the package."
+    },
+    {
+      "name": "registryId",
+      "type": "text",
+      "description": "Registry ID associated with the package."
+    },
+    {
+      "name": "name",
+      "type": "text",
+      "description": "Name of the package."
+    },
+    {
+      "name": "url",
+      "type": "text",
+      "description": "URL where the package can be accessed."
+    },
+    {
+      "name": "createdAt",
+      "type": "timestamp with time zone",
+      "description": "Timestamp when the package was created."
+    },
+    {
+      "name": "updatedAt",
+      "type": "timestamp with time zone",
+      "description": "Timestamp when the package was last updated."
+    }
+  ]
+}

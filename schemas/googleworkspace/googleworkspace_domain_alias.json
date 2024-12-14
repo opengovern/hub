@@ -1,0 +1,36 @@
+{
+  "table_name": "googleworkspace_domain_alias",
+  "table_description": "Information about a domain alias entry, including the parent domain, alias name, and verification status.",
+  "columns": [
+    {
+      "name": "kind",
+      "type": "text",
+      "description": "The type or kind of the domain alias entry."
+    },
+    {
+      "name": "parentDomainName",
+      "type": "text",
+      "description": "The parent domain associated with the alias."
+    },
+    {
+      "name": "domainAliasName",
+      "type": "text",
+      "description": "The name of the domain alias."
+    },
+    {
+      "name": "verified",
+      "type": "boolean",
+      "description": "Indicates whether the domain alias has been verified."
+    },
+    {
+      "name": "etag",
+      "type": "text",
+      "description": "The etag identifier for the resource."
+    },
+    {
+      "name": "creationTime",
+      "type": "timestamp with time zone",
+      "description": "The timestamp when the domain alias entry was created."
+    }
+  ]
+}

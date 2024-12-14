@@ -1,0 +1,191 @@
+{
+  "table_name": "googleworkspace_mobile_device",
+  "table_description": "Device details including model, status, hardware, and applications.",
+  "columns": [
+    {
+      "name": "kind",
+      "type": "text",
+      "description": "The type of the device (e.g., android_device)."
+    },
+    {
+      "name": "etag",
+      "type": "text",
+      "description": "The etag identifier for the resource."
+    },
+    {
+      "name": "resourceId",
+      "type": "text",
+      "description": "Unique resource identifier for the device."
+    },
+    {
+      "name": "deviceId",
+      "type": "text",
+      "description": "Unique device identifier."
+    },
+    {
+      "name": "model",
+      "type": "text",
+      "description": "The model of the device."
+    },
+    {
+      "name": "os",
+      "type": "text",
+      "description": "The operating system running on the device."
+    },
+    {
+      "name": "type",
+      "type": "text",
+      "description": "The type of device (e.g., smartphone)."
+    },
+    {
+      "name": "status",
+      "type": "text",
+      "description": "The current status of the device (e.g., active, inactive)."
+    },
+    {
+      "name": "hardwareId",
+      "type": "text",
+      "description": "Hardware identifier of the device."
+    },
+    {
+      "name": "firstSync",
+      "type": "timestamp with time zone",
+      "description": "Timestamp when the device was first synced."
+    },
+    {
+      "name": "lastSync",
+      "type": "timestamp with time zone",
+      "description": "Timestamp when the device was last synced."
+    },
+    {
+      "name": "userAgent",
+      "type": "text",
+      "description": "The user agent string for the device."
+    },
+    {
+      "name": "serialNumber",
+      "type": "text",
+      "description": "The serial number of the device."
+    },
+    {
+      "name": "imei",
+      "type": "text",
+      "description": "IMEI number of the device."
+    },
+    {
+      "name": "meid",
+      "type": "text",
+      "description": "MEID number of the device."
+    },
+    {
+      "name": "wifiMacAddress",
+      "type": "text",
+      "description": "MAC address of the device's Wi-Fi."
+    },
+    {
+      "name": "networkOperator",
+      "type": "text",
+      "description": "The network operator associated with the device."
+    },
+    {
+      "name": "defaultLanguage",
+      "type": "text",
+      "description": "The default language setting on the device."
+    },
+    {
+      "name": "managedAccountIsOnOwnerProfile",
+      "type": "boolean",
+      "description": "Indicates if the managed account is on the owner's profile."
+    },
+    {
+      "name": "deviceCompromisedStatus",
+      "type": "text",
+      "description": "Status of device compromise (e.g., none, compromised)."
+    },
+    {
+      "name": "buildNumber",
+      "type": "text",
+      "description": "The build number of the device."
+    },
+    {
+      "name": "kernelVersion",
+      "type": "text",
+      "description": "The kernel version of the device."
+    },
+    {
+      "name": "basebandVersion",
+      "type": "text",
+      "description": "The baseband version of the device."
+    },
+    {
+      "name": "unknownSourcesStatus",
+      "type": "boolean",
+      "description": "Indicates if unknown sources are allowed."
+    },
+    {
+      "name": "developerOptionsStatus",
+      "type": "boolean",
+      "description": "Indicates if developer options are enabled."
+    },
+    {
+      "name": "adbStatus",
+      "type": "boolean",
+      "description": "Indicates if ADB (Android Debug Bridge) is enabled."
+    },
+    {
+      "name": "supportsWorkProfile",
+      "type": "boolean",
+      "description": "Indicates if the device supports work profiles."
+    },
+    {
+      "name": "manufacturer",
+      "type": "text",
+      "description": "The manufacturer of the device."
+    },
+    {
+      "name": "releaseVersion",
+      "type": "text",
+      "description": "The release version of the OS."
+    },
+    {
+      "name": "securityPatchLevel",
+      "type": "text",
+      "description": "The latest security patch level installed on the device."
+    },
+    {
+      "name": "brand",
+      "type": "text",
+      "description": "The brand name of the device."
+    },
+    {
+      "name": "bootloaderVersion",
+      "type": "text",
+      "description": "The bootloader version of the device."
+    },
+    {
+      "name": "hardware",
+      "type": "text",
+      "description": "Hardware name of the device."
+    },
+    {
+      "name": "encryptionStatus",
+      "type": "text",
+      "description": "Indicates the encryption status of the device."
+    },
+    {
+      "name": "devicePasswordStatus",
+      "type": "text",
+      "description": "Status of device password (e.g., set, not set)."
+    },
+    {
+      "name": "privilege",
+      "type": "text",
+      "description": "The privilege level of the device."
+    },
+    {
+      "name": "applications",
+      "type": "json",
+      "description": "List of installed applications on the device."
+    }
+  ]
+}

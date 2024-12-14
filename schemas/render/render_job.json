@@ -1,0 +1,46 @@
+{
+  "table_name": "render_job",
+  "table_description": "Information about job descriptions, including ID, service details, status, and timestamps.",
+  "columns": [
+    {
+      "name": "id",
+      "type": "text",
+      "description": "The unique identifier for the job."
+    },
+    {
+      "name": "serviceId",
+      "type": "text",
+      "description": "The ID of the service associated with the job."
+    },
+    {
+      "name": "startCommand",
+      "type": "text",
+      "description": "The start command for the job."
+    },
+    {
+      "name": "planId",
+      "type": "text",
+      "description": "The ID of the plan associated with the job."
+    },
+    {
+      "name": "status",
+      "type": "text",
+      "description": "The current status of the job (e.g., running, completed)."
+    },
+    {
+      "name": "createdAt",
+      "type": "timestamp with time zone",
+      "description": "The timestamp of when the job was created."
+    },
+    {
+      "name": "startedAt",
+      "type": "timestamp with time zone",
+      "description": "The timestamp of when the job started."
+    },
+    {
+      "name": "finishedAt",
+      "type": "timestamp with time zone",
+      "description": "The timestamp of when the job finished."
+    }
+  ]
+}

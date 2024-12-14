@@ -1,0 +1,41 @@
+{
+  "table_name": "render_env_group",
+  "table_description": "Information about environment group descriptions, including ID, name, owner, service links, and timestamps.",
+  "columns": [
+    {
+      "name": "id",
+      "type": "text",
+      "description": "The unique identifier for the environment group."
+    },
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The name of the environment group."
+    },
+    {
+      "name": "ownerId",
+      "type": "text",
+      "description": "The ID of the owner of the environment group."
+    },
+    {
+      "name": "createdAt",
+      "type": "timestamp with time zone",
+      "description": "The timestamp of when the environment group was created."
+    },
+    {
+      "name": "updatedAt",
+      "type": "timestamp with time zone",
+      "description": "The timestamp of the last update to the environment group."
+    },
+    {
+      "name": "serviceLinks",
+      "type": "json",
+      "description": "A list of service links associated with the environment group."
+    },
+    {
+      "name": "environmentId",
+      "type": "text",
+      "description": "The ID of the associated environment."
+    }
+  ]
+}

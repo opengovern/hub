@@ -1,6 +1,6 @@
 {
-  "count_of_named_tables": 38,
-  "count_of_named_columns": 642,
+  "count_of_named_tables": 44,
+  "count_of_named_columns": 679,
   "tables": [
     {
       "table_name": "github_actions_artifact",
@@ -53,6 +53,11 @@
       "count_of_columns": 8
     },
     {
+      "table_name": "github_container_package",
+      "description": "",
+      "count_of_columns": 6
+    },
+    {
       "table_name": "github_gitignore",
       "description": "GitHub defined .gitignore templates that you can associate with your repository.",
       "count_of_columns": 2
@@ -73,6 +78,21 @@
       "count_of_columns": 13
     },
     {
+      "table_name": "github_maven_package",
+      "description": "",
+      "count_of_columns": 6
+    },
+    {
+      "table_name": "github_npm_package",
+      "description": "",
+      "count_of_columns": 6
+    },
+    {
+      "table_name": "github_nuget_package",
+      "description": "",
+      "count_of_columns": 6
+    },
+    {
       "table_name": "github_organization",
       "description": "GitHub Organizations are shared accounts where businesses and open-source projects can collaborate across many projects at once.",
       "count_of_columns": 74
@@ -85,6 +105,11 @@
     {
       "table_name": "github_organization_external_identity",
       "description": "GitHub members for a given organization. GitHub Users are user accounts in GitHub.",
+      "count_of_columns": 7
+    },
+    {
+      "table_name": "github_package_version",
+      "description": "Details of package versions, including version, size, digest, and download count.",
       "count_of_columns": 7
     },
     {
@@ -156,6 +181,11 @@
       "table_name": "github_repository_vulnerability_alert",
       "description": "Vulnerability Alerts from a repository.",
       "count_of_columns": 19
+    },
+    {
+      "table_name": "github_ruby_gems_package",
+      "description": "",
+      "count_of_columns": 6
     },
     {
       "table_name": "github_stargazer",

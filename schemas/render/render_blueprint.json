@@ -1,0 +1,41 @@
+{
+  "table_name": "render_blueprint",
+  "table_description": "Information about blueprint descriptions, including ID, name, status, and synchronization details.",
+  "columns": [
+    {
+      "name": "id",
+      "type": "text",
+      "description": "The unique identifier for the blueprint."
+    },
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The name of the blueprint."
+    },
+    {
+      "name": "status",
+      "type": "text",
+      "description": "The current status of the blueprint (e.g., active, inactive)."
+    },
+    {
+      "name": "autoSync",
+      "type": "boolean",
+      "description": "Indicates whether auto-sync is enabled for the blueprint."
+    },
+    {
+      "name": "repo",
+      "type": "text",
+      "description": "The repository associated with the blueprint."
+    },
+    {
+      "name": "branch",
+      "type": "text",
+      "description": "The branch in the repository for the blueprint."
+    },
+    {
+      "name": "lastSync",
+      "type": "timestamp with time zone",
+      "description": "The timestamp of the last sync for the blueprint."
+    }
+  ]
+}

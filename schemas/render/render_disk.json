@@ -1,0 +1,41 @@
+{
+  "table_name": "render_disk",
+  "table_description": "Information about disk descriptions, including ID, name, size, mount path, and timestamps.",
+  "columns": [
+    {
+      "name": "id",
+      "type": "text",
+      "description": "The unique identifier for the disk."
+    },
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The name of the disk."
+    },
+    {
+      "name": "sizeGB",
+      "type": "integer",
+      "description": "The size of the disk in gigabytes."
+    },
+    {
+      "name": "mountPath",
+      "type": "text",
+      "description": "The mount path of the disk."
+    },
+    {
+      "name": "serviceId",
+      "type": "text",
+      "description": "The ID of the service associated with the disk."
+    },
+    {
+      "name": "createdAt",
+      "type": "timestamp with time zone",
+      "description": "The timestamp of when the disk was created."
+    },
+    {
+      "name": "updatedAt",
+      "type": "timestamp with time zone",
+      "description": "The timestamp of the last update to the disk."
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "table_name": "render_environment",
+  "table_description": "Information about environment descriptions, including ID, name, project details, and associated resources.",
+  "columns": [
+    {
+      "name": "id",
+      "type": "text",
+      "description": "The unique identifier for the environment."
+    },
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The name of the environment."
+    },
+    {
+      "name": "projectId",
+      "type": "text",
+      "description": "The ID of the project associated with the environment."
+    },
+    {
+      "name": "databasesIds",
+      "type": "json",
+      "description": "A list of database IDs associated with the environment."
+    },
+    {
+      "name": "redisIds",
+      "type": "json",
+      "description": "A list of Redis instance IDs associated with the environment."
+    },
+    {
+      "name": "serviceIds",
+      "type": "json",
+      "description": "A list of service IDs associated with the environment."
+    },
+    {
+      "name": "envGroupIds",
+      "type": "json",
+      "description": "A list of environment group IDs associated with the environment."
+    },
+    {
+      "name": "protectedStatus",
+      "type": "text",
+      "description": "The protected status of the environment."
+    }
+  ]
+}

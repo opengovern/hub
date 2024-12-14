@@ -1,0 +1,51 @@
+{
+  "table_name": "googleworkspace_role_assignment",
+  "table_description": "Details about role assignments in Google Workspace, including assignee, scope, and conditions.",
+  "columns": [
+    {
+      "name": "roleAssignmentId",
+      "type": "text",
+      "description": "The unique identifier of the role assignment."
+    },
+    {
+      "name": "roleId",
+      "type": "text",
+      "description": "The ID of the assigned role."
+    },
+    {
+      "name": "kind",
+      "type": "text",
+      "description": "The type of the role assignment."
+    },
+    {
+      "name": "etag",
+      "type": "text",
+      "description": "The etag identifier for the resource."
+    },
+    {
+      "name": "assignedTo",
+      "type": "text",
+      "description": "The entity to which the role is assigned (e.g., user or group)."
+    },
+    {
+      "name": "assigneeType",
+      "type": "text",
+      "description": "The type of assignee (e.g., USER, GROUP, etc.)."
+    },
+    {
+      "name": "scopeType",
+      "type": "text",
+      "description": "The scope type of the assignment (e.g., ORGANIZATION, UNIT, etc.)."
+    },
+    {
+      "name": "orgUnitId",
+      "type": "text",
+      "description": "The ID of the organizational unit to which the role is assigned."
+    },
+    {
+      "name": "condition",
+      "type": "text",
+      "description": "A condition that must be met for the role assignment to apply."
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "table_name": "googleworkspace_domain",
+  "table_description": "Information about domain aliases in Google Workspace, including domain name, verification status, and aliases.",
+  "columns": [
+    {
+      "name": "kind",
+      "type": "text",
+      "description": "The type or kind of the domain alias."
+    },
+    {
+      "name": "domainName",
+      "type": "text",
+      "description": "The domain name for the alias."
+    },
+    {
+      "name": "verified",
+      "type": "boolean",
+      "description": "Indicates whether the domain alias has been verified."
+    },
+    {
+      "name": "etag",
+      "type": "text",
+      "description": "The etag identifier for the resource."
+    },
+    {
+      "name": "creationTime",
+      "type": "timestamp with time zone",
+      "description": "The timestamp when the domain alias was created."
+    },
+    {
+      "name": "isPrimary",
+      "type": "boolean",
+      "description": "Indicates whether this is the primary domain alias."
+    },
+    {
+      "name": "domainAliases",
+      "type": "json",
+      "description": "List of domain aliases."
+    }
+  ]
+}

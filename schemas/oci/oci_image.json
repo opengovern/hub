@@ -1,0 +1,21 @@
+{
+  "table_name": "oci_image",
+  "table_description": "Retrieve information about images in the repository",
+  "columns": [
+    {
+      "name": "registry_type",
+      "type": "text",
+      "description": ""
+    },
+    {
+      "name": "repository",
+      "type": "text",
+      "description": ""
+    },
+    {
+      "name": "image",
+      "type": "text",
+      "description": ""
+    }
+  ]
+}

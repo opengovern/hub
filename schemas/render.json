@@ -1,0 +1,62 @@
+{
+  "count_of_named_tables": 11,
+  "count_of_named_columns": 102,
+  "tables": [
+    {
+      "table_name": "render_blueprint",
+      "description": "Information about blueprint descriptions, including ID, name, status, and synchronization details.",
+      "count_of_columns": 7
+    },
+    {
+      "table_name": "render_deploy",
+      "description": "Information about deployment descriptions, including ID, commit details, image, status, and timestamps.",
+      "count_of_columns": 8
+    },
+    {
+      "table_name": "render_disk",
+      "description": "Information about disk descriptions, including ID, name, size, mount path, and timestamps.",
+      "count_of_columns": 7
+    },
+    {
+      "table_name": "render_env_group",
+      "description": "Information about environment group descriptions, including ID, name, owner, service links, and timestamps.",
+      "count_of_columns": 7
+    },
+    {
+      "table_name": "render_environment",
+      "description": "Information about environment descriptions, including ID, name, project details, and associated resources.",
+      "count_of_columns": 8
+    },
+    {
+      "table_name": "render_header",
+      "description": "Information about header descriptions, including ID, path, name, and value.",
+      "count_of_columns": 4
+    },
+    {
+      "table_name": "render_job",
+      "description": "Information about job descriptions, including ID, service details, status, and timestamps.",
+      "count_of_columns": 8
+    },
+    {
+      "table_name": "render_postgres_instance",
+      "description": "Information about PostgreSQL database descriptions, including ID, configuration, status, and timestamps.",
+      "count_of_columns": 22
+    },
+    {
+      "table_name": "render_project",
+      "description": "Information about project descriptions, including ID, name, owner, and associated environments.",
+      "count_of_columns": 6
+    },
+    {
+      "table_name": "render_route",
+      "description": "Information about route descriptions, including ID, type, source, destination, and priority.",
+      "count_of_columns": 5
+    },
+    {
+      "table_name": "render_service",
+      "description": "Information about service descriptions, including ID, name, environment, and deployment configuration.",
+      "count_of_columns": 20
+    }
+  ],
+  "description": " Manage Render resources and deployments."
+}

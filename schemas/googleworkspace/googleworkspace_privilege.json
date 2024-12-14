@@ -1,0 +1,41 @@
+{
+  "table_name": "googleworkspace_privilege",
+  "table_description": "Information about privileges, including service details and child privileges.",
+  "columns": [
+    {
+      "name": "etag",
+      "type": "text",
+      "description": "The etag identifier for the privilege resource."
+    },
+    {
+      "name": "isOuScopable",
+      "type": "boolean",
+      "description": "Indicates whether the privilege is organizational unit scorable."
+    },
+    {
+      "name": "kind",
+      "type": "text",
+      "description": "The kind of privilege resource (e.g., Privilege)."
+    },
+    {
+      "name": "privilegeName",
+      "type": "text",
+      "description": "The name of the privilege."
+    },
+    {
+      "name": "serviceId",
+      "type": "text",
+      "description": "The ID of the service associated with the privilege."
+    },
+    {
+      "name": "serviceName",
+      "type": "text",
+      "description": "The name of the service associated with the privilege."
+    },
+    {
+      "name": "childPrivileges",
+      "type": "json",
+      "description": "A list of child privileges associated with this privilege."
+    }
+  ]
+}
