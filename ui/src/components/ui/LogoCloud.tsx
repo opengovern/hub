@@ -54,7 +54,7 @@ export default function LogoCloud() {
             {/* <Logos.Azure className="   w-12 fill-neutral-500 h-12" /> */}
           </SwiperSlide>
           <SwiperSlide>
-            <img src={CLOUDSVG} className="   w-32 fill-neutral-500 h-16" />
+            <img src={CLOUDSVG} className="   w-32 fill-neutral-500 " />
 
             {/* <Logos.CloudFlare className="w-12 fill-neutral-500 h-12" /> */}
           </SwiperSlide>
