@@ -19,7 +19,7 @@ export default function Hero() {
   const [width,setWidth]=useState({
     0:0,
     1:0,
-    2:0
+    // 2:0
   })
   const [time, setTime] = useState(0);
  
@@ -28,12 +28,12 @@ export default function Hero() {
       // @ts-ignore
         const video_dur = document.getElementById("hero-video")?.duration;
         if(time>=video_dur){
-          setVideo((video+1)%3)
+          setVideo((video+1)%2)
           clearInterval(countdownInterval)
           setWidth({
             0: 0,
             1: 0,
-            2: 0,
+            // 2: 0,
           });
           setTime(0)
         }
@@ -115,18 +115,18 @@ export default function Hero() {
               setWidth({
                 0: 0,
                 1: 0,
-                2: 0,
+                // 2: 0,
               });
             }}
           >
             <span
-              className={`text-center w-full text-black dark:text-white  ${video % 3 == 0 && "text-indigo-500"}`}
+              className={`text-center w-full text-black dark:text-white  ${video %2 == 0 && "text-indigo-500"}`}
             >
-              Discover
+              Connect
             </span>
             {/* <div className="line-1"></div> */}
             <div
-              className={`w-full custom-pg-bar  bg-gray-300 dark:bg-slate-400  ${video % 3 == 0 && "active"} `}
+              className={`w-full custom-pg-bar  bg-gray-300 dark:bg-slate-400  ${video %2 == 0 && "active"} `}
             >
               <div
                 id="pg-bar-0"
@@ -144,18 +144,18 @@ export default function Hero() {
               setWidth({
                 0: 0,
                 1: 0,
-                2: 0,
+                // 2: 0,
               });
             }}
           >
             <span
-              className={`text-center w-full text-black dark:text-white  ${video % 3 == 1 && "text-indigo-500"}`}
+              className={`text-center w-full text-black dark:text-white  ${video %2 == 1 && "text-indigo-500"}`}
             >
               Audit
             </span>
             {/* <div className="line-1"></div> */}
             <div
-              className={`w-full custom-pg-bar  bg-gray-300 dark:bg-slate-400  ${video % 3 == 1 && "active"} `}
+              className={`w-full custom-pg-bar  bg-gray-300 dark:bg-slate-400  ${video %2 == 1 && "active"} `}
             >
               <div
                 id="pg-bar-1"
@@ -165,7 +165,7 @@ export default function Hero() {
             </div>
             {/* <div className="line-2"></div> */}
           </div>
-          <div
+          {/* <div
             className=" w-full flex flex-col justify-center items-center custom-button cursor-pointer  "
             onClick={() => {
               setVideo(2);
@@ -178,14 +178,12 @@ export default function Hero() {
             }}
           >
             <span
-              className={`text-center w-full text-black dark:text-white  ${video % 3 == 2 && "text-indigo-500"}`}
+              className={`text-center w-full text-black dark:text-white  ${video %2 == 2 && "text-indigo-500"}`}
             >
               Customize
             </span>
-            {/* <div className="line-1"></div> */}
-            {/* <div className="line-2"></div> */}
             <div
-              className={`w-full custom-pg-bar  bg-gray-300 dark:bg-slate-400  ${video % 3 == 2 && "active"} `}
+              className={`w-full custom-pg-bar  bg-gray-300 dark:bg-slate-400  ${video %2 == 2 && "active"} `}
             >
               <div
                 id="pg-bar-2"
@@ -193,7 +191,7 @@ export default function Hero() {
                 style={{ width: `${width[2]}%` }}
               ></div>
             </div>
-          </div>
+          </div> */}
         </div>
 
         <div className="rounded-xl bg-white ring-1 ring-slate-900/5 dark:bg-slate-950 dark:ring-white/15">
