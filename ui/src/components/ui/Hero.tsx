@@ -120,13 +120,13 @@ export default function Hero() {
             }}
           >
             <span
-              className={`text-center w-full text-black dark:text-white  ${video %2 == 0 && "text-indigo-500"}`}
+              className={`text-center w-full text-black dark:text-white  ${video % 2 == 0 && "text-indigo-500"}`}
             >
               Connect
             </span>
             {/* <div className="line-1"></div> */}
             <div
-              className={`w-full custom-pg-bar  bg-gray-300 dark:bg-slate-400  ${video %2 == 0 && "active"} `}
+              className={`w-full custom-pg-bar  bg-gray-300 dark:bg-slate-400  ${video % 2 == 0 && "active"} `}
             >
               <div
                 id="pg-bar-0"
@@ -149,13 +149,13 @@ export default function Hero() {
             }}
           >
             <span
-              className={`text-center w-full text-black dark:text-white  ${video %2 == 1 && "text-indigo-500"}`}
+              className={`text-center w-full text-black dark:text-white  ${video % 2 == 1 && "text-indigo-500"}`}
             >
               Audit
             </span>
             {/* <div className="line-1"></div> */}
             <div
-              className={`w-full custom-pg-bar  bg-gray-300 dark:bg-slate-400  ${video %2 == 1 && "active"} `}
+              className={`w-full custom-pg-bar  bg-gray-300 dark:bg-slate-400  ${video % 2 == 1 && "active"} `}
             >
               <div
                 id="pg-bar-1"
@@ -200,6 +200,9 @@ export default function Hero() {
             className="rounded-xl w-full shadow-2xl dark:shadow-indigo-600/10"
             autoPlay
             loop
+            muted
+            playsInline
+            preload="auto"
             // @ts-ignore
             src={URLS[video]}
           >
