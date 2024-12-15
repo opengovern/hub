@@ -49,10 +49,7 @@
       "count_of_named_tables": 14,
       "count_of_named_columns": 161
     },
-    "oci": {
-      "count_of_named_tables": 2,
-      "count_of_named_columns": 9
-    },
+    
     "openai": {
       "count_of_named_tables": 9,
       "count_of_named_columns": 64
@@ -4435,18 +4432,7 @@
         "count_of_columns": 7
       }
     ],
-    "oci": [
-      {
-        "table_name": "oci_image",
-        "description": "Retrieve information about images in the repository",
-        "count_of_columns": 3
-      },
-      {
-        "table_name": "oci_image_tag",
-        "description": "Retrieve information about images in the repository",
-        "count_of_columns": 6
-      }
-    ],
+  
     "openai": [
       {
         "table_name": "openai_assistant",
