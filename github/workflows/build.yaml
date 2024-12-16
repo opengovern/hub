@@ -1,0 +1,32 @@
+name: Remote Deployment
+
+on:
+  workflow_dispatch: # Manually triggered workflow
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Step 1: Checkout the repository (if needed)
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      # Step 2: Install sshpass for SSH with password
+      - name: Install sshpass
+        run: sudo apt-get update && sudo apt-get install -y sshpass
+
+      # Step 3: SSH to the remote server and execute the deploy.sh script
+      - name: Deploy to Remote Server
+        env:
+          SSH_PASSWORD: ${{ secrets.DEPLOY_KEY }} # Use the secret for the password
+          REMOTE_USER: ${{ secrets.REMOTE_USER }} # Use the secret for the remote user
+          REMOTE_HOST: ${{ secrets.REMOTE_HOST }} # Use the secret for the remote host
+          REMOTE_SCRIPT: ${{ secrets.REMOTE_SCRIPT }} # Use the secret for the remote script
+
+        run: |
+          # Define remote server details
+         
+
+          # Use sshpass to SSH and run the deploy script
+          sshpass -p "$SSH_PASSWORD" ssh -o StrictHostKeyChecking=no "$REMOTE_USER@$REMOTE_HOST" "bash $REMOTE_SCRIPT"
