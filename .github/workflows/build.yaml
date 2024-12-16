@@ -2,6 +2,9 @@ name: Remote Deployment
 
 on:
   workflow_dispatch: # Manually triggered workflow
+  push:
+    branches:
+      - main # Trigger only on pushes to the 'main' branch (you can change this branch as needed)
 
 jobs:
   deploy:
