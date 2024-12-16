@@ -29,11 +29,29 @@ export default  function  ChangeLog() {
           </Balancer>
         </p>
       </div>
-      <div className="mt-28">
-        <ReactMarkdown
-        // @ts-ignore
-          components={useMDXComponents({})}
-        children={ChangeLogText} />
+      <div className="mt-28 flex sm:flex-row flex-col justify-start items-center flex-1 gap-12" style={{flex: "1 1 0"}}>
+        <div className="h-full">
+          <div className="relative  justify-start gap-x-14 mt-2 border-b border-gray-200 h-full dark:border-gray-800">
+            <div className="mb-4 md:mb-10 md:w-1/3">
+              <div className="sticky top-24 flex items-center space-x-2 md:block md:space-x-0 md:space-y-1.5">
+                <span className="inline-flex items-center rounded-lg bg-indigo-50 px-2.5 py-1 text-xs font-medium text-indigo-700 ring-1 ring-inset ring-indigo-700/10 dark:bg-indigo-500/20 dark:text-indigo-400 dark:ring-indigo-400/10">
+                  2.0.0
+                </span>
+                <span className="block whitespace-nowrap text-sm text-gray-600 dark:text-gray-400">
+                  Dec 2024
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="">
+          {" "}
+          <ReactMarkdown
+            // @ts-ignore
+            components={useMDXComponents({})}
+            children={ChangeLogText}
+          />
+        </div>
       </div>
     </main>
   );

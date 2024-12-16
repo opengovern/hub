@@ -85,3 +85,8 @@ a {
     border-radius: 8px;
   }
 
+main{
+  display: flex!important;
+  flex-direction: column;
+
+}

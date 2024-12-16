@@ -1004,6 +1004,11 @@ select {
   margin-right: 0.625rem;
 }
 
+.mx-3 {
+  margin-left: 0.75rem;
+  margin-right: 0.75rem;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -1022,11 +1027,6 @@ select {
 .my-6 {
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
-}
-
-.mx-3 {
-  margin-left: 0.75rem;
-  margin-right: 0.75rem;
 }
 
 .-mb-px {
@@ -2134,6 +2134,10 @@ select {
 
 .gap-8 {
   gap: 2rem;
+}
+
+.gap-12 {
+  gap: 3rem;
 }
 
 .gap-x-1 {
@@ -4380,6 +4384,11 @@ a {
   background-color: #757474a4;
   /* Set the color of the scrollbar thumb */
   border-radius: 8px;
+}
+
+main{
+  display: flex!important;
+  flex-direction: column;
 }
 
 .selection\:bg-indigo-100 *::selection {
@@ -6720,11 +6729,6 @@ a {
     padding-right: 1.75rem;
   }
 
-  .sm\:px-3 {
-    padding-left: 0.75rem;
-    padding-right: 0.75rem;
-  }
-
   .sm\:pt-8 {
     padding-top: 2rem;
   }
@@ -7361,4 +7365,3 @@ a {
 .\[\&_code\]\:min-w-full code {
   min-width: 100%;
 }
-
