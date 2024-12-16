@@ -1,12 +1,16 @@
 // @ts-nocheck
 // import Code from "../Code"
 import {
+  RiCodeBlock,
   RiContractUpDownLine,
   RiGitBranchLine,
   RiGroup2Line,
+  RiGroupLine,
   RiLink,
   RiLinksLine,
   RiLockStarLine,
+  RiOpenSourceLine,
+  RiP2pLine,
   RiPlugLine,
   RiShieldKeyholeLine,
   RiShieldStarLine,
@@ -68,14 +72,14 @@ const features = [
     name: "Open",
     description:
       "Built as an open platform inspired by Steampipe, allowing customization and extension without restrictions.",
-    icon: RiShieldStarLine,
+    icon: RiOpenSourceLine,
   },
 
   {
     name: "Robust Integrations",
     description:
       "Connect DevOps, AI/ML, and SecOps tools for complete governance across your stack.",
-    icon: RiContractUpDownLine,
+    icon: RiPlugLine,
   },
 
   {
@@ -88,13 +92,13 @@ const features = [
     name: "Vendor-Agnostic",
     description:
       "Inventory and Audit for compliance across clouds, projects, environments, and tools.",
-    icon: RiLink,
+    icon: RiP2pLine,
   },
   {
     name: "DRY",
     description:
       "Reuse controls and leverage variables and views to prevent policy duplication.",
-    icon: RiShieldStarLine,
+    icon: RiCodeBlock,
   },
 
   {
@@ -107,7 +111,7 @@ const features = [
     name: "Built for Teams",
     description:
       "Empower collaboration on compliance tasks with shared insights and real-time teamwork.",
-    icon: RiGroup2Line,
+    icon: RiGroupLine,
   },
   {
     name: "Enterprise Ready",

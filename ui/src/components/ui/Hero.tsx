@@ -103,7 +103,7 @@ export default function Hero() {
         </Button> */}
       </div>
       <div
-        className="relative mx-auto ml-3 mt-20 h-fit  max-w-6xl animate-slide-up-fade sm:ml-auto sm:w-full sm:px-2"
+        className="relative sm:mx-auto mx-3  mt-20 h-fit  max-w-6xl animate-slide-up-fade sm:ml-auto sm:w-full sm:px-2"
         style={{ animationDuration: "1400ms" }}
       >
         <div className="  mb-4 w-full flex flex-row gap-3 justify-between ">
