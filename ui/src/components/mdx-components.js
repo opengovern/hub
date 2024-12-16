@@ -6,6 +6,7 @@ import {
   H1,
   H2,
   H3,
+  Li,
   P,
   Ul,
 } from "./mdx"
@@ -22,6 +23,7 @@ let customComponents = {
   a: CustomLink,
   ChangelogEntry: ChangelogEntry,
   ChangelogImage: ChangelogImage,
+  li: Li
 }
 
 export function useMDXComponents(components: MDXComponents) {

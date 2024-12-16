@@ -26,6 +26,11 @@ import digitalocean from "./digitalocean.md";
 import entraid from "./entraid.md";
 import linode from "./linode.md";
 import googleworkspace from "./googleworkspace.md";
+import github from "./github.md"
+import rehypeRaw from "rehype-raw";
+import render from './render.md'
+import openai from './openai.md'
+import cohereai from './cohereai.md'
 
 const setupFiles = {
   aws,
@@ -35,6 +40,10 @@ const setupFiles = {
   entraid,
   linode,
   googleworkspace,
+  github,
+  render,
+  openai,
+  cohereai
 };
 
 
@@ -69,6 +78,8 @@ useEffect(()=>{
           // @ts-ignore
           components={useMDXComponents({})}
           children={file}
+          skipHtml={false}
+          rehypePlugins={[rehypeRaw]}
         />
       </div>
     </div>

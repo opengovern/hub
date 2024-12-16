@@ -1,5 +1,5 @@
-import clsx from "clsx"
-import React from "react"
+import clsx from "clsx";
+import React from "react";
 
 export default function slugify(str: string) {
   return str
@@ -9,18 +9,18 @@ export default function slugify(str: string) {
     .replace(/\s+/g, "-") // Replace spaces with -
     .replace(/&/g, "-and-") // Replace & with 'and'
     .replace(/[^\w\-]+/g, "") // Remove all non-word characters except for -
-    .replace(/\-\-+/g, "-") // Replace multiple - with single -
+    .replace(/\-\-+/g, "-"); // Replace multiple - with single -
 }
 
 function CustomHeading(props: any) {
-  let slug = slugify(props.children)
+  let slug = slugify(props.children);
   return React.createElement(
     `h${props.level}`,
     {
       id: slug,
       className: clsx(
         "scroll-mt-36 md:scroll-mt-24 inline-flex",
-        props.className,
+        props.className
       ),
     },
     [
@@ -30,8 +30,8 @@ function CustomHeading(props: any) {
         className: "anchor-link",
       }),
     ],
-    props.children,
-  )
+    props.children
+  );
 }
 
 export const H1 = ({ children }: React.HTMLProps<HTMLHeadingElement>) => (
@@ -41,7 +41,7 @@ export const H1 = ({ children }: React.HTMLProps<HTMLHeadingElement>) => (
   >
     {children}
   </CustomHeading>
-)
+);
 
 export const H2 = ({ children }: React.HTMLProps<HTMLHeadingElement>) => (
   <CustomHeading
@@ -50,7 +50,7 @@ export const H2 = ({ children }: React.HTMLProps<HTMLHeadingElement>) => (
   >
     {children}
   </CustomHeading>
-)
+);
 
 export const H3 = ({ children }: React.HTMLProps<HTMLHeadingElement>) => (
   <CustomHeading
@@ -59,42 +59,42 @@ export const H3 = ({ children }: React.HTMLProps<HTMLHeadingElement>) => (
   >
     {children}
   </CustomHeading>
-)
+);
 
 export const P = (props: React.HTMLProps<HTMLParagraphElement>) => (
   <p {...props} className="mb-8 leading-7 text-gray-600 dark:text-gray-400" />
-)
+);
 
 export const Ul = (props: React.HTMLAttributes<HTMLUListElement>) => (
   <ul
     className="mb-10 ml-[30px] list-['–__'] space-y-1 leading-8 text-gray-600 dark:text-gray-400"
     {...props}
   />
-)
+);
 
 export const Bold = (props: React.HTMLAttributes<HTMLSpanElement>) => (
   <span className="font-semibold text-gray-900 dark:text-gray-50" {...props} />
-)
+);
 
 export function CustomLink(props: any) {
-  let href = props.href
+  let href = props.href;
   const style =
-    "text-indigo-600 font-medium hover:text-indigo-500 dark:text-indigo-500 hover:dark:text-indigo-400"
+    "text-indigo-600 font-medium hover:text-indigo-500 dark:text-indigo-500 hover:dark:text-indigo-400";
   if (href.startsWith("/")) {
     return (
       <a className={style} href={href} {...props}>
         {props.children}
       </a>
-    )
+    );
   }
 
   if (href.startsWith("#")) {
-    return <a {...props} className={style} />
+    return <a {...props} className={style} />;
   }
 
   return (
     <a className={style} target="_blank" rel="noopener noreferrer" {...props} />
-  )
+  );
 }
 
 export const ChangelogEntry = ({
@@ -102,9 +102,9 @@ export const ChangelogEntry = ({
   date,
   children,
 }: {
-  version: string
-  date: string
-  children: any
+  version: string;
+  date: string;
+  children: any;
 }) => (
   <div className="relative my-20 flex flex-col justify-center gap-x-14 border-b border-gray-200 md:flex-row dark:border-gray-800">
     <div className="mb-4 md:mb-10 md:w-1/3">
@@ -119,7 +119,7 @@ export const ChangelogEntry = ({
     </div>
     <div className="mb-12">{children}</div>
   </div>
-)
+);
 
 export const ChangelogImage = ({
   alt,
@@ -136,4 +136,8 @@ export const ChangelogImage = ({
     className="mb-10 overflow-hidden rounded-xl shadow-md shadow-black/15 ring-1 ring-gray-200/50 dark:ring-gray-800"
     {...props}
   />
-)
+);
+
+export const Li = (props: React.HTMLAttributes<HTMLLIElement>) => (
+  <li className="font-semibold text-gray-900 dark:text-gray-50" {...props} />
+);
