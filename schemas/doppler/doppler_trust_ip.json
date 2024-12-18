@@ -1,0 +1,11 @@
+{
+  "table_name": "doppler_trust_ip",
+  "table_description": "",
+  "columns": [
+    {
+      "name": "ip",
+      "type": "text",
+      "description": "The trusted IP address."
+    }
+  ]
+}

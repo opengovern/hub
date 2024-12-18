@@ -1,0 +1,12 @@
+{
+  "count_of_named_tables": 1,
+  "count_of_named_columns": 8,
+  "tables": [
+    {
+      "table_name": "oci_artifact",
+      "description": "Retrieve information about oci artifacts across multiple namespaces",
+      "count_of_columns": 8
+    }
+  ],
+  "description": "Get visibility into your images."
+}

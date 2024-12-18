@@ -1,8 +1,8 @@
 {
   "total": {
-    "integration": 14,
-    "count_of_named_tables": 892,
-    "count_of_named_columns": 12471
+    "integration": 15,
+    "count_of_named_tables": 907,
+    "count_of_named_columns": 12578
   },
   "summary": {
     "aws": {
@@ -29,13 +29,17 @@
       "count_of_named_tables": 24,
       "count_of_named_columns": 305
     },
+    "doppler": {
+      "count_of_named_tables": 15,
+      "count_of_named_columns": 81
+    },
     "entraid": {
       "count_of_named_tables": 22,
       "count_of_named_columns": 401
     },
     "github": {
-      "count_of_named_tables": 44,
-      "count_of_named_columns": 679
+      "count_of_named_tables": 45,
+      "count_of_named_columns": 706
     },
     "google": {
       "count_of_named_tables": 16,
@@ -49,7 +53,10 @@
       "count_of_named_tables": 14,
       "count_of_named_columns": 161
     },
-    
+    "oci": {
+      "count_of_named_tables": 1,
+      "count_of_named_columns": 8
+    },
     "openai": {
       "count_of_named_tables": 9,
       "count_of_named_columns": 64
@@ -3847,6 +3854,83 @@
         "count_of_columns": 10
       }
     ],
+    "doppler": [
+      {
+        "table_name": "doppler_config",
+        "description": "",
+        "count_of_columns": 12
+      },
+      {
+        "table_name": "doppler_environment",
+        "description": "",
+        "count_of_columns": 6
+      },
+      {
+        "table_name": "doppler_group",
+        "description": "",
+        "count_of_columns": 4
+      },
+      {
+        "table_name": "doppler_integration",
+        "description": "",
+        "count_of_columns": 6
+      },
+      {
+        "table_name": "doppler_project",
+        "description": "",
+        "count_of_columns": 5
+      },
+      {
+        "table_name": "doppler_project_member",
+        "description": "",
+        "count_of_columns": 5
+      },
+      {
+        "table_name": "doppler_project_role",
+        "description": "",
+        "count_of_columns": 5
+      },
+      {
+        "table_name": "doppler_secret",
+        "description": "",
+        "count_of_columns": 7
+      },
+      {
+        "table_name": "doppler_service_account",
+        "description": "",
+        "count_of_columns": 4
+      },
+      {
+        "table_name": "doppler_service_account_token",
+        "description": "",
+        "count_of_columns": 5
+      },
+      {
+        "table_name": "doppler_service_token",
+        "description": "",
+        "count_of_columns": 7
+      },
+      {
+        "table_name": "doppler_trust_ip",
+        "description": "",
+        "count_of_columns": 1
+      },
+      {
+        "table_name": "doppler_workplace",
+        "description": "",
+        "count_of_columns": 4
+      },
+      {
+        "table_name": "doppler_workplace_role",
+        "description": "",
+        "count_of_columns": 6
+      },
+      {
+        "table_name": "doppler_workplace_user",
+        "description": "",
+        "count_of_columns": 4
+      }
+    ],
     "entraid": [
       {
         "table_name": "entraid_admin_consent_request_policy",
@@ -3981,6 +4065,11 @@
         "count_of_columns": 30
       },
       {
+        "table_name": "github_artifact_dockerfile",
+        "description": "",
+        "count_of_columns": 10
+      },
+      {
         "table_name": "github_blob",
         "description": "Gets a blob from a repository.",
         "count_of_columns": 7
@@ -4013,7 +4102,7 @@
       {
         "table_name": "github_container_package",
         "description": "",
-        "count_of_columns": 6
+        "count_of_columns": 13
       },
       {
         "table_name": "github_gitignore",
@@ -4038,12 +4127,12 @@
       {
         "table_name": "github_maven_package",
         "description": "",
-        "count_of_columns": 6
+        "count_of_columns": 11
       },
       {
         "table_name": "github_npm_package",
         "description": "",
-        "count_of_columns": 6
+        "count_of_columns": 11
       },
       {
         "table_name": "github_nuget_package",
@@ -4432,7 +4521,13 @@
         "count_of_columns": 7
       }
     ],
-  
+    "oci": [
+      {
+        "table_name": "oci_artifact",
+        "description": "Retrieve information about oci artifacts across multiple namespaces",
+        "count_of_columns": 8
+      }
+    ],
     "openai": [
       {
         "table_name": "openai_assistant",

@@ -1,0 +1,31 @@
+{
+  "table_name": "doppler_project_role",
+  "table_description": "",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The name of the project role."
+    },
+    {
+      "name": "permissions",
+      "type": "json",
+      "description": "The list of permissions associated with the role."
+    },
+    {
+      "name": "identifier",
+      "type": "text",
+      "description": "The unique identifier for the project role."
+    },
+    {
+      "name": "created_at",
+      "type": "timestamp with time zone",
+      "description": "The timestamp when the project role was created."
+    },
+    {
+      "name": "is_custom_role",
+      "type": "boolean",
+      "description": "Indicates whether the role is a custom role."
+    }
+  ]
+}

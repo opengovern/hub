@@ -1,0 +1,36 @@
+{
+  "table_name": "doppler_integration",
+  "table_description": "",
+  "columns": [
+    {
+      "name": "slug",
+      "type": "text",
+      "description": "The slug identifier for the integration."
+    },
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The name of the integration."
+    },
+    {
+      "name": "type",
+      "type": "text",
+      "description": "The type of the integration."
+    },
+    {
+      "name": "kind",
+      "type": "text",
+      "description": "The kind or category of the integration."
+    },
+    {
+      "name": "enabled",
+      "type": "boolean",
+      "description": "Indicates whether the integration is enabled."
+    },
+    {
+      "name": "syncs",
+      "type": "json",
+      "description": "The list of syncs associated with the integration."
+    }
+  ]
+}

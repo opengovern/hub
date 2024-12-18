@@ -4,13 +4,8 @@
   "columns": [
     {
       "name": "id",
-      "type": "text",
+      "type": "integer",
       "description": "Unique identifier for the package."
-    },
-    {
-      "name": "registryId",
-      "type": "text",
-      "description": "Registry ID associated with the package."
     },
     {
       "name": "name",
@@ -18,19 +13,49 @@
       "description": "Name of the package."
     },
     {
-      "name": "url",
+      "name": "package_type",
       "type": "text",
-      "description": "URL where the package can be accessed."
+      "description": "Type of the package."
     },
     {
-      "name": "createdAt",
+      "name": "version_count",
+      "type": "integer",
+      "description": "Number of versions of the package."
+    },
+    {
+      "name": "visibility",
+      "type": "text",
+      "description": "Visibility of the package (e.g., public or private)."
+    },
+    {
+      "name": "url",
+      "type": "text",
+      "description": "URL to access the package."
+    },
+    {
+      "name": "created_at",
       "type": "timestamp with time zone",
       "description": "Timestamp when the package was created."
     },
     {
-      "name": "updatedAt",
+      "name": "updated_at",
       "type": "timestamp with time zone",
       "description": "Timestamp when the package was last updated."
+    },
+    {
+      "name": "html_url",
+      "type": "text",
+      "description": "HTML URL for the package."
+    },
+    {
+      "name": "owner",
+      "type": "json",
+      "description": "Owner details of the package."
+    },
+    {
+      "name": "repository",
+      "type": "json",
+      "description": "Repository details associated with the package."
     }
   ]
 }

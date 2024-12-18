@@ -1,0 +1,31 @@
+{
+  "table_name": "doppler_project_member",
+  "table_description": "",
+  "columns": [
+    {
+      "name": "type",
+      "type": "text",
+      "description": "The type of the project member."
+    },
+    {
+      "name": "slug",
+      "type": "text",
+      "description": "The slug of the project member."
+    },
+    {
+      "name": "role",
+      "type": "json",
+      "description": "The role assigned to the project member."
+    },
+    {
+      "name": "access_all_environments",
+      "type": "boolean",
+      "description": "Indicates whether the member has access to all environments."
+    },
+    {
+      "name": "environments",
+      "type": "text",
+      "description": "The environments the member has access to."
+    }
+  ]
+}

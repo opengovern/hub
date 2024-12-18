@@ -1,6 +1,6 @@
 {
-  "count_of_named_tables": 44,
-  "count_of_named_columns": 679,
+  "count_of_named_tables": 45,
+  "count_of_named_columns": 706,
   "tables": [
     {
       "table_name": "github_actions_artifact",
@@ -21,6 +21,11 @@
       "table_name": "github_actions_repository_workflow_run",
       "description": "WorkflowRun represents a repository action workflow run",
       "count_of_columns": 30
+    },
+    {
+      "table_name": "github_artifact_dockerfile",
+      "description": "",
+      "count_of_columns": 10
     },
     {
       "table_name": "github_blob",
@@ -55,7 +60,7 @@
     {
       "table_name": "github_container_package",
       "description": "",
-      "count_of_columns": 6
+      "count_of_columns": 13
     },
     {
       "table_name": "github_gitignore",
@@ -80,12 +85,12 @@
     {
       "table_name": "github_maven_package",
       "description": "",
-      "count_of_columns": 6
+      "count_of_columns": 11
     },
     {
       "table_name": "github_npm_package",
       "description": "",
-      "count_of_columns": 6
+      "count_of_columns": 11
     },
     {
       "table_name": "github_nuget_package",

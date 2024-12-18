@@ -1,0 +1,26 @@
+{
+  "table_name": "doppler_workplace",
+  "table_description": "",
+  "columns": [
+    {
+      "name": "id",
+      "type": "text",
+      "description": "The unique identifier for the workplace."
+    },
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The name of the workplace."
+    },
+    {
+      "name": "billing_email",
+      "type": "text",
+      "description": "The billing email associated with the workplace."
+    },
+    {
+      "name": "security_email",
+      "type": "text",
+      "description": "The security email associated with the workplace."
+    }
+  ]
+}

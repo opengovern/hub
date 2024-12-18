@@ -1,0 +1,66 @@
+{
+  "table_name": "doppler_config",
+  "table_description": "",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The name of the configuration."
+    },
+    {
+      "name": "root",
+      "type": "boolean",
+      "description": "Indicates whether this is a root configuration."
+    },
+    {
+      "name": "inheritable",
+      "type": "boolean",
+      "description": "Indicates if the configuration is inheritable."
+    },
+    {
+      "name": "inheriting",
+      "type": "boolean",
+      "description": "Indicates if the configuration is inheriting from another."
+    },
+    {
+      "name": "inherits",
+      "type": "json",
+      "description": "List of configurations this one inherits from."
+    },
+    {
+      "name": "locked",
+      "type": "boolean",
+      "description": "Indicates if the configuration is locked."
+    },
+    {
+      "name": "initial_fetch_at",
+      "type": "timestamp with time zone",
+      "description": "Timestamp of the initial fetch."
+    },
+    {
+      "name": "last_fetch_at",
+      "type": "timestamp with time zone",
+      "description": "Timestamp of the last fetch."
+    },
+    {
+      "name": "created_at",
+      "type": "timestamp with time zone",
+      "description": "When the configuration was created."
+    },
+    {
+      "name": "environment",
+      "type": "text",
+      "description": "The environment associated with the configuration."
+    },
+    {
+      "name": "project",
+      "type": "text",
+      "description": "The project associated with the configuration."
+    },
+    {
+      "name": "slug",
+      "type": "text",
+      "description": "The slug identifier for the configuration."
+    }
+  ]
+}

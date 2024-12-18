@@ -1,0 +1,46 @@
+{
+  "table_name": "oci_artifact",
+  "table_description": "Retrieve information about oci artifacts across multiple namespaces",
+  "columns": [
+    {
+      "name": "registry_type",
+      "type": "text",
+      "description": ""
+    },
+    {
+      "name": "repository",
+      "type": "text",
+      "description": ""
+    },
+    {
+      "name": "image",
+      "type": "text",
+      "description": ""
+    },
+    {
+      "name": "digest",
+      "type": "text",
+      "description": ""
+    },
+    {
+      "name": "media_type",
+      "type": "text",
+      "description": ""
+    },
+    {
+      "name": "size",
+      "type": "integer",
+      "description": ""
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": ""
+    },
+    {
+      "name": "manifest",
+      "type": "json",
+      "description": ""
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "table_name": "doppler_group",
+  "table_description": "",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The name of the group."
+    },
+    {
+      "name": "slug",
+      "type": "text",
+      "description": "The slug identifier for the group."
+    },
+    {
+      "name": "created_at",
+      "type": "timestamp with time zone",
+      "description": "The timestamp when the group was created."
+    },
+    {
+      "name": "default_project_role",
+      "type": "json",
+      "description": "The default project role associated with the group."
+    }
+  ]
+}

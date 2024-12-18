@@ -1,0 +1,26 @@
+{
+  "table_name": "doppler_workplace_user",
+  "table_description": "",
+  "columns": [
+    {
+      "name": "id",
+      "type": "text",
+      "description": "The unique identifier for the workplace user."
+    },
+    {
+      "name": "access",
+      "type": "text",
+      "description": "The access level of the user within the workplace."
+    },
+    {
+      "name": "created_at",
+      "type": "timestamp with time zone",
+      "description": "The timestamp when the workplace user was created."
+    },
+    {
+      "name": "user",
+      "type": "json",
+      "description": "Details of the user associated with the workplace."
+    }
+  ]
+}

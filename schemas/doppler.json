@@ -1,0 +1,82 @@
+{
+  "count_of_named_tables": 15,
+  "count_of_named_columns": 81,
+  "tables": [
+    {
+      "table_name": "doppler_config",
+      "description": "",
+      "count_of_columns": 12
+    },
+    {
+      "table_name": "doppler_environment",
+      "description": "",
+      "count_of_columns": 6
+    },
+    {
+      "table_name": "doppler_group",
+      "description": "",
+      "count_of_columns": 4
+    },
+    {
+      "table_name": "doppler_integration",
+      "description": "",
+      "count_of_columns": 6
+    },
+    {
+      "table_name": "doppler_project",
+      "description": "",
+      "count_of_columns": 5
+    },
+    {
+      "table_name": "doppler_project_member",
+      "description": "",
+      "count_of_columns": 5
+    },
+    {
+      "table_name": "doppler_project_role",
+      "description": "",
+      "count_of_columns": 5
+    },
+    {
+      "table_name": "doppler_secret",
+      "description": "",
+      "count_of_columns": 7
+    },
+    {
+      "table_name": "doppler_service_account",
+      "description": "",
+      "count_of_columns": 4
+    },
+    {
+      "table_name": "doppler_service_account_token",
+      "description": "",
+      "count_of_columns": 5
+    },
+    {
+      "table_name": "doppler_service_token",
+      "description": "",
+      "count_of_columns": 7
+    },
+    {
+      "table_name": "doppler_trust_ip",
+      "description": "",
+      "count_of_columns": 1
+    },
+    {
+      "table_name": "doppler_workplace",
+      "description": "",
+      "count_of_columns": 4
+    },
+    {
+      "table_name": "doppler_workplace_role",
+      "description": "",
+      "count_of_columns": 6
+    },
+    {
+      "table_name": "doppler_workplace_user",
+      "description": "",
+      "count_of_columns": 4
+    }
+  ],
+  "description": "Manage and sync env variables and secrets."
+}

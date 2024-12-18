@@ -1,0 +1,56 @@
+{
+  "table_name": "github_artifact_dockerfile",
+  "table_description": "",
+  "columns": [
+    {
+      "name": "sha",
+      "type": "text",
+      "description": "SHA hash of the Dockerfile."
+    },
+    {
+      "name": "name",
+      "type": "text",
+      "description": "Name of the Dockerfile."
+    },
+    {
+      "name": "path",
+      "type": "text",
+      "description": "Path to the Dockerfile in the repository."
+    },
+    {
+      "name": "last_updated_at",
+      "type": "timestamp with time zone",
+      "description": "Timestamp when the Dockerfile was last updated."
+    },
+    {
+      "name": "git_url",
+      "type": "text",
+      "description": "Git URL where the Dockerfile can be accessed."
+    },
+    {
+      "name": "html_url",
+      "type": "text",
+      "description": "HTML URL where the Dockerfile can be accessed."
+    },
+    {
+      "name": "uri",
+      "type": "text",
+      "description": "Unique URI for the Dockerfile."
+    },
+    {
+      "name": "dockerfile_content",
+      "type": "text",
+      "description": "Content of the Dockerfile."
+    },
+    {
+      "name": "dockerfile_content_base64",
+      "type": "text",
+      "description": "Base64-encoded content of the Dockerfile."
+    },
+    {
+      "name": "repository",
+      "type": "json",
+      "description": "Repository metadata associated with the Dockerfile."
+    }
+  ]
+}

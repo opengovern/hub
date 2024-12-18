@@ -1,0 +1,41 @@
+{
+  "table_name": "doppler_service_token",
+  "table_description": "",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The name of the service token."
+    },
+    {
+      "name": "slug",
+      "type": "text",
+      "description": "The slug identifier for the service token."
+    },
+    {
+      "name": "created_at",
+      "type": "timestamp with time zone",
+      "description": "The timestamp when the service token was created."
+    },
+    {
+      "name": "config",
+      "type": "text",
+      "description": "The configuration associated with the service token."
+    },
+    {
+      "name": "environment",
+      "type": "text",
+      "description": "The environment associated with the service token."
+    },
+    {
+      "name": "project",
+      "type": "text",
+      "description": "The project associated with the service token."
+    },
+    {
+      "name": "expires_at",
+      "type": "timestamp with time zone",
+      "description": "The expiration timestamp of the service token."
+    }
+  ]
+}

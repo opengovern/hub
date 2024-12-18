@@ -1,0 +1,36 @@
+{
+  "table_name": "doppler_workplace_role",
+  "table_description": "",
+  "columns": [
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The name of the workplace role."
+    },
+    {
+      "name": "permissions",
+      "type": "json",
+      "description": "The list of permissions associated with the workplace role."
+    },
+    {
+      "name": "identifier",
+      "type": "text",
+      "description": "The unique identifier for the workplace role."
+    },
+    {
+      "name": "created_at",
+      "type": "timestamp with time zone",
+      "description": "The timestamp when the workplace role was created."
+    },
+    {
+      "name": "is_custom_role",
+      "type": "boolean",
+      "description": "Indicates whether the role is a custom role."
+    },
+    {
+      "name": "is_inline_role",
+      "type": "boolean",
+      "description": "Indicates whether the role is an inline role."
+    }
+  ]
+}

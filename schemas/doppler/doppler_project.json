@@ -1,0 +1,31 @@
+{
+  "table_name": "doppler_project",
+  "table_description": "",
+  "columns": [
+    {
+      "name": "id",
+      "type": "text",
+      "description": "The unique identifier for the project."
+    },
+    {
+      "name": "slug",
+      "type": "text",
+      "description": "The slug of the project."
+    },
+    {
+      "name": "name",
+      "type": "text",
+      "description": "The name of the project."
+    },
+    {
+      "name": "description",
+      "type": "text",
+      "description": "The description of the project."
+    },
+    {
+      "name": "created_at",
+      "type": "timestamp with time zone",
+      "description": "The timestamp when the project was created."
+    }
+  ]
+}

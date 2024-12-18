@@ -4,18 +4,13 @@
   "columns": [
     {
       "name": "id",
-      "type": "text",
+      "type": "integer",
       "description": "Unique identifier for the package."
     },
     {
-      "name": "registryId",
+      "name": "digest",
       "type": "text",
-      "description": "Registry ID associated with the package."
-    },
-    {
-      "name": "name",
-      "type": "text",
-      "description": "Name of the package."
+      "description": "Digest of the package."
     },
     {
       "name": "url",
@@ -23,14 +18,54 @@
       "description": "URL where the package can be accessed."
     },
     {
-      "name": "createdAt",
+      "name": "package_uri",
+      "type": "text",
+      "description": "URI of the package."
+    },
+    {
+      "name": "package_html_url",
+      "type": "text",
+      "description": "HTML URL of the package."
+    },
+    {
+      "name": "created_at",
       "type": "timestamp with time zone",
       "description": "Timestamp when the package was created."
     },
     {
-      "name": "updatedAt",
+      "name": "updated_at",
       "type": "timestamp with time zone",
       "description": "Timestamp when the package was last updated."
+    },
+    {
+      "name": "html_url",
+      "type": "text",
+      "description": "HTML URL for the package."
+    },
+    {
+      "name": "name",
+      "type": "text",
+      "description": "Name of the package."
+    },
+    {
+      "name": "media_type",
+      "type": "text",
+      "description": "Media type of the package."
+    },
+    {
+      "name": "total_size",
+      "type": "integer",
+      "description": "Total size of the package."
+    },
+    {
+      "name": "metadata",
+      "type": "json",
+      "description": "Metadata of the package."
+    },
+    {
+      "name": "manifest",
+      "type": "json",
+      "description": "Manifest of the package."
     }
   ]
 }
