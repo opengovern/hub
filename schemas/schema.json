@@ -1,8 +1,8 @@
 {
   "total": {
     "integration": 15,
-    "count_of_named_tables": 907,
-    "count_of_named_columns": 12578
+    "count_of_named_tables": 898,
+    "count_of_named_columns": 12494
   },
   "summary": {
     "aws": {
@@ -38,8 +38,8 @@
       "count_of_named_columns": 401
     },
     "github": {
-      "count_of_named_tables": 45,
-      "count_of_named_columns": 706
+      "count_of_named_tables": 36,
+      "count_of_named_columns": 622
     },
     "google": {
       "count_of_named_tables": 16,
@@ -4095,29 +4095,14 @@
         "count_of_columns": 26
       },
       {
-        "table_name": "github_community_profile",
-        "description": "Community profile information for the given repository.",
-        "count_of_columns": 8
-      },
-      {
         "table_name": "github_container_package",
         "description": "",
         "count_of_columns": 13
       },
       {
-        "table_name": "github_gitignore",
-        "description": "GitHub defined .gitignore templates that you can associate with your repository.",
-        "count_of_columns": 2
-      },
-      {
         "table_name": "github_issue",
         "description": "GitHub Issues are used to track ideas, enhancements, tasks, or bugs for work on GitHub.",
         "count_of_columns": 41
-      },
-      {
-        "table_name": "github_issue_comment",
-        "description": "GitHub Issue Comments are the responses/comments on GitHub Issues.",
-        "count_of_columns": 26
       },
       {
         "table_name": "github_license",
@@ -4155,11 +4140,6 @@
         "count_of_columns": 7
       },
       {
-        "table_name": "github_package_version",
-        "description": "Details of package versions, including version, size, digest, and download count.",
-        "count_of_columns": 7
-      },
-      {
         "table_name": "github_pull_request",
         "description": "GitHub Pull requests let you tell others about changes you've pushed to a branch in a repository on GitHub. Once a pull request is opened, you can discuss and review the potential changes with collaborators and add follow-up commits before your changes are merged into the base branch.",
         "count_of_columns": 42
@@ -4187,17 +4167,12 @@
       {
         "table_name": "github_repository",
         "description": "GitHub Repositories contain all of your project's files and each file's revision history.",
-        "count_of_columns": 78
+        "count_of_columns": 70
       },
       {
         "table_name": "github_repository_collaborator",
         "description": "Collaborators are users that have contributed to the repository.",
         "count_of_columns": 4
-      },
-      {
-        "table_name": "github_repository_content",
-        "description": "List the content in a repository (list directory, or get file content",
-        "count_of_columns": 15
       },
       {
         "table_name": "github_repository_dependabot_alert",
@@ -4230,16 +4205,6 @@
         "count_of_columns": 19
       },
       {
-        "table_name": "github_ruby_gems_package",
-        "description": "",
-        "count_of_columns": 6
-      },
-      {
-        "table_name": "github_stargazer",
-        "description": "Stargazers are users who have starred the repository.",
-        "count_of_columns": 4
-      },
-      {
         "table_name": "github_tag",
         "description": "Tags for commits in the given repository.",
         "count_of_columns": 7
@@ -4248,16 +4213,6 @@
         "table_name": "github_team",
         "description": "GitHub Teams in a given organization. GitHub Teams are groups of organization members that reflect your company or group's structure with cascading access permissions and mentions.",
         "count_of_columns": 29
-      },
-      {
-        "table_name": "github_traffic_view_daily",
-        "description": "Daily traffic view over the last 14 days for the given repository.",
-        "count_of_columns": 4
-      },
-      {
-        "table_name": "github_traffic_view_weekly",
-        "description": "Weekly traffic view over the last 14 days for the given repository.",
-        "count_of_columns": 4
       },
       {
         "table_name": "github_tree",

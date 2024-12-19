@@ -293,54 +293,14 @@
       "description": "The URL of the repository."
     },
     {
-      "name": "uses_custom_open_graph_image",
-      "type": "boolean",
-      "description": "if true, this repository has a custom image to use with Open Graph as opposed to being represented by the owner's avatar."
-    },
-    {
-      "name": "can_administer",
-      "type": "boolean",
-      "description": "If true, you can administer this repository."
-    },
-    {
-      "name": "can_create_projects",
-      "type": "boolean",
-      "description": "If true, you can create projects in this repository."
-    },
-    {
-      "name": "can_subscribe",
-      "type": "boolean",
-      "description": "If true, you can subscribe to this repository."
-    },
-    {
-      "name": "can_update_topics",
-      "type": "boolean",
-      "description": "If true, you can update topics on this repository."
-    },
-    {
-      "name": "has_starred",
-      "type": "boolean",
-      "description": "If true, you have starred this repository."
-    },
-    {
       "name": "possible_commit_emails",
       "type": "json",
       "description": "A list of emails you can commit to this repository with."
     },
     {
-      "name": "subscription",
-      "type": "text",
-      "description": "Identifies if the current user is watching, not watching, or ignoring the repository."
-    },
-    {
       "name": "visibility",
       "type": "text",
       "description": "Indicates the repository's visibility level."
-    },
-    {
-      "name": "your_permission",
-      "type": "text",
-      "description": "Your permission level on the repository. Will return null if authenticated as an GitHub App."
     },
     {
       "name": "web_commit_signoff_required",
