@@ -3,19 +3,9 @@
   "table_description": "GitHub Commits bundle project files for download by users.",
   "columns": [
     {
-      "name": "repository_full_name",
+      "name": "id",
       "type": "text",
-      "description": "Full name of the repository that contains the commit."
-    },
-    {
-      "name": "sha",
-      "type": "text",
-      "description": "SHA of the commit."
-    },
-    {
-      "name": "short_sha",
-      "type": "text",
-      "description": "Short SHA of the commit."
+      "description": "Unique identifier (SHA) of the commit."
     },
     {
       "name": "message",
@@ -23,114 +13,54 @@
       "description": "Commit message."
     },
     {
-      "name": "author_login",
-      "type": "text",
-      "description": "The login name of the author of the commit."
-    },
-    {
-      "name": "authored_date",
-      "type": "timestamp with time zone",
-      "description": "Timestamp when the author made this commit."
-    },
-    {
       "name": "author",
       "type": "json",
-      "description": "The commit author."
+      "description": "Name of the author of the commit."
     },
     {
-      "name": "committer_login",
+      "name": "date",
       "type": "text",
-      "description": "The login name of the committer."
+      "description": "Date of the commit."
     },
     {
-      "name": "committed_date",
-      "type": "timestamp with time zone",
-      "description": "Timestamp when commit was committed."
-    },
-    {
-      "name": "committer",
-      "type": "json",
-      "description": "The committer."
-    },
-    {
-      "name": "additions",
+      "name": "comment_count",
       "type": "integer",
-      "description": "Number of additions in the commit."
+      "description": "Number of comments on the commit."
     },
     {
-      "name": "authored_by_committer",
-      "type": "boolean",
-      "description": "Check if the committer and the author match."
-    },
-    {
-      "name": "deletions",
-      "type": "integer",
-      "description": "Number of deletions in the commit."
-    },
-    {
-      "name": "changed_files",
-      "type": "integer",
-      "description": "Count of files changed in the commit."
-    },
-    {
-      "name": "committed_via_web",
-      "type": "boolean",
-      "description": "If true, commit was made via GitHub web ui."
-    },
-    {
-      "name": "commit_url",
+      "name": "html_url",
       "type": "text",
-      "description": "URL of the commit."
+      "description": "URL of the commit on the repository."
     },
     {
-      "name": "signature",
+      "name": "is_verified",
+      "type": "boolean",
+      "description": "Indicates if the commit is verified."
+    },
+    {
+      "name": "changes",
       "type": "json",
-      "description": "The signature of commit."
+      "description": "Details of the changes made in the commit."
     },
     {
-      "name": "status",
+      "name": "files",
       "type": "json",
-      "description": "Status of the commit."
+      "description": "List of files changed in the commit."
     },
     {
-      "name": "tarball_url",
-      "type": "text",
-      "description": "URL to download a tar of commit."
+      "name": "pull_requests",
+      "type": "json",
+      "description": "List of associated pull request IDs."
     },
     {
-      "name": "zipball_url",
-      "type": "text",
-      "description": "URL to download a zip of commit."
+      "name": "target",
+      "type": "json",
+      "description": "Target details of the commit (e.g., branch, organization, repository)."
     },
     {
-      "name": "tree_url",
-      "type": "text",
-      "description": "URL to tree of the commit."
-    },
-    {
-      "name": "can_subscribe",
-      "type": "boolean",
-      "description": "If true, user can subscribe to this commit."
-    },
-    {
-      "name": "subscription",
-      "type": "text",
-      "description": "Users subscription state of the commit."
-    },
-    {
-      "name": "url",
-      "type": "text",
-      "description": "URL of the commit."
-    },
-    {
-      "name": "node_id",
-      "type": "text",
-      "description": "The node ID of the commit."
-    },
-    {
-      "name": "message_headline",
-      "type": "text",
-      "description": "The Git commit message headline."
+      "name": "additional_details",
+      "type": "json",
+      "description": "Additional details about the commit."
     }
   ]
 }

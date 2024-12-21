@@ -1,0 +1,111 @@
+{
+  "table_name": "github_actions_workflow_run",
+  "table_description": "WorkflowRun represents a repository action workflow run",
+  "columns": [
+    {
+      "name": "id",
+      "type": "integer",
+      "description": "Unique identifier of the workflow run."
+    },
+    {
+      "name": "name",
+      "type": "text",
+      "description": "Name of the workflow run."
+    },
+    {
+      "name": "head_branch",
+      "type": "text",
+      "description": "Branch for which the workflow was run."
+    },
+    {
+      "name": "head_sha",
+      "type": "text",
+      "description": "SHA of the head commit of the workflow run."
+    },
+    {
+      "name": "status",
+      "type": "text",
+      "description": "Status of the workflow run (e.g., queued, in_progress, completed)."
+    },
+    {
+      "name": "conclusion",
+      "type": "text",
+      "description": "Conclusion of the workflow run (e.g., success, failure, neutral)."
+    },
+    {
+      "name": "html_url",
+      "type": "text",
+      "description": "HTML URL of the workflow run."
+    },
+    {
+      "name": "workflow_id",
+      "type": "integer",
+      "description": "Unique identifier of the workflow."
+    },
+    {
+      "name": "run_number",
+      "type": "integer",
+      "description": "Run number of the workflow."
+    },
+    {
+      "name": "event",
+      "type": "text",
+      "description": "Event that triggered the workflow run."
+    },
+    {
+      "name": "created_at",
+      "type": "text",
+      "description": "Timestamp when the workflow run was created."
+    },
+    {
+      "name": "updated_at",
+      "type": "text",
+      "description": "Timestamp when the workflow run was last updated."
+    },
+    {
+      "name": "run_attempt",
+      "type": "integer",
+      "description": "Attempt number of the workflow run."
+    },
+    {
+      "name": "run_started_at",
+      "type": "text",
+      "description": "Timestamp when the workflow run started."
+    },
+    {
+      "name": "actor",
+      "type": "json",
+      "description": "Details of the actor who triggered the workflow run."
+    },
+    {
+      "name": "head_commit",
+      "type": "json",
+      "description": "Details of the head commit associated with the workflow run."
+    },
+    {
+      "name": "repository",
+      "type": "json",
+      "description": "Details of the repository where the workflow run was executed."
+    },
+    {
+      "name": "head_repository",
+      "type": "json",
+      "description": "Details of the head repository associated with the workflow run."
+    },
+    {
+      "name": "referenced_workflows",
+      "type": "json",
+      "description": "Referenced workflows in the workflow run."
+    },
+    {
+      "name": "artifact_count",
+      "type": "integer",
+      "description": "Number of artifacts generated in the workflow run."
+    },
+    {
+      "name": "artifacts",
+      "type": "json",
+      "description": "Details of the artifacts generated in the workflow run."
+    }
+  ]
+}

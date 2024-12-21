@@ -1,5 +1,5 @@
 {
-  "table_name": "github_actions_repository_runner",
+  "table_name": "github_actions_runner",
   "table_description": "The runner is the application that runs a job from a GitHub Actions workflow",
   "columns": [
     {

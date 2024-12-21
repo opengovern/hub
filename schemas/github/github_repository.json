@@ -5,352 +5,137 @@
     {
       "name": "id",
       "type": "integer",
-      "description": "The numeric ID of the repository."
+      "description": "Unique identifier of the GitHub repository."
     },
     {
       "name": "node_id",
       "type": "text",
-      "description": "The node ID of the repository."
+      "description": "Node ID of the repository."
     },
     {
       "name": "name",
       "type": "text",
-      "description": "The name of the repository."
-    },
-    {
-      "name": "allow_update_branch",
-      "type": "boolean",
-      "description": "If true, a pull request head branch that is behind its base branch can always be updated even if it is not required to be up to date before merging."
-    },
-    {
-      "name": "archived_at",
-      "type": "timestamp with time zone",
-      "description": "Timestamp when repository was archived."
-    },
-    {
-      "name": "auto_merge_allowed",
-      "type": "boolean",
-      "description": "If true, auto-merge can be enabled on pull requests in this repository."
-    },
-    {
-      "name": "code_of_conduct",
-      "type": "json",
-      "description": "The code of conduct for this repository."
-    },
-    {
-      "name": "contact_links",
-      "type": "json",
-      "description": "List of contact links associated to the repository."
-    },
-    {
-      "name": "created_at",
-      "type": "timestamp with time zone",
-      "description": "Timestamp when the repository was created."
-    },
-    {
-      "name": "default_branch_ref",
-      "type": "json",
-      "description": "Default ref information."
-    },
-    {
-      "name": "delete_branch_on_merge",
-      "type": "boolean",
-      "description": "If true, branches are automatically deleted when merged in this repository."
-    },
-    {
-      "name": "description",
-      "type": "text",
-      "description": "The description of the repository."
-    },
-    {
-      "name": "disk_usage",
-      "type": "integer",
-      "description": "Number of kilobytes this repository occupies on disk."
-    },
-    {
-      "name": "fork_count",
-      "type": "integer",
-      "description": "Number of forks there are of this repository in the whole network."
-    },
-    {
-      "name": "forking_allowed",
-      "type": "boolean",
-      "description": "If true, repository allows forks."
-    },
-    {
-      "name": "funding_links",
-      "type": "json",
-      "description": "The funding links for this repository."
-    },
-    {
-      "name": "has_discussions_enabled",
-      "type": "boolean",
-      "description": "If true, the repository has the Discussions feature enabled."
-    },
-    {
-      "name": "has_issues_enabled",
-      "type": "boolean",
-      "description": "If true, the repository has issues feature enabled."
-    },
-    {
-      "name": "has_projects_enabled",
-      "type": "boolean",
-      "description": "If true, the repository has the Projects feature enabled."
-    },
-    {
-      "name": "has_vulnerability_alerts_enabled",
-      "type": "boolean",
-      "description": "If true, vulnerability alerts are enabled for the repository."
-    },
-    {
-      "name": "has_wiki_enabled",
-      "type": "boolean",
-      "description": "If true, the repository has wiki feature enabled."
-    },
-    {
-      "name": "homepage_url",
-      "type": "text",
-      "description": "The external URL of the repository if set."
-    },
-    {
-      "name": "interaction_ability",
-      "type": "json",
-      "description": "The interaction ability settings for this repository."
-    },
-    {
-      "name": "is_archived",
-      "type": "boolean",
-      "description": "If true, the repository is unmaintained (archived)."
-    },
-    {
-      "name": "is_blank_issues_enabled",
-      "type": "boolean",
-      "description": "If true, blank issue creation is allowed."
-    },
-    {
-      "name": "is_disabled",
-      "type": "boolean",
-      "description": "If true, this repository disabled."
-    },
-    {
-      "name": "is_empty",
-      "type": "boolean",
-      "description": "If true, this repository is empty."
-    },
-    {
-      "name": "is_fork",
-      "type": "boolean",
-      "description": "If true, the repository is a fork."
-    },
-    {
-      "name": "is_in_organization",
-      "type": "boolean",
-      "description": "If true, repository is either owned by an organization, or is a private fork of an organization repository."
-    },
-    {
-      "name": "is_locked",
-      "type": "boolean",
-      "description": "If true, repository is locked."
-    },
-    {
-      "name": "is_mirror",
-      "type": "boolean",
-      "description": "If true, the repository is a mirror."
-    },
-    {
-      "name": "is_private",
-      "type": "boolean",
-      "description": "If true, the repository is private or internal."
-    },
-    {
-      "name": "is_security_policy_enabled",
-      "type": "boolean",
-      "description": "If true, repository has a security policy."
-    },
-    {
-      "name": "is_template",
-      "type": "boolean",
-      "description": "If true, the repository is a template that can be used to generate new repositories."
-    },
-    {
-      "name": "is_user_configuration_repository",
-      "type": "boolean",
-      "description": "If true, this is a user configuration repository."
-    },
-    {
-      "name": "issue_templates",
-      "type": "json",
-      "description": "A list of issue templates associated to the repository."
-    },
-    {
-      "name": "license_info",
-      "type": "json",
-      "description": "The license associated with the repository."
-    },
-    {
-      "name": "lock_reason",
-      "type": "text",
-      "description": "The reason the repository has been locked."
-    },
-    {
-      "name": "merge_commit_allowed",
-      "type": "boolean",
-      "description": "If true, PRs are merged with a merge commit on this repository."
-    },
-    {
-      "name": "merge_commit_message",
-      "type": "text",
-      "description": "How the default commit message will be generated when merging a pull request."
-    },
-    {
-      "name": "merge_commit_title",
-      "type": "text",
-      "description": "How the default commit title will be generated when merging a pull request."
-    },
-    {
-      "name": "mirror_url",
-      "type": "text",
-      "description": "The repository's original mirror URL."
+      "description": "Name of the repository."
     },
     {
       "name": "name_with_owner",
       "type": "text",
-      "description": "The repository's name with owner."
+      "description": "Full name of the repository including the owner."
     },
     {
-      "name": "open_graph_image_url",
+      "name": "description",
       "type": "text",
-      "description": "The image used to represent this repository in Open Graph data."
+      "description": "Description of the repository."
     },
     {
-      "name": "owner_login",
+      "name": "created_at",
       "type": "text",
-      "description": "Login of the repository owner."
-    },
-    {
-      "name": "primary_language",
-      "type": "json",
-      "description": "The primary language of the repository's code."
-    },
-    {
-      "name": "projects_url",
-      "type": "text",
-      "description": "The URL listing the repository's projects."
-    },
-    {
-      "name": "pull_request_templates",
-      "type": "json",
-      "description": "Returns a list of pull request templates associated to the repository."
-    },
-    {
-      "name": "pushed_at",
-      "type": "timestamp with time zone",
-      "description": "Timestamp when the repository was last pushed to."
-    },
-    {
-      "name": "rebase_merge_allowed",
-      "type": "boolean",
-      "description": "If true, rebase-merging is enabled on this repository."
-    },
-    {
-      "name": "security_policy_url",
-      "type": "text",
-      "description": "The security policy URL."
-    },
-    {
-      "name": "squash_merge_allowed",
-      "type": "boolean",
-      "description": "If true, squash-merging is enabled on this repository."
-    },
-    {
-      "name": "squash_merge_commit_message",
-      "type": "text",
-      "description": "How the default commit message will be generated when squash merging a pull request."
-    },
-    {
-      "name": "squash_merge_commit_title",
-      "type": "text",
-      "description": "How the default commit title will be generated when squash merging a pull request."
-    },
-    {
-      "name": "ssh_url",
-      "type": "text",
-      "description": "The SSH URL to clone this repository."
-    },
-    {
-      "name": "stargazer_count",
-      "type": "integer",
-      "description": "Returns a count of how many stargazers there are on this repository."
+      "description": "Timestamp when the repository was created."
     },
     {
       "name": "updated_at",
-      "type": "timestamp with time zone",
-      "description": "Timestamp when repository was last updated."
-    },
-    {
-      "name": "url",
       "type": "text",
-      "description": "The URL of the repository."
+      "description": "Timestamp when the repository was last updated."
     },
     {
-      "name": "possible_commit_emails",
-      "type": "json",
-      "description": "A list of emails you can commit to this repository with."
-    },
-    {
-      "name": "visibility",
+      "name": "pushed_at",
       "type": "text",
-      "description": "Indicates the repository's visibility level."
+      "description": "Timestamp when the repository was last pushed."
     },
     {
-      "name": "web_commit_signoff_required",
+      "name": "is_active",
       "type": "boolean",
-      "description": "If true, contributors are required to sign off on web-based commits in this repository."
+      "description": "Indicates if the repository is active."
     },
     {
-      "name": "repository_topics_total_count",
-      "type": "integer",
-      "description": "Count of topics associated with the repository."
+      "name": "is_empty",
+      "type": "boolean",
+      "description": "Indicates if the repository is empty."
     },
     {
-      "name": "open_issues_total_count",
-      "type": "integer",
-      "description": "Count of issues open on the repository."
+      "name": "is_fork",
+      "type": "boolean",
+      "description": "Indicates if the repository is a fork."
     },
     {
-      "name": "watchers_total_count",
-      "type": "integer",
-      "description": "Count of watchers on the repository."
+      "name": "is_security_policy_enabled",
+      "type": "boolean",
+      "description": "Indicates if the repository has a security policy enabled."
     },
     {
-      "name": "hooks",
+      "name": "owner",
       "type": "json",
-      "description": "The API Hooks URL."
+      "description": "Owner details of the repository."
+    },
+    {
+      "name": "homepage_url",
+      "type": "text",
+      "description": "Homepage URL of the repository."
+    },
+    {
+      "name": "license_info",
+      "type": "json",
+      "description": "License information of the repository."
     },
     {
       "name": "topics",
       "type": "json",
-      "description": "The topics (similar to tags or labels) associated with the repository."
+      "description": "List of topics associated with the repository."
     },
     {
-      "name": "subscribers_count",
-      "type": "integer",
-      "description": "The number of users who have subscribed to the repository."
+      "name": "visibility",
+      "type": "text",
+      "description": "Visibility status of the repository."
     },
     {
-      "name": "has_downloads",
-      "type": "boolean",
-      "description": "If true, the GitHub Downloads feature is enabled on the repository."
+      "name": "default_branch_ref",
+      "type": "json",
+      "description": "Details of the default branch of the repository."
     },
     {
-      "name": "has_pages",
-      "type": "boolean",
-      "description": "If true, the GitHub Pages feature is enabled on the repository."
+      "name": "permissions",
+      "type": "json",
+      "description": "Permissions associated with the repository."
     },
     {
-      "name": "network_count",
-      "type": "integer",
-      "description": "The number of member repositories in the network."
+      "name": "organization",
+      "type": "json",
+      "description": "Organization details of the repository."
+    },
+    {
+      "name": "parent",
+      "type": "json",
+      "description": "Parent repository details if the repository is forked."
+    },
+    {
+      "name": "source",
+      "type": "json",
+      "description": "Source repository details if the repository is forked."
+    },
+    {
+      "name": "languages",
+      "type": "json",
+      "description": "Languages used in the repository along with their usage statistics."
+    },
+    {
+      "name": "repo_settings",
+      "type": "json",
+      "description": "Settings of the repository."
+    },
+    {
+      "name": "security_settings",
+      "type": "json",
+      "description": "Security settings of the repository."
+    },
+    {
+      "name": "repo_urls",
+      "type": "json",
+      "description": "Repository URLs for different purposes (e.g., clone URLs)."
+    },
+    {
+      "name": "metrics",
+      "type": "json",
+      "description": "Metrics and statistics of the repository."
     }
   ]
 }

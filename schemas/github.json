@@ -1,6 +1,6 @@
 {
-  "count_of_named_tables": 36,
-  "count_of_named_columns": 622,
+  "count_of_named_tables": 35,
+  "count_of_named_columns": 548,
   "tables": [
     {
       "table_name": "github_actions_artifact",
@@ -8,19 +8,19 @@
       "count_of_columns": 9
     },
     {
-      "table_name": "github_actions_repository_runner",
+      "table_name": "github_actions_runner",
       "description": "The runner is the application that runs a job from a GitHub Actions workflow",
       "count_of_columns": 7
     },
     {
-      "table_name": "github_actions_repository_secret",
+      "table_name": "github_actions_secret",
       "description": "Secrets are encrypted environment variables that you create in a repository",
       "count_of_columns": 6
     },
     {
-      "table_name": "github_actions_repository_workflow_run",
+      "table_name": "github_actions_workflow_run",
       "description": "WorkflowRun represents a repository action workflow run",
-      "count_of_columns": 30
+      "count_of_columns": 21
     },
     {
       "table_name": "github_artifact_dockerfile",
@@ -43,19 +43,14 @@
       "count_of_columns": 36
     },
     {
-      "table_name": "github_code_owner",
-      "description": "Individuals or teams that are responsible for code in a repository.",
-      "count_of_columns": 7
-    },
-    {
       "table_name": "github_commit",
       "description": "GitHub Commits bundle project files for download by users.",
-      "count_of_columns": 26
+      "count_of_columns": 12
     },
     {
       "table_name": "github_container_package",
       "description": "",
-      "count_of_columns": 13
+      "count_of_columns": 12
     },
     {
       "table_name": "github_issue",
@@ -125,7 +120,7 @@
     {
       "table_name": "github_repository",
       "description": "GitHub Repositories contain all of your project's files and each file's revision history.",
-      "count_of_columns": 70
+      "count_of_columns": 27
     },
     {
       "table_name": "github_repository_collaborator",
