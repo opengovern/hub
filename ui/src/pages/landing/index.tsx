@@ -17,7 +17,7 @@ export default function Home() {
       <LogoCloud />
       {/* <GlobalDatabase /> */}
       <Features />
-      <UseCase />
+      {/* <UseCase /> */}
       <Steps />
 
       <CodeExample />
