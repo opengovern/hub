@@ -1,8 +1,8 @@
 {
   "total": {
     "integration": 15,
-    "count_of_named_tables": 897,
-    "count_of_named_columns": 12420
+    "count_of_named_tables": 892,
+    "count_of_named_columns": 12384
   },
   "summary": {
     "aws": {
@@ -38,8 +38,8 @@
       "count_of_named_columns": 401
     },
     "github": {
-      "count_of_named_tables": 35,
-      "count_of_named_columns": 548
+      "count_of_named_tables": 30,
+      "count_of_named_columns": 512
     },
     "google": {
       "count_of_named_tables": 16,
@@ -4070,11 +4070,6 @@
         "count_of_columns": 10
       },
       {
-        "table_name": "github_blob",
-        "description": "Gets a blob from a repository.",
-        "count_of_columns": 7
-      },
-      {
         "table_name": "github_branch",
         "description": "Branches in the given repository.",
         "count_of_columns": 5
@@ -4087,7 +4082,7 @@
       {
         "table_name": "github_commit",
         "description": "GitHub Commits bundle project files for download by users.",
-        "count_of_columns": 12
+        "count_of_columns": 11
       },
       {
         "table_name": "github_container_package",
@@ -4130,9 +4125,9 @@
         "count_of_columns": 26
       },
       {
-        "table_name": "github_organization_external_identity",
-        "description": "GitHub members for a given organization. GitHub Users are user accounts in GitHub.",
-        "count_of_columns": 7
+        "table_name": "github_organization_team",
+        "description": "GitHub Teams in a given organization. GitHub Teams are groups of organization members that reflect your company or group's structure with cascading access permissions and mentions.",
+        "count_of_columns": 29
       },
       {
         "table_name": "github_pull_request",
@@ -4145,16 +4140,6 @@
         "count_of_columns": 12
       },
       {
-        "table_name": "github_rate_limit",
-        "description": "Rate limit of github.",
-        "count_of_columns": 6
-      },
-      {
-        "table_name": "github_rate_limit_graphql",
-        "description": "Rate limit information for GitHub GraphQL API endpoint.",
-        "count_of_columns": 6
-      },
-      {
         "table_name": "github_release",
         "description": "GitHub Releases bundle project files for download by users.",
         "count_of_columns": 19
@@ -4162,7 +4147,7 @@
       {
         "table_name": "github_repository",
         "description": "GitHub Repositories contain all of your project's files and each file's revision history.",
-        "count_of_columns": 27
+        "count_of_columns": 28
       },
       {
         "table_name": "github_repository_collaborator",
@@ -4203,16 +4188,6 @@
         "table_name": "github_tag",
         "description": "Tags for commits in the given repository.",
         "count_of_columns": 7
-      },
-      {
-        "table_name": "github_team",
-        "description": "GitHub Teams in a given organization. GitHub Teams are groups of organization members that reflect your company or group's structure with cascading access permissions and mentions.",
-        "count_of_columns": 29
-      },
-      {
-        "table_name": "github_tree",
-        "description": "Lists directories and files in the given repository's git tree.",
-        "count_of_columns": 10
       },
       {
         "table_name": "github_workflow",

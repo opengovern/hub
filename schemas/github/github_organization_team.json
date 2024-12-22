@@ -1,5 +1,5 @@
 {
-  "table_name": "github_team",
+  "table_name": "github_organization_team",
   "table_description": "GitHub Teams in a given organization. GitHub Teams are groups of organization members that reflect your company or group's structure with cascading access permissions and mentions.",
   "columns": [
     {

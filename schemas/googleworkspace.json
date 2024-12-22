@@ -98,5 +98,5 @@
       "count_of_columns": 5
     }
   ],
-  "description": "Gain visibility into Repos, Deployments, PRs."
+  "description": "Manage and sync env variables and secrets."
 }

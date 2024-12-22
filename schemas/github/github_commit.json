@@ -3,29 +3,24 @@
   "table_description": "GitHub Commits bundle project files for download by users.",
   "columns": [
     {
-      "name": "id",
+      "name": "sha",
       "type": "text",
       "description": "Unique identifier (SHA) of the commit."
     },
     {
-      "name": "message",
+      "name": "node_id",
       "type": "text",
-      "description": "Commit message."
+      "description": ""
     },
     {
-      "name": "author",
+      "name": "commit_detail",
       "type": "json",
-      "description": "Name of the author of the commit."
+      "description": "Details of the commit."
     },
     {
-      "name": "date",
+      "name": "url",
       "type": "text",
-      "description": "Date of the commit."
-    },
-    {
-      "name": "comment_count",
-      "type": "integer",
-      "description": "Number of comments on the commit."
+      "description": "URL of the commit."
     },
     {
       "name": "html_url",
@@ -33,34 +28,34 @@
       "description": "URL of the commit on the repository."
     },
     {
-      "name": "is_verified",
-      "type": "boolean",
-      "description": "Indicates if the commit is verified."
+      "name": "comments_url",
+      "type": "text",
+      "description": ""
     },
     {
-      "name": "changes",
+      "name": "author",
       "type": "json",
-      "description": "Details of the changes made in the commit."
+      "description": "Details of the author of the commit"
+    },
+    {
+      "name": "commiter",
+      "type": "json",
+      "description": "Details of the commiter of the commit"
+    },
+    {
+      "name": "parents",
+      "type": "json",
+      "description": "Parent commits of the commit"
+    },
+    {
+      "name": "stats",
+      "type": "json",
+      "description": "Stats of the commit"
     },
     {
       "name": "files",
       "type": "json",
       "description": "List of files changed in the commit."
-    },
-    {
-      "name": "pull_requests",
-      "type": "json",
-      "description": "List of associated pull request IDs."
-    },
-    {
-      "name": "target",
-      "type": "json",
-      "description": "Target details of the commit (e.g., branch, organization, repository)."
-    },
-    {
-      "name": "additional_details",
-      "type": "json",
-      "description": "Additional details about the commit."
     }
   ]
 }

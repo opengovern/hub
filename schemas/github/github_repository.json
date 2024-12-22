@@ -113,6 +113,11 @@
       "description": "Source repository details if the repository is forked."
     },
     {
+      "name": "primary_language",
+      "type": "text",
+      "description": "Primary language used in the repository."
+    },
+    {
       "name": "languages",
       "type": "json",
       "description": "Languages used in the repository along with their usage statistics."
