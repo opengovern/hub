@@ -8,6 +8,7 @@ import { GlobalDatabase } from "../../components/ui/GlobalDatabase"
 import Hero from "../../components/ui/Hero"
 import LogoCloud from "../../components/ui/LogoCloud"
 import Steps from "../../components/ui/Steps"
+import UseCase from "../../components/ui/UseCase"
 
 export default function Home() {
   return (
@@ -16,7 +17,7 @@ export default function Home() {
       <LogoCloud />
       {/* <GlobalDatabase /> */}
       <Features />
-
+      <UseCase />
       <Steps />
 
       <CodeExample />

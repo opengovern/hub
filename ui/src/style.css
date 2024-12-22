@@ -1019,6 +1019,11 @@ select {
   margin-bottom: 0.25rem;
 }
 
+.my-12 {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
 .my-20 {
   margin-top: 5rem;
   margin-bottom: 5rem;
@@ -1107,6 +1112,10 @@ select {
 
 .mb-2 {
   margin-bottom: 0.5rem;
+}
+
+.mb-24 {
+  margin-bottom: 6rem;
 }
 
 .mb-28 {
@@ -1656,6 +1665,14 @@ select {
   width: calc(100% - 4rem);
 }
 
+.w-\[calc\(33\%-calc\(2rem\)\)\] {
+  width: calc(33% - calc(2rem));
+}
+
+.w-\[calc\(33\%-calc\(2rem\/3\)\)\] {
+  width: calc(33% - calc(2rem / 3));
+}
+
 .w-fit {
   width: fit-content;
 }
@@ -2112,6 +2129,10 @@ select {
   gap: 2.5rem;
 }
 
+.gap-12 {
+  gap: 3rem;
+}
+
 .gap-14 {
   gap: 3.5rem;
 }
@@ -2134,10 +2155,6 @@ select {
 
 .gap-8 {
   gap: 2rem;
-}
-
-.gap-12 {
-  gap: 3rem;
 }
 
 .gap-x-1 {
@@ -2627,6 +2644,10 @@ select {
   background-color: rgb(47 47 47 / var(--tw-bg-opacity, 1));
 }
 
+.bg-\[\#5c5c5cd5\] {
+  background-color: #5c5c5cd5;
+}
+
 .bg-\[\#E8EFFA\] {
   --tw-bg-opacity: 1;
   background-color: rgb(232 239 250 / var(--tw-bg-opacity, 1));
@@ -2742,6 +2763,11 @@ select {
 
 .bg-indigo-50\/50 {
   background-color: rgb(238 242 255 / 0.5);
+}
+
+.bg-indigo-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(99 102 241 / var(--tw-bg-opacity, 1));
 }
 
 .bg-indigo-600 {
@@ -3376,6 +3402,14 @@ select {
 
 .pt-\[3rem\] {
   padding-top: 3rem;
+}
+
+.pt-4 {
+  padding-top: 1rem;
+}
+
+.pt-1 {
+  padding-top: 0.25rem;
 }
 
 .text-left {
@@ -4074,11 +4108,6 @@ select {
   --tw-ring-color: transparent;
 }
 
-.ring-tremor-background-emphasis {
-  --tw-ring-opacity: 1;
-  --tw-ring-color: rgb(55 65 81 / var(--tw-ring-opacity, 1));
-}
-
 .ring-tremor-brand-inverted {
   --tw-ring-opacity: 1;
   --tw-ring-color: rgb(255 255 255 / var(--tw-ring-opacity, 1));
@@ -4582,6 +4611,11 @@ main{
 .hover\:bg-gray-50:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(249 250 251 / var(--tw-bg-opacity, 1));
+}
+
+.hover\:bg-indigo-200:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(199 210 254 / var(--tw-bg-opacity, 1));
 }
 
 .hover\:bg-indigo-50\/30:hover {
@@ -5461,6 +5495,11 @@ main{
 
 .dark\:border-white\/15:is(.dark *) {
   border-color: rgb(255 255 255 / 0.15);
+}
+
+.dark\:bg-\[\#3f4344\]:is(.dark *) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(63 67 68 / var(--tw-bg-opacity, 1));
 }
 
 .dark\:bg-black\/70:is(.dark *) {
@@ -6719,9 +6758,9 @@ main{
     padding-right: 0.5rem;
   }
 
-  .sm\:px-60 {
-    padding-left: 15rem;
-    padding-right: 15rem;
+  .sm\:px-36 {
+    padding-left: 9rem;
+    padding-right: 9rem;
   }
 
   .sm\:px-7 {

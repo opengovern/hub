@@ -21,35 +21,37 @@ export default function Features() {
   return (
     <section
       aria-labelledby="features-title"
-      className="custom-container mt-24 w-full max-w-6xl px-3 sm:px-60 py-12 mx-auto border dark:border-white ring-1 bg-white  ring-tremor-background-emphasis  rounded-xl  flex flex-col justify-start items-start"
+      className=" custom-container my-12"
     >
       {/* <Badge>Security at Scale</Badge> */}
-      <h2
-        id="features-title"
-        className=" inline-block text-black text-start w-full bg-gradient-to-br from-gray-900 to-gray-800 bg-clip-text py-2 text-4xl font-bold tracking-tighter  sm:text-4xl md:text-4xl "
-      >
-        Compliance is painful
-      </h2>
-      <p className="mt-6   text-lg max-w-3xl  text-left leading-7 text-black dark:text-black">
-        {/* <b>Compliance is painful.</b> <br />
+      <div className="custom-container-card mt-24 mb-24 max-w-4xl  px-3 sm:px-36 py-12 mx-auto border      rounded-xl  flex flex-col justify-start items-start">
+        <h2
+          id="features-title"
+          className=" inline-block text-black text-start w-full bg-gradient-to-br from-gray-900 to-gray-800 bg-clip-text py-2 text-4xl font-bold tracking-tighter  sm:text-4xl md:text-4xl "
+        >
+          Compliance is painful
+        </h2>
+        <p className="mt-6   text-lg max-w-3xl  text-left leading-7 text-black dark:text-black">
+          {/* <b>Compliance is painful.</b> <br />
         <br /> */}
-        Generic controls. Outdated processes. Confusing standards. Overpriced
-        tools that can’t handle modern stacks or real-world workflows.
-        <br />
-        <br />
-        <b>We want to change that.</b>
-        <br />
-        <br />
-        We believe compliance should be simple, transparent, and adaptable, so
-        it fits naturally into how you work.
-        <br />
-        <br />
-        That’s why we built a platform that evolves with your stack, letting you
-        focus on what really matters—building incredible products.
-        <br />
-        <br />
-        <b> Welcome to opencomply.</b>
-      </p>
+          Generic controls. Outdated processes. Confusing standards. Overpriced
+          tools that can’t handle modern stacks or real-world workflows.
+          <br />
+          <br />
+          <b>We want to change that.</b>
+          <br />
+          <br />
+          We believe compliance should be simple, transparent, and adaptable, so
+          it fits naturally into how you work.
+          <br />
+          <br />
+          That’s why we built a platform that evolves with your stack, letting
+          you focus on what really matters—building incredible products.
+          <br />
+          <br />
+          <b> Welcome to opencomply.</b>
+        </p>
+      </div>
       {/* <div className="mt-4 w-full text-center">
         <Button className="mt-4 ">
           <a href="https://opencomply.io/oss" target="__blank">

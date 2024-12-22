@@ -14,7 +14,7 @@ interface CardProps {
   logo1: string;
   tag?: string;
   onClick?: () => void;
-  option?: string
+  description?: string
 }
 
 const UseCaseCard: FunctionComponent<CardProps> = ({
@@ -23,7 +23,7 @@ const UseCaseCard: FunctionComponent<CardProps> = ({
   logo1,
   tag,
   onClick,
-  option
+  description,
 }) => {
   const truncate = (text: string | undefined, number: number) => {
     if (text) {
@@ -33,17 +33,23 @@ const UseCaseCard: FunctionComponent<CardProps> = ({
 
   return (
     <>
-      <div onClick={()=>{
-        onClick?.()
-      }} className="card cursor-pointer rounded-lg border shadow-2xl dark:border-none dark:bg-white h-full flex flex-col justify-between  w-full gap-4 ">
-        <div className="flex flex-row justify-between rounded-xl  items-center px-4 py-2">
+      <div
+        onClick={() => {
+          onClick?.();
+        }}
+        className="card cursor-pointer rounded-lg border shadow-2xl dark:border-none dark:bg-white h-full flex flex-col justify-between  w-full gap-4 "
+      >
+        <div className="flex flex-row justify-between rounded-xl  items-center px-4 pt-6 pb-0">
           <div className="flex flex-row gap-2">
-            <div className=" bg-gray-300 dark:bg-slate-400 rounded p-2">
+            {/* <div className=" bg-gray-300 dark:bg-slate-400 rounded p-2">
               <img src={logo} className=" h-5 w-5" />
             </div>
             <div className="bg-gray-300 dark:bg-slate-400 rounded p-2">
               <img src={logo1} className=" h-5 w-5" />
-            </div>
+            </div> */}
+            <h3 className=" font-semibold text-black dark:text-black">
+              {title}
+            </h3>
           </div>
           <div>
             {/* <span className="rounded-3xl text-black dark:text-white bg-gray-300 dark:bg-slate-400 px-3 py-1 text-center">
@@ -51,8 +57,8 @@ const UseCaseCard: FunctionComponent<CardProps> = ({
             </span> */}
           </div>
         </div>
-        <div className=" text-start text-black text-wrap px-4 py-2 ">
-          {title}
+        <div className=" text-start text-black text-wrap px-4 pt-1 pb-2 ">
+          {description}
         </div>
 
         <div className="flex flex-row justify-center bg-gray-600 dark:bg-blue-900 rounded-b-lg px-4 py-2 items-center">
