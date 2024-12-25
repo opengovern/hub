@@ -14,7 +14,7 @@
     },
     {
       "name": "created_at",
-      "type": "timestamp with time zone",
+      "type": "integer",
       "description": "Timestamp of when the file was created."
     },
     {

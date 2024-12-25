@@ -1,8 +1,8 @@
 {
   "total": {
     "integration": 15,
-    "count_of_named_tables": 892,
-    "count_of_named_columns": 12384
+    "count_of_named_tables": 894,
+    "count_of_named_columns": 12410
   },
   "summary": {
     "aws": {
@@ -39,7 +39,7 @@
     },
     "github": {
       "count_of_named_tables": 30,
-      "count_of_named_columns": 512
+      "count_of_named_columns": 513
     },
     "google": {
       "count_of_named_tables": 16,
@@ -50,8 +50,8 @@
       "count_of_named_columns": 246
     },
     "linode": {
-      "count_of_named_tables": 14,
-      "count_of_named_columns": 161
+      "count_of_named_tables": 16,
+      "count_of_named_columns": 186
     },
     "oci": {
       "count_of_named_tables": 1,
@@ -4067,7 +4067,7 @@
       {
         "table_name": "github_artifact_dockerfile",
         "description": "",
-        "count_of_columns": 10
+        "count_of_columns": 11
       },
       {
         "table_name": "github_branch",
@@ -4378,7 +4378,7 @@
       {
         "table_name": "linode_account",
         "description": "Account information.",
-        "count_of_columns": 16
+        "count_of_columns": 5
       },
       {
         "table_name": "linode_database",
@@ -4391,6 +4391,11 @@
         "count_of_columns": 14
       },
       {
+        "table_name": "linode_event",
+        "description": "",
+        "count_of_columns": 14
+      },
+      {
         "table_name": "linode_firewall",
         "description": "Firewalls in the Linode account.",
         "count_of_columns": 7
@@ -4398,12 +4403,12 @@
       {
         "table_name": "linode_image",
         "description": "Images in the Linode account.",
-        "count_of_columns": 11
+        "count_of_columns": 18
       },
       {
         "table_name": "linode_instance",
         "description": "Instances in the Linode account.",
-        "count_of_columns": 17
+        "count_of_columns": 25
       },
       {
         "table_name": "linode_ip_address",
@@ -4424,6 +4429,11 @@
         "table_name": "linode_node_balancer",
         "description": "NodeBalancers that are assigned to this Linode and readable by the requesting User.",
         "count_of_columns": 11
+      },
+      {
+        "table_name": "linode_object_storage",
+        "description": "Instances in the Linode account.",
+        "count_of_columns": 7
       },
       {
         "table_name": "linode_objectstorage_bucket",

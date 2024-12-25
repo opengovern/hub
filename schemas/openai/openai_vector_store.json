@@ -19,7 +19,7 @@
     },
     {
       "name": "created_at",
-      "type": "timestamp with time zone",
+      "type": "integer",
       "description": ""
     },
     {
@@ -44,12 +44,12 @@
     },
     {
       "name": "expires_at",
-      "type": "text",
+      "type": "integer",
       "description": ""
     },
     {
       "name": "last_active_at",
-      "type": "text",
+      "type": "integer",
       "description": ""
     },
     {

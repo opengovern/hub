@@ -9,12 +9,12 @@
     },
     {
       "name": "created",
-      "type": "timestamp with time zone",
+      "type": "text",
       "description": "The date and time this firewall was created."
     },
     {
       "name": "updated",
-      "type": "timestamp with time zone",
+      "type": "text",
       "description": "The date and time this firewall was updated."
     },
     {

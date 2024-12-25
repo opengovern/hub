@@ -19,12 +19,12 @@
     },
     {
       "name": "created",
-      "type": "timestamp with time zone",
+      "type": "text",
       "description": "When this Instance was created."
     },
     {
       "name": "updated",
-      "type": "timestamp with time zone",
+      "type": "text",
       "description": "When this Instance was created."
     },
     {

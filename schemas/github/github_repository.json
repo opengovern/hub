@@ -3,7 +3,7 @@
   "table_description": "GitHub Repositories contain all of your project's files and each file's revision history.",
   "columns": [
     {
-      "name": "id",
+      "name": "GitHubRepoID",
       "type": "integer",
       "description": "Unique identifier of the GitHub repository."
     },

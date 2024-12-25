@@ -24,7 +24,7 @@
     },
     {
       "name": "created_at",
-      "type": "timestamp with time zone",
+      "type": "text",
       "description": "The timestamp when the project was created."
     }
   ]

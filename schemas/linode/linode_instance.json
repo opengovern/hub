@@ -24,7 +24,7 @@
     },
     {
       "name": "created",
-      "type": "timestamp with time zone",
+      "type": "text",
       "description": "When this Instance was created."
     },
     {
@@ -49,7 +49,7 @@
     },
     {
       "name": "ipv6",
-      "type": "cidr",
+      "type": "text",
       "description": "This Linode’s IPv6 SLAAC address."
     },
     {
@@ -79,13 +79,53 @@
     },
     {
       "name": "updated",
-      "type": "timestamp with time zone",
+      "type": "text",
       "description": "When this Instance was last updated."
     },
     {
       "name": "watchdog_enabled",
       "type": "boolean",
       "description": "The watchdog, named Lassie, is a Shutdown Watchdog that monitors your Linode and will reboot it if it powers off unexpectedly."
+    },
+    {
+      "name": "group",
+      "type": "text",
+      "description": ""
+    },
+    {
+      "name": "type",
+      "type": "text",
+      "description": ""
+    },
+    {
+      "name": "has_user_data",
+      "type": "boolean",
+      "description": ""
+    },
+    {
+      "name": "host_uuid",
+      "type": "text",
+      "description": ""
+    },
+    {
+      "name": "placement_group",
+      "type": "json",
+      "description": ""
+    },
+    {
+      "name": "disk_encryption",
+      "type": "text",
+      "description": ""
+    },
+    {
+      "name": "lke_cluster_id",
+      "type": "integer",
+      "description": ""
+    },
+    {
+      "name": "capabilities",
+      "type": "json",
+      "description": ""
     }
   ]
 }

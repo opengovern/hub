@@ -14,7 +14,7 @@
     },
     {
       "name": "created",
-      "type": "timestamp with time zone",
+      "type": "text",
       "description": "When this Kubernetes cluster was created."
     },
     {
@@ -38,13 +38,13 @@
       "description": "Tags applied to the Kubernetes cluster as a map."
     },
     {
-      "name": "tags_src",
+      "name": "control_plane",
       "type": "json",
-      "description": "List of Tags applied to the Kubernetes cluster."
+      "description": ""
     },
     {
       "name": "updated",
-      "type": "timestamp with time zone",
+      "type": "text",
       "description": "When this Kubernetes cluster was updated."
     }
   ]

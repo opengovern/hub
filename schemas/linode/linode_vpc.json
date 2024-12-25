@@ -29,12 +29,12 @@
     },
     {
       "name": "created",
-      "type": "timestamp with time zone",
+      "type": "text",
       "description": ""
     },
     {
       "name": "updated",
-      "type": "timestamp with time zone",
+      "type": "text",
       "description": ""
     }
   ]

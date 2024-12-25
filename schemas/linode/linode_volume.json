@@ -19,7 +19,7 @@
     },
     {
       "name": "created",
-      "type": "timestamp with time zone",
+      "type": "text",
       "description": "When this Volume was created."
     },
     {
@@ -48,13 +48,13 @@
       "description": "Tags applied to this volume as a map."
     },
     {
-      "name": "tags_src",
-      "type": "json",
-      "description": "List of Tags applied to this volume."
+      "name": "encryption",
+      "type": "text",
+      "description": ""
     },
     {
       "name": "updated",
-      "type": "timestamp with time zone",
+      "type": "text",
       "description": "When this Volume was last updated."
     }
   ]

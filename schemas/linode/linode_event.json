@@ -1,6 +1,6 @@
 {
-  "table_name": "linode_database",
-  "table_description": "Instances in the Linode account.",
+  "table_name": "linode_event",
+  "table_description": "",
   "columns": [
     {
       "name": "id",
@@ -13,63 +13,48 @@
       "description": ""
     },
     {
-      "name": "label",
-      "type": "text",
-      "description": "The Instance’s label is for display purposes only."
-    },
-    {
-      "name": "hosts",
-      "type": "json",
-      "description": ""
-    },
-    {
-      "name": "region",
+      "name": "action",
       "type": "text",
       "description": ""
     },
     {
-      "name": "type",
-      "type": "text",
-      "description": ""
-    },
-    {
-      "name": "engine",
-      "type": "text",
-      "description": ""
-    },
-    {
-      "name": "version",
-      "type": "text",
-      "description": ""
-    },
-    {
-      "name": "cluster_size",
+      "name": "percent_complete",
       "type": "integer",
       "description": ""
     },
     {
-      "name": "replication_type",
+      "name": "rate",
       "type": "text",
       "description": ""
     },
     {
-      "name": "ssl_connection",
+      "name": "read",
       "type": "boolean",
       "description": ""
     },
     {
-      "name": "encrypted",
+      "name": "seen",
       "type": "boolean",
       "description": ""
     },
     {
-      "name": "allow_list",
+      "name": "time_remaining",
+      "type": "integer",
+      "description": ""
+    },
+    {
+      "name": "username",
+      "type": "text",
+      "description": ""
+    },
+    {
+      "name": "entity",
       "type": "json",
       "description": ""
     },
     {
-      "name": "instance_uri",
-      "type": "text",
+      "name": "secondary_entity",
+      "type": "json",
       "description": ""
     },
     {
@@ -78,8 +63,13 @@
       "description": ""
     },
     {
-      "name": "updated",
+      "name": "message",
       "type": "text",
+      "description": ""
+    },
+    {
+      "name": "duration",
+      "type": "double precision",
       "description": ""
     }
   ]

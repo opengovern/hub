@@ -19,8 +19,8 @@
     },
     {
       "name": "last_updated_at",
-      "type": "timestamp with time zone",
-      "description": "Timestamp when the Dockerfile was last updated."
+      "type": "text",
+      "description": "Last time the dockerfile updated"
     },
     {
       "name": "git_url",
@@ -40,17 +40,22 @@
     {
       "name": "dockerfile_content",
       "type": "text",
-      "description": "Content of the Dockerfile."
+      "description": "Dockerfile content."
     },
     {
       "name": "dockerfile_content_base64",
       "type": "text",
-      "description": "Base64-encoded content of the Dockerfile."
+      "description": "Dockerfile content base64."
     },
     {
       "name": "repository",
       "type": "json",
       "description": "Repository metadata associated with the Dockerfile."
+    },
+    {
+      "name": "images",
+      "type": "json",
+      "description": ""
     }
   ]
 }

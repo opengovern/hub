@@ -23,7 +23,7 @@
       "description": "A description for this Domain. This is for display purposes only."
     },
     {
-      "name": "domain_type",
+      "name": "type",
       "type": "text",
       "description": "If this Domain represents the authoritative source of information for the domain it describes, or if it is a read-only copy of a master (also called a slave)."
     },
@@ -58,14 +58,14 @@
       "description": "Used to control whether this Domain is currently being rendered: disabled, active, edit_mode, has_errors."
     },
     {
+      "name": "group",
+      "type": "text",
+      "description": ""
+    },
+    {
       "name": "tags",
       "type": "json",
       "description": "Tags applied to this domain as a map."
-    },
-    {
-      "name": "tags_src",
-      "type": "json",
-      "description": "List of Tags applied to this domain."
     },
     {
       "name": "ttl_sec",

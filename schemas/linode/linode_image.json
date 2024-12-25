@@ -14,13 +14,18 @@
     },
     {
       "name": "created",
-      "type": "timestamp with time zone",
+      "type": "text",
       "description": "When this Image was created."
     },
     {
       "name": "created_by",
       "type": "text",
       "description": "The name of the User who created this Image, or 'linode' for official Images."
+    },
+    {
+      "name": "capabilities",
+      "type": "json",
+      "description": ""
     },
     {
       "name": "deprecated",
@@ -33,14 +38,19 @@
       "description": "A detailed description of this Image."
     },
     {
-      "name": "expiry",
-      "type": "timestamp with time zone",
-      "description": "Only Images created automatically (from a deleted Linode; type=automatic) will expire."
+      "name": "type",
+      "type": "text",
+      "description": ""
     },
     {
-      "name": "image_type",
+      "name": "status",
       "type": "text",
-      "description": "How the Image was created: manual, automatic."
+      "description": ""
+    },
+    {
+      "name": "expiry",
+      "type": "text",
+      "description": "Only Images created automatically (from a deleted Linode; type=automatic) will expire."
     },
     {
       "name": "is_public",
@@ -56,6 +66,31 @@
       "name": "vendor",
       "type": "text",
       "description": "The upstream distribution vendor. None for private Images."
+    },
+    {
+      "name": "total_size",
+      "type": "integer",
+      "description": ""
+    },
+    {
+      "name": "regions",
+      "type": "json",
+      "description": ""
+    },
+    {
+      "name": "tags",
+      "type": "json",
+      "description": ""
+    },
+    {
+      "name": "updated",
+      "type": "text",
+      "description": ""
+    },
+    {
+      "name": "eol",
+      "type": "text",
+      "description": ""
     }
   ]
 }

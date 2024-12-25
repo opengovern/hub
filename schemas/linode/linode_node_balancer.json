@@ -9,12 +9,12 @@
     },
     {
       "name": "created",
-      "type": "timestamp with time zone",
+      "type": "text",
       "description": "When the NodeBalancer was created."
     },
     {
       "name": "updated",
-      "type": "timestamp with time zone",
+      "type": "text",
       "description": "When the NodeBalancer was updated."
     },
     {
@@ -34,12 +34,12 @@
     },
     {
       "name": "ipv4",
-      "type": "inet",
+      "type": "text",
       "description": "The NodeBalancer's public IPv4 address."
     },
     {
       "name": "ipv6",
-      "type": "inet",
+      "type": "text",
       "description": "The NodeBalancer's public IPv6 address."
     },
     {

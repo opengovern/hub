@@ -34,17 +34,17 @@
     },
     {
       "name": "initial_fetch_at",
-      "type": "timestamp with time zone",
+      "type": "text",
       "description": "Timestamp of the initial fetch."
     },
     {
       "name": "last_fetch_at",
-      "type": "timestamp with time zone",
+      "type": "text",
       "description": "Timestamp of the last fetch."
     },
     {
       "name": "created_at",
-      "type": "timestamp with time zone",
+      "type": "text",
       "description": "When the configuration was created."
     },
     {

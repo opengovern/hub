@@ -1,6 +1,6 @@
 {
   "count_of_named_tables": 30,
-  "count_of_named_columns": 512,
+  "count_of_named_columns": 513,
   "tables": [
     {
       "table_name": "github_actions_artifact",
@@ -25,7 +25,7 @@
     {
       "table_name": "github_artifact_dockerfile",
       "description": "",
-      "count_of_columns": 10
+      "count_of_columns": 11
     },
     {
       "table_name": "github_branch",

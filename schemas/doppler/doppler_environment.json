@@ -19,12 +19,12 @@
     },
     {
       "name": "initial_fetch_at",
-      "type": "timestamp with time zone",
+      "type": "text",
       "description": "The timestamp of the initial fetch for the environment."
     },
     {
       "name": "created_at",
-      "type": "timestamp with time zone",
+      "type": "text",
       "description": "The timestamp when the environment was created."
     },
     {

@@ -98,5 +98,5 @@
       "count_of_columns": 5
     }
   ],
-  "description": "Manage and sync env variables and secrets."
+  "description": "Manage DigitalOcean resources and droplets."
 }

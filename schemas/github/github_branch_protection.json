@@ -19,7 +19,7 @@
     },
     {
       "name": "matching_branches",
-      "type": "integer",
+      "type": "json",
       "description": "Count of branches which match this rule."
     },
     {
