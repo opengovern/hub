@@ -1701,6 +1701,10 @@ select {
   width: 100vw;
 }
 
+.w-3\/5 {
+  width: 60%;
+}
+
 .min-w-32 {
   min-width: 8rem;
 }
@@ -3453,6 +3457,10 @@ select {
 
 .text-start {
   text-align: start;
+}
+
+.text-end {
+  text-align: end;
 }
 
 .align-top {

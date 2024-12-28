@@ -20,8 +20,8 @@ export default function Preview() {
       <Features />
       {/* <UseCase /> */}
       <UseCaseNew />
-      <UseCaseNew />
-      <UseCaseNew />
+      {/* <UseCaseNew /> */}
+      {/* <UseCaseNew /> */}
       <Steps />
 
       <CodeExample />
