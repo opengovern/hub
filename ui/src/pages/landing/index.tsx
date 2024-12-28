@@ -19,7 +19,7 @@ export default function Home() {
       {/* <GlobalDatabase /> */}
       <Features />
       {/* <UseCase /> */}
-      <UseCaseNew />
+      {/* <UseCaseNew /> */}
       <Steps />
 
       <CodeExample />
