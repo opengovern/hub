@@ -13,16 +13,6 @@
       "description": "Digest of the package."
     },
     {
-      "name": "package_uri",
-      "type": "text",
-      "description": "URI of the package."
-    },
-    {
-      "name": "package_html_url",
-      "type": "text",
-      "description": "HTML URL of the package."
-    },
-    {
       "name": "created_at",
       "type": "text",
       "description": "Timestamp when the package was created."
@@ -33,7 +23,7 @@
       "description": "Timestamp when the package was last updated."
     },
     {
-      "name": "html_url",
+      "name": "package_url",
       "type": "text",
       "description": "HTML URL for the package."
     },

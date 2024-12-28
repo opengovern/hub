@@ -1,6 +1,6 @@
 {
   "count_of_named_tables": 30,
-  "count_of_named_columns": 513,
+  "count_of_named_columns": 511,
   "tables": [
     {
       "table_name": "github_actions_artifact",
@@ -45,7 +45,7 @@
     {
       "table_name": "github_container_package",
       "description": "",
-      "count_of_columns": 12
+      "count_of_columns": 10
     },
     {
       "table_name": "github_issue",

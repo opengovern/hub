@@ -2,7 +2,7 @@
   "total": {
     "integration": 15,
     "count_of_named_tables": 894,
-    "count_of_named_columns": 12410
+    "count_of_named_columns": 12408
   },
   "summary": {
     "aws": {
@@ -39,7 +39,7 @@
     },
     "github": {
       "count_of_named_tables": 30,
-      "count_of_named_columns": 513
+      "count_of_named_columns": 511
     },
     "google": {
       "count_of_named_tables": 16,
@@ -4087,7 +4087,7 @@
       {
         "table_name": "github_container_package",
         "description": "",
-        "count_of_columns": 12
+        "count_of_columns": 10
       },
       {
         "table_name": "github_issue",
