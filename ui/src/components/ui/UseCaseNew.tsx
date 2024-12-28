@@ -26,6 +26,7 @@ import { useState } from "react";
 // @ts-ignore
 import video from "../../videos/2024-10-08-How_to_Customize_Controls.mp4";
 import CopyToClipboard from "../../components/CopyToClipboard";
+import { RiGroup2Line } from "@remixicon/react";
 
 export default function UseCaseNew() {
   const [discoverOption, setDiscoverOption] = useState(0);
@@ -33,23 +34,23 @@ export default function UseCaseNew() {
   return (
     <section
       aria-labelledby="code-example-title"
-      className="mx-auto mt-28 w-full max-w-6xl  flex flex-row gap-10 justify-between"
+      className="mx-auto mt-28 w-full max-w-6xl  flex flex-row gap-4 justify-between"
     >
-      <div className="w-100 max-w-xl relative ">
-        <div className=" sticky top-11">
+      <div className="w-100 max-w-md relative ">
+        <div className=" sticky top-20">
           <div className="flex w-100 items-center justify-between space-x-2 mb-1">
             <div className="font-bold text-slate-900  dark:text-white text-2xl">
-              Discover
+              Detect Threats
             </div>
           </div>
-          
+
           <div className="text-slate-500 dark:text-white mt-4">
             <div className="flex flex-col gap-5">
               <div className="text-slate-500 dark:text-white ">
                 {" "}
-                Gain visibility into over 800+ Types of Assets across vendors,
-                environments, tools, platforms, projects, and regions.
-                Everything from Code to Cloud
+                Automate config checks, misconfigurations, artifact
+                vulnerabilities, identifies policy violations, and alerts
+                developers to potential misconfigurations in real time.
               </div>
               <div className="flex flex-row gap-2 flex-wrap">
                 <div
@@ -89,27 +90,22 @@ export default function UseCaseNew() {
           </div>
         </div>
       </div>
-      <div className="w-1/2 flex flex-col gap-10">
-        <div className="rounded-xl bg-white ring-1 ring-slate-900/5 dark:bg-slate-950 dark:ring-white/15">
-          <video
-            id="hero-video"
-            className="rounded-xl w-full shadow-2xl dark:shadow-indigo-600/10"
-            autoPlay
-            loop
-            muted
-            playsInline
-            preload="auto"
-            // @ts-ignore
-            src={"https://content.opencomply.io/RunAudit.mp4"}
-          >
-            <source
-              src={
-                // @ts-ignore
-                "https://content.opencomply.io/RunAudit.mp4"
-              }
-              type="video/mp4"
-            />
-          </video>
+      <div className="w-full  flex flex-col gap-10 text-black">
+        <div className="rounded-xl dark:bg-[#e4e3e3] p-8 flex flex-col gap-10 ">
+          <div className="font-bold text-black text-2xl w-full text-center">
+            {" "}
+            Container Vulnerabilities
+          </div>
+          <div>
+            Utilize Open Source tools like Grype and Syft with Opencomply to
+            detect Container Vulnerabilities in near real time, after every
+            deployment.
+          </div>
+          <div className="flex flex-row justify-between gap-4 ">
+            <div className="flex flex-col gap-2 bg-[#3f4344] p-4 justify-center items-center rounded-xl"> <div><RiGroup2Line color="white" /></div> <div className="font-bold text-3xl text-white ">1.5X</div> <div className="text-white text-sm"> soem texts goes here</div></div>
+            <div className="flex flex-col gap-2 bg-[#3f4344] p-4 justify-center items-center rounded-xl"> <div><RiGroup2Line color="white" /></div> <div className="font-bold text-3xl text-white ">1.5X</div> <div className="text-white text-sm"> soem texts goes here</div></div>
+            <div className="flex flex-col gap-2 bg-[#3f4344] p-4 justify-center items-center rounded-xl"> <div><RiGroup2Line color="white" /></div> <div className="font-bold text-3xl text-white ">1.5X</div> <div className="text-white text-sm"> soem texts goes here</div></div>
+          </div>
         </div>
         <div className="rounded-xl bg-white ring-1 ring-slate-900/5 dark:bg-slate-950 dark:ring-white/15">
           <video

@@ -22,11 +22,11 @@ const authRoutes = [
     element: <Home />,
     noAuth: true,
   },
-  // {
-  //   path: "/preview",
-  //   element: <Preview />,
-  //   noAuth: true,
-  // },
+  {
+    path: "/preview",
+    element: <Preview />,
+    noAuth: true,
+  },
   {
     key: "*",
     path: "*",
