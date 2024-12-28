@@ -22,7 +22,7 @@ import HeroUseCase from "../../components/ui/HeroUseCase";
 import LogoCloud from "../../components/ui/LogoCloud";
 import Steps from "../../components/ui/Steps";
 import UseCaseCard from "../../components/UseCaseCard";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 // @ts-ignore
 import video from "../../videos/2024-10-08-How_to_Customize_Controls.mp4";
 import CopyToClipboard from "../../components/CopyToClipboard";
@@ -30,7 +30,15 @@ import { RiGroup2Line } from "@remixicon/react";
 import { RenderObject } from "../Editor";
 
 export default function UseCaseNew() {
-  const [discoverOption, setDiscoverOption] = useState(0);
+  const [discoverOption, setDiscoverOption] = useState(-1);
+  const [open,setOpen] = useState(false);
+  const [activeStepIndex, setActiveStepIndex]= useState(1);
+  useEffect(() => {
+      if( discoverOption != -1){
+        // setOpen(true);
+      }
+    
+  }, [discoverOption]);
 
   return (
     <>
@@ -42,13 +50,11 @@ export default function UseCaseNew() {
           id="code-example-title"
           className="mt-2 inline-block bg-gradient-to-br from-gray-900 to-gray-800 bg-clip-text py-2 text-4xl font-bold tracking-tighter text-transparent sm:text-6xl md:text-6xl dark:from-gray-50 dark:to-gray-300"
         >
-          The Advantage
+          Full-Stack Compliance{" "}
         </h2>
         <p className="mt-6 max-w-2xl text-lg text-gray-600 dark:text-gray-400">
-          Govern your entire stack. See what matters. Secure every deployment
-          and change.
+          OpenComply makes security & compliance radically simple.
         </p>
-       
       </section>
       <section
         aria-labelledby="code-example-title"
@@ -57,7 +63,7 @@ export default function UseCaseNew() {
         <div className="w-100 max-w-md relative ">
           <div className=" sticky top-20">
             <div className="flex w-100 items-center justify-between space-x-2 mb-1">
-              <div className="font-bold text-slate-900  dark:text-white text-2xl">
+              <div className="font-bold text-slate-900  dark:text-white text-4xl">
                 Centralize Visibility
               </div>
             </div>
@@ -69,6 +75,9 @@ export default function UseCaseNew() {
                   Gain a single source of truth across platforms and
                   environments—saving time, reducing overhead, and enabling
                   teams to quickly spot and address risks before they escalate.
+                </div>
+                <div className="text-slate-500 dark:text-white font-semibold">
+                  USE CASES
                 </div>
                 <div className="flex flex-row gap-2 flex-wrap">
                   <div
@@ -110,7 +119,7 @@ export default function UseCaseNew() {
         </div>
         <div className="w-full  flex flex-col gap-10 text-black">
           <div className="rounded-xl dark:bg-[#e4e3e3] p-8 flex flex-col gap-10 ">
-            <div className="font-bold text-black text-2xl w-full text-center">
+            <div className="font-semibold text-black text-2xl w-full text-center">
               {" "}
               Container Vulnerabilities
             </div>
@@ -147,7 +156,7 @@ export default function UseCaseNew() {
             </div>
           </div>
           <div className="rounded-xl dark:bg-[#e4e3e3] p-8 flex flex-col gap-10 ">
-            <div className="font-bold text-black text-2xl w-full text-center">
+            <div className="font-semibold text-black text-2xl w-full text-center">
               {" "}
               Automate Threat Detection
             </div>
@@ -179,7 +188,7 @@ export default function UseCaseNew() {
             </div>
           </div>
           <div className="rounded-xl dark:bg-[#e4e3e3] p-8 flex flex-col gap-10 ">
-            <div className="font-bold text-black text-2xl w-full text-center">
+            <div className="font-semibold text-black text-2xl w-full text-center">
               {" "}
               Audit for Compliance
             </div>
@@ -205,7 +214,7 @@ export default function UseCaseNew() {
         <div className="w-100 max-w-md relative ">
           <div className=" sticky top-20">
             <div className="flex w-100 items-center justify-between space-x-2 mb-1">
-              <div className="font-bold text-slate-900  dark:text-white text-2xl">
+              <div className="font-bold text-slate-900  dark:text-white text-4xl">
                 Automate Threat Detection{" "}
               </div>
             </div>
@@ -219,6 +228,10 @@ export default function UseCaseNew() {
                   to focus on innovation rather than manual security
                   firefighting.
                 </div>
+                <div className="text-slate-500 dark:text-white font-semibold">
+                  USE CASES
+                </div>
+
                 <div className="flex flex-row gap-2 flex-wrap">
                   <div
                     className={`p-2 border dark:border-white rounded-3xl cursor-pointer hover:dark:bg-white hover:bg-blue-950 hover:text-white hover:dark:text-black  ${discoverOption == 0 && "text-bold dark:bg-white dark:text-black bg-blue-950 text-white "}  `}
@@ -259,7 +272,7 @@ export default function UseCaseNew() {
         </div>
         <div className="w-full  flex flex-col gap-10 text-black">
           <div className="rounded-xl dark:bg-[#e4e3e3] p-8 flex flex-col gap-10 ">
-            <div className="font-bold text-black text-2xl w-full text-center">
+            <div className="font-semibold text-black text-2xl w-full text-center">
               {" "}
               Container Vulnerabilities
             </div>
@@ -296,7 +309,7 @@ export default function UseCaseNew() {
             </div>
           </div>
           <div className="rounded-xl dark:bg-[#e4e3e3] p-8 flex flex-col gap-10 ">
-            <div className="font-bold text-black text-2xl w-full text-center">
+            <div className="font-semibold text-black text-2xl w-full text-center">
               {" "}
               Automate Threat Detection
             </div>
@@ -328,7 +341,7 @@ export default function UseCaseNew() {
             </div>
           </div>
           <div className="rounded-xl dark:bg-[#e4e3e3] p-8 flex flex-col gap-10 ">
-            <div className="font-bold text-black text-2xl w-full text-center">
+            <div className="font-semibold text-black text-2xl w-full text-center">
               {" "}
               Audit for Compliance
             </div>
@@ -354,7 +367,7 @@ export default function UseCaseNew() {
         <div className="w-100 max-w-md relative ">
           <div className=" sticky top-20">
             <div className="flex w-100 items-center justify-between space-x-2 mb-1">
-              <div className="font-bold text-slate-900  dark:text-white text-2xl">
+              <div className="font-bold text-slate-900  dark:text-white text-4xl">
                 Audit for Compliance
               </div>
             </div>
@@ -367,6 +380,10 @@ export default function UseCaseNew() {
                   across vendors, platforms, and regions. Continuously audit to
                   maintain compliance and strengthen your security posture.
                 </div>
+                <div className="text-slate-500 dark:text-white font-semibold">
+                  USE CASES
+                </div>
+
                 <div className="flex flex-row gap-2 flex-wrap">
                   <div
                     className={`p-2 border dark:border-white rounded-3xl cursor-pointer hover:dark:bg-white hover:bg-blue-950 hover:text-white hover:dark:text-black  ${discoverOption == 0 && "text-bold dark:bg-white dark:text-black bg-blue-950 text-white "}  `}
@@ -407,7 +424,7 @@ export default function UseCaseNew() {
         </div>
         <div className="w-full  flex flex-col gap-10 text-black">
           <div className="rounded-xl dark:bg-[#e4e3e3] p-8 flex flex-col gap-10 ">
-            <div className="font-bold text-black text-2xl w-full text-center">
+            <div className="font-semibold text-black text-2xl w-full text-center">
               {" "}
               Container Vulnerabilities
             </div>
@@ -444,7 +461,7 @@ export default function UseCaseNew() {
             </div>
           </div>
           <div className="rounded-xl dark:bg-[#e4e3e3] p-8 flex flex-col gap-10 ">
-            <div className="font-bold text-black text-2xl w-full text-center">
+            <div className="font-semibold text-black text-2xl w-full text-center">
               {" "}
               Automate Threat Detection
             </div>
@@ -476,7 +493,7 @@ export default function UseCaseNew() {
             </div>
           </div>
           <div className="rounded-xl dark:bg-[#e4e3e3] p-8 flex flex-col gap-10 ">
-            <div className="font-bold text-black text-2xl w-full text-center">
+            <div className="font-semibold text-black text-2xl w-full text-center">
               {" "}
               Audit for Compliance
             </div>
@@ -495,6 +512,167 @@ export default function UseCaseNew() {
           </div>
         </div>
       </section>
+      <Modal
+        visible={open}
+        onDismiss={() => {
+          setOpen(false);
+        }}
+        header="Setup"
+      >
+        <Wizard
+          i18nStrings={{
+            stepNumberLabel: (stepNumber) => `Step ${stepNumber}`,
+            collapsedStepsLabel: (stepNumber, stepsCount) =>
+              `Step ${stepNumber} of ${stepsCount}`,
+            skipToButtonLabel: (step, stepNumber) => `Skip to ${step.title}`,
+            navigationAriaLabel: "Steps",
+            cancelButton: "Cancel",
+            previousButton: "Previous",
+            nextButton: "Next",
+            submitButton: "Launch instance",
+            optional: "optional",
+          }}
+          onNavigate={({ detail }) =>
+            setActiveStepIndex(detail.requestedStepIndex)
+          }
+          activeStepIndex={activeStepIndex}
+          onCancel={() => {
+            setOpen(false);
+          }}
+          onSubmit={() => {
+            setOpen(false);
+          }}
+          steps={[
+            {
+              title: "Install",
+              description: "Deploy to Kubernetes in minutes.",
+              content: (
+                <div className="w-full">
+                  {/* code to copy */}
+                  <div className="flex flex-row gap-2 mt-2 w-full relative">
+                    <div className="p-5 border dark:border-white rounded-xl w-full">
+                      <code className=" text-[12px] text-black dark:text-white">
+                        <span className="text-[#8250df]">helm</span> repo add
+                        opencomply https://charts.opencomply.io
+                        <br />
+                        <span className="text-[#8250df]">helm</span> repo update
+                        <br />
+                        <span className="text-[#8250df]">helm</span> install -n
+                        opencomply opencomply opencomply/opencomply
+                        --create-namespace --timeout=10m
+                        <br />
+                        <span className="text-[#8250df]"> kubectl</span>{" "}
+                        port-forward -n opencomply svc/nginx-proxy 8080:80
+                      </code>
+                    </div>
+                    <div className=" absolute right-2 top-2  [grid-area:2/1] z-[2] justify-self-end backdrop-blur-md leading-none self-start  text-dark-tremor-brand-subtle  rounded-md    print:hidden">
+                      <CopyToClipboard
+                        code={`helm repo add opencomply https://charts.opencomply.io
+helm repo update 
+helm install -n opencomply opencomply
+opencomply/opencomply --create-namespace --timeout=10m
+kubectl port-forward -n opencomply svc/nginx-proxy 8080:80`}
+                      />{" "}
+                    </div>
+                  </div>
+                  <div className="flex text-sm flex-wrap flex-1 justify-start md:justify-center flex-row gap-2 mt-2 ">
+                    <Button
+                      ariaLabel="Report a bug (opens new tab)"
+                      href="https://example.com"
+                      iconAlign="right"
+                      iconName="external"
+                      target="_blank"
+                      variant="primary"
+                    >
+                      AWS
+                    </Button>
+                    <Button
+                      ariaLabel="Report a bug (opens new tab)"
+                      href="https://example.com"
+                      iconAlign="right"
+                      iconName="external"
+                      target="_blank"
+                      variant="primary"
+                    >
+                      Azure
+                    </Button>
+                    <Button
+                      ariaLabel="Report a bug (opens new tab)"
+                      href="https://example.com"
+                      iconAlign="right"
+                      iconName="external"
+                      target="_blank"
+                      variant="primary"
+                    >
+                      DigitalOcean
+                    </Button>
+                    <Button
+                      ariaLabel="Report a bug (opens new tab)"
+                      href="https://example.com"
+                      iconAlign="right"
+                      iconName="external"
+                      target="_blank"
+                      variant="primary"
+                    >
+                      GKE
+                    </Button>
+                    <Button
+                      ariaLabel="Report a bug (opens new tab)"
+                      href="https://example.com"
+                      iconAlign="right"
+                      iconName="external"
+                      target="_blank"
+                      variant="primary"
+                    >
+                      Linode
+                    </Button>
+                    {/* <Button
+                  ariaLabel="Report a bug (opens new tab)"
+                  href="https://example.com"
+                  iconAlign="right"
+                  iconName="external"
+                  target="_blank"
+                  variant="primary"
+                >
+                  Vultr
+                </Button> */}
+                  </div>
+                </div>
+              ),
+            },
+            {
+              title: "Connect Your Tools",
+              description:
+                "Connect your tool with a simple read-only read in Seconds, from Cloud Accounts to Code Repos",
+              content: (
+                <video
+                  className="rounded-xl w-full shadow-2xl dark:shadow-indigo-600/10"
+                  autoPlay
+                  loop
+                >
+                  <source src={video} type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+              ),
+              isOptional: true,
+            },
+            {
+              title: "Discover",
+              content: (
+                <div className="rounded-xl h-full bg-white ring-1 ring-slate-900/5 dark:bg-slate-950 dark:ring-white/15">
+                  <iframe
+                    height={"400"}
+                    width={"100%"}
+                    className="rounded-xl  w-full shadow-2xl dark:shadow-indigo-600/10"
+                    src={"https://www.youtube.com/embed/ZK-rNEhJIDs"}
+                  ></iframe>
+                </div>
+              ),
+              isOptional: true,
+            },
+          ]}
+        />
+      </Modal>
     </>
   );
 }
