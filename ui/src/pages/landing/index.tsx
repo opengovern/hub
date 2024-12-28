@@ -9,15 +9,17 @@ import Hero from "../../components/ui/Hero"
 import LogoCloud from "../../components/ui/LogoCloud"
 import Steps from "../../components/ui/Steps"
 import UseCase from "../../components/ui/UseCase"
+import UseCaseNew from "../../components/ui/UseCaseNew"
 
 export default function Home() {
   return (
-    <main className="flex flex-col overflow-hidden">
+    <main className="flex flex-col ">
       <Hero />
       <LogoCloud />
       {/* <GlobalDatabase /> */}
       <Features />
       {/* <UseCase /> */}
+      <UseCaseNew />
       <Steps />
 
       <CodeExample />
