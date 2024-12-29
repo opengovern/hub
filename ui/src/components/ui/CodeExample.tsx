@@ -69,55 +69,54 @@ const code2 = `async function fetchCustomerOrders() {
 
 const features = [
   {
-    name: "Open",
+    name: "Adopt Inside Your Workflows",
     description:
-      "Built as an open platform inspired by Steampipe, allowing customization and extension without restrictions.",
-    icon: RiOpenSourceLine,
+      "Integrate compliance into daily operations and share real-time insights for faster, aligned decisions.",
+    icon: RiGitBranchLine,
   },
-
   {
-    name: "Robust Integrations",
+    name: "Seamless Integrations",
     description:
-      "Connect DevOps, AI/ML, and SecOps tools for complete governance across your stack.",
+      "Connect DevOps, AI/ML, and SecOps tools for full-stack visibility.",
     icon: RiPlugLine,
   },
 
   {
-    name: "Unified Data",
+    name: "Unified Data Plane",
     description:
-      "Eliminate blind spots and inconsistencies with a centralized inventory data plane.",
+      "Eliminate silos with a single data plane for consistent, reliable insights.",
     icon: RiStackLine,
   },
   {
     name: "Vendor-Agnostic",
     description:
-      "Inventory and Audit for compliance across clouds, projects, environments, and tools.",
+      "Audit compliance across clouds, environments, and tools without lock-in.",
     icon: RiP2pLine,
   },
   {
-    name: "DRY",
+    name: "Policy-as-Code",
     description:
-      "Reuse controls and leverage variables and views to prevent policy duplication.",
+      "Manage policies in Git, no scripts required—streamline compliance and audits.",
     icon: RiCodeBlock,
   },
 
   {
-    name: "Workflow Friendly",
+    name: "Full Stack Governance",
     description:
-      "Embed compliance and audit into your development and operational workflows. ",
-    icon: RiGitBranchLine,
-  },
-  {
-    name: "Built for Teams",
-    description:
-      "Empower collaboration on compliance tasks with shared insights and real-time teamwork.",
+      "Cover your entire stack and secure every change—no blind spots, no guesswork.",
     icon: RiGroupLine,
   },
   {
-    name: "Enterprise Ready",
+    name: "Enterprise Security",
     description:
-      "Secure with SSO, SSL, and API integrations; no disruptive changes or agent deployments.",
+      "Scale confidently with SSO, SSL, and robust APIs—no agents or disruptions needed.",
     icon: RiLockStarLine,
+  },
+  {
+    name: "Open Platform",
+    description:
+      "Customize and extend freely with a flexible, open architecture",
+    icon: RiOpenSourceLine,
   },
 ];
 
