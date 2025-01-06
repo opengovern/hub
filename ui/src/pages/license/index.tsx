@@ -30,22 +30,22 @@ export default function License() {
   }, []);
   return (
     <main
-      className="mx-auto pt-36 max-w-3xl animate-slide-up-fade px-3"
+      className="mx-auto pt-36 max-w-6xl animate-slide-up-fade px-3"
       style={{
         animationDuration: "600ms",
         animationFillMode: "backwards",
       }}
     >
-      <div className="text-center">
+      <div className="text-left">
         <h1 className="inline-block bg-gradient-to-t from-gray-900 to-gray-800 bg-clip-text py-2 text-4xl font-bold tracking-tighter text-transparent sm:text-5xl dark:from-gray-50 dark:to-gray-300">
-          Business Source License
+        License
         </h1>
-        <p className="mt-4 text-lg text-gray-600 dark:text-gray-400">
+        {/* <p className="mt-4 text-lg text-gray-600 dark:text-gray-400">
           <Balancer>
             © 2025 open governance Inc. d/b/a opencomply.io. All rights
             reserved.
           </Balancer>
-        </p>
+        </p> */}
       </div>
       <div
         className="mt-5 flex sm:flex-row flex-col justify-start items-center flex-1 gap-12"

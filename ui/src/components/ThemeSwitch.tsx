@@ -78,7 +78,7 @@ const ThemeSwitch = () => {
        
         changeTheme(value)
       }}
-      className="flex gap-1"
+      className="flex gap-1 p-1"
     >
       <RadioGroupItem
         aria-label="Switch to System Mode"

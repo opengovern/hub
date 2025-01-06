@@ -32,13 +32,13 @@ export default function LicenseFaq() {
   }, []);
   return (
     <main
-      className="mx-auto pt-36 max-w-3xl animate-slide-up-fade px-3"
+      className="mx-auto pt-36 max-w-6xl animate-slide-up-fade px-3"
       style={{
         animationDuration: "600ms",
         animationFillMode: "backwards",
       }}
     >
-      <div className="text-center">
+      <div className="text-left">
         <h1 className="inline-block bg-gradient-to-t from-gray-900 to-gray-800 bg-clip-text py-2 text-4xl font-bold tracking-tighter text-transparent sm:text-5xl dark:from-gray-50 dark:to-gray-300">
           Opencomply Licensing FAQ
         </h1>
