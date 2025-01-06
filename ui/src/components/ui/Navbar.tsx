@@ -86,10 +86,10 @@ export function Navigation() {
   return (
     <header
       className={cx(
-        "fixed inset-x-3 top-4 z-50 mx-auto flex max-w-4xl transform-gpu animate-slide-down-fade justify-center overflow-hidden rounded-xl border border-transparent px-3 py-3 transition-all duration-300 ease-[cubic-bezier(0.16,1,0.3,1.03)] will-change-transform",
+        "fixed inset-x-3 top-4 z-50 mx-auto flex max-w-5xl transform-gpu animate-slide-down-fade justify-center overflow-hidden rounded-xl border border-transparent px-3 py-3 transition-all duration-300 ease-[cubic-bezier(0.16,1,0.3,1.03)] will-change-transform",
         open === true ? "h-62" : "h-12 sm:h-14",
         scrolled || open === true
-          ? "backdrop-blur-nav max-w-3xl border-gray-100 bg-white/80 shadow-xl shadow-black/5 dark:border-white/15 dark:bg-black/70"
+          ? "backdrop-blur-nav max-w-4xl border-gray-100 bg-white/80 shadow-xl shadow-black/5 dark:border-white/15 dark:bg-black/70"
           : "bg-white/0 dark:bg-gray-950/0",
         `${theme}`
       )}
@@ -100,7 +100,7 @@ export function Navigation() {
             <span className="sr-only">Company logo</span>
             <DatabaseLogo className="w-28 md:w-32" />
           </a>
-          <nav className="hidden w-f md:absolute md:left-[60%] md:top-1/2 md:block md:-translate-x-1/2 md:-translate-y-1/2 md:transform">
+          <nav className="hidden w-f md:absolute md:left-[58%] md:top-1/2 md:block md:-translate-x-1/2 md:-translate-y-1/2 md:transform">
             <div className="flex items-center justify-center gap-10 font-medium">
               {" "}
               <a
@@ -122,6 +122,12 @@ export function Navigation() {
                 href={"/compliance/frameworks"}
               >
                 Frameworks {complianceCount && `(${complianceCount})`}{" "}
+              </a>
+              <a
+                className="px-2 py-1 w-full min-w-fit  text-gray-900 dark:text-gray-50"
+                href={"/pricing"}
+              >
+                Pricing
               </a>
               <DropdownMenu>
                 <DropdownMenuTrigger asChild>
@@ -291,6 +297,14 @@ export function Navigation() {
                 href={"/compliance/frameworks"}
               >
                 Frameworks {complianceCount && `(${complianceCount})`}
+              </a>
+            </li>
+            <li onClick={() => setOpen(false)}>
+              <a
+                className="text-black dark:text-white"
+                href={"/pricing"}
+              >
+               Pricing
               </a>
             </li>
             <li onClick={() => setOpen(false)}>

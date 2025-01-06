@@ -213,38 +213,38 @@ export default function Pricing() {
     "monthly" | "annually"
   >("monthly");
   return (
-    <div className="mx-auto pt-36 max-w-6xl">
-      <div className="px-3">
-        <section
-          aria-labelledby="pricing-title "
-          className="animate-slide-up-fade flex justify-center items-center flex-col"
-          style={{
-            animationDuration: "600ms",
-            animationFillMode: "backwards",
-          }}
-        >
-          {/* <Badge>Pricing</Badge> */}
-          <h1 className="mt-2 inline-block bg-gradient-to-br from-gray-900 to-gray-800 bg-clip-text py-1 text-4xl font-bold tracking-tighter text-transparent sm:text-6xl md:text-6xl dark:from-gray-50 dark:to-gray-300">
-            Pricing
-          </h1>
-          <p className=" max-w-lg text-lg text-center text-gray-700 dark:text-gray-400">
-            We're here to help you succeed.
-            <br/>
-             Explore our flexible pricing plans
-            designed to grow with you.
-          </p>
-        </section>
-        <section
-          id="pricing-overview"
-          className="mt-10 animate-slide-up-fade"
-          aria-labelledby="pricing-overview"
-          style={{
-            animationDuration: "600ms",
-            animationDelay: "200ms",
-            animationFillMode: "backwards",
-          }}
-        >
-          {/* <div className="flex items-center justify-center gap-2">
+    <>
+      <div className="mx-auto pt-36 max-w-6xl">
+        <div className="px-3">
+          <section
+            aria-labelledby="pricing-title "
+            className="animate-slide-up-fade flex justify-center items-center flex-col"
+            style={{
+              animationDuration: "600ms",
+              animationFillMode: "backwards",
+            }}
+          >
+            {/* <Badge>Pricing</Badge> */}
+            <h1 className="mt-2 inline-block bg-gradient-to-br from-gray-900 to-gray-800 bg-clip-text py-1 text-4xl font-bold tracking-tighter text-transparent sm:text-6xl md:text-6xl dark:from-gray-50 dark:to-gray-300">
+              Pricing
+            </h1>
+            <p className=" max-w-lg text-lg text-center text-gray-700 dark:text-gray-400">
+              We're here to help you succeed.
+              <br />
+              Explore our flexible pricing plans designed to grow with you.
+            </p>
+          </section>
+          <section
+            id="pricing-overview"
+            className="mt-10 animate-slide-up-fade"
+            aria-labelledby="pricing-overview"
+            style={{
+              animationDuration: "600ms",
+              animationDelay: "200ms",
+              animationFillMode: "backwards",
+            }}
+          >
+            {/* <div className="flex items-center justify-center gap-2">
             <Label
               htmlFor="switch"
               className="text-base font-medium sm:text-sm dark:text-gray-400"
@@ -267,35 +267,35 @@ export default function Pricing() {
               Yearly (-20%)
             </Label>
           </div> */}
-          <div className="grid grid-cols-1 gap-x-14 gap-y-8 lg:grid-cols-3">
-            {plans.map((plan, planIdx) => (
-              <div key={planIdx} className="mt-6">
-                {plan.isRecommended ? (
-                  <div className="flex h-4 items-center">
-                    <div className="relative w-full">
-                      <div
-                        className="absolute inset-0 flex items-center"
-                        aria-hidden="true"
-                      >
-                        <div className="w-full border-t border-indigo-600 dark:border-indigo-400" />
-                      </div>
-                      <div className="relative flex justify-center">
-                        <span className="bg-white px-3 text-xs font-medium text-indigo-600 dark:bg-gray-950 dark:text-indigo-400">
-                          Most popular
-                        </span>
+            <div className="grid grid-cols-1 gap-x-14 gap-y-8 lg:grid-cols-3">
+              {plans.map((plan, planIdx) => (
+                <div key={planIdx} className="mt-6">
+                  {plan.isRecommended ? (
+                    <div className="flex h-4 items-center">
+                      <div className="relative w-full">
+                        <div
+                          className="absolute inset-0 flex items-center"
+                          aria-hidden="true"
+                        >
+                          <div className="w-full border-t border-indigo-600 dark:border-indigo-400" />
+                        </div>
+                        <div className="relative flex justify-center">
+                          <span className="bg-white px-3 text-xs font-medium text-indigo-600 dark:bg-gray-950 dark:text-indigo-400">
+                            Most popular
+                          </span>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                ) : (
-                  <div className="flex h-4 items-center">
-                    <div className="h-px w-full bg-gray-200 dark:bg-gray-800" />
-                  </div>
-                )}
-                <div className="mx-auto max-w-md">
-                  <h2 className="text-3xl font-semibold tabular-nums text-gray-900 dark:text-gray-50 mt-6">
-                    {plan.name}
-                  </h2>
-                  {/* <div className="mt-3 flex items-center gap-x-3">
+                  ) : (
+                    <div className="flex h-4 items-center">
+                      <div className="h-px w-full bg-gray-200 dark:bg-gray-800" />
+                    </div>
+                  )}
+                  <div className="mx-auto max-w-md">
+                    <h2 className="text-3xl font-semibold tabular-nums text-gray-900 dark:text-gray-50 mt-6">
+                      {plan.name}
+                    </h2>
+                    {/* <div className="mt-3 flex items-center gap-x-3">
                     <span className="text-5xl font-semibold tabular-nums text-gray-900 dark:text-gray-50">
                       {isVariablePrice(plan.price)
                         ? billingFrequency === "monthly"
@@ -307,77 +307,77 @@ export default function Pricing() {
                       per user <br /> per month
                     </div>
                   </div> */}
-                  <div className="mt-6 flex flex-col justify-between">
-                    <p className="text-sm leading-6 text-gray-600 dark:text-gray-400">
-                      {plan.description}
-                    </p>
-                    <div className="mt-6">
-                      {plan.isStarter ? (
-                        <Button variant="secondary" asChild className="group">
-                          <a href={plan.buttonLink}>
-                            {plan.buttonText}
-                            <ArrowAnimated />
-                          </a>
-                        </Button>
-                      ) : (
-                        <Button asChild className="group">
-                          <a href={plan.buttonLink}>
-                            {plan.buttonText}
-                            <ArrowAnimated />
-                          </a>
-                        </Button>
-                      )}
+                    <div className="mt-6 flex flex-col justify-between">
+                      <p className="text-sm leading-6 text-gray-600 dark:text-gray-400">
+                        {plan.description}
+                      </p>
+                      <div className="mt-6">
+                        {plan.isStarter ? (
+                          <Button variant="secondary" asChild className="group">
+                            <a href={plan.buttonLink}>
+                              {plan.buttonText}
+                              <ArrowAnimated />
+                            </a>
+                          </Button>
+                        ) : (
+                          <Button asChild className="group">
+                            <a href={plan.buttonLink}>
+                              {plan.buttonText}
+                              <ArrowAnimated />
+                            </a>
+                          </Button>
+                        )}
+                      </div>
                     </div>
+                    <ul
+                      role="list"
+                      className="mt-8 text-sm text-gray-700 dark:text-gray-400"
+                    >
+                      {plan.capacity.map((feature, index) => (
+                        <li
+                          key={feature}
+                          className="flex items-center gap-x-3 py-1.5"
+                        >
+                          {index === 0 && (
+                            <RiUserLine
+                              className="size-4 shrink-0 text-gray-500"
+                              aria-hidden="true"
+                            />
+                          )}
+                          {index === 1 && (
+                            <RiCloudLine
+                              className="size-4 shrink-0 text-gray-500"
+                              aria-hidden="true"
+                            />
+                          )}
+                          <span>{feature}</span>
+                        </li>
+                      ))}
+                    </ul>
+                    <ul
+                      role="list"
+                      className="mt-4 text-sm text-gray-700 dark:text-gray-400"
+                    >
+                      {plan.features.map((feature) => (
+                        <li
+                          key={feature}
+                          className="flex items-center gap-x-3 py-1.5"
+                        >
+                          <RiCheckLine
+                            className="size-4 shrink-0 text-indigo-600 dark:text-indigo-400"
+                            aria-hidden="true"
+                          />
+                          <span>{feature}</span>
+                        </li>
+                      ))}
+                    </ul>
                   </div>
-                  <ul
-                    role="list"
-                    className="mt-8 text-sm text-gray-700 dark:text-gray-400"
-                  >
-                    {plan.capacity.map((feature, index) => (
-                      <li
-                        key={feature}
-                        className="flex items-center gap-x-3 py-1.5"
-                      >
-                        {index === 0 && (
-                          <RiUserLine
-                            className="size-4 shrink-0 text-gray-500"
-                            aria-hidden="true"
-                          />
-                        )}
-                        {index === 1 && (
-                          <RiCloudLine
-                            className="size-4 shrink-0 text-gray-500"
-                            aria-hidden="true"
-                          />
-                        )}
-                        <span>{feature}</span>
-                      </li>
-                    ))}
-                  </ul>
-                  <ul
-                    role="list"
-                    className="mt-4 text-sm text-gray-700 dark:text-gray-400"
-                  >
-                    {plan.features.map((feature) => (
-                      <li
-                        key={feature}
-                        className="flex items-center gap-x-3 py-1.5"
-                      >
-                        <RiCheckLine
-                          className="size-4 shrink-0 text-indigo-600 dark:text-indigo-400"
-                          aria-hidden="true"
-                        />
-                        <span>{feature}</span>
-                      </li>
-                    ))}
-                  </ul>
                 </div>
-              </div>
-            ))}
-          </div>
-        </section>
+              ))}
+            </div>
+          </section>
 
-        {/* <section
+          {/* <section
           id="testimonial"
           className="mx-auto mt-20 max-w-xl sm:mt-32 lg:max-w-6xl"
           aria-labelledby="testimonial"
@@ -385,8 +385,8 @@ export default function Pricing() {
           <Testimonial />
         </section> */}
 
-        {/* plan details (xs-lg)*/}
-        <section
+          {/* plan details (xs-lg)*/}
+          {/* <section
           id="pricing-details"
           className="mt-10 sm:mt-36"
           aria-labelledby="pricing-details"
@@ -451,10 +451,10 @@ export default function Pricing() {
               </div>
             ))}
           </div>
-        </section>
+        </section> */}
 
-        {/* plan details (lg+) */}
-        <section className="mx-auto mt-20">
+          {/* plan details (lg+) */}
+          {/* <section className="mx-auto mt-20">
           <div className="mt-20 hidden sm:mt-28 lg:block">
             <div className="relative">
               <div className="sticky top-0 z-20 h-28 w-full bg-white dark:bg-gray-950" />
@@ -618,9 +618,35 @@ export default function Pricing() {
               </table>
             </div>
           </div>
-        </section>
-        <Faqs />
+        </section> */}
+        </div>
       </div>
-    </div>
+      <section
+        aria-labelledby="pricing-title "
+        className="animate-slide-up-fade flex justify-center items-center flex-col mt-20 py-20 custom-container "
+        style={{
+          animationDuration: "600ms",
+          animationFillMode: "backwards",
+        }}
+      >
+        {/* <Badge>Pricing</Badge> */}
+        <h1 className="mt-2 inline-block bg-gradient-to-br from-gray-900 to-gray-800 bg-clip-text py-1 text-3xl font-bold tracking-tighter text-transparent sm:text-6xl md:text-6xl dark:from-gray-50 dark:to-gray-300">
+          Ready to get started?
+        </h1>
+        <p className=" max-w-lg text-lg text-center text-gray-700 dark:text-gray-100">
+          We're here to help you succeed.
+          <br />
+          Explore our flexible pricing plans designed to grow with you.
+        </p>
+
+        <Button variant="primary" asChild className="group mt-7">
+          <a href={""}>
+            Book demo
+            <ArrowAnimated />
+          </a>
+        </Button>
+      </section>
+      <Faqs />
+    </>
   );
 }
