@@ -6,7 +6,7 @@ export default function NotFound() {
   return (
     <div className="flex h-screen flex-col items-center justify-center">
       <a href="/">
-        <DatabaseLogo className="mt-6 h-10" />
+        <DatabaseLogo className="mt-6 h-8 w-36" />
       </a>
       <p className="mt-6 text-4xl font-semibold text-indigo-600 sm:text-5xl dark:text-indigo-500">
         404

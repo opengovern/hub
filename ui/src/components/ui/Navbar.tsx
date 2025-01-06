@@ -199,6 +199,19 @@ export function Navigation() {
                       Changelog
                     </a>
                   </DropdownMenuItem>
+                  <DropdownMenuSeparator />
+                  <DropdownMenuItem
+                    onClick={() => {
+                      navigate("/license");
+                    }}
+                  >
+                    <a
+                      className="px-2 py-1 text-gray-900 dark:text-gray-50"
+                      href={"/license"}
+                    >
+                      License
+                    </a>
+                  </DropdownMenuItem>
                   {/* <DropdownMenuSeparator /> */}
                   {/* <DropdownMenuItem
                     onClick={() => {
@@ -371,6 +384,19 @@ export function Navigation() {
                       href={"/changelog"}
                     >
                       Changelog
+                    </a>
+                  </DropdownMenuItem>
+                  <DropdownMenuSeparator />
+                  <DropdownMenuItem
+                    onClick={() => {
+                      navigate("/license");
+                    }}
+                  >
+                    <a
+                      className="px-2 py-1 text-gray-900 dark:text-gray-50"
+                      href={"/license"}
+                    >
+                      License
                     </a>
                   </DropdownMenuItem>
                   {/* <DropdownMenuSeparator /> */}

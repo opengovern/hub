@@ -6,9 +6,9 @@ const getTheme = () => {
   const theme = localStorage.getItem("theme");
   if (!theme) {
     // Default theme is taken as dark
-    localStorage.setItem("theme", "dark");
-    
-    return "dark";
+    localStorage.setItem("theme", "system");
+
+    return "system";
   } else {
     return theme;
   }
@@ -26,7 +26,6 @@ const ThemeProvider = ({ children }) => {
   }
   function changeTheme(value) {
     setTheme(value);
-    
   }
 
   useEffect(() => {
@@ -35,9 +34,24 @@ const ThemeProvider = ({ children }) => {
     };
 
     refreshTheme();
-   
-     const body = document.getElementsByTagName("body")[0]
-     body.className = theme
+    if (theme == "system") {
+      if (window.matchMedia) {
+        // Check if the dark-mode Media-Query matches
+        if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+         const body = document.getElementsByTagName("body")[0];
+         body.className = "dark";
+        } else {
+        const body = document.getElementsByTagName("body")[0];
+        body.className = "light";
+        }
+      } else {
+        const body = document.getElementsByTagName("body")[0];
+        body.className = "dark";
+      }
+    } else {
+      const body = document.getElementsByTagName("body")[0];
+      body.className = theme;
+    }
   }, [theme]);
 
   return (

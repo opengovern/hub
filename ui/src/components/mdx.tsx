@@ -35,12 +35,19 @@ function CustomHeading(props: any) {
 }
 
 export const H1 = ({ children }: React.HTMLProps<HTMLHeadingElement>) => (
-  <CustomHeading
-    className="text-3xl font-bold normal-case tracking-tight text-gray-900 sm:text-4xl dark:text-gray-50"
-    level={1}
-  >
-    {children}
-  </CustomHeading>
+  <>
+    <CustomHeading
+      className="text-3xl font-bold normal-case tracking-tight text-gray-900 sm:text-4xl dark:text-gray-50"
+      level={1}
+    >
+      {children}
+    </CustomHeading>
+    {
+      !children && (
+        <br/>
+      )
+    }
+  </>
 );
 
 export const H2 = ({ children }: React.HTMLProps<HTMLHeadingElement>) => (

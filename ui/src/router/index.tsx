@@ -14,6 +14,8 @@ import UseCase from '../pages/useCases';
 import ChangeLog from '../pages/changelog';
 import Setup from '../pages/setup';
 import SchemaDetail from '../pages/schema/detail';
+import License from '../pages/license';
+import LicenseFaq from '../pages/license/faq';
 
 
 const authRoutes = [
@@ -91,6 +93,18 @@ const authRoutes = [
     key: "setup",
     path: "/integrations/:id/setup",
     element: <SchemaTables />,
+    noAuth: true,
+  },
+  {
+    key: "License",
+    path: "/license",
+    element: <License />,
+    noAuth: true,
+  },
+  {
+    key: "LicenseFAQ",
+    path: "/license-faq",
+    element: <LicenseFaq />,
     noAuth: true,
   },
 ];
