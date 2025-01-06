@@ -32,6 +32,7 @@ export function Navigation() {
   const [complianceCount, setComplianceCount] = React.useState()
   const navigate = useNavigate();
   const { theme, changeTheme } = useContext(ThemeContext);
+  const  [color,setColors] = React.useState("")
   React.useEffect(() => {
     const mediaQuery: MediaQueryList = window.matchMedia("(min-width: 768px)")
     const handleMediaQueryChange = () => {
@@ -47,6 +48,23 @@ export function Navigation() {
 
 
   }, [])
+  useEffect(()=>{
+    if (theme == "system") {
+      if (window.matchMedia) {
+        // Check if the dark-mode Media-Query matches
+        if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+         setColors("dark");
+        } else {
+           setColors("light");
+        }
+      } else {
+            setColors("dark");
+
+      }
+    } else {
+      setColors(theme)
+    }
+  },[theme])
  const getIntegrations = async () => {
    axios
      .get(
@@ -139,7 +157,7 @@ export function Navigation() {
                     <svg
                       className="-mr-1 size-5 text-gray-400 "
                       viewBox="0 0 20 20"
-                      fill={theme === "dark" ? "white" : "black"}
+                      fill={color === "dark" ? "white" : "black"}
                       aria-hidden="true"
                       data-slot="icon"
                     >
@@ -333,7 +351,7 @@ export function Navigation() {
                     <svg
                       className="-mr-1 size-5 text-gray-400"
                       viewBox="0 0 20 20"
-                      fill={theme === "dark" ? "white" : "black"}
+                      fill={color === "dark" ? "white" : "black"}
                       aria-hidden="true"
                       data-slot="icon"
                     >
