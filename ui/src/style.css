@@ -1294,6 +1294,10 @@ select {
   margin-top: 3rem;
 }
 
+.mt-7 {
+  margin-top: 1.75rem;
+}
+
 .block {
   display: block;
 }
@@ -1797,6 +1801,34 @@ select {
   max-width: 20rem;
 }
 
+.max-w-10 {
+  max-width: 2.5rem;
+}
+
+.max-w-20 {
+  max-width: 5rem;
+}
+
+.max-w-14 {
+  max-width: 3.5rem;
+}
+
+.max-w-16 {
+  max-width: 4rem;
+}
+
+.max-w-32 {
+  max-width: 8rem;
+}
+
+.max-w-\[000px\] {
+  max-width: 000px;
+}
+
+.max-w-\[200px\] {
+  max-width: 200px;
+}
+
 .flex-1 {
   flex: 1 1 0%;
 }
@@ -1814,6 +1846,10 @@ select {
 }
 
 .flex-grow {
+  flex-grow: 1;
+}
+
+.grow {
   flex-grow: 1;
 }
 

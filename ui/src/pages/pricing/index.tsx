@@ -82,7 +82,7 @@ const plans: Plan[] = [
       "Single Sign-On (SSO)",
     ],
     isStarter: false,
-    isRecommended: true,
+    isRecommended: false,
     buttonText: "Start 14-day trial",
     buttonLink: "#",
   },
@@ -216,26 +216,27 @@ export default function Pricing() {
     <div className="mx-auto pt-36 max-w-6xl">
       <div className="px-3">
         <section
-          aria-labelledby="pricing-title"
-          className="animate-slide-up-fade"
+          aria-labelledby="pricing-title "
+          className="animate-slide-up-fade flex justify-center items-center flex-col"
           style={{
             animationDuration: "600ms",
             animationFillMode: "backwards",
           }}
         >
-          <Badge>Pricing</Badge>
-          <h1 className="mt-2 inline-block bg-gradient-to-br from-gray-900 to-gray-800 bg-clip-text py-2 text-4xl font-bold tracking-tighter text-transparent sm:text-6xl md:text-6xl dark:from-gray-50 dark:to-gray-300">
-            Our plans scale with you
+          {/* <Badge>Pricing</Badge> */}
+          <h1 className="mt-2 inline-block bg-gradient-to-br from-gray-900 to-gray-800 bg-clip-text py-1 text-4xl font-bold tracking-tighter text-transparent sm:text-6xl md:text-6xl dark:from-gray-50 dark:to-gray-300">
+            Pricing
           </h1>
-          <p className="mt-6 max-w-2xl text-lg text-gray-700 dark:text-gray-400">
-            Plans that empower you and your team to ship without friction. Our
-            flexible pricing models ensure that efficiency doesn&rsquo;t come at
-            the cost of your budget.
+          <p className=" max-w-lg text-lg text-center text-gray-700 dark:text-gray-400">
+            We're here to help you succeed.
+            <br/>
+             Explore our flexible pricing plans
+            designed to grow with you.
           </p>
         </section>
         <section
           id="pricing-overview"
-          className="mt-20 animate-slide-up-fade"
+          className="mt-10 animate-slide-up-fade"
           aria-labelledby="pricing-overview"
           style={{
             animationDuration: "600ms",
@@ -243,7 +244,7 @@ export default function Pricing() {
             animationFillMode: "backwards",
           }}
         >
-          <div className="flex items-center justify-center gap-2">
+          {/* <div className="flex items-center justify-center gap-2">
             <Label
               htmlFor="switch"
               className="text-base font-medium sm:text-sm dark:text-gray-400"
@@ -265,7 +266,7 @@ export default function Pricing() {
             >
               Yearly (-20%)
             </Label>
-          </div>
+          </div> */}
           <div className="grid grid-cols-1 gap-x-14 gap-y-8 lg:grid-cols-3">
             {plans.map((plan, planIdx) => (
               <div key={planIdx} className="mt-6">
@@ -291,10 +292,10 @@ export default function Pricing() {
                   </div>
                 )}
                 <div className="mx-auto max-w-md">
-                  <h2 className="mt-6 text-sm font-semibold text-gray-900 dark:text-gray-50">
+                  <h2 className="text-3xl font-semibold tabular-nums text-gray-900 dark:text-gray-50 mt-6">
                     {plan.name}
                   </h2>
-                  <div className="mt-3 flex items-center gap-x-3">
+                  {/* <div className="mt-3 flex items-center gap-x-3">
                     <span className="text-5xl font-semibold tabular-nums text-gray-900 dark:text-gray-50">
                       {isVariablePrice(plan.price)
                         ? billingFrequency === "monthly"
@@ -305,7 +306,7 @@ export default function Pricing() {
                     <div className="text-xs text-gray-600 dark:text-gray-400">
                       per user <br /> per month
                     </div>
-                  </div>
+                  </div> */}
                   <div className="mt-6 flex flex-col justify-between">
                     <p className="text-sm leading-6 text-gray-600 dark:text-gray-400">
                       {plan.description}
@@ -376,18 +377,18 @@ export default function Pricing() {
           </div>
         </section>
 
-        <section
+        {/* <section
           id="testimonial"
           className="mx-auto mt-20 max-w-xl sm:mt-32 lg:max-w-6xl"
           aria-labelledby="testimonial"
         >
           <Testimonial />
-        </section>
+        </section> */}
 
         {/* plan details (xs-lg)*/}
         <section
           id="pricing-details"
-          className="mt-20 sm:mt-36"
+          className="mt-10 sm:mt-36"
           aria-labelledby="pricing-details"
         >
           <div className="mx-auto space-y-8 sm:max-w-md lg:hidden">
