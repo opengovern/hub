@@ -15,7 +15,9 @@ import {
   RiUserLine,
 } from "@remixicon/react";
 import React, { Fragment } from "react";
-
+import Cal from "@calcom/embed-react";
+import { Modal } from "@cloudscape-design/components";
+import { FaqsPrice } from "../../components/ui/faqPrice";
 type FixedPrice = string;
 
 interface VariablePrice {
@@ -27,7 +29,6 @@ interface Plan {
   name: string;
   price: FixedPrice | VariablePrice;
   description: string;
-  capacity: string[];
   features: string[];
   isStarter: boolean;
   isRecommended: boolean;
@@ -37,53 +38,60 @@ interface Plan {
 
 const plans: Plan[] = [
   {
-    name: "Starter",
+    name: "Community",
     price: "$0",
     description:
-      "For individuals and freelancers that need a scalable database.",
-    capacity: ["Up to 5 users, 1 admin", "1 workspace"],
+      "Ideal for small teams and startups that are comfortable managing updates themselves.",
     features: [
-      "Up to 1000/req. per day",
-      "5 GB max storage",
-      "Community Slack Support",
+      "Unlimited Users",
+      "Unlimited Integrations",
+      "Single Sign-On (SSO)",
+      "Unlimited Users",
+      "15+ Built-In Frameworks",
+      "2,000+ Built-In Controls",
+      "10+ Adapters",
+      "Web UI & API",
+      "Self-Hosted",
     ],
     isStarter: true,
     isRecommended: false,
-    buttonText: "Get started",
+    buttonText: "Download New",
     buttonLink: "#",
   },
   {
-    name: "Teams",
+    name: "Professional",
     price: { monthly: "$49", annually: "$39" },
-    description: "For small teams and start-ups that need a scalable database.",
-    capacity: ["Up to 100 users, 3 admins", "Up to 20 workspaces"],
+    description:
+      "Ideal for growing teams that need SaaS convenience, seamless upgrades, and premium integrations.",
     features: [
-      "Unlimited requests",
-      "$0.07 per processed GB",
-      "$0.34 per stored GB",
-      "Slack Connect",
+      "Everything in Community",
+      "SaaS",
+      "Seamless Upgrades (automatic data migrations)",
+      "Up to 365 Days of Audit History",
+      "Email Support",
     ],
     isStarter: false,
     isRecommended: false,
-    buttonText: "Start 14-day trial",
+    buttonText: "Request Trial",
     buttonLink: "#",
   },
   {
-    name: "Business",
+    name: "Enterprise",
     price: { monthly: "$99", annually: "$79" },
     description:
-      "For larger teams that need more advanced controls and features.",
-    capacity: ["Up to 500 users, 10 admins", "Unlimited workspaces"],
+      "Ideal for organizations that need advanced permissions, flexible hosting, and robust audit trails.",
     features: [
-      "Unlimited requests",
-      "Volume discount",
-      "$0.03 per processed GB",
-      "$0.1 per stored GB",
-      "Single Sign-On (SSO)",
+      "Everything in Professional",
+      "Granular Permissions & Data Controls",
+      "Access to 45+ Premium Integrations",
+      "SLAs & Phone Support",
+      "Unlimited",
+      "Cloud or Managed Hosting",
+      "Extended Audit History (up to 730 days)",
     ],
     isStarter: false,
     isRecommended: false,
-    buttonText: "Start 14-day trial",
+    buttonText: "Request Trial",
     buttonLink: "#",
   },
 ];
@@ -99,109 +107,6 @@ interface Section {
   features: Feature[];
 }
 
-const sections: Section[] = [
-  {
-    name: "Workspace Features",
-    features: [
-      {
-        name: "Email notifications & webhooks",
-        tooltip:
-          "Consectetur qui culpa ipsum in ea irure duis culpa incididunt.",
-        plans: { Starter: true, Teams: true, Business: true },
-      },
-      {
-        name: "Workspaces",
-        tooltip:
-          "Consectetur qui culpa ipsum in ea irure duis culpa incididunt.",
-        plans: { Starter: "5", Teams: "10", Business: "Unlimited" },
-      },
-      {
-        name: "Storage",
-        tooltip:
-          "Consectetur qui culpa ipsum in ea irure duis culpa incididunt.",
-        plans: {
-          Starter: "$0.65 per stored GB",
-          Teams: "$0.34 per stored GB",
-          Business: "Customized¹",
-        },
-      },
-      {
-        name: "Seats",
-        tooltip:
-          "Consectetur qui culpa ipsum in ea irure duis culpa incididunt.",
-        plans: {
-          Starter: "5 users",
-          Teams: "Up to 20 users",
-          Business: "Unlimited",
-        },
-      },
-    ],
-  },
-  {
-    name: "Automation",
-    features: [
-      {
-        name: "Service accounts",
-        tooltip:
-          "Consectetur qui culpa ipsum in ea irure duis culpa incididunt.",
-        plans: { Starter: true, Teams: true, Business: true },
-      },
-      {
-        name: "Admin API",
-        tooltip:
-          "Consectetur qui culpa ipsum in ea irure duis culpa incididunt.",
-        plans: { Teams: true, Business: true },
-      },
-      {
-        name: "No-Code workflow builder",
-        tooltip:
-          "Consectetur qui culpa ipsum in ea irure duis culpa incididunt.",
-        plans: { Starter: "Limited", Teams: "Standard", Business: "Enhanced" },
-      },
-    ],
-  },
-  {
-    name: "Analytics",
-    features: [
-      {
-        name: "Analytics retention",
-        tooltip:
-          "Consectetur qui culpa ipsum in ea irure duis culpa incididunt.",
-        plans: { Starter: "7 days", Teams: "1 year", Business: "Unlimited" },
-      },
-      {
-        name: "Anomaly detection",
-        tooltip:
-          "Consectetur qui culpa ipsum in ea irure duis culpa incididunt.",
-        plans: { Teams: true, Business: true },
-      },
-      {
-        name: "Custom report builder",
-        tooltip:
-          "Consectetur qui culpa ipsum in ea irure duis culpa incididunt.",
-        plans: { Business: true },
-      },
-    ],
-  },
-  {
-    name: "Support",
-    features: [
-      {
-        name: "Slack",
-        plans: {
-          Starter: "Community",
-          Teams: "Connect",
-          Business: "Dedicated agent",
-        },
-      },
-      {
-        name: "Email",
-        plans: { Starter: "2-4 days", Teams: "1-2 days", Business: "Priority" },
-      },
-    ],
-  },
-];
-
 const isVariablePrice = (
   price: FixedPrice | VariablePrice
 ): price is VariablePrice => {
@@ -212,8 +117,22 @@ export default function Pricing() {
   const [billingFrequency, setBillingFrequency] = React.useState<
     "monthly" | "annually"
   >("monthly");
+  const [open, setOpen] = React.useState(false);
   return (
     <>
+      <Modal
+        header="Try enterprise Edition"
+        size="large"
+        visible={open}
+        onDismiss={() => setOpen(false)}
+      >
+        <Cal
+          namespace="try-enterprise"
+          calLink="team/opencomply/try-enterprise"
+          style={{ width: "100%", height: "100%", overflow: "scroll" }}
+          config={{ layout: "month_view" }}
+        />
+      </Modal>
       <div className="mx-auto pt-36 max-w-6xl">
         <div className="px-3">
           <section
@@ -320,7 +239,13 @@ export default function Pricing() {
                             </a>
                           </Button>
                         ) : (
-                          <Button asChild className="group">
+                          <Button
+                            onClick={() => {
+                              setOpen(true);
+                            }}
+                            asChild
+                            className="group"
+                          >
                             <a href={plan.buttonLink}>
                               {plan.buttonText}
                               <ArrowAnimated />
@@ -329,7 +254,7 @@ export default function Pricing() {
                         )}
                       </div>
                     </div>
-                    <ul
+                    {/* <ul
                       role="list"
                       className="mt-8 text-sm text-gray-700 dark:text-gray-400"
                     >
@@ -353,7 +278,7 @@ export default function Pricing() {
                           <span>{feature}</span>
                         </li>
                       ))}
-                    </ul>
+                    </ul> */}
                     <ul
                       role="list"
                       className="mt-4 text-sm text-gray-700 dark:text-gray-400"
@@ -630,23 +555,29 @@ export default function Pricing() {
         }}
       >
         {/* <Badge>Pricing</Badge> */}
-        <h1 className="mt-2 inline-block bg-gradient-to-br from-gray-900 to-gray-800 bg-clip-text py-1 text-3xl font-bold tracking-tighter text-transparent sm:text-6xl md:text-6xl dark:from-gray-50 dark:to-gray-300">
+        <h1 className="mt-2 inline-block bg-gradient-to-br text-white bg-clip-text py-1 text-3xl font-bold tracking-tighter text-transparent sm:text-6xl md:text-6xl dark:from-gray-50 dark:to-gray-300">
           Ready to get started?
         </h1>
-        <p className=" max-w-lg text-lg text-center text-gray-700 dark:text-gray-100">
+        <p className=" max-w-lg text-lg text-center text-gray-100 dark:text-gray-100">
           We're here to help you succeed.
           <br />
           Explore our flexible pricing plans designed to grow with you.
         </p>
 
-        <Button variant="primary" asChild className="group mt-7">
-          <a href={""}>
+        <Button
+          onClick={(e) => {
+            e.preventDefault()
+            setOpen(true);
+          }}
+          variant="primary"
+          
+          className="group mt-7"
+        >
             Book demo
             <ArrowAnimated />
-          </a>
         </Button>
       </section>
-      <Faqs />
+      <FaqsPrice />
     </>
   );
 }

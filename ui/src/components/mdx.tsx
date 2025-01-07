@@ -14,6 +14,8 @@ export default function slugify(str: string) {
 
 function CustomHeading(props: any) {
   let slug = slugify(props.children);
+  
+
   return React.createElement(
     `h${props.level}`,
     {
@@ -42,30 +44,32 @@ export const H1 = ({ children }: React.HTMLProps<HTMLHeadingElement>) => (
     >
       {children}
     </CustomHeading>
-    {
-      !children && (
-        <br/>
-      )
-    }
+    <br />
   </>
 );
 
 export const H2 = ({ children }: React.HTMLProps<HTMLHeadingElement>) => (
-  <CustomHeading
-    className="mb-4 text-lg font-semibold normal-case tracking-tight text-gray-900 dark:text-gray-50"
-    level={2}
-  >
-    {children}
-  </CustomHeading>
+  <>
+    <CustomHeading
+      className="mb-4 text-lg font-semibold normal-case tracking-tight text-gray-900 dark:text-gray-50"
+      level={2}
+    >
+      {children}
+    </CustomHeading>
+    <br/>
+  </>
 );
 
 export const H3 = ({ children }: React.HTMLProps<HTMLHeadingElement>) => (
-  <CustomHeading
-    className="mb-2 font-semibold normal-case tracking-tight text-gray-900 dark:text-gray-50"
-    level={3}
-  >
-    {children}
-  </CustomHeading>
+  <>
+    <CustomHeading
+      className="mb-2 font-semibold normal-case tracking-tight text-gray-900 dark:text-gray-50"
+      level={3}
+    >
+      {children}
+    </CustomHeading>
+    <br />
+  </>
 );
 
 export const P = (props: React.HTMLProps<HTMLParagraphElement>) => (
