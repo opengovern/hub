@@ -16,7 +16,7 @@ export default function Steps() {
   return (
     <section
       aria-labelledby="features-title"
-      className="mx-auto mt-44 w-full max-w-6xl px-3 flex flex-col justify-center items-center"
+      className="mx-auto mt-44 w-full max-w-6xl 2xl:max-w-7xl px-3 flex flex-col justify-center items-center"
     >
       {/* <Badge>How it works</Badge> */}
       <h2
@@ -154,21 +154,21 @@ kubectl port-forward -n opencomply svc/nginx-proxy 8080:80`}
 
         {/* <!-- Item #1 --> */}
         {/* <div className="relative flex flex-wrap gap-5 pt-[3rem] md:pt-[12rem] items-start justify-start md:justify-center md:odd:flex-row group is-active"> */}
-          {/* <!-- Icon --> */}
+        {/* <!-- Icon --> */}
 
-          {/* <!-- Card --> */}
-          {/* <div className="flex items-center justify-center w-10 h-10  rounded-full border border-white bg-dark-tremor-background  text-slate-500 dark:text-white  group-[.is-active]:text-emerald-50 shadow shrink-0  ">
+        {/* <!-- Card --> */}
+        {/* <div className="flex items-center justify-center w-10 h-10  rounded-full border border-white bg-dark-tremor-background  text-slate-500 dark:text-white  group-[.is-active]:text-emerald-50 shadow shrink-0  ">
             2
           </div> */}
-          {/* <div className="w-[calc(100%-4rem)]  md:w-[calc(35%-2.5rem)]  rounded">
+        {/* <div className="w-[calc(100%-4rem)]  md:w-[calc(35%-2.5rem)]  rounded">
             <div className="flex items-center justify-between space-x-2 mb-1">
               <div className="font-bold text-slate-900  dark:text-white text-2xl">
                 Connect
               </div> */}
-              {/* <time className="font-caveat font-medium text-indigo-500">
+        {/* <time className="font-caveat font-medium text-indigo-500">
                 08/06/2023
               </time> */}
-            {/* </div>
+        {/* </div>
             <div className="text-slate-500 dark:text-white  dark:text-white mt-4">
               Connect your tool with a simple read-only read in Seconds, from
               Cloud Accounts to Code Repos
@@ -176,7 +176,7 @@ kubectl port-forward -n opencomply svc/nginx-proxy 8080:80`}
           </div>
           <div className="md:hidden w-10 h-10"></div> */}
 
-          {/* <div className="w-[calc(100%-4rem)] md:w-[calc(65%-2.5rem)]   rounded">
+        {/* <div className="w-[calc(100%-4rem)] md:w-[calc(65%-2.5rem)]   rounded">
             <div className="rounded-2xl bg-slate-50/40  ring-1 ring-inset ring-slate-200/50 dark:bg-gray-900/70 dark:ring-white/10">
               <div className="rounded-xl bg-white ring-1 ring-slate-900/5 dark:bg-slate-950 dark:ring-white/15">
                 <video
@@ -261,10 +261,10 @@ kubectl port-forward -n opencomply svc/nginx-proxy 8080:80`}
 
         {/* <!-- Item #2 --> */}
         {/* <div className="relative flex flex-wrap  items-start pt-[3rem]  md:pt-[10rem] gap-5 justify-center md:justify-center md:odd:flex-row group is-active"> */}
-          {/* <!-- Icon --> */}
+        {/* <!-- Icon --> */}
 
-          {/* <!-- Card --> */}
-          {/* <div className="flex items-center justify-center w-10 h-10  rounded-full border border-white bg-dark-tremor-background  text-slate-500 dark:text-white  group-[.is-active]:text-emerald-50 shadow shrink-0  ">
+        {/* <!-- Card --> */}
+        {/* <div className="flex items-center justify-center w-10 h-10  rounded-full border border-white bg-dark-tremor-background  text-slate-500 dark:text-white  group-[.is-active]:text-emerald-50 shadow shrink-0  ">
             3
           </div>
           <div className="w-[calc(100%-4rem)]  md:w-[calc(35%-2.5rem)]  rounded">
@@ -331,27 +331,27 @@ kubectl port-forward -n opencomply svc/nginx-proxy 8080:80`}
               </div>
             </div>
             {/* <div className="mt-[3rem] ml-4">some texts goes here also</div> */}
-          {/* </div>
-        </div> */} 
+        {/* </div>
+        </div> */}
 
         {/* <!-- Item #3 --> */}
         {/* <div className="relative flex flex-wrap pt-[3rem]  md:pt-[10rem] items-start justify-center gap-5 md:justify-center  group is-active"> */}
-          {/* <!-- Icon --> */}
+        {/* <!-- Icon --> */}
 
-          {/* <!-- Card --> */}
-          {/* <div className="flex items-center justify-center w-10 h-10  rounded-full border border-white bg-dark-tremor-background  text-slate-500 dark:text-white  group-[.is-active]:text-emerald-50 shadow shrink-0  ">
+        {/* <!-- Card --> */}
+        {/* <div className="flex items-center justify-center w-10 h-10  rounded-full border border-white bg-dark-tremor-background  text-slate-500 dark:text-white  group-[.is-active]:text-emerald-50 shadow shrink-0  ">
             4
           </div> */}
-          {/* <div className="w-[calc(100%-4rem)]   md:w-[calc(35%-2.5rem)]  rounded">
+        {/* <div className="w-[calc(100%-4rem)]   md:w-[calc(35%-2.5rem)]  rounded">
             <div className="flex items-center justify-between space-x-2 mb-1">
               <div className="font-bold text-slate-900 dark:text-white text-2xl">
                 Audit
               </div> */}
-              {/* <time className="font-caveat font-medium text-indigo-500">
+        {/* <time className="font-caveat font-medium text-indigo-500">
                 10/06/2023
               </time> */}
-            {/* </div> */}
-            {/* <div className="text-slate-500 dark:text-white mt-4">
+        {/* </div> */}
+        {/* <div className="text-slate-500 dark:text-white mt-4">
               Audit your platform against Industry standards, Regulatory
               Frameworks, Developer Best Practices.
             </div>
@@ -385,26 +385,26 @@ kubectl port-forward -n opencomply svc/nginx-proxy 8080:80`}
 
         {/* <!-- Item #4 --> */}
         {/* <div className="relative flex flex-wrap items-start gap-5 pt-[3rem]  md:pt-[3rem]   justify-center md:justify-center  group is-active"> */}
-          {/* <!-- Icon --> */}
-          {/* <div className="flex items-center justify-center w-10 h-10 rounded-full border border-white bg-dark-tremor-background  text-slate-500 dark:text-white  group-[.is-active]:text-emerald-50 shadow shrink-0  ">
+        {/* <!-- Icon --> */}
+        {/* <div className="flex items-center justify-center w-10 h-10 rounded-full border border-white bg-dark-tremor-background  text-slate-500 dark:text-white  group-[.is-active]:text-emerald-50 shadow shrink-0  ">
             5
           </div> */}
-          {/* <div className="w-[calc(100%-4rem)]  md:w-[calc(35%-2.5rem)] rounded">
+        {/* <div className="w-[calc(100%-4rem)]  md:w-[calc(35%-2.5rem)] rounded">
             <div className="flex items-center justify-between space-x-2 mb-1">
               <div className="font-bold text-slate-900 dark:text-white text-2xl">
                 Customize
               </div> */}
-              {/* <time className="font-caveat font-medium text-indigo-500">
+        {/* <time className="font-caveat font-medium text-indigo-500">
                 12/06/2023
               </time> */}
-            {/* </div>
+        {/* </div>
             <div className="text-slate-500 dark:text-white mt-4">
               <div className="flex flex-col gap-5">
                 <div className="text-slate-500 dark:text-white ">
                   {" "}
                   Customize Compliance Controls, Frameworks as needed
                 </div> */}
-                {/* <div className="flex flex-row gap-2 flex-wrap">
+        {/* <div className="flex flex-row gap-2 flex-wrap">
                   <div
                     className="p-2 border dark:border-white rounded-3xl cursor-pointer"
                     onClick={() => {
@@ -422,12 +422,12 @@ kubectl port-forward -n opencomply svc/nginx-proxy 8080:80`}
                     Custom Controls
                   </div>
                 </div> */}
-              {/* </div>
+        {/* </div>
             </div>
           </div> */}
-          {/* <div className="md:hidden w-10 h-10"></div> */}
-          {/* <!-- Card --> */}
-          {/* <div className="w-[calc(100%-4rem)]  md:w-[calc(65%-2.5rem)]  rounded">
+        {/* <div className="md:hidden w-10 h-10"></div> */}
+        {/* <!-- Card --> */}
+        {/* <div className="w-[calc(100%-4rem)]  md:w-[calc(65%-2.5rem)]  rounded">
             <div className="rounded-2xl bg-slate-50/40 p-2 ring-1 ring-inset ring-slate-200/50 dark:bg-gray-900/70 dark:ring-white/10">
               <div className="rounded-xl bg-white ring-1 ring-slate-900/5 dark:bg-slate-950 dark:ring-white/15">
                 <iframe
@@ -470,7 +470,7 @@ kubectl port-forward -n opencomply svc/nginx-proxy 8080:80`}
                 >
                   Vultr
                 </Button> */}
-            {/* </div>
+        {/* </div>
           </div> 
         </div> */}
 

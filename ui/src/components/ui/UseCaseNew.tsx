@@ -3,6 +3,7 @@ import {
   Container,
   FormField,
   Header,
+  Icon,
   Input,
   KeyValuePairs,
   Link,
@@ -27,12 +28,49 @@ import { useEffect, useState } from "react";
 // @ts-ignore
 import video from "../../videos/2024-10-08-How_to_Customize_Controls.mp4";
 import CopyToClipboard from "../../components/CopyToClipboard";
-import { RiGroup2Line, RiInfinityLine } from "@remixicon/react";
+import { RiBrainLine, RiBugLine, RiFileCodeLine, RiFileZipLine, RiGitMergeLine, RiGroup2Line, RiIdCardLine, RiInfinityLine, RiKeyLine, RiServerLine } from "@remixicon/react";
 import { RenderObject } from "../Editor";
 import { Col, Grid } from "@tremor/react";
 import { useNavigate } from "react-router-dom";
 import { ArrowAnimated } from "./ArrowAnimated";
 import ThemedImage from "./ThemedImage";
+
+const cards = [
+  {
+    label: "Infrastructure",
+    icon: RiServerLine,
+  },
+  {
+    label: "Deployments",
+    icon: RiGitMergeLine,
+  },
+  {
+    label: "Configurations",
+    icon: RiFileCodeLine,
+  },
+  {
+    label: "Containers",
+    icon: RiFileZipLine,
+  },
+  {
+    label: "AI Models",
+    icon: RiBrainLine,
+  },
+  {
+    label: "Identities",
+    icon: RiIdCardLine,
+  },
+  {
+    label: "Vulnerabilities",
+    icon: RiBugLine,
+  },
+  {
+    label: "Permissions",
+    icon: RiKeyLine,
+  },
+];
+
+
 
 export default function UseCaseNew() {
   const [discoverOption, setDiscoverOption] = useState(-1);
@@ -50,7 +88,7 @@ export default function UseCaseNew() {
     <>
       <section
         aria-labelledby="code-example-title"
-        className="mx-auto mt-28 w-full max-w-6xl px-3 flex flex-col justify-center items-center"
+        className="mx-auto mt-28 w-full max-w-6xl 2xl:max-w-7xl px-3 flex flex-col justify-center items-center"
       >
         <h2
           id="code-example-title"
@@ -64,7 +102,7 @@ export default function UseCaseNew() {
       </section>
       <section
         aria-labelledby="code-example-title"
-        className="mx-auto mt-28 w-full max-w-6xl  flex sm:flex-row flex-col p-2 sm:p-0 gap-4 justify-between"
+        className="mx-auto mt-28 w-full max-w-6xl 2xl:max-w-7xl  flex sm:flex-row flex-col p-2 sm:p-0 gap-4 justify-between"
       >
         <div className="w-100 max-w-md relative ">
           <div className=" sticky top-20">
@@ -124,7 +162,7 @@ export default function UseCaseNew() {
           </div>
         </div>
         <div className="w-full  flex flex-col gap-10 text-black">
-          <div className="rounded-xl bg-slate-200 dark:bg-[#e4e3e3] p-8 flex flex-col gap-4 ">
+          {/* <div className="rounded-xl bg-slate-200 dark:bg-[#e4e3e3] p-8 flex flex-col gap-4 ">
             <div className="font-semibold text-black text-2xl w-full text-center">
               {" "}
               Connect with Ease
@@ -156,22 +194,148 @@ export default function UseCaseNew() {
                 />
               </video>
             </div>
+          </div> */}
+          <div className="rounded-xl bg-slate-200 dark:bg-[#e4e3e3] p-8 flex flex-col gap-4 ">
+            <div className="font-semibold text-black text-2xl w-full text-center">
+              {" "}
+              See everything in your tech stack
+            </div>
+
+            <div>
+              Gain a unified view of your entire tech stack—across public
+              clouds, SaaS vendors, on-prem, and beyond—no matter where your
+              workloads run.
+            </div>
+            <div className="flex justify-center w-full">
+              <Grid
+                numItems={2}
+                numItemsMd={4}
+                numItemsSm={4}
+                className=" justify-between gap-4"
+              >
+                <>
+                  {cards?.map((card, index) => {
+                    return (
+                      <>
+                        <Col className="w-full h-full">
+                          <div className="flex flex-col p-4 rounded-xl justify-center items-center gap-3 bg-slate-300 hover:bg-slate-400 cursor-pointer dark:bg-slate-900 hover:dark:bg-slate-950 ">
+                            {
+                              <card.icon
+                                color=""
+                                className="card-icons"
+                                size={35}
+                              />
+                            }
+
+                            <span className="text-black dark:text-white text-base">
+                              {card.label}
+                            </span>
+                          </div>
+                        </Col>
+                      </>
+                    );
+                  })}
+                </>
+              </Grid>
+            </div>
           </div>
           <div className="rounded-xl bg-slate-200 dark:bg-[#e4e3e3] p-8 flex flex-col gap-4 ">
             <div className="font-semibold text-black text-2xl w-full text-center">
               {" "}
-              The Power to Query Everything.
+              Query Everything, Faster
             </div>
             <div>
-              Discover anything, with simple SQL – Infrastructure, Deployments,
-              Users, Permissions, Data stores, AI Models, and more.
+              Discover anything, Instantly. SQL for Your Entire Tech Stack.
             </div>
             <Tabs
               className="custom-tabs"
               tabs={[
                 {
-                  label: "Database workload",
+                  label: "AWS Virtual Machines (VMs)",
                   id: "0",
+                  content: (
+                    <div className="w-full">
+                      <RenderObject
+                        obj={`/* This query gives count of all AWS Instances */
+
+SELECT COUNT(*)
+FROM aws_ec2_instance;
+`}
+                      />
+                    </div>
+                  ),
+                },
+                {
+                  label: "AI/ML Models",
+                  id: "1",
+                  content: (
+                    <div className="w-full">
+                      <RenderObject
+                        obj={`
+-- This query retrieves each unique model and counts how many assistants are using each model.
+
+
+SELECT
+    model AS "Model Name",
+    COUNT(*) AS "Count of assistants"
+FROM openai_assistant
+GROUP BY model;
+`}
+                      />
+                    </div>
+                  ),
+                },
+                {
+                  label: "Docker Artifacts",
+                  id: "2",
+                  content: (
+                    <div className="w-full">
+                      <RenderObject
+                        obj={`-- This query returns all unique base images from the Dockerfiles across
+-- all repositories
+
+
+WITH expanded AS (
+ SELECT
+   JSONB_ARRAY_ELEMENTS(images::jsonb) AS img
+ FROM github_artifact_dockerfile
+)
+SELECT DISTINCT img->>'base_image' AS unique_base_images
+FROM expanded
+WHERE img->>'base_image' IS NOT NULL;
+`}
+                      />
+                    </div>
+                  ),
+                },
+                {
+                  label: " Recent PRs",
+                  id: "3",
+                  content: (
+                    <div className="w-full">
+                      <RenderObject
+                        obj={`/* Below is returns all pull requests that were merged into the main branch in the last 48 hours.
+ */
+SELECT
+    repository_full_name,
+    number,
+    title,
+    merged,
+    merged_at,
+    merged_by
+FROM github_pull_request
+WHERE base_ref_name = 'main'
+  AND merged = TRUE
+  AND merged_at >= (CURRENT_TIMESTAMP - INTERVAL '48 HOURS')
+ORDER BY merged_at DESC;
+`}
+                      />
+                    </div>
+                  ),
+                },
+                {
+                  label: "Multi-Cloud Databases",
+                  id: "4",
                   content: (
                     <div className="w-full">
                       <RenderObject
@@ -301,44 +465,28 @@ ORDER BY t.tech;
                     </div>
                   ),
                 },
+
                 {
-                  label: "AI Models",
-                  id: "1",
+                  label: "Kubernetes Clusters in DigitalOcean",
+                  id: "5",
                   content: (
                     <div className="w-full">
                       <RenderObject
-                        obj={`
--- This query retrieves each unique model and counts how many assistants are using each model.
-
-
-SELECT
-    model AS "Model Name",
-    COUNT(*) AS "Count of assistants"
-FROM openai_assistant
-GROUP BY model;
+                        obj={`/* This query gives all Kubernetes Clusters deployed in DigitalOcean */
+SELECT * FROM digitalocean_kubernetes_cluster;
 `}
                       />
                     </div>
                   ),
                 },
                 {
-                  label: "Docker Artifacts",
-                  id: "2",
+                  label: "Web services in Render",
+                  id: "6",
                   content: (
                     <div className="w-full">
                       <RenderObject
-                        obj={`-- This query returns all unique base images from the Dockerfiles across
--- all repositories
-
-
-WITH expanded AS (
- SELECT
-   JSONB_ARRAY_ELEMENTS(images::jsonb) AS img
- FROM github_artifact_dockerfile
-)
-SELECT DISTINCT img->>'base_image' AS unique_base_images
-FROM expanded
-WHERE img->>'base_image' IS NOT NULL;
+                        obj={`/* This query gives all Services deployed in Render */
+SELECT * FROM render_service;
 `}
                       />
                     </div>
@@ -370,7 +518,7 @@ WHERE img->>'base_image' IS NOT NULL;
             </div>
           </div>
 
-          <div className="rounded-xl  bg-slate-200 dark:bg-[#e4e3e3] p-8 flex flex-col gap-4 ">
+          {/* <div className="rounded-xl  bg-slate-200 dark:bg-[#e4e3e3] p-8 flex flex-col gap-4 ">
             <div className="font-semibold text-black text-2xl w-full text-center">
               {" "}
               See across environments, regions, and platforms
@@ -379,7 +527,7 @@ WHERE img->>'base_image' IS NOT NULL;
               Gain a complete, unified view across public clouds, SaaS vendors,
               on-prem, and beyond—no matter where your workload resides.
             </div>
-            {/* <div className="flex sm:flex-row flex-col justify-between gap-4 ">
+            <div className="flex sm:flex-row flex-col justify-between gap-4 ">
               <div className="flex w-full flex-col gap-2 bg-[#3f4344] p-4 justify-center items-center rounded-xl">
                 {" "}
                 <div>
@@ -406,79 +554,9 @@ WHERE img->>'base_image' IS NOT NULL;
                 </div>{" "}
                 <div className="text-white text-lg"> Customization</div>
               </div>
-            </div> */}
-            <Tabs
-              className="custom-tabs"
-              tabs={[
-                {
-                  label: "GitHub",
-                  id: "0",
-                  content: (
-                    <div className="w-full">
-                      <RenderObject
-                        obj={`/* Below is returns all pull requests that were merged into the main branch in the last 48 hours.
- */
-SELECT
-    repository_full_name,
-    number,
-    title,
-    merged,
-    merged_at,
-    merged_by
-FROM github_pull_request
-WHERE base_ref_name = 'main'
-  AND merged = TRUE
-  AND merged_at >= (CURRENT_TIMESTAMP - INTERVAL '48 HOURS')
-ORDER BY merged_at DESC;
-`}
-                      />
-                    </div>
-                  ),
-                },
-                {
-                  label: "AWS",
-                  id: "1",
-                  content: (
-                    <div className="w-full">
-                      <RenderObject
-                        obj={`/* This query gives count of all AWS Instances */
-
-SELECT COUNT(*)
-FROM aws_ec2_instance;
-`}
-                      />
-                    </div>
-                  ),
-                },
-                {
-                  label: "DigitalOcean",
-                  id: "2",
-                  content: (
-                    <div className="w-full">
-                      <RenderObject
-                        obj={`/* This query gives all Kubernetes Clusters deployed in DigitalOcean */
-SELECT * FROM digitalocean_kubernetes_cluster;
-`}
-                      />
-                    </div>
-                  ),
-                },
-                {
-                  label: "Render",
-                  id: "3",
-                  content: (
-                    <div className="w-full">
-                      <RenderObject
-                        obj={`/* This query gives all Services deployed in Render */
-SELECT * FROM render_service;
-`}
-                      />
-                    </div>
-                  ),
-                },
-              ]}
-            />
-          </div>
+            </div>
+            <Tabs className="custom-tabs" tabs={[]} />
+          </div> */}
           <div className="rounded-xl bg-slate-200 dark:bg-[#e4e3e3] p-8 flex flex-col gap-4 ">
             <div className="font-semibold text-black text-2xl w-full text-center">
               {" "}
@@ -531,7 +609,7 @@ SELECT * FROM render_service;
       </section>
       <section
         aria-labelledby="code-example-title"
-        className="mx-auto mt-28 w-full max-w-6xl  flex sm:flex-row flex-col sm:p-0 p-2 gap-4 justify-between"
+        className="mx-auto mt-28 w-full max-w-6xl 2xl:max-w-7xl flex sm:flex-row flex-col sm:p-0 p-2 gap-4 justify-between"
       >
         <div className="w-100 max-w-md relative ">
           <div className=" sticky top-20">
@@ -628,7 +706,7 @@ SELECT * FROM render_service;
       </section>
       <section
         aria-labelledby="code-example-title"
-        className="mx-auto mt-28 w-full max-w-6xl  flex sm:flex-row flex-col sm:p-0 p-2 gap-4 justify-between"
+        className="mx-auto mt-28 w-full max-w-6xl  2xl:max-w-7xl flex sm:flex-row flex-col sm:p-0 p-2 gap-4 justify-between"
       >
         <div className="w-100 max-w-md relative ">
           <div className=" sticky top-20">

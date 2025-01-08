@@ -124,7 +124,7 @@ export default function CodeExample() {
   return (
     <section
       aria-labelledby="code-example-title"
-      className="mx-auto mt-28 w-full max-w-6xl px-3 flex flex-col justify-center items-center"
+      className="mx-auto mt-28 w-full max-w-6xl 2xl:max-w-7xl px-3 flex flex-col justify-center items-center"
     >
       {/* <Badge>Developer-first</Badge> */}
       <h2
