@@ -9,8 +9,6 @@ import { ArrowAnimated } from "../../../../../components/ui/ArrowAnimated";
 import { Faqs } from "../../../../../components/ui/Faqs";
 import Testimonial from "../../../../../components/ui/Testimonial";
 import { cx, getAPIUrl } from "../../../../../lib/utils";
-import Editor from "react-simple-code-editor";
-import { highlight, languages } from "prismjs";
 import './style.css'
 
 import {
@@ -43,6 +41,7 @@ import dayjs, { Dayjs } from "dayjs";
 import LocalizedFormat from "dayjs/plugin/localizedFormat";
 import timezone from "dayjs/plugin/timezone";
 import advancedFormat from "dayjs/plugin/advancedFormat";
+import { RenderObject } from "../../../../../components/Editor";
 
  const severityBadge = (severity: any) => {
   const style = {
@@ -223,7 +222,7 @@ export default function ControlDetail() {
                       items={GetKeyValue()}
                     />
                   </Card>
-                  <Card
+                  <div
                     onClick={() => {
                       navigator.clipboard.writeText(
                         control?.query.replace(
@@ -234,27 +233,16 @@ export default function ControlDetail() {
                     }}
                     className=" cursor-pointer  h-full "
                   >
-                    <Editor
-                      onValueChange={() => 1}
-                      highlight={(text) => {}}
-                      disabled={false}
-                      //  highlight(text, languages.sql, "sql")
-                      value={
+                    <RenderObject
+                      obj={
                         control?.query.replace(
                           "$IS_ALL_CONNECTIONS_QUERY",
                           "true"
                         ) || ""
                       }
-                      className="w-full max-h-max text-black  overflow-scroll   dark:text-white font-mono text-sm"
-                      style={{
-                        maxHeight: "40dvh",
-                        minHeight: "40dvh",
-                      }}
-                      color="white"
-                      textareaClassName="text-black dark:text-white editor-text-area"
-                      placeholder="-- write your SQL query here"
                     />
-                  </Card>
+                  </div>
+                 
                 </Grid>
               </div>
             </>
