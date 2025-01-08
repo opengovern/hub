@@ -90,7 +90,8 @@ export function RenderObject({ obj }: IRenderObjectProps) {
         // className='h-full'
         ace={ace}
         language="sql"
-        value={JSON.stringify(obj, null, "\t")}
+        // value={JSON.stringify(obj, null, "\t")}
+        value={obj.toString()}
         languageLabel="SQL"
         onChange={({ detail }) => {
           // setSavedQuery('')

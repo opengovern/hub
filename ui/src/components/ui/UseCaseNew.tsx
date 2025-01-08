@@ -173,11 +173,7 @@ export default function UseCaseNew() {
                   id: "0",
                   content: (
                     <div>
-                      <RenderObject
-                        obj={{
-                          repo_full_name: "text",
-                        }}
-                      />
+                      <RenderObject obj={""} />
                     </div>
                   ),
                 },
@@ -186,11 +182,7 @@ export default function UseCaseNew() {
                   id: "1",
                   content: (
                     <div>
-                      <RenderObject
-                        obj={{
-                          repo_full_name: "text",
-                        }}
-                      />
+                      <RenderObject obj={""} />
                     </div>
                   ),
                 },
@@ -199,11 +191,7 @@ export default function UseCaseNew() {
                   id: "2",
                   content: (
                     <div>
-                      <RenderObject
-                        obj={{
-                          repo_full_name: "text",
-                        }}
-                      />
+                      <RenderObject obj={""} />
                     </div>
                   ),
                 },
@@ -212,11 +200,7 @@ export default function UseCaseNew() {
                   id: "3",
                   content: (
                     <div>
-                      <RenderObject
-                        obj={{
-                          repo_full_name: "text",
-                        }}
-                      />
+                      <RenderObject obj={""} />
                     </div>
                   ),
                 },
@@ -225,11 +209,7 @@ export default function UseCaseNew() {
                   id: "4",
                   content: (
                     <div>
-                      <RenderObject
-                        obj={{
-                          repo_full_name: "text",
-                        }}
-                      />
+                      <RenderObject obj={""} />
                     </div>
                   ),
                 },
@@ -238,11 +218,7 @@ export default function UseCaseNew() {
                   id: "4",
                   content: (
                     <div>
-                      <RenderObject
-                        obj={{
-                          repo_full_name: "text",
-                        }}
-                      />
+                      <RenderObject obj={""} />
                     </div>
                   ),
                 },
@@ -356,95 +332,77 @@ export default function UseCaseNew() {
                 <div className="text-white text-lg"> Customization</div>
               </div>
             </div> */}
-            <div>
-              <RenderObject
-                obj={{
-                  repo_full_name: "text",
-                }}
-              />
-            </div>
-            <div className="flex flex-wrap flex-row gap-2">
-              <Button
-                ariaLabel="Report a bug (opens new tab)"
-                href="/integrations"
-                iconAlign="right"
-                iconName="external"
-                target="_blank"
-                variant="primary"
-              >
-                DigitalOcean
-              </Button>
-              <Button
-                ariaLabel="Report a bug (opens new tab)"
-                href="/integrations"
-                iconAlign="right"
-                iconName="external"
-                target="_blank"
-                variant="primary"
-              >
-                Render
-              </Button>
-              <Button
-                ariaLabel="Report a bug (opens new tab)"
-                href="/integrations"
-                iconAlign="right"
-                iconName="external"
-                target="_blank"
-                variant="primary"
-              >
-                AI Models
-              </Button>
-              <Button
-                ariaLabel="Report a bug (opens new tab)"
-                href="/integrations"
-                iconAlign="right"
-                iconName="external"
-                target="_blank"
-                variant="primary"
-              >
-                Data Stores
-              </Button>
-              <Button
-                ariaLabel="Report a bug (opens new tab)"
-                href="/integrations"
-                iconAlign="right"
-                iconName="external"
-                target="_blank"
-                variant="primary"
-              >
-                GitHub
-              </Button>
-              <Button
-                ariaLabel="Report a bug (opens new tab)"
-                href="/integrations"
-                iconAlign="right"
-                iconName="external"
-                target="_blank"
-                variant="primary"
-              >
-                AWS
-              </Button>
-              <Button
-                ariaLabel="Report a bug (opens new tab)"
-                href="/integrations"
-                iconAlign="right"
-                iconName="external"
-                target="_blank"
-                variant="primary"
-              >
-                Azure
-              </Button>
-              <Button
-                ariaLabel="Report a bug (opens new tab)"
-                href="/integrations"
-                iconAlign="right"
-                iconName="external"
-                target="_blank"
-                variant="primary"
-              >
-                More
-              </Button>
-            </div>
+            <Tabs
+              className="custom-tabs"
+              tabs={[
+                {
+                  label: "GitHub",
+                  id: "0",
+                  content: (
+                    <div>
+                      <RenderObject
+                        obj={`/* Below is returns all pull requests that were merged into the main branch in the last 48 hours.
+ */
+SELECT
+    repository_full_name,
+    number,
+    title,
+    merged,
+    merged_at,
+    merged_by
+FROM github_pull_request
+WHERE base_ref_name = 'main'
+  AND merged = TRUE
+  AND merged_at >= (CURRENT_TIMESTAMP - INTERVAL '48 HOURS')
+ORDER BY merged_at DESC;
+`}
+                      />
+                    </div>
+                  ),
+                },
+                {
+                  label: "AWS",
+                  id: "1",
+                  content: (
+                    <div>
+                      <RenderObject
+                        obj={`/* This query gives count of all AWS Instances */
+
+SELECT COUNT(*)
+FROM aws_ec2_instance;
+`}
+                      />
+                    </div>
+                  ),
+                },
+                {
+                  label: "DigitalOcean",
+                  id: "2",
+                  content: (
+                    <div>
+                      <RenderObject
+                        obj={`/* This query gives all Kubernetes Clusters deployed in DigitalOcean */
+SELECT * FROM digitalocean_kubernetes_cluster;
+`}
+                      />
+                    </div>
+                  ),
+                },
+                {
+                  label: "Render",
+                  id: "3",
+                  content: (
+                    <div>
+                      <RenderObject
+                        obj={`/* This query gives all Services deployed in Render */
+SELECT * FROM render_service;
+`}
+                      />
+                    </div>
+                  ),
+                },
+              ]}
+            />
           </div>
         </div>
       </section>
@@ -456,7 +414,7 @@ export default function UseCaseNew() {
           <div className=" sticky top-20">
             <div className="flex w-100 items-center justify-between space-x-2 mb-1">
               <div className="font-bold text-slate-900  dark:text-white text-4xl">
-                Automate Threat Detection{" "}
+                Detect Threats
               </div>
             </div>
 
@@ -464,12 +422,11 @@ export default function UseCaseNew() {
               <div className="flex flex-col gap-5">
                 <div className="text-slate-500 dark:text-white ">
                   {" "}
-                  Proactively detect misconfigurations, vulnerabilities, and
-                  policy violations in real time—freeing engineering resources
-                  to focus on innovation rather than manual security
-                  firefighting.
+                  No More Blind Spots. Detect misconfigurations,
+                  vulnerabilities, and policy violations across all tools and
+                  platforms in near real time.
                 </div>
-                <div className="text-slate-500 dark:text-white font-semibold">
+                {/* <div className="text-slate-500 dark:text-white font-semibold">
                   USE CASES
                 </div>
 
@@ -506,7 +463,7 @@ export default function UseCaseNew() {
                   >
                     DR Threats
                   </div>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
@@ -515,44 +472,7 @@ export default function UseCaseNew() {
           <div className="rounded-xl bg-slate-200 dark:bg-[#e4e3e3] p-8 flex flex-col gap-10 ">
             <div className="font-semibold text-black text-2xl w-full text-center">
               {" "}
-              Container Vulnerabilities
-            </div>
-            <div>
-              Gain a single source of truth across platforms and
-              environments—saving time, reducing overhead, and enabling teams to
-              quickly spot and address risks before they escalate.
-            </div>
-            <div className="flex sm:flex-row flex-col justify-between gap-4 ">
-              <div className="flex flex-col gap-2 bg-[#3f4344] p-4 justify-center items-center rounded-xl">
-                {" "}
-                <div>
-                  <RiGroup2Line color="white" />
-                </div>{" "}
-                <div className="font-bold text-3xl text-white ">1.5X</div>{" "}
-                <div className="text-white text-sm"> soem texts goes here</div>
-              </div>
-              <div className="flex flex-col gap-2 bg-[#3f4344] p-4 justify-center items-center rounded-xl">
-                {" "}
-                <div>
-                  <RiGroup2Line color="white" />
-                </div>{" "}
-                <div className="font-bold text-3xl text-white ">1.5X</div>{" "}
-                <div className="text-white text-sm"> soem texts goes here</div>
-              </div>
-              <div className="flex flex-col gap-2 bg-[#3f4344] p-4 justify-center items-center rounded-xl">
-                {" "}
-                <div>
-                  <RiGroup2Line color="white" />
-                </div>{" "}
-                <div className="font-bold text-3xl text-white ">1.5X</div>{" "}
-                <div className="text-white text-sm"> soem texts goes here</div>
-              </div>
-            </div>
-          </div>
-          <div className="rounded-xl bg-slate-200 dark:bg-[#e4e3e3] p-8 flex flex-col gap-10 ">
-            <div className="font-semibold text-black text-2xl w-full text-center">
-              {" "}
-              Automate Threat Detection
+              Data Risks
             </div>
             <div>
               Proactively detect misconfigurations, vulnerabilities, and policy
@@ -579,24 +499,6 @@ export default function UseCaseNew() {
                   type="video/mp4"
                 />
               </video>
-            </div>
-          </div>
-          <div className="rounded-xl bg-slate-200 dark:bg-[#e4e3e3] p-8 flex flex-col gap-10 ">
-            <div className="font-semibold text-black text-2xl w-full text-center">
-              {" "}
-              Audit for Compliance
-            </div>
-            <div>
-              Define consistent rules with Policy as Code and apply them across
-              vendors, platforms, and regions. Continuously audit to maintain
-              compliance and strengthen your security posture.
-            </div>
-            <div>
-              <RenderObject
-                obj={{
-                  repo_full_name: "text",
-                }}
-              />
             </div>
           </div>
         </div>
