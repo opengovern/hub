@@ -89,9 +89,9 @@ export function RenderObject({ obj }: IRenderObjectProps) {
       <CodeEditor
         // className='h-full'
         ace={ace}
-        language="json"
+        language="sql"
         value={JSON.stringify(obj, null, "\t")}
-        languageLabel="JSON"
+        languageLabel="SQL"
         onChange={({ detail }) => {
           // setSavedQuery('')
           // setCode(detail.value)

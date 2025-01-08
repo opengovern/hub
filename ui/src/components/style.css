@@ -183,3 +183,10 @@ box-shadow: -3px 4px 4px 0px rgba(255, 255, 255, 0.39) !important;
 .text-indigo-500{
   color: rgb(99 , 102, 241)!important;
 }
+
+.custom-tabs .awsui_tabs-tab-label_14rmt_1tm44_338 span {
+  color: #000!important;
+}
+.custom-tabs .awsui_tabs-tab-focusable_14rmt_1tm44_497 .awsui_tabs-tab-active_14rmt_1tm44_486 span  :is(.dark *) {
+    color: #006ce0!important;
+}

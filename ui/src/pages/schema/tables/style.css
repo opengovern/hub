@@ -48,10 +48,10 @@
 /* .awsui_tabs-tab-label_14rmt_1tm44_338 span :is(.dark *) {
     color: white!important;
 } */
-.awsui_tabs-tab-focusable_14rmt_1tm44_497 span  :is(.dark *) {
+.schema-page .awsui_tabs-tab-focusable_14rmt_1tm44_497 span  :is(.dark *) {
     color: white!important;
 }
 
-.awsui_tabs-tab-focusable_14rmt_1tm44_497 .awsui_tabs-tab-active_14rmt_1tm44_486 span  :is(.dark *) {
+.schema-page .awsui_tabs-tab-focusable_14rmt_1tm44_497 .awsui_tabs-tab-active_14rmt_1tm44_486 span  :is(.dark *) {
     color: #006ce0!important;
 }

@@ -106,7 +106,7 @@ const [tables,setTables]= useState<TypeTables>();
   }, []);
 
   return (
-    <div className="mx-auto pt-20 max-w-6xl">
+    <div className="mx-auto pt-20 max-w-6xl schema-page">
       <div className="px-3">
         <section
           aria-labelledby="pricing-title"
