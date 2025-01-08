@@ -82,45 +82,48 @@ export function FaqsPrice() {
                 open-source foundation, but it differs from the paid versions
                 (Professional and Enterprise) in several key areas:
                 <br />
-                <ul>
+                <ul className="mt-4">
                   <li>
-                    <b>Data Migration:</b> Updates in the Community edition that
-                    change the database structure require manual data migration,
-                    which can be time-consuming. The Professional and Enterprise
-                    editions streamline this process with built-in tools for
-                    seamless upgrades.
+                    <b>Data Migration</b> <br /> Updates in the Community
+                    edition that change the database structure require manual
+                    data migration, which can be time-consuming. The
+                    Professional and Enterprise editions streamline this process
+                    with built-in tools for seamless upgrades.
                   </li>
-                  <li>
-                    <b>Hosting:</b>The Community edition is self-hosted,
-                    requiring you to manage the infrastructure. The Professional
-                    and Enterprise editions offer flexible hosting options,
-                    including SaaS and managed hosting within your preferred
-                    cloud environment.
+                  <li className="mt-4">
+                    <b>Hosting</b>
+                    <br />
+                    The Community edition is self-hosted, requiring you to
+                    manage the infrastructure. The Professional and Enterprise
+                    editions offer flexible hosting options, including SaaS and
+                    managed hosting within your preferred cloud environment.
                   </li>
-                  <li>
-                    <b>Audit History: </b>The Community edition provides limited
-                    audit history, which may not meet the needs of organizations
-                    with stringent compliance requirements. The Professional and
-                    Enterprise editions offer comprehensive audit trails to
-                    enhance security and compliance.
+                  <li className="mt-4">
+                    <b>Audit History</b>
+                    <br />
+                    The Community edition provides limited audit history, which
+                    may not meet the needs of organizations with stringent
+                    compliance requirements. The Professional and Enterprise
+                    editions offer comprehensive audit trails to enhance
+                    security and compliance.
                   </li>
-                  <li>
-                    <b>Connectors:</b>
+                  <li className="mt-4">
+                    <b>Connectors</b>
                     <ul className="pl-5">
-                      <li>
-                        <b>Community:</b>Access to open-source connectors.
+                      <li className="mt-1">
+                        <b>Community:&nbsp;</b>Open-source connectors & create
+                        your own.
                       </li>
-                      <li>
-                        <b>Professional:</b>Access to all open-source connectors
-                        and up to 5 Premium Connectors.
+                      <li className="mt-1">
+                        <b>Professional:&nbsp;</b>Community + 5 premium
+                        connectors.
                       </li>
-                      <li>
-                        <b>Enterprise:</b>Access to all available connectors.
+                      <li className="mt-1">
+                        <b>Enterprise:&nbsp;</b>All connectors.
                       </li>
                     </ul>
                   </li>
                 </ul>
-               
               </AccordionContent>
             </AccordionItem>
             <AccordionItem
@@ -150,23 +153,30 @@ export function FaqsPrice() {
                 OpenComply Community is licensed under the Business Source
                 License (BSL) v1.1. This open-source license allows for:
                 <br />
-                <ul>
+                <ul className="mt-4">
                   <li>
-                    <b>Copying and modification:</b>You can freely copy and
-                    modify the OpenComply source code.
+                    <b>Copying and modification</b>
+                    <br />
+                    You can freely copy and modify the OpenComply source code.
                   </li>
-                  <li>
-                    <b>Redistribution</b>You can freely redistribute the
-                    modified or unmodified source code.
+                  <li className="mt-4">
+                    <b>Redistribution</b>
+                    <br />
+                    You can freely redistribute the modified or unmodified
+                    source code.
                   </li>
-                  <li>
-                    <b>Non-commercial use: </b>You can use OpenComply for
-                    non-commercial purposes without restrictions.
+                  <li className="mt-4">
+                    <b>Non-commercial use </b>
+                    <br />
+                    You can use OpenComply for non-commercial purposes without
+                    restrictions.
                   </li>
-                  <li>
-                    <b>Commercial use:</b>Commercial use is permitted under
-                    certain conditions, primarily to prevent direct competition
-                    with OpenComply's paid offerings.
+                  <li className="mt-4">
+                    <b>Commercial use</b>
+                    <br />
+                    Commercial use is permitted under certain conditions,
+                    primarily to prevent direct competition with OpenComply's
+                    paid offerings.
                   </li>
                 </ul>
                 The BSL ensures that the OpenComply community can effectively

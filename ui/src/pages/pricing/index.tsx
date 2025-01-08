@@ -61,7 +61,7 @@ const plans: Plan[] = [
     name: "Professional",
     price: { monthly: "$49", annually: "$39" },
     description:
-      "Ideal for growing teams that need SaaS convenience, seamless upgrades, and premium integrations.",
+      "For growing teams that need SaaS convenience, seamless upgrades, and premium integrations.",
     features: [
       "Everything in Community",
       "SaaS",
@@ -556,11 +556,11 @@ export default function Pricing() {
         <h1 className="mt-2 inline-block bg-gradient-to-br text-white bg-clip-text py-1 text-3xl font-bold tracking-tighter text-transparent sm:text-6xl md:text-6xl dark:from-gray-50 dark:to-gray-300">
           Ready to get started?
         </h1>
-        <p className=" max-w-lg text-lg text-center text-gray-100 dark:text-gray-100">
+        {/* <p className=" max-w-lg text-lg text-center text-gray-100 dark:text-gray-100">
           We're here to help you succeed.
           <br />
           Explore our flexible pricing plans designed to grow with you.
-        </p>
+        </p> */}
 
         <Button
           onClick={(e) => {
@@ -571,7 +571,7 @@ export default function Pricing() {
           
           className="group mt-7"
         >
-            Book demo
+            Get in touch
             <ArrowAnimated />
         </Button>
       </section>

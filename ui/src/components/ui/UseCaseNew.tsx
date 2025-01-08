@@ -118,7 +118,7 @@ export default function UseCaseNew() {
           </div>
         </div>
         <div className="w-full  flex flex-col gap-10 text-black">
-          <div className="rounded-xl dark:bg-[#e4e3e3] p-8 flex flex-col gap-10 ">
+          <div className="rounded-xl  bg-slate-200 dark:bg-[#e4e3e3] p-8 flex flex-col gap-10 ">
             <div className="font-semibold text-black text-2xl w-full text-center">
               {" "}
               Container Vulnerabilities
@@ -155,7 +155,7 @@ export default function UseCaseNew() {
               </div>
             </div>
           </div>
-          <div className="rounded-xl dark:bg-[#e4e3e3] p-8 flex flex-col gap-10 ">
+          <div className="rounded-xl bg-slate-200 dark:bg-[#e4e3e3] p-8 flex flex-col gap-10 ">
             <div className="font-semibold text-black text-2xl w-full text-center">
               {" "}
               Automate Threat Detection
@@ -187,7 +187,7 @@ export default function UseCaseNew() {
               </video>
             </div>
           </div>
-          <div className="rounded-xl dark:bg-[#e4e3e3] p-8 flex flex-col gap-10 ">
+          <div className="rounded-xl bg-slate-200 dark:bg-[#e4e3e3] p-8 flex flex-col gap-10 ">
             <div className="font-semibold text-black text-2xl w-full text-center">
               {" "}
               Audit for Compliance
@@ -271,7 +271,7 @@ export default function UseCaseNew() {
           </div>
         </div>
         <div className="w-full  flex flex-col gap-10 text-black">
-          <div className="rounded-xl dark:bg-[#e4e3e3] p-8 flex flex-col gap-10 ">
+          <div className="rounded-xl bg-slate-200 dark:bg-[#e4e3e3] p-8 flex flex-col gap-10 ">
             <div className="font-semibold text-black text-2xl w-full text-center">
               {" "}
               Container Vulnerabilities
@@ -308,7 +308,7 @@ export default function UseCaseNew() {
               </div>
             </div>
           </div>
-          <div className="rounded-xl dark:bg-[#e4e3e3] p-8 flex flex-col gap-10 ">
+          <div className="rounded-xl bg-slate-200 dark:bg-[#e4e3e3] p-8 flex flex-col gap-10 ">
             <div className="font-semibold text-black text-2xl w-full text-center">
               {" "}
               Automate Threat Detection
@@ -340,7 +340,7 @@ export default function UseCaseNew() {
               </video>
             </div>
           </div>
-          <div className="rounded-xl dark:bg-[#e4e3e3] p-8 flex flex-col gap-10 ">
+          <div className="rounded-xl bg-slate-200 dark:bg-[#e4e3e3] p-8 flex flex-col gap-10 ">
             <div className="font-semibold text-black text-2xl w-full text-center">
               {" "}
               Audit for Compliance
@@ -423,7 +423,7 @@ export default function UseCaseNew() {
           </div>
         </div>
         <div className="w-full  flex flex-col gap-10 text-black">
-          <div className="rounded-xl dark:bg-[#e4e3e3] p-8 flex flex-col gap-10 ">
+          <div className="rounded-xl bg-slate-200 dark:bg-[#e4e3e3] p-8 flex flex-col gap-10 ">
             <div className="font-semibold text-black text-2xl w-full text-center">
               {" "}
               Container Vulnerabilities
@@ -460,7 +460,7 @@ export default function UseCaseNew() {
               </div>
             </div>
           </div>
-          <div className="rounded-xl dark:bg-[#e4e3e3] p-8 flex flex-col gap-10 ">
+          <div className="rounded-xl bg-slate-200 dark:bg-[#e4e3e3] p-8 flex flex-col gap-10 ">
             <div className="font-semibold text-black text-2xl w-full text-center">
               {" "}
               Automate Threat Detection
@@ -492,7 +492,7 @@ export default function UseCaseNew() {
               </video>
             </div>
           </div>
-          <div className="rounded-xl dark:bg-[#e4e3e3] p-8 flex flex-col gap-10 ">
+          <div className="rounded-xl bg-slate-200 dark:bg-[#e4e3e3] p-8 flex flex-col gap-10 ">
             <div className="font-semibold text-black text-2xl w-full text-center">
               {" "}
               Audit for Compliance

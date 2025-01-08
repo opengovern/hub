@@ -2008,6 +2008,10 @@ select {
   list-style-type: '–  ';
 }
 
+.list-disc {
+  list-style-type: disc;
+}
+
 .appearance-none {
   -webkit-appearance: none;
           appearance: none;
@@ -2924,6 +2928,11 @@ select {
 
 .bg-white\/\[1\%\] {
   background-color: rgb(255 255 255 / 1%);
+}
+
+.bg-slate-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(226 232 240 / var(--tw-bg-opacity, 1));
 }
 
 .bg-opacity-10 {
