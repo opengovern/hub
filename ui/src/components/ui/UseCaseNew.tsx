@@ -63,7 +63,7 @@ export default function UseCaseNew() {
       </section>
       <section
         aria-labelledby="code-example-title"
-        className="mx-auto mt-28 w-full max-w-6xl  flex flex-row gap-4 justify-between"
+        className="mx-auto mt-28 w-full max-w-6xl  flex sm:flex-row flex-col p-2 sm:p-0 gap-4 justify-between"
       >
         <div className="w-100 max-w-md relative ">
           <div className=" sticky top-20">
@@ -235,7 +235,7 @@ export default function UseCaseNew() {
                 },
               ]}
             />
-            <div className="w-full flex justify-center gap-2 items-center">
+            <div className="w-full flex sm:flex-row flex-col justify-center gap-2 items-center">
               <Button
                 ariaLabel="Report a bug (opens new tab)"
                 href="/integrations"
@@ -270,9 +270,9 @@ export default function UseCaseNew() {
             </div>
             <div className="flex justify-center w-full">
               <Grid
-                numItems={3}
+                numItems={2}
                 numItemsMd={3}
-                numItemsSm={1}
+                numItemsSm={3}
                 className=" justify-between gap-10"
               >
                 <>
@@ -316,28 +316,22 @@ export default function UseCaseNew() {
               environments—saving time, reducing overhead, and enabling teams to
               quickly spot and address risks before they escalate.
             </div> */}
-            <div className="flex flex-row justify-between gap-4 ">
+            <div className="flex sm:flex-row flex-col justify-between gap-4 ">
               <div className="flex w-full flex-col gap-2 bg-[#3f4344] p-4 justify-center items-center rounded-xl">
                 {" "}
-                <div>
-                  {/* <RiGroup2Line color="white" /> */}
-                </div>{" "}
+                <div>{/* <RiGroup2Line color="white" /> */}</div>{" "}
                 <div className="font-bold text-3xl text-white ">40+</div>{" "}
                 <div className="text-white text-lg"> Integrations</div>
               </div>
               <div className="flex w-full flex-col gap-2 bg-[#3f4344] p-4 justify-center items-center rounded-xl">
                 {" "}
-                <div>
-                  {/* <RiGroup2Line color="white" /> */}
-                </div>{" "}
+                <div>{/* <RiGroup2Line color="white" /> */}</div>{" "}
                 <div className="font-bold text-3xl text-white ">1K+</div>{" "}
                 <div className="text-white text-lg"> Assets</div>
               </div>
               <div className="flex w-full flex-col gap-2 bg-[#3f4344] p-4 justify-center items-center rounded-xl">
                 {" "}
-                <div>
-                  {/* <RiGroup2Line color="white" /> */}
-                </div>{" "}
+                <div>{/* <RiGroup2Line color="white" /> */}</div>{" "}
                 <div className="font-bold text-3xl text-white ">
                   <RiInfinityLine size={"40"} />
                 </div>{" "}
@@ -349,7 +343,7 @@ export default function UseCaseNew() {
       </section>
       <section
         aria-labelledby="code-example-title"
-        className="mx-auto mt-28 w-full max-w-6xl  flex flex-row gap-4 justify-between"
+        className="mx-auto mt-28 w-full max-w-6xl  flex sm:flex-row flex-col sm:p-0 p-2 gap-4 justify-between"
       >
         <div className="w-100 max-w-md relative ">
           <div className=" sticky top-20">
@@ -421,7 +415,7 @@ export default function UseCaseNew() {
               environments—saving time, reducing overhead, and enabling teams to
               quickly spot and address risks before they escalate.
             </div>
-            <div className="flex flex-row justify-between gap-4 ">
+            <div className="flex sm:flex-row flex-col justify-between gap-4 ">
               <div className="flex flex-col gap-2 bg-[#3f4344] p-4 justify-center items-center rounded-xl">
                 {" "}
                 <div>
@@ -502,7 +496,7 @@ export default function UseCaseNew() {
       </section>
       <section
         aria-labelledby="code-example-title"
-        className="mx-auto mt-28 w-full max-w-6xl  flex flex-row gap-4 justify-between"
+        className="mx-auto mt-28 w-full max-w-6xl  flex sm:flex-row flex-col sm:p-0 p-2 gap-4 justify-between"
       >
         <div className="w-100 max-w-md relative ">
           <div className=" sticky top-20">
@@ -573,7 +567,7 @@ export default function UseCaseNew() {
               environments—saving time, reducing overhead, and enabling teams to
               quickly spot and address risks before they escalate.
             </div>
-            <div className="flex flex-row justify-between gap-4 ">
+            <div className="flex sm:flex-row flex-col justify-between gap-4 ">
               <div className="flex flex-col gap-2 bg-[#3f4344] p-4 justify-center items-center rounded-xl">
                 {" "}
                 <div>
@@ -645,9 +639,9 @@ export default function UseCaseNew() {
             </div>
             <div className="flex justify-center w-full">
               <Grid
-                numItems={3}
+                numItems={2}
                 numItemsMd={3}
-                numItemsSm={1}
+                numItemsSm={3}
                 className=" justify-between gap-12"
               >
                 <>
@@ -672,6 +666,7 @@ export default function UseCaseNew() {
               <Button
                 ariaLabel="Report a bug (opens new tab)"
                 href="/compliance/frameworks"
+                className="text-center flex justify-center"
                 iconAlign="right"
                 iconName="external"
                 target="_blank"

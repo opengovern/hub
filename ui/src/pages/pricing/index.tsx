@@ -45,17 +45,15 @@ const plans: Plan[] = [
     features: [
       "Unlimited Users",
       "Unlimited Integrations",
+      "Web UI & API",
       "Single Sign-On (SSO)",
       "50+ Built-In Frameworks",
-      "2,000+ Built-In Controls",
-      "10+ Adapters",
-      "Web UI & API",
-      "Self-Hosted",
+      "Limited Audit Trails",
     ],
     isStarter: true,
     isRecommended: false,
     buttonText: "Download Now",
-    buttonLink: "#",
+    buttonLink: "https://docs.opencomply.io/oss#deploy-to-kubernetes-5-7-mins",
   },
   {
     name: "Professional",
@@ -65,9 +63,10 @@ const plans: Plan[] = [
     features: [
       "Everything in Community",
       "SaaS",
-      "Seamless Upgrades (automatic data migrations)",
+      "Access up to 5 Premium Integrations",
+      "Seamless Upgrades",
       "Up to 365 Days of Audit History",
-      "Email Support",
+      "Email & Chat Support",
     ],
     isStarter: false,
     isRecommended: false,
@@ -85,7 +84,7 @@ const plans: Plan[] = [
       "Access to 45+ Premium Integrations",
       "SLAs & Phone Support",
       "Cloud or Managed Hosting",
-      "Extended Audit History (up to 730 days)",
+      "Extended Audit History (up to 1100 days)",
     ],
     isStarter: false,
     isRecommended: false,
@@ -231,7 +230,7 @@ export default function Pricing() {
                       <div className="mt-6">
                         {plan.isStarter ? (
                           <Button variant="secondary" asChild className="group">
-                            <a href={plan.buttonLink}>
+                            <a href={plan.buttonLink} target="__blank">
                               {plan.buttonText}
                               <ArrowAnimated />
                             </a>
