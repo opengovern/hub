@@ -169,7 +169,7 @@ export default function UseCaseNew() {
               className="custom-tabs"
               tabs={[
                 {
-                  label: "Infrastructure",
+                  label: "Docker Artifacts",
                   id: "0",
                   content: (
                     <div>
@@ -182,7 +182,7 @@ export default function UseCaseNew() {
                   ),
                 },
                 {
-                  label: "Artifacts",
+                  label: "Servers",
                   id: "1",
                   content: (
                     <div>
@@ -195,7 +195,7 @@ export default function UseCaseNew() {
                   ),
                 },
                 {
-                  label: "Identities",
+                  label: "Data workload",
                   id: "2",
                   content: (
                     <div>
@@ -208,7 +208,7 @@ export default function UseCaseNew() {
                   ),
                 },
                 {
-                  label: "AI Workload",
+                  label: "Artifacts",
                   id: "3",
                   content: (
                     <div>
@@ -221,7 +221,20 @@ export default function UseCaseNew() {
                   ),
                 },
                 {
-                  label: "Datastores",
+                  label: "Identities",
+                  id: "4",
+                  content: (
+                    <div>
+                      <RenderObject
+                        obj={{
+                          repo_full_name: "text",
+                        }}
+                      />
+                    </div>
+                  ),
+                },
+                {
+                  label: "AI Models",
                   id: "4",
                   content: (
                     <div>
@@ -263,7 +276,7 @@ export default function UseCaseNew() {
               {" "}
               Integrates with your favorite tools
             </div>
-            <div className="  text-lf w-full text-center">
+            <div className="   w-full ">
               {" "}
               Seamlessly integrate OpenComply with your technology stack—across
               Infrastructure, DevOps, AI, and SecOps platforms.
@@ -309,34 +322,128 @@ export default function UseCaseNew() {
           <div className="rounded-xl  bg-slate-200 dark:bg-[#e4e3e3] p-8 flex flex-col gap-4 ">
             <div className="font-semibold text-black text-2xl w-full text-center">
               {" "}
-              Powerful, Out-of-the-Box Features
+              See across environments, regions, and platforms
             </div>
-            {/* <div>
-              Gain a single source of truth across platforms and
-              environments—saving time, reducing overhead, and enabling teams to
-              quickly spot and address risks before they escalate.
-            </div> */}
-            <div className="flex sm:flex-row flex-col justify-between gap-4 ">
+            <div>
+              Gain a complete, unified view across public clouds, SaaS vendors,
+              on-prem, and beyond—no matter where your workload resides.
+            </div>
+            {/* <div className="flex sm:flex-row flex-col justify-between gap-4 ">
               <div className="flex w-full flex-col gap-2 bg-[#3f4344] p-4 justify-center items-center rounded-xl">
                 {" "}
-                <div>{/* <RiGroup2Line color="white" /> */}</div>{" "}
+                <div>
+                  <RiGroup2Line color="white" />
+                </div>{" "}
                 <div className="font-bold text-3xl text-white ">40+</div>{" "}
                 <div className="text-white text-lg"> Integrations</div>
               </div>
               <div className="flex w-full flex-col gap-2 bg-[#3f4344] p-4 justify-center items-center rounded-xl">
                 {" "}
-                <div>{/* <RiGroup2Line color="white" /> */}</div>{" "}
+                <div>
+                  <RiGroup2Line color="white" />
+                </div>{" "}
                 <div className="font-bold text-3xl text-white ">1K+</div>{" "}
                 <div className="text-white text-lg"> Assets</div>
               </div>
               <div className="flex w-full flex-col gap-2 bg-[#3f4344] p-4 justify-center items-center rounded-xl">
                 {" "}
-                <div>{/* <RiGroup2Line color="white" /> */}</div>{" "}
+                <div>
+                  <RiGroup2Line color="white" />
+                </div>{" "}
                 <div className="font-bold text-3xl text-white ">
                   <RiInfinityLine size={"40"} />
                 </div>{" "}
                 <div className="text-white text-lg"> Customization</div>
               </div>
+            </div> */}
+            <div>
+              <RenderObject
+                obj={{
+                  repo_full_name: "text",
+                }}
+              />
+            </div>
+            <div className="flex flex-wrap flex-row gap-2">
+              <Button
+                ariaLabel="Report a bug (opens new tab)"
+                href="/integrations"
+                iconAlign="right"
+                iconName="external"
+                target="_blank"
+                variant="primary"
+              >
+                DigitalOcean
+              </Button>
+              <Button
+                ariaLabel="Report a bug (opens new tab)"
+                href="/integrations"
+                iconAlign="right"
+                iconName="external"
+                target="_blank"
+                variant="primary"
+              >
+                Render
+              </Button>
+              <Button
+                ariaLabel="Report a bug (opens new tab)"
+                href="/integrations"
+                iconAlign="right"
+                iconName="external"
+                target="_blank"
+                variant="primary"
+              >
+                AI Models
+              </Button>
+              <Button
+                ariaLabel="Report a bug (opens new tab)"
+                href="/integrations"
+                iconAlign="right"
+                iconName="external"
+                target="_blank"
+                variant="primary"
+              >
+                Data Stores
+              </Button>
+              <Button
+                ariaLabel="Report a bug (opens new tab)"
+                href="/integrations"
+                iconAlign="right"
+                iconName="external"
+                target="_blank"
+                variant="primary"
+              >
+                GitHub
+              </Button>
+              <Button
+                ariaLabel="Report a bug (opens new tab)"
+                href="/integrations"
+                iconAlign="right"
+                iconName="external"
+                target="_blank"
+                variant="primary"
+              >
+                AWS
+              </Button>
+              <Button
+                ariaLabel="Report a bug (opens new tab)"
+                href="/integrations"
+                iconAlign="right"
+                iconName="external"
+                target="_blank"
+                variant="primary"
+              >
+                Azure
+              </Button>
+              <Button
+                ariaLabel="Report a bug (opens new tab)"
+                href="/integrations"
+                iconAlign="right"
+                iconName="external"
+                target="_blank"
+                variant="primary"
+              >
+                More
+              </Button>
             </div>
           </div>
         </div>
@@ -557,7 +664,7 @@ export default function UseCaseNew() {
           </div>
         </div>
         <div className="w-full  flex flex-col gap-10 text-black">
-          <div className="rounded-xl bg-slate-200 dark:bg-[#e4e3e3] p-8 flex flex-col gap-10 ">
+          {/* <div className="rounded-xl bg-slate-200 dark:bg-[#e4e3e3] p-8 flex flex-col gap-10 ">
             <div className="font-semibold text-black text-2xl w-full text-center">
               {" "}
               Container Vulnerabilities
@@ -593,16 +700,15 @@ export default function UseCaseNew() {
                 <div className="text-white text-sm"> soem texts goes here</div>
               </div>
             </div>
-          </div>
+          </div> */}
           <div className="rounded-xl bg-slate-200 dark:bg-[#e4e3e3] p-8 flex flex-col gap-10 ">
             <div className="font-semibold text-black text-2xl w-full text-center">
               {" "}
-              Automate Threat Detection
+              Simplify Your Audits
             </div>
             <div>
-              Proactively detect misconfigurations, vulnerabilities, and policy
-              violations in real time—freeing engineering resources to focus on
-              innovation rather than manual security firefighting.
+              Conduct audits effortlessly and generate comprehensive,
+              evidence-backed reports.
             </div>
             <div className="rounded-xl bg-white ring-1 ring-slate-900/5 dark:bg-slate-950 dark:ring-white/15">
               <video
@@ -614,12 +720,14 @@ export default function UseCaseNew() {
                 playsInline
                 preload="auto"
                 // @ts-ignore
-                src={"https://content.opencomply.io/RunAudit.mp4"}
+                src={
+                  "https://content.opencomply.io/website/product-videos/run_audit.mp4"
+                }
               >
                 <source
                   src={
                     // @ts-ignore
-                    "https://content.opencomply.io/RunAudit.mp4"
+                    "https://content.opencomply.io/website/product-videos/run_audit.mp4"
                   }
                   type="video/mp4"
                 />
@@ -629,9 +737,9 @@ export default function UseCaseNew() {
           <div className="rounded-xl bg-slate-200 dark:bg-[#e4e3e3] p-8 flex flex-col gap-8 ">
             <div className="font-semibold text-black text-2xl w-full text-center">
               {" "}
-              Regulatory Frameworks
+              Assess Compliance with Industry Standards
             </div>
-            <div className="  text-lf w-full text-center">
+            <div className="  text-lf w-full ">
               {" "}
               Demonstrate a commitment to security by continuously auditing
               against industry best practices, including frameworks like ISO
@@ -640,12 +748,12 @@ export default function UseCaseNew() {
             <div className="flex justify-center w-full">
               <Grid
                 numItems={2}
-                numItemsMd={3}
-                numItemsSm={3}
+                numItemsMd={4}
+                numItemsSm={4}
                 className=" justify-between gap-12"
               >
                 <>
-                  {[1, 2, 3, 4, 5, 6]?.map((item, index) => {
+                  {[1, 2, 3, 4, 5, 6, 7, 8]?.map((item, index) => {
                     return (
                       <>
                         <Col>
@@ -675,6 +783,104 @@ export default function UseCaseNew() {
                 See all 50+ built-in Frameworks
               </Button>
             </div>
+          </div>
+          <div className="rounded-xl bg-slate-200 dark:bg-[#e4e3e3] p-8 flex flex-col gap-8 ">
+            <div className="font-semibold text-black text-2xl w-full text-center">
+              {" "}
+              Internal Standards and Best Practice{" "}
+            </div>
+            <div className="  text-lf w-full ">
+              {" "}
+              Easily assess workloads for conformance to DevOps, Security, and
+              Engineering best practices to ensure excellence.
+            </div>
+            <div className="flex justify-center w-full">
+              <Grid
+                numItems={2}
+                numItemsMd={4}
+                numItemsSm={4}
+                className=" justify-between gap-12"
+              >
+                <>
+                  {[1]?.map((item, index) => {
+                    return (
+                      <>
+                        <Col>
+                          <div className="rounded-xl  w-fit  p-2">
+                            <img
+                              src={`https://content.opencomply.io/compliance_icons/${item}.png`}
+                              className="w-28 h-32"
+                            />
+                          </div>
+                        </Col>
+                      </>
+                    );
+                  })}
+                </>
+              </Grid>
+            </div>
+            {/* <div className="flex justify-center w-full">
+              <Button
+                ariaLabel="Report a bug (opens new tab)"
+                href="/compliance/frameworks"
+                className="text-center flex justify-center"
+                iconAlign="right"
+                iconName="external"
+                target="_blank"
+                variant="primary"
+              >
+                See all 50+ built-in Frameworks
+              </Button>
+            </div> */}
+          </div>
+          <div className="rounded-xl bg-slate-200 dark:bg-[#e4e3e3] p-8 flex flex-col gap-8 ">
+            <div className="font-semibold text-black text-2xl w-full text-center">
+              {" "}
+              Customize & Cut Out the Noise
+            </div>
+            <div className="  text-lf w-full ">
+              {" "}
+              Focus on what matters—tailor frameworks and controls, all governed
+              in Git.
+            </div>
+            <div className="flex justify-center w-full">
+              <Grid
+                numItems={2}
+                numItemsMd={4}
+                numItemsSm={4}
+                className=" justify-between gap-12"
+              >
+                <>
+                  {[1]?.map((item, index) => {
+                    return (
+                      <>
+                        <Col>
+                          <div className="rounded-xl  w-fit  p-2">
+                            <img
+                              src={`https://content.opencomply.io/compliance_icons/${item}.png`}
+                              className="w-28 h-32"
+                            />
+                          </div>
+                        </Col>
+                      </>
+                    );
+                  })}
+                </>
+              </Grid>
+            </div>
+            {/* <div className="flex justify-center w-full">
+              <Button
+                ariaLabel="Report a bug (opens new tab)"
+                href="/compliance/frameworks"
+                className="text-center flex justify-center"
+                iconAlign="right"
+                iconName="external"
+                target="_blank"
+                variant="primary"
+              >
+                See all 50+ built-in Frameworks
+              </Button>
+            </div> */}
           </div>
         </div>
       </section>
