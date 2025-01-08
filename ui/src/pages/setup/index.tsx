@@ -56,7 +56,6 @@ const getFile = () => {
     // @ts-ignore
     fetch(setupFiles[id]).then((res) => {
       res.text().then((text) => {
-        console.log(text);
         setFile(text);
       });
     });

@@ -1,14 +1,9 @@
-import { Card } from '@tremor/react'
-import 'ace-builds/css/ace.css'
-import 'ace-builds/css/theme/cloud_editor.css'
-import 'ace-builds/css/theme/cloud_editor_dark.css'
-import 'ace-builds/css/theme/cloud_editor_dark.css'
-import 'ace-builds/css/theme/twilight.css'
-import 'ace-builds/css/theme/sqlserver.css'
-import 'ace-builds/css/theme/xcode.css'
+
 
 import { useEffect, useState } from 'react'
 import { CodeEditor } from '@cloudscape-design/components'
+import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
+import { dracula } from 'react-syntax-highlighter/dist/esm/styles/prism'
 
 
 interface IRenderObjectProps {
@@ -20,26 +15,7 @@ export function RenderObject({ obj }: IRenderObjectProps) {
     const [preferences, setPreferences] = useState(undefined)
 
  useEffect(() => {
-        async function loadAce() {
-            const ace = await import('ace-builds')
-            await import('ace-builds/webpack-resolver')
-            ace.config.set('useStrictCSP', true)
-            // ace.config.setMode('ace/mode/sql')
-            // @ts-ignore
-            // ace.edit(element, {
-            //     mode: 'ace/mode/sql',
-            //     selectionStyle: 'text',
-            // })
-
-            return ace
-        }
-
-        loadAce()
-            .then((ace) => {
-                // @ts-ignore
-                setAce(ace)
-            })
-            .finally(() => {})
+       
     }, [])
 
     return (
@@ -86,29 +62,46 @@ export function RenderObject({ obj }: IRenderObjectProps) {
       //         }}
       //     />
       // </Card>
-      <CodeEditor
-        // className='h-full'
-        ace={ace}
+      //   <CodeEditor
+      //     // className='h-full'
+      //     ace={ace}
+      //     language="sql"
+      //     // value={JSON.stringify(obj, null, "\t")}
+      //     value={obj.toString()}
+      //     languageLabel="SQL"
+      //     onChange={({ detail }) => {
+      //       // setSavedQuery('')
+      //       // setCode(detail.value)
+      //     }}
+      //     editorContentHeight={350}
+      //     preferences={preferences}
+      //     onPreferencesChange={(e) =>
+      //       // @ts-ignore
+      //       setPreferences(e.detail)
+      //     }
+      //     loading={false}
+
+      //     themes={{
+      //       dark: ["cloud_editor_dark", "twilight"],
+      //       light: ["xcode", "cloud_editor", "sqlserver"],
+      //       // @ts-ignore
+      //     }}
+      //   />
+      <SyntaxHighlighter
+        showLineNumbers={true}
+        showInlineLineNumbers={true}
+        wrapLines={true}
+        wrapLongLines={true}
+        customStyle={{ height: "400px", textWrap: "wrap", width: "100%" }}
+        CodeTag={({ children, ...props }) => (
+            <code {...props} style={{...props.style,whiteSpace:"break-spaces"}} >
+                {children}
+            </code>
+        )}
         language="sql"
-        // value={JSON.stringify(obj, null, "\t")}
-        value={obj.toString()}
-        languageLabel="SQL"
-        onChange={({ detail }) => {
-          // setSavedQuery('')
-          // setCode(detail.value)
-        }}
-        editorContentHeight={300}
-        preferences={preferences}
-        onPreferencesChange={(e) =>
-          // @ts-ignore
-          setPreferences(e.detail)
-        }
-        loading={false}
-        themes={{
-          dark: ["cloud_editor_dark", "twilight"],
-          light: ["xcode", "cloud_editor", "sqlserver"],
-          // @ts-ignore
-        }}
-      />
+        style={dracula}
+      >
+        {obj}
+      </SyntaxHighlighter>
     );
 }

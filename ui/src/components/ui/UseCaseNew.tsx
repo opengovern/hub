@@ -32,6 +32,7 @@ import { RenderObject } from "../Editor";
 import { Col, Grid } from "@tremor/react";
 import { useNavigate } from "react-router-dom";
 import { ArrowAnimated } from "./ArrowAnimated";
+import ThemedImage from "./ThemedImage";
 
 export default function UseCaseNew() {
   const [discoverOption, setDiscoverOption] = useState(-1);
@@ -169,56 +170,177 @@ export default function UseCaseNew() {
               className="custom-tabs"
               tabs={[
                 {
-                  label: "Docker Artifacts",
+                  label: "Database workload",
                   id: "0",
                   content: (
-                    <div>
-                      <RenderObject obj={""} />
-                    </div>
-                  ),
-                },
-                {
-                  label: "Servers",
-                  id: "1",
-                  content: (
-                    <div>
-                      <RenderObject obj={""} />
-                    </div>
-                  ),
-                },
-                {
-                  label: "Data workload",
-                  id: "2",
-                  content: (
-                    <div>
-                      <RenderObject obj={""} />
-                    </div>
-                  ),
-                },
-                {
-                  label: "Artifacts",
-                  id: "3",
-                  content: (
-                    <div>
-                      <RenderObject obj={""} />
-                    </div>
-                  ),
-                },
-                {
-                  label: "Identities",
-                  id: "4",
-                  content: (
-                    <div>
-                      <RenderObject obj={""} />
+                    <div className="w-full">
+                      <RenderObject
+                        obj={`WITH 
+-- ================================
+-- 1) AWS counts
+-- ================================
+aws_agg AS (
+  SELECT 'postgres' AS tech,
+    (
+      SELECT COUNT(*) FROM aws_rds_db_instance  WHERE engine ILIKE '%postgres%'
+    ) 
+    + (
+      SELECT COUNT(*) FROM aws_rds_db_cluster   WHERE engine ILIKE '%postgres%'
+    ) AS c
+  UNION ALL
+  SELECT 'mysql' AS tech,
+    (
+      SELECT COUNT(*) FROM aws_rds_db_instance  WHERE engine ILIKE '%mysql%'
+    ) 
+    + (
+      SELECT COUNT(*) FROM aws_rds_db_cluster   WHERE engine ILIKE '%mysql%'
+    ) AS c
+  UNION ALL
+  SELECT 'mariadb' AS tech,
+    (
+      SELECT COUNT(*) FROM aws_rds_db_instance  WHERE engine ILIKE '%mariadb%'
+    ) 
+    + (
+      SELECT COUNT(*) FROM aws_rds_db_cluster   WHERE engine ILIKE '%mariadb%'
+    ) AS c
+  UNION ALL
+  -- Some AWS engines for MSSQL are often labeled "sqlserver".
+  SELECT 'mssql' AS tech,
+    (
+      SELECT COUNT(*) FROM aws_rds_db_instance  WHERE engine ILIKE '%sqlserver%'
+    ) 
+    + (
+      SELECT COUNT(*) FROM aws_rds_db_cluster   WHERE engine ILIKE '%sqlserver%'
+    ) AS c
+),
+
+-- ================================
+-- 2) Azure counts
+-- ================================
+azure_agg AS (
+  SELECT 'postgres' AS tech,
+    (
+      SELECT COUNT(*) FROM azure_postgresql_flexible_server
+    ) 
+    + (
+      SELECT COUNT(*) FROM azure_postgresql_server
+    ) AS c
+  UNION ALL
+  SELECT 'mysql' AS tech,
+    (
+      SELECT COUNT(*) FROM azure_mysql_flexible_server
+    ) AS c
+  UNION ALL
+  SELECT 'mariadb' AS tech,
+    (
+      SELECT COUNT(*) FROM azure_mariadb_server
+    ) AS c
+  UNION ALL
+  SELECT 'mssql' AS tech,
+    (
+      SELECT COUNT(*) FROM azure_mssql_managed_instance
+    ) AS c
+),
+
+-- ======================================
+-- 3) DigitalOcean counts
+-- ======================================
+-- The engine field can be: 'pg' (Postgres), 'mysql' (MySQL), 'redis', etc.
+-- We only count Postgres and MySQL here.
+digitalocean_agg AS (
+  SELECT 
+    CASE 
+      WHEN engine = 'pg'    THEN 'postgres'
+      WHEN engine = 'mysql' THEN 'mysql'
+      -- If you wish to handle 'redis', you'd map it similarly, but not in our final table
+    END AS tech,
+    COUNT(*) AS c
+  FROM digitalocean_database
+  WHERE engine IN ('pg', 'mysql')
+  GROUP BY 1
+),
+
+-- ================================
+-- 4) Render counts
+-- ================================
+-- Render only has a "render_postgres_instance" table, so these are Postgres.
+render_agg AS (
+  SELECT 'postgres' AS tech,
+         COUNT(*)    AS c
+  FROM render_postgres_instance
+),
+
+-- ================================
+-- 5) List of all DB tech we care about
+-- ================================
+tech_list AS (
+  SELECT 'postgres' AS tech
+   UNION ALL SELECT 'mysql'
+   UNION ALL SELECT 'mariadb'
+   UNION ALL SELECT 'mssql'
+)
+
+-- ======================================
+-- Final pivot: one row per DB tech
+-- Columns for AWS, Azure, DigitalOcean, Render
+-- ======================================
+SELECT 
+  t.tech                          AS "Database Tech",
+  COALESCE(aaws.c, 0)            AS "AWS",
+  COALESCE(aaz.c, 0)             AS "Azure",
+  COALESCE(ado.c, 0)             AS "DigitalOcean",
+  COALESCE(arnd.c, 0)            AS "Render"
+FROM tech_list          t
+LEFT JOIN aws_agg       aaws ON t.tech = aaws.tech
+LEFT JOIN azure_agg     aaz  ON t.tech = aaz.tech
+LEFT JOIN digitalocean_agg ado ON t.tech = ado.tech
+LEFT JOIN render_agg    arnd ON t.tech = arnd.tech
+ORDER BY t.tech;
+`}
+                      />
                     </div>
                   ),
                 },
                 {
                   label: "AI Models",
-                  id: "4",
+                  id: "1",
                   content: (
-                    <div>
-                      <RenderObject obj={""} />
+                    <div className="w-full">
+                      <RenderObject
+                        obj={`
+-- This query retrieves each unique model and counts how many assistants are using each model.
+
+
+SELECT
+    model AS "Model Name",
+    COUNT(*) AS "Count of assistants"
+FROM openai_assistant
+GROUP BY model;
+`}
+                      />
+                    </div>
+                  ),
+                },
+                {
+                  label: "Docker Artifacts",
+                  id: "2",
+                  content: (
+                    <div className="w-full">
+                      <RenderObject
+                        obj={`-- This query returns all unique base images from the Dockerfiles across
+-- all repositories
+
+
+WITH expanded AS (
+ SELECT
+   JSONB_ARRAY_ELEMENTS(images::jsonb) AS img
+ FROM github_artifact_dockerfile
+)
+SELECT DISTINCT img->>'base_image' AS unique_base_images
+FROM expanded
+WHERE img->>'base_image' IS NOT NULL;
+`}
+                      />
                     </div>
                   ),
                 },
@@ -247,54 +369,7 @@ export default function UseCaseNew() {
               </Button>
             </div>
           </div>
-          <div className="rounded-xl bg-slate-200 dark:bg-[#e4e3e3] p-8 flex flex-col gap-4 ">
-            <div className="font-semibold text-black text-2xl w-full text-center">
-              {" "}
-              Integrates with your favorite tools
-            </div>
-            <div className="   w-full ">
-              {" "}
-              Seamlessly integrate OpenComply with your technology stack—across
-              Infrastructure, DevOps, AI, and SecOps platforms.
-            </div>
-            <div className="flex justify-center w-full">
-              <Grid
-                numItems={2}
-                numItemsMd={3}
-                numItemsSm={3}
-                className=" justify-between gap-10"
-              >
-                <>
-                  {[1, 2, 3, 4, 5, 6]?.map((item, index) => {
-                    return (
-                      <>
-                        <Col>
-                          <div className="rounded-xl  w-fit  p-2">
-                            <img
-                              src={`https://content.opencomply.io/integrations/${item}.svg`}
-                              className="w-20 h-24"
-                            />
-                          </div>
-                        </Col>
-                      </>
-                    );
-                  })}
-                </>
-              </Grid>
-            </div>
-            <div className="flex justify-center w-full">
-              <Button
-                ariaLabel="Report a bug (opens new tab)"
-                href="/integrations"
-                iconAlign="right"
-                iconName="external"
-                target="_blank"
-                variant="primary"
-              >
-                See all Integrations
-              </Button>
-            </div>
-          </div>
+
           <div className="rounded-xl  bg-slate-200 dark:bg-[#e4e3e3] p-8 flex flex-col gap-4 ">
             <div className="font-semibold text-black text-2xl w-full text-center">
               {" "}
@@ -339,7 +414,7 @@ export default function UseCaseNew() {
                   label: "GitHub",
                   id: "0",
                   content: (
-                    <div>
+                    <div className="w-full">
                       <RenderObject
                         obj={`/* Below is returns all pull requests that were merged into the main branch in the last 48 hours.
  */
@@ -364,7 +439,7 @@ ORDER BY merged_at DESC;
                   label: "AWS",
                   id: "1",
                   content: (
-                    <div>
+                    <div className="w-full">
                       <RenderObject
                         obj={`/* This query gives count of all AWS Instances */
 
@@ -379,7 +454,7 @@ FROM aws_ec2_instance;
                   label: "DigitalOcean",
                   id: "2",
                   content: (
-                    <div>
+                    <div className="w-full">
                       <RenderObject
                         obj={`/* This query gives all Kubernetes Clusters deployed in DigitalOcean */
 SELECT * FROM digitalocean_kubernetes_cluster;
@@ -392,7 +467,7 @@ SELECT * FROM digitalocean_kubernetes_cluster;
                   label: "Render",
                   id: "3",
                   content: (
-                    <div>
+                    <div className="w-full">
                       <RenderObject
                         obj={`/* This query gives all Services deployed in Render */
 SELECT * FROM render_service;
@@ -403,6 +478,54 @@ SELECT * FROM render_service;
                 },
               ]}
             />
+          </div>
+          <div className="rounded-xl bg-slate-200 dark:bg-[#e4e3e3] p-8 flex flex-col gap-4 ">
+            <div className="font-semibold text-black text-2xl w-full text-center">
+              {" "}
+              Integrates with your favorite tools
+            </div>
+            <div className="   w-full ">
+              {" "}
+              Seamlessly integrate OpenComply with your technology stack—across
+              Infrastructure, DevOps, AI, and SecOps platforms.
+            </div>
+            <div className="flex justify-center w-full">
+              <Grid
+                numItems={2}
+                numItemsMd={4}
+                numItemsSm={4}
+                className=" justify-between gap-10"
+              >
+                <>
+                  {[1, 2, 3, 4, 5, 6, 7, 8]?.map((item, index) => {
+                    return (
+                      <>
+                        <Col>
+                          <div className="rounded-xl  w-fit  p-2">
+                            <img
+                              src={`https://content.opencomply.io/website/integrations/${item}.svg`}
+                              className="w-20 h-24"
+                            />
+                          </div>
+                        </Col>
+                      </>
+                    );
+                  })}
+                </>
+              </Grid>
+            </div>
+            <div className="flex justify-center w-full">
+              <Button
+                ariaLabel="Report a bug (opens new tab)"
+                href="/integrations"
+                iconAlign="right"
+                iconName="external"
+                target="_blank"
+                variant="primary"
+              >
+                See all Integrations
+              </Button>
+            </div>
           </div>
         </div>
       </section>
@@ -469,7 +592,7 @@ SELECT * FROM render_service;
           </div>
         </div>
         <div className="w-full  flex flex-col gap-10 text-black">
-          <div className="rounded-xl bg-slate-200 dark:bg-[#e4e3e3] p-8 flex flex-col gap-10 ">
+          <div className="rounded-xl bg-slate-200 dark:bg-[#e4e3e3] p-8 flex flex-col gap-4 ">
             <div className="font-semibold text-black text-2xl w-full text-center">
               {" "}
               Data Risks
@@ -603,7 +726,7 @@ SELECT * FROM render_service;
               </div>
             </div>
           </div> */}
-          <div className="rounded-xl bg-slate-200 dark:bg-[#e4e3e3] p-8 flex flex-col gap-10 ">
+          <div className="rounded-xl bg-slate-200 dark:bg-[#e4e3e3] p-8 flex flex-col gap-4 ">
             <div className="font-semibold text-black text-2xl w-full text-center">
               {" "}
               Simplify Your Audits
@@ -636,7 +759,7 @@ SELECT * FROM render_service;
               </video>
             </div>
           </div>
-          <div className="rounded-xl bg-slate-200 dark:bg-[#e4e3e3] p-8 flex flex-col gap-8 ">
+          <div className="rounded-xl bg-slate-200 dark:bg-[#e4e3e3] p-8 flex flex-col gap-4 ">
             <div className="font-semibold text-black text-2xl w-full text-center">
               {" "}
               Assess Compliance with Industry Standards
@@ -661,7 +784,8 @@ SELECT * FROM render_service;
                         <Col>
                           <div className="rounded-xl  w-fit  p-2">
                             <img
-                              src={`https://content.opencomply.io/compliance_icons/${item}.png`}
+                              style={{ mixBlendMode: "multiply" }}
+                              src={`https://content.opencomply.io/website/compliance_icons/${item}.png`}
                               className="w-28 h-32"
                             />
                           </div>
@@ -686,7 +810,7 @@ SELECT * FROM render_service;
               </Button>
             </div>
           </div>
-          <div className="rounded-xl bg-slate-200 dark:bg-[#e4e3e3] p-8 flex flex-col gap-8 ">
+          <div className="rounded-xl bg-slate-200 dark:bg-[#e4e3e3] p-8 flex flex-col gap-4 ">
             <div className="font-semibold text-black text-2xl w-full text-center">
               {" "}
               Internal Standards and Best Practice{" "}
@@ -697,29 +821,22 @@ SELECT * FROM render_service;
               Engineering best practices to ensure excellence.
             </div>
             <div className="flex justify-center w-full">
-              <Grid
-                numItems={2}
-                numItemsMd={4}
-                numItemsSm={4}
-                className=" justify-between gap-12"
-              >
-                <>
-                  {[1]?.map((item, index) => {
-                    return (
-                      <>
-                        <Col>
-                          <div className="rounded-xl  w-fit  p-2">
-                            <img
-                              src={`https://content.opencomply.io/compliance_icons/${item}.png`}
-                              className="w-28 h-32"
-                            />
-                          </div>
-                        </Col>
-                      </>
-                    );
-                  })}
-                </>
-              </Grid>
+              <div className="rounded-2xl w-full bg-slate-50/40 p-2 ring-1 ring-inset ring-slate-200/50 dark:bg-gray-900/70 dark:ring-white/10">
+                <div className="rounded-xl w-full bg-white ring-1 ring-slate-900/5 dark:bg-slate-950 dark:ring-white/15">
+                  <ThemedImage
+                    lightSrc={
+                      "https://content.opencomply.io/website/product-screenshots/internal-standards-reliability.png"
+                    }
+                    darkSrc={
+                      "https://content.opencomply.io/website/product-screenshots/internal-standards-reliability.png"
+                    }
+                    alt="A preview of the Database web app"
+                    width={2400}
+                    height={1600}
+                    className="rounded-xl shadow-2xl dark:shadow-indigo-600/10"
+                  />
+                </div>
+              </div>
             </div>
             {/* <div className="flex justify-center w-full">
               <Button
@@ -735,7 +852,7 @@ SELECT * FROM render_service;
               </Button>
             </div> */}
           </div>
-          <div className="rounded-xl bg-slate-200 dark:bg-[#e4e3e3] p-8 flex flex-col gap-8 ">
+          <div className="rounded-xl bg-slate-200 dark:bg-[#e4e3e3] p-8 flex flex-col gap-4 ">
             <div className="font-semibold text-black text-2xl w-full text-center">
               {" "}
               Customize & Cut Out the Noise
@@ -745,31 +862,58 @@ SELECT * FROM render_service;
               Focus on what matters—tailor frameworks and controls, all governed
               in Git.
             </div>
-            <div className="flex justify-center w-full">
-              <Grid
-                numItems={2}
-                numItemsMd={4}
-                numItemsSm={4}
-                className=" justify-between gap-12"
-              >
-                <>
-                  {[1]?.map((item, index) => {
-                    return (
-                      <>
-                        <Col>
-                          <div className="rounded-xl  w-fit  p-2">
-                            <img
-                              src={`https://content.opencomply.io/compliance_icons/${item}.png`}
-                              className="w-28 h-32"
-                            />
-                          </div>
-                        </Col>
-                      </>
-                    );
-                  })}
-                </>
-              </Grid>
-            </div>
+            <Tabs
+              tabs={[
+                {
+                  id: "0",
+                  label: "Customize Controls",
+                  content: (
+                    <div className="flex justify-center w-full">
+                      <div className="rounded-2xl w-full bg-slate-50/40 p-2 ring-1 ring-inset ring-slate-200/50 dark:bg-gray-900/70 dark:ring-white/10">
+                        <div className="rounded-xl w-full bg-white ring-1 ring-slate-900/5 dark:bg-slate-950 dark:ring-white/15">
+                          <ThemedImage
+                            lightSrc={
+                              "https://content.opencomply.io/website/product-screenshots/customize-controls.png"
+                            }
+                            darkSrc={
+                              "https://content.opencomply.io/website/product-screenshots/customize-controls.png"
+                            }
+                            alt="A preview of the Database web app"
+                            width={1000}
+                            height={700}
+                            className="rounded-xl shadow-2xl dark:shadow-indigo-600/10"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  ),
+                },
+                {
+                  id: "1",
+                  label: "Compliance Frameworks",
+                  content: (
+                    <div className="flex justify-center w-full">
+                      <div className="rounded-2xl w-full bg-slate-50/40 p-2 ring-1 ring-inset ring-slate-200/50 dark:bg-gray-900/70 dark:ring-white/10">
+                        <div className="rounded-xl w-full bg-white ring-1 ring-slate-900/5 dark:bg-slate-950 dark:ring-white/15">
+                          <ThemedImage
+                            lightSrc={
+                              "https://content.opencomply.io/website/product-screenshots/customize-frameworks.png"
+                            }
+                            darkSrc={
+                              "https://content.opencomply.io/website/product-screenshots/customize-frameworks.png"
+                            }
+                            alt="A preview of the Database web app"
+                            width={1000}
+                            height={700}
+                            className="rounded-xl shadow-2xl dark:shadow-indigo-600/10"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  ),
+                },
+              ]}
+            />
             {/* <div className="flex justify-center w-full">
               <Button
                 ariaLabel="Report a bug (opens new tab)"

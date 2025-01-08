@@ -40,8 +40,8 @@ export default function LogoCloud() {
           loop={true}
           centerInsufficientSlides={true}
           centeredSlides={true}
-          onSlideChange={() => console.log("slide change")}
-          onSwiper={(swiper: any) => console.log("swiper")}
+          onSlideChange={() => {}}
+          onSwiper={(swiper: any) => {}}
         >
           <SwiperSlide>
             <img

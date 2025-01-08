@@ -307,9 +307,7 @@ export default function Controls({ id, enable, title }: IPolicies) {
         console.log(err);
       });
   };
-  const FindSelectOptions = () => {
-    console.log(tree);
-  };
+
   useEffect(() => {
     GetTree();
     GetControls(false);
