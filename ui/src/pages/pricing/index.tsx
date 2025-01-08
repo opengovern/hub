@@ -46,8 +46,7 @@ const plans: Plan[] = [
       "Unlimited Users",
       "Unlimited Integrations",
       "Single Sign-On (SSO)",
-      "Unlimited Users",
-      "15+ Built-In Frameworks",
+      "50+ Built-In Frameworks",
       "2,000+ Built-In Controls",
       "10+ Adapters",
       "Web UI & API",
@@ -55,7 +54,7 @@ const plans: Plan[] = [
     ],
     isStarter: true,
     isRecommended: false,
-    buttonText: "Download New",
+    buttonText: "Download Now",
     buttonLink: "#",
   },
   {
@@ -85,7 +84,6 @@ const plans: Plan[] = [
       "Granular Permissions & Data Controls",
       "Access to 45+ Premium Integrations",
       "SLAs & Phone Support",
-      "Unlimited",
       "Cloud or Managed Hosting",
       "Extended Audit History (up to 730 days)",
     ],
@@ -127,8 +125,8 @@ export default function Pricing() {
         onDismiss={() => setOpen(false)}
       >
         <Cal
-          namespace="try-enterprise"
-          calLink="team/opencomply/try-enterprise"
+          namespace="try"
+          calLink="team/opencomply/try"
           style={{ width: "100%", height: "100%", overflow: "scroll" }}
           config={{ layout: "month_view" }}
         />
