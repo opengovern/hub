@@ -28,7 +28,18 @@ import { useEffect, useState } from "react";
 // @ts-ignore
 import video from "../../videos/2024-10-08-How_to_Customize_Controls.mp4";
 import CopyToClipboard from "../../components/CopyToClipboard";
-import { RiBrainLine, RiBugLine, RiFileCodeLine, RiFileZipLine, RiGitMergeLine, RiGroup2Line, RiIdCardLine, RiInfinityLine, RiKeyLine, RiServerLine } from "@remixicon/react";
+import {
+  RiBrainLine,
+  RiBugLine,
+  RiFileCodeLine,
+  RiFileZipLine,
+  RiGitMergeLine,
+  RiGroup2Line,
+  RiIdCardLine,
+  RiInfinityLine,
+  RiKeyLine,
+  RiServerLine,
+} from "@remixicon/react";
 import { RenderObject } from "../Editor";
 import { Col, Grid } from "@tremor/react";
 import { useNavigate } from "react-router-dom";
@@ -70,17 +81,14 @@ const cards = [
   },
 ];
 
-
-
 export default function UseCaseNew() {
   const [discoverOption, setDiscoverOption] = useState(-1);
-  const [open,setOpen] = useState(false);
-  const [activeStepIndex, setActiveStepIndex]= useState(1);
+  const [open, setOpen] = useState(false);
+  const [activeStepIndex, setActiveStepIndex] = useState(1);
   useEffect(() => {
-      if( discoverOption != -1){
-        // setOpen(true);
-      }
-    
+    if (discoverOption != -1) {
+      // setOpen(true);
+    }
   }, [discoverOption]);
   const navigate = useNavigate();
 
@@ -105,7 +113,7 @@ export default function UseCaseNew() {
         className="mx-auto mt-28 w-full max-w-6xl 2xl:max-w-7xl  flex sm:flex-row flex-col p-2 sm:p-0 gap-4 justify-between"
       >
         <div className="w-100 max-w-md relative ">
-          <div className=" sticky top-20">
+          <div className=" sticky top-80">
             <div className="flex w-100 items-center justify-between space-x-2 mb-1">
               <div className="font-bold text-slate-900  dark:text-white text-4xl">
                 Centralize Visibility
@@ -262,6 +270,20 @@ SELECT COUNT(*)
 FROM aws_ec2_instance;
 `}
                       />
+                      {/* <div className="flex justify-center w-full h-full min-h-80">
+                        <ThemedImage
+                          lightSrc={
+                            "https://content.opencomply.io/website/sample-1.png"
+                          }
+                          darkSrc={
+                            "https://content.opencomply.io/website/sample-1.png"
+                          }
+                          alt="A preview of the Database web app"
+                          width={2400}
+                          height={1600}
+                          className="rounded-xl shadow-2xl dark:shadow-indigo-600/10"
+                        />
+                      </div> */}
                     </div>
                   ),
                 },
@@ -494,7 +516,7 @@ SELECT * FROM render_service;
                 },
               ]}
             />
-            <div className="w-full flex sm:flex-row flex-col justify-center gap-2 items-center">
+            {/* <div className="w-full flex sm:flex-row flex-col justify-center gap-2 items-center">
               <Button
                 ariaLabel="Report a bug (opens new tab)"
                 href="/integrations"
@@ -515,7 +537,7 @@ SELECT * FROM render_service;
               >
                 See Schema
               </Button>
-            </div>
+            </div> */}
           </div>
 
           {/* <div className="rounded-xl  bg-slate-200 dark:bg-[#e4e3e3] p-8 flex flex-col gap-4 ">
@@ -612,7 +634,7 @@ SELECT * FROM render_service;
         className="mx-auto mt-28 w-full max-w-6xl 2xl:max-w-7xl flex sm:flex-row flex-col sm:p-0 p-2 gap-4 justify-between"
       >
         <div className="w-100 max-w-md relative ">
-          <div className=" sticky top-20">
+          <div className=" sticky top-80">
             <div className="flex w-100 items-center justify-between space-x-2 mb-1">
               <div className="font-bold text-slate-900  dark:text-white text-4xl">
                 Detect Threats
@@ -709,7 +731,7 @@ SELECT * FROM render_service;
         className="mx-auto mt-28 w-full max-w-6xl  2xl:max-w-7xl flex sm:flex-row flex-col sm:p-0 p-2 gap-4 justify-between"
       >
         <div className="w-100 max-w-md relative ">
-          <div className=" sticky top-20">
+          <div className=" sticky top-80">
             <div className="flex w-100 items-center justify-between space-x-2 mb-1">
               <div className="font-bold text-slate-900  dark:text-white text-4xl">
                 Audit for Compliance

@@ -20,7 +20,7 @@ export default function LogoCloud() {
     <section
       id="logo cloud"
       aria-label="Company logos"
-      className="mt-24 flex animate-slide-up-fade flex-col items-center justify-center gap-y-6 text-center sm:mt-32"
+      className="mt-24 mb-24 flex animate-slide-up-fade flex-col items-center justify-center gap-y-6 text-center sm:mt-32"
       style={{ animationDuration: "1500ms" }}
     >
       <p className="text-lg flex flex-row gap-2 items-center font-medium tracking-tighter text-gray-800 dark:text-gray-200">

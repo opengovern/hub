@@ -16,7 +16,7 @@ export default function Steps() {
   return (
     <section
       aria-labelledby="features-title"
-      className="mx-auto mt-44 w-full max-w-6xl 2xl:max-w-7xl px-3 flex flex-col justify-center items-center"
+      className="mx-auto mt-44 w-full mb-16 max-w-6xl 2xl:max-w-7xl px-3 flex flex-col justify-center items-center"
     >
       {/* <Badge>How it works</Badge> */}
       <h2
@@ -36,37 +36,35 @@ export default function Steps() {
         </a>
       </Button> */}
       <div className="space-y-8 w-full relative before:absolute  ">
-        <div className="relative flex gap-5 flex-wrap items-start justify-start md:justify-start md:odd:flex-row group is-active">
+        <div className="relative flex gap-5 flex-wrap items-center justify-center md:justify-center md:odd:flex-row group is-active">
           {/* <!-- Icon --> */}
 
           {/* <!-- Card --> */}
           {/* <div className="flex items-center justify-center w-10 h-10  rounded-full border border-white bg-dark-tremor-background text-slate-500 dark:text-white  group-[.is-active]:text-emerald-50 shadow shrink-0 md:order-0  md:group-even:translate-x-1/2">
             1
           </div> */}
-          <div className="w-[calc(100%-4rem)]  md:w-[calc(35%-2.5rem)]  rounded">
-            <div className="flex items-center justify-between space-x-2 mb-1">
-              <div className="font-bold text-slate-900  dark:text-white text-2xl">
+          {/* <div className="w-[calc(100%-4rem)]  md:w-[calc(35%-2.5rem)]  rounded"> */}
+          {/* <div className="flex items-center justify-center space-x-2 mb-1"> */}
+          {/* <div className="font-bold text-slate-900  dark:text-white text-2xl">
                 Install
-              </div>
-              {/* <time className="font-caveat font-medium text-indigo-500">
+              </div> */}
+          {/* <time className="font-caveat font-medium text-indigo-500">
                 08/06/2023
               </time> */}
-            </div>
-            <div className="text-slate-500 dark:text-white  dark:text-white mt-4">
+          {/* </div> */}
+          {/* <div className="text-slate-500 dark:text-white  dark:text-white mt-4">
               Deploy to Kubernetes in minutes
-            </div>
-          </div>
+            </div> */}
+          {/* </div> */}
           <div className="md:hidden w-10 h-10"></div>
-          <div className="w-[calc(100%)] md:w-[calc(65%-2.5rem)]   rounded">
+          <div className="w-[calc(100%)] md:w-[calc(70%-2.5rem)]   rounded">
             <div className="w-full">
               {/* code to copy */}
               <div className="flex flex-row gap-2 mt-2 w-full relative">
                 <div className="p-5 border dark:border-white rounded-xl w-full">
                   <code className=" text-[12px] text-black dark:text-white">
                     <span className="text-[#8250df]">helm</span> repo add
-                    opencomply https://charts.opencomply.io
-                    <br />
-                    <span className="text-[#8250df]">helm</span> repo update
+                    opencomply https://charts.opencomply.io --force-update
                     <br />
                     <span className="text-[#8250df]">helm</span> install -n
                     opencomply opencomply opencomply/opencomply
@@ -86,7 +84,7 @@ kubectl port-forward -n opencomply svc/nginx-proxy 8080:80`}
                   />{" "}
                 </div>
               </div>
-              <div className="flex text-sm flex-wrap flex-1 justify-start md:justify-center flex-row gap-2 mt-2 ">
+              <div className="flex text-sm flex-wrap flex-1 justify-start md:justify-center flex-row gap-2 mt-4 ">
                 <Button
                   ariaLabel="Report a bug (opens new tab)"
                   href="https://docs.opencomply.io/oss/advanced-setup/deploy-to-aws"

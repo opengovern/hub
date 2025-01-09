@@ -4,22 +4,24 @@ import CodeExample from "../../components/ui/CodeExample";
 import Cta from "../../components/ui/Cta";
 import { Faqs } from "../../components/ui/Faqs";
 import Features from "../../components/ui/Features";
+import Features2 from "../../components/ui/Features2";
 import { GlobalDatabase } from "../../components/ui/GlobalDatabase";
 import Hero from "../../components/ui/Hero";
 import LogoCloud from "../../components/ui/LogoCloud";
 import Steps from "../../components/ui/Steps";
 import UseCase from "../../components/ui/UseCase";
 import UseCaseNew from "../../components/ui/UseCaseNew";
+import UseCaseNew2 from "../../components/ui/UseCaseNew2";
 
 export default function Preview() {
   return (
     <main className="flex flex-col ">
       <Hero />
-      <LogoCloud />
+      {/* <LogoCloud /> */}
       {/* <GlobalDatabase /> */}
-      <Features />
+      <Features2 />
       {/* <UseCase /> */}
-      <UseCaseNew />
+      <UseCaseNew2 />
       {/* <UseCaseNew /> */}
       {/* <UseCaseNew /> */}
       <Steps />

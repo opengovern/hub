@@ -52,7 +52,7 @@ export function RenderObject({ obj }: IRenderObjectProps) {
         showInlineLineNumbers={true}
         wrapLines={true}
         wrapLongLines={true}
-        customStyle={{ height: "400px", textWrap: "wrap", width: "100%" }}
+        customStyle={{ height: "350px", textWrap: "wrap", width: "100%" }}
         CodeTag={({ children, ...props }) => (
           <code
             {...props}

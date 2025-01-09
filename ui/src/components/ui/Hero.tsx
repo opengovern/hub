@@ -55,7 +55,7 @@ export default function Hero() {
   return (
     <section
       aria-labelledby="hero-title"
-      className="mt-32 flex flex-col items-center justify-center text-center sm:mt-40"
+      className="mt-32 flex  flex-col items-center justify-center text-center sm:mt-40"
     >
       <h1
         id="hero-title"
@@ -124,7 +124,6 @@ export default function Hero() {
             >
               Integrate
             </span>
-            {/* <div className="line-1"></div> */}
             <div
               className={`w-full custom-pg-bar  bg-gray-300 dark:bg-slate-400  ${video % 3 == 0 && "active"} `}
             >
@@ -134,7 +133,6 @@ export default function Hero() {
                 style={{ width: `${width[0]}%` }}
               ></div>
             </div>
-            {/* <div className="line-2"></div> */}
           </div>
           <div
             className=" w-full flex flex-col justify-center items-center custom-button cursor-pointer  "
@@ -153,7 +151,6 @@ export default function Hero() {
             >
               Audit
             </span>
-            {/* <div className="line-1"></div> */}
             <div
               className={`w-full custom-pg-bar  bg-gray-300 dark:bg-slate-400  ${video % 3 == 1 && "active"} `}
             >
@@ -163,7 +160,6 @@ export default function Hero() {
                 style={{ width: `${width[1]}%` }}
               ></div>
             </div>
-            {/* <div className="line-2"></div> */}
           </div>
           <div
             className=" w-full flex flex-col justify-center items-center custom-button cursor-pointer  "
@@ -215,11 +211,7 @@ export default function Hero() {
             />
           </video>
         </div>
-        {/* <HeroImage /> */}
-        {/* <div
-          className="absolute inset-x-0 -bottom-20 -mx-10 h-2/4 bg-gradient-to-t from-white via-white to-transparent lg:h-1/4 dark:from-gray-950 dark:via-gray-950"
-          aria-hidden="true"
-        /> */}
+      
       </div>
     </section>
   );
