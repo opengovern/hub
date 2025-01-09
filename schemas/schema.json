@@ -2,7 +2,7 @@
   "total": {
     "integration": 15,
     "count_of_named_tables": 894,
-    "count_of_named_columns": 12408
+    "count_of_named_columns": 12419
   },
   "summary": {
     "aws": {
@@ -51,7 +51,7 @@
     },
     "linode": {
       "count_of_named_tables": 16,
-      "count_of_named_columns": 186
+      "count_of_named_columns": 197
     },
     "oci": {
       "count_of_named_tables": 1,
@@ -4378,7 +4378,7 @@
       {
         "table_name": "linode_account",
         "description": "Account information.",
-        "count_of_columns": 5
+        "count_of_columns": 16
       },
       {
         "table_name": "linode_database",

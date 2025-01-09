@@ -8,6 +8,26 @@
       "description": "The email address of the person associated with this Account."
     },
     {
+      "name": "address_1",
+      "type": "text",
+      "description": "First line of this Account’s billing address."
+    },
+    {
+      "name": "address_2",
+      "type": "text",
+      "description": "Second line of this Account’s billing address."
+    },
+    {
+      "name": "balance",
+      "type": "text",
+      "description": "This Account’s balance, in US dollars."
+    },
+    {
+      "name": "balance_uninvoiced",
+      "type": "text",
+      "description": "This Account’s current estimated invoice in US dollars. This is not your final invoice balance. Transfer charges are not included in the estimate."
+    },
+    {
       "name": "city",
       "type": "text",
       "description": "The city for this Account’s billing address."
@@ -23,9 +43,44 @@
       "description": "The two-letter country code of this Account’s billing address."
     },
     {
+      "name": "credit_card",
+      "type": "json",
+      "description": "Credit Card information associated with this Account."
+    },
+    {
+      "name": "first_name",
+      "type": "text",
+      "description": "The first name of the person associated with this Account."
+    },
+    {
+      "name": "last_name",
+      "type": "text",
+      "description": "The last name of the person associated with this Account."
+    },
+    {
       "name": "euuid",
       "type": "text",
       "description": "An external unique identifier for this account."
+    },
+    {
+      "name": "phone",
+      "type": "text",
+      "description": "The phone number associated with this Account."
+    },
+    {
+      "name": "state",
+      "type": "text",
+      "description": "The state for this Account’s billing address."
+    },
+    {
+      "name": "tax_id",
+      "type": "text",
+      "description": "The tax identification number associated with this Account, for tax calculations in some countries. If you do not live in a country that collects tax, this should be null."
+    },
+    {
+      "name": "zip",
+      "type": "text",
+      "description": "The zip code of this Account’s billing address."
     }
   ]
 }

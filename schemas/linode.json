@@ -1,11 +1,11 @@
 {
   "count_of_named_tables": 16,
-  "count_of_named_columns": 186,
+  "count_of_named_columns": 197,
   "tables": [
     {
       "table_name": "linode_account",
       "description": "Account information.",
-      "count_of_columns": 5
+      "count_of_columns": 16
     },
     {
       "table_name": "linode_database",

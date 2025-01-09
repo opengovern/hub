@@ -98,5 +98,5 @@
       "count_of_columns": 5
     }
   ],
-  "description": "Inventory 300+ cloud assets and subs."
+  "description": "Manage and sync env variables and secrets."
 }
