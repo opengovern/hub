@@ -287,44 +287,55 @@ WHERE img->>'base_image' IS NOT NULL;
                   {" "}
                   Effortless Audits | Policy as Code | Continuous Compliance
                 </div>
-                {/* <div className="text-slate-500 dark:text-white font-semibold">
-                  USE CASES
-                </div> */}
+                <div className="text-slate-500 dark:text-white font-semibold">
+                  Resources
+                </div>
 
-                {/* <div className="flex flex-row gap-2 flex-wrap">
-                  <div
+                <div className="flex flex-row gap-2 flex-wrap">
+                  <a
+                    target="__blank"
+                    href="https://opencomply.io/compliance/frameworks/baseline_reliability"
                     className={`p-2 border dark:border-white rounded-3xl cursor-pointer hover:dark:bg-white hover:bg-blue-950 hover:text-white hover:dark:text-black  ${discoverOption == 0 && "text-bold dark:bg-white dark:text-black bg-blue-950 text-white "}  `}
-                    onClick={() => {
-                      setDiscoverOption(0);
-                    }}
+                   
                   >
-                    SOC2
-                  </div>
-                  <div
+                    Reliability Best Practices
+                  </a>
+                  <a
+                    target="__blank"
+                    href="https://opencomply.io/compliance/frameworks/baseline_security"
                     className={`p-2 border dark:border-white rounded-3xl cursor-pointer hover:dark:bg-white hover:bg-blue-950 hover:text-white hover:dark:text-black  ${discoverOption == 1 && "text-bold dark:bg-white dark:text-black bg-blue-950 text-white "}  `}
-                    onClick={() => {
-                      setDiscoverOption(1);
-                    }}
+                  >
+                    Security Best Practices
+                  </a>
+                  <a
+                    target="__blank"
+                    href="https://opencomply.io/compliance/frameworks/azure_fedramp_high"
+                    className={`p-2 border dark:border-white rounded-3xl cursor-pointer hover:dark:bg-white hover:bg-blue-950 hover:text-white hover:dark:text-black  ${discoverOption == 2 && "text-bold dark:bg-white dark:text-black bg-blue-950 text-white "}  `}
+                  >
+                    FedRAMP
+                  </a>
+                  <a
+                    href="https://opencomply.io/compliance/frameworks/aws_hipaa_final_omnibus_security_rule_2013"
+                    target="__blank"
+                    className={`p-2 border dark:border-white rounded-3xl cursor-pointer hover:dark:bg-white hover:bg-blue-950 hover:text-white hover:dark:text-black  ${discoverOption == 3 && "text-bold dark:bg-white dark:text-black bg-blue-950 text-white "}  `}
                   >
                     HIPAA
-                  </div>
-                  <div
-                    className={`p-2 border dark:border-white rounded-3xl cursor-pointer hover:dark:bg-white hover:bg-blue-950 hover:text-white hover:dark:text-black  ${discoverOption == 2 && "text-bold dark:bg-white dark:text-black bg-blue-950 text-white "}  `}
-                    onClick={() => {
-                      setDiscoverOption(2);
-                    }}
-                  >
-                    Engineering Best Practices
-                  </div>
-                  <div
+                  </a>
+                  <a
+                    href="https://opencomply.io/compliance/frameworks/azure_cis_v200"
+                    target="__blank"
                     className={`p-2 border dark:border-white rounded-3xl cursor-pointer hover:dark:bg-white hover:bg-blue-950 hover:text-white hover:dark:text-black  ${discoverOption == 3 && "text-bold dark:bg-white dark:text-black bg-blue-950 text-white "}  `}
-                    onClick={() => {
-                      setDiscoverOption(3);
-                    }}
                   >
-                    Internal Controls
-                  </div>
-                </div> */}
+                    CIS
+                  </a>
+                  <a
+                    href="https://opencomply.io/compliance/frameworks/aws_cisa_cyber_essentials"
+                    target="__blank"
+                    className={`p-2 border dark:border-white rounded-3xl cursor-pointer hover:dark:bg-white hover:bg-blue-950 hover:text-white hover:dark:text-black  ${discoverOption == 3 && "text-bold dark:bg-white dark:text-black bg-blue-950 text-white "}  `}
+                  >
+                    CISA Cyber Essentials
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -410,16 +421,16 @@ WHERE img->>'base_image' IS NOT NULL;
           <div className=" sticky top-80">
             <div className="flex w-full items-center justify-between space-x-2 mb-1">
               <div className="font-bold text-slate-900  dark:text-white text-3xl">
-              Customize
+                Customize
               </div>
             </div>
 
             <div className="text-slate-500 dark:text-white mt-4">
               <div className="flex flex-col gap-5">
-                {/* <div className="text-slate-500 dark:text-white w-full ">
+                <div className="text-slate-500 dark:text-white w-full ">
                   {" "}
-                  Effortless Audits | Policy as Code | Continuous Compliance
-                </div> */}
+                  Let Opencomply work for you. Here's how we make it happen.{" "}
+                </div>
                 {/* <div className="text-slate-500 dark:text-white font-semibold">
                   USE CASES
                 </div> */}
@@ -540,10 +551,6 @@ WHERE img->>'base_image' IS NOT NULL;
               </Grid>
             </div>
           </div>
-         
-
-         
-       
         </div>
       </section>
 
