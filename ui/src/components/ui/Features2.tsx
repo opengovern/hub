@@ -19,7 +19,7 @@ const stats = [
 
 export default function Features2() {
   return (
-    <section aria-labelledby="features-title" className=" bg-[#282A36] my-12">
+    <section aria-labelledby="features-title" className=" bg-[#081027] my-12">
       {/* <Badge>Security at Scale</Badge> */}
       <div className=" sm:mt-24 mt-4 sm:mb-24 mb-4 max-w-6xl 2xl:max-w-7xl px-3 sm:px-36 py-12 mx-auto       rounded-xl  flex flex-col justify-start items-start">
         <h2

@@ -8,6 +8,7 @@ import Features2 from "../../components/ui/Features2";
 import { GlobalDatabase } from "../../components/ui/GlobalDatabase";
 import Hero from "../../components/ui/Hero";
 import LogoCloud from "../../components/ui/LogoCloud";
+import LogoCloud2 from "../../components/ui/LogoCloud2";
 import Steps from "../../components/ui/Steps";
 import UseCase from "../../components/ui/UseCase";
 import UseCaseNew from "../../components/ui/UseCaseNew";
@@ -24,6 +25,8 @@ export default function Preview() {
       <UseCaseNew2 />
       {/* <UseCaseNew /> */}
       {/* <UseCaseNew /> */}
+      <LogoCloud2 />
+
       <Steps />
 
       <CodeExample />
