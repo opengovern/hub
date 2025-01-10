@@ -19,16 +19,19 @@ const stats = [
 
 export default function Features2() {
   return (
-    <section aria-labelledby="features-title" className=" bg-[#081027] my-12">
+    <section
+      aria-labelledby="features-title"
+      className=" bg-gray-100 dark:bg-gray-900 my-12"
+    >
       {/* <Badge>Security at Scale</Badge> */}
       <div className=" sm:mt-24 mt-4 sm:mb-24 mb-4 max-w-6xl 2xl:max-w-7xl px-3 sm:px-36 py-12 mx-auto       rounded-xl  flex flex-col justify-start items-start">
         <h2
           id="features-title"
-          className=" inline-block text-slate-50 text-start w-full bg-gradient-to-br from-gray-900 to-gray-800 bg-clip-text py-2 text-4xl font-bold tracking-tighter  sm:text-4xl md:text-4xl "
+          className=" inline-block text-slate-950 dark:text-slate-50 text-start w-full bg-gradient-to-br from-gray-900 to-gray-800 bg-clip-text py-2 text-4xl font-bold tracking-tighter  sm:text-4xl md:text-4xl "
         >
           Compliance is painful
         </h2>
-        <p className="mt-6   text-lg max-w-3xl  text-left leading-7 text-slate-50 dark:text-slate-50">
+        <p className="mt-6   text-lg max-w-3xl  text-left leading-7 text-slate-950 dark:text-slate-50">
           {/* <b>Compliance is painful.</b> <br />
         <br /> */}
           Generic controls. Outdated processes. Confusing standards. Overpriced

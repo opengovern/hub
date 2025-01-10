@@ -3,7 +3,8 @@ import { Badge } from "../Badge";
 // @ts-ignore
 import video from "../../videos/2024-10-08-How_to_Customize_Controls.mp4";
 import CopyToClipboard from "../CopyToClipboard";
-import { Button } from "@cloudscape-design/components";
+import { Button, Popover } from "@cloudscape-design/components";
+import { RiInformationLine } from "@remixicon/react";
 
 const DISCOVER_URLS = [
   "https://www.youtube.com/embed/ZK-rNEhJIDs",
@@ -21,13 +22,28 @@ export default function Steps() {
       {/* <Badge>How it works</Badge> */}
       <h2
         id="features-title"
-        className="mt-2 mb-5 inline-block dark:text-white bg-gradient-to-br from-gray-900 to-gray-800 bg-clip-text py-2 text-4xl font-bold tracking-tighter text-transparent sm:text-6xl md:text-6xl dark:from-gray-50 dark:to-gray-300"
+        className="mt-2 mb-5 inline-block dark:text-white bg-gradient-to-br from-gray-900 to-gray-800 bg-clip-text py-2 text-3xl font-bold tracking-tighter text-transparent sm:text-5xl md:text-5xl dark:from-gray-50 dark:to-gray-300"
       >
         Get Started
       </h2>
 
-      <p className="mt-2 mb-6 max-w-3xl text-lg leading-7 text-gray-600 dark:text-gray-400">
-        Compliance Should Be Simple, Accessible, and Transparent.
+      <p className="mt-2 mb-6 max-w-3xl text-lg leading-7 gap-2 text-gray-900 dark:text-gray-400 flex justify-center items-center">
+        Install Opencomply using Helm on Kubernetes clusters.
+        <Popover
+          dismissButton={false}
+          position="top"
+          className="mt-1"
+          size="small"
+          triggerType="custom"
+          content={
+            <span>
+              Requires Kubernetes v1.29+ with minimum of 3 nodes (2 vCPUs/8 GB
+              RAM).
+            </span>
+          }
+        >
+          <RiInformationLine/>
+        </Popover>
       </p>
       {/*
       <Button classNameName="mt-4">
@@ -60,9 +76,9 @@ export default function Steps() {
           <div className="w-[calc(100%)] md:w-[calc(70%-2.5rem)]   rounded">
             <div className="w-full">
               {/* code to copy */}
-              <div className="flex flex-row gap-2 mt-2 w-full relative">
-                <div className="p-5 border dark:border-white rounded-xl w-full">
-                  <code className=" text-[12px] text-black dark:text-white">
+              <div className="flex  flex-row gap-2 mt-2 w-full relative">
+                <div className="p-5 border dark:border-white bg-gray-200 rounded-xl w-full">
+                  <code className=" text-[14px]  text-black dark:text-white">
                     <span className="text-[#8250df]">helm</span> repo add
                     opencomply https://charts.opencomply.io --force-update
                     <br />
@@ -161,7 +177,7 @@ kubectl port-forward -n opencomply svc/nginx-proxy 8080:80`}
         {/* <div className="w-[calc(100%-4rem)]  md:w-[calc(35%-2.5rem)]  rounded">
             <div className="flex items-center justify-between space-x-2 mb-1">
               <div className="font-bold text-slate-900  dark:text-white text-2xl">
-                Connect
+                Connectf
               </div> */}
         {/* <time className="font-caveat font-medium text-indigo-500">
                 08/06/2023

@@ -264,6 +264,7 @@ export default function UseCaseNew() {
                   content: (
                     <div className="w-full">
                       <RenderObject
+                        height="350px"
                         obj={`/* This query gives count of all AWS Instances */
 
 SELECT COUNT(*)
@@ -293,6 +294,7 @@ FROM aws_ec2_instance;
                   content: (
                     <div className="w-full">
                       <RenderObject
+                        height="350px"
                         obj={`
 -- This query retrieves each unique model and counts how many assistants are using each model.
 
@@ -313,6 +315,7 @@ GROUP BY model;
                   content: (
                     <div className="w-full">
                       <RenderObject
+                        height="350px"
                         obj={`-- This query returns all unique base images from the Dockerfiles across
 -- all repositories
 
@@ -336,6 +339,7 @@ WHERE img->>'base_image' IS NOT NULL;
                   content: (
                     <div className="w-full">
                       <RenderObject
+                        height="350px"
                         obj={`/* Below is returns all pull requests that were merged into the main branch in the last 48 hours.
  */
 SELECT
@@ -361,6 +365,7 @@ ORDER BY merged_at DESC;
                   content: (
                     <div className="w-full">
                       <RenderObject
+                        height="350px"
                         obj={`WITH 
 -- ================================
 -- 1) AWS counts
@@ -494,6 +499,7 @@ ORDER BY t.tech;
                   content: (
                     <div className="w-full">
                       <RenderObject
+                        height="350px"
                         obj={`/* This query gives all Kubernetes Clusters deployed in DigitalOcean */
 SELECT * FROM digitalocean_kubernetes_cluster;
 `}
@@ -507,6 +513,7 @@ SELECT * FROM digitalocean_kubernetes_cluster;
                   content: (
                     <div className="w-full">
                       <RenderObject
+                        height="350px"
                         obj={`/* This query gives all Services deployed in Render */
 SELECT * FROM render_service;
 `}

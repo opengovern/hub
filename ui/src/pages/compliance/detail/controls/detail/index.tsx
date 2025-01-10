@@ -234,6 +234,7 @@ export default function ControlDetail() {
                     className=" cursor-pointer  h-full "
                   >
                     <RenderObject
+                    height="350px"
                       obj={
                         control?.query.replace(
                           "$IS_ALL_CONNECTIONS_QUERY",

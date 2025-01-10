@@ -1,4 +1,3 @@
-import { Button } from "../Button";
 import { Logos } from "./Logos"
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Virtual ,Autoplay} from "swiper/modules";
@@ -17,6 +16,7 @@ import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { Col, Grid } from "@tremor/react";
 import { ArrowAnimated } from "./ArrowAnimated";
+import { Button } from "@cloudscape-design/components";
 
 
 
@@ -51,56 +51,64 @@ export default function LogoCloud2() {
   return (
     <section
       aria-labelledby="code-example-title"
-      className="mx-auto sm:mt-28 mt-4 w-full max-w-6xl 2xl:max-w-7xl px-3 flex flex-col justify-center items-center"
+      className="mx-auto sm:mt-28 mt-4 w-full   flex flex-col justify-center items-center bg-gray-100 dark:bg-gray-900   "
     >
       {/* <Badge>Developer-first</Badge> */}
-      <h2
-        id="code-example-title"
-        className="mt-2 inline-block bg-gradient-to-br from-gray-900 to-gray-800 bg-clip-text py-2 text-4xl font-bold tracking-tighter text-transparent sm:text-6xl md:text-6xl dark:from-gray-50 dark:to-gray-300"
-      >
-        Integrates with your tools{" "}
-      </h2>
-      <p className="mt-6 max-w-2xl text-lg text-gray-600 dark:text-gray-400 w-full text-center">
-        Seamlessly integrate OpenComply with your technology stack—across
-        Infrastructure, DevOps, AI, and SecOps platforms.
-      </p>
-      <Grid
-        numItems={3}
-        numItemsSm={3}
-        className="mt-4 sm:mt-20  gap-5 flex-wrap"
-      >
-        {integrations.slice(0, 9)?.map((item, index) => {
-          return (
-            <Col>
-              <div className="dark:bg-[#081027] hover:dark:bg-[#313541] bg-slate-300 hover:bg-slate-400 w-full flex flex-row justify-start rounded-xl items-start gap-4 py-6 px-4">
-                <div className=" min-w-fit bg-white rounded-xl p-2">
-                  <img
-                    className="w-8 h-8"
-                    src={`https://raw.githubusercontent.com/opengovern/website/main/connectors/icons/${item.Icon}`}
-                  />
-                </div>
-                <div className="flex flex-col gap-1 justify-center items-start">
-                  <span className="text-base text-slate-900 dark:text-slate-100 overflow-hidden text-nowrap w-full text-ellipsis">
-                    {item.name}
-                  </span>
-                  <span className="text-sm overflow-hidden text-nowrap w-full text-ellipsis text-slate-800 dark:text-slate-300">
-                    {item.tags?.usage?.join(",", "")}
-                  </span>
-                </div>
-              </div>
-            </Col>
-          );
-        })}
-      </Grid>
-      <div className="mt-12">
-        <Button
-          onClick={() => {
-            navigate("/integrations");
-          }}
+      <div className="max-w-6xl 2xl:max-w-7xl w-full px-3 flex flex-col sm:my-10 my-5 justify-center items-center">
+        {" "}
+        <h2
+          id="code-example-title"
+          className="mt-2 inline-block bg-gradient-to-br from-gray-900 to-gray-800 bg-clip-text py-2 text-3xl font-bold tracking-tighter text-transparent sm:text-5xl md:text-5xl dark:from-gray-50 dark:to-gray-300"
         >
-          See all integrations
-          <ArrowAnimated/>
-        </Button>
+          Integrates with your tools{" "}
+        </h2>
+        <p className="mt-6 max-w-2xl text-lg text-gray-900 dark:text-gray-400 w-full text-center">
+          Seamlessly integrate OpenComply with your technology stack—across
+          Infrastructure, DevOps, AI, and SecOps platforms.
+        </p>
+        <Grid
+          numItems={3}
+          numItemsSm={3}
+          className="mt-4 sm:mt-20  gap-5 flex-wrap"
+        >
+          {integrations.slice(0, 9)?.map((item, index) => {
+            return (
+              <Col>
+                <div className="dark:bg-gray-900 hover:dark:bg-gray-600 bg-slate-300 hover:bg-slate-400 w-full flex flex-row justify-start rounded-xl items-start gap-4 py-6 px-4">
+                  <div className=" min-w-fit bg-white rounded-xl p-2">
+                    <img
+                      className="w-8 h-8"
+                      src={`https://raw.githubusercontent.com/opengovern/website/main/connectors/icons/${item.Icon}`}
+                    />
+                  </div>
+                  <div className="flex flex-col gap-1 justify-center items-start">
+                    <span className="text-base text-slate-900 dark:text-slate-100 overflow-hidden text-nowrap w-full text-ellipsis">
+                      {item.name}
+                    </span>
+                    <span className="text-sm overflow-hidden text-nowrap w-full text-ellipsis text-slate-800 dark:text-slate-300">
+                      {item.tags?.usage?.join(",", "")}
+                    </span>
+                  </div>
+                </div>
+              </Col>
+            );
+          })}
+        </Grid>
+        <div className="mt-12">
+          <Button
+            // onClick={() => {
+            //   navigate("/integrations");
+            // }}
+            href="/integrations"
+            iconAlign="right"
+            iconName="external"
+            target="_blank"
+            variant="primary"
+          >
+            See all integrations
+            {/* <ArrowAnimated /> */}
+          </Button>
+        </div>
       </div>
     </section>
   );

@@ -124,53 +124,42 @@ export default function CodeExample() {
   return (
     <section
       aria-labelledby="code-example-title"
-      className="mx-auto sm:mt-28 mt-4 w-full max-w-6xl 2xl:max-w-7xl px-3 flex flex-col justify-center items-center"
+      className="mx-auto sm:mt-28 mt-4 w-full  px-3 flex flex-col justify-center items-center bg-gray-100 dark:bg-gray-900"
     >
-      {/* <Badge>Developer-first</Badge> */}
-      <h2
-        id="code-example-title"
-        className="mt-2 inline-block bg-gradient-to-br from-gray-900 to-gray-800 bg-clip-text py-2 text-4xl font-bold tracking-tighter text-transparent sm:text-6xl md:text-6xl dark:from-gray-50 dark:to-gray-300"
-      >
-        The Advantage
-      </h2>
-      <p className="mt-6 max-w-2xl text-lg text-gray-600 dark:text-gray-400">
-        Govern your entire stack. See what matters. Secure every deployment and
-        change.
-      </p>
-      {/* <CodeExampleTabs
-        tab1={
-          <Code code={code} lang="sql" copy={false} className="h-[31rem]" />
-        }
-        tab2={
-          <Code
-            code={code2}
-            lang="javascript"
-            copy={false}
-            className="h-[31rem]"
-          />
-        }
-      /> */}
-      <dl className="sm:mt-24 mt-4 grid grid-cols-4 gap-10">
-        {features.map((item) => (
-          <div
-            key={item.name}
-            className="col-span-full sm:col-span-2 lg:col-span-1"
-          >
-            <div className="w-fit rounded-lg p-2 shadow-md shadow-indigo-400/30 ring-1 ring-black/5 dark:shadow-indigo-600/30 dark:ring-white/5">
-              <item.icon
-                aria-hidden="true"
-                className="size-6 text-indigo-600 dark:text-indigo-400"
-              />
+      <div className="w-full max-w-6xl 2xl:max-w-7xl my-12 flex flex-col justify-center items-center">
+        <h2
+          id="code-example-title"
+          className="mt-2 inline-block bg-gradient-to-br from-gray-900 to-gray-800 bg-clip-text py-2 text-3xl font-bold tracking-tighter text-transparent sm:text-5xl md:text-5xl dark:from-gray-50 dark:to-gray-300"
+        >
+          The Advantage
+        </h2>
+        <p className="mt-6 max-w-2xl text-lg text-gray-900 dark:text-gray-400">
+          Govern your entire stack. See what matters. Secure every deployment
+          and change.
+        </p>
+
+        <dl className="sm:mt-24 mt-4 grid grid-cols-4 gap-10">
+          {features.map((item) => (
+            <div
+              key={item.name}
+              className="col-span-full sm:col-span-2 lg:col-span-1"
+            >
+              <div className="w-fit rounded-lg p-2 shadow-md shadow-indigo-400/30 ring-1 ring-black/5 dark:shadow-indigo-600/30 dark:ring-white/5">
+                <item.icon
+                  aria-hidden="true"
+                  className="size-6 text-indigo-600 dark:text-indigo-400"
+                />
+              </div>
+              <dt className="mt-6 font-semibold text-gray-900 dark:text-gray-50">
+                {item.name}
+              </dt>
+              <dd className="mt-2 leading-7 text-gray-600 dark:text-gray-400">
+                {item.description}
+              </dd>
             </div>
-            <dt className="mt-6 font-semibold text-gray-900 dark:text-gray-50">
-              {item.name}
-            </dt>
-            <dd className="mt-2 leading-7 text-gray-600 dark:text-gray-400">
-              {item.description}
-            </dd>
-          </div>
-        ))}
-      </dl>
+          ))}
+        </dl>
+      </div>
     </section>
   );
 }

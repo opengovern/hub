@@ -58,6 +58,8 @@ import { Col, Grid } from "@tremor/react";
 import { useNavigate } from "react-router-dom";
 import { ArrowAnimated } from "./ArrowAnimated";
 import ThemedImage from "./ThemedImage";
+import CustomPagination from "../Pagination";
+import { Results } from "../../pages/landing/query_result";
 
 const cards = [
   {
@@ -116,6 +118,7 @@ export default function UseCaseNew2() {
   const [discoverOption, setDiscoverOption] = useState(-1);
   const [open, setOpen] = useState(false);
   const [activeStepIndex, setActiveStepIndex] = useState(1);
+  const [page,setPage] = useState(0);
   useEffect(() => {
     if (discoverOption != -1) {
       // setOpen(true);
@@ -127,15 +130,15 @@ export default function UseCaseNew2() {
     <>
       <section
         aria-labelledby="code-example-title"
-        className="mx-auto sm:mt-28 mt-4 w-full max-w-6xl 2xl:max-w-7xl px-3 flex flex-col justify-center items-center"
+        className="mx-auto sm:mt-12 mt-4 w-full max-w-6xl 2xl:max-w-7xl px-3 flex flex-col justify-center items-center"
       >
         <h2
           id="code-example-title"
-          className="mt-2 inline-block bg-gradient-to-br from-gray-900 to-gray-800 bg-clip-text py-2 text-3xl font-bold tracking-tighter text-transparent sm:text-6xl md:text-6xl dark:from-gray-50 dark:to-gray-300"
+          className="mt-2 inline-block bg-gradient-to-br from-gray-900 to-gray-800 bg-clip-text py-2 text-3xl font-semibold tracking-tighter text-transparent sm:text-5xl md:text-5xl dark:from-gray-50 dark:to-gray-300"
         >
           Full-Stack Compliance{" "}
         </h2>
-        <p className="sm:mt-6 mt-4 max-w-2xl text-lg tracking-tighter text-gray-600 dark:text-gray-400 px-2">
+        <p className="sm:mt-6 mt-4 max-w-2xl text-lg tracking-tighter text-gray-800 dark:text-gray-400 px-2">
           OpenComply makes security & compliance radically simple.
         </p>
       </section>
@@ -144,21 +147,23 @@ export default function UseCaseNew2() {
         aria-labelledby="code-example-title"
         className="mx-auto sm:mt-28 mt-8 w-full max-w-6xl 2xl:max-w-7xl flex sm:flex-row flex-col sm:p-0 p-6 gap-4 justify-between"
       >
-        <div className="w-full max-w-md relative ">
-          <div className=" sticky top-80 w-full">
+        <div className="w-full max-w-md relative  ">
+          <div className=" sticky top-80 w-full pb-80 ">
             <div className="flex w-full items-center justify-between space-x-2 mb-1">
-              <div className="font-bold text-slate-900 w-full  dark:text-white text-2xl">
-                Discover anything instantly
+              <div className="font-bold text-slate-900 w-full  dark:text-white text-3xl">
+                Discover anything, instantly.
               </div>
             </div>
 
-            <div className="text-slate-500 dark:text-white mt-4 w-full">
+            <div className="text-slate-900 dark:text-white mt-4 w-full">
               <div className="flex flex-col gap-5 w-full">
-                <div className="text-slate-500 dark:text-white w-full ">
-                  Gain a single source of truth across platforms. SQL for Your
-                  Entire Tech Stack.
+                <div className="text-slate-900 dark:text-white  text-xl w-full ">
+                  Gain a single source of truth across all environments,
+                  regions, and platforms.
+                  <br />
+                  SQL for Your Entire Tech Stack.
                 </div>
-                {/* <div className="text-slate-500 dark:text-white font-semibold">
+                {/* <div className="text-slate-900 dark:text-white font-semibold">
                   USE CASES
                 </div>
 
@@ -201,7 +206,7 @@ export default function UseCaseNew2() {
           </div>
         </div>
         <div className="w-full  flex flex-col  text-black">
-          <div className="rounded-xl   flex flex-col gap-4 ">
+          <div className="rounded-xl   flex flex-col gap-8 ">
             {/* <div className="font-semibold text-black text-2xl w-full text-center">
               {" "}
               Query Everything, Faster
@@ -209,68 +214,72 @@ export default function UseCaseNew2() {
             <div>
               Discover anything, Instantly. SQL for Your Entire Tech Stack.
             </div> */}
-            <div className="w-full flex flex-col gap-10 rounded-xl ">
+            <div className="w-full flex flex-col gap-6 rounded-xl ">
               <RenderObject
-                obj={`-- This query returns all unique base images from the Dockerfiles across
--- all repositories
-WITH expanded AS (
- SELECT
-   JSONB_ARRAY_ELEMENTS(images::jsonb) AS img
- FROM github_artifact_dockerfile
-)
-SELECT DISTINCT img->>'base_image' AS unique_base_images
-FROM expanded
-WHERE img->>'base_image' IS NOT NULL;
+                height="450px"
+                obj={`-- Find all unique Docker base images and counts across all repositories.
+SELECT
+  image AS "Base Image",
+  COUNT(*) AS "Count"
+FROM
+  (
+    SELECT
+      DISTINCT sha,
+      jsonb_array_elements_text(images) AS image
+    FROM
+      github_artifact_dockerfile
+  ) AS expanded
+GROUP BY
+  image
+ORDER BY
+  "Count" DESC;
 `}
               />
-              <table className="table-auto border-slate-500 bg-[#282A36] rounded-xl   border-collapse   ">
-                <thead className="mb-2">
-                  <tr>
-                    <th className="text-white text-left  border-slate-600 rounded-xl  border-r   p-2">
-                      Song
-                    </th>
-                    <th className="text-white text-left  border-slate-600 border-r  p-1">
-                      Artist
-                    </th>
-                    <th className="text-white text-left  border-slate-600   p-1">
-                      Year
-                    </th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td className="text-white  border-slate-500  border p-2">
-                      The Sliding Mr. Bones (Next Stop, Pottersville)
-                    </td>
-                    <td className="text-white border-slate-500  border p-1">
-                      Malcolm Lockyer
-                    </td>
-                    <td className="text-white border-slate-500  border p-1">
-                      1961
-                    </td>
-                  </tr>
-                  <tr>
-                    <td className="text-white  border-slate-500  border p-2">
-                      Witchy Woman
-                    </td>
-                    <td className="text-white border-slate-500  border p-1">
-                      The Eagles
-                    </td>
-                    <td className="text-white border-slate-500  border p-1">
-                      1972
-                    </td>
-                  </tr>
-                  <tr>
-                    <td className="text-white border-slate-500 border-r   p-2">
-                      Shining Star
-                    </td>
-                    <td className="text-white border-slate-500 border-r   p-1">
-                      Earth, Wind, and Fire
-                    </td>
-                    <td className="text-white border-slate-500   p-1">1975</td>
-                  </tr>
-                </tbody>
-              </table>
+              <div className="bg-[#282A36] rounded-xl p-4">
+                <div className="flex flex-row w-full justify-between items-center">
+                  <span className="dark:text-white text-xl ">
+                    Results ({Results.results})
+                  </span>
+                  <CustomPagination
+                    page_size={5}
+                    paginationCount={Math.ceil(Results.results / 5)}
+                    page={page}
+                    setPage={setPage}
+                    isZeroBased={true}
+                  />
+                </div>
+                <table className="table-auto w-full border-slate-500  rounded-lg   border-collapse   ">
+                  <thead className="mb-2 rounded-xl">
+                    <tr className="  rounded-xl  bg-gray-900">
+                      <th className="text-white text-left       p-4">
+                        Base Image
+                      </th>
+                      <th className="text-white text-left    p-1">Count</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {Results.image_list
+                      .slice(page * 5, (page + 1) * 5)
+                      ?.map((image, index) => {
+                        return (
+                          <tr
+                            className={`  ${
+                              index <
+                              Results.image_list.slice(page * 5, (page + 1) * 5)
+                                .length -
+                                1
+                                ? " border-b border-slate-400 "
+                                : ""
+                            }  bg-gray-700`}
+                          >
+                            <td className="text-white    p-4">{image.image}</td>
+                            <td className="text-white    p-1">{image.count}</td>
+                          </tr>
+                        );
+                      })}
+                  </tbody>
+                </table>
+              </div>
             </div>
             {/* <div className="w-full flex sm:flex-row flex-col justify-center gap-2 items-center">
               <Button
@@ -299,23 +308,26 @@ WHERE img->>'base_image' IS NOT NULL;
       </section>
       <section
         aria-labelledby="code-example-title"
-        className="mx-auto sm:mt-28 mt-8 w-full max-w-6xl  2xl:max-w-7xl flex sm:flex-row flex-col sm:p-0 p-6 gap-4 justify-between"
+        className="mx-auto sm:mt-60 mt-8 w-full max-w-6xl  2xl:max-w-7xl flex sm:flex-row flex-col sm:p-0 p-6 gap-4 justify-between"
       >
         <div className="w-full max-w-md relative ">
           <div className=" sticky top-80">
             <div className="flex w-full items-center justify-between space-x-2 mb-1">
-              <div className="font-bold text-slate-900  dark:text-white text-2xl">
-                Audit Simplified{" "}
+              <div className="font-bold text-slate-900  dark:text-white text-3xl">
+                Audit for Compliance{" "}
               </div>
             </div>
 
-            <div className="text-slate-500 dark:text-white mt-4">
+            <div className="text-slate-900 dark:text-white mt-4">
               <div className="flex flex-col gap-5">
-                <div className="text-slate-500 dark:text-white w-full ">
+                <div className="text-slate-900 dark:text-white w-full text-xl ">
                   {" "}
-                  Effortless Audits | Policy as Code | Continuous Compliance
+                  Centralize security policy management using Policy as Code
+                  across all environments, regardless of vendor, platform, or
+                  region. Continuously audit to maintain compliance and enhance
+                  your security posture.
                 </div>
-                <div className="text-slate-500 dark:text-white font-semibold">
+                <div className="text-slate-900 dark:text-white font-semibold">
                   Resources
                 </div>
 
@@ -442,23 +454,23 @@ WHERE img->>'base_image' IS NOT NULL;
       </section>
       <section
         aria-labelledby="code-example-title"
-        className="mx-auto sm:mt-28 mt-8 w-full max-w-6xl  2xl:max-w-7xl flex sm:flex-row flex-col sm:p-0 p-6 gap-4 justify-between"
+        className="mx-auto sm:mt-60 mt-8 w-full max-w-6xl  2xl:max-w-7xl flex sm:flex-row flex-col sm:p-0 p-6 gap-4 justify-between"
       >
         <div className="w-full max-w-md relative ">
           <div className=" sticky top-80">
             <div className="flex w-full items-center justify-between space-x-2 mb-1">
-              <div className="font-bold text-slate-900  dark:text-white text-2xl">
+              <div className="font-bold text-slate-900  dark:text-white text-3xl">
                 Customize opencomply
               </div>
             </div>
 
-            <div className="text-slate-500 dark:text-white mt-4">
+            <div className="text-slate-900 dark:text-white mt-4">
               <div className="flex flex-col gap-5">
-                <div className="text-slate-500 dark:text-white w-full ">
+                <div className="text-slate-900 dark:text-white w-full text-xl ">
                   {" "}
                   Let Opencomply work for you. Here's how we make it happen.{" "}
                 </div>
-                {/* <div className="text-slate-500 dark:text-white font-semibold">
+                {/* <div className="text-slate-900 dark:text-white font-semibold">
                   USE CASES
                 </div> */}
 
