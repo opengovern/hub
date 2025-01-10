@@ -93,9 +93,9 @@ const CustomPagination: FunctionComponent<any> = ({
 }) => {
   return (
     <>
-      <div className="mt-3 flex items-center justify-between sm:justify-center custom-pagination">
+      <div className="mt-3 w-full flex items-center justify-between sm:justify-center custom-pagination">
         <Pagination
-          className="pb-2 text-black dark:text-white"
+          className="pb-2 text-black dark:text-white "
           currentPageIndex={isZeroBased ? page + 1 : page}
           pagesCount={paginationCount}
           onChange={({ detail }) => {

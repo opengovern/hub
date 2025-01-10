@@ -77,7 +77,7 @@ export default function Steps() {
             <div className="w-full">
               {/* code to copy */}
               <div className="flex  flex-row gap-2 mt-2 w-full relative">
-                <div className="p-5 border dark:border-white bg-gray-200 rounded-xl w-full">
+                <div className="p-5 border dark:border-white bg-gray-200 dark:bg-transparent rounded-xl w-full">
                   <code className=" text-[14px]  text-black dark:text-white">
                     <span className="text-[#8250df]">helm</span> repo add
                     opencomply https://charts.opencomply.io --force-update

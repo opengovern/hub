@@ -8,6 +8,7 @@ import {
   KeyValuePairs,
   Link,
   Modal,
+  Pagination,
   SpaceBetween,
   Tabs,
   Wizard,
@@ -148,9 +149,9 @@ export default function UseCaseNew2() {
         className="mx-auto sm:mt-28 mt-8 w-full max-w-6xl 2xl:max-w-7xl flex sm:flex-row flex-col sm:p-0 p-6 gap-4 justify-between"
       >
         <div className="w-full max-w-md relative  ">
-          <div className=" sticky top-80 w-full pb-80 ">
+          <div className=" sticky top-80 w-full sm:pb-80 pb-0 ">
             <div className="flex w-full items-center justify-between space-x-2 mb-1">
-              <div className="font-bold text-slate-900 w-full  dark:text-white text-3xl">
+              <div className="font-semibold text-slate-900 w-full  dark:text-white sm:text-3xl text-2xl">
                 Discover anything, instantly.
               </div>
             </div>
@@ -235,29 +236,31 @@ ORDER BY
   "Count" DESC;
 `}
               />
-              <div className="bg-[#282A36] rounded-xl p-4">
-                <div className="flex flex-row w-full justify-between items-center">
-                  <span className="dark:text-white text-xl ">
+              <div className="bg-[#282A36] rounded-xl p-4 w-full">
+                <div className="flex flex-row flex-wrap w-full justify-between items-center pb-2">
+                  <span className="text-white text-xl w-fit ">
                     Results ({Results.results})
                   </span>
-                  <CustomPagination
-                    page_size={5}
-                    paginationCount={Math.ceil(Results.results / 5)}
-                    page={page}
-                    setPage={setPage}
-                    isZeroBased={true}
-                  />
+                  <div className=" w-fit custom-dark-pagination">
+                    <Pagination
+                      currentPageIndex={page + 1}
+                      pagesCount={Math.ceil(Results.results / 10)}
+                      onChange={({ detail }: any) => {
+                        setPage(detail.currentPageIndex - 1);
+                      }}
+                    />
+                  </div>
                 </div>
-                <table className="table-auto w-full border-slate-500  rounded-lg   border-collapse   ">
-                  <thead className="mb-2 rounded-xl">
+                <table className="table-auto w-full border-slate-500 p-4  rounded-lg   border-collapse   ">
+                  <thead className="mb-2 rounded-xl w-full">
                     <tr className="  rounded-xl  bg-gray-900">
-                      <th className="text-white text-left       p-4">
+                      <th className="text-white text-left       p-2 sm:p-4">
                         Base Image
                       </th>
                       <th className="text-white text-left    p-1">Count</th>
                     </tr>
                   </thead>
-                  <tbody>
+                  <tbody className="w-full">
                     {Results.image_list
                       .slice(page * 5, (page + 1) * 5)
                       ?.map((image, index) => {
@@ -272,7 +275,9 @@ ORDER BY
                                 : ""
                             }  bg-gray-700`}
                           >
-                            <td className="text-white    p-4">{image.image}</td>
+                            <td className="text-white    p-2 sm:p-4">
+                              {image.image}
+                            </td>
                             <td className="text-white    p-1">{image.count}</td>
                           </tr>
                         );
@@ -313,7 +318,7 @@ ORDER BY
         <div className="w-full max-w-md relative ">
           <div className=" sticky top-80">
             <div className="flex w-full items-center justify-between space-x-2 mb-1">
-              <div className="font-bold text-slate-900  dark:text-white text-3xl">
+              <div className="ffont-semibold text-slate-900 w-full  dark:text-white sm:text-3xl text-2xl">
                 Audit for Compliance{" "}
               </div>
             </div>
@@ -459,7 +464,7 @@ ORDER BY
         <div className="w-full max-w-md relative ">
           <div className=" sticky top-80">
             <div className="flex w-full items-center justify-between space-x-2 mb-1">
-              <div className="font-bold text-slate-900  dark:text-white text-3xl">
+              <div className="font-semibold text-slate-900 w-full  dark:text-white sm:text-3xl text-2xl">
                 Customize opencomply
               </div>
             </div>
@@ -565,27 +570,29 @@ ORDER BY
                 className=" justify-between gap-4"
               >
                 <>
-                  {cards?.map((card, index) => {
-                    return (
-                      <>
-                        <Col className="w-full h-full">
-                          <div className="flex flex-col p-4 rounded-xl justify-center items-center gap-3 bg-slate-300 hover:bg-slate-400 cursor-pointer dark:bg-slate-900 hover:dark:bg-slate-950 ">
-                            {
-                              <card.icon
-                                color=""
-                                className="card-icons"
-                                size={35}
-                              />
-                            }
+                  {cards
+                    ?.slice(0, window.innerWidth < 738 ? 4 : cards.length)
+                    ?.map((card, index) => {
+                      return (
+                        <>
+                          <Col className="w-full h-full">
+                            <div className="flex flex-col p-4 rounded-xl justify-center items-center gap-3 bg-slate-300 hover:bg-slate-400 cursor-pointer dark:bg-slate-900 hover:dark:bg-slate-950 ">
+                              {
+                                <card.icon
+                                  color=""
+                                  className="card-icons"
+                                  size={35}
+                                />
+                              }
 
-                            <span className="text-black dark:text-white text-base">
-                              {card.label}
-                            </span>
-                          </div>
-                        </Col>
-                      </>
-                    );
-                  })}
+                              <span className="text-black dark:text-white text-base">
+                                {card.label}
+                              </span>
+                            </div>
+                          </Col>
+                        </>
+                      );
+                    })}
                 </>
               </Grid>
             </div>
