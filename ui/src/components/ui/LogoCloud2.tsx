@@ -16,6 +16,7 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { Col, Grid } from "@tremor/react";
+import { ArrowAnimated } from "./ArrowAnimated";
 
 
 
@@ -57,17 +58,22 @@ export default function LogoCloud2() {
         id="code-example-title"
         className="mt-2 inline-block bg-gradient-to-br from-gray-900 to-gray-800 bg-clip-text py-2 text-4xl font-bold tracking-tighter text-transparent sm:text-6xl md:text-6xl dark:from-gray-50 dark:to-gray-300"
       >
-        Explore Integrations
+        Integrates with your tools{" "}
       </h2>
-      <p className="mt-6 max-w-2xl text-lg text-gray-600 dark:text-gray-400">
-        Sources, destinations, transformations and visualizations.
+      <p className="mt-6 max-w-2xl text-lg text-gray-600 dark:text-gray-400 w-full text-center">
+        Seamlessly integrate OpenComply with your technology stack—across
+        Infrastructure, DevOps, AI, and SecOps platforms.
       </p>
-      <Grid numItems={4} numItemsSm={4} className="mt-24 sm:mt-4  gap-2 flex-wrap">
-        {integrations.slice(0, 12)?.map((item, index) => {
+      <Grid
+        numItems={3}
+        numItemsSm={3}
+        className="mt-4 sm:mt-20  gap-5 flex-wrap"
+      >
+        {integrations.slice(0, 9)?.map((item, index) => {
           return (
             <Col>
-              <div className="dark:bg-[#081027] hover:dark:bg-[#313541] bg-slate-300 hover:bg-slate-400 w-full flex flex-row justify-start rounded-xl items-start gap-2 p-6">
-                <div className=" bg-white rounded-xl p-2">
+              <div className="dark:bg-[#081027] hover:dark:bg-[#313541] bg-slate-300 hover:bg-slate-400 w-full flex flex-row justify-start rounded-xl items-start gap-4 py-6 px-4">
+                <div className=" min-w-fit bg-white rounded-xl p-2">
                   <img
                     className="w-8 h-8"
                     src={`https://raw.githubusercontent.com/opengovern/website/main/connectors/icons/${item.Icon}`}
@@ -77,7 +83,7 @@ export default function LogoCloud2() {
                   <span className="text-base text-slate-900 dark:text-slate-100 overflow-hidden text-nowrap w-full text-ellipsis">
                     {item.name}
                   </span>
-                  <span className="text-sm w-full text-slate-800 dark:text-slate-300">
+                  <span className="text-sm overflow-hidden text-nowrap w-full text-ellipsis text-slate-800 dark:text-slate-300">
                     {item.tags?.usage?.join(",", "")}
                   </span>
                 </div>
@@ -86,11 +92,14 @@ export default function LogoCloud2() {
           );
         })}
       </Grid>
-      <div className="mt-8">
-        <Button onClick={()=>{
-          navigate("/integrations")
-        }}>
-          See more integrations
+      <div className="mt-12">
+        <Button
+          onClick={() => {
+            navigate("/integrations");
+          }}
+        >
+          See all integrations
+          <ArrowAnimated/>
         </Button>
       </div>
     </section>
