@@ -318,7 +318,7 @@ ORDER BY
         <div className="w-full max-w-md relative ">
           <div className=" sticky top-80">
             <div className="flex w-full items-center justify-between space-x-2 mb-1">
-              <div className="ffont-semibold text-slate-900 w-full  dark:text-white sm:text-3xl text-2xl">
+              <div className="font-semibold text-slate-900 w-full  dark:text-white sm:text-3xl text-2xl">
                 Audit for Compliance{" "}
               </div>
             </div>
