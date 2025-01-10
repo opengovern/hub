@@ -295,7 +295,7 @@ WHERE img->>'base_image' IS NOT NULL;
                   <a
                     target="__blank"
                     href="https://opencomply.io/compliance/frameworks/baseline_reliability"
-                    className={`p-2 border dark:border-white rounded-3xl cursor-pointer hover:dark:bg-white hover:bg-blue-950 hover:text-white hover:dark:text-black  ${discoverOption == 0 && "text-bold dark:bg-white dark:text-black bg-blue-950 text-white "}  `}
+                    className={`p-2 border dark:border-white rounded-3xl cursor-pointer sm:hover:dark:bg-white sm:hover:bg-blue-950 sm:hover:text-white sm:hover:dark:text-black    `}
                    
                   >
                     Reliability Best Practices
@@ -303,35 +303,35 @@ WHERE img->>'base_image' IS NOT NULL;
                   <a
                     target="__blank"
                     href="https://opencomply.io/compliance/frameworks/baseline_security"
-                    className={`p-2 border dark:border-white rounded-3xl cursor-pointer hover:dark:bg-white hover:bg-blue-950 hover:text-white hover:dark:text-black  ${discoverOption == 1 && "text-bold dark:bg-white dark:text-black bg-blue-950 text-white "}  `}
+                    className={`p-2 border dark:border-white rounded-3xl cursor-pointer sm:hover:dark:bg-white sm:hover:bg-blue-950 sm:hover:text-white sm:hover:dark:text-black    `}
                   >
                     Security Best Practices
                   </a>
                   <a
                     target="__blank"
                     href="https://opencomply.io/compliance/frameworks/azure_fedramp_high"
-                    className={`p-2 border dark:border-white rounded-3xl cursor-pointer hover:dark:bg-white hover:bg-blue-950 hover:text-white hover:dark:text-black  ${discoverOption == 2 && "text-bold dark:bg-white dark:text-black bg-blue-950 text-white "}  `}
+                    className={`p-2 border dark:border-white rounded-3xl cursor-pointer sm:hover:dark:bg-white sm:hover:bg-blue-950 sm:hover:text-white sm:hover:dark:text-black    `}
                   >
                     FedRAMP
                   </a>
                   <a
                     href="https://opencomply.io/compliance/frameworks/aws_hipaa_final_omnibus_security_rule_2013"
                     target="__blank"
-                    className={`p-2 border dark:border-white rounded-3xl cursor-pointer hover:dark:bg-white hover:bg-blue-950 hover:text-white hover:dark:text-black  ${discoverOption == 3 && "text-bold dark:bg-white dark:text-black bg-blue-950 text-white "}  `}
+                    className={`p-2 border dark:border-white rounded-3xl cursor-pointer sm:hover:dark:bg-white sm:hover:bg-blue-950 sm:hover:text-white sm:hover:dark:text-black    `}
                   >
                     HIPAA
                   </a>
                   <a
                     href="https://opencomply.io/compliance/frameworks/azure_cis_v200"
                     target="__blank"
-                    className={`p-2 border dark:border-white rounded-3xl cursor-pointer hover:dark:bg-white hover:bg-blue-950 hover:text-white hover:dark:text-black  ${discoverOption == 3 && "text-bold dark:bg-white dark:text-black bg-blue-950 text-white "}  `}
+                    className={`p-2 border dark:border-white rounded-3xl cursor-pointer sm:hover:dark:bg-white sm:hover:bg-blue-950 sm:hover:text-white sm:hover:dark:text-black    `}
                   >
                     CIS
                   </a>
                   <a
                     href="https://opencomply.io/compliance/frameworks/aws_cisa_cyber_essentials"
                     target="__blank"
-                    className={`p-2 border dark:border-white rounded-3xl cursor-pointer hover:dark:bg-white hover:bg-blue-950 hover:text-white hover:dark:text-black  ${discoverOption == 3 && "text-bold dark:bg-white dark:text-black bg-blue-950 text-white "}  `}
+                    className={`p-2 border dark:border-white rounded-3xl cursor-pointer sm:hover:dark:bg-white sm:hover:bg-blue-950 sm:hover:text-white sm:hover:dark:text-black    `}
                   >
                     CISA Cyber Essentials
                   </a>

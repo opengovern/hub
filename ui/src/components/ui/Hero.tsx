@@ -1,6 +1,6 @@
-import { RiPlayCircleFill } from "@remixicon/react"
-import { Button } from "../Button"
-import HeroImage from "./HeroImage"
+import { RiPlayCircleFill } from "@remixicon/react";
+import { Button } from "../Button";
+import HeroImage from "./HeroImage";
 // @ts-ignore
 import video from "../../videos/2024-10-08-How_to_Customize_Controls.mp4";
 import { ProgressBar } from "@tremor/react";
@@ -8,49 +8,47 @@ import { useEffect, useState } from "react";
 import { DISCOVER_URL } from "../../pages/landing/urls";
 import { AUDIT_URL } from "../../pages/landing/urls";
 import { CUSTOMIZE_URL } from "../../pages/landing/urls";
-const URLS= {
+const URLS = {
   0: DISCOVER_URL,
   1: AUDIT_URL,
-  2: CUSTOMIZE_URL
-}
+  2: CUSTOMIZE_URL,
+};
 
 export default function Hero() {
-  const [video,setVideo] = useState(0)
-  const [width,setWidth]=useState({
-    0:0,
-    1:0,
-    2:0
-  })
+  const [video, setVideo] = useState(0);
+  const [width, setWidth] = useState({
+    0: 0,
+    1: 0,
+    2: 0,
+  });
   const [time, setTime] = useState(0);
- 
- useEffect(() => {
-     const countdownInterval = setInterval(() => {
+
+  useEffect(() => {
+    const countdownInterval = setInterval(() => {
       // @ts-ignore
-        const video_dur = document.getElementById("hero-video")?.duration;
-        if(time>=video_dur){
-          setVideo((video+1)%3)
-          clearInterval(countdownInterval)
-          setWidth({
-            0: 0,
-            1: 0,
-            2: 0,
-          });
-          setTime(0)
-        }
-        else{
-          setTime(time + 0.5);
-          // @ts-ignore
-          const old = width;
-          // @ts-ignore
+      const video_dur = document.getElementById("hero-video")?.duration;
+      if (time >= video_dur) {
+        setVideo((video + 1) % 3);
+        clearInterval(countdownInterval);
+        setWidth({
+          0: 0,
+          1: 0,
+          2: 0,
+        });
+        setTime(0);
+      } else {
+        setTime(time + 0.5);
+        // @ts-ignore
+        const old = width;
+        // @ts-ignore
 
-          old[video] = (time / video_dur) * 100;
-          setWidth(old);
-        }
-      
-     }, 500);
+        old[video] = (time / video_dur) * 100;
+        setWidth(old);
+      }
+    }, 500);
 
-     return () => clearInterval(countdownInterval);
- }, [ time,video]);
+    return () => clearInterval(countdownInterval);
+  }, [time, video]);
 
   return (
     <section
@@ -102,7 +100,41 @@ export default function Hero() {
           </a>
         </Button> */}
       </div>
-      <div
+      <div className="iframe-div hidden sm:inline relative sm:mx-auto mx-3 bg-transparent  mt-20 h-fit  max-w-5xl 2xl:max-w-6xl animate-slide-up-fade sm:ml-auto sm:w-full ">
+        <iframe
+          src="https://app.supademo.com/embed/cm5q1ezs60ljjpelfs3zkfzdn?embed_v=2"
+          loading="lazy"
+          title="Website - Product Tour"
+          allow="clipboard-write"
+          frameBorder="0"
+          allowFullScreen={true}
+          className="iframe-div-frame rounded-xl"
+        ></iframe>
+      </div>
+      <div className="rounded-xl sm:hidden flex relative sm:mx-auto mx-3 bg-transparent  mt-20 h-fit  max-w-5xl 2xl:max-w-6xl animate-slide-up-fade sm:ml-auto sm:w-full bg-white ring-1 ring-slate-900/5 dark:bg-slate-950 dark:ring-white/15">
+        <video
+          id="hero-video"
+          className="rounded-xl w-full shadow-2xl dark:shadow-indigo-600/10"
+          autoPlay
+          loop
+          muted
+          playsInline
+          preload="auto"
+          // @ts-ignore
+          src={
+            "https://content.opencomply.io/website/product-videos/product-tour-mobile.mp4"
+          }
+        >
+          <source
+            src={
+              // @ts-ignore
+              "https://content.opencomply.io/website/product-videos/product-tour-mobile.mp4"
+            }
+            type="video/mp4"
+          />
+        </video>
+      </div>
+      {/* <div
         className="relative sm:mx-auto mx-3  mt-20 h-fit  max-w-6xl 2xl:max-w-7xl animate-slide-up-fade sm:ml-auto sm:w-full sm:px-2"
         style={{ animationDuration: "1400ms" }}
       >
@@ -212,7 +244,7 @@ export default function Hero() {
           </video>
         </div>
       
-      </div>
+      </div> */}
     </section>
   );
 }
