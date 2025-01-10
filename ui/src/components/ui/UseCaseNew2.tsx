@@ -44,11 +44,13 @@ import {
   RiInfinityLine,
   RiKeyLine,
   RiPlugLine,
+  RiPuzzleLine,
   RiRectangleFill,
   RiRectangleLine,
   RiSearchFill,
   RiSearchLine,
   RiServerLine,
+  RiShieldUserLine,
   RiStickyNoteLine,
 } from "@remixicon/react";
 import { RenderObject } from "../Editor";
@@ -86,13 +88,28 @@ const cards = [
   },
   {
     label: "Integrations",
-    icon: RiPlugLine,
+    icon: RiPuzzleLine,
   },
   {
     label: "Tasks",
     icon: RiAppsLine,
   },
- 
+  {
+    label: "Git",
+    icon: RiGitMergeLine,
+  },
+  {
+    label: "API",
+    icon: RiPlugLine,
+  },
+  {
+    label: "Roles",
+    icon: RiShieldUserLine,
+  },
+  {
+    label: "SSO",
+    icon: RiIdCardLine,
+  },
 ];
 
 export default function UseCaseNew2() {
@@ -431,7 +448,7 @@ WHERE img->>'base_image' IS NOT NULL;
           <div className=" sticky top-80">
             <div className="flex w-full items-center justify-between space-x-2 mb-1">
               <div className="font-bold text-slate-900  dark:text-white text-2xl">
-                Customize
+                Customize opencomply
               </div>
             </div>
 
