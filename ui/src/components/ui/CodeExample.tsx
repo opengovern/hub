@@ -124,7 +124,7 @@ export default function CodeExample() {
   return (
     <section
       aria-labelledby="code-example-title"
-      className="mx-auto mt-28 w-full max-w-6xl 2xl:max-w-7xl px-3 flex flex-col justify-center items-center"
+      className="mx-auto sm:mt-28 mt-4 w-full max-w-6xl 2xl:max-w-7xl px-3 flex flex-col justify-center items-center"
     >
       {/* <Badge>Developer-first</Badge> */}
       <h2
@@ -150,7 +150,7 @@ export default function CodeExample() {
           />
         }
       /> */}
-      <dl className="mt-24 grid grid-cols-4 gap-10">
+      <dl className="sm:mt-24 mt-4 grid grid-cols-4 gap-10">
         {features.map((item) => (
           <div
             key={item.name}

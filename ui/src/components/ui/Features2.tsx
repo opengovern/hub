@@ -21,7 +21,7 @@ export default function Features2() {
   return (
     <section aria-labelledby="features-title" className=" bg-[#282A36] my-12">
       {/* <Badge>Security at Scale</Badge> */}
-      <div className=" mt-24 mb-24 max-w-6xl 2xl:max-w-7xl px-3 sm:px-36 py-12 mx-auto       rounded-xl  flex flex-col justify-start items-start">
+      <div className=" sm:mt-24 mt-4 sm:mb-24 mb-4 max-w-6xl 2xl:max-w-7xl px-3 sm:px-36 py-12 mx-auto       rounded-xl  flex flex-col justify-start items-start">
         <h2
           id="features-title"
           className=" inline-block text-slate-50 text-start w-full bg-gradient-to-br from-gray-900 to-gray-800 bg-clip-text py-2 text-4xl font-bold tracking-tighter  sm:text-4xl md:text-4xl "

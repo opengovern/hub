@@ -16,7 +16,7 @@ export default function Steps() {
   return (
     <section
       aria-labelledby="features-title"
-      className="mx-auto mt-44 w-full mb-16 max-w-6xl 2xl:max-w-7xl px-3 flex flex-col justify-center items-center"
+      className="mx-auto sm:mt-24 mt-4 w-full mb-16 max-w-6xl 2xl:max-w-7xl px-3 flex flex-col justify-center items-center"
     >
       {/* <Badge>How it works</Badge> */}
       <h2

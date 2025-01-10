@@ -29,16 +29,27 @@ import { useEffect, useState } from "react";
 import video from "../../videos/2024-10-08-How_to_Customize_Controls.mp4";
 import CopyToClipboard from "../../components/CopyToClipboard";
 import {
+  RiAppsLine,
+  RiArticleLine,
+  RiBook3Line,
+  RiBracesLine,
   RiBrainLine,
   RiBugLine,
   RiFileCodeLine,
   RiFileZipLine,
+  RiFolder2Line,
   RiGitMergeLine,
   RiGroup2Line,
   RiIdCardLine,
   RiInfinityLine,
   RiKeyLine,
+  RiPlugLine,
+  RiRectangleFill,
+  RiRectangleLine,
+  RiSearchFill,
+  RiSearchLine,
   RiServerLine,
+  RiStickyNoteLine,
 } from "@remixicon/react";
 import { RenderObject } from "../Editor";
 import { Col, Grid } from "@tremor/react";
@@ -49,16 +60,16 @@ import ThemedImage from "./ThemedImage";
 const cards = [
   {
     label: "Queries",
-    icon: RiServerLine,
+    icon: RiSearchLine,
   },
   {
     label: "Views",
-    icon: RiGitMergeLine,
+    icon: RiRectangleLine,
   },
 
   {
     label: "Parameters",
-    icon: RiFileCodeLine,
+    icon: RiBracesLine,
   },
   {
     label: "Policies",
@@ -67,19 +78,19 @@ const cards = [
 
   {
     label: "Controls",
-    icon: RiFileZipLine,
+    icon: RiStickyNoteLine,
   },
   {
     label: "Frameworks",
-    icon: RiBrainLine,
+    icon: RiBook3Line,
   },
   {
     label: "Integrations",
-    icon: RiIdCardLine,
+    icon: RiPlugLine,
   },
   {
     label: "Tasks",
-    icon: RiBugLine,
+    icon: RiAppsLine,
   },
  
 ];
@@ -99,7 +110,7 @@ export default function UseCaseNew2() {
     <>
       <section
         aria-labelledby="code-example-title"
-        className="mx-auto mt-28 w-full max-w-6xl 2xl:max-w-7xl px-3 flex flex-col justify-center items-center"
+        className="mx-auto sm:mt-28 mt-4 w-full max-w-6xl 2xl:max-w-7xl px-3 flex flex-col justify-center items-center"
       >
         <h2
           id="code-example-title"
@@ -107,19 +118,19 @@ export default function UseCaseNew2() {
         >
           Full-Stack Compliance{" "}
         </h2>
-        <p className="mt-6 max-w-2xl text-lg text-gray-600 dark:text-gray-400">
+        <p className="sm:mt-6 mt-4 max-w-2xl text-lg tracking-tighter text-gray-600 dark:text-gray-400 px-2">
           OpenComply makes security & compliance radically simple.
         </p>
       </section>
 
       <section
         aria-labelledby="code-example-title"
-        className="mx-auto mt-28 w-full max-w-6xl 2xl:max-w-7xl flex sm:flex-row flex-col sm:p-0 p-2 gap-4 justify-between"
+        className="mx-auto sm:mt-28 mt-8 w-full max-w-6xl 2xl:max-w-7xl flex sm:flex-row flex-col sm:p-0 p-6 gap-4 justify-between"
       >
         <div className="w-full max-w-md relative ">
           <div className=" sticky top-80 w-full">
             <div className="flex w-full items-center justify-between space-x-2 mb-1">
-              <div className="font-bold text-slate-900 w-full  dark:text-white text-3xl">
+              <div className="font-bold text-slate-900 w-full  dark:text-white text-2xl">
                 Discover anything instantly
               </div>
             </div>
@@ -271,12 +282,12 @@ WHERE img->>'base_image' IS NOT NULL;
       </section>
       <section
         aria-labelledby="code-example-title"
-        className="mx-auto mt-28 w-full max-w-6xl  2xl:max-w-7xl flex sm:flex-row flex-col sm:p-0 p-2 gap-4 justify-between"
+        className="mx-auto sm:mt-28 mt-8 w-full max-w-6xl  2xl:max-w-7xl flex sm:flex-row flex-col sm:p-0 p-6 gap-4 justify-between"
       >
         <div className="w-full max-w-md relative ">
           <div className=" sticky top-80">
             <div className="flex w-full items-center justify-between space-x-2 mb-1">
-              <div className="font-bold text-slate-900  dark:text-white text-3xl">
+              <div className="font-bold text-slate-900  dark:text-white text-2xl">
                 Audit Simplified{" "}
               </div>
             </div>
@@ -296,7 +307,6 @@ WHERE img->>'base_image' IS NOT NULL;
                     target="__blank"
                     href="https://opencomply.io/compliance/frameworks/baseline_reliability"
                     className={`p-2 border dark:border-white rounded-3xl cursor-pointer sm:hover:dark:bg-white sm:hover:bg-blue-950 sm:hover:text-white sm:hover:dark:text-black    `}
-                   
                   >
                     Reliability Best Practices
                   </a>
@@ -415,12 +425,12 @@ WHERE img->>'base_image' IS NOT NULL;
       </section>
       <section
         aria-labelledby="code-example-title"
-        className="mx-auto mt-28 w-full max-w-6xl  2xl:max-w-7xl flex sm:flex-row flex-col sm:p-0 p-2 gap-4 justify-between"
+        className="mx-auto sm:mt-28 mt-8 w-full max-w-6xl  2xl:max-w-7xl flex sm:flex-row flex-col sm:p-0 p-6 gap-4 justify-between"
       >
         <div className="w-full max-w-md relative ">
           <div className=" sticky top-80">
             <div className="flex w-full items-center justify-between space-x-2 mb-1">
-              <div className="font-bold text-slate-900  dark:text-white text-3xl">
+              <div className="font-bold text-slate-900  dark:text-white text-2xl">
                 Customize
               </div>
             </div>

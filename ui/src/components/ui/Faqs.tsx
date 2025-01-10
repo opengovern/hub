@@ -74,7 +74,7 @@ We also extend Steampipe's vendor-agnostic SQL-based language to seamlessly inte
 export function Faqs() {
   return (
     <section
-      className="mx-auto mb-8 mt-28 max-w-6xl 2xl:max-w-7xl p-1 px-2 sm:mt-56"
+      className="mx-auto  mt-28 max-w-6xl 2xl:max-w-7xl p-1 px-2 sm:mt-56"
       aria-labelledby="faq-title"
     >
       <div className="grid grid-cols-1 lg:grid-cols-12 lg:gap-14">

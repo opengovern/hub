@@ -1038,6 +1038,11 @@ select {
   margin-bottom: 1.5rem;
 }
 
+.my-2 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
 .-mb-px {
   margin-bottom: -1px;
 }
@@ -6687,6 +6692,11 @@ main{
     margin-right: auto;
   }
 
+  .sm\:my-12 {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+
   .sm\:-ml-10 {
     margin-left: -2.5rem;
   }
@@ -6733,6 +6743,26 @@ main{
 
   .sm\:mt-56 {
     margin-top: 14rem;
+  }
+
+  .sm\:mt-24 {
+    margin-top: 6rem;
+  }
+
+  .sm\:mb-24 {
+    margin-bottom: 6rem;
+  }
+
+  .sm\:mt-44 {
+    margin-top: 11rem;
+  }
+
+  .sm\:mb-8 {
+    margin-bottom: 2rem;
+  }
+
+  .sm\:mt-6 {
+    margin-top: 1.5rem;
   }
 
   .sm\:inline {
