@@ -87,7 +87,7 @@ export default function Hero() {
         </Button>
         <a
           href="https://docs.opencomply.io/oss"
-          className=" border rounded-s border-indigo-600 dark:border-indigo-500 p-2"
+          className=" border rounded-s border-indigo-600 dark:border-indigo-500 p-2 text-black dark:text-white elative inline-flex items-center justify-center whitespace-nowrap   px-3 py-2 text-center text-sm font-medium shadow-sm transition-all duration-100 ease-in-out"
           target="__blank"
         >
           Download open-source
