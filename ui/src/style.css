@@ -2215,6 +2215,10 @@ select {
   gap: 2rem;
 }
 
+.gap-16 {
+  gap: 4rem;
+}
+
 .gap-x-1 {
   column-gap: 0.25rem;
 }

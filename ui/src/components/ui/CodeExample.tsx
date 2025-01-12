@@ -138,7 +138,7 @@ export default function CodeExample() {
           and change.
         </p>
 
-        <dl className="sm:mt-24 mt-4 grid grid-cols-4 gap-10">
+        <dl className="sm:mt-24 mt-4 grid grid-cols-3 gap-10">
           {features.map((item) => (
             <div
               key={item.name}

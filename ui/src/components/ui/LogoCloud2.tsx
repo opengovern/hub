@@ -74,23 +74,25 @@ export default function LogoCloud2() {
         >
           {integrations.slice(0, window.innerWidth <738 ? 4 :9)?.map((item, index) => {
             return (
-              <Col>
-                <div className="dark:bg-gray-900 hover:dark:bg-gray-600 bg-slate-300 hover:bg-slate-400 w-full flex flex-row justify-start rounded-xl items-start sm:gap-4 gap-2 py-6 sm:px-4 px-2">
-                  <div className=" min-w-fit bg-white rounded-xl p-2">
-                    <img
-                      className="w-8 h-8"
-                      src={`https://raw.githubusercontent.com/opengovern/website/main/connectors/icons/${item.Icon}`}
-                    />
+              <Col className=" cursor-pointer">
+                <a href={`/integrations/${item?.schema_ids[0]}/schema`} target="__blank">
+                  <div className="dark:bg-gray-900 hover:dark:bg-gray-600 bg-slate-300 hover:bg-slate-400 w-full flex flex-row justify-start rounded-xl items-start sm:gap-4 gap-2 py-6 sm:px-4 px-2">
+                    <div className=" min-w-fit bg-white rounded-xl p-2">
+                      <img
+                        className="w-8 h-8"
+                        src={`https://raw.githubusercontent.com/opengovern/website/main/connectors/icons/${item.Icon}`}
+                      />
+                    </div>
+                    <div className="flex flex-col gap-1 justify-center items-start">
+                      <span className="text-base text-slate-900 dark:text-slate-100 font-semibold overflow-hidden text-nowrap w-full text-ellipsis">
+                        {item.name}
+                      </span>
+                      <span className="text-sm overflow-hidden text-nowrap w-full text-ellipsis text-slate-800 dark:text-slate-300">
+                        {item.tags?.usage?.join(",", "")}
+                      </span>
+                    </div>
                   </div>
-                  <div className="flex flex-col gap-1 justify-center items-start">
-                    <span className="text-base text-slate-900 dark:text-slate-100 font-semibold overflow-hidden text-nowrap w-full text-ellipsis">
-                      {item.name}
-                    </span>
-                    <span className="text-sm overflow-hidden text-nowrap w-full text-ellipsis text-slate-800 dark:text-slate-300">
-                      {item.tags?.usage?.join(",", "")}
-                    </span>
-                  </div>
-                </div>
+                </a>
               </Col>
             );
           })}

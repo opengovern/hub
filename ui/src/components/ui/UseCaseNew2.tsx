@@ -27,7 +27,7 @@ import Steps from "../../components/ui/Steps";
 import UseCaseCard from "../../components/UseCaseCard";
 import { useEffect, useState } from "react";
 // @ts-ignore
-import video from "../../videos/2024-10-08-How_to_Customize_Controls.mp4";
+import video2 from "../../videos/2024-10-08-How_to_Customize_Controls.mp4";
 import CopyToClipboard from "../../components/CopyToClipboard";
 import {
   RiAppsLine,
@@ -115,11 +115,52 @@ const cards = [
   },
 ];
 
+const URLS = [
+  "https://tour.opencomply.io/embed/cm5q1ezs60ljjpelfs3zkfzdn?embed_v=2",
+  "https://tour.opencomply.io/embed/cm5u6d2uf0eixx30ie910b8ad?embed_v=2",
+  "https://tour.opencomply.io/embed/cm5u7317k0ex2x30igug7nxg8?embed_v=2",
+];
+
 export default function UseCaseNew2() {
   const [discoverOption, setDiscoverOption] = useState(-1);
   const [open, setOpen] = useState(false);
   const [activeStepIndex, setActiveStepIndex] = useState(1);
-  const [page,setPage] = useState(0);
+  const [page, setPage] = useState(0);
+  const [video, setVideo] = useState(0);
+  const [width, setWidth] = useState({
+    0: 0,
+    1: 0,
+    2: 0,
+  });
+  const [time, setTime] = useState(0);
+  const [selectedCard, setSelectedCard] = useState("");
+  useEffect(() => {
+    const countdownInterval = setInterval(() => {
+      // @ts-ignore
+      const video_dur = document.getElementById("hero-video")?.duration;
+      if (time >= video_dur) {
+        setVideo((video + 1) % 2);
+        clearInterval(countdownInterval);
+        setWidth({
+          0: 0,
+          1: 0,
+          2: 0,
+        });
+        setTime(0);
+      } else {
+        setTime(time + 0.5);
+        // @ts-ignore
+        const old = width;
+        // @ts-ignore
+
+        old[video] = (time / video_dur) * 100;
+        setWidth(old);
+      }
+    }, 500);
+
+    return () => clearInterval(countdownInterval);
+  }, [time, video]);
+
   useEffect(() => {
     if (discoverOption != -1) {
       // setOpen(true);
@@ -316,7 +357,7 @@ ORDER BY
         className="mx-auto sm:mt-60 mt-8 w-full max-w-6xl  2xl:max-w-7xl flex sm:flex-row flex-col sm:p-0 p-6 gap-4 justify-between"
       >
         <div className="w-full max-w-md relative ">
-          <div className=" sticky top-80">
+          <div className=" sticky top-80 ">
             <div className="flex w-full items-center justify-between space-x-2 mb-1">
               <div className="font-semibold text-slate-900 w-full  dark:text-white sm:text-3xl text-2xl">
                 Audit for Compliance{" "}
@@ -385,15 +426,15 @@ ORDER BY
           </div>
         </div>
         <div className="w-full  flex flex-col gap-10 text-black">
-          <div className="rounded-xl  flex flex-col gap-4 ">
-            {/* <div className="font-semibold text-black text-2xl w-full text-center">
+          {/* <div className="rounded-xl  flex flex-col gap-4 ">
+             <div className="font-semibold text-black text-2xl w-full text-center">
               {" "}
               Simplify Your Audits
             </div>
             <div>
               Conduct audits effortlessly and generate comprehensive,
               evidence-backed reports.
-            </div> */}
+            </div> 
             <div className="rounded-xl bg-white ring-1 ring-slate-900/5 dark:bg-slate-950 dark:ring-white/15">
               <video
                 id="hero-video"
@@ -417,7 +458,195 @@ ORDER BY
                 />
               </video>
             </div>
+          </div> */}
+          <div
+            className="relative sm:inline hidden       animate-slide-up-fade sm:ml-auto sm:w-full "
+            style={{ animationDuration: "1400ms" }}
+          >
+            <div className="  mb-4 w-full flex flex-row gap-3 justify-between ">
+              <div
+                className=" w-full flex flex-col justify-center items-center custom-button cursor-pointer "
+                onClick={() => {
+                  setVideo(0);
+                  setTime(0);
+                  setWidth({
+                    0: 0,
+                    1: 0,
+                    2: 0,
+                  });
+                }}
+              >
+                <span
+                  className={`text-center w-full text-black dark:text-white  ${video % 3 == 0 && "text-indigo-500"}`}
+                >
+                  Automate Audits
+                </span>
+                <div
+                  className={`w-full custom-pg-bar  bg-gray-300 dark:bg-slate-400  ${video % 3 == 0 && "active"} `}
+                >
+                  <div
+                    id="pg-bar-0"
+                    className={`bg-indigo-600  custom-pg-bar-var`}
+                    style={{ width: `${width[0]}%` }}
+                  ></div>
+                </div>
+              </div>
+              <div
+                className=" w-full flex flex-col justify-center items-center custom-button cursor-pointer  "
+                onClick={() => {
+                  setVideo(1);
+                  setTime(0);
+                  setWidth({
+                    0: 0,
+                    1: 0,
+                    2: 0,
+                  });
+                }}
+              >
+                <span
+                  className={`text-center w-full text-black dark:text-white  ${video % 3 == 1 && "text-indigo-500"}`}
+                >
+                  Promote Best Practices
+                </span>
+                <div
+                  className={`w-full custom-pg-bar  bg-gray-300 dark:bg-slate-400  ${video % 3 == 1 && "active"} `}
+                >
+                  <div
+                    id="pg-bar-1"
+                    className={`bg-indigo-600  custom-pg-bar-var`}
+                    style={{ width: `${width[1]}%` }}
+                  ></div>
+                </div>
+              </div>
+              <div
+                className=" w-full flex flex-col justify-center items-center custom-button cursor-pointer  "
+                onClick={() => {
+                  setVideo(2);
+                  setTime(0);
+                  setWidth({
+                    0: 0,
+                    1: 0,
+                    2: 0,
+                  });
+                }}
+              >
+                <span
+                  className={`text-center w-full text-black dark:text-white  ${video % 3 == 2 && "text-indigo-500"}`}
+                >
+                  Detect Risks
+                </span>
+                <div
+                  className={`w-full custom-pg-bar  bg-gray-300 dark:bg-slate-400  ${video % 3 == 2 && "active"} `}
+                >
+                  <div
+                    id="pg-bar-2"
+                    className={`bg-indigo-600  custom-pg-bar-var`}
+                    style={{ width: `${width[2]}%` }}
+                  ></div>
+                </div>
+              </div>
+            </div>
+
+            <div className=" rounded-xl iframe-div relative sm:mx-auto mx-3 bg-transparent  mt-5 h-fit  max-w-5xl 2xl:max-w-6xl animate-slide-up-fade sm:ml-auto sm:w-full ">
+              <iframe
+                src={URLS[video]}
+                loading="lazy"
+                title="Website - Product Tour"
+                allow="clipboard-write"
+                frameBorder="0"
+                allowFullScreen={true}
+                className="iframe-div-frame rounded-xl"
+              ></iframe>
+            </div>
           </div>
+          <div
+            className="relative sm:hidden  flex flex-col gap-16    animate-slide-up-fade sm:ml-auto sm:w-full "
+            style={{ animationDuration: "1400ms" }}
+          >
+            <div className="flex flex-col gap-4">
+              <div className=" w-full flex flex-col justify-center items-center custom-button cursor-pointer ">
+                <span
+                  className={`text-center w-full text-xl text-black dark:text-white `}
+                >
+                  Automate Audits
+                </span>
+              </div>
+              <div className=" rounded-xl iframe-div relative w-full h-full">
+                <iframe
+                  src={URLS[0]}
+                  loading="lazy"
+                  title="Website - Product Tour"
+                  allow="clipboard-write"
+                  frameBorder="0"
+                  allowFullScreen={true}
+                  className="iframe-div-frame rounded-xl w-full h-full"
+                ></iframe>
+              </div>
+            </div>
+            <div className="flex flex-col gap-4">
+              <div className=" w-full flex flex-col justify-center items-center custom-button cursor-pointer  ">
+                <span
+                  className={`text-center w-full text-xl text-black dark:text-white  `}
+                >
+                  Promote Best Practices
+                </span>
+              </div>
+              <div className=" rounded-xl iframe-div relative w-full h-full">
+                <iframe
+                  src={URLS[1]}
+                  loading="lazy"
+                  title="Website - Product Tour"
+                  allow="clipboard-write"
+                  frameBorder="0"
+                  allowFullScreen={true}
+                  className="iframe-div-frame rounded-xl w-full h-full"
+                ></iframe>
+              </div>
+            </div>
+            <div className="flex flex-col gap-4">
+              {" "}
+              <div className=" w-full flex flex-col justify-center items-center custom-button cursor-pointer  ">
+                <span
+                  className={`text-center text-xl w-full text-black dark:text-white  `}
+                >
+                  Detect Risks
+                </span>
+              </div>
+              <div className=" rounded-xl iframe-div relative w-full h-full">
+                <iframe
+                  src={URLS[2]}
+                  loading="lazy"
+                  title="Website - Product Tour"
+                  allow="clipboard-write"
+                  frameBorder="0"
+                  allowFullScreen={true}
+                  className="iframe-div-frame rounded-xl w-full h-full"
+                ></iframe>
+              </div>
+            </div>
+          </div>
+          {/* <div className=" rounded-xl iframe-div hidden sm:inline relative sm:mx-auto mx-3 bg-transparent  mt-20 h-fit  max-w-5xl 2xl:max-w-6xl animate-slide-up-fade sm:ml-auto sm:w-full ">
+            <iframe
+              src="https://tour.opencomply.io/embed/cm5q1ezs60ljjpelfs3zkfzdn?embed_v=2"
+              loading="lazy"
+              title="Website - Product Tour"
+              allow="clipboard-write"
+              frameBorder="0"
+              allowFullScreen={true}
+              className="iframe-div-frame rounded-xl"
+            ></iframe>
+          </div>
+          <div className="iframe-div rounded-xl  hidden sm:inline relative sm:mx-auto mx-3 bg-transparent  mt-20 h-fit  max-w-5xl 2xl:max-w-6xl animate-slide-up-fade sm:ml-auto sm:w-full ">
+            <iframe
+              src="https://tour.opencomply.io/embed/cm5u6d2uf0eixx30ie910b8ad?embed_v=2"
+              loading="lazy"
+              title="Website - Product Tour"
+              allow="clipboard-write"
+              frameBorder="0"
+              allowFullScreen={true}
+              className="iframe-div-frame rounded-xl"
+            ></iframe>
+          </div> */}
           {/* <div className="rounded-xl bg-slate-200 dark:bg-[#e4e3e3] p-8 flex flex-col gap-10 ">
             <div className="font-semibold text-black text-2xl w-full text-center">
               {" "}
@@ -575,7 +804,12 @@ ORDER BY
                     ?.map((card, index) => {
                       return (
                         <>
-                          <Col className="w-full h-full">
+                          <Col
+                            className="w-full h-full cursor-pointer"
+                            onClick={() => {
+                              setOpen(true);
+                            }}
+                          >
                             <div className="flex flex-col p-4 rounded-xl justify-center items-center gap-3 bg-slate-300 hover:bg-slate-400 cursor-pointer dark:bg-slate-900 hover:dark:bg-slate-950 ">
                               {
                                 <card.icon
@@ -738,7 +972,7 @@ kubectl port-forward -n opencomply svc/nginx-proxy 8080:80`}
                   autoPlay
                   loop
                 >
-                  <source src={video} type="video/mp4" />
+                  <source src={video2} type="video/mp4" />
                   Your browser does not support the video tag.
                 </video>
               ),
