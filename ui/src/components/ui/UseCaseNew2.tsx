@@ -566,7 +566,7 @@ ORDER BY
             <div className="flex flex-col gap-4">
               <div className=" w-full flex flex-col justify-center items-center custom-button cursor-pointer ">
                 <span
-                  className={`text-center w-full text-xl text-black dark:text-white `}
+                  className={`text-center w-full text-xl font-semibold text-black dark:text-white `}
                 >
                   Automate Audits
                 </span>
@@ -586,7 +586,7 @@ ORDER BY
             <div className="flex flex-col gap-4">
               <div className=" w-full flex flex-col justify-center items-center custom-button cursor-pointer  ">
                 <span
-                  className={`text-center w-full text-xl text-black dark:text-white  `}
+                  className={`text-center w-full text-xl font-semibold text-black dark:text-white  `}
                 >
                   Promote Best Practices
                 </span>
@@ -607,7 +607,7 @@ ORDER BY
               {" "}
               <div className=" w-full flex flex-col justify-center items-center custom-button cursor-pointer  ">
                 <span
-                  className={`text-center text-xl w-full text-black dark:text-white  `}
+                  className={`text-center text-xl w-full font-semibold text-black dark:text-white  `}
                 >
                   Detect Risks
                 </span>
