@@ -68,43 +68,36 @@ const code2 = `async function fetchCustomerOrders() {
 }`;
 
 const features = [
-  {
-    name: "Adopt Inside Your Workflows",
-    description:
-      "Integrate compliance into daily operations and share real-time insights for faster, aligned decisions.",
-    icon: RiGitBranchLine,
-  },
-  {
-    name: "Seamless Integrations",
-    description:
-      "Connect DevOps, AI/ML, and SecOps tools for full-stack visibility.",
-    icon: RiPlugLine,
-  },
-
-  {
-    name: "Unified Data Plane",
-    description:
-      "Eliminate silos with a single data plane for consistent, reliable insights.",
-    icon: RiStackLine,
-  },
-  {
-    name: "Vendor-Agnostic",
-    description:
-      "Audit compliance across clouds, environments, and tools without lock-in.",
-    icon: RiP2pLine,
-  },
+  // {
+  //   name: "Adopt Inside Your Workflows",
+  //   description:
+  //     "Integrate compliance into daily operations and share real-time insights for faster, aligned decisions.",
+  //   icon: RiGitBranchLine,
+  // },
   {
     name: "Policy-as-Code",
     description:
       "Manage policies in Git, no scripts required—streamline compliance and audits.",
     icon: RiCodeBlock,
   },
+  {
+    name: "Open Platform",
+    description:
+      "Customize and extend freely with a flexible, open architecture",
+    icon: RiOpenSourceLine,
+  },
+  {
+    name: "Extensible",
+    description:
+      "Connect DevOps, AI/ML, and SecOps tools for full-stack visibility.",
+    icon: RiPlugLine,
+  },
 
   {
-    name: "Full Stack Governance",
+    name: "Single Source of Truth",
     description:
-      "Cover your entire stack and secure every change—no blind spots, no guesswork.",
-    icon: RiGroupLine,
+      "Eliminate silos with a single data plane for consistent, reliable insights.",
+    icon: RiStackLine,
   },
   {
     name: "Enterprise Security",
@@ -113,11 +106,18 @@ const features = [
     icon: RiLockStarLine,
   },
   {
-    name: "Open Platform",
+    name: "Vendor-Agnostic",
     description:
-      "Customize and extend freely with a flexible, open architecture",
-    icon: RiOpenSourceLine,
+      "Audit compliance across clouds, environments, and tools without lock-in.",
+    icon: RiP2pLine,
   },
+
+  // {
+  //   name: "Full Stack Governance",
+  //   description:
+  //     "Cover your entire stack and secure every change—no blind spots, no guesswork.",
+  //   icon: RiGroupLine,
+  // },
 ];
 
 export default function CodeExample() {
@@ -131,7 +131,7 @@ export default function CodeExample() {
           id="code-example-title"
           className="mt-2 inline-block bg-gradient-to-br from-gray-900 to-gray-800 bg-clip-text py-2 text-3xl font-bold tracking-tighter text-transparent sm:text-5xl md:text-5xl dark:from-gray-50 dark:to-gray-300"
         >
-          The Advantage
+          Why opencomply?
         </h2>
         <p className="mt-6 max-w-2xl text-lg text-gray-900 dark:text-gray-400">
           Govern your entire stack. See what matters. Secure every deployment

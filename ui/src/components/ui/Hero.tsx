@@ -1,5 +1,4 @@
 import { RiPlayCircleFill } from "@remixicon/react";
-import { Button } from "../Button";
 import HeroImage from "./HeroImage";
 // @ts-ignore
 import video from "../../videos/2024-10-08-How_to_Customize_Controls.mp4";
@@ -8,6 +7,7 @@ import { useEffect, useState } from "react";
 import { DISCOVER_URL } from "../../pages/landing/urls";
 import { AUDIT_URL } from "../../pages/landing/urls";
 import { CUSTOMIZE_URL } from "../../pages/landing/urls";
+import { Button } from "@cloudscape-design/components";
 const URLS = {
   0: DISCOVER_URL,
   1: AUDIT_URL,
@@ -60,24 +60,28 @@ export default function Hero() {
         className="inline-block animate-slide-up-fade bg-gradient-to-br from-gray-900 to-gray-800 bg-clip-text p-2 text-4xl font-bold tracking-tighter text-transparent sm:text-6xl md:text-6xl dark:from-gray-50 dark:to-gray-300"
         style={{ animationDuration: "700ms" }}
       >
-        Compliance
-        <br />
-        without complexity
+        Own Your Stack, <br />
+        Own Your Security
       </h1>
       <p
         className="mt-1 max-w-3xl animate-slide-up-fade text-2xl text-gray-700 dark:text-gray-400"
         style={{ animationDuration: "900ms" }}
       >
-        OpenComply makes compliance across clouds, platforms, and regions
-        radically simple. Govern every change, deployment, and asset.
+        OpenComply simplifies security and compliance across clouds, platforms,
+        and regions. Govern every change, deployment, and asset with ease.
       </p>
       <div
         className="mt-8 flex w-full animate-slide-up-fade flex-col justify-center gap-3 px-3 sm:flex-row"
         style={{ animationDuration: "1100ms" }}
       >
-        <Button className="h-10 font-semibold">
+        <Button variant="primary" className="h-10 font-semibold">
           <a href="https://docs.opencomply.io/oss" target="__blank">
-            Download Community edition
+            Download
+          </a>
+        </Button>
+        <Button variant="primary" className="h-10 font-semibold">
+          <a href="https://docs.opencomply.io/oss" target="__blank">
+            Try Professional
           </a>
         </Button>
         {/* <Button

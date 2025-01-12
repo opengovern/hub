@@ -137,7 +137,7 @@ export default function UseCaseNew2() {
           id="code-example-title"
           className="mt-2 inline-block bg-gradient-to-br from-gray-900 to-gray-800 bg-clip-text py-2 text-3xl font-semibold tracking-tighter text-transparent sm:text-5xl md:text-5xl dark:from-gray-50 dark:to-gray-300"
         >
-          Full-Stack Compliance{" "}
+          Full-Stack Security & Compliance
         </h2>
         <p className="sm:mt-6 mt-4 max-w-2xl text-lg tracking-tighter text-gray-800 dark:text-gray-400 px-2">
           OpenComply makes security & compliance radically simple.

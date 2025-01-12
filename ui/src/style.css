@@ -1336,10 +1336,6 @@ select {
   display: table;
 }
 
-.table-caption {
-  display: table-caption;
-}
-
 .flow-root {
   display: flow-root;
 }
@@ -1417,10 +1413,6 @@ select {
 
 .h-0 {
   height: 0px;
-}
-
-.h-1\/2 {
-  height: 50%;
 }
 
 .h-10 {
@@ -3503,14 +3495,6 @@ select {
 
 .pt-\[3rem\] {
   padding-top: 3rem;
-}
-
-.pb-40 {
-  padding-bottom: 10rem;
-}
-
-.pb-80 {
-  padding-bottom: 20rem;
 }
 
 .text-left {
@@ -6928,12 +6912,12 @@ main{
     justify-content: center;
   }
 
-  .sm\:gap-8 {
-    gap: 2rem;
-  }
-
   .sm\:gap-4 {
     gap: 1rem;
+  }
+
+  .sm\:gap-8 {
+    gap: 2rem;
   }
 
   .sm\:gap-y-10 {
@@ -6970,32 +6954,32 @@ main{
     padding-right: 9rem;
   }
 
-  .sm\:px-7 {
-    padding-left: 1.75rem;
-    padding-right: 1.75rem;
-  }
-
-  .sm\:py-6 {
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
-  }
-
   .sm\:px-4 {
     padding-left: 1rem;
     padding-right: 1rem;
   }
 
-  .sm\:pt-8 {
-    padding-top: 2rem;
+  .sm\:px-7 {
+    padding-left: 1.75rem;
+    padding-right: 1.75rem;
   }
 
   .sm\:pb-80 {
     padding-bottom: 20rem;
   }
 
+  .sm\:pt-8 {
+    padding-top: 2rem;
+  }
+
   .sm\:text-2xl {
     font-size: 1.5rem;
     line-height: 2rem;
+  }
+
+  .sm\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
   }
 
   .sm\:text-4xl {
@@ -7021,11 +7005,6 @@ main{
   .sm\:text-sm {
     font-size: 0.875rem;
     line-height: 1.25rem;
-  }
-
-  .sm\:text-3xl {
-    font-size: 1.875rem;
-    line-height: 2.25rem;
   }
 
   .sm\:leading-9 {

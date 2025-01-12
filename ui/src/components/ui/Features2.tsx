@@ -29,25 +29,36 @@ export default function Features2() {
           id="features-title"
           className=" inline-block text-slate-950 dark:text-slate-50 text-start w-full bg-gradient-to-br from-gray-900 to-gray-800 bg-clip-text py-2 text-4xl font-bold tracking-tighter  sm:text-4xl md:text-4xl "
         >
-          Compliance is painful
+          Security & Compliance doesn't have to be a pain
         </h2>
         <p className="mt-6   text-lg max-w-3xl  text-left leading-7 text-slate-950 dark:text-slate-50">
           {/* <b>Compliance is painful.</b> <br />
         <br /> */}
-          Generic controls. Outdated processes. Confusing standards. Overpriced
-          tools that can’t handle modern stacks or real-world workflows.
+          Let's be real, traditional security and compliance tools often get in
+          the way of progress. They are proprietary, expensive, a pain to
+          customize, and struggle to keep up with modern stacks.
           <br />
           <br />
-          <b>We want to change that.</b>
+          We believe security and compliance should empower your team, not hold
+          them back. That's why we built OpenComply, a platform designed with
+          engineers in mind.
           <br />
           <br />
-          We believe compliance should be simple, transparent, and adaptable, so
-          it fits naturally into how you work.
+          With OpenComply:
+          <br />
+          <b>Keep using the tools you love.</b>No need to ditch your favorites
+          or adopt expensive vendor-specific solutions.
           <br />
           <br />
-          That’s why we built a platform that evolves with your stack, letting
-          you focus on what really matters—building incredible products.
+          <b>Write rules that actually make sense for your team.</b>
+          No more generic, one-size-fits-all controls.
           <br />
+          <br />
+          <b>Build a security culture that works for you.</b>
+          Define and enforce best practices that fit your organization.
+          <br />
+          <br />
+          Focus on building amazing products.
           <br />
           <b> Welcome to opencomply.</b>
         </p>
