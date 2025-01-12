@@ -1,6 +1,6 @@
-# Linode Integration Setup Guide for Opencomply
+# Linode Integration Setup Guide for opencomply
 
-This guide provides instructions to integrate your Linode account with Opencomply by creating a personal access token for API authorization.
+This guide provides instructions to integrate your Linode account with opencomply by creating a personal access token for API authorization.
 
 ## Steps
 
@@ -20,7 +20,7 @@ This guide provides instructions to integrate your Linode account with Opencompl
 
 #### Configure the Token
 
-- **Label**: Enter a label for the token to identify its intended use, like **Opencomply Integration**.
+- **Label**: Enter a label for the token to identify its intended use, like **opencomply Integration**.
 - **Expiry**: Select an appropriate expiration time for the token.
 - **Permissions**:
   - For each product or service, select **ReadOnly** access.
@@ -30,11 +30,11 @@ This guide provides instructions to integrate your Linode account with Opencompl
 
 - After configuration, ensure the token is saved securely as it will only be displayed once.
 
-### 2. Configure Opencomply with the Token
+### 2. Configure opencomply with the Token
 
-#### Access Opencomply
+#### Access opencomply
 
-- Log in to the Opencomply portal using your admin credentials.
+- Log in to the opencomply portal using your admin credentials.
 
 #### Add Integration
 
@@ -48,5 +48,5 @@ This guide provides instructions to integrate your Linode account with Opencompl
 
 - Click **Next**, review the integration details, and then **Confirm** to establish the connection.
 
-By following these steps, you have successfully integrated your Linode account with Opencomply, allowing read access and necessary write permissions for VPCs to enhance governance and compliance within the platform.
+By following these steps, you have successfully integrated your Linode account with opencomply, allowing read access and necessary write permissions for VPCs to enhance governance and compliance within the platform.
 ```

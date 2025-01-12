@@ -7,7 +7,9 @@ import { useEffect, useState } from "react";
 import { DISCOVER_URL } from "../../pages/landing/urls";
 import { AUDIT_URL } from "../../pages/landing/urls";
 import { CUSTOMIZE_URL } from "../../pages/landing/urls";
-import { Button } from "@cloudscape-design/components";
+import { Button } from "../Button";
+import { Modal } from "@cloudscape-design/components";
+import Cal from "@calcom/embed-react";
 const URLS = {
   0: DISCOVER_URL,
   1: AUDIT_URL,
@@ -22,6 +24,7 @@ export default function Hero() {
     2: 0,
   });
   const [time, setTime] = useState(0);
+  const [open,setOpen] = useState(false)
 
   useEffect(() => {
     const countdownInterval = setInterval(() => {
@@ -60,30 +63,35 @@ export default function Hero() {
         className="inline-block animate-slide-up-fade bg-gradient-to-br from-gray-900 to-gray-800 bg-clip-text p-2 text-4xl font-bold tracking-tighter text-transparent sm:text-6xl md:text-6xl dark:from-gray-50 dark:to-gray-300"
         style={{ animationDuration: "700ms" }}
       >
-        Own Your Stack, <br />
-        Own Your Security
+        Own your stack. <br />
+        Own your security.
       </h1>
       <p
         className="mt-1 max-w-3xl animate-slide-up-fade text-2xl text-gray-700 dark:text-gray-400"
         style={{ animationDuration: "900ms" }}
       >
-        OpenComply simplifies security and compliance across clouds, platforms,
+        opencomply simplifies security and compliance across clouds, platforms,
         and regions. Govern every change, deployment, and asset with ease.
       </p>
       <div
-        className="mt-8 flex w-full animate-slide-up-fade flex-col justify-center gap-3 px-3 sm:flex-row"
+        className="mt-8 flex w-full animate-slide-up-fade flex-col justify-center items-center gap-3 px-3 sm:flex-row"
         style={{ animationDuration: "1100ms" }}
       >
-        <Button variant="primary" className="h-10 font-semibold">
-          <a href="https://docs.opencomply.io/oss" target="__blank">
-            Download
-          </a>
+        <Button
+          onClick={() => {
+            setOpen(true);
+          }}
+          className=" font-semibold rounded-sm "
+        >
+          Try cloud for free
         </Button>
-        <Button variant="primary" className="h-10 font-semibold">
-          <a href="https://docs.opencomply.io/oss" target="__blank">
-            Try Professional
-          </a>
-        </Button>
+        <a
+          href="https://docs.opencomply.io/oss"
+          className=" border rounded-s border-indigo-600 dark:border-indigo-500 p-2"
+          target="__blank"
+        >
+          Download open-source
+        </a>
         {/* <Button
           asChild
           variant="light"
@@ -249,6 +257,19 @@ export default function Hero() {
         </div>
       
       </div> */}
+      <Modal
+        header="Try enterprise Edition"
+        size="large"
+        visible={open}
+        onDismiss={() => setOpen(false)}
+      >
+        <Cal
+          namespace="try"
+          calLink="team/opencomply/try"
+          style={{ width: "100%", height: "100%", overflow: "scroll" }}
+          config={{ layout: "month_view" }}
+        />
+      </Modal>
     </section>
   );
 }

@@ -1,10 +1,10 @@
 # Setup GitHub Integration
 
-Integrating Opencomply with your GitHub organization using a Classic Personal Access Token (PAT) is a straightforward process. Here's a step-by-step guide to help you through it:
+Integrating opencomply with your GitHub organization using a Classic Personal Access Token (PAT) is a straightforward process. Here's a step-by-step guide to help you through it:
 
 ## Prerequisites
 
-1. **Opencomply Should be Installed and Running**: Ensure you have Opencomply set up and ready to integrate with external services.
+1. **opencomply Should be Installed and Running**: Ensure you have opencomply set up and ready to integrate with external services.
 2. **GitHub Organization Admin Permissions**: Make sure you have administrative access to the GitHub organization you want to integrate with.
 3. **Read Access to All Organization Repositories**: Ensure you have the necessary permissions to access the data in your GitHub organization.
 
@@ -27,7 +27,7 @@ Integrating Opencomply with your GitHub organization using a Classic Personal Ac
    - Choose an expiration for the token by selecting **Expiration** and picking a default option or entering a custom date.
 
 5. **Select Required Scopes**: 
-   - Ensure you select the following scopes to grant Opencomply the necessary access:
+   - Ensure you select the following scopes to grant opencomply the necessary access:
      - `repo`
      - `read:org`
      - `read:packages`
@@ -43,12 +43,12 @@ Integrating Opencomply with your GitHub organization using a Classic Personal Ac
      - `read:public_key`
 
 6. **Generate the Token**:
-   - After selecting the scopes, generate the token and copy it for use in Opencomply integration.
+   - After selecting the scopes, generate the token and copy it for use in opencomply integration.
 
-## Configure Integration in Opencomply
+## Configure Integration in opencomply
 
-1. **Open Opencomply Dashboard**:
-   - Navigate to the Opencomply dashboard.
+1. **Open opencomply Dashboard**:
+   - Navigate to the opencomply dashboard.
 
 2. **Go to Integrations**:
    - Select **Integrations** and then choose **GitHub** from the options.
@@ -65,4 +65,4 @@ Integrating Opencomply with your GitHub organization using a Classic Personal Ac
 6. **Finalize Integration**:
    - Click **Save** to confirm and enable the connection.
 
-With these steps, Opencomply will have read access to your GitHub repositories and related metadata, allowing it to provide governance and compliance oversight effectively.
+With these steps, opencomply will have read access to your GitHub repositories and related metadata, allowing it to provide governance and compliance oversight effectively.

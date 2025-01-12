@@ -473,7 +473,7 @@ ORDER BY
               <div className="flex flex-col gap-5">
                 <div className="text-slate-900 dark:text-white w-full text-xl ">
                   {" "}
-                  Let Opencomply work for you. Here's how we make it happen.{" "}
+                  Let opencomply work for you. Here's how we make it happen.{" "}
                 </div>
                 {/* <div className="text-slate-900 dark:text-white font-semibold">
                   USE CASES

@@ -29,7 +29,7 @@ export default function Features2() {
           id="features-title"
           className=" inline-block text-slate-950 dark:text-slate-50 text-start w-full bg-gradient-to-br from-gray-900 to-gray-800 bg-clip-text py-2 text-4xl font-bold tracking-tighter  sm:text-4xl md:text-4xl "
         >
-          Security & Compliance doesn't have to be a painfull
+          Security and Compliance: It doesn't have to hurt{" "}
         </h2>
         <p className="mt-6   text-lg max-w-3xl  text-left leading-7 text-slate-950 dark:text-slate-50">
           {/* <b>Compliance is painful.</b> <br />

@@ -1,11 +1,11 @@
 export const ChangeLogText = `
 
-Stay updated with the latest features, improvements, and fixes we've implemented in **Opencomply**.
+Stay updated with the latest features, improvements, and fixes we've implemented in **opencomply**.
 
 
 
-## First Public Release of Opencomply
-Introducing Opencomply’s first public release, designed to centralize asset visibility and enable comprehensive compliance audits across your landscape.
+## First Public Release of opencomply
+Introducing opencomply’s first public release, designed to centralize asset visibility and enable comprehensive compliance audits across your landscape.
 
 ### Key Highlights
 

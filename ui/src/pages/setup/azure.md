@@ -1,6 +1,6 @@
-# Azure Subscriptions Integration Setup Guide for Opencomply
+# Azure Subscriptions Integration Setup Guide for opencomply
 
-This guide provides step-by-step instructions to integrate your Azure subscriptions with Opencomply by creating a Service Principal with read-only access. This integration enables Opencomply to provide visibility and governance capabilities over your Azure resources.
+This guide provides step-by-step instructions to integrate your Azure subscriptions with opencomply by creating a Service Principal with read-only access. This integration enables opencomply to provide visibility and governance capabilities over your Azure resources.
 
 ## Table of Contents
 
@@ -8,7 +8,7 @@ This guide provides step-by-step instructions to integrate your Azure subscripti
 - [Steps](#steps)
   - [1. Clone the Integration Scripts Repository](#1-clone-the-integration-scripts-repository)
   - [2. Run the Reader Role Assignment Script](#2-run-the-reader-role-assignment-script)
-  - [3. Setup Opencomply](#3-setup-opencomply)
+  - [3. Setup opencomply](#3-setup-opencomply)
 - [Conclusion](#conclusion)
 
 ## Prerequisites
@@ -23,11 +23,11 @@ Before you begin, ensure the following prerequisites are met:
     az login
     ```
 
-- **Opencomply Installed and Running**: Ensure that Opencomply is installed and operational. Refer to the [Opencomply Installation Documentation](https://github.com/opengovern/integration-automation-scripts) if needed.
+- **opencomply Installed and Running**: Ensure that opencomply is installed and operational. Refer to the [opencomply Installation Documentation](https://github.com/opengovern/integration-automation-scripts) if needed.
 
 ## Steps
 
-Follow the steps below to set up the Azure subscriptions integration with Opencomply.
+Follow the steps below to set up the Azure subscriptions integration with opencomply.
 
 ### 1. Clone the Integration Scripts Repository
 
@@ -63,20 +63,20 @@ The script will perform the following actions:
 
 **Note**: Ensure you have the necessary permissions to create Service Principals and assign roles in your Azure tenant.
 
-### 3. Setup Opencomply
+### 3. Setup opencomply
 
-After running the script, it will output essential details required for configuring Opencomply:
+After running the script, it will output essential details required for configuring opencomply:
 
 - Tenant ID
 - Application (Client) ID
 - Object ID
 - Client Secret
 
-Use the credentials obtained to configure Azure integration within Opencomply.
+Use the credentials obtained to configure Azure integration within opencomply.
 
-#### Navigate to the Opencomply Dashboard:
+#### Navigate to the opencomply Dashboard:
 
-Open your web browser and go to the Opencomply portal. Log in with your administrator credentials.
+Open your web browser and go to the opencomply portal. Log in with your administrator credentials.
 
 #### Access the Integrations Section:
 
@@ -95,4 +95,4 @@ In the integration wizard, provide the following details:
 
 #### Complete the Integration:
 
-Follow the on-screen instructions to complete the integration process. Once completed, your Azure subscriptions will be linked with Opencomply, providing enhanced visibility and governance over your Azure resources.
+Follow the on-screen instructions to complete the integration process. Once completed, your Azure subscriptions will be linked with opencomply, providing enhanced visibility and governance over your Azure resources.

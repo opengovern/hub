@@ -28,7 +28,7 @@ export default function Steps() {
       </h2>
 
       <p className="mt-2 mb-6 max-w-3xl text-lg leading-7 gap-2 text-gray-900 dark:text-gray-400 flex justify-center items-center">
-        Install Opencomply using Helm on Kubernetes clusters.
+        Install opencomply using Helm on Kubernetes clusters.
         <Popover
           dismissButton={false}
           position="top"
@@ -42,7 +42,7 @@ export default function Steps() {
             </span>
           }
         >
-          <RiInformationLine/>
+          <RiInformationLine />
         </Popover>
       </p>
       {/*

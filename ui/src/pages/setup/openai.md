@@ -1,11 +1,11 @@
 # OpenAI Integration Guide
 
-Learn how to integrate Opencomply with your OpenAI project.
+Learn how to integrate opencomply with your OpenAI project.
 
-This guide shows you how to connect Opencomply to an OpenAI project using a project-level API key with read-only access. Each integration corresponds to a single OpenAI project. Once integrated, Opencomply will discover and assess key OpenAI resources—such as assistants, files, models, projects, project API keys, rate limits, service accounts, users, and vector stores—enabling compliance and visibility across your OpenAI environment.
+This guide shows you how to connect opencomply to an OpenAI project using a project-level API key with read-only access. Each integration corresponds to a single OpenAI project. Once integrated, opencomply will discover and assess key OpenAI resources—such as assistants, files, models, projects, project API keys, rate limits, service accounts, users, and vector stores—enabling compliance and visibility across your OpenAI environment.
 
 ## Prerequisites
-- Opencomply installed and running
+- opencomply installed and running
 - An OpenAI project with the appropriate read-only API key permissions
 
 ## Create a Read-Only Project API Key
@@ -14,9 +14,9 @@ This guide shows you how to connect Opencomply to an OpenAI project using a proj
 2. Go to **Settings** or **Manage Keys** (location may vary depending on the dashboard version).
 3. Click **Create New Key**, set it to **Read-Only**, and copy the generated key.
 
-## Configure Integration in Opencomply
+## Configure Integration in opencomply
 
-1. In the Opencomply dashboard, go to **Integrations > OpenAI**.
+1. In the opencomply dashboard, go to **Integrations > OpenAI**.
 2. Select **API Key integration**.
 3. Paste in your OpenAI project-level API key.
 4. Specify the OpenAI project to govern.

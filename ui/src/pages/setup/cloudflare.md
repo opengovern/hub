@@ -41,7 +41,7 @@ To set up the OpenComply integration (formerly OpenGovernance) with Cloudflare, 
 
 ### 7. Provide Token Name
 
-- In the **Name** field, enter: `Opencomply`.
+- In the **Name** field, enter: `opencomply`.
 
 ### 8. Select API Token Template
 
@@ -78,7 +78,7 @@ Once you have both the **Account ID** and **Account Token**, follow these steps 
 
 ## Summary
 
-By following these steps, you will successfully create an **Account API Token** named **Opencomply** on Cloudflare and obtain the **Token Value** and **Account ID** necessary for integrating with OpenComply. Ensure you store the token securely and set the TTL to 365 Days to maintain seamless integration.
+By following these steps, you will successfully create an **Account API Token** named **opencomply** on Cloudflare and obtain the **Token Value** and **Account ID** necessary for integrating with OpenComply. Ensure you store the token securely and set the TTL to 365 Days to maintain seamless integration.
 
 ---
 

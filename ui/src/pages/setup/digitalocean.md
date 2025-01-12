@@ -1,6 +1,6 @@
-# DigitalOcean Integration Setup Guide for Opencomply
+# DigitalOcean Integration Setup Guide for opencomply
 
-This guide provides concise instructions to integrate your DigitalOcean account with Opencomply using a Read Only Personal Access Token.
+This guide provides concise instructions to integrate your DigitalOcean account with opencomply using a Read Only Personal Access Token.
 
 ## Steps
 
@@ -16,7 +16,7 @@ This guide provides concise instructions to integrate your DigitalOcean account 
 
 #### Configure Token
 
-- **Name**: Enter a descriptive name like **Opencomply ReadOnly Token**.
+- **Name**: Enter a descriptive name like **opencomply ReadOnly Token**.
 - **Expiration**: Choose an appropriate expiration date.
 - **Scopes**: Select **Read Only** to grant read access to all resources.
 
@@ -24,11 +24,11 @@ This guide provides concise instructions to integrate your DigitalOcean account 
 
 - Click **Generate Token** and copy the token; it won't be shown again.
 
-### 2. Configure Opencomply with the Token
+### 2. Configure opencomply with the Token
 
-#### Access Opencomply
+#### Access opencomply
 
-- Log in to the Opencomply portal with your admin credentials.
+- Log in to the opencomply portal with your admin credentials.
 
 #### Add Integration
 
@@ -42,4 +42,4 @@ This guide provides concise instructions to integrate your DigitalOcean account 
 
 - Click **Next**, review the details, and then **Confirm** to establish the connection.
 
-With these steps, you have successfully integrated your DigitalOcean account with Opencomply, enabling read-only access to enhance visibility and compliance capabilities within the platform.
+With these steps, you have successfully integrated your DigitalOcean account with opencomply, enabling read-only access to enhance visibility and compliance capabilities within the platform.
