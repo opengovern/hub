@@ -1312,6 +1312,14 @@ select {
   margin-top: 3rem;
 }
 
+.ml-8 {
+  margin-left: 2rem;
+}
+
+.ml-12 {
+  margin-left: 3rem;
+}
+
 .block {
   display: block;
 }
@@ -2026,8 +2034,20 @@ select {
   scroll-margin-top: 9rem;
 }
 
+.list-inside {
+  list-style-position: inside;
+}
+
+.list-outside {
+  list-style-position: outside;
+}
+
 .list-\[\'\2013__\'\] {
   list-style-type: '–  ';
+}
+
+.list-disc {
+  list-style-type: disc;
 }
 
 .appearance-none {
