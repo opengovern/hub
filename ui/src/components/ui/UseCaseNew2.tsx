@@ -29,6 +29,9 @@ import { useEffect, useState } from "react";
 // @ts-ignore
 import video2 from "../../videos/2024-10-08-How_to_Customize_Controls.mp4";
 import CopyToClipboard from "../../components/CopyToClipboard";
+import Definition from "../../images/famework-definition.svg";
+import Organization from "../../images/framework-organization.svg";
+
 import {
   RiAppsLine,
   RiArticleLine,
@@ -61,8 +64,14 @@ import { ArrowAnimated } from "./ArrowAnimated";
 import ThemedImage from "./ThemedImage";
 import CustomPagination from "../Pagination";
 import { Results } from "../../pages/landing/query_result";
+import { title } from "process";
+import axios from "axios";
 
 const cards = [
+  {
+    label: "Frameworks",
+    icon: RiBook3Line,
+  },
   {
     label: "Queries",
     icon: RiSearchLine,
@@ -85,10 +94,7 @@ const cards = [
     label: "Controls",
     icon: RiStickyNoteLine,
   },
-  {
-    label: "Frameworks",
-    icon: RiBook3Line,
-  },
+
   {
     label: "Integrations",
     icon: RiPuzzleLine,
@@ -126,6 +132,7 @@ export default function UseCaseNew2() {
   const [open, setOpen] = useState(false);
   const [activeStepIndex, setActiveStepIndex] = useState(1);
   const [page, setPage] = useState(0);
+  const [yaml, setYaml] = useState("");
   const [video, setVideo] = useState(0);
   const [width, setWidth] = useState({
     0: 0,
@@ -134,6 +141,7 @@ export default function UseCaseNew2() {
   });
   const [time, setTime] = useState(0);
   const [selectedCard, setSelectedCard] = useState("");
+
   useEffect(() => {
     const countdownInterval = setInterval(() => {
       // @ts-ignore
@@ -167,6 +175,92 @@ export default function UseCaseNew2() {
     }
   }, [discoverOption]);
   const navigate = useNavigate();
+
+  const GetYaml = () => {
+    axios
+      .get(
+        "https://raw.githubusercontent.com/opengovern/platform-configuration/refs/heads/main/compliance/frameworks/baseline/efficiency.yaml"
+      )
+      .then((resp) => {
+        setYaml(resp.data);
+      })
+      .catch((e) => {
+        console.log(e);
+      });
+  };
+  const GetSteps = () => {
+    const step: any = [];
+    switch (selectedCard) {
+      case "Frameworks":
+        GetYaml();
+        step.push({
+          title: "Introduction",
+          content: (
+            <>
+              <div className="flex flex-col gap-3">
+                <span></span>
+                <RenderObject height="400px" obj={yaml} />
+              </div>
+            </>
+          ),
+        });
+        step.push({
+          title: "Definition",
+          content: (
+            <>
+              <div className="rounded-2xl w-full mt-2 bg-slate-50/40 p-2 ring-1 ring-inset ring-slate-200/50 dark:bg-gray-900/70 dark:ring-white/10">
+                <div className="rounded-xl w-full  bg-white ring-1 ring-slate-900/5 dark:bg-slate-950 dark:ring-white/15">
+                  {" "}
+                  <img
+                    src={Definition}
+                    className=" min-h-[400px] min-w-[350px]"
+                  />
+                </div>
+              </div>
+            </>
+          ),
+        });
+        step.push({
+          title: "Organization",
+          content: (
+            <>
+              <div className="flex flex-col">
+                <ul className=" list-disc list-outside ">
+                  <li className="mt-2">
+                    <b>Compliance Framework:&nbsp;</b>The top-level entity that
+                    organizes all Control Groups and their Controls.
+                  </li>
+                  <li className="mt-2">
+                    <b>Control Group 1 and 2:&nbsp;</b> Logical groupings (like
+                    folders) under the Compliance Framework.
+                  </li>
+                  {/* <li className="mt-2">
+                     <b>Subgroup (Control Group 1.1): &nbsp;</b>Nested under
+                     Control Group 1 for more granular organization.
+                   </li> */}
+                  <li className="mt-2">
+                    <b>Controls: &nbsp;</b>Individual compliance checks or
+                    requirements within each group.
+                  </li>
+                </ul>
+                <div className="rounded-2xl w-full mt-2 bg-slate-50/40 p-2 ring-1 ring-inset ring-slate-200/50 dark:bg-gray-900/70 dark:ring-white/10">
+                  <div className="rounded-xl w-full  bg-white ring-1 ring-slate-900/5 dark:bg-slate-950 dark:ring-white/15">
+                    <img src={Organization} className="w-fit h-full" />
+                  </div>
+                </div>
+              </div>
+            </>
+          ),
+        });
+
+        break;
+
+      default:
+        break;
+    }
+
+    return step;
+  };
 
   return (
     <>
@@ -808,6 +902,7 @@ ORDER BY
                             className="w-full h-full cursor-pointer"
                             onClick={() => {
                               setOpen(true);
+                              setSelectedCard(card.label);
                             }}
                           >
                             <div className="flex flex-col p-4 rounded-xl justify-center items-center gap-3 bg-slate-300 hover:bg-slate-400 cursor-pointer dark:bg-slate-900 hover:dark:bg-slate-950 ">
@@ -835,11 +930,14 @@ ORDER BY
       </section>
 
       <Modal
+        size="medium"
         visible={open}
         onDismiss={() => {
           setOpen(false);
+          setActiveStepIndex(1)
         }}
-        header="Setup"
+        header={selectedCard}
+        className="p-2"
       >
         <Wizard
           i18nStrings={{
@@ -848,15 +946,19 @@ ORDER BY
               `Step ${stepNumber} of ${stepsCount}`,
             skipToButtonLabel: (step, stepNumber) => `Skip to ${step.title}`,
             navigationAriaLabel: "Steps",
-            cancelButton: "Cancel",
+            cancelButton: "",
             previousButton: "Previous",
             nextButton: "Next",
-            submitButton: "Launch instance",
+            submitButton: "Finish",
             optional: "optional",
           }}
-          onNavigate={({ detail }) =>
+          onNavigate={({ detail }) =>{
             setActiveStepIndex(detail.requestedStepIndex)
+          setActiveStepIndex(1)
           }
+
+          }
+          className="p-2"
           activeStepIndex={activeStepIndex}
           onCancel={() => {
             setOpen(false);
@@ -864,135 +966,7 @@ ORDER BY
           onSubmit={() => {
             setOpen(false);
           }}
-          steps={[
-            {
-              title: "Install",
-              description: "Deploy to Kubernetes in minutes.",
-              content: (
-                <div className="w-full">
-                  {/* code to copy */}
-                  <div className="flex flex-row gap-2 mt-2 w-full relative">
-                    <div className="p-5 border dark:border-white rounded-xl w-full">
-                      <code className=" text-[12px] text-black dark:text-white">
-                        <span className="text-[#8250df]">helm</span> repo add
-                        opencomply https://charts.opencomply.io
-                        <br />
-                        <span className="text-[#8250df]">helm</span> repo update
-                        <br />
-                        <span className="text-[#8250df]">helm</span> install -n
-                        opencomply opencomply opencomply/opencomply
-                        --create-namespace --timeout=10m
-                        <br />
-                        <span className="text-[#8250df]"> kubectl</span>{" "}
-                        port-forward -n opencomply svc/nginx-proxy 8080:80
-                      </code>
-                    </div>
-                    <div className=" absolute right-2 top-2  [grid-area:2/1] z-[2] justify-self-end backdrop-blur-md leading-none self-start  text-dark-tremor-brand-subtle  rounded-md    print:hidden">
-                      <CopyToClipboard
-                        code={`helm repo add opencomply https://charts.opencomply.io
-helm repo update 
-helm install -n opencomply opencomply
-opencomply/opencomply --create-namespace --timeout=10m
-kubectl port-forward -n opencomply svc/nginx-proxy 8080:80`}
-                      />{" "}
-                    </div>
-                  </div>
-                  <div className="flex text-sm flex-wrap flex-1 justify-start md:justify-center flex-row gap-2 mt-2 ">
-                    <Button
-                      ariaLabel="Report a bug (opens new tab)"
-                      href="https://example.com"
-                      iconAlign="right"
-                      iconName="external"
-                      target="_blank"
-                      variant="primary"
-                    >
-                      AWS
-                    </Button>
-                    <Button
-                      ariaLabel="Report a bug (opens new tab)"
-                      href="https://example.com"
-                      iconAlign="right"
-                      iconName="external"
-                      target="_blank"
-                      variant="primary"
-                    >
-                      Azure
-                    </Button>
-                    <Button
-                      ariaLabel="Report a bug (opens new tab)"
-                      href="https://example.com"
-                      iconAlign="right"
-                      iconName="external"
-                      target="_blank"
-                      variant="primary"
-                    >
-                      DigitalOcean
-                    </Button>
-                    <Button
-                      ariaLabel="Report a bug (opens new tab)"
-                      href="https://example.com"
-                      iconAlign="right"
-                      iconName="external"
-                      target="_blank"
-                      variant="primary"
-                    >
-                      GKE
-                    </Button>
-                    <Button
-                      ariaLabel="Report a bug (opens new tab)"
-                      href="https://example.com"
-                      iconAlign="right"
-                      iconName="external"
-                      target="_blank"
-                      variant="primary"
-                    >
-                      Linode
-                    </Button>
-                    {/* <Button
-                  ariaLabel="Report a bug (opens new tab)"
-                  href="https://example.com"
-                  iconAlign="right"
-                  iconName="external"
-                  target="_blank"
-                  variant="primary"
-                >
-                  Vultr
-                </Button> */}
-                  </div>
-                </div>
-              ),
-            },
-            {
-              title: "Connect Your Tools",
-              description:
-                "Connect your tool with a simple read-only read in Seconds, from Cloud Accounts to Code Repos",
-              content: (
-                <video
-                  className="rounded-xl w-full shadow-2xl dark:shadow-indigo-600/10"
-                  autoPlay
-                  loop
-                >
-                  <source src={video2} type="video/mp4" />
-                  Your browser does not support the video tag.
-                </video>
-              ),
-              isOptional: true,
-            },
-            {
-              title: "Discover",
-              content: (
-                <div className="rounded-xl h-full bg-white ring-1 ring-slate-900/5 dark:bg-slate-950 dark:ring-white/15">
-                  <iframe
-                    height={"400"}
-                    width={"100%"}
-                    className="rounded-xl  w-full shadow-2xl dark:shadow-indigo-600/10"
-                    src={"https://www.youtube.com/embed/ZK-rNEhJIDs"}
-                  ></iframe>
-                </div>
-              ),
-              isOptional: true,
-            },
-          ]}
+          steps={GetSteps()}
         />
       </Modal>
     </>

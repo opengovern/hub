@@ -90,3 +90,12 @@ main{
   flex-direction: column;
 
 }
+
+hr{
+  margin: auto!important;
+  margin-block-start:  0.5em!important;
+  margin-inline-start: auto!important;
+  margin-block-end: auto!important;
+
+
+}
