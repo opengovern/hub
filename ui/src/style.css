@@ -1168,10 +1168,6 @@ select {
   margin-left: 0.375rem;
 }
 
-.ml-12 {
-  margin-left: 3rem;
-}
-
 .ml-2 {
   margin-left: 0.5rem;
 }
@@ -1823,6 +1819,18 @@ select {
   max-width: 20rem;
 }
 
+.max-w-20 {
+  max-width: 5rem;
+}
+
+.max-w-80 {
+  max-width: 20rem;
+}
+
+.max-w-48 {
+  max-width: 12rem;
+}
+
 .flex-1 {
   flex: 1 1 0%;
 }
@@ -2030,16 +2038,8 @@ select {
   scroll-margin-top: 9rem;
 }
 
-.list-inside {
-  list-style-position: inside;
-}
-
 .list-\[\'\2013__\'\] {
   list-style-type: '–  ';
-}
-
-.list-disc {
-  list-style-type: disc;
 }
 
 .appearance-none {

@@ -123,13 +123,6 @@ export function Navigation() {
               {" "}
               <a
                 className="px-2 py-1 min-w-fit text-gray-900 dark:text-gray-50"
-                href={"https://docs.opencomply.io/"}
-                target="_blank"
-              >
-                Docs
-              </a>
-              <a
-                className="px-2 py-1 min-w-fit text-gray-900 dark:text-gray-50"
                 href={"/integrations"}
               >
                 {/* @ts-ignore */}
@@ -146,6 +139,13 @@ export function Navigation() {
                 href={"/pricing"}
               >
                 Pricing
+              </a>
+              <a
+                className="px-2 py-1 min-w-fit text-gray-900 dark:text-gray-50"
+                href={"https://docs.opencomply.io/"}
+                target="_blank"
+              >
+                Docs
               </a>
               <DropdownMenu>
                 <DropdownMenuTrigger asChild>
@@ -295,15 +295,6 @@ export function Navigation() {
         >
           <ul className="space-y-4 font-medium">
             <li onClick={() => setOpen(false)}>
-              <a
-                className="text-black dark:text-white"
-                href={"https://docs.opencomply.io/"}
-                target="_blank"
-              >
-                Docs
-              </a>
-            </li>{" "}
-            <li onClick={() => setOpen(false)}>
               <a className="text-black dark:text-white" href={"/integrations"}>
                 {/* @ts-ignore */}
                 Integrations {integrations && `(${integrations?.length})`}{" "}
@@ -318,13 +309,19 @@ export function Navigation() {
               </a>
             </li>
             <li onClick={() => setOpen(false)}>
-              <a
-                className="text-black dark:text-white"
-                href={"/pricing"}
-              >
-               Pricing
+              <a className="text-black dark:text-white" href={"/pricing"}>
+                Pricing
               </a>
             </li>
+            <li onClick={() => setOpen(false)}>
+              <a
+                className="text-black dark:text-white"
+                href={"https://docs.opencomply.io/"}
+                target="_blank"
+              >
+                Docs
+              </a>
+            </li>{" "}
             <li onClick={() => setOpen(false)}>
               <a
                 className="w-[20px] h-[20px] text-black dark:text-white flex flex-row gap-2 items-center"

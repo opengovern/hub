@@ -17,41 +17,41 @@ const URLS = {
 };
 
 export default function Hero() {
-  const [video, setVideo] = useState(0);
-  const [width, setWidth] = useState({
-    0: 0,
-    1: 0,
-    2: 0,
-  });
-  const [time, setTime] = useState(0);
+  // const [video, setVideo] = useState(0);
+  // const [width, setWidth] = useState({
+  //   0: 0,
+  //   1: 0,
+  //   2: 0,
+  // });
+  // const [time, setTime] = useState(0);
   const [open,setOpen] = useState(false)
 
-  useEffect(() => {
-    const countdownInterval = setInterval(() => {
-      // @ts-ignore
-      const video_dur = document.getElementById("hero-video")?.duration;
-      if (time >= video_dur) {
-        setVideo((video + 1) % 3);
-        clearInterval(countdownInterval);
-        setWidth({
-          0: 0,
-          1: 0,
-          2: 0,
-        });
-        setTime(0);
-      } else {
-        setTime(time + 0.5);
-        // @ts-ignore
-        const old = width;
-        // @ts-ignore
+  // useEffect(() => {
+  //   const countdownInterval = setInterval(() => {
+  //     // @ts-ignore
+  //     const video_dur = document.getElementById("hero-video")?.duration;
+  //     if (time >= video_dur) {
+  //       setVideo((video + 1) % 3);
+  //       clearInterval(countdownInterval);
+  //       setWidth({
+  //         0: 0,
+  //         1: 0,
+  //         2: 0,
+  //       });
+  //       setTime(0);
+  //     } else {
+  //       setTime(time + 0.5);
+  //       // @ts-ignore
+  //       const old = width;
+  //       // @ts-ignore
 
-        old[video] = (time / video_dur) * 100;
-        setWidth(old);
-      }
-    }, 500);
+  //       old[video] = (time / video_dur) * 100;
+  //       setWidth(old);
+  //     }
+  //   }, 500);
 
-    return () => clearInterval(countdownInterval);
-  }, [time, video]);
+  //   return () => clearInterval(countdownInterval);
+  // }, [time, video]);
 
   return (
     <section
@@ -77,21 +77,22 @@ export default function Hero() {
         className="mt-8 flex w-full animate-slide-up-fade flex-col justify-center items-center gap-3 px-3 sm:flex-row"
         style={{ animationDuration: "1100ms" }}
       >
-        <Button
-          onClick={() => {
-            setOpen(true);
-          }}
-          className=" font-semibold rounded-sm "
-        >
-          Try cloud for free
-        </Button>
         <a
           href="https://docs.opencomply.io/oss"
-          className=" border rounded-s border-indigo-600 dark:border-indigo-500 p-2 text-black dark:text-white elative inline-flex items-center justify-center whitespace-nowrap   px-3 py-2 text-center text-sm font-medium shadow-sm transition-all duration-100 ease-in-out"
+          className=" border rounded-sm w-full max-w-48 border-indigo-600 dark:border-indigo-500 p-2 text-black dark:text-white elative inline-flex items-center justify-center whitespace-nowrap   px-3 py-2 text-center text-sm font-medium shadow-sm transition-all duration-100 ease-in-out"
           target="__blank"
         >
           Download open-source
         </a>
+        <Button
+          onClick={() => {
+            setOpen(true);
+          }}
+          className=" font-semibold rounded-sm w-full max-w-48 "
+        >
+          Try cloud for free
+        </Button>
+
         {/* <Button
           asChild
           variant="light"
