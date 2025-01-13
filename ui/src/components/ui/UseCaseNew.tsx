@@ -40,7 +40,7 @@ import {
   RiKeyLine,
   RiServerLine,
 } from "@remixicon/react";
-import { RenderObject } from "../Editor";
+import { Viewer } from "../Viewer";
 import { Col, Grid } from "@tremor/react";
 import { useNavigate } from "react-router-dom";
 import { ArrowAnimated } from "./ArrowAnimated";
@@ -263,7 +263,7 @@ export default function UseCaseNew() {
                   id: "0",
                   content: (
                     <div className="w-full">
-                      <RenderObject
+                      <Viewer
                         height="350px"
                         obj={`/* This query gives count of all AWS Instances */
 
@@ -293,7 +293,7 @@ FROM aws_ec2_instance;
                   id: "1",
                   content: (
                     <div className="w-full">
-                      <RenderObject
+                      <Viewer
                         height="350px"
                         obj={`
 -- This query retrieves each unique model and counts how many assistants are using each model.
@@ -314,7 +314,7 @@ GROUP BY model;
                   id: "2",
                   content: (
                     <div className="w-full">
-                      <RenderObject
+                      <Viewer
                         height="350px"
                         obj={`-- This query returns all unique base images from the Dockerfiles across
 -- all repositories
@@ -338,7 +338,7 @@ WHERE img->>'base_image' IS NOT NULL;
                   id: "3",
                   content: (
                     <div className="w-full">
-                      <RenderObject
+                      <Viewer
                         height="350px"
                         obj={`/* Below is returns all pull requests that were merged into the main branch in the last 48 hours.
  */
@@ -364,7 +364,7 @@ ORDER BY merged_at DESC;
                   id: "4",
                   content: (
                     <div className="w-full">
-                      <RenderObject
+                      <Viewer
                         height="350px"
                         obj={`WITH 
 -- ================================
@@ -498,7 +498,7 @@ ORDER BY t.tech;
                   id: "5",
                   content: (
                     <div className="w-full">
-                      <RenderObject
+                      <Viewer
                         height="350px"
                         obj={`/* This query gives all Kubernetes Clusters deployed in DigitalOcean */
 SELECT * FROM digitalocean_kubernetes_cluster;
@@ -512,7 +512,7 @@ SELECT * FROM digitalocean_kubernetes_cluster;
                   id: "6",
                   content: (
                     <div className="w-full">
-                      <RenderObject
+                      <Viewer
                         height="350px"
                         obj={`/* This query gives all Services deployed in Render */
 SELECT * FROM render_service;

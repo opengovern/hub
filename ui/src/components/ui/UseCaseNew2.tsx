@@ -57,7 +57,7 @@ import {
   RiShieldUserLine,
   RiStickyNoteLine,
 } from "@remixicon/react";
-import { RenderObject } from "../Editor";
+import { Viewer } from "../Viewer";
 import { Col, Grid } from "@tremor/react";
 import { useNavigate } from "react-router-dom";
 import { ArrowAnimated } from "./ArrowAnimated";
@@ -66,6 +66,7 @@ import CustomPagination from "../Pagination";
 import { Results } from "../../pages/landing/query_result";
 import { title } from "process";
 import axios from "axios";
+import { Editor } from "../Editor";
 
 const cards = [
   {
@@ -130,7 +131,7 @@ const URLS = [
 export default function UseCaseNew2() {
   const [discoverOption, setDiscoverOption] = useState(-1);
   const [open, setOpen] = useState(false);
-  const [activeStepIndex, setActiveStepIndex] = useState(1);
+  const [activeStepIndex, setActiveStepIndex] = useState(0);
   const [page, setPage] = useState(0);
   const [yaml, setYaml] = useState("");
   const [video, setVideo] = useState(0);
@@ -198,8 +199,11 @@ export default function UseCaseNew2() {
           content: (
             <>
               <div className="flex flex-col gap-3">
-                <span></span>
-                <RenderObject height="400px" obj={yaml} />
+                <span className="text-lg font-semibold">
+                  opencomply lets you specify Compliance Framework in YAML.
+                </span>
+                <span className="text-base ">Here's an example:</span>
+                <Editor height={400} obj={yaml} />
               </div>
             </>
           ),
@@ -208,13 +212,18 @@ export default function UseCaseNew2() {
           title: "Definition",
           content: (
             <>
-              <div className="rounded-2xl w-full mt-2 bg-slate-50/40 p-2 ring-1 ring-inset ring-slate-200/50 dark:bg-gray-900/70 dark:ring-white/10">
-                <div className="rounded-xl w-full  bg-white ring-1 ring-slate-900/5 dark:bg-slate-950 dark:ring-white/15">
-                  {" "}
-                  <img
-                    src={Definition}
-                    className=" min-h-[400px] min-w-[350px]"
-                  />
+              <div className="flex flex-col gap-3">
+                <span className="text-base ">
+                  Here's how you Frameworks are defined:
+                </span>
+                <div className="rounded-2xl w-full mt-2 bg-slate-50/40 p-2 ring-1 ring-inset ring-slate-200/50 dark:bg-gray-900/70 dark:ring-white/10">
+                  <div className="rounded-xl w-full  bg-white ring-1 ring-slate-900/5 dark:bg-slate-950 dark:ring-white/15">
+                    {" "}
+                    <img
+                      src={Definition}
+                      className=" min-h-[400px] min-w-[350px]"
+                    />
+                  </div>
                 </div>
               </div>
             </>
@@ -224,8 +233,11 @@ export default function UseCaseNew2() {
           title: "Organization",
           content: (
             <>
-              <div className="flex flex-col">
-                <ul className=" list-disc list-outside ">
+              <div className="flex flex-col gap-3">
+                <span className="text-base">
+                  Here's how Frameworks are organized:
+                </span>
+                <ul className=" list-disc list-inside ">
                   <li className="mt-2">
                     <b>Compliance Framework:&nbsp;</b>The top-level entity that
                     organizes all Control Groups and their Controls.
@@ -351,7 +363,7 @@ export default function UseCaseNew2() {
               Discover anything, Instantly. SQL for Your Entire Tech Stack.
             </div> */}
             <div className="w-full flex flex-col gap-6 rounded-xl ">
-              <RenderObject
+              <Viewer
                 height="450px"
                 obj={`-- Find all unique Docker base images and counts across all repositories.
 SELECT
@@ -934,7 +946,7 @@ ORDER BY
         visible={open}
         onDismiss={() => {
           setOpen(false);
-          setActiveStepIndex(1)
+          setActiveStepIndex(0)
         }}
         header={selectedCard}
         className="p-2"
@@ -954,17 +966,20 @@ ORDER BY
           }}
           onNavigate={({ detail }) =>{
             setActiveStepIndex(detail.requestedStepIndex)
-          setActiveStepIndex(1)
           }
 
           }
-          className="p-2"
+          className=""
           activeStepIndex={activeStepIndex}
           onCancel={() => {
             setOpen(false);
+          setActiveStepIndex(0);
+
           }}
           onSubmit={() => {
             setOpen(false);
+          setActiveStepIndex(0);
+
           }}
           steps={GetSteps()}
         />

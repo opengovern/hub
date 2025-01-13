@@ -1551,6 +1551,10 @@ select {
   min-height: 20rem;
 }
 
+.min-h-\[400px\] {
+  min-height: 400px;
+}
+
 .min-h-\[550px\] {
   min-height: 550px;
 }
@@ -1561,10 +1565,6 @@ select {
 
 .min-h-screen {
   min-height: 100vh;
-}
-
-.min-h-\[400px\] {
-  min-height: 400px;
 }
 
 .w-0 {
@@ -1747,6 +1747,10 @@ select {
   min-width: 10rem;
 }
 
+.min-w-\[350px\] {
+  min-width: 350px;
+}
+
 .min-w-\[36px\] {
   min-width: 36px;
 }
@@ -1765,10 +1769,6 @@ select {
 
 .min-w-min {
   min-width: min-content;
-}
-
-.min-w-\[350px\] {
-  min-width: 350px;
 }
 
 .max-w-2xl {
@@ -2038,8 +2038,8 @@ select {
   scroll-margin-top: 9rem;
 }
 
-.list-outside {
-  list-style-position: outside;
+.list-inside {
+  list-style-position: inside;
 }
 
 .list-\[\'\2013__\'\] {

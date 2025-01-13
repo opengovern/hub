@@ -41,7 +41,7 @@ import dayjs, { Dayjs } from "dayjs";
 import LocalizedFormat from "dayjs/plugin/localizedFormat";
 import timezone from "dayjs/plugin/timezone";
 import advancedFormat from "dayjs/plugin/advancedFormat";
-import { RenderObject } from "../../../../../components/Editor";
+import { Viewer } from "../../../../../components/Viewer";
 
  const severityBadge = (severity: any) => {
   const style = {
@@ -233,8 +233,8 @@ export default function ControlDetail() {
                     }}
                     className=" cursor-pointer  h-full "
                   >
-                    <RenderObject
-                    height="350px"
+                    <Viewer
+                      height="350px"
                       obj={
                         control?.query.replace(
                           "$IS_ALL_CONNECTIONS_QUERY",
@@ -243,7 +243,6 @@ export default function ControlDetail() {
                       }
                     />
                   </div>
-                 
                 </Grid>
               </div>
             </>
