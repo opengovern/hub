@@ -1,6 +1,7 @@
-import React from "react"
+import React, { useState } from "react"
 import { Badge } from "../Badge"
 import { Button } from "../Button";
+import { Modal } from "@cloudscape-design/components";
 
 const stats = [
   {
@@ -18,6 +19,8 @@ const stats = [
 ]
 
 export default function Features2() {
+  const [open,setOpen] = useState(false);
+
   return (
     <section
       aria-labelledby="features-title"
@@ -47,27 +50,26 @@ export default function Features2() {
           OpenComply makes security and compliance
           <span className=" cursor-pointer ">
             <b>
-              <mark className="bg-gradient-to-br from-indigo-900 to-indigo-600 text-white p-2  mx-1 text-center rounded-xl">
+              <mark className="bg-gradient-to-br from-indigo-900 to-indigo-600 text-white p-1 py-2  mx-1 text-center rounded-md">
                 {" "}
-                accessible,
+                accessible
               </mark>
             </b>
           </span>
           <span className=" cursor-pointer ">
             <b>
-              <mark className="btn-grad1 p-2  mx-1 text-center rounded-xl">
+              <mark className="btn-grad1 p-1 py-2  mx-1 text-center rounded-md">
                 {" "}
-                agile,
+                agile
               </mark>
-              
             </b>
           </span>{" "}
           <span className=" cursor-pointer ">
+            and
             <b>
-              <mark className="btn-grad2 p-2  mx-1 text-center rounded-xl">
-               and  inclusive.
+              <mark className="btn-grad2 p-1  py-2  mx-1 text-center rounded-md">
+                inclusive
               </mark>
-              
             </b>
           </span>
           <br />
@@ -100,6 +102,7 @@ export default function Features2() {
           </React.Fragment>
         ))} */}
       {/* </dl> */}
+      <Modal visible={open} onDismiss={() => setOpen(false)}></Modal>
     </section>
   );
 }
