@@ -1,5 +1,5 @@
-import React, { useState } from "react"
-import { Badge } from "../Badge"
+import React, { useState } from "react";
+import { Badge } from "../Badge";
 import { Button } from "../Button";
 import { Modal } from "@cloudscape-design/components";
 
@@ -16,10 +16,11 @@ const stats = [
     name: "Rows ingested / second",
     value: "Up to 9M",
   },
-]
+];
 
 export default function Features2() {
-  const [open,setOpen] = useState(false);
+  const [open, setOpen] = useState(false);
+  const [selected, setSelected] = useState("");
 
   return (
     <section
@@ -37,18 +38,24 @@ export default function Features2() {
         <p className="mt-6   text-lg max-w-3xl  text-left leading-7 text-slate-950 dark:text-slate-50">
           {/* <b>Compliance is painful.</b> <br />
         <br /> */}
-          <b>Let's be honest. </b>Security and compliance tools often get in the
-          way of progress. They are proprietary, expensive, rigid, and often
-          ill-equipped to handle modern tech stacks.
+          <b>Let's be honest. </b>Security and compliance tools are often a
+          barrier to progress. They are proprietary, expensive, rigid, and often
+          struggle to handle modern tech stacks.
           <br />
           <br />
           We believe security and compliance should&nbsp;
-          <b>empower</b> your team, not hold them back. That's why we created
-          OpenComply—a platform built by doers, for doers.
+          <b>empower</b>,not hinder, progress. That's why we created OpenComply,
+          a platform designed by practitioners for practitioners.
           <br />
           <br />
           OpenComply makes security and compliance
-          <span className=" cursor-pointer ">
+          <span
+            className=" cursor-pointer "
+            onClick={() => {
+              setOpen(true);
+              setSelected("accessible");
+            }}
+          >
             <b>
               <mark className="bg-gradient-to-br from-indigo-900 to-indigo-600 text-white p-1 py-2  mx-1 text-center rounded-md">
                 {" "}
@@ -56,7 +63,13 @@ export default function Features2() {
               </mark>
             </b>
           </span>
-          <span className=" cursor-pointer ">
+          <span
+            className=" cursor-pointer "
+            onClick={() => {
+              setOpen(true);
+              setSelected("agile");
+            }}
+          >
             <b>
               <mark className="btn-grad1 p-1 py-2  mx-1 text-center rounded-md">
                 {" "}
@@ -64,7 +77,13 @@ export default function Features2() {
               </mark>
             </b>
           </span>{" "}
-          <span className=" cursor-pointer ">
+          <span
+            className=" cursor-pointer "
+            onClick={() => {
+              setOpen(true);
+              setSelected("inclusive");
+            }}
+          >
             and
             <b>
               <mark className="btn-grad2 p-1  py-2  mx-1 text-center rounded-md">
@@ -74,11 +93,12 @@ export default function Features2() {
           </span>
           <br />
           <br />
-          Break down security and compliance barriers. Focus on building
-          exceptional products.
+          Simplify security and compliance. Focus on building exceptional
+          products.
           <br />
           <br />
-          <b> Welcome to opencomply.</b>
+          Welcome to
+          <b> opencomply.</b>
         </p>
       </div>
       {/* <div className="mt-4 w-full text-center">
@@ -102,7 +122,11 @@ export default function Features2() {
           </React.Fragment>
         ))} */}
       {/* </dl> */}
-      <Modal visible={open} onDismiss={() => setOpen(false)}></Modal>
+      <Modal
+        header={selected.slice(0, 1).toUpperCase() + selected.slice(1)}
+        visible={open}
+        onDismiss={() => setOpen(false)}
+      ></Modal>
     </section>
   );
 }
