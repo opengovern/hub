@@ -45,14 +45,30 @@ export default function Features2() {
           <br />
           <br />
           OpenComply makes security and compliance
-          <span className=" cursor-pointer underline ">
-            <b> accessible,</b>
+          <span className=" cursor-pointer ">
+            <b>
+              <mark className="bg-gradient-to-br from-indigo-900 to-indigo-600 text-white p-2  mx-1 text-center rounded-xl">
+                {" "}
+                accessible,
+              </mark>
+            </b>
           </span>
-          <span className=" cursor-pointer underline">
-            <b> agile,</b>
+          <span className=" cursor-pointer ">
+            <b>
+              <mark className="btn-grad1 p-2  mx-1 text-center rounded-xl">
+                {" "}
+                agile,
+              </mark>
+              
+            </b>
           </span>{" "}
-          <span className=" cursor-pointer underline">
-            <b> and inclusive. </b>
+          <span className=" cursor-pointer ">
+            <b>
+              <mark className="btn-grad2 p-2  mx-1 text-center rounded-xl">
+               and  inclusive.
+              </mark>
+              
+            </b>
           </span>
           <br />
           <br />
