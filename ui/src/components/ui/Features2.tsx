@@ -39,19 +39,19 @@ export default function Features2() {
           ill-equipped to handle modern tech stacks.
           <br />
           <br />
-          We believe security and compliance should
+          We believe security and compliance should&nbsp;
           <b>empower</b> your team, not hold them back. That's why we created
           OpenComply—a platform built by doers, for doers.
           <br />
           <br />
           OpenComply makes security and compliance
-          <span className=" cursor-pointer">
+          <span className=" cursor-pointer underline ">
             <b> accessible,</b>
           </span>
-          <span className=" cursor-pointer">
+          <span className=" cursor-pointer underline">
             <b> agile,</b>
           </span>{" "}
-          <span className=" cursor-pointer">
+          <span className=" cursor-pointer underline">
             <b> and inclusive. </b>
           </span>
           <br />
