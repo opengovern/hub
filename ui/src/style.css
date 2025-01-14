@@ -993,6 +993,10 @@ select {
   margin: auto;
 }
 
+.m-0\.5 {
+  margin: 0.125rem;
+}
+
 .-mx-1 {
   margin-left: -0.25rem;
   margin-right: -0.25rem;
@@ -1351,6 +1355,10 @@ select {
 
 .inline-grid {
   display: inline-grid;
+}
+
+.contents {
+  display: contents;
 }
 
 .hidden {
@@ -2446,6 +2454,10 @@ select {
 
 .text-nowrap {
   text-wrap: nowrap;
+}
+
+.text-balance {
+  text-wrap: balance;
 }
 
 .\!rounded-none {

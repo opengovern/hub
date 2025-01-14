@@ -91,19 +91,19 @@ export default function Features2() {
             title: "Support Multiple Functions",
             description:
               "Streamline DevOps, SecOps, & MLOps with integrated compliance checks throughout the entire application lifecycle.",
-            link: "text",
+            link: "https://tour.opencomply.io/embed/cm5wzivwn01li1d0h8a2tnz4l?embed_v=2",
           },
           {
             title: "Versatile",
             description:
               "Address diverse compliance requirements through a single, flexible platform that adapts to your evolving needs.",
-            link: "text",
+            link: "https://tour.opencomply.io/embed/cm5wznzoa01s01d0hddkmyx3g?embed_v=2",
           },
           {
             title: "Integrates with Existing Tools",
             description:
               "Seamlessly integrates with your existing tools and stacks, improving efficiency and collaboration across teams.",
-            link: "text",
+            link: "https://tour.opencomply.io/embed/cm5wzrbb701sw1d0h60jvpiop?embed_v=2",
           }
         );
         content = {
@@ -146,7 +146,7 @@ export default function Features2() {
           <br />
           OpenComply makes security and compliance
           <span
-            className=" cursor-pointer rounded-md  "
+            className=" cursor-pointer rounded-md inline-block w-fit  "
             onClick={() => {
               setOpen(true);
               setSelected("accessible");
@@ -160,7 +160,7 @@ export default function Features2() {
             </b>
           </span>
           <span
-            className=" cursor-pointer rounded-md "
+            className=" cursor-pointer rounded-md  inline-block w-fit"
             onClick={() => {
               setOpen(true);
               setSelected("agile");
@@ -174,7 +174,7 @@ export default function Features2() {
             </b>
           </span>{" "}
           <span
-            className=" cursor-pointer sm:mt-0 rounded-md "
+            className=" cursor-pointer sm:mt-0 rounded-md inline-block w-fit "
             onClick={() => {
               setOpen(true);
               setSelected("inclusive");
@@ -182,7 +182,7 @@ export default function Features2() {
           >
             and
             <b>
-              <mark className="btn-grad2  p-0.5  sm:py-2  mx-1 text-center rounded-md">
+              <mark className="btn-grad2  p-0.5  sm:py-2  mx-1 text-center rounded-md ">
                 inclusive
               </mark>
             </b>
@@ -240,12 +240,14 @@ export default function Features2() {
                     <>
                       <div
                         onClick={() => setSelectedIndex(index)}
-                        className={`rounded-xl w-full cursor-pointer  hover:border-slate-500 border border-transparent      bg-slate-300 sm:p-4 p-2 flex flex-col gap-2 ${selectedIndex == index && 'bg-slate-500'}`}
+                        className={`rounded-xl w-full cursor-pointer  hover:border-slate-500 border border-transparent      bg-slate-300 sm:p-4 p-2 flex flex-col gap-2 ${selectedIndex == index && "bg-slate-500"}`}
                       >
                         <span className="sm:text-lg text-base font-bold">
                           {content.title}
                         </span>
-                        <span className="sm:text-base text-sm">{content.description}</span>
+                        <span className="sm:text-base text-sm">
+                          {content.description}
+                        </span>
 
                         {/* {index == selectedIndex && (
                         )} */}

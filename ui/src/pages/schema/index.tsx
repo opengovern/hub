@@ -304,7 +304,7 @@ export default function Schema() {
                       <>
                         <div className="flex justify-between">
                           <span>{"Description"}</span>
-                          <span>{"Table"}</span>
+                          <span>{"Tables"}</span>
                         </div>
                       </>
                     ),
