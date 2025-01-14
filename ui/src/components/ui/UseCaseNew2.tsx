@@ -75,6 +75,14 @@ const cards = [
     icon: RiBook3Line,
   },
   {
+    label: "Controls",
+    icon: RiStickyNoteLine,
+  },
+  {
+    label: "Integrations",
+    icon: RiPuzzleLine,
+  },
+  {
     label: "Queries",
     icon: RiSearchLine,
   },
@@ -92,15 +100,6 @@ const cards = [
     icon: RiServerLine,
   },
 
-  {
-    label: "Controls",
-    icon: RiStickyNoteLine,
-  },
-
-  {
-    label: "Integrations",
-    icon: RiPuzzleLine,
-  },
   {
     label: "Tasks",
     icon: RiAppsLine,
@@ -134,7 +133,9 @@ export default function UseCaseNew2() {
   const [open, setOpen] = useState(false);
   const [activeStepIndex, setActiveStepIndex] = useState(0);
   const [page, setPage] = useState(0);
-  const [yaml, setYaml] = useState("");
+  const [yaml, setYaml] = useState({});
+  const [yaml1, setYaml1] = useState({});
+
   const [video, setVideo] = useState(0);
   const [width, setWidth] = useState({
     0: 0,
@@ -178,13 +179,20 @@ export default function UseCaseNew2() {
   }, [discoverOption]);
   const navigate = useNavigate();
 
-  const GetYaml = () => {
+  const GetYaml = (url : string,flag: boolean,card : string) => {
+   
     axios
       .get(
-        "https://raw.githubusercontent.com/opengovern/platform-configuration/refs/heads/main/compliance/frameworks/baseline/efficiency.yaml"
+        url
       )
       .then((resp) => {
-        setYaml(resp.data);
+        if(flag){
+        setYaml({...yaml,[card] : resp.data});
+
+        }
+        else{
+          setYaml1({ ...yaml1, [card]: resp.data });
+        }
       })
       .catch((e) => {
         console.log(e);
@@ -192,9 +200,13 @@ export default function UseCaseNew2() {
   };
   const GetSteps = (card: string) => {
     const step: any = [];
+    
+
     switch (card) {
       case "Frameworks":
-        GetYaml();
+        GetYaml(
+          "https://raw.githubusercontent.com/opengovern/platform-configuration/refs/heads/main/compliance/frameworks/baseline/efficiency.yaml"
+        ,true,card);
         step.push({
           title: "Introduction",
           content: (
@@ -206,7 +218,8 @@ export default function UseCaseNew2() {
                 <span className="text-base ">Here's an example:</span>
                 <Editor
                   height={window.innerWidth > 750 ? 400 : 150}
-                  obj={yaml}
+                  // @ts-ignore
+                  obj={yaml[card]}
                 />
               </div>
             </>
@@ -270,10 +283,126 @@ export default function UseCaseNew2() {
         });
         break;
 
+      case "Controls":
+        GetYaml(
+          "https://raw.githubusercontent.com/opengovern/platform-configuration/refs/heads/main/compliance/controls/aws/aws_acm_certificate_not_expired.yaml",
+          true,card
+        );
+        GetYaml(
+          "https://raw.githubusercontent.com/opengovern/platform-configuration/refs/heads/main/compliance/controls/baseline/aws/IAM/aws_access_keys_rotated_x_days.yaml",
+          false,card
+        );
+         step.push({
+           title: "Controls",
+           content: (
+             <>
+               <div className="flex flex-col gap-3">
+                 <span className="text-base">
+                   Controls represent specific compliance requirements or best
+                   practices to assess. Controls are defined in YAML.
+                 </span>
+                 <span className="text-base">
+                   A compliance rule has two parts:
+                 </span>
+                 <ol className=" list-decimal list-inside  ">
+                   <li className="mt-2">
+                     <b>Metadata:&nbsp;</b>ID, Title, Description (Optional),
+                     Severity
+                   </li>
+                   <li className="mt-2">
+                     <b>Technical Logic: &nbsp;</b> Instructions on how to
+                     verify that the control is met
+                   </li>
+                 </ol>
+                 {/* <div className="rounded-2xl w-full mt-2 bg-slate-50/40 p-2 ring-1 ring-inset ring-slate-200/50 dark:bg-gray-900/70 dark:ring-white/10">
+                   <div className="rounded-xl w-full  bg-white ring-1 ring-slate-900/5 dark:bg-slate-950 dark:ring-white/15">
+                     <img src={Organization} className="w-fit h-full" />
+                   </div>
+                 </div> */}
+               </div>
+             </>
+           ),
+         });
+        step.push({
+          title: "Inline Policies",
+          content: (
+            <>
+              <div className="flex flex-col gap-3">
+                <span className="text-base ">
+                  Controls with inline policies contain both the compliance
+                  requirement (what must be done) and the technical logic (how
+                  to check it) in a single YAML file.
+                </span>
+                <Editor
+                  height={window.innerWidth > 750 ? 400 : 150}
+                  // @ts-ignore
+                  obj={yaml[card]}
+                />
+              </div>
+            </>
+          ),
+        });
+        step.push({
+          title: "Reference Policies",
+          content: (
+            <>
+              <div className="flex flex-col gap-3">
+                <span className="text-base">
+                  To improve reusability, controls can reference other policies.
+                  These are called "Controls with Referenced Policies." This
+                  allows for reusability, enables customization, and ensures
+                  consistency.
+                </span>
+                <span className="text-base ">
+                  Here's a Control reusing a policy.
+                </span>
+                <Editor
+                  height={window.innerWidth > 750 ? 400 : 150}
+                  // @ts-ignore
+                  obj={yaml1[card]}
+                />
+              </div>
+            </>
+          ),
+        });
+        break;
+      
+
+      case "Integrations":
+        step.push({
+          title: "Plugins",
+          content: (
+            <>
+              <div className="flex flex-col gap-3 w-full">
+                <span className="text-bold text-lg ">
+                  OpenComply leverages a modular integration mechanism through
+                  Plugins.
+                </span>
+                <span className="text-base ">
+                  Plugins extend OpenComply's capabilities by providing
+                  visibility into various workloads, including infrastructure,
+                  data stores, configurations, and<b> any technical item</b>{" "}
+                  accessible via APIs.
+                </span>
+                <div className="rounded-2xl w-full mt-2 bg-slate-50/40 p-2 ring-1 ring-inset ring-slate-200/50 dark:bg-gray-900/70 dark:ring-white/10">
+                  <div className="rounded-xl w-full  bg-white ring-1 ring-slate-900/5 dark:bg-slate-950 dark:ring-white/15">
+                    {" "}
+                    <img
+                      src={
+                        "https://content.opencomply.io/website/architecture/plugins-and-integration.png"
+                      }
+                      className=" sm:min-h-[400px] sm:min-w-[350px]"
+                    />
+                  </div>
+                </div>
+              </div>
+            </>
+          ),
+        });
+        break;
+        
       default:
-        // step.push({
-        //   title: "Coming Soon ..",
-        // });
+      
         break;
     }
 
@@ -960,7 +1089,7 @@ ORDER BY
                                   position="top"
                                   size="small"
                                   triggerType="custom"
-                                  content="Coming Soon"
+                                  content="Content Coming Soon ..."
                                 >
                                   <div className="flex w-full flex-col p-4 rounded-xl justify-center items-center gap-3 bg-slate-300 hover:bg-slate-400 cursor-pointer dark:bg-slate-900 hover:dark:bg-slate-950 ">
                                     {
