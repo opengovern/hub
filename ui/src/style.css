@@ -1551,10 +1551,6 @@ select {
   min-height: 20rem;
 }
 
-.min-h-\[400px\] {
-  min-height: 400px;
-}
-
 .min-h-\[550px\] {
   min-height: 550px;
 }
@@ -1745,10 +1741,6 @@ select {
 
 .min-w-\[10rem\] {
   min-width: 10rem;
-}
-
-.min-w-\[350px\] {
-  min-width: 350px;
 }
 
 .min-w-\[36px\] {

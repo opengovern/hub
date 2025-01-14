@@ -9,6 +9,7 @@ import {
   Link,
   Modal,
   Pagination,
+  Popover,
   SpaceBetween,
   Tabs,
   Wizard,
@@ -189,9 +190,9 @@ export default function UseCaseNew2() {
         console.log(e);
       });
   };
-  const GetSteps = () => {
+  const GetSteps = (card: string) => {
     const step: any = [];
-    switch (selectedCard) {
+    switch (card) {
       case "Frameworks":
         GetYaml();
         step.push({
@@ -203,7 +204,10 @@ export default function UseCaseNew2() {
                   opencomply lets you specify Compliance Framework in YAML.
                 </span>
                 <span className="text-base ">Here's an example:</span>
-                <Editor height={window.innerWidth>750 ? 400 : 150} obj={yaml} />
+                <Editor
+                  height={window.innerWidth > 750 ? 400 : 150}
+                  obj={yaml}
+                />
               </div>
             </>
           ),
@@ -264,10 +268,12 @@ export default function UseCaseNew2() {
             </>
           ),
         });
-
         break;
 
       default:
+        // step.push({
+        //   title: "Coming Soon ..",
+        // });
         break;
     }
 
@@ -910,27 +916,69 @@ ORDER BY
                     ?.map((card, index) => {
                       return (
                         <>
-                          <Col
-                            className="w-full h-full cursor-pointer"
-                            onClick={() => {
-                              setOpen(true);
-                              setSelectedCard(card.label);
-                            }}
-                          >
-                            <div className="flex flex-col p-4 rounded-xl justify-center items-center gap-3 bg-slate-300 hover:bg-slate-400 cursor-pointer dark:bg-slate-900 hover:dark:bg-slate-950 ">
-                              {
-                                <card.icon
-                                  color=""
-                                  className="card-icons"
-                                  size={35}
-                                />
-                              }
+                          {GetSteps(card.label).length > 0 ? (
+                            <>
+                              {" "}
+                              <Col
+                                className="w-full h-full cursor-pointer"
+                                onClick={() => {
+                                  if (GetSteps(card.label).length > 0) {
+                                    setOpen(true);
+                                    setSelectedCard(card.label);
+                                  }
+                                }}
+                              >
+                                <div className="flex flex-col p-4 rounded-xl justify-center items-center gap-3 bg-slate-300 hover:bg-slate-400 cursor-pointer dark:bg-slate-900 hover:dark:bg-slate-950 ">
+                                  {
+                                    <card.icon
+                                      color=""
+                                      className="card-icons"
+                                      size={35}
+                                    />
+                                  }
 
-                              <span className="text-black dark:text-white text-base">
-                                {card.label}
-                              </span>
-                            </div>
-                          </Col>
+                                  <span className="text-black dark:text-white text-base">
+                                    {card.label}
+                                  </span>
+                                </div>
+                              </Col>
+                            </>
+                          ) : (
+                            <>
+                              <Col
+                                className="w-full h-full cursor-pointer"
+                                onClick={() => {
+                                  if (GetSteps(card.label).length > 0) {
+                                    setOpen(true);
+                                    setSelectedCard(card.label);
+                                  }
+                                }}
+                              >
+                                <Popover
+                                  dismissButton={false}
+                                   className="w-full h-full cursor-pointer grid "
+                                  position="top"
+                                  size="small"
+                                  triggerType="custom"
+                                  content="Coming Soon"
+                                >
+                                  <div className="flex w-full flex-col p-4 rounded-xl justify-center items-center gap-3 bg-slate-300 hover:bg-slate-400 cursor-pointer dark:bg-slate-900 hover:dark:bg-slate-950 ">
+                                    {
+                                      <card.icon
+                                        color=""
+                                        className="card-icons"
+                                        size={35}
+                                      />
+                                    }
+
+                                    <span className="text-black dark:text-white text-base">
+                                      {card.label}
+                                    </span>
+                                  </div>
+                                </Popover>
+                              </Col>
+                            </>
+                          )}
                         </>
                       );
                     })}
@@ -942,11 +990,11 @@ ORDER BY
       </section>
 
       <Modal
-        size="medium"
+        size="max"
         visible={open}
         onDismiss={() => {
           setOpen(false);
-          setActiveStepIndex(0)
+          setActiveStepIndex(0);
         }}
         header={selectedCard}
         className="p-2"
@@ -964,24 +1012,20 @@ ORDER BY
             submitButton: "Finish",
             optional: "optional",
           }}
-          onNavigate={({ detail }) =>{
-            setActiveStepIndex(detail.requestedStepIndex)
-          }
-
-          }
+          onNavigate={({ detail }) => {
+            setActiveStepIndex(detail.requestedStepIndex);
+          }}
           className=""
           activeStepIndex={activeStepIndex}
           onCancel={() => {
             setOpen(false);
-          setActiveStepIndex(0);
-
+            setActiveStepIndex(0);
           }}
           onSubmit={() => {
             setOpen(false);
-          setActiveStepIndex(0);
-
+            setActiveStepIndex(0);
           }}
-          steps={GetSteps()}
+          steps={GetSteps(selectedCard)}
         />
       </Modal>
     </>
