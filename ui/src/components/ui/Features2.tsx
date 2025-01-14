@@ -231,8 +231,8 @@ export default function Features2() {
               {/* {getContent(selected)?.title} */}
             </span>
           </div>
-          <div className="flex sm:flex-row flex-col h-full  gap-2">
-            <div className="flex flex-col sm:w-1/6 w-full gap-5 justify-between   items-start ">
+          <div className="flex xl:flex-row flex-col h-full  gap-6 justify-start">
+            <div className="flex flex-col 2xl:w-1/6 xl:w-1/3  w-full gap-5 justify-between   items-start ">
               {/* @ts-ignore */}
               {getContent(selected).cards?.map(
                 (content: any, index: number) => {
@@ -257,7 +257,7 @@ export default function Features2() {
                 }
               )}
             </div>
-            <div className="iframe-div     bg-transparent w-full  h-full min-h-72       animate-slide-up-fade  sm:w-full ">
+            <div className="iframe-div     bg-transparent    min-h-72 w-full      animate-slide-up-fade   ">
               <iframe
                 // @ts-ignore
                 src={
