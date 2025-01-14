@@ -83,6 +83,22 @@ const cards = [
     icon: RiPuzzleLine,
   },
   {
+    label: "Roles",
+    icon: RiShieldUserLine,
+  },
+  {
+    label: "SSO",
+    icon: RiIdCardLine,
+  },
+  {
+    label: "API",
+    icon: RiPlugLine,
+  },
+  {
+    label: "Git",
+    icon: RiGitMergeLine,
+  },
+  {
     label: "Queries",
     icon: RiSearchLine,
   },
@@ -103,22 +119,6 @@ const cards = [
   {
     label: "Tasks",
     icon: RiAppsLine,
-  },
-  {
-    label: "Git",
-    icon: RiGitMergeLine,
-  },
-  {
-    label: "API",
-    icon: RiPlugLine,
-  },
-  {
-    label: "Roles",
-    icon: RiShieldUserLine,
-  },
-  {
-    label: "SSO",
-    icon: RiIdCardLine,
   },
 ];
 
@@ -179,18 +179,13 @@ export default function UseCaseNew2() {
   }, [discoverOption]);
   const navigate = useNavigate();
 
-  const GetYaml = (url : string,flag: boolean,card : string) => {
-   
+  const GetYaml = (url: string, flag: boolean, card: string) => {
     axios
-      .get(
-        url
-      )
+      .get(url)
       .then((resp) => {
-        if(flag){
-        setYaml({...yaml,[card] : resp.data});
-
-        }
-        else{
+        if (flag) {
+          setYaml({ ...yaml, [card]: resp.data });
+        } else {
           setYaml1({ ...yaml1, [card]: resp.data });
         }
       })
@@ -200,13 +195,14 @@ export default function UseCaseNew2() {
   };
   const GetSteps = (card: string) => {
     const step: any = [];
-    
 
     switch (card) {
       case "Frameworks":
         GetYaml(
-          "https://raw.githubusercontent.com/opengovern/platform-configuration/refs/heads/main/compliance/frameworks/baseline/efficiency.yaml"
-        ,true,card);
+          "https://raw.githubusercontent.com/opengovern/platform-configuration/refs/heads/main/compliance/frameworks/baseline/efficiency.yaml",
+          true,
+          card
+        );
         step.push({
           title: "Introduction",
           content: (
@@ -233,8 +229,8 @@ export default function UseCaseNew2() {
                 <span className="text-base ">
                   Here's how you Frameworks are defined:
                 </span>
-                <div className="rounded-2xl w-full mt-2 bg-slate-50/40 p-2 ring-1 ring-inset ring-slate-200/50 dark:bg-gray-900/70 dark:ring-white/10">
-                  <div className="rounded-xl w-full  bg-white ring-1 ring-slate-900/5 dark:bg-slate-950 dark:ring-white/15">
+                <div className="rounded-2xl w-fit mt-2 bg-slate-50/40 p-2 ring-1 ring-inset ring-slate-200/50 dark:bg-gray-900/70 dark:ring-white/10">
+                  <div className="rounded-xl w-fit  bg-white ring-1 ring-slate-900/5 dark:bg-slate-950 dark:ring-white/15">
                     {" "}
                     <img
                       src={Definition}
@@ -272,8 +268,8 @@ export default function UseCaseNew2() {
                     requirements within each group.
                   </li>
                 </ul>
-                <div className="rounded-2xl w-full mt-2 bg-slate-50/40 p-2 ring-1 ring-inset ring-slate-200/50 dark:bg-gray-900/70 dark:ring-white/10">
-                  <div className="rounded-xl w-full  bg-white ring-1 ring-slate-900/5 dark:bg-slate-950 dark:ring-white/15">
+                <div className="rounded-2xl w-fit mt-2 bg-slate-50/40 p-2 ring-1 ring-inset ring-slate-200/50 dark:bg-gray-900/70 dark:ring-white/10">
+                  <div className="rounded-xl w-fit  bg-white ring-1 ring-slate-900/5 dark:bg-slate-950 dark:ring-white/15">
                     <img src={Organization} className="w-fit h-full" />
                   </div>
                 </div>
@@ -286,43 +282,45 @@ export default function UseCaseNew2() {
       case "Controls":
         GetYaml(
           "https://raw.githubusercontent.com/opengovern/platform-configuration/refs/heads/main/compliance/controls/aws/aws_acm_certificate_not_expired.yaml",
-          true,card
+          true,
+          card
         );
         GetYaml(
           "https://raw.githubusercontent.com/opengovern/platform-configuration/refs/heads/main/compliance/controls/baseline/aws/IAM/aws_access_keys_rotated_x_days.yaml",
-          false,card
+          false,
+          card
         );
-         step.push({
-           title: "Controls",
-           content: (
-             <>
-               <div className="flex flex-col gap-3">
-                 <span className="text-base">
-                   Controls represent specific compliance requirements or best
-                   practices to assess. Controls are defined in YAML.
-                 </span>
-                 <span className="text-base">
-                   A compliance rule has two parts:
-                 </span>
-                 <ol className=" list-decimal list-inside  ">
-                   <li className="mt-2">
-                     <b>Metadata:&nbsp;</b>ID, Title, Description (Optional),
-                     Severity
-                   </li>
-                   <li className="mt-2">
-                     <b>Technical Logic: &nbsp;</b> Instructions on how to
-                     verify that the control is met
-                   </li>
-                 </ol>
-                 {/* <div className="rounded-2xl w-full mt-2 bg-slate-50/40 p-2 ring-1 ring-inset ring-slate-200/50 dark:bg-gray-900/70 dark:ring-white/10">
+        step.push({
+          title: "Controls",
+          content: (
+            <>
+              <div className="flex flex-col gap-3">
+                <span className="text-base">
+                  Controls represent specific compliance requirements or best
+                  practices to assess. Controls are defined in YAML.
+                </span>
+                <span className="text-base">
+                  A compliance rule has two parts:
+                </span>
+                <ol className=" list-decimal list-inside  ">
+                  <li className="mt-2">
+                    <b>Metadata:&nbsp;</b>ID, Title, Description (Optional),
+                    Severity
+                  </li>
+                  <li className="mt-2">
+                    <b>Technical Logic: &nbsp;</b> Instructions on how to verify
+                    that the control is met
+                  </li>
+                </ol>
+                {/* <div className="rounded-2xl w-full mt-2 bg-slate-50/40 p-2 ring-1 ring-inset ring-slate-200/50 dark:bg-gray-900/70 dark:ring-white/10">
                    <div className="rounded-xl w-full  bg-white ring-1 ring-slate-900/5 dark:bg-slate-950 dark:ring-white/15">
                      <img src={Organization} className="w-fit h-full" />
                    </div>
                  </div> */}
-               </div>
-             </>
-           ),
-         });
+              </div>
+            </>
+          ),
+        });
         step.push({
           title: "Inline Policies",
           content: (
@@ -366,7 +364,6 @@ export default function UseCaseNew2() {
           ),
         });
         break;
-      
 
       case "Integrations":
         step.push({
@@ -384,8 +381,8 @@ export default function UseCaseNew2() {
                   data stores, configurations, and<b> any technical item</b>{" "}
                   accessible via APIs.
                 </span>
-                <div className="rounded-2xl w-full mt-2 bg-slate-50/40 p-2 ring-1 ring-inset ring-slate-200/50 dark:bg-gray-900/70 dark:ring-white/10">
-                  <div className="rounded-xl w-full  bg-white ring-1 ring-slate-900/5 dark:bg-slate-950 dark:ring-white/15">
+                <div className="rounded-2xl w-fit mt-2 bg-slate-50/40 p-2 ring-1 ring-inset ring-slate-200/50 dark:bg-gray-900/70 dark:ring-white/10">
+                  <div className="rounded-xl w-fit  bg-white ring-1 ring-slate-900/5 dark:bg-slate-950 dark:ring-white/15">
                     {" "}
                     <img
                       src={
@@ -400,9 +397,149 @@ export default function UseCaseNew2() {
           ),
         });
         break;
-        
+
+      case "Roles":
+        step.push({
+          title: "Role-Based Access Control (RBAC)",
+          content: (
+            <>
+              <div className="flex flex-col gap-3">
+                <span className="text-base">
+                  Community Edition includes three built-in roles:
+                </span>
+                <ul className=" list-disc list-inside ">
+                  <li className="mt-2">
+                    <b>Administrator:&nbsp;</b>Full administrative access,
+                    including IAM, permissions, and API key management.
+                  </li>
+                  <li className="mt-2">
+                    <b>Editor:&nbsp;</b> View all inventory and compliance data,
+                    run audits, but cannot modify compliance or application
+                    settings.
+                  </li>
+
+                  <li className="mt-2">
+                    <b>Viewer: &nbsp;</b>View all inventory and compliance data,
+                    including running queries, but cannot modify data or execute
+                    actions. Excluded from viewing or modifying Roles &
+                    Permissions.
+                  </li>
+                </ul>
+              </div>
+            </>
+          ),
+        });
+        step.push({
+          title: "Assign Roles",
+          content: (
+            <>
+              <div className="flex flex-col gap-3">
+                <span className="text-base">
+                  Easily Create Users and Assign Roles :
+                </span>
+
+                <div className="rounded-2xl w-fit flex justify-center items-center mt-2 bg-slate-50/40 p-2 ring-1 ring-inset ring-slate-200/50 dark:bg-gray-900/70 dark:ring-white/10">
+                  <div className="rounded-xl w-fit  bg-white ring-1 ring-slate-900/5 dark:bg-slate-950 dark:ring-white/15">
+                    <img
+                      src={
+                        "https://content.opencomply.io/website/product-screenshots/create-new-user-with-role.png"
+                      }
+                      className="w-fit h-full"
+                    />
+                  </div>
+                </div>
+              </div>
+            </>
+          ),
+        });
+
+        break;
+
+      case "SSO":
+        step.push({
+          title: "Single Sign-On (SSO) out-of-the-box",
+          content: (
+            <>
+              <div className="flex flex-col gap-3">
+                <span className="text-base">
+                  All editions of Opencomply include Single Sign-On (SSO)
+                  out-of-the-box. Enable SSO with any OIDC provider, such as
+                  Google Workspace, Okta, and Azure AD.
+                </span>
+
+                <div className="rounded-2xl w-fit mt-2 bg-slate-50/40 p-2 ring-1 ring-inset ring-slate-200/50 dark:bg-gray-900/70 dark:ring-white/10">
+                  <div className="rounded-xl w-fit  bg-white ring-1 ring-slate-900/5 dark:bg-slate-950 dark:ring-white/15">
+                    <img
+                      src={
+                        "https://content.opencomply.io/website/product-screenshots/setup-sso.png"
+                      }
+                      className="w-fit h-full"
+                    />
+                  </div>
+                </div>
+              </div>
+            </>
+          ),
+        });
+        break;
+
+      case "API":
+        step.push({
+          title: "Built-in API Support",
+          content: (
+            <>
+              <div className="flex flex-col gap-3">
+                <span className="text-base">
+                  All editions of Opencomply include API support. Embed security
+                  and compliance into your existing workflows, such as DevOps
+                  pipelines and change processes.
+                </span>
+
+                <div className="rounded-2xl w-fit mt-2 bg-slate-50/40 p-2 ring-1 ring-inset ring-slate-200/50 dark:bg-gray-900/70 dark:ring-white/10">
+                  <div className="rounded-xl w-fit  bg-white ring-1 ring-slate-900/5 dark:bg-slate-950 dark:ring-white/15">
+                    <img
+                      src={
+                        "https://content.opencomply.io/website/product-screenshots/create-new-api-key.png"
+                      }
+                      className="w-fit h-full"
+                    />
+                  </div>
+                </div>
+              </div>
+            </>
+          ),
+        });
+        break;
+
+      case "Git":
+        step.push({
+          title: "Reliable Metadata: Git-Based Version Control",
+          content: (
+            <>
+              <div className="flex flex-col gap-3">
+                <span className="text-base">
+                  Opencomply utilizes Git for version control of all platform
+                  metadata, ensuring every change is version-controlled,
+                  auditable, and easily maintainable.
+                </span>
+
+                <div className="rounded-2xl w-fit mt-2 bg-slate-50/40 p-2 ring-1 ring-inset ring-slate-200/50 dark:bg-gray-900/70 dark:ring-white/10">
+                  <div className="rounded-xl w-fit  bg-white ring-1 ring-slate-900/5 dark:bg-slate-950 dark:ring-white/15">
+                    <img
+                      src={
+                        "https://content.opencomply.io/website/product-screenshots/git-support.png"
+                      }
+                      className="w-fit h-full"
+                    />
+                  </div>
+                </div>
+              </div>
+            </>
+          ),
+        });
+        break;
+
       default:
-      
         break;
     }
 
@@ -1085,7 +1222,7 @@ ORDER BY
                               >
                                 <Popover
                                   dismissButton={false}
-                                   className="w-full h-full cursor-pointer grid "
+                                  className="w-full h-full cursor-pointer grid "
                                   position="top"
                                   size="small"
                                   triggerType="custom"
