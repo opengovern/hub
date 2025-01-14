@@ -203,7 +203,7 @@ export default function UseCaseNew2() {
                   opencomply lets you specify Compliance Framework in YAML.
                 </span>
                 <span className="text-base ">Here's an example:</span>
-                <Editor height={400} obj={yaml} />
+                <Editor height={window.innerWidth>750 ? 400 : 150} obj={yaml} />
               </div>
             </>
           ),
@@ -212,7 +212,7 @@ export default function UseCaseNew2() {
           title: "Definition",
           content: (
             <>
-              <div className="flex flex-col gap-3">
+              <div className="flex flex-col gap-3 w-full">
                 <span className="text-base ">
                   Here's how you Frameworks are defined:
                 </span>
@@ -221,7 +221,7 @@ export default function UseCaseNew2() {
                     {" "}
                     <img
                       src={Definition}
-                      className=" min-h-[400px] min-w-[350px]"
+                      className=" sm:min-h-[400px] sm:min-w-[350px]"
                     />
                   </div>
                 </div>

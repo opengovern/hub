@@ -35,28 +35,29 @@ export default function Features2() {
           {/* <b>Compliance is painful.</b> <br />
         <br /> */}
           <b>Let's be honest. </b>Security and compliance tools often get in the
-          way of progress. They are proprietary, expensive, difficult to
-          customize, and struggle to keep pace with modern technology stacks.
+          way of progress. They are proprietary, expensive, rigid, and often
+          ill-equipped to handle modern tech stacks.
           <br />
           <br />
-          <b>
-            We believe security and compliance should empower your team, not
-            hinder its progress.{" "}
-          </b>{" "}
-          That's why we built OpenComply—a platform designed by engineers, for
-          engineers.
+          We believe security and compliance should
+          <b>empower</b> your team, not hold them back. That's why we created
+          OpenComply—a platform built by doers, for doers.
           <br />
           <br />
-          <b>
-            OpenComply makes security and compliance easy to use, customizable,
-            and adaptable.{" "}
-          </b>
-          You can tailor security and compliance to fit the culture that works
-          best for you.
+          OpenComply makes security and compliance
+          <span className=" cursor-pointer">
+            <b> accessible,</b>
+          </span>
+          <span className=" cursor-pointer">
+            <b> agile,</b>
+          </span>{" "}
+          <span className=" cursor-pointer">
+            <b> and inclusive. </b>
+          </span>
           <br />
           <br />
-          Remove security and compliance barriers. Focus on building great
-          products.
+          Break down security and compliance barriers. Focus on building
+          exceptional products.
           <br />
           <br />
           <b> Welcome to opencomply.</b>

@@ -95,22 +95,7 @@ export function Editor({ obj, height }: IRenderObjectProps) {
      },[aceRef])
 
   return (
-    // <SyntaxHighlighter
-    //   showLineNumbers={true}
-    //   showInlineLineNumbers={true}
-    //   wrapLines={true}
-    //   wrapLongLines={true}
-    //   customStyle={{ height: height, textWrap: "wrap", width: "100%",borderRadius:"0.75rem" }}
-    //   CodeTag={({ children, ...props }) => (
-    //     <code {...props} style={{ ...props.style, whiteSpace: "break-spaces" }}>
-    //       {children}
-    //     </code>
-    //   )}
-    //   language="sql"
-    //   style={dracula}
-    // >
-    //   {obj}
-    // </SyntaxHighlighter>
+  
     <div className="w-full">
       <CodeEditor
         // className='h-full'
@@ -125,6 +110,7 @@ export function Editor({ obj, height }: IRenderObjectProps) {
         }}
         editorContentHeight={height}
         preferences={preferences}
+        
         onPreferencesChange={(e) =>
           // @ts-ignore
           setPreferences(e.detail)
