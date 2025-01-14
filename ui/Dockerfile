@@ -6,7 +6,6 @@ COPY package-lock.json ./
 RUN npm install --force
 RUN npm install -g serve --force
 COPY . ./
-RUN ls
 RUN npm run build
 
 CMD ["serve","-s","build","-p" ,"3000"]
