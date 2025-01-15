@@ -229,3 +229,49 @@
     font-size: 14px;
   }
 }
+
+/* 
+.btn-grad1 {
+  background-image: linear-gradient(
+    to right,
+    #2b5876 0%,
+    #4e4376 71%,
+    #4e4376 100%
+  );
+}
+.btn-grad1 {
+  text-align: center;
+  transition: 0.5s;
+  background-size: 100% auto;
+  color: white;
+  
+}
+
+.btn-grad1:hover {
+  background-position: right center; /* change the direction of the change here 
+  color: #fff;
+  text-decoration: none;
+}
+
+
+.btn-grad2 {
+  background-image: linear-gradient(
+    to right,
+    #1cb5e0 0%,
+    #000046 71%,
+    #000046 100%
+  );
+}
+
+.btn-grad2 {
+  text-align: center;
+  transition: 0.5s;
+  background-size: 100% auto;
+  color: white;
+}
+
+.btn-grad2:hover {
+  background-position: right center; /* change the direction of the change here 
+  color: #fff;
+  text-decoration: none;
+} */
