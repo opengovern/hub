@@ -167,7 +167,7 @@ export default function Features2() {
             }}
           >
             <b>
-              <mark className="btn-grad1 p-0.5 sm:py-2 dark:bg-gradient-to-br dark:from-indigo-500 dark:to-indigo-800  mx-1 text-center rounded-md">
+              <mark className="btn-grad1 p-0.5 sm:py-2 bg-gradient-to-br text-white from-indigo-600 to-indigo-800 dark:from-indigo-500 dark:to-indigo-800  mx-1 text-center rounded-md">
                 {" "}
                 agile
               </mark>
@@ -182,7 +182,7 @@ export default function Features2() {
           >
             and
             <b>
-              <mark className="btn-grad2  p-0.5  sm:py-2  mx-1 text-center rounded-md dark:bg-gradient-to-br dark:from-indigo-800 dark:to-indigo-500 ">
+              <mark className="btn-grad2  p-0.5  sm:py-2  mx-1 text-center text-white rounded-md bg-gradient-to-br from-indigo-800 to-indigo-500 dark:from-indigo-800 dark:to-indigo-500 ">
                 inclusive
               </mark>
             </b>
