@@ -153,7 +153,7 @@ export default function Features2() {
             }}
           >
             <b>
-              <mark className="bg-gradient-to-br from-indigo-900 to-indigo-600 text-white p-0.5 sm:py-2  mx-1 text-center rounded-md">
+              <mark className="bg-gradient-to-br from-indigo-900 to-indigo-600 dark:from-indigo-700 dark:to-indigo-500 text-white p-0.5 sm:py-2  mx-1 text-center rounded-md">
                 {" "}
                 accessible
               </mark>
@@ -167,14 +167,14 @@ export default function Features2() {
             }}
           >
             <b>
-              <mark className="btn-grad1 p-0.5 sm:py-2  mx-1 text-center rounded-md">
+              <mark className="btn-grad1 p-0.5 sm:py-2 dark:bg-gradient-to-br dark:from-indigo-500 dark:to-indigo-800  mx-1 text-center rounded-md">
                 {" "}
                 agile
               </mark>
             </b>
           </span>{" "}
           <span
-            className=" cursor-pointer sm:mt-0 rounded-md inline-block w-fit "
+            className=" cursor-pointer sm:mt-0  rounded-md inline-block w-fit "
             onClick={() => {
               setOpen(true);
               setSelected("inclusive");
@@ -182,7 +182,7 @@ export default function Features2() {
           >
             and
             <b>
-              <mark className="btn-grad2  p-0.5  sm:py-2  mx-1 text-center rounded-md ">
+              <mark className="btn-grad2  p-0.5  sm:py-2  mx-1 text-center rounded-md dark:bg-gradient-to-br dark:from-indigo-800 dark:to-indigo-500 ">
                 inclusive
               </mark>
             </b>

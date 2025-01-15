@@ -253,6 +253,9 @@
   color: #fff;
   text-decoration: none;
 }
+/* .btn-grad1:is(.dark *) {
+background-image: linear-gradient(to right, #f7933c 0%, #eebc26  51%, #ec8327  100%)
+} */
 
 .btn-grad2 {
   background-image: linear-gradient(
@@ -262,14 +265,10 @@
     #000046 100%
   );
 }
-.btn-grad2:is(.dark *) {
-  background-image: linear-gradient(
-    to right,
-    #38474b 0%,
-    #000046 71%,
-    #4c5b5f 100%
-  );
-}
+/* .btn-grad2:is(.dark *) {
+background-image: linear-gradient(to right, #f687fa , #8313d8  )
+
+} */
 .btn-grad2 {
   text-align: center;
   /* text-transform: uppercase; */
@@ -286,3 +285,109 @@
   text-decoration: none;
 }
 
+         .btn-grad {background-image: linear-gradient(to right, #0cebeb 0%, #20e3b2  51%, #0cebeb  100%)}
+         .btn-grad {
+            margin: 10px;
+            padding: 15px 45px;
+            text-align: center;
+            text-transform: uppercase;
+            transition: 0.5s;
+            background-size: 200% auto;
+            color: white;            
+            box-shadow: 0 0 20px #eee;
+            border-radius: 10px;
+            display: block;
+          }
+
+          .btn-grad:hover {
+            background-position: right center; /* change the direction of the change here */
+            color: #fff;
+            text-decoration: none;
+          }
+         
+
+
+         .btn-grad {background-image: linear-gradient(to right, #B993D6 0%, #8CA6DB  51%, #B993D6  100%)}
+         .btn-grad {
+            margin: 10px;
+            padding: 15px 45px;
+            text-align: center;
+            text-transform: uppercase;
+            transition: 0.5s;
+            background-size: 200% auto;
+            color: white;            
+            box-shadow: 0 0 20px #eee;
+            border-radius: 10px;
+            display: block;
+          }
+
+          .btn-grad:hover {
+            background-position: right center; /* change the direction of the change here */
+            color: #fff;
+            text-decoration: none;
+          }
+         
+         .btn-grad {background-image: linear-gradient(to right, #50C9C3 0%, #96DEDA  51%, #50C9C3  100%)}
+         .btn-grad {
+            margin: 10px;
+            padding: 15px 45px;
+            text-align: center;
+            text-transform: uppercase;
+            transition: 0.5s;
+            background-size: 200% auto;
+            color: white;            
+            box-shadow: 0 0 20px #eee;
+            border-radius: 10px;
+            display: block;
+          }
+
+          .btn-grad:hover {
+            background-position: right center; /* change the direction of the change here */
+            color: #fff;
+            text-decoration: none;
+          }
+         
+
+        
+         .btn-grad {background-image: linear-gradient(to right, #1CD8D2 0%, #93EDC7  51%, #1CD8D2  100%)}
+         .btn-grad {
+            margin: 10px;
+            padding: 15px 45px;
+            text-align: center;
+            text-transform: uppercase;
+            transition: 0.5s;
+            background-size: 200% auto;
+            color: white;            
+            box-shadow: 0 0 20px #eee;
+            border-radius: 10px;
+            display: block;
+          }
+
+          .btn-grad:hover {
+            background-position: right center; /* change the direction of the change here */
+            color: #fff;
+            text-decoration: none;
+          }
+         
+
+
+         .btn-grad {background-image: linear-gradient(to right, #F2994A 0%, #F2C94C  51%, #F2994A  100%)}
+         .btn-grad {
+            margin: 10px;
+            padding: 15px 45px;
+            text-align: center;
+            text-transform: uppercase;
+            transition: 0.5s;
+            background-size: 200% auto;
+            color: white;            
+            box-shadow: 0 0 20px #eee;
+            border-radius: 10px;
+            display: block;
+          }
+
+          .btn-grad:hover {
+            background-position: right center; /* change the direction of the change here */
+            color: #fff;
+            text-decoration: none;
+          }
+         
