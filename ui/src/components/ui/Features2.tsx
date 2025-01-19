@@ -27,12 +27,12 @@ export default function Features2() {
     const cards = [];
     var content = {};
     switch (selected) {
-      case "accessible":
+      case "remarkably":
         cards.push(
           {
-            title: "User-Friendly",
+            title: "Easy to Use",
             description:
-              "A clean interface and intuitive navigation make OpenComply easy for teams of any skill level to use.",
+              "Clean interface, intuitive navigation. Anyone can use it.",
             link: "https://tour.opencomply.io/embed/cm5wy9adt0166010iznzlqg0v?embed_v=2",
           },
           {
@@ -42,75 +42,75 @@ export default function Features2() {
             link: "https://tour.opencomply.io/embed/cm5wyjq2t01i01d0hib0buuxk?embed_v=2",
           },
           {
-            title: "Customizable",
+            title: "Easy to Customize",
             description:
-              "Tailor OpenComply to your specific needs, ensuring seamless alignment with organizational goals.",
+              "Tailor frameworks, controls, and processes to your needs.",
             link: "https://tour.opencomply.io/embed/cm5wylkzs01iu1d0h5k6tcbzg?embed_v=2",
           },
-          // {
-          //   title: "Customizable",
-          //   description:
-          //     "Tailor OpenComply to your specific needs, ensuring seamless alignment with organizational goals.",
-          //   link: "https://tour.opencomply.io/embed/cm5wylkzs01iu1d0h5k6tcbzg?embed_v=2",
-          // }
+          {
+            title: "Easy to Integrate",
+            description:
+              "Works with your existing tools and teams. Write your own plugins. Easy-to-use API available.",
+            link: "https://tour.opencomply.io/embed/cm5wzrbb701sw1d0h60jvpiop?embed_v=2",
+          }
         );
         content = {
           title: "Security & Compliance Made Easy",
           cards: cards,
         };
         break;
-      case "agile":
-        cards.push(
-          {
-            title: "Policies as Queries",
-            description:
-              "Define and enforce compliance with dynamic, query-based rules that adapt as your environment evolves.",
-            link: "https://tour.opencomply.io/embed/cm5wz0utr01gd010ic1r7i9z5?embed_v=2",
-          },
-          {
-            title: "Modular",
-            description:
-              "Implement features as needed—expand or refine functionality without disrupting your existing setup",
-            link: "https://tour.opencomply.io/embed/cm5wyzm5901fj010iufslb7bm?embed_v=2",
-          },
-          {
-            title: "Scalable",
-            description:
-              "Easily handle growing demands with Git-based version control for transparent tracking and reliable rollbacks.",
-            link: "https://tour.opencomply.io/embed/cm5wyv3ob01c3010iidin7nm5?embed_v=2",
-          }
-        );
-        content = {
-          title: "Agile & Adaptable for Evolving Needs",
-          cards: cards,
-        };
-        break;
-      case "inclusive":
-        cards.push(
-          {
-            title: "Support Multiple Functions",
-            description:
-              "Streamline DevOps, SecOps, & MLOps with integrated compliance checks throughout the entire application lifecycle.",
-            link: "https://tour.opencomply.io/embed/cm5wzivwn01li1d0h8a2tnz4l?embed_v=2",
-          },
-          {
-            title: "Versatile",
-            description:
-              "Address diverse compliance requirements through a single, flexible platform that adapts to your evolving needs.",
-            link: "https://tour.opencomply.io/embed/cm5wznzoa01s01d0hddkmyx3g?embed_v=2",
-          },
-          {
-            title: "Integrates with Existing Tools",
-            description:
-              "Seamlessly integrates with your existing tools and stacks, improving efficiency and collaboration across teams.",
-            link: "https://tour.opencomply.io/embed/cm5wzrbb701sw1d0h60jvpiop?embed_v=2",
-          }
-        );
-        content = {
-          title: "Security and Compliance for Every Team",
-          cards: cards,
-        };
-        break;
+      // case "agile":
+      //   cards.push(
+      //     {
+      //       title: "Policies as Queries",
+      //       description:
+      //         "Define and enforce compliance with dynamic, query-based rules that adapt as your environment evolves.",
+      //       link: "https://tour.opencomply.io/embed/cm5wz0utr01gd010ic1r7i9z5?embed_v=2",
+      //     },
+      //     {
+      //       title: "Modular",
+      //       description:
+      //         "Implement features as needed—expand or refine functionality without disrupting your existing setup",
+      //       link: "https://tour.opencomply.io/embed/cm5wyzm5901fj010iufslb7bm?embed_v=2",
+      //     },
+      //     {
+      //       title: "Scalable",
+      //       description:
+      //         "Easily handle growing demands with Git-based version control for transparent tracking and reliable rollbacks.",
+      //       link: "https://tour.opencomply.io/embed/cm5wyv3ob01c3010iidin7nm5?embed_v=2",
+      //     }
+      //   );
+      //   content = {
+      //     title: "Agile & Adaptable for Evolving Needs",
+      //     cards: cards,
+      //   };
+      //   break;
+      // case "inclusive":
+      //   cards.push(
+      //     {
+      //       title: "Support Multiple Functions",
+      //       description:
+      //         "Streamline DevOps, SecOps, & MLOps with integrated compliance checks throughout the entire application lifecycle.",
+      //       link: "https://tour.opencomply.io/embed/cm5wzivwn01li1d0h8a2tnz4l?embed_v=2",
+      //     },
+      //     {
+      //       title: "Versatile",
+      //       description:
+      //         "Address diverse compliance requirements through a single, flexible platform that adapts to your evolving needs.",
+      //       link: "https://tour.opencomply.io/embed/cm5wznzoa01s01d0hddkmyx3g?embed_v=2",
+      //     },
+      //     {
+      //       title: "Integrates with Existing Tools",
+      //       description:
+      //         "Seamlessly integrates with your existing tools and stacks, improving efficiency and collaboration across teams.",
+      //       link: "https://tour.opencomply.io/embed/cm5wzrbb701sw1d0h60jvpiop?embed_v=2",
+      //     }
+      //   );
+      //   content = {
+      //     title: "Security and Compliance for Every Team",
+      //     cards: cards,
+      //   };
+      //   break;
 
       default:
         break;
@@ -149,17 +149,17 @@ export default function Features2() {
             className=" cursor-pointer rounded-md inline-block w-fit  "
             onClick={() => {
               setOpen(true);
-              setSelected("accessible");
+              setSelected("remarkably");
             }}
           >
             <b>
-              <mark className="bg-gradient-to-br from-indigo-900 to-indigo-600 dark:from-indigo-700 dark:to-indigo-500 text-white p-0.5 sm:py-2  mx-1 text-center rounded-md">
+              <mark className="bg-gradient-to-br from-indigo-900 to-indigo-500 dark:from-indigo-700 dark:to-indigo-400 text-white p-0.5 sm:py-2  mx-1 text-center rounded-md">
                 {" "}
-                accessible
+                remarkably easy
               </mark>
             </b>
           </span>
-          <span
+          {/* <span
             className=" cursor-pointer rounded-md  inline-block w-fit"
             onClick={() => {
               setOpen(true);
@@ -186,7 +186,7 @@ export default function Features2() {
                 inclusive
               </mark>
             </b>
-          </span>
+          </span> */}
           <br />
           <br />
           Simplify security and compliance. Focus on building exceptional
@@ -245,7 +245,7 @@ export default function Features2() {
                         <span className="sm:text-lg text-base font-bold">
                           {content.title}
                         </span>
-                        <span className="sm:text-base text-sm">
+                        <span className="sm:text-base text-sm hidden sm:inline">
                           {content.description}
                         </span>
 

@@ -3069,6 +3069,18 @@ select {
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
+.from-indigo-600 {
+  --tw-gradient-from: #4f46e5 var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(79 70 229 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.from-indigo-800 {
+  --tw-gradient-from: #3730a3 var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(55 48 163 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
 .from-indigo-900 {
   --tw-gradient-from: #312e81 var(--tw-gradient-from-position);
   --tw-gradient-to: rgb(49 46 129 / 0) var(--tw-gradient-to-position);
@@ -3084,18 +3096,6 @@ select {
 .from-white {
   --tw-gradient-from: #fff var(--tw-gradient-from-position);
   --tw-gradient-to: rgb(255 255 255 / 0) var(--tw-gradient-to-position);
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
-}
-
-.from-indigo-600 {
-  --tw-gradient-from: #4f46e5 var(--tw-gradient-from-position);
-  --tw-gradient-to: rgb(79 70 229 / 0) var(--tw-gradient-to-position);
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
-}
-
-.from-indigo-800 {
-  --tw-gradient-from: #3730a3 var(--tw-gradient-from-position);
-  --tw-gradient-to: rgb(55 48 163 / 0) var(--tw-gradient-to-position);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
@@ -3142,12 +3142,12 @@ select {
   --tw-gradient-to: #4f46e5 var(--tw-gradient-to-position);
 }
 
-.to-transparent {
-  --tw-gradient-to: transparent var(--tw-gradient-to-position);
-}
-
 .to-indigo-800 {
   --tw-gradient-to: #3730a3 var(--tw-gradient-to-position);
+}
+
+.to-transparent {
+  --tw-gradient-to: transparent var(--tw-gradient-to-position);
 }
 
 .bg-clip-text {
@@ -5850,10 +5850,6 @@ hr{
   --tw-bg-opacity: 0.05;
 }
 
-.dark\:bg-gradient-to-br:is(.dark *) {
-  background-image: linear-gradient(to bottom right, var(--tw-gradient-stops));
-}
-
 .dark\:from-gray-50:is(.dark *) {
   --tw-gradient-from: #f9fafb var(--tw-gradient-from-position);
   --tw-gradient-to: rgb(249 250 251 / 0) var(--tw-gradient-to-position);
@@ -5909,6 +5905,10 @@ hr{
 
 .dark\:to-indigo-800:is(.dark *) {
   --tw-gradient-to: #3730a3 var(--tw-gradient-to-position);
+}
+
+.dark\:to-indigo-300:is(.dark *) {
+  --tw-gradient-to: #a5b4fc var(--tw-gradient-to-position);
 }
 
 .dark\:fill-dark-tremor-content:is(.dark *) {
